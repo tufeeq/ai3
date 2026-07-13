@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="A private local AI workspace with projects, files, memory and document exports." />
+  <title>Nexus AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="fileWarning" class="warning hidden">Run the site through the included local server or GitHub Pages. Opening index.html directly can block the AI model.</div>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-row">
+        <div class="brand"><span class="brand-mark">N</span><span>Nexus AI</span></div>
+        <button id="collapseSidebarBtn" class="icon-btn mobile-only" aria-label="Close navigation">×</button>
+      </div>
+
+      <button id="newProjectBtn" class="primary full">＋ New project</button>
+
+      <div class="section-head"><span>Projects</span><button id="projectMenuBtn" class="mini-btn" title="Project options">•••</button></div>
+      <div id="projectsList" class="project-list"></div>
+
+      <div class="section-head"><span>Chats</span><button id="newChatBtn" class="mini-btn" title="New chat">＋</button></div>
+      <div id="chatsList" class="chat-list"></div>
+
+      <div class="sidebar-bottom">
+        <button id="settingsBtn" class="nav-button">⚙ Settings</button>
+        <div class="model-status"><span id="modelDot" class="status-dot"></span><div><strong id="modelStateShort">Model not loaded</strong><small>Private local inference</small></div></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button id="openSidebarBtn" class="icon-btn mobile-only" aria-label="Open navigation">☰</button>
+          <div><div id="projectBreadcrumb" class="breadcrumb">Personal workspace</div><h1 id="chatTitle">New chat</h1></div>
+        </div>
+        <div class="top-actions">
+          <button id="toggleProjectPanelBtn" class="secondary">Project context</button>
+          <button id="exportBtn" class="secondary" disabled>Export ▾</button>
+        </div>
+      </header>
+
+      <section id="welcome" class="welcome">
+        <div class="welcome-icon">✦</div>
+        <h2>What would you like to create?</h2>
+        <p>Nexus keeps every project’s chats, files, and memory together—privately in this browser.</p>
+        <div class="suggestion-grid">
+          <button class="suggestion" data-prompt="Create a structured project plan with objectives, deliverables, milestones, risks, and next actions."><span>Plan a project</span><small>Turn an idea into an actionable roadmap</small></button>
+          <button class="suggestion" data-prompt="Review the files in this project, identify the most important findings, and produce an executive summary."><span>Analyze project files</span><small>Synthesize your local knowledge library</small></button>
+          <button class="suggestion" data-prompt="Draft a professional document with an executive summary, clear sections, recommendations, and implementation steps."><span>Draft a document</span><small>Create polished, structured content</small></button>
+          <button class="suggestion" data-prompt="Build a presentation outline with a strong narrative, slide titles, key messages, and speaker notes."><span>Build a presentation</span><small>Prepare an executive-ready storyline</small></button>
+        </div>
+        <button id="welcomeLoadBtn" class="primary">Load a free AI model</button>
+      </section>
+
+      <section id="messages" class="messages hidden" aria-live="polite"></section>
+
+      <footer class="composer-area">
+        <div id="activeContext" class="active-context hidden"></div>
+        <form id="chatForm" class="composer">
+          <button id="attachBtn" type="button" class="composer-btn" title="Add files to this project">＋</button>
+          <textarea id="promptInput" rows="1" placeholder="Message Nexus AI…"></textarea>
+          <button id="stopBtn" type="button" class="stop-btn hidden">Stop</button>
+          <button id="sendBtn" type="submit" class="send-btn" aria-label="Send">↑</button>
+          <input id="fileInput" type="file" accept=".txt,.md,.csv,.json,.html,.xml,.js,.css,.py" multiple hidden />
+        </form>
+        <p class="disclaimer">Local AI can make mistakes. Verify important information and generated files.</p>
+      </footer>
+    </main>
+
+    <aside id="projectPanel" class="project-panel">
+      <div class="panel-head"><div><span>Project</span><h2 id="panelProjectName">Personal workspace</h2></div><button id="closeProjectPanelBtn" class="icon-btn">×</button></div>
+      <div class="panel-tabs"><button class="panel-tab active" data-tab="files">Files</button><button class="panel-tab" data-tab="memory">Memory</button></div>
+      <section id="filesTab" class="panel-content">
+        <button id="panelUploadBtn" class="upload-zone"><strong>＋ Add project files</strong><span>TXT, Markdown, CSV, JSON, HTML and code files</span></button>
+        <div class="library-head"><span>Local library</span><small id="fileCount">0 files</small></div>
+        <div id="filesList" class="files-list"></div>
+      </section>
+      <section id="memoryTab" class="panel-content hidden">
+        <div class="memory-card"><strong>Project memory</strong><p>Saved context is automatically included in every chat in this project.</p><textarea id="projectMemory" rows="12" placeholder="Add goals, preferred tone, key decisions, terminology, constraints, and facts that should carry across chats…"></textarea><button id="saveMemoryBtn" class="primary full">Save project memory</button></div>
+        <div class="memory-card"><strong>Linked chat context</strong><p id="linkedChatsSummary">New chats will use relevant context from previous conversations in this project.</p></div>
+      </section>
+    </aside>
+  </div>
+
+  <div id="exportMenu" class="popover hidden">
+    <button data-export="docx">Word document (.docx)</button>
+    <button data-export="pptx">PowerPoint (.pptx)</button>
+    <button data-export="pdf">PDF document (.pdf)</button>
+    <button data-export="md">Markdown (.md)</button>
+    <button data-export="txt">Plain text (.txt)</button>
+  </div>
+
+  <dialog id="settingsDialog">
+    <form method="dialog" class="dialog-card">
+      <div class="dialog-head"><div><h2>Settings</h2><p>Manage the local model and response quality.</p></div><button class="icon-btn" value="cancel">×</button></div>
+      <div class="settings-section">
+        <div class="setting-title"><div><strong>Free local model</strong><small id="modelState">Not loaded</small></div><span id="compatibilityBadge" class="badge">Checking…</span></div>
+        <label>Model<select id="modelSelect"></select><small id="modelHint"></small></label>
+        <div class="button-row"><button id="loadModelBtn" type="button" class="primary">Load selected model</button><button id="unloadModelBtn" type="button" class="secondary">Unload</button></div>
+        <div id="modelProgress" class="progress hidden"><div><span id="progressBar"></span></div><small id="progressLabel">Preparing…</small></div>
+      </div>
+      <div class="settings-section">
+        <label>Assistant instructions<textarea id="systemPrompt" rows="5">You are Nexus AI, a rigorous project assistant. Use project memory, prior-chat context, and local files when relevant. Answer directly, distinguish facts from assumptions, use clear structure, avoid filler, and never invent sources.</textarea></label>
+        <div class="two-col"><label>Creativity <span id="temperatureValue">0.15</span><input id="temperature" type="range" min="0" max="0.5" step="0.05" value="0.15"></label><label>Maximum tokens<input id="maxTokens" type="number" min="256" max="1536" step="128" value="768"></label></div>
+        <label class="check"><input id="memoryToggle" type="checkbox" checked><span>Use project memory and previous chats</span></label>
+        <label class="check"><input id="antiRepeatToggle" type="checkbox" checked><span>Stop repetition and incoherent runaway writing</span></label>
+      </div>
+      <div class="dialog-actions"><button id="clearAllBtn" type="button" class="danger">Clear all local data</button><button id="saveSettingsBtn" value="default" class="primary">Save settings</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="projectDialog">
+    <form method="dialog" class="dialog-card compact">
+      <div class="dialog-head"><div><h2 id="projectDialogTitle">Create project</h2><p>Keep related chats, files, and memory together.</p></div><button class="icon-btn" value="cancel">×</button></div>
+      <label>Project name<input id="projectNameInput" maxlength="60" placeholder="e.g. Annual strategy"></label>
+      <label>Description<textarea id="projectDescriptionInput" rows="3" placeholder="What is this project about?"></textarea></label>
+      <div class="dialog-actions"><button value="cancel" class="secondary">Cancel</button><button id="saveProjectBtn" value="default" class="primary">Create project</button></div>
+    </form>
+  </dialog>
+
+  <script src="https://cdn.jsdelivr.net/npm/pptxgenjs@4.0.1/dist/pptxgen.bundle.js"></script>
+  <script defer src="app.js"></script>
+</body>
+</html>
