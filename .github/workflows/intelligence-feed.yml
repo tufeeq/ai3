@@ -2,8 +2,7 @@ name: TAGX3 Intelligence Feed
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/15 12-23 * * 1-5'
-    - cron: '15 0-2 * * 2-6'
+    - cron: '*/15 * * * *'
 permissions:
   contents: write
 concurrency:
