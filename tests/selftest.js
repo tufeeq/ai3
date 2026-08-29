@@ -2,6 +2,7 @@ const assert=require('node:assert/strict');
 const E=require('../core/engine.js');
 const S=require('../core/sharia.js');
 const L=require('../core/learning.js');
+const T=require('../core/trade-monitor.js');
 
 function q(overrides={}){return {symbol:'TEST',price:1.1,changePct:4,volume:2000000,avgVolume:500000,floatShares:5000000,velocity5m:1.2,velocity15m:2.0,tradesPerMin:30,observedAt:new Date().toISOString(),...overrides};}
 
@@ -55,5 +56,13 @@ const h1=L.hypothesisFromFailures([{missed:true,firstSignalAt:null}]);
 assert.equal(h1[0].status,'OBSERVE_MORE');
 const h3=L.hypothesisFromFailures([{missed:true},{missed:true},{missed:true}]);
 assert.equal(h3[0].status,'CHALLENGER_CANDIDATE');
+
+// My Trades must preserve excursion metrics and emit actionable monitoring alerts without executing trades.
+const trade={id:'TEST-1',symbol:'TEST',entryPrice:10,status:'OPEN',personalStop:9.5,mfePct:0,maePct:0,alerts:[],entrySnapshot:{lifecycle:'WATCH',distributionRisk:20,continuationIndex:70,sharia:'UNVERIFIED',dataConfidence:'HIGH'},lastSnapshot:{lifecycle:'WATCH',distributionRisk:20,continuationIndex:70,sharia:'UNVERIFIED',dataConfidence:'HIGH'}};
+const monitored=T.evaluate(trade,{symbol:'TEST',price:9.4,lifecycle:'DISTRIBUTING',movementIndex:30,ignitionIndex:20,continuationIndex:30,distributionRisk:75,riskScore:80,sharia:{status:'NON_COMPLIANT'},dataConfidence:{label:'LOW'},observedAt:'2026-08-29T20:00:00Z',whyNow:[]});
+assert(monitored.trade.maePct<=-6);
+assert.equal(monitored.trade.mfePct,0);
+for(const type of ['PERSONAL_STOP','DATA_DEGRADED','DISTRIBUTION','TRIM_WATCH','THESIS_WEAKENING','SHARIA_CHANGED']) assert(monitored.alerts.some(x=>x.type===type),`missing My Trades alert ${type}`);
+assert.equal(monitored.trade.status,'OPEN');
 
 console.log('TAGX3 self-test: OK');
