@@ -1,7 +1,7 @@
 name: TAGX3 CI
 on:
   push:
-    branches: [ main, tagx3-clean-rebuild ]
+    branches: [ main, tagx3-clean-rebuild, tagx3-visual-dashboard ]
   pull_request:
     branches: [ main ]
 permissions:
@@ -9,10 +9,13 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
-      - run: npm run check
-      - run: npm test
+          node-version: '24'
+      - name: Syntax and static checks
+        run: npm run check
+      - name: Core and UI contract tests
+        run: npm test
