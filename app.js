@@ -1,129 +1,61 @@
 (()=>{
 'use strict';
 const E=window.TAGX3Engine,S=window.TAGX3Sharia,T=window.TAGX3Trades;
-const CASE_KEY='tagx3.opportunityCases.v1';
-const SETTINGS_KEY='tagx3.settings.v1';
-const state={cases:[],feeds:[],alerts:[],activeTab:'building',filter:'',hideNonCompliant:true,loading:false,lastRefresh:null};
+const CASE_KEY='tagx3.opportunityCases.v1',SETTINGS_KEY='tagx3.settings.v1';
+const state={cases:[],feeds:[],alerts:[],activeTab:'building',filter:'',hideNonCompliant:true,loading:false,lastRefresh:null,selectedSymbol:null};
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fmt=(v,d=2)=>Number.isFinite(+v)?(+v).toFixed(d):'—';
 const pct=v=>Number.isFinite(+v)?`${+v>=0?'+':''}${(+v).toFixed(2)}%`:'—';
+const clamp=v=>Math.max(0,Math.min(100,Number(v)||0));
 const ago=iso=>{if(!iso)return'—';const m=Math.max(0,(Date.now()-new Date(iso).getTime())/60000);return m<60?`${Math.round(m)}د`:m<1440?`${(m/60).toFixed(1)}س`:`${(m/1440).toFixed(1)}ي`;};
 const safeParse=(s,f)=>{try{return JSON.parse(s)||f}catch{return f}};
 const loadPrev=()=>new Map((safeParse(localStorage.getItem(CASE_KEY),[])||[]).map(x=>[x.symbol,x]));
 const saveCases=rows=>localStorage.setItem(CASE_KEY,JSON.stringify(rows.map(c=>({symbol:c.symbol,firstSeen:c.firstSeen,lastObserved:c.lastObserved,lifecycle:c.lifecycle,movementIndex:c.movementIndex,ignitionIndex:c.ignitionIndex,continuationIndex:c.continuationIndex,distributionRisk:c.distributionRisk,riskScore:c.riskScore,price:c.price,sharia:c.sharia?.status||'UNVERIFIED'}))));
-
 const FEEDS=[
- {name:'Live Quotes',url:'/ai/tag/data/live-quotes.json',core:true,kind:'quotes'},
- {name:'Sentinel',url:'/ai/tag/data/tagx2-sentinel.json',core:false,kind:'quotes'},
- {name:'Coverage Rescue',url:'/ai/tag/data/coverage-rescue.json',core:false,kind:'quotes'},
- {name:'SEC Catalysts',url:'/ai/tag/data/sec-catalysts.json',core:false,kind:'catalyst'},
- {name:'Sharia Production',url:'/ai/tag/data/sharia.json',core:false,kind:'sharia'},
- {name:'Sharia Challenger',url:'/ai/tag/data/sharia-v4-challenger.json',core:false,kind:'sharia'},
- {name:'Top20 Audit',url:'/ai/tag/data/tagx2-top20-audit.json',core:false,kind:'audit'}
-];
-
-async function fetchJson(feed){
- const started=performance.now();
- try{const r=await fetch(`${feed.url}?v=${Date.now()}`,{cache:'no-store'});if(!r.ok)throw new Error(`HTTP ${r.status}`);const data=await r.json();return{...feed,ok:true,data,ms:Math.round(performance.now()-started)};}
- catch(error){return{...feed,ok:false,error:String(error?.message||error),ms:Math.round(performance.now()-started)};}
-}
-function rowsOf(p){if(Array.isArray(p))return p;for(const k of ['data','quotes','results','stocks','items','candidates','opportunities','rows'])if(Array.isArray(p?.[k]))return p[k];return[];}
-function symbolOf(x){return String(x?.symbol||x?.ticker||x?.code||'').toUpperCase().trim();}
-function catalystMap(payload){const map=new Map();for(const r of rowsOf(payload)){const s=symbolOf(r);if(!s)continue;const type=r.type||r.catalystType||r.form||r.eventType||'SEC/Event';const at=r.eventAt||r.catalystAt||r.acceptedAt||r.filedAt||r.timestamp||null;let days=999;if(at){days=(new Date(at).getTime()-Date.now())/86400000;if(days<0&&days>-2)days=0;}const score=Number(r.score||r.materialityScore||r.catalystScore||0)||(type?45:0);map.set(s,{catalystType:type,catalystAt:at,catalystScore:E.clamp(score),daysToCatalyst:days,catalystObservedAt:r.observedAt||r.updatedAt||at});}return map;}
-function shariaMaps(feedResults){return feedResults.filter(f=>f.ok&&f.kind==='sharia').map(f=>S.indexPayload(f.data,f.name));}
-function enrichFromLegacy(raw){
- const x=raw||{};return{
-  velocity5m:x.velocity5m??x.v5??x.change5m??x.velocity?.m5,
-  velocity15m:x.velocity15m??x.v15??x.change15m??x.velocity?.m15,
-  tradesPerMin:x.tradesPerMin??x.tpm,
-  floatShares:x.floatShares??x.float??x.sharesFloat,
-  avgVolume:x.avgVolume??x.averageVolume??x.avgVol,
-  preMarketChangePct:x.preMarketChangePct??x.preMarketChangePercent,
-  afterHoursChangePct:x.afterHoursChangePct??x.postMarketChangePercent,
-  ...x
- };
-}
-function dedupeQuotes(results){
- const by=new Map();
- for(const f of results.filter(x=>x.ok&&x.kind==='quotes')){
-  for(const raw0 of rowsOf(f.data)){
-   const raw=enrichFromLegacy(raw0),s=symbolOf(raw);if(!s)continue;
-   raw.symbol=s; raw.source=f.name;
-   const ts=raw.observedAt||raw.updatedAt||raw.timestamp||f.data?.updatedAt||new Date().toISOString();raw.observedAt=ts;
-   const old=by.get(s); if(!old||new Date(ts)>=new Date(old.observedAt))by.set(s,raw);
-  }
- }
- return [...by.values()];
-}
-function contextFor(symbol,catalysts,raw){
- const c=catalysts.get(symbol)||{};
- return {...c,source:raw.source||'legacy-bridge',sourceMeta:{discoveryOnly:raw.source!=='Live Quotes'},formerRunnerScore:Number(raw.formerRunnerScore||raw.formerRunner||0),sectorLeadLagScore:Number(raw.sectorLeadLagScore||raw.sympathyScore||0)};
-}
-async function refresh(){
- if(state.loading)return;state.loading=true;renderStatus();
- const results=await Promise.all(FEEDS.map(fetchJson));state.feeds=results;
- const quotes=dedupeQuotes(results),prev=loadPrev();
- const catFeed=results.find(x=>x.ok&&x.kind==='catalyst');const cats=catalystMap(catFeed?.data||[]);
- let cases=quotes.map(raw=>E.analyze(raw,contextFor(symbolOf(raw),cats,raw),prev.get(symbolOf(raw))||{}));
- cases=S.attach(cases,shariaMaps(results),{});
- cases=E.rank(cases);
- state.cases=cases;saveCases(cases);state.lastRefresh=new Date().toISOString();state.loading=false;
- const tradeResult=T.updateAll(new Map(cases.map(c=>[c.symbol,c])));state.alerts=tradeResult.alerts;
- render();
-}
-function shariaClass(s){return{'VERIFIED':'ok','LIKELY_COMPLIANT':'likely','CONFLICT_REVIEW':'warn','UNVERIFIED':'muted','NON_COMPLIANT':'bad'}[s]||'muted';}
-function lifecycleClass(s){return{'ARMED':'armed','IGNITING':'ignite','EXPANDING':'expand','ACCUMULATING':'acc','DISTRIBUTING':'dist'}[s]||'watch';}
-function bucket(c){if(c.lifecycle==='DISTRIBUTING'||c.lifecycle==='CLOSED'||c.stage==='EXHAUSTION_RISK')return'exit';if(c.lifecycle==='IGNITING'||c.lifecycle==='EXPANDING')return'igniting';if(c.catalystAt||c.rawFeatures?.catalyst>=40)return'catalyst';return'building';}
-function filtered(){return state.cases.filter(c=>(!state.hideNonCompliant||c.sharia?.status!=='NON_COMPLIANT')&&(!state.filter||c.symbol.includes(state.filter))).filter(c=>bucket(c)===state.activeTab);}
-function card(c){
- const stale=!c.dataConfidence?.fresh; const sh=c.sharia||{status:'UNVERIFIED',reason:''};
- return `<article class="opp-card ${lifecycleClass(c.lifecycle)}">
-  <div class="card-head"><div><div class="ticker">${esc(c.symbol)}</div><div class="mini">منذ ${ago(c.firstSeen)} · ${esc(c.stage)}</div></div><div class="price"><b>$${fmt(c.price,4)}</b><span class="${c.changePct>=0?'up':'down'}">${pct(c.changePct)}</span></div></div>
-  <div class="badges"><span class="badge state">${esc(c.lifecycle)}</span><span class="badge sharia ${shariaClass(sh.status)}">${esc(sh.status)}</span><span class="badge ${stale?'bad':'ok'}">DATA ${esc(c.dataConfidence?.label||'LOW')}</span>${c.unknownCatalyst?'<span class="badge warn">UNKNOWN CATALYST</span>':''}</div>
-  <div class="meters">
-   ${meter('Movement',c.movementIndex)}${meter('Ignition',c.ignitionIndex)}${meter('Continuation',c.continuationIndex)}${meter('Distribution',c.distributionRisk,true)}
-  </div>
-  <div class="why"><b>لماذا الآن:</b> ${esc((c.whyNow||[]).join(' · '))}</div>
-  <div class="details"><span>RVOL ${fmt(c.rawFeatures?.relVolume,2)}×</span><span>Float turnover ${fmt((c.rawFeatures?.floatTurnover||0)*100,1)}%</span><span>Risk ${c.riskScore}/100</span><span>${c.catalystClock||'NO CLOCK'}</span></div>
-  <div class="sharia-note"><b>التحليل الشرعي:</b> ${esc(sh.reason||'غير متحقق')} ${sh.evidence?.length?`· مصادر: ${sh.evidence.length}`:''}</div>
-  <div class="invalidation"><b>إبطال الفرضية:</b> ${esc(c.invalidation)}</div>
-  <div class="actions"><button class="primary" data-add="${esc(c.symbol)}">أضف لمتابعتي بسعر الدخول</button><button data-detail="${esc(c.symbol)}">تفاصيل الإشارة</button></div>
- </article>`;
-}
-function meter(label,v,risk=false){return `<div class="meter"><div><span>${label}</span><b>${Math.round(v||0)}</b></div><progress max="100" value="${Math.round(v||0)}" class="${risk?'risk':''}"></progress></div>`;}
-function renderStatus(){const el=$('#status');if(!el)return;const ok=state.feeds.filter(x=>x.ok).length;el.innerHTML=state.loading?'<span class="pulse">جارٍ تحديث المحركات…</span>':`<span>${ok}/${FEEDS.length} feeds</span><span>آخر تحديث ${state.lastRefresh?ago(state.lastRefresh):'—'}</span>`;}
-function renderTabs(){document.querySelectorAll('[data-tab]').forEach(b=>{b.classList.toggle('active',b.dataset.tab===state.activeTab);const n=state.cases.filter(c=>bucket(c)===b.dataset.tab&&(!state.hideNonCompliant||c.sharia?.status!=='NON_COMPLIANT')).length;b.querySelector('em').textContent=n;});}
-function renderCards(){const rows=filtered(),el=$('#opportunities');el.innerHTML=rows.length?rows.slice(0,80).map(card).join(''):`<div class="empty">لا توجد حالات في هذا المسار وفق البيانات الحالية. هذا ليس حكمًا بأن السوق بلا فرص؛ قد تكون التغذية ناقصة أو الحالات في مسار آخر.</div>`;}
-function renderFeeds(){const el=$('#feedGrid');el.innerHTML=state.feeds.map(f=>`<div class="feed ${f.ok?'good':'fail'}"><b>${esc(f.name)}</b><span>${f.ok?`OK · ${f.ms}ms`:`FAIL · ${esc(f.error)}`}</span></div>`).join('');}
-function renderTrades(){
- const trades=T.read(),cases=new Map(state.cases.map(c=>[c.symbol,c]));const el=$('#trades');
- el.innerHTML=trades.length?trades.map(t=>{const c=cases.get(t.symbol),p=c?((c.price-t.entryPrice)/t.entryPrice*100):t.pnlPct;return `<div class="trade-row"><div><b>${esc(t.symbol)}</b><span>دخول $${fmt(t.entryPrice,4)} · ${esc(t.status)}</span></div><div><b class="${p>=0?'up':'down'}">${pct(p)}</b><span>MFE ${pct(t.mfePct)} · MAE ${pct(t.maePct)}</span></div><div><span>${c?esc(c.lifecycle):'لا توجد قراءة حالية'}</span><span>Dist ${c?c.distributionRisk:'—'} · Cont ${c?c.continuationIndex:'—'}</span></div><div class="trade-actions">${t.status==='OPEN'?`<button data-close="${t.id}">إغلاق</button>`:''}<button data-remove="${t.id}">حذف</button></div></div>`}).join(''):'<div class="empty">لم تضف أي صفقة. اختر فرصة وسجل سعر دخولك الفعلي.</div>';
-}
-function renderAlerts(){const alerts=[...state.alerts,...T.readAlerts()].filter((a,i,x)=>x.findIndex(b=>b.id===a.id)===i).slice(0,20),el=$('#alerts');el.innerHTML=alerts.length?alerts.map(a=>`<div class="alert ${a.severity.toLowerCase()}"><b>${esc(a.symbol)} · ${esc(a.type)}</b><span>${esc(a.message)}</span><small>${ago(a.createdAt)}</small></div>`).join(''):'<div class="empty">لا توجد تنبيهات جديدة.</div>';}
-function renderSummary(){
- const valid=state.cases.filter(c=>c.sharia?.status!=='NON_COMPLIANT');
- const metrics={armed:valid.filter(c=>c.lifecycle==='ARMED').length,igniting:valid.filter(c=>['IGNITING','EXPANDING'].includes(c.lifecycle)).length,building:valid.filter(c=>c.lifecycle==='ACCUMULATING').length,dist:valid.filter(c=>c.lifecycle==='DISTRIBUTING').length};
- $('#summary').innerHTML=`<div><b>${metrics.armed}</b><span>ARMED</span></div><div><b>${metrics.igniting}</b><span>IGNITING</span></div><div><b>${metrics.building}</b><span>ACCUMULATING</span></div><div><b>${metrics.dist}</b><span>DISTRIBUTING</span></div>`;
-}
-function render(){renderStatus();renderSummary();renderTabs();renderCards();renderFeeds();renderTrades();renderAlerts();}
-function openTradeDialog(symbol){const c=state.cases.find(x=>x.symbol===symbol);if(!c)return;const d=$('#tradeDialog');$('#tradeSymbol').value=symbol;$('#entryPrice').value=c.price||'';$('#personalStop').value='';$('#quantity').value='';$('#tradeContext').textContent=`${c.lifecycle} · Movement ${c.movementIndex} · Ignition ${c.ignitionIndex} · Sharia ${c.sharia?.status||'UNVERIFIED'}`;d.showModal();}
-function showDetail(symbol){const c=state.cases.find(x=>x.symbol===symbol);if(!c)return;const d=$('#detailDialog');$('#detailTitle').textContent=`${c.symbol} · ${c.lifecycle}`;$('#detailBody').innerHTML=`<pre>${esc(JSON.stringify({firstSeen:c.firstSeen,lastObserved:c.lastObserved,stage:c.stage,indices:{movement:c.movementIndex,ignition:c.ignitionIndex,continuation:c.continuationIndex,distribution:c.distributionRisk,risk:c.riskScore},catalyst:{clock:c.catalystClock,type:c.catalystType,at:c.catalystAt},sharia:c.sharia,featureMemory:E.decayFeatureBook(c.features),trace:c.trace},null,2))}</pre>`;d.showModal();}
-
-document.addEventListener('click',e=>{
- const add=e.target.closest('[data-add]');if(add)openTradeDialog(add.dataset.add);
- const det=e.target.closest('[data-detail]');if(det)showDetail(det.dataset.detail);
- const tab=e.target.closest('[data-tab]');if(tab){state.activeTab=tab.dataset.tab;renderTabs();renderCards();}
- const close=e.target.closest('[data-close]');if(close){const t=T.read().find(x=>x.id===close.dataset.close);const c=state.cases.find(x=>x.symbol===t?.symbol);const raw=prompt('سعر الخروج الفعلي',c?.price||t?.lastPrice||'');if(raw)try{T.closeTrade(close.dataset.close,Number(raw));renderTrades();}catch(err){alert(err.message)}}
- const rem=e.target.closest('[data-remove]');if(rem&&confirm('حذف الصفقة من القائمة؟')){T.removeTrade(rem.dataset.remove);renderTrades();}
-});
-$('#refreshBtn').addEventListener('click',refresh);
-$('#search').addEventListener('input',e=>{state.filter=e.target.value.toUpperCase().trim();renderCards();});
-$('#hideNonCompliant').addEventListener('change',e=>{state.hideNonCompliant=e.target.checked;localStorage.setItem(SETTINGS_KEY,JSON.stringify({hideNonCompliant:state.hideNonCompliant}));render();});
-$('#clearAlerts').addEventListener('click',()=>{T.clearAlerts();state.alerts=[];renderAlerts();});
-$('#tradeForm').addEventListener('submit',e=>{e.preventDefault();const symbol=$('#tradeSymbol').value,c=state.cases.find(x=>x.symbol===symbol);try{T.addTrade({symbol,entryPrice:Number($('#entryPrice').value),quantity:Number($('#quantity').value)||null,personalStop:Number($('#personalStop').value)||null,notes:$('#tradeNotes').value},c);$('#tradeDialog').close();renderTrades();}catch(err){$('#tradeError').textContent=err.message;}});
-$('#cancelTrade').addEventListener('click',()=>$('#tradeDialog').close());
-$('#closeDetail').addEventListener('click',()=>$('#detailDialog').close());
-const settings=safeParse(localStorage.getItem(SETTINGS_KEY),{});if(typeof settings.hideNonCompliant==='boolean')state.hideNonCompliant=settings.hideNonCompliant;$('#hideNonCompliant').checked=state.hideNonCompliant;
-refresh();setInterval(refresh,120000);
+{name:'Live Quotes',url:'/ai/tag/data/live-quotes.json',core:true,kind:'quotes'},
+{name:'Sentinel',url:'/ai/tag/data/tagx2-sentinel.json',core:false,kind:'quotes'},
+{name:'Coverage Rescue',url:'/ai/tag/data/coverage-rescue.json',core:false,kind:'quotes'},
+{name:'SEC Catalysts',url:'/ai/tag/data/sec-catalysts.json',core:false,kind:'catalyst'},
+{name:'Sharia Production',url:'/ai/tag/data/sharia.json',core:false,kind:'sharia'},
+{name:'Sharia Challenger',url:'/ai/tag/data/sharia-v4-challenger.json',core:false,kind:'sharia'},
+{name:'Top20 Audit',url:'/ai/tag/data/tagx2-top20-audit.json',core:false,kind:'audit'}];
+async function fetchJson(feed){const t=performance.now();try{const r=await fetch(`${feed.url}?v=${Date.now()}`,{cache:'no-store'});if(!r.ok)throw new Error(`HTTP ${r.status}`);return{...feed,ok:true,data:await r.json(),ms:Math.round(performance.now()-t)}}catch(error){return{...feed,ok:false,error:String(error?.message||error),ms:Math.round(performance.now()-t)}}}
+function rowsOf(p){if(Array.isArray(p))return p;for(const k of ['data','quotes','results','stocks','items','candidates','opportunities','rows'])if(Array.isArray(p?.[k]))return p[k];return[]}
+function symbolOf(x){return String(x?.symbol||x?.ticker||x?.code||'').toUpperCase().trim()}
+function catalystMap(payload){const map=new Map();for(const r of rowsOf(payload)){const s=symbolOf(r);if(!s)continue;const type=r.type||r.catalystType||r.form||r.eventType||'SEC/Event',at=r.eventAt||r.catalystAt||r.acceptedAt||r.filedAt||r.timestamp||null;let days=999;if(at){days=(new Date(at).getTime()-Date.now())/86400000;if(days<0&&days>-2)days=0}const score=Number(r.score||r.materialityScore||r.catalystScore||0)||(type?45:0);map.set(s,{catalystType:type,catalystAt:at,catalystScore:E.clamp(score),daysToCatalyst:days,catalystObservedAt:r.observedAt||r.updatedAt||at})}return map}
+function shariaMaps(rs){return rs.filter(f=>f.ok&&f.kind==='sharia').map(f=>S.indexPayload(f.data,f.name))}
+function enrichFromLegacy(x={}){return{velocity5m:x.velocity5m??x.v5??x.change5m??x.velocity?.m5,velocity15m:x.velocity15m??x.v15??x.change15m??x.velocity?.m15,tradesPerMin:x.tradesPerMin??x.tpm,floatShares:x.floatShares??x.float??x.sharesFloat,avgVolume:x.avgVolume??x.averageVolume??x.avgVol,preMarketChangePct:x.preMarketChangePct??x.preMarketChangePercent,afterHoursChangePct:x.afterHoursChangePct??x.postMarketChangePercent,...x}}
+function dedupeQuotes(results){const by=new Map();for(const f of results.filter(x=>x.ok&&x.kind==='quotes'))for(const raw0 of rowsOf(f.data)){const raw=enrichFromLegacy(raw0),s=symbolOf(raw);if(!s)continue;raw.symbol=s;raw.source=f.name;const ts=raw.observedAt||raw.updatedAt||raw.timestamp||f.data?.updatedAt||new Date().toISOString();raw.observedAt=ts;const old=by.get(s);if(!old||new Date(ts)>=new Date(old.observedAt))by.set(s,raw)}return[...by.values()]}
+function contextFor(symbol,cats,raw){return{...(cats.get(symbol)||{}),source:raw.source||'legacy-bridge',sourceMeta:{discoveryOnly:raw.source!=='Live Quotes'},formerRunnerScore:Number(raw.formerRunnerScore||raw.formerRunner||0),sectorLeadLagScore:Number(raw.sectorLeadLagScore||raw.sympathyScore||0)}}
+async function refresh(){if(state.loading)return;state.loading=true;renderStatus();const results=await Promise.all(FEEDS.map(fetchJson));state.feeds=results;const quotes=dedupeQuotes(results),prev=loadPrev(),catFeed=results.find(x=>x.ok&&x.kind==='catalyst'),cats=catalystMap(catFeed?.data||[]);let cases=quotes.map(raw=>E.analyze(raw,contextFor(symbolOf(raw),cats,raw),prev.get(symbolOf(raw))||{}));cases=S.attach(cases,shariaMaps(results),{});state.cases=E.rank(cases);saveCases(state.cases);state.lastRefresh=new Date().toISOString();state.loading=false;const tr=T.updateAll(new Map(state.cases.map(c=>[c.symbol,c])));state.alerts=tr.alerts;if(!state.selectedSymbol||!state.cases.some(c=>c.symbol===state.selectedSymbol))state.selectedSymbol=state.cases.find(c=>bucket(c)===state.activeTab)?.symbol||state.cases[0]?.symbol||null;render()}
+function shariaClass(s){return{VERIFIED:'ok',LIKELY_COMPLIANT:'likely',CONFLICT_REVIEW:'warn',UNVERIFIED:'muted',NON_COMPLIANT:'bad'}[s]||'muted'}
+function lifecycleClass(s){return{ARMED:'armed',IGNITING:'ignite',EXPANDING:'expand',ACCUMULATING:'acc',DISTRIBUTING:'dist'}[s]||'watch'}
+function bucket(c){if(c.lifecycle==='DISTRIBUTING'||c.lifecycle==='CLOSED'||c.stage==='EXHAUSTION_RISK')return'exit';if(c.lifecycle==='IGNITING'||c.lifecycle==='EXPANDING')return'igniting';if(c.catalystAt||c.rawFeatures?.catalyst>=40)return'catalyst';return'building'}
+function filtered(){return state.cases.filter(c=>(!state.hideNonCompliant||c.sharia?.status!=='NON_COMPLIANT')&&(!state.filter||c.symbol.includes(state.filter))).filter(c=>bucket(c)===state.activeTab)}
+function selected(){return state.cases.find(c=>c.symbol===state.selectedSymbol)||filtered()[0]||state.cases[0]}
+function microchart(c){const vals=[clamp(c.movementIndex),clamp(c.ignitionIndex),clamp(c.continuationIndex),clamp(100-c.distributionRisk),clamp(100-c.riskScore)];const pts=vals.map((v,i)=>`${i*25},${38-v*.32}`).join(' ');return `<div class="microchart"><svg viewBox="0 0 100 42" preserveAspectRatio="none" aria-label="Signal profile"><polyline points="${pts}" fill="none" stroke="${c.changePct>=0?'#23d18b':'#ff5b67'}" stroke-width="2" vector-effect="non-scaling-stroke"/><line x1="0" y1="40" x2="100" y2="40" stroke="#1d2a3a"/></svg></div>`}
+function card(c){const stale=!c.dataConfidence?.fresh,sh=c.sharia||{status:'UNVERIFIED'},sel=c.symbol===state.selectedSymbol?' selected':'';return `<article class="opp-card ${lifecycleClass(c.lifecycle)}${sel}" data-select="${esc(c.symbol)}"><div class="card-head"><div><div class="ticker">${esc(c.symbol)}</div><div class="mini">${esc(c.stage)} · منذ ${ago(c.firstSeen)}</div></div><div class="price"><b>$${fmt(c.price,4)}</b><span class="${c.changePct>=0?'up':'down'}">${pct(c.changePct)}</span></div></div><div class="badges"><span class="badge state">${esc(c.lifecycle)}</span><span class="badge ${shariaClass(sh.status)}">${esc(sh.status)}</span><span class="badge ${stale?'bad':'ok'}">${esc(c.dataConfidence?.label||'LOW')}</span></div>${microchart(c)}<div class="why">${esc((c.whyNow||[]).slice(0,2).join(' · ')||'لا توجد إشارة تفسيرية كافية')}</div><div class="actions"><button class="primary" data-add="${esc(c.symbol)}">+ متابعة</button><button data-detail="${esc(c.symbol)}">تفاصيل</button></div></article>`}
+function radar(c){const vals=[clamp(c.movementIndex),clamp(c.ignitionIndex),clamp(c.continuationIndex),clamp(100-c.distributionRisk),clamp(100-c.riskScore)],cx=120,cy=105,R=78,angs=[-90,-18,54,126,198];const p=(v,a)=>{const r=R*v/100,rad=a*Math.PI/180;return[+(cx+r*Math.cos(rad)).toFixed(1),+(cy+r*Math.sin(rad)).toFixed(1)]};const poly=vals.map((v,i)=>p(v,angs[i]).join(',')).join(' '),labels=['Movement','Ignition','Continuation','Safety','Risk adj.'];let grid='';for(const q of [.25,.5,.75,1])grid+=`<polygon class="grid-line" points="${angs.map(a=>p(q*100,a).join(',')).join(' ')}"/>`;const axes=angs.map((a,i)=>{const [x,y]=p(112,a),[dx,dy]=p(vals[i],a);return `<line class="grid-line" x1="${cx}" y1="${cy}" x2="${p(100,a)[0]}" y2="${p(100,a)[1]}"/><circle class="radar-dot" cx="${dx}" cy="${dy}" r="3"/><text class="axis-label" x="${x}" y="${y}" text-anchor="middle">${labels[i]}</text>`}).join('');return `<svg viewBox="0 0 240 215" role="img" aria-label="Signal radar">${grid}${axes}<polygon class="radar-fill" points="${poly}"/></svg>`}
+function featureBar(label,value,risk=false,suffix=''){return `<div class="feature-row"><span>${label}</span><div class="feature-track"><div class="feature-fill ${risk?'risk':''}" style="width:${clamp(value)}%"></div></div><b>${Number.isFinite(+value)?fmt(value,0)+suffix:'—'}</b></div>`}
+function ratingRow(label,v,warning=false){return `<div><div class="rating-label"><span>${label}</span><b>${Math.round(clamp(v))}</b></div><div class="rating-track"><div class="rating-fill ${warning?'warning':''}" style="width:${clamp(v)}%"></div></div></div>`}
+function renderFocus(){const c=selected();if(!c){$('#focusView').innerHTML='<div class="empty">لا توجد بيانات متاحة.</div>';$('#ratingPanel').innerHTML=$('#catalystPanel').innerHTML=$('#shariaPanel').innerHTML=$('#signalMatrix').innerHTML=$('#liquidityLifecycle').innerHTML='<div class="empty">—</div>';return}state.selectedSymbol=c.symbol;const f=c.rawFeatures||{},sh=c.sharia||{status:'UNVERIFIED',reason:'غير متحقق'},why=(c.whyNow||[]).slice(0,5);$('#focusView').innerHTML=`<div class="focus-top"><div><div class="focus-symbol">${esc(c.symbol)}</div><div class="focus-meta"><span class="badge state">${esc(c.lifecycle)}</span><span class="badge ${shariaClass(sh.status)}">${esc(sh.status)}</span><span class="badge">${esc(c.stage)}</span></div></div><div><div class="focus-price">$${fmt(c.price,4)}</div><div class="${c.changePct>=0?'up':'down'}">${pct(c.changePct)}</div></div></div><div class="focus-stats"><div class="stat-tile"><span>RVOL</span><b>${fmt(f.relVolume,2)}×</b></div><div class="stat-tile"><span>Float Turnover</span><b>${fmt((f.floatTurnover||0)*100,1)}%</b></div><div class="stat-tile"><span>Trades / Min</span><b>${fmt(f.tradesPerMin,0)}</b></div><div class="stat-tile"><span>Data</span><b>${esc(c.dataConfidence?.label||'LOW')}</b></div></div><div class="visual-stage"><div class="chart-card"><div class="chart-title"><b>Opportunity Radar</b><span>مبني على مؤشرات النموذج الحالية فقط</span></div><div class="radar-wrap">${radar(c)}</div></div><div class="chart-card"><div class="chart-title"><b>Signal Structure</b><span>0–100</span></div><div class="feature-bars">${featureBar('Movement',c.movementIndex)}${featureBar('Ignition',c.ignitionIndex)}${featureBar('Continuation',c.continuationIndex)}${featureBar('Distribution',c.distributionRisk,true)}${featureBar('Risk',c.riskScore,true)}${featureBar('Catalyst',f.catalyst||0)}</div></div></div><div class="thesis-box"><b>THESIS SUMMARY</b><ul>${why.length?why.map(x=>`<li>${esc(x)}</li>`).join(''):'<li>لا توجد فرضية مكتملة في البيانات الحالية.</li>'}</ul></div><div class="actions"><button class="primary" data-add="${esc(c.symbol)}">أضف لمتابعتي بسعر الدخول</button><button data-detail="${esc(c.symbol)}">التفاصيل الكاملة</button></div>`;
+const overall=Math.round((clamp(c.movementIndex)+clamp(c.ignitionIndex)+clamp(c.continuationIndex)+clamp(100-c.distributionRisk)+clamp(100-c.riskScore))/5);$('#ratingPanel').innerHTML=`<div class="rating-list">${ratingRow('Movement',c.movementIndex)}${ratingRow('Ignition',c.ignitionIndex)}${ratingRow('Continuation',c.continuationIndex)}${ratingRow('Distribution Risk',c.distributionRisk,true)}</div><div class="score-ring" style="--p:${overall};--ring:${overall>=65?'#23d18b':overall>=45?'#ffad33':'#ff5b67'}"><b>${overall}</b><span>OVERALL</span></div>`;
+const hasCat=!!(c.catalystAt||c.catalystType);$('#catalystPanel').innerHTML=hasCat?`<div class="catalyst-clock"><div class="clock-main">${esc(c.catalystType||'Catalyst')}</div><div class="clock-sub">${esc(c.catalystClock||'NO CLOCK')} ${c.catalystAt?'· '+esc(new Date(c.catalystAt).toLocaleString('ar-SA')):''}</div><div class="timeline"><div><i></i><small>T-30</small></div><div><i></i><small>T-10</small></div><div><i class="active"></i><small>NOW</small></div><div><i></i><small>EVENT</small></div><div><i></i><small>T+</small></div></div></div>`:'<div class="empty">لا يوجد محفز موثق في البيانات الحالية.</div>';
+$('#shariaPanel').innerHTML=`<div class="sharia-box"><div class="sharia-status"><span class="badge ${shariaClass(sh.status)}">${esc(sh.status)}</span><span class="mini">Confidence ${esc(sh.confidence||'LOW')}</span></div><div class="sharia-reason">${esc(sh.reason||'لا توجد أدلة كافية للتحقق الشرعي')}</div><button data-detail="${esc(c.symbol)}">عرض الأدلة والتفاصيل</button></div>`;
+renderSignalMatrix(c);renderLifecycle(c)}
+function renderSignalMatrix(c){const f=c.rawFeatures||{},vals=[['5m Velocity',Math.min(100,Math.abs(Number(f.velocity5m||0))*12)],['15m Velocity',Math.min(100,Math.abs(Number(f.velocity15m||0))*8)],['Relative Volume',Math.min(100,Number(f.relVolume||0)*12)],['Float Capture',Math.min(100,Number(f.floatTurnover||0)*500)],['Persistence',clamp(f.persistence||c.continuationIndex)],['Catalyst',clamp(f.catalyst||0)]];$('#signalMatrix').innerHTML=`<div class="signal-grid">${vals.map(([n,v])=>`<div class="signal-cell"><span>${n}</span><b>${fmt(v,0)}</b><div class="signal-spark">${[.25,.45,.32,.6,.52,.78,1].map(k=>`<i style="height:${Math.max(2,Math.round(v*k))}%"></i>`).join('')}</div></div>`).join('')}</div>`}
+function renderLifecycle(c){const steps=['DISCOVERED','WATCH','ACCUMULATING','ARMED','IGNITING','EXPANDING','DISTRIBUTING','CLOSED'];const idx=Math.max(0,steps.indexOf(c.lifecycle));$('#liquidityLifecycle').innerHTML=`<div class="lifecycle-strip">${steps.map((s,i)=>`${i?'<span class="life-arrow">←</span>':''}<div class="life-step ${i===idx?'active':''}">${s}</div>`).join('')}</div><div class="thesis-box"><b>إبطال الفرضية</b><div class="why">${esc(c.invalidation||'غير محدد في القراءة الحالية')}</div></div>`}
+function renderStatus(){const el=$('#status');if(!el)return;const ok=state.feeds.filter(x=>x.ok).length;el.innerHTML=state.loading?'<span class="pulse">جارٍ التحديث…</span>':`<span>${ok}/${FEEDS.length} feeds</span><span>${state.lastRefresh?ago(state.lastRefresh):'—'}</span>`}
+function renderSummary(){const valid=state.cases.filter(c=>c.sharia?.status!=='NON_COMPLIANT'),m={building:valid.filter(c=>c.lifecycle==='ACCUMULATING').length,armed:valid.filter(c=>c.lifecycle==='ARMED').length,igniting:valid.filter(c=>['IGNITING','EXPANDING'].includes(c.lifecycle)).length,dist:valid.filter(c=>c.lifecycle==='DISTRIBUTING').length};$('#summary').innerHTML=`<div style="--tone:#2f80ff"><b>${m.building}</b><span>BUILDING NOW</span><small>Accumulation cases</small></div><div style="--tone:#9b5cff"><b>${m.armed}</b><span>ARMED</span><small>Ready for confirmation</small></div><div style="--tone:#23d18b"><b>${m.igniting}</b><span>IGNITING NOW</span><small>Ignition / expansion</small></div><div style="--tone:#ff5b67"><b>${m.dist}</b><span>DISTRIBUTING</span><small>Exit / avoid risk</small></div>`}
+function renderTabs(){document.querySelectorAll('[data-tab]').forEach(b=>{b.classList.toggle('active',b.dataset.tab===state.activeTab);const n=state.cases.filter(c=>bucket(c)===b.dataset.tab&&(!state.hideNonCompliant||c.sharia?.status!=='NON_COMPLIANT')).length;b.querySelector('em').textContent=n})}
+function renderCards(){const rows=filtered(),el=$('#opportunities');el.innerHTML=rows.length?rows.slice(0,60).map(card).join(''):'<div class="empty">لا توجد حالات في هذا المسار وفق البيانات الحالية.</div>'}
+function renderFeeds(){$('#feedGrid').innerHTML=state.feeds.map(f=>`<div class="feed ${f.ok?'good':'fail'}"><b>${esc(f.name)}</b><span>${f.ok?`OK · ${f.ms}ms`:`FAIL · ${esc(f.error)}`}</span></div>`).join('')}
+function renderTrades(){const trades=T.read(),cases=new Map(state.cases.map(c=>[c.symbol,c]));$('#trades').innerHTML=trades.length?trades.map(t=>{const c=cases.get(t.symbol),p=c?((c.price-t.entryPrice)/t.entryPrice*100):t.pnlPct;return `<div class="trade-row"><div><b>${esc(t.symbol)}</b><span>دخول $${fmt(t.entryPrice,4)} · ${esc(t.status)}</span></div><div><b class="${p>=0?'up':'down'}">${pct(p)}</b><span>MFE ${pct(t.mfePct)} · MAE ${pct(t.maePct)}</span></div><div><span>${c?esc(c.lifecycle):'لا توجد قراءة حالية'}</span><span>Dist ${c?c.distributionRisk:'—'} · Cont ${c?c.continuationIndex:'—'}</span></div><div class="trade-actions">${t.status==='OPEN'?`<button data-close="${t.id}">إغلاق</button>`:''}<button data-remove="${t.id}">حذف</button></div></div>`}).join(''):'<div class="empty">لم تضف أي صفقة. اختر فرصة وسجل سعر دخولك الفعلي.</div>'}
+function renderAlerts(){const alerts=[...state.alerts,...T.readAlerts()].filter((a,i,x)=>x.findIndex(b=>b.id===a.id)===i).slice(0,20);$('#alerts').innerHTML=alerts.length?alerts.map(a=>`<div class="alert ${String(a.severity||'info').toLowerCase()}"><b>${esc(a.symbol)} · ${esc(a.type)}</b><span>${esc(a.message)}</span><small>${ago(a.createdAt)}</small></div>`).join(''):'<div class="empty">لا توجد تنبيهات جديدة.</div>'}
+function render(){renderStatus();renderSummary();renderTabs();renderCards();renderFocus();renderFeeds();renderTrades();renderAlerts()}
+function openTradeDialog(symbol){const c=state.cases.find(x=>x.symbol===symbol);if(!c)return;$('#tradeSymbol').value=symbol;$('#entryPrice').value=c.price||'';$('#personalStop').value='';$('#quantity').value='';$('#tradeContext').textContent=`${c.lifecycle} · Movement ${c.movementIndex} · Ignition ${c.ignitionIndex} · Sharia ${c.sharia?.status||'UNVERIFIED'}`;$('#tradeDialog').showModal()}
+function showDetail(symbol){const c=state.cases.find(x=>x.symbol===symbol);if(!c)return;$('#detailTitle').textContent=`${c.symbol} · ${c.lifecycle}`;$('#detailBody').innerHTML=`<pre>${esc(JSON.stringify({firstSeen:c.firstSeen,lastObserved:c.lastObserved,stage:c.stage,indices:{movement:c.movementIndex,ignition:c.ignitionIndex,continuation:c.continuationIndex,distribution:c.distributionRisk,risk:c.riskScore},catalyst:{clock:c.catalystClock,type:c.catalystType,at:c.catalystAt},sharia:c.sharia,featureMemory:E.decayFeatureBook(c.features),trace:c.trace},null,2))}</pre>`;$('#detailDialog').showModal()}
+document.addEventListener('click',e=>{const sel=e.target.closest('[data-select]');if(sel&&!e.target.closest('button')){state.selectedSymbol=sel.dataset.select;renderCards();renderFocus()}const add=e.target.closest('[data-add]');if(add)openTradeDialog(add.dataset.add);const det=e.target.closest('[data-detail]');if(det)showDetail(det.dataset.detail);const tab=e.target.closest('[data-tab]');if(tab){state.activeTab=tab.dataset.tab;const rows=filtered();if(rows.length)state.selectedSymbol=rows[0].symbol;renderTabs();renderCards();renderFocus()}const jump=e.target.closest('[data-jump]');if(jump){document.querySelectorAll('.side-nav button').forEach(x=>x.classList.remove('active'));jump.classList.add('active');const map={dashboard:'dashboard',opportunities:'opportunitiesPanel',trades:'tradesPanel',alerts:'alertsPanel',feeds:'feedGrid'},id=map[jump.dataset.jump];document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'})}const close=e.target.closest('[data-close]');if(close){const t=T.read().find(x=>x.id===close.dataset.close),c=state.cases.find(x=>x.symbol===t?.symbol),raw=prompt('سعر الخروج الفعلي',c?.price||t?.lastPrice||'');if(raw)try{T.closeTrade(close.dataset.close,Number(raw));renderTrades()}catch(err){alert(err.message)}}const rem=e.target.closest('[data-remove]');if(rem&&confirm('حذف الصفقة من القائمة؟')){T.removeTrade(rem.dataset.remove);renderTrades()}});
+$('#refreshBtn').addEventListener('click',refresh);$('#search').addEventListener('input',e=>{state.filter=e.target.value.toUpperCase().trim();renderCards()});$('#hideNonCompliant').addEventListener('change',e=>{state.hideNonCompliant=e.target.checked;localStorage.setItem(SETTINGS_KEY,JSON.stringify({hideNonCompliant:state.hideNonCompliant}));render()});$('#clearAlerts').addEventListener('click',()=>{T.clearAlerts();state.alerts=[];renderAlerts()});$('#tradeForm').addEventListener('submit',e=>{e.preventDefault();const symbol=$('#tradeSymbol').value,c=state.cases.find(x=>x.symbol===symbol);try{T.addTrade({symbol,entryPrice:Number($('#entryPrice').value),quantity:Number($('#quantity').value)||null,personalStop:Number($('#personalStop').value)||null,notes:$('#tradeNotes').value},c);$('#tradeDialog').close();renderTrades()}catch(err){$('#tradeError').textContent=err.message}});$('#cancelTrade').addEventListener('click',()=>$('#tradeDialog').close());$('#closeDetail').addEventListener('click',()=>$('#detailDialog').close());const settings=safeParse(localStorage.getItem(SETTINGS_KEY),{});if(typeof settings.hideNonCompliant==='boolean')state.hideNonCompliant=settings.hideNonCompliant;$('#hideNonCompliant').checked=state.hideNonCompliant;refresh();setInterval(refresh,120000);
 })();
