@@ -11,11 +11,11 @@ function isClosedSessionQuote(symbol){if(live?.marketClockSession!=='closed')ret
 function decorateCard(card){
   const symbol=card.querySelector('.ticker')?.textContent?.trim()?.toUpperCase();if(!symbol)return false;
   const badges=card.querySelector('.badges');const badgeList=[...card.querySelectorAll('.badges .badge')];
-  const lifecycle=badgeList[0]?.textContent?.trim()||'';const sharia=badgeList[1]?.textContent?.trim()||'';const dataBadge=badgeList.at(-1);
+  const lifecycle=badgeList[0]?.textContent?.trim()||'';const sharia=badgeList[1]?.textContent?.trim()||'';const dataBadge=badgeList.find(b=>['LOW','MEDIUM','HIGH','SESSION FINAL'].includes(b.textContent.trim()))||badgeList.at(-1);
   if(dataBadge&&isClosedSessionQuote(symbol)&&dataBadge.textContent.trim()==='LOW'){
     dataBadge.textContent='SESSION FINAL';dataBadge.classList.remove('bad');dataBadge.classList.add('session-final');dataBadge.title='آخر لقطة صحيحة من الجلسة السابقة؛ السوق مغلق حاليًا.';
   }
-  card.querySelector('.evidence-news')?.remove();
+  card.querySelectorAll('.badge.evidence,.evidence-news').forEach(n=>n.remove());
   const events=eventsFor(symbol);const recent=events.filter(e=>{const t=new Date(e.publishedAt||0).getTime();return Number.isFinite(t)&&Date.now()-t<=7*86400000}).slice(0,3);
   if(recent.length&&badges){const b=document.createElement('span');b.className='badge evidence';b.textContent=`NEWS ${recent.length}`;badges.appendChild(b);const top=recent[0];const box=document.createElement('div');box.className='evidence-news';box.innerHTML=`<b>${esc(top.type==='SEC'?`SEC ${top.form||''}`:'NEWS DISCOVERY')}</b> · ${esc(top.headline||'')}<br><span>${esc(top.source||top.domain||'source')} · ${esc(top.publishedAt||'')}</span>`;card.querySelector('.why')?.insertAdjacentElement('afterend',box)}
   const dataOk=!dataBadge?.classList.contains('bad');
@@ -26,15 +26,22 @@ function decorateCard(card){
   card.dataset.evidenceReady=ready?'1':'0';
   return ready;
 }
+function restorePending(list){
+  const existing=list.parentElement?.querySelector('.evidence-pending-wrap');if(!existing)return;
+  const existingSymbols=new Set([...list.querySelectorAll('.opp-card .ticker')].map(x=>x.textContent.trim().toUpperCase()));
+  for(const card of existing.querySelectorAll('.opp-card')){const symbol=card.querySelector('.ticker')?.textContent?.trim()?.toUpperCase();if(symbol&&!existingSymbols.has(symbol)){list.appendChild(card);existingSymbols.add(symbol)}}
+  existing.remove();
+}
 function applyGate(){
   injectStyle();const list=document.getElementById('opportunities');if(!list)return;
-  const existing=list.parentElement?.querySelector('.evidence-pending-wrap');existing?.remove();
-  const cards=[...list.querySelectorAll('.opp-card')];if(!cards.length)return;
+  restorePending(list);
+  list.querySelectorAll(':scope > .empty').forEach(n=>n.remove());
+  const cards=[...list.querySelectorAll(':scope > .opp-card')];if(!cards.length)return;
   let ready=0;const pending=[];for(const c of cards){decorateCard(c)?ready++:pending.push(c)}
   const head=list.closest('.opportunity-panel')?.querySelector('.section-head h2');if(head)head.textContent='الفرص مكتملة الأدلة';
   let count=list.closest('.opportunity-panel')?.querySelector('.evidence-ready-count');if(!count){count=document.createElement('div');count.className='evidence-ready-count';list.before(count)}count.textContent=`${ready} مكتملة الأدلة · ${pending.length} قيد الاستكمال`;
   if(pending.length){const d=document.createElement('details');d.className='evidence-pending-wrap';d.innerHTML=`<summary>قيد استكمال الأدلة (${pending.length}) — ليست فرصًا تنفيذية</summary><div class="evidence-pending"></div>`;list.after(d);const box=d.querySelector('.evidence-pending');pending.forEach(c=>box.appendChild(c));}
-  if(!ready&&list.querySelectorAll('.opp-card').length===0)list.insertAdjacentHTML('beforeend','<div class="empty">لا توجد حاليًا فرصة مكتملة السعر + الشرعية + المحفز/التأكيد الفني. الحالات الناقصة نُقلت أدناه بدل عرضها كفرص.</div>');
+  if(!ready)list.insertAdjacentHTML('beforeend','<div class="empty">لا توجد حاليًا فرصة مكتملة السعر + الشرعية + المحفز/التأكيد الفني. الحالات الناقصة نُقلت أدناه بدل عرضها كفرص.</div>');
 }
 async function refreshEvidence(){[live,intel]=await Promise.all([json(LIVE),json(INTEL)]);applyGate();setTimeout(applyGate,900)}
 window.addEventListener('DOMContentLoaded',()=>setTimeout(refreshEvidence,350),{once:true});
