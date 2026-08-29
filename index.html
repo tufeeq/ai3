@@ -6,10 +6,10 @@
 <meta name="theme-color" content="#070b12">
 <title>TAGX 3.0 — Trading Intelligence</title>
 <link rel="preload" href="/ai/tag/data/live-quotes.json" as="fetch" crossorigin>
-<link rel="preload" href="/data/intelligence.json" as="fetch" crossorigin>
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="theme.css">
 <link rel="stylesheet" href="decision-intelligence.css">
+<link rel="stylesheet" href="mobile.css">
 </head>
 <body>
 <div class="app-shell">
@@ -72,5 +72,5 @@
 </div>
 <dialog id="tradeDialog"><form id="tradeForm" method="dialog"><h3>إضافة إلى My Trades</h3><p id="tradeContext" class="muted"></p><input id="tradeSymbol" type="hidden"><label>سعر الدخول الفعلي<input id="entryPrice" type="number" step="0.0001" min="0.0001" required></label><label>الكمية — اختياري<input id="quantity" type="number" step="1" min="0"></label><label>وقفك الشخصي — اختياري<input id="personalStop" type="number" step="0.0001" min="0"></label><label>ملاحظات<textarea id="tradeNotes" rows="3"></textarea></label><div id="tradeError" class="error"></div><div class="dialog-actions"><button type="button" id="cancelTrade">إلغاء</button><button type="submit" class="primary">حفظ ومتابعة</button></div></form></dialog>
 <dialog id="detailDialog"><div class="detail-wrap"><div class="section-head sticky-dialog-head"><h3 id="detailTitle">تفاصيل</h3><button id="closeDetail">إغلاق</button></div><div id="detailBody"></div></div></dialog>
-<script src="fast-fetch.js"></script><script src="core/engine.js"></script><script src="core/sharia.js"></script><script src="core/trade-monitor.js"></script><script src="core/learning.js"></script><script src="app.js"></script><script src="ui-enhancements.js"></script><script src="decision-intelligence.js"></script>
+<script src="fast-fetch.js"></script><script src="core/engine.js"></script><script src="core/sharia.js"></script><script src="core/trade-monitor.js"></script><script src="core/learning.js"></script><script src="app.js"></script><script src="ui-enhancements.js"></script><script src="decision-intelligence.js"></script><script src="ui-truth.js"></script>
 </body></html>
