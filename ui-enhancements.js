@@ -49,6 +49,5 @@ document.addEventListener('click',e=>{
   if(e.target.closest('[data-detail]'))setTimeout(()=>{const b=document.querySelector('#detailBody');if(b)b.dataset.enhanced='0';upgradeDetail()},0);
   if(e.target.closest('#closeDetail')){const b=document.querySelector('#detailBody');if(b)b.dataset.enhanced='0'}
 });
-new MutationObserver(()=>upgradeDetail()).observe(document.body,{subtree:true,childList:true});
 installThemeSwitch();
 })();
