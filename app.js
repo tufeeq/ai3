@@ -1,74 +1,129 @@
-const $=id=>document.getElementById(id);
-const els={shell:document.querySelector('.app-shell'),sidebar:document.querySelector('.sidebar'),projects:$('projectsList'),chats:$('chatsList'),files:$('filesList'),welcome:$('welcome'),messages:$('messages'),form:$('chatForm'),input:$('promptInput'),send:$('sendBtn'),stop:$('stopBtn'),fileInput:$('fileInput'),activeContext:$('activeContext'),projectPanel:$('projectPanel'),projectName:$('panelProjectName'),projectBreadcrumb:$('projectBreadcrumb'),chatTitle:$('chatTitle'),memory:$('projectMemory'),linkedSummary:$('linkedChatsSummary'),fileCount:$('fileCount'),settings:$('settingsDialog'),projectDialog:$('projectDialog'),projectDialogTitle:$('projectDialogTitle'),projectNameInput:$('projectNameInput'),projectDescriptionInput:$('projectDescriptionInput'),modelSelect:$('modelSelect'),modelState:$('modelState'),modelStateShort:$('modelStateShort'),modelDot:$('modelDot'),compat:$('compatibilityBadge'),modelHint:$('modelHint'),progress:$('modelProgress'),progressBar:$('progressBar'),progressLabel:$('progressLabel'),system:$('systemPrompt'),temperature:$('temperature'),tempValue:$('temperatureValue'),maxTokens:$('maxTokens'),memoryToggle:$('memoryToggle'),antiRepeat:$('antiRepeatToggle'),export:$('exportBtn'),exportMenu:$('exportMenu')};
-const models=[
-{id:'Qwen2.5-1.5B-Instruct-q4f16_1-MLC',name:'Qwen 2.5 1.5B — Recommended',note:'Best balance for coherent local writing.'},
-{id:'Llama-3.2-1B-Instruct-q4f16_1-MLC',name:'Llama 3.2 1B — Alternative',note:'Good general-purpose alternative.'},
-{id:'Qwen2.5-0.5B-Instruct-q4f16_1-MLC',name:'Qwen 2.5 0.5B — Low-memory',note:'Fastest, but use for short responses only.'}
+(()=>{
+'use strict';
+const E=window.TAGX3Engine,S=window.TAGX3Sharia,T=window.TAGX3Trades;
+const CASE_KEY='tagx3.opportunityCases.v1';
+const SETTINGS_KEY='tagx3.settings.v1';
+const state={cases:[],feeds:[],alerts:[],activeTab:'building',filter:'',hideNonCompliant:true,loading:false,lastRefresh:null};
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=(v,d=2)=>Number.isFinite(+v)?(+v).toFixed(d):'—';
+const pct=v=>Number.isFinite(+v)?`${+v>=0?'+':''}${(+v).toFixed(2)}%`:'—';
+const ago=iso=>{if(!iso)return'—';const m=Math.max(0,(Date.now()-new Date(iso).getTime())/60000);return m<60?`${Math.round(m)}د`:m<1440?`${(m/60).toFixed(1)}س`:`${(m/1440).toFixed(1)}ي`;};
+const safeParse=(s,f)=>{try{return JSON.parse(s)||f}catch{return f}};
+const loadPrev=()=>new Map((safeParse(localStorage.getItem(CASE_KEY),[])||[]).map(x=>[x.symbol,x]));
+const saveCases=rows=>localStorage.setItem(CASE_KEY,JSON.stringify(rows.map(c=>({symbol:c.symbol,firstSeen:c.firstSeen,lastObserved:c.lastObserved,lifecycle:c.lifecycle,movementIndex:c.movementIndex,ignitionIndex:c.ignitionIndex,continuationIndex:c.continuationIndex,distributionRisk:c.distributionRisk,riskScore:c.riskScore,price:c.price,sharia:c.sharia?.status||'UNVERIFIED'}))));
+
+const FEEDS=[
+ {name:'Live Quotes',url:'/ai/tag/data/live-quotes.json',core:true,kind:'quotes'},
+ {name:'Sentinel',url:'/ai/tag/data/tagx2-sentinel.json',core:false,kind:'quotes'},
+ {name:'Coverage Rescue',url:'/ai/tag/data/coverage-rescue.json',core:false,kind:'quotes'},
+ {name:'SEC Catalysts',url:'/ai/tag/data/sec-catalysts.json',core:false,kind:'catalyst'},
+ {name:'Sharia Production',url:'/ai/tag/data/sharia.json',core:false,kind:'sharia'},
+ {name:'Sharia Challenger',url:'/ai/tag/data/sharia-v4-challenger.json',core:false,kind:'sharia'},
+ {name:'Top20 Audit',url:'/ai/tag/data/tagx2-top20-audit.json',core:false,kind:'audit'}
 ];
-let db,engine=null,webllm=null,isGenerating=false,generationStopped=false,currentProject=null,currentChat=null,projectCache=[],chatCache=[],fileCache=[];
-const settings=Object.assign({model:models[0].id,system:els.system.value,temperature:.15,maxTokens:768,useMemory:true,antiRepeat:true},JSON.parse(localStorage.getItem('nexus-settings-v3')||'{}'));
 
-function openDB(){return new Promise((resolve,reject)=>{const req=indexedDB.open('nexus-workspace-v3',1);req.onupgradeneeded=()=>{const d=req.result;if(!d.objectStoreNames.contains('projects'))d.createObjectStore('projects',{keyPath:'id'});if(!d.objectStoreNames.contains('chats')){const s=d.createObjectStore('chats',{keyPath:'id'});s.createIndex('projectId','projectId')}if(!d.objectStoreNames.contains('files')){const s=d.createObjectStore('files',{keyPath:'id'});s.createIndex('projectId','projectId')}};req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error)})}
-function store(name,mode='readonly'){return db.transaction(name,mode).objectStore(name)}
-function all(name){return new Promise((r,j)=>{const q=store(name).getAll();q.onsuccess=()=>r(q.result);q.onerror=()=>j(q.error)})}
-function put(name,value){return new Promise((r,j)=>{const q=store(name,'readwrite').put(value);q.onsuccess=()=>r(value);q.onerror=()=>j(q.error)})}
-function remove(name,id){return new Promise((r,j)=>{const q=store(name,'readwrite').delete(id);q.onsuccess=()=>r();q.onerror=()=>j(q.error)})}
-function uid(prefix){return `${prefix}_${Date.now()}_${Math.random().toString(36).slice(2,8)}`}
-function now(){return new Date().toISOString()}
-function esc(s=''){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function fmt(text=''){let t=esc(text);t=t.replace(/```([\s\S]*?)```/g,'<pre><code>$1</code></pre>').replace(/^### (.*)$/gm,'<h3>$1</h3>').replace(/^## (.*)$/gm,'<h2>$1</h2>').replace(/^# (.*)$/gm,'<h1>$1</h1>').replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>').replace(/`([^`]+)`/g,'<code>$1</code>');const lines=t.split('\n');let html='',inList=false;for(const l of lines){if(/^[-•] /.test(l)){if(!inList){html+='<ul>';inList=true}html+=`<li>${l.replace(/^[-•] /,'')}</li>`}else{if(inList){html+='</ul>';inList=false}if(l&&!/^<h|^<pre/.test(l))html+=`<p>${l}</p>`;else html+=l}}if(inList)html+='</ul>';return html}
-function saveSettings(){Object.assign(settings,{model:els.modelSelect.value,system:els.system.value,temperature:+els.temperature.value,maxTokens:+els.maxTokens.value,useMemory:els.memoryToggle.checked,antiRepeat:els.antiRepeat.checked});localStorage.setItem('nexus-settings-v3',JSON.stringify(settings))}
-function applySettings(){els.modelSelect.innerHTML=models.map(m=>`<option value="${m.id}">${m.name}</option>`).join('');els.modelSelect.value=settings.model;els.system.value=settings.system;els.temperature.value=settings.temperature;els.tempValue.textContent=settings.temperature;els.maxTokens.value=settings.maxTokens;els.memoryToggle.checked=settings.useMemory;els.antiRepeat.checked=settings.antiRepeat;updateModelHint()}
-function updateModelHint(){els.modelHint.textContent=models.find(m=>m.id===els.modelSelect.value)?.note||''}
+async function fetchJson(feed){
+ const started=performance.now();
+ try{const r=await fetch(`${feed.url}?v=${Date.now()}`,{cache:'no-store'});if(!r.ok)throw new Error(`HTTP ${r.status}`);const data=await r.json();return{...feed,ok:true,data,ms:Math.round(performance.now()-started)};}
+ catch(error){return{...feed,ok:false,error:String(error?.message||error),ms:Math.round(performance.now()-started)};}
+}
+function rowsOf(p){if(Array.isArray(p))return p;for(const k of ['data','quotes','results','stocks','items','candidates','opportunities','rows'])if(Array.isArray(p?.[k]))return p[k];return[];}
+function symbolOf(x){return String(x?.symbol||x?.ticker||x?.code||'').toUpperCase().trim();}
+function catalystMap(payload){const map=new Map();for(const r of rowsOf(payload)){const s=symbolOf(r);if(!s)continue;const type=r.type||r.catalystType||r.form||r.eventType||'SEC/Event';const at=r.eventAt||r.catalystAt||r.acceptedAt||r.filedAt||r.timestamp||null;let days=999;if(at){days=(new Date(at).getTime()-Date.now())/86400000;if(days<0&&days>-2)days=0;}const score=Number(r.score||r.materialityScore||r.catalystScore||0)||(type?45:0);map.set(s,{catalystType:type,catalystAt:at,catalystScore:E.clamp(score),daysToCatalyst:days,catalystObservedAt:r.observedAt||r.updatedAt||at});}return map;}
+function shariaMaps(feedResults){return feedResults.filter(f=>f.ok&&f.kind==='sharia').map(f=>S.indexPayload(f.data,f.name));}
+function enrichFromLegacy(raw){
+ const x=raw||{};return{
+  velocity5m:x.velocity5m??x.v5??x.change5m??x.velocity?.m5,
+  velocity15m:x.velocity15m??x.v15??x.change15m??x.velocity?.m15,
+  tradesPerMin:x.tradesPerMin??x.tpm,
+  floatShares:x.floatShares??x.float??x.sharesFloat,
+  avgVolume:x.avgVolume??x.averageVolume??x.avgVol,
+  preMarketChangePct:x.preMarketChangePct??x.preMarketChangePercent,
+  afterHoursChangePct:x.afterHoursChangePct??x.postMarketChangePercent,
+  ...x
+ };
+}
+function dedupeQuotes(results){
+ const by=new Map();
+ for(const f of results.filter(x=>x.ok&&x.kind==='quotes')){
+  for(const raw0 of rowsOf(f.data)){
+   const raw=enrichFromLegacy(raw0),s=symbolOf(raw);if(!s)continue;
+   raw.symbol=s; raw.source=f.name;
+   const ts=raw.observedAt||raw.updatedAt||raw.timestamp||f.data?.updatedAt||new Date().toISOString();raw.observedAt=ts;
+   const old=by.get(s); if(!old||new Date(ts)>=new Date(old.observedAt))by.set(s,raw);
+  }
+ }
+ return [...by.values()];
+}
+function contextFor(symbol,catalysts,raw){
+ const c=catalysts.get(symbol)||{};
+ return {...c,source:raw.source||'legacy-bridge',sourceMeta:{discoveryOnly:raw.source!=='Live Quotes'},formerRunnerScore:Number(raw.formerRunnerScore||raw.formerRunner||0),sectorLeadLagScore:Number(raw.sectorLeadLagScore||raw.sympathyScore||0)};
+}
+async function refresh(){
+ if(state.loading)return;state.loading=true;renderStatus();
+ const results=await Promise.all(FEEDS.map(fetchJson));state.feeds=results;
+ const quotes=dedupeQuotes(results),prev=loadPrev();
+ const catFeed=results.find(x=>x.ok&&x.kind==='catalyst');const cats=catalystMap(catFeed?.data||[]);
+ let cases=quotes.map(raw=>E.analyze(raw,contextFor(symbolOf(raw),cats,raw),prev.get(symbolOf(raw))||{}));
+ cases=S.attach(cases,shariaMaps(results),{});
+ cases=E.rank(cases);
+ state.cases=cases;saveCases(cases);state.lastRefresh=new Date().toISOString();state.loading=false;
+ const tradeResult=T.updateAll(new Map(cases.map(c=>[c.symbol,c])));state.alerts=tradeResult.alerts;
+ render();
+}
+function shariaClass(s){return{'VERIFIED':'ok','LIKELY_COMPLIANT':'likely','CONFLICT_REVIEW':'warn','UNVERIFIED':'muted','NON_COMPLIANT':'bad'}[s]||'muted';}
+function lifecycleClass(s){return{'ARMED':'armed','IGNITING':'ignite','EXPANDING':'expand','ACCUMULATING':'acc','DISTRIBUTING':'dist'}[s]||'watch';}
+function bucket(c){if(c.lifecycle==='DISTRIBUTING'||c.lifecycle==='CLOSED'||c.stage==='EXHAUSTION_RISK')return'exit';if(c.lifecycle==='IGNITING'||c.lifecycle==='EXPANDING')return'igniting';if(c.catalystAt||c.rawFeatures?.catalyst>=40)return'catalyst';return'building';}
+function filtered(){return state.cases.filter(c=>(!state.hideNonCompliant||c.sharia?.status!=='NON_COMPLIANT')&&(!state.filter||c.symbol.includes(state.filter))).filter(c=>bucket(c)===state.activeTab);}
+function card(c){
+ const stale=!c.dataConfidence?.fresh; const sh=c.sharia||{status:'UNVERIFIED',reason:''};
+ return `<article class="opp-card ${lifecycleClass(c.lifecycle)}">
+  <div class="card-head"><div><div class="ticker">${esc(c.symbol)}</div><div class="mini">منذ ${ago(c.firstSeen)} · ${esc(c.stage)}</div></div><div class="price"><b>$${fmt(c.price,4)}</b><span class="${c.changePct>=0?'up':'down'}">${pct(c.changePct)}</span></div></div>
+  <div class="badges"><span class="badge state">${esc(c.lifecycle)}</span><span class="badge sharia ${shariaClass(sh.status)}">${esc(sh.status)}</span><span class="badge ${stale?'bad':'ok'}">DATA ${esc(c.dataConfidence?.label||'LOW')}</span>${c.unknownCatalyst?'<span class="badge warn">UNKNOWN CATALYST</span>':''}</div>
+  <div class="meters">
+   ${meter('Movement',c.movementIndex)}${meter('Ignition',c.ignitionIndex)}${meter('Continuation',c.continuationIndex)}${meter('Distribution',c.distributionRisk,true)}
+  </div>
+  <div class="why"><b>لماذا الآن:</b> ${esc((c.whyNow||[]).join(' · '))}</div>
+  <div class="details"><span>RVOL ${fmt(c.rawFeatures?.relVolume,2)}×</span><span>Float turnover ${fmt((c.rawFeatures?.floatTurnover||0)*100,1)}%</span><span>Risk ${c.riskScore}/100</span><span>${c.catalystClock||'NO CLOCK'}</span></div>
+  <div class="sharia-note"><b>التحليل الشرعي:</b> ${esc(sh.reason||'غير متحقق')} ${sh.evidence?.length?`· مصادر: ${sh.evidence.length}`:''}</div>
+  <div class="invalidation"><b>إبطال الفرضية:</b> ${esc(c.invalidation)}</div>
+  <div class="actions"><button class="primary" data-add="${esc(c.symbol)}">أضف لمتابعتي بسعر الدخول</button><button data-detail="${esc(c.symbol)}">تفاصيل الإشارة</button></div>
+ </article>`;
+}
+function meter(label,v,risk=false){return `<div class="meter"><div><span>${label}</span><b>${Math.round(v||0)}</b></div><progress max="100" value="${Math.round(v||0)}" class="${risk?'risk':''}"></progress></div>`;}
+function renderStatus(){const el=$('#status');if(!el)return;const ok=state.feeds.filter(x=>x.ok).length;el.innerHTML=state.loading?'<span class="pulse">جارٍ تحديث المحركات…</span>':`<span>${ok}/${FEEDS.length} feeds</span><span>آخر تحديث ${state.lastRefresh?ago(state.lastRefresh):'—'}</span>`;}
+function renderTabs(){document.querySelectorAll('[data-tab]').forEach(b=>{b.classList.toggle('active',b.dataset.tab===state.activeTab);const n=state.cases.filter(c=>bucket(c)===b.dataset.tab&&(!state.hideNonCompliant||c.sharia?.status!=='NON_COMPLIANT')).length;b.querySelector('em').textContent=n;});}
+function renderCards(){const rows=filtered(),el=$('#opportunities');el.innerHTML=rows.length?rows.slice(0,80).map(card).join(''):`<div class="empty">لا توجد حالات في هذا المسار وفق البيانات الحالية. هذا ليس حكمًا بأن السوق بلا فرص؛ قد تكون التغذية ناقصة أو الحالات في مسار آخر.</div>`;}
+function renderFeeds(){const el=$('#feedGrid');el.innerHTML=state.feeds.map(f=>`<div class="feed ${f.ok?'good':'fail'}"><b>${esc(f.name)}</b><span>${f.ok?`OK · ${f.ms}ms`:`FAIL · ${esc(f.error)}`}</span></div>`).join('');}
+function renderTrades(){
+ const trades=T.read(),cases=new Map(state.cases.map(c=>[c.symbol,c]));const el=$('#trades');
+ el.innerHTML=trades.length?trades.map(t=>{const c=cases.get(t.symbol),p=c?((c.price-t.entryPrice)/t.entryPrice*100):t.pnlPct;return `<div class="trade-row"><div><b>${esc(t.symbol)}</b><span>دخول $${fmt(t.entryPrice,4)} · ${esc(t.status)}</span></div><div><b class="${p>=0?'up':'down'}">${pct(p)}</b><span>MFE ${pct(t.mfePct)} · MAE ${pct(t.maePct)}</span></div><div><span>${c?esc(c.lifecycle):'لا توجد قراءة حالية'}</span><span>Dist ${c?c.distributionRisk:'—'} · Cont ${c?c.continuationIndex:'—'}</span></div><div class="trade-actions">${t.status==='OPEN'?`<button data-close="${t.id}">إغلاق</button>`:''}<button data-remove="${t.id}">حذف</button></div></div>`}).join(''):'<div class="empty">لم تضف أي صفقة. اختر فرصة وسجل سعر دخولك الفعلي.</div>';
+}
+function renderAlerts(){const alerts=[...state.alerts,...T.readAlerts()].filter((a,i,x)=>x.findIndex(b=>b.id===a.id)===i).slice(0,20),el=$('#alerts');el.innerHTML=alerts.length?alerts.map(a=>`<div class="alert ${a.severity.toLowerCase()}"><b>${esc(a.symbol)} · ${esc(a.type)}</b><span>${esc(a.message)}</span><small>${ago(a.createdAt)}</small></div>`).join(''):'<div class="empty">لا توجد تنبيهات جديدة.</div>';}
+function renderSummary(){
+ const valid=state.cases.filter(c=>c.sharia?.status!=='NON_COMPLIANT');
+ const metrics={armed:valid.filter(c=>c.lifecycle==='ARMED').length,igniting:valid.filter(c=>['IGNITING','EXPANDING'].includes(c.lifecycle)).length,building:valid.filter(c=>c.lifecycle==='ACCUMULATING').length,dist:valid.filter(c=>c.lifecycle==='DISTRIBUTING').length};
+ $('#summary').innerHTML=`<div><b>${metrics.armed}</b><span>ARMED</span></div><div><b>${metrics.igniting}</b><span>IGNITING</span></div><div><b>${metrics.building}</b><span>ACCUMULATING</span></div><div><b>${metrics.dist}</b><span>DISTRIBUTING</span></div>`;
+}
+function render(){renderStatus();renderSummary();renderTabs();renderCards();renderFeeds();renderTrades();renderAlerts();}
+function openTradeDialog(symbol){const c=state.cases.find(x=>x.symbol===symbol);if(!c)return;const d=$('#tradeDialog');$('#tradeSymbol').value=symbol;$('#entryPrice').value=c.price||'';$('#personalStop').value='';$('#quantity').value='';$('#tradeContext').textContent=`${c.lifecycle} · Movement ${c.movementIndex} · Ignition ${c.ignitionIndex} · Sharia ${c.sharia?.status||'UNVERIFIED'}`;d.showModal();}
+function showDetail(symbol){const c=state.cases.find(x=>x.symbol===symbol);if(!c)return;const d=$('#detailDialog');$('#detailTitle').textContent=`${c.symbol} · ${c.lifecycle}`;$('#detailBody').innerHTML=`<pre>${esc(JSON.stringify({firstSeen:c.firstSeen,lastObserved:c.lastObserved,stage:c.stage,indices:{movement:c.movementIndex,ignition:c.ignitionIndex,continuation:c.continuationIndex,distribution:c.distributionRisk,risk:c.riskScore},catalyst:{clock:c.catalystClock,type:c.catalystType,at:c.catalystAt},sharia:c.sharia,featureMemory:E.decayFeatureBook(c.features),trace:c.trace},null,2))}</pre>`;d.showModal();}
 
-async function ensureDefault(){let ps=await all('projects');if(!ps.length){const p={id:uid('project'),name:'Personal workspace',description:'Your default project',memory:'',createdAt:now(),updatedAt:now()};await put('projects',p);ps=[p]}projectCache=ps.sort((a,b)=>b.updatedAt.localeCompare(a.updatedAt));currentProject=projectCache[0];await loadProject(currentProject.id)}
-async function loadProject(id){projectCache=await all('projects');currentProject=projectCache.find(p=>p.id===id)||projectCache[0];chatCache=(await all('chats')).filter(c=>c.projectId===currentProject.id).sort((a,b)=>b.updatedAt.localeCompare(a.updatedAt));fileCache=(await all('files')).filter(f=>f.projectId===currentProject.id).sort((a,b)=>b.createdAt.localeCompare(a.createdAt));currentChat=chatCache[0]||null;renderAll()}
-function renderAll(){renderProjects();renderChats();renderFiles();renderProject();renderChat()}
-function renderProjects(){els.projects.innerHTML=projectCache.sort((a,b)=>b.updatedAt.localeCompare(a.updatedAt)).map(p=>`<button class="project-item ${p.id===currentProject?.id?'active':''}" data-id="${p.id}"><span class="project-icon">◆</span><span class="item-text">${esc(p.name)}</span></button>`).join('');els.projects.querySelectorAll('button').forEach(b=>b.onclick=()=>loadProject(b.dataset.id))}
-function renderChats(){if(!chatCache.length){els.chats.innerHTML='<div class="empty-small">No chats yet</div>';return}els.chats.innerHTML=chatCache.map(c=>`<button class="chat-item ${c.id===currentChat?.id?'active':''}" data-id="${c.id}"><span>◌</span><span class="item-text">${esc(c.title||'New chat')}</span></button>`).join('');els.chats.querySelectorAll('button').forEach(b=>{b.onclick=()=>{currentChat=chatCache.find(c=>c.id===b.dataset.id);renderChats();renderChat()};b.oncontextmenu=async e=>{e.preventDefault();if(confirm('Delete this chat?')){await remove('chats',b.dataset.id);chatCache=chatCache.filter(c=>c.id!==b.dataset.id);currentChat=chatCache[0]||null;renderAll()}}})}
-function renderFiles(){els.fileCount.textContent=`${fileCache.length} file${fileCache.length===1?'':'s'}`;if(!fileCache.length){els.files.innerHTML='<div class="empty-small">Files added here become available to every chat in this project.</div>';return}els.files.innerHTML=fileCache.map(f=>`<div class="file-item"><span class="file-type">${esc((f.name.split('.').pop()||'FILE').slice(0,4).toUpperCase())}</span><div class="file-info"><strong title="${esc(f.name)}">${esc(f.name)}</strong><small>${formatBytes(f.size)}</small></div><button class="file-delete" data-id="${f.id}" title="Remove">×</button></div>`).join('');els.files.querySelectorAll('.file-delete').forEach(b=>b.onclick=async()=>{await remove('files',b.dataset.id);fileCache=fileCache.filter(f=>f.id!==b.dataset.id);renderFiles();updateContextBar()})}
-function renderProject(){els.projectName.textContent=currentProject.name;els.projectBreadcrumb.textContent=currentProject.name;els.memory.value=currentProject.memory||'';els.linkedSummary.textContent=chatCache.length?`${chatCache.length} saved chat${chatCache.length===1?'':'s'} can inform new conversations in this project.`:'New chats will use relevant context from previous conversations in this project.';updateContextBar()}
-function renderChat(){els.messages.innerHTML='';const messages=currentChat?.messages||[];if(messages.length){els.welcome.classList.add('hidden');els.messages.classList.remove('hidden');messages.forEach(m=>renderMessage(m.role,m.content,false));els.export.disabled=!messages.some(m=>m.role==='assistant')}else{els.welcome.classList.remove('hidden');els.messages.classList.add('hidden');els.export.disabled=true}els.chatTitle.textContent=currentChat?.title||'New chat';setTimeout(()=>els.messages.scrollTop=els.messages.scrollHeight,0)}
-function renderMessage(role,content,append=true){if(append){els.welcome.classList.add('hidden');els.messages.classList.remove('hidden')}const row=document.createElement('article');row.className=`message ${role}`;row.innerHTML=`<div class="avatar">${role==='user'?'You':'N'}</div><div class="message-body">${fmt(content)}</div>`;els.messages.appendChild(row);els.messages.scrollTop=els.messages.scrollHeight;return row}
-function formatBytes(n=0){if(n<1024)return `${n} B`;if(n<1048576)return `${(n/1024).toFixed(1)} KB`;return `${(n/1048576).toFixed(1)} MB`}
-function updateContextBar(){const bits=[];if(fileCache.length)bits.push(`${fileCache.length} project file${fileCache.length===1?'':'s'}`);if(currentProject?.memory)bits.push('project memory');if(settings.useMemory&&chatCache.length>1)bits.push('linked chat history');els.activeContext.textContent=bits.length?`Using ${bits.join(' • ')}`:'';els.activeContext.classList.toggle('hidden',!bits.length)}
-
-async function createChat(){currentChat={id:uid('chat'),projectId:currentProject.id,title:'New chat',messages:[],createdAt:now(),updatedAt:now()};await put('chats',currentChat);chatCache.unshift(currentChat);renderAll();els.input.focus()}
-async function createProject(){const name=els.projectNameInput.value.trim();if(!name)return;const p={id:uid('project'),name,description:els.projectDescriptionInput.value.trim(),memory:'',createdAt:now(),updatedAt:now()};await put('projects',p);projectCache.unshift(p);els.projectNameInput.value='';els.projectDescriptionInput.value='';currentProject=p;chatCache=[];fileCache=[];currentChat=null;renderAll()}
-async function uploadFiles(list){for(const f of list){if(f.size>2_000_000){alert(`${f.name} is larger than 2 MB and was skipped.`);continue}let text='';try{text=await f.text()}catch{continue}const item={id:uid('file'),projectId:currentProject.id,name:f.name,type:f.type,size:f.size,text,createdAt:now()};await put('files',item);fileCache.unshift(item)}renderFiles();updateContextBar();els.fileInput.value=''}
-
-async function loadWebLLM(){if(webllm)return webllm;let err;for(const u of ['https://esm.run/@mlc-ai/web-llm','https://esm.sh/@mlc-ai/web-llm']){try{webllm=await import(u);return webllm}catch(e){err=e}}throw err||new Error('Could not load WebLLM')}
-function setModelState(state,text){els.modelState.textContent=text;els.modelStateShort.textContent=text;els.modelDot.className=`status-dot ${state}`}
-async function loadModel(){saveSettings();if(!navigator.gpu){setModelState('','WebGPU unavailable');alert('This browser does not support WebGPU. Use an updated Chrome or Edge browser with hardware acceleration enabled.');return}try{setModelState('loading','Loading model…');els.progress.classList.remove('hidden');els.progressBar.style.width='2%';const mod=await loadWebLLM();engine=await mod.CreateMLCEngine(settings.model,{initProgressCallback:p=>{const x=Math.max(2,Math.round((p.progress||0)*100));els.progressBar.style.width=`${x}%`;els.progressLabel.textContent=p.text||`Loading ${x}%`;setModelState('loading',`Loading ${x}%`)}});els.progress.classList.add('hidden');setModelState('ready','Model ready');els.settings.close()}catch(e){engine=null;els.progress.classList.add('hidden');setModelState('','Load failed');alert(`Model loading failed: ${e.message||e}`)}}
-function unloadModel(){try{engine?.unload?.()}catch{}engine=null;setModelState('','Model not loaded')}
-function degenerationReason(text){const words=text.toLowerCase().match(/[a-z0-9À-žء-ي]+/g)||[];if(words.length<100)return'';const recent=words.slice(-150),ratio=new Set(recent).size/recent.length;if(ratio<.48)return'low vocabulary diversity';let same=0;for(let i=1;i<recent.length;i++)if(recent[i]===recent[i-1])same++;if(same>=2)return'repeated words';const grams=new Map();let repeats=0;for(let i=0;i<recent.length-3;i++){const g=recent.slice(i,i+4).join(' '),n=(grams.get(g)||0)+1;grams.set(g,n);if(n===3)repeats++}if(repeats>=2)return'repeated phrases';const punct=Math.max(text.lastIndexOf('.'),text.lastIndexOf('!'),text.lastIndexOf('?'),text.lastIndexOf('؟'));if((text.slice(punct+1).match(/\w+/g)||[]).length>90)return'an unfinished run-on sentence';return''}
-function trimAnswer(t){let s=t.slice(0,7000).trim(),cut=Math.max(s.lastIndexOf('.'),s.lastIndexOf('!'),s.lastIndexOf('?'),s.lastIndexOf('؟'),s.lastIndexOf('\n'));if(cut>s.length-900)s=s.slice(0,cut+1);return s.trim()}
-function linkedContext(){if(!settings.useMemory)return'';const previous=chatCache.filter(c=>c.id!==currentChat?.id).slice(0,5).map(c=>{const user=c.messages.find(m=>m.role==='user')?.content||'';const assistant=[...c.messages].reverse().find(m=>m.role==='assistant')?.content||'';return `CHAT: ${c.title}\nUser request: ${user.slice(0,450)}\nOutcome: ${assistant.slice(0,700)}`}).join('\n\n');return [`PROJECT MEMORY:\n${currentProject.memory||'(none)'}`,previous?`PREVIOUS PROJECT CHATS:\n${previous}`:''].filter(Boolean).join('\n\n')}
-function fileContext(){let used=0,out=[];for(const f of fileCache.slice(0,12)){const remaining=18000-used;if(remaining<=0)break;const chunk=f.text.slice(0,Math.min(5000,remaining));used+=chunk.length;out.push(`FILE: ${f.name}\n${chunk}`)}return out.join('\n\n')}
-async function stopGeneration(){generationStopped=true;try{engine?.interruptGenerate?.()}catch{}els.stop.classList.add('hidden');els.send.classList.remove('hidden')}
-async function submitPrompt(raw){const text=raw.trim();if(!text||isGenerating)return;if(!engine){els.settings.showModal();return}if(!currentChat)await createChat();isGenerating=true;generationStopped=false;els.send.classList.add('hidden');els.stop.classList.remove('hidden');els.input.value='';resizeInput();currentChat.messages.push({role:'user',content:text});if(currentChat.title==='New chat')currentChat.title=text.replace(/[#*_]/g,'').slice(0,48);currentChat.updatedAt=now();await put('chats',currentChat);renderMessage('user',text);renderChats();els.chatTitle.textContent=currentChat.title;const assistantRow=renderMessage('assistant','');assistantRow.classList.add('generating');const body=assistantRow.querySelector('.message-body');const context=[linkedContext(),fileContext()].filter(Boolean).join('\n\n');const system=`${settings.system}\n\nUse the supplied project context only when relevant. Do not pretend a file contains information that is not present. Keep sentences concise. Stop immediately after completing the task. Never continue with associative word chains or filler.\n\n${context}`;try{const history=currentChat.messages.slice(-12).map(m=>({role:m.role,content:m.content}));const stream=await engine.chat.completions.create({messages:[{role:'system',content:system},...history],temperature:Math.min(.35,settings.temperature),top_p:.75,max_tokens:Math.min(1536,settings.maxTokens),frequency_penalty:.9,presence_penalty:0,stop:['<|eot_id|>','<|im_end|>','\n\n\n\n'],stream:true});let answer='';for await(const chunk of stream){if(generationStopped)break;answer+=chunk.choices?.[0]?.delta?.content||'';if(settings.antiRepeat){const reason=degenerationReason(answer);if(reason){await stopGeneration();answer=trimAnswer(answer)+`\n\n[Generation stopped automatically because of ${reason}.]`;break}}if(answer.length>7000){await stopGeneration();answer=trimAnswer(answer)+'\n\n[Generation stopped at the safe length limit.]';break}body.innerHTML=fmt(answer);els.messages.scrollTop=els.messages.scrollHeight}if(!answer.trim())answer=generationStopped?'Generation stopped.':'The model returned no text.';body.innerHTML=fmt(answer);assistantRow.classList.remove('generating');currentChat.messages.push({role:'assistant',content:answer});currentChat.updatedAt=now();await put('chats',currentChat);chatCache=chatCache.map(c=>c.id===currentChat.id?currentChat:c).sort((a,b)=>b.updatedAt.localeCompare(a.updatedAt));currentProject.updatedAt=now();await put('projects',currentProject);els.export.disabled=false;renderChats()}catch(e){assistantRow.classList.remove('generating');body.innerHTML=fmt(`Generation failed: ${e.message||e}\n\nReload the model from Settings and try a shorter request.`)}finally{isGenerating=false;els.stop.classList.add('hidden');els.send.classList.remove('hidden');els.input.focus()}}
-
-function activeContent(){return [...(currentChat?.messages||[])].reverse().find(m=>m.role==='assistant')?.content||'Nexus AI output'}
-function titleFrom(t){return(t.split('\n').find(x=>x.trim())||'Nexus AI output').replace(/^#+\s*/,'').slice(0,70)}
-function downloadBlob(b,n){const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=n;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
-async function exportDocx(){const {Document,Packer,Paragraph,TextRun,HeadingLevel}=await import('https://esm.run/docx@9.7.1');const t=activeContent(),children=t.split('\n').map(l=>/^# /.test(l)?new Paragraph({text:l.slice(2),heading:HeadingLevel.TITLE}):/^## /.test(l)?new Paragraph({text:l.slice(3),heading:HeadingLevel.HEADING_1}):new Paragraph({children:[new TextRun(l.replace(/^[-•]\s*/,''))],bullet:/^[-•]/.test(l)?{level:0}:undefined,spacing:{after:100}}));downloadBlob(await Packer.toBlob(new Document({sections:[{children}]})),`${titleFrom(t)}.docx`)}
-async function exportPdf(){const {jsPDF}=await import('https://esm.run/jspdf@3.0.1');const t=activeContent(),pdf=new jsPDF({unit:'pt',format:'a4'}),lines=pdf.splitTextToSize(t.replace(/[#*]/g,''),487);let y=62;for(const l of lines){if(y>780){pdf.addPage();y=62}pdf.text(l,54,y);y+=17}pdf.save(`${titleFrom(t)}.pdf`)}
-async function exportPptx(){if(!window.PptxGenJS)return alert('PowerPoint library did not load.');const t=activeContent(),pptx=new PptxGenJS();pptx.layout='LAYOUT_WIDE';const groups=t.split(/\n(?=##? )/).slice(0,15);groups.forEach((g,i)=>{const lines=g.split('\n'),slide=pptx.addSlide();slide.background={color:'FFFFFF'};slide.addText((lines.shift()||titleFrom(t)).replace(/^#+\s*/,''),{x:.7,y:.55,w:11.9,h:.6,fontSize:i?24:30,bold:true,color:'111827'});slide.addText(lines.join('\n').replace(/^[-•]\s*/gm,'• '),{x:.85,y:1.45,w:11.4,h:5.5,fontSize:17,color:'374151',breakLine:true,margin:.08})});await pptx.writeFile({fileName:`${titleFrom(t)}.pptx`})}
-function exportText(ext){const t=activeContent();downloadBlob(new Blob([t],{type:ext==='md'?'text/markdown':'text/plain'}),`${titleFrom(t)}.${ext}`)}
-function resizeInput(){els.input.style.height='auto';els.input.style.height=`${Math.min(190,els.input.scrollHeight)}px`}
-
-$('newProjectBtn').onclick=()=>{els.projectDialogTitle.textContent='Create project';els.projectDialog.showModal();setTimeout(()=>els.projectNameInput.focus(),50)};
-$('saveProjectBtn').onclick=e=>{e.preventDefault();createProject().then(()=>els.projectDialog.close())};
-$('newChatBtn').onclick=createChat;
-$('projectMenuBtn').onclick=async()=>{if(!currentProject)return;const action=prompt('Type R to rename this project or D to delete it.');if(!action)return;if(action.toLowerCase()==='r'){const name=prompt('New project name:',currentProject.name)?.trim();if(name){currentProject.name=name;currentProject.updatedAt=now();await put('projects',currentProject);renderAll()}}else if(action.toLowerCase()==='d'){if(projectCache.length===1)return alert('You must keep at least one project.');if(confirm(`Delete “${currentProject.name}” and all its chats and files?`)){for(const c of chatCache)await remove('chats',c.id);for(const f of fileCache)await remove('files',f.id);await remove('projects',currentProject.id);await loadProject((await all('projects'))[0].id)}}};
-$('settingsBtn').onclick=()=>els.settings.showModal();$('welcomeLoadBtn').onclick=()=>els.settings.showModal();$('loadModelBtn').onclick=loadModel;$('unloadModelBtn').onclick=unloadModel;$('saveSettingsBtn').onclick=()=>{saveSettings();updateContextBar()};els.modelSelect.onchange=updateModelHint;els.temperature.oninput=()=>els.tempValue.textContent=els.temperature.value;
-$('clearAllBtn').onclick=async()=>{if(!confirm('Clear every local project, chat, file, and setting?'))return;db.close();indexedDB.deleteDatabase('nexus-workspace-v3');localStorage.removeItem('nexus-settings-v3');location.reload()};
-$('saveMemoryBtn').onclick=async()=>{currentProject.memory=els.memory.value.trim();currentProject.updatedAt=now();await put('projects',currentProject);updateContextBar();$('saveMemoryBtn').textContent='Saved';setTimeout(()=>$('saveMemoryBtn').textContent='Save project memory',1200)};
-$('attachBtn').onclick=()=>$('fileInput').click();$('panelUploadBtn').onclick=()=>$('fileInput').click();els.fileInput.onchange=()=>uploadFiles(els.fileInput.files);
-els.form.onsubmit=e=>{e.preventDefault();submitPrompt(els.input.value)};els.input.oninput=resizeInput;els.input.onkeydown=e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();els.form.requestSubmit()}};els.stop.onclick=stopGeneration;
-document.querySelectorAll('.suggestion').forEach(b=>b.onclick=()=>{els.input.value=b.dataset.prompt;resizeInput();els.input.focus()});
-$('toggleProjectPanelBtn').onclick=()=>{els.projectPanel.classList.toggle('closed');els.shell.classList.toggle('panel-closed',els.projectPanel.classList.contains('closed'))};$('closeProjectPanelBtn').onclick=()=>{els.projectPanel.classList.add('closed');els.shell.classList.add('panel-closed')};$('openSidebarBtn').onclick=()=>els.sidebar.classList.add('open');$('collapseSidebarBtn').onclick=()=>els.sidebar.classList.remove('open');
-document.querySelectorAll('.panel-tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.panel-tab').forEach(x=>x.classList.toggle('active',x===b));$('filesTab').classList.toggle('hidden',b.dataset.tab!=='files');$('memoryTab').classList.toggle('hidden',b.dataset.tab!=='memory')});
-els.export.onclick=e=>{e.stopPropagation();els.exportMenu.classList.toggle('hidden')};document.onclick=()=>els.exportMenu.classList.add('hidden');els.exportMenu.onclick=async e=>{e.stopPropagation();const x=e.target.dataset.export;if(!x)return;els.exportMenu.classList.add('hidden');if(x==='docx')await exportDocx();else if(x==='pptx')await exportPptx();else if(x==='pdf')await exportPdf();else exportText(x)};
-
-(async function init(){if(location.protocol==='file:')$('fileWarning').classList.remove('hidden');applySettings();els.compat.textContent=navigator.gpu?'WebGPU supported':'WebGPU unavailable';db=await openDB();await ensureDefault();setModelState('','Model not loaded')})().catch(e=>{console.error(e);alert(`Workspace failed to initialize: ${e.message||e}`)});
+document.addEventListener('click',e=>{
+ const add=e.target.closest('[data-add]');if(add)openTradeDialog(add.dataset.add);
+ const det=e.target.closest('[data-detail]');if(det)showDetail(det.dataset.detail);
+ const tab=e.target.closest('[data-tab]');if(tab){state.activeTab=tab.dataset.tab;renderTabs();renderCards();}
+ const close=e.target.closest('[data-close]');if(close){const t=T.read().find(x=>x.id===close.dataset.close);const c=state.cases.find(x=>x.symbol===t?.symbol);const raw=prompt('سعر الخروج الفعلي',c?.price||t?.lastPrice||'');if(raw)try{T.closeTrade(close.dataset.close,Number(raw));renderTrades();}catch(err){alert(err.message)}}
+ const rem=e.target.closest('[data-remove]');if(rem&&confirm('حذف الصفقة من القائمة؟')){T.removeTrade(rem.dataset.remove);renderTrades();}
+});
+$('#refreshBtn').addEventListener('click',refresh);
+$('#search').addEventListener('input',e=>{state.filter=e.target.value.toUpperCase().trim();renderCards();});
+$('#hideNonCompliant').addEventListener('change',e=>{state.hideNonCompliant=e.target.checked;localStorage.setItem(SETTINGS_KEY,JSON.stringify({hideNonCompliant:state.hideNonCompliant}));render();});
+$('#clearAlerts').addEventListener('click',()=>{T.clearAlerts();state.alerts=[];renderAlerts();});
+$('#tradeForm').addEventListener('submit',e=>{e.preventDefault();const symbol=$('#tradeSymbol').value,c=state.cases.find(x=>x.symbol===symbol);try{T.addTrade({symbol,entryPrice:Number($('#entryPrice').value),quantity:Number($('#quantity').value)||null,personalStop:Number($('#personalStop').value)||null,notes:$('#tradeNotes').value},c);$('#tradeDialog').close();renderTrades();}catch(err){$('#tradeError').textContent=err.message;}});
+$('#cancelTrade').addEventListener('click',()=>$('#tradeDialog').close());
+$('#closeDetail').addEventListener('click',()=>$('#detailDialog').close());
+const settings=safeParse(localStorage.getItem(SETTINGS_KEY),{});if(typeof settings.hideNonCompliant==='boolean')state.hideNonCompliant=settings.hideNonCompliant;$('#hideNonCompliant').checked=state.hideNonCompliant;
+refresh();setInterval(refresh,120000);
+})();
