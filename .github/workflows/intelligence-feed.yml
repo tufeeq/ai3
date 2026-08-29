@@ -1,6 +1,11 @@
 name: TAGX3 Intelligence Feed
 on:
   workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - 'scripts/build-intelligence.mjs'
+      - '.github/workflows/intelligence-feed.yml'
   schedule:
     - cron: '*/15 * * * *'
 permissions:
@@ -11,6 +16,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -19,7 +25,7 @@ jobs:
       - name: Build market intelligence feed
         run: node scripts/build-intelligence.mjs
       - name: Validate intelligence payload
-        run: node -e "const x=require('./data/intelligence.json'); if(!x.generatedAt||!Array.isArray(x.events)||!Array.isArray(x.shortlist)) process.exit(1); console.log({events:x.events.length,shortlist:x.shortlist.length,errors:x.errors.length})"
+        run: node -e "const x=require('./data/intelligence.json'); if(!x.generatedAt||!Array.isArray(x.events)||!Array.isArray(x.shortlist)||!x.bySymbol) process.exit(1); console.log({events:x.events.length,shortlist:x.shortlist.length,errors:x.errors.length})"
       - name: Commit changed intelligence only
         run: |
           git config user.name 'tagx3-intelligence-bot'
@@ -27,4 +33,5 @@ jobs:
           git add data/intelligence.json
           git diff --cached --quiet && exit 0
           git commit -m 'data: refresh catalyst and news intelligence'
+          git pull --rebase origin main
           git push
