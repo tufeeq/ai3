@@ -24,6 +24,8 @@ assert(theme.includes('.theme-switch'),'theme switch styles missing');
 assert(ui.includes("THEME_KEY='tagx3.theme.v1'"),'theme preference persistence missing');
 assert(ui.includes('prefers-color-scheme'),'system theme support missing');
 assert(ui.includes('prettyDetail'),'human-readable detail renderer missing');
+assert(!ui.includes('observe(document.body'),'detail enhancement must not observe the full document body');
+assert(!real.includes('observe(document.body'),'decision intelligence must not observe the full document body');
 assert(real.includes('REAL MARKET INTELLIGENCE'),'real intelligence panel missing');
 assert(real.includes('MODEL OUTCOME'),'model outcome reporting missing');
 assert(real.includes('freshCount'),'live freshness gate missing');
