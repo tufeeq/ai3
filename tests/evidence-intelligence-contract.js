@@ -1,0 +1,14 @@
+const fs=require('fs');
+const assert=require('assert');
+const src=fs.readFileSync('evidence-intelligence.js','utf8');
+const html=fs.readFileSync('index.html','utf8');
+assert(html.includes('evidence-intelligence.js'),'index must load evidence intelligence');
+assert(src.includes("const INTEL='/data/intelligence.json'"),'must consume generated intelligence feed');
+assert(src.includes("dataOk&&shariaOk&&evidenceOk"),'readiness must require data + Sharia + evidence');
+for(const token of ['UNVERIFIED','CONFLICT_REVIEW','NON_COMPLIANT'])assert(src.includes(token),`must retain Sharia block: ${token}`);
+assert(src.includes('SESSION FINAL'),'closed-session quotes must be represented as session-final, not fake live data');
+assert(src.includes('NEWS DISCOVERY'),'news discovery must be explicitly labeled as discovery evidence');
+assert(src.includes('قيد استكمال الأدلة'),'incomplete candidates must be separated from opportunity list');
+assert(src.includes('restorePending'),'pending cards must survive repeated gate application');
+assert(!src.includes('MutationObserver'),'evidence layer must not add a whole-page mutation observer');
+console.log('evidence-intelligence-contract: ok');
