@@ -1,17 +1,72 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f8fa"><title>TAGX 3.0 — Persistent Opportunity Intelligence</title><link rel="stylesheet" href="styles.css"></head><body>
-<header class="topbar"><div><div class="eyebrow">TAGX 3.0 · CHALLENGER</div><h1>استخبارات الفرص المضاربية المستمرة</h1><p>Persistent Opportunity Intelligence · لا تبدأ الفرصة وتنتهي مع الجلسة</p></div><div class="top-actions"><button id="refreshBtn" class="primary">تحديث الآن</button><div id="status" class="status">جارٍ البدء…</div></div></header>
-<main>
-<section class="notice"><b>وضع تجريبي مهني</b><span>درجات 0–100 هي مؤشرات نموذج وليست احتمالات إحصائية معايرة ولا ضمانًا للعائد. الأداة لا تنفذ تداولات تلقائيًا. التغذية الحالية تُجسر مؤقتًا من بيانات TAGX السابقة مع فصل الكود والمستودع.</span></section>
-<section id="summary" class="summary"></section>
-<section class="toolbar"><input id="search" type="search" placeholder="بحث بالرمز…" autocomplete="off"><label><input id="hideNonCompliant" type="checkbox" checked> إخفاء NON-COMPLIANT المؤكد من قائمة الفرص</label></section>
-<nav class="tabs" aria-label="Opportunity lanes"><button data-tab="building" class="active">BUILDING NOW <em>0</em></button><button data-tab="igniting">IGNITING NOW <em>0</em></button><button data-tab="catalyst">CATALYST WATCH <em>0</em></button><button data-tab="exit">EXIT / AVOID <em>0</em></button></nav>
-<section id="opportunities" class="opportunities"></section>
-<section class="panel"><div class="section-head"><div><h2>مراكزي · My Trades</h2><p>أضف الفرصة بسعر دخولك الفعلي لتتحول المتابعة إلى صفقة شخصية.</p></div></div><div id="trades"></div></section>
-<section class="panel"><div class="section-head"><div><h2>تنبيهات المتابعة</h2><p>تغير الفرضية، التصريف، جودة البيانات، الوقف الشخصي والحالة الشرعية.</p></div><button id="clearAlerts">مسح التنبيهات</button></div><div id="alerts" class="alerts"></div></section>
-<section class="panel"><div class="section-head"><div><h2>حالة مصادر البيانات</h2><p>Fail-visible: أي مصدر متعطل يظهر بوضوح ولا يُستبدل ببيانات مصطنعة.</p></div></div><div id="feedGrid" class="feed-grid"></div></section>
-<section class="architecture"><h2>المحركات</h2><div class="arch-grid"><article><b>Reactive Engine</b><span>الحركة غير المتوقعة · velocity · liquidity · dislocation</span></article><article><b>Anticipatory Engine</b><span>المحفزات المستقبلية · Catalyst Clock · pre-event accumulation</span></article><article><b>Pattern & Memory</b><span>former runners · sector lead-lag · persistent setup memory</span></article><article><b>Liquidity Lifecycle</b><span>Accumulation → Armed → Ignition → Expansion → Distribution</span></article><article><b>Sharia Intelligence</b><span>تحليل موازٍ لا يمنع الاكتشاف؛ UNVERIFIED ≠ NON-COMPLIANT</span></article><article><b>Trade Monitor</b><span>Entry Snapshot · MFE/MAE · thesis alerts · personal invalidation</span></article></div></section>
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070b12">
+<title>TAGX 3.0 — Trading Intelligence</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar">
+  <div class="brand"><span class="brand-mark">T</span><div><b>TAGX</b><small>3.0</small></div></div>
+  <nav class="side-nav">
+    <button class="active" data-jump="dashboard"><span>◫</span><em>الرئيسية</em></button>
+    <button data-jump="opportunities"><span>◎</span><em>الفرص</em></button>
+    <button data-jump="trades"><span>◈</span><em>مراكزي</em></button>
+    <button data-jump="alerts"><span>◉</span><em>التنبيهات</em></button>
+    <button data-jump="feeds"><span>⌁</span><em>المصادر</em></button>
+  </nav>
+  <div class="side-foot"><div class="live-dot"></div><span>CHALLENGER</span></div>
+</aside>
+<div class="workspace">
+<header class="topbar">
+  <div class="market-title"><span class="eyebrow">PERSISTENT OPPORTUNITY INTELLIGENCE</span><h1>غرفة عمليات المضاربة</h1></div>
+  <div class="top-tools">
+    <div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="بحث بالرمز…" autocomplete="off"></div>
+    <button id="refreshBtn" class="primary">↻ تحديث</button>
+    <div id="status" class="status">جارٍ البدء…</div>
+  </div>
+</header>
+<main id="dashboard">
+  <section class="notice"><span class="notice-icon">i</span><div><b>وضع تجريبي مهني</b><span>الدرجات مؤشرات نموذجية وليست احتمالات معايرة أو ضمانًا للعائد. لا توجد بيانات مصطنعة؛ أي رسم أو مؤشر يعتمد فقط على البيانات المتاحة فعليًا.</span></div></section>
+  <section id="summary" class="summary"></section>
+  <section class="lane-bar">
+    <nav class="tabs" aria-label="Opportunity lanes">
+      <button data-tab="building" class="active"><span>BUILDING NOW</span><em>0</em></button>
+      <button data-tab="igniting"><span>IGNITING NOW</span><em>0</em></button>
+      <button data-tab="catalyst"><span>CATALYST WATCH</span><em>0</em></button>
+      <button data-tab="exit"><span>EXIT / AVOID</span><em>0</em></button>
+    </nav>
+    <label class="compliance-toggle"><input id="hideNonCompliant" type="checkbox" checked><span>إخفاء NON-COMPLIANT</span></label>
+  </section>
+  <section class="command-grid">
+    <section class="panel opportunity-panel" id="opportunitiesPanel">
+      <div class="section-head"><div><span class="kicker">OPPORTUNITY QUEUE</span><h2>أعلى الفرص</h2></div><span class="panel-hint">اختر سهمًا لعرض لوحة التحليل</span></div>
+      <div id="opportunities" class="opportunities"></div>
+    </section>
+    <section class="panel focus-panel">
+      <div id="focusView" class="focus-view"><div class="empty">اختر فرصة لعرض التحليل البصري.</div></div>
+    </section>
+    <aside class="insight-column">
+      <section class="panel"><div class="section-head"><div><span class="kicker">KEY RATINGS</span><h2>مؤشرات القرار</h2></div></div><div id="ratingPanel"></div></section>
+      <section class="panel"><div class="section-head"><div><span class="kicker">CATALYST CLOCK</span><h2>المحفز</h2></div></div><div id="catalystPanel"></div></section>
+      <section class="panel"><div class="section-head"><div><span class="kicker">SHARIAH INTELLIGENCE</span><h2>التحليل الشرعي</h2></div></div><div id="shariaPanel"></div></section>
+    </aside>
+  </section>
+  <section class="analytics-grid">
+    <section class="panel"><div class="section-head"><div><span class="kicker">SIGNAL MATRIX</span><h2>خريطة الإشارة</h2></div></div><div id="signalMatrix"></div></section>
+    <section class="panel"><div class="section-head"><div><span class="kicker">LIQUIDITY LIFECYCLE</span><h2>دورة السيولة</h2></div></div><div id="liquidityLifecycle"></div></section>
+    <section class="panel"><div class="section-head"><div><span class="kicker">DATA HEALTH</span><h2>موثوقية البيانات</h2></div></div><div id="feedGrid" class="feed-grid"></div></section>
+  </section>
+  <section class="panel" id="tradesPanel"><div class="section-head"><div><span class="kicker">MY TRADES</span><h2>مراكزي</h2><p>متابعة مخصصة من سعر دخولك الفعلي.</p></div></div><div id="trades"></div></section>
+  <section class="panel" id="alertsPanel"><div class="section-head"><div><span class="kicker">LIVE THESIS MONITOR</span><h2>تنبيهات المتابعة</h2><p>تغير الفرضية، التصريف، الوقف الشخصي والحالة الشرعية.</p></div><button id="clearAlerts">مسح</button></div><div id="alerts" class="alerts"></div></section>
 </main>
+<footer>TAGX 3.0 · Observe → Remember → Anticipate → Detect → Cross-Validate → Challenge → Prioritize → Track → Reassess → Replay → Learn</footer>
+</div>
+</div>
 <dialog id="tradeDialog"><form id="tradeForm" method="dialog"><h3>إضافة إلى My Trades</h3><p id="tradeContext" class="muted"></p><input id="tradeSymbol" type="hidden"><label>سعر الدخول الفعلي<input id="entryPrice" type="number" step="0.0001" min="0.0001" required></label><label>الكمية — اختياري<input id="quantity" type="number" step="1" min="0"></label><label>وقفك الشخصي — اختياري<input id="personalStop" type="number" step="0.0001" min="0"></label><label>ملاحظات<textarea id="tradeNotes" rows="3"></textarea></label><div id="tradeError" class="error"></div><div class="dialog-actions"><button type="button" id="cancelTrade">إلغاء</button><button type="submit" class="primary">حفظ ومتابعة</button></div></form></dialog>
-<dialog id="detailDialog"><div class="detail-wrap"><div class="section-head"><h3 id="detailTitle">تفاصيل</h3><button id="closeDetail">إغلاق</button></div><div id="detailBody"></div></div></dialog>
-<footer><span>TAGX 3.0 · Observe → Remember → Anticipate → Detect → Cross-Validate → Challenge → Prioritize → Track → Reassess → Replay → Learn</span></footer>
-<script src="core/engine.js"></script><script src="core/sharia.js"></script><script src="core/trade-monitor.js"></script><script src="core/learning.js"></script><script src="app.js"></script></body></html>
+<dialog id="detailDialog"><div class="detail-wrap"><div class="section-head sticky-dialog-head"><h3 id="detailTitle">تفاصيل</h3><button id="closeDetail">إغلاق</button></div><div id="detailBody"></div></div></dialog>
+<script src="core/engine.js"></script><script src="core/sharia.js"></script><script src="core/trade-monitor.js"></script><script src="core/learning.js"></script><script src="app.js"></script>
+</body></html>
