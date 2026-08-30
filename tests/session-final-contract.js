@@ -13,7 +13,7 @@ assert.equal(closed.dataConfidence.usable,true,'complete last-session data shoul
 assert(closed.dataConfidence.score>=80,'age alone must not destroy completeness confidence for a valid closed session');
 assert.equal(closed.executable,false);
 
-const discovery=E.analyze({...base,observedAt:new Date().toISOString(),marketClockSession:'closed',sessionFinal:false,liveBacked:false,discoveryOnly:true,marketObservation:false},{},{});
+const discovery=E.analyze({...base,observedAt:new Date().toISOString(),marketClockSession:'closed',sessionFinal:false,liveBacked:false,discoveryOnly:true,marketObservation:false},{sourceMeta:{discoveryOnly:false}},{});
 assert.equal(discovery.dataConfidence.label,'LOW','closed Finviz-only snapshot must not inherit fresh quote confidence');
 assert.equal(discovery.dataConfidence.fresh,false);
 assert.equal(discovery.dataConfidence.sessionFinal,false,'discovery snapshot is not a verified session-final quote');
@@ -22,6 +22,14 @@ assert.equal(discovery.dataConfidence.freshnessClass,'CLOSED_DISCOVERY_SNAPSHOT'
 assert(discovery.dataConfidence.score<=40);
 assert.equal(discovery.executable,false);
 
+// Row-level provenance must win even when the merged container/app labels the row as Live Quotes.
+// During an open session this keeps the engine's discovery-only confidence penalty active.
+const openDiscovery=E.analyze({...base,observedAt:new Date().toISOString(),marketClockSession:'regular',sessionFinal:false,liveBacked:false,discoveryOnly:true,marketObservation:false},{source:'Live Quotes',sourceMeta:{discoveryOnly:false}},{});
+assert.equal(openDiscovery.dataConfidence.fresh,true,'recent discovery snapshot may be temporally fresh');
+assert(openDiscovery.dataConfidence.score<=80,'Finviz-only discovery must retain the engine discovery penalty even inside the Live Quotes container');
+assert.notEqual(openDiscovery.dataConfidence.label,'HIGH','discovery-only data must not be promoted to HIGH confidence by container relabeling');
+assert.equal(openDiscovery.executable,false);
+
 const staleLive=E.analyze({...base,marketClockSession:'regular',sessionFinal:false},{},{});
 assert.equal(staleLive.dataConfidence.fresh,false);
 assert.notEqual(staleLive.dataConfidence.label,'SESSION FINAL','stale intraday data must not be promoted to session final');
@@ -29,10 +37,12 @@ assert.notEqual(staleLive.dataConfidence.label,'SESSION FINAL','stale intraday d
 const fs=require('node:fs');
 const bridge=fs.readFileSync('finviz-bridge.js','utf8');
 const evidence=fs.readFileSync('evidence-intelligence.js','utf8');
+const policy=fs.readFileSync('session-final-policy.js','utf8');
 const html=fs.readFileSync('index.html','utf8');
 assert(bridge.includes('sessionFinal=live?.marketClockSession===\'closed\''));
 assert(bridge.includes('liveBacked:false')&&bridge.includes('discoveryOnly:true'),'Finviz-only rows must retain discovery provenance');
 assert(bridge.includes('liveBacked:true')&&bridge.includes('discoveryOnly:false'),'live-backed rows must be explicitly distinguished');
+assert(policy.includes('withProvenanceContext')&&policy.includes('rawDiscoveryOnly(raw)'),'engine gate must honor row-level provenance independently of source label');
 assert(evidence.includes('if(Array.isArray(q))return Object.fromEntries'), 'evidence layer must accept merged quote arrays');
 assert(html.indexOf('session-final-policy.js')>html.indexOf('core/engine.js')&&html.indexOf('session-final-policy.js')<html.indexOf('app.js'),'session-final policy must load after engine and before app');
 console.log('TAGX3 session-final contract: OK');
