@@ -1,8 +1,14 @@
 {
-  "schemaVersion": 2,
-  "generatedAt": "2026-08-30T03:19:15.338Z",
+  "schemaVersion": 3,
+  "generatedAt": "2026-08-30T04:18:17.613Z",
   "sourceStatus": {
-    "live": true,
+    "live": false,
+    "marketDataLoaded": true,
+    "marketDataFresh": false,
+    "marketWindowOpen": false,
+    "marketSession": "closed",
+    "newestObservedAt": "2026-08-28T23:59:58.000Z",
+    "marketDataAgeMin": 1698.3,
     "secMapping": true,
     "newsDiscovery": true
   },
@@ -2399,5 +2405,5 @@
     }
   },
   "errors": [],
-  "policy": "Public-source intelligence. SEC filings are primary-source events; GDELT is discovery-only and requires source-level verification before trade decisions."
+  "policy": "Public-source intelligence. `sourceStatus.live` means market data is fresh inside the active US extended-hours window; loaded-but-stale/session-final data is never labeled live. SEC filings are primary-source events; GDELT is discovery-only and requires source-level verification before trade decisions."
 }
