@@ -29,7 +29,7 @@
   }
 
   function compactSnapshot(c){
-    return {price:c.price,lifecycle:c.lifecycle,movementIndex:c.movementIndex,ignitionIndex:c.ignitionIndex,continuationIndex:c.continuationIndex,distributionRisk:c.distributionRisk,riskScore:c.riskScore,sharia:c.sharia?.status||'UNVERIFIED',dataConfidence:c.dataConfidence?.label||'LOW',observedAt:c.observedAt,whyNow:c.whyNow||[]};
+    return {price:c.price,lifecycle:c.lifecycle,movementIndex:c.movementIndex,ignitionIndex:c.ignitionIndex,continuationIndex:c.continuationIndex,distributionRisk:c.distributionRisk,riskScore:c.riskScore,sharia:c.sharia?.status||'UNVERIFIED',dataConfidence:c.dataConfidence?.label||'LOW',dataFresh:c.dataConfidence?.fresh!==false,observedAt:c.observedAt,whyNow:c.whyNow||[]};
   }
 
   function alert(severity,type,message,trade,c){
@@ -38,21 +38,37 @@
 
   function evaluate(trade,c){
     if(!c||trade.status!=='OPEN') return {trade,alerts:[]};
+    const prev=trade.lastSnapshot||trade.entrySnapshot||{};
+    const alerts=[];
+    const sh=c.sharia?.status||'UNVERIFIED';
+    const explicitlyStale=c.dataConfidence?.fresh===false;
+    const lowQuality=c.dataConfidence?.label==='LOW';
+
+    if((lowQuality&&prev.dataConfidence!=='LOW')||(explicitlyStale&&prev.dataFresh!==false))
+      alerts.push(alert('WARNING',explicitlyStale?'DATA_STALE':'DATA_DEGRADED',explicitlyStale?'بيانات السوق غير طازجة؛ تم تعليق تنبيهات السعر/الوقف ومقاييس MFE/MAE حتى وصول رصد سوقي حديث.':'جودة البيانات انخفضت؛ لا تعتمد على الإشارة دون تحقق إضافي.',trade,c));
+
+    // Sharia evidence can change independently of quote freshness, so keep this safeguard active.
+    if(prev.sharia&&prev.sharia!==sh) alerts.push(alert(sh==='NON_COMPLIANT'?'CRITICAL':'WARNING','SHARIA_CHANGED',`الحالة الشرعية تغيرت من ${prev.sharia} إلى ${sh}.`,trade,c));
+
+    // Fail closed on explicitly stale market observations. Do not turn an old/session-final quote
+    // into a live stop, lifecycle, thesis, P&L excursion, or entry/exit monitoring signal.
+    if(explicitlyStale){
+      trade.lastSnapshot={...prev,sharia:sh,dataConfidence:c.dataConfidence?.label||prev.dataConfidence||'LOW',dataFresh:false,observedAt:c.observedAt||prev.observedAt};
+      trade.updatedAt=new Date().toISOString();
+      trade.alerts=[...(alerts.map(a=>a.id)),...(trade.alerts||[])].slice(0,30);
+      return {trade,alerts};
+    }
+
     const p=(c.price-trade.entryPrice)/trade.entryPrice*100;
     trade.mfePct=Math.max(Number(trade.mfePct)||0,p);
     trade.maePct=Math.min(Number(trade.maePct)||0,p);
-    const prev=trade.lastSnapshot||trade.entrySnapshot||{};
-    const alerts=[];
     if(trade.personalStop&&c.price<=trade.personalStop) alerts.push(alert('CRITICAL','PERSONAL_STOP',`السعر ${c.price.toFixed(4)} وصل/كسر وقفك الشخصي ${trade.personalStop}.`,trade,c));
-    if(c.dataConfidence?.label==='LOW'&&prev.dataConfidence!=='LOW') alerts.push(alert('WARNING','DATA_DEGRADED','جودة البيانات انخفضت؛ لا تعتمد على الإشارة دون تحقق إضافي.',trade,c));
     if(c.lifecycle==='DISTRIBUTING'&&prev.lifecycle!=='DISTRIBUTING') alerts.push(alert('CRITICAL','DISTRIBUTION','انتقلت الحالة إلى DISTRIBUTING؛ راجع الخروج/التخفيف فورًا.',trade,c));
     if(c.distributionRisk>=68&&Number(prev.distributionRisk||0)<68) alerts.push(alert('WARNING','TRIM_WATCH',`مخاطر التصريف ارتفعت إلى ${c.distributionRisk}/100.`,trade,c));
     if(c.continuationIndex<=38&&Number(prev.continuationIndex||100)>38) alerts.push(alert('WARNING','THESIS_WEAKENING',`استمرار الحركة هبط إلى ${c.continuationIndex}/100؛ الفرضية تضعف.`,trade,c));
     if(c.continuationIndex>=72&&Number(prev.continuationIndex||0)<72&&c.distributionRisk<45) alerts.push(alert('INFO','THESIS_STRENGTHENING',`الاستمرار تحسن إلى ${c.continuationIndex}/100 مع مخاطر تصريف منخفضة نسبيًا.`,trade,c));
     if(c.lifecycle==='IGNITING'&&prev.lifecycle!=='IGNITING') alerts.push(alert('INFO','IGNITION','الحالة دخلت مرحلة IGNITING.',trade,c));
     if(c.lifecycle==='EXPANDING'&&prev.lifecycle!=='EXPANDING') alerts.push(alert('INFO','EXPANSION','الحالة دخلت EXPANDING؛ راقب الاستمرار والتصريف.',trade,c));
-    const sh=c.sharia?.status||'UNVERIFIED';
-    if(prev.sharia&&prev.sharia!==sh) alerts.push(alert(sh==='NON_COMPLIANT'?'CRITICAL':'WARNING','SHARIA_CHANGED',`الحالة الشرعية تغيرت من ${prev.sharia} إلى ${sh}.`,trade,c));
     trade.lastSnapshot=compactSnapshot(c);
     trade.lastPrice=c.price; trade.pnlPct=p; trade.updatedAt=new Date().toISOString();
     trade.alerts=[...(alerts.map(a=>a.id)),...(trade.alerts||[])].slice(0,30);
