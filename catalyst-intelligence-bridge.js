@@ -8,7 +8,7 @@ else { root.TAGX3CatalystIntelligenceBridge=api; api.install(root); }
 const CATALYST_PATH='/ai/tag/data/sec-catalysts.json';
 const INTELLIGENCE_PATH='./data/intelligence.json';
 const symbolOf=x=>String(x?.symbol||x?.ticker||'').trim().toUpperCase();
-const timeOf=x=>x?.publishedAt||x?.acceptedAt||x?.filedAt||x?.observedAt||x?.timestamp||null;
+const timeOf=x=>x?.eventAt||x?.catalystAt||x?.publishedAt||x?.acceptedAt||x?.filedAt||x?.observedAt||x?.timestamp||null;
 function nativeRows(payload){
   if(Array.isArray(payload))return payload;
   for(const k of ['data','events','rows','items'])if(Array.isArray(payload?.[k]))return payload[k];
