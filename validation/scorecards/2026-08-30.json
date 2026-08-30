@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "kind": "TAGX3_VALIDATION_SCORECARD_SUMMARY",
-  "generatedAt": "2026-08-30T22:55:54.288Z",
+  "generatedAt": "2026-08-30T23:17:04.998Z",
   "status": "INSUFFICIENT_FUTURE_SNAPSHOTS",
   "sessions": 1,
-  "snapshotCount": 4,
+  "snapshotCount": 5,
   "protocol": {
     "name": "TAGX3 Commercial Validation Protocol v1",
     "frozenAt": "2026-08-30T22:40:00Z",
@@ -31,7 +31,11 @@
       "avgDetectedMFE": null,
       "avgDetectedMAE": null,
       "avgActionableMFE": null,
-      "avgActionableMAE": null
+      "avgActionableMAE": null,
+      "excludedOutcomeCounts": {
+        "STALE_OBSERVATION": 29328,
+        "MISSING": 7332
+      }
     },
     "30": {
       "horizonMin": 30,
@@ -46,7 +50,11 @@
       "avgDetectedMFE": null,
       "avgDetectedMAE": null,
       "avgActionableMFE": null,
-      "avgActionableMAE": null
+      "avgActionableMAE": null,
+      "excludedOutcomeCounts": {
+        "STALE_OBSERVATION": 14664,
+        "MISSING": 21996
+      }
     },
     "120": {
       "horizonMin": 120,
@@ -61,7 +69,10 @@
       "avgDetectedMFE": null,
       "avgDetectedMAE": null,
       "avgActionableMFE": null,
-      "avgActionableMAE": null
+      "avgActionableMAE": null,
+      "excludedOutcomeCounts": {
+        "MISSING": 36660
+      }
     }
   },
   "diagnostics": {
