@@ -5,8 +5,11 @@ const inflight=new Map();
 const memory=new Map();
 const CACHE='tagx3-runtime-v2';
 const BOOT_AT=performance.now();
-const TARGETS=['/ai/tag/data/','/data/intelligence.json'];
-const CORE=['/ai/tag/data/live-quotes.json','/data/intelligence.json'];
+// GitHub project Pages live below /ai3/. Resolve repo-owned data from the
+// current application path instead of assuming a domain-root /data directory.
+const INTEL_PATH=new URL('./data/intelligence.json',location.href).pathname;
+const TARGETS=['/ai/tag/data/',INTEL_PATH];
+const CORE=['/ai/tag/data/live-quotes.json',INTEL_PATH];
 const OPTIONAL=[
   '/ai/tag/data/tagx2-sentinel.json',
   '/ai/tag/data/coverage-rescue.json',
@@ -77,6 +80,6 @@ window.fetch=async function(input,init={}){
   return rec?responseFrom(rec):deferredResponse();
 };
 
-// Warm the two files needed for the visible dashboard as soon as possible.
+// Warm the files needed for the visible dashboard as soon as possible.
 for(const p of CORE)warm(new URL(p,location.href).href,{},2200);
 })();
