@@ -1,7 +1,7 @@
 (()=>{
 'use strict';
 const REQUIRED=[
-  '/ai/tag/data/live-quotes.json','/ai/tag/data/discovery-fast.json','/ai/tag/data/discovery.json','/ai/tag/data/extended-hours.json','/ai/tag/data/extended-hot.json','/ai/tag/data/tagx2-sentinel.json','/ai/tag/data/coverage-rescue.json',
+  '/ai/tag/data/live-quotes.json','/ai/tag/data/universe-broad.json','/ai/tag/data/discovery-fast.json','/ai/tag/data/discovery.json','/ai/tag/data/extended-hours.json','/ai/tag/data/extended-hot.json','/ai/tag/data/tagx2-sentinel.json','/ai/tag/data/coverage-rescue.json',
   '/ai/tag/data/sec-catalysts.json','/ai/tag/data/sharia.json','/ai/tag/data/sharia-v4-challenger.json','/ai/tag/data/enrichment.json','/ai/tag/data/feed-health.json','/ai3/data/intelligence.json','/ai3/data/market-news.json'
 ];
 const state=new Map(REQUIRED.map(x=>[x,'pending']));
