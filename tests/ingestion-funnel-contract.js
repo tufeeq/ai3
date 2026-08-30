@@ -24,6 +24,23 @@ assert.equal(c.sharia.LIKELY_COMPLIANT,1);
 assert.equal(c.sharia.UNVERIFIED,1);
 assert.equal(c.sharia.NON_COMPLIANT,1);
 
+const store=new Map();
+const root={localStorage:{getItem:k=>store.get(k)||null,setItem:(k,v)=>store.set(k,v)}};
+const snapshot={...s,...c,evidence:{ready:2,pending:2},at:'2026-08-30T10:00:00Z'};
+let history=F.persistSnapshot(root,snapshot);
+assert.equal(history.length,1);
+assert.equal(history[0].uniqueSymbols,4);
+assert.equal(history[0].verified,2);
+assert.equal(history[0].evidenceReady,2);
+// Identical refreshes are deduplicated instead of creating cosmetic history churn.
+history=F.persistSnapshot(root,{...snapshot,at:'2026-08-30T10:05:00Z'});
+assert.equal(history.length,1);
+// A measurable funnel change creates a new retained observation.
+history=F.persistSnapshot(root,{...snapshot,uniqueSymbols:5,at:'2026-08-30T10:10:00Z'});
+assert.equal(history.length,2);
+assert.equal(history.at(-1).uniqueSymbols,5);
+assert(history.length<=F.HISTORY_LIMIT);
+
 // Diagnostics are observational only: module exports no ranking/threshold/execution mutation API.
 for(const forbidden of ['rank','analyze','execute','setThreshold']) assert.equal(typeof F[forbidden],'undefined');
 console.log('TAGX3 ingestion-funnel contract: OK');
