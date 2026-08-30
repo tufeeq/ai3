@@ -46,6 +46,13 @@ assert.equal(l.status,S.STATUS.LIKELY);
 const c=S.classify('TEST',[{verdict:'PASS'},{verdict:'FAIL'}],{});
 assert.equal(c.status,S.STATUS.CONFLICT);
 
+// Production Sharia payload uses an object keyed by ticker; it must not be silently discarded.
+const prodMap=S.indexPayload({rows:{AAA:{ticker:'AAA',status:'VERIFIED',checkedAt:'2026-08-29T23:52:00Z'},BBB:{status:'EXCLUDED'}}},'Production');
+assert.equal(prodMap.size,2);
+assert.equal(prodMap.get('AAA').verdict,'PASS');
+assert.equal(prodMap.get('BBB').symbol,'BBB');
+assert.equal(prodMap.get('BBB').verdict,'FAIL');
+
 // No-look-ahead replay: observations after cutoff are excluded.
 const obs=[q({observedAt:'2026-08-28T14:00:00Z'}),q({observedAt:'2026-08-28T14:30:00Z'})];
 const replay=L.replayAt(obs,'2026-08-28T14:15:00Z',E.analyze,{});
