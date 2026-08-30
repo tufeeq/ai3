@@ -5,6 +5,7 @@ on:
     branches: [ main ]
     paths:
       - 'scripts/build-intelligence.mjs'
+      - 'scripts/sec-current-feed.mjs'
       - '.github/workflows/intelligence-feed.yml'
   # GitHub documents that scheduled jobs near the start of the hour can be delayed
   # or dropped under load. Use off-quarter minutes to reduce synchronized cron load.
