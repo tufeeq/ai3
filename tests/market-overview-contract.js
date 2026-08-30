@@ -6,10 +6,14 @@ assert(!truth.includes('q.fresh'),'market truth must not infer freshness from re
 assert(truth.includes('لا تصفها بأنها بيانات حية'),'closed-session copy must explicitly reject live-data wording');
 assert(board.includes("'./data/intelligence.json'"),'market bulletin must consume repository intelligence');
 assert(board.includes("'/ai/tag/data/live-quotes.json'"),'market bulletin must consume market coverage metadata');
-assert(board.includes('النشرة الذكية للسوق'),'market bulletin must be visible to Arabic users');
-assert(board.includes('أحدث المؤثرات والأخبار'),'event/news radar must be surfaced');
-assert(board.includes('الرصد الاستباقي للنموذج'),'model watchlist must be surfaced');
+assert(board.includes('uniqueEvents'),'event stream must deduplicate repeated news/catalyst cards');
+assert(board.includes('data-mo-event'),'news/event cards must be clickable');
+assert(board.includes('data-mo-stock'),'watchlist stock cards must be clickable');
+assert(board.includes('impactOf'),'news must have explicit linked-stock impact analysis');
+assert(board.includes('المحتوى يشير إلى تمويل أو إصدار أوراق مالية'),'dilution/financing impact must be explained rather than merely labeled');
+assert(board.includes('هذه مصادفة زمنية وليست إثبات سببية'),'price response must not be represented as proven causality');
 assert(board.includes('غير معايرة كاحتمالات'),'model scores must not be represented as calibrated predictions');
+assert(html.includes('id="summary" class="summary" hidden'),'duplicated lifecycle summary cards must remain hidden while app contract stays intact');
 assert(html.includes('<script src="market-overview.js"></script>'),'dashboard must load market overview');
 for(const forbidden of ['autoBuy','autoSell','executeTrade','setThreshold'])assert(!board.includes(forbidden),`market overview must not expose ${forbidden}`);
 console.log('market overview contract: OK');
