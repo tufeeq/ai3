@@ -32,11 +32,14 @@ jobs:
           const x=require('./data/intelligence.json');
           const generated=Date.parse(x.generatedAt||'');
           const ageMs=Date.now()-generated;
+          const s=x.sourceStatus||{};
           const shapeOk=Number.isFinite(generated)&&Array.isArray(x.events)&&Array.isArray(x.shortlist)&&x.bySymbol&&typeof x.bySymbol==='object';
-          const liveOk=x.sourceStatus?.live===true;
+          const loadedOk=s.marketDataLoaded===true&&x.shortlist.length>0;
+          const freshnessShape=typeof s.marketDataFresh==='boolean'&&typeof s.marketWindowOpen==='boolean'&&typeof s.live==='boolean';
+          const freshnessTruth=s.live===s.marketDataFresh&&(!s.live||(s.marketWindowOpen===true&&Number.isFinite(s.marketDataAgeMin)&&s.marketDataAgeMin<=15));
           const freshBuild=ageMs>=0&&ageMs<=10*60*1000;
-          console.log({generatedAt:x.generatedAt,ageSeconds:Math.round(ageMs/1000),events:x.events?.length,shortlist:x.shortlist?.length,sourceStatus:x.sourceStatus,errors:Array.isArray(x.errors)?x.errors.length:null});
-          if(!shapeOk||!liveOk||!freshBuild) process.exit(1);
+          console.log({generatedAt:x.generatedAt,ageSeconds:Math.round(ageMs/1000),events:x.events?.length,shortlist:x.shortlist?.length,sourceStatus:s,errors:Array.isArray(x.errors)?x.errors.length:null});
+          if(!shapeOk||!loadedOk||!freshnessShape||!freshnessTruth||!freshBuild) process.exit(1);
           NODE
       - name: Commit changed intelligence only
         run: |
