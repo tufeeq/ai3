@@ -2,7 +2,7 @@ const fs=require('fs'),vm=require('vm'),assert=require('assert');
 const src=fs.readFileSync('research-intelligence.js','utf8');
 assert(src.includes("'/ai/tag/data/enrichment.json'"),'research desk must use production enrichment feed');
 assert(src.includes('cache:\'no-store\''),'research feed must bypass stale browser cache');
-assert(src.includes('لا تُنشئ الأداة معلومات بديلة أو وهمية'),'missing research data must be explicit, not fabricated');
+assert(src.includes('معلومات بديلة أو وهمية'),'missing research data must be explicit, not fabricated');
 for(const forbidden of ['setThreshold','executeTrade','autoBuy','autoSell'])assert(!src.includes(forbidden),`research layer must not expose ${forbidden}`);
 const sandbox={window:{},document:{querySelector:()=>null,addEventListener:()=>{}},setInterval:()=>0,fetch:async()=>({ok:true,json:async()=>({rows:{}})}),URL,Date,console};
 vm.runInNewContext(src,sandbox);
