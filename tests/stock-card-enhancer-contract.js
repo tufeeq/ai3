@@ -1,0 +1,11 @@
+const fs=require('fs'),assert=require('assert');
+const src=fs.readFileSync('stock-card-enhancer.js','utf8'),html=fs.readFileSync('index.html','utf8');
+for(const token of ['ticker-company','الأسهم القائمة','Float','Short Float','أعلى سعر','أقل سعر','آخر الأخبار','تفاصيل قراءة النموذج'])assert(src.includes(token),`missing stock detail field: ${token}`);
+assert(src.includes("e.target.closest('.opp-card')"),'opportunity card must be clickable');
+assert(src.includes("e.target.closest('.mo-stock')"),'market watch stock must be clickable');
+assert(src.includes("'/ai/tag/data/discovery.json'"),'rich discovery source must supply fundamentals');
+assert(src.includes("'/ai/tag/data/enrichment.json'"),'enrichment source must supply research/news');
+assert(src.includes("'./data/intelligence.json'"),'intelligence source must supply recent events/news');
+assert(html.includes('<script src="stock-card-enhancer.js"></script>'),'enhancer must be loaded by dashboard');
+for(const forbidden of ['autoBuy','autoSell','executeTrade','setThreshold'])assert(!src.includes(forbidden),`stock detail layer must not expose ${forbidden}`);
+console.log('stock card enhancer contract: OK');
