@@ -11,6 +11,9 @@ assert(!fast.includes("'/data/intelligence.json'"),'fast-fetch must not hard-cod
 assert(src.includes("dataOk&&shariaOk&&evidenceOk"),'readiness must require data + Sharia + evidence');
 for(const token of ['UNVERIFIED','CONFLICT_REVIEW','NON_COMPLIANT'])assert(src.includes(token),`must retain Sharia block: ${token}`);
 assert(src.includes('SESSION FINAL'),'closed-session quotes must be represented as session-final, not fake live data');
+assert(src.includes('if(!q)return false'),'session-final evidence must require an actual quote for the symbol');
+assert(!src.includes('if(!q)return true'),'missing symbols must never be promoted to session-final evidence');
+assert(src.includes('if(!rawTs)return false'),'session-final evidence must require a source timestamp');
 assert(src.includes('NEWS DISCOVERY'),'news discovery must be explicitly labeled as discovery evidence');
 assert(src.includes('قيد استكمال الأدلة'),'incomplete candidates must be separated from opportunity list');
 assert(src.includes('restorePending'),'pending cards must survive repeated gate application');
