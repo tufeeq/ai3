@@ -7,6 +7,7 @@ const num=v=>{if(v==null||v==='')return null;const s=String(v).replace(/[$,%]/g,
 const pct=v=>num(v);
 const sym=r=>String(r?.symbol||r?.ticker||r?.Ticker||r?.Symbol||'').trim().toUpperCase();
 const first=(r,keys)=>{for(const k of keys)if(r?.[k]!=null&&r[k]!=='')return r[k];return null};
+const ageHours=ts=>{const t=new Date(ts||0).getTime();return Number.isFinite(t)?Math.max(0,(Date.now()-t)/3600000):Infinity};
 function normalizeFinviz(r,updatedAt){
   const symbol=sym(r);if(!symbol)return null;
   const price=num(first(r,['Price','price','Last','Close']));if(!(price>0))return null;
@@ -50,13 +51,18 @@ function merge(live,finviz){
   for(const f of finviz.rows||[])by.set(f.symbol,f);
   for(const l0 of liveRows(live)){
     const s=sym(l0);if(!s)continue;const f=by.get(s)||{};
+    const observedAt=first(l0,['observedAt','timestamp','updatedAt','quoteTime','timestampET'])||f.observedAt;
+    const sessionFinal=live?.marketClockSession==='closed'&&ageHours(observedAt)<=96;
     by.set(s,{...f,...l0,symbol:s,
       price:num(first(l0,['price','last','regularMarketPrice','currentPrice','close']))??f.price,
       changePct:pct(first(l0,['changePct','changePercent','regularMarketChangePercent','pctChange','change']))??f.changePct,
       volume:num(first(l0,['volume','regularMarketVolume','dayVolume']))??f.volume,
       avgVolume:num(first(l0,['avgVolume','averageVolume','averageDailyVolume10Day','avgVol']))||f.avgVolume||0,
       floatShares:num(first(l0,['floatShares','float','sharesFloat']))||f.floatShares||0,
-      observedAt:first(l0,['observedAt','timestamp','updatedAt','quoteTime','timestampET'])||f.observedAt
+      observedAt,
+      marketClockSession:live?.marketClockSession||null,
+      sourcePayloadUpdatedAt:live?.updatedAtUTC||live?.updatedAt||null,
+      sessionFinal
     });
   }
   return [...by.values()].filter(x=>x.symbol&&x.price>0);
@@ -69,7 +75,8 @@ window.fetch=async function(input,init={}){
   try{
     const live=await baseResp.clone().json();
     const rows=merge(live,fz);
-    const payload={...live,quotes:rows,finvizBridge:{enabled:true,count:fz.rows.length,updatedAt:fz.updatedAt,session:fz.session,sessionBucket:fz.sessionBucket},mergedCount:rows.length};
+    const sessionFinalCount=rows.filter(x=>x.sessionFinal).length;
+    const payload={...live,quotes:rows,finvizBridge:{enabled:true,count:fz.rows.length,updatedAt:fz.updatedAt,session:fz.session,sessionBucket:fz.sessionBucket},mergedCount:rows.length,sessionFinalCount};
     return new Response(JSON.stringify(payload),{status:200,statusText:'OK',headers:{'content-type':'application/json','x-tagx-finviz-bridge':'1'}});
   }catch{return baseResp}
 };
