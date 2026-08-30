@@ -9,9 +9,9 @@ assert.strictEqual(out.quotes.find(x=>x.symbol==='AAA').price,10,'live-backed pr
 const c=out.quotes.find(x=>x.symbol==='CCC');
 assert(c,'discovery-only symbol must enter the analyzed universe');
 assert.strictEqual(c.company,'CCC Holdings');
-assert.strictEqual(c.floatShares,3500000);
-assert.strictEqual(c.sharesOutstanding,8200000);
+assert(Math.abs(c.floatShares-3500000)<0.01,'float shares should normalize from millions');
+assert(Math.abs(c.sharesOutstanding-8200000)<0.01,'outstanding shares should normalize from millions');
 assert.strictEqual(c.shortFloat,12.5);
-assert.strictEqual(c.avgVolume,125000);
+assert(Math.abs(c.avgVolume-125000)<0.01,'average volume should normalize from thousands');
 assert(out.universeCoverage.discoveryFast===2&&out.universeCoverage.discoveryRich===1,'coverage metadata must expose source contribution');
 console.log('market universe contract: OK');
