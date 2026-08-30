@@ -1,0 +1,42 @@
+name: TAGX3 Market News
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '5,20,35,50 * * * *'
+  push:
+    branches: [ main ]
+    paths:
+      - 'scripts/build-market-news.mjs'
+      - '.github/workflows/market-news.yml'
+permissions:
+  contents: write
+concurrency:
+  group: tagx3-market-news
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Build market and sector news
+        run: node scripts/build-market-news.mjs
+      - name: Validate payload
+        run: node -e "const p=require('./data/market-news.json');if(p.scope!=='MARKET_AND_SECTOR_ONLY'||!Array.isArray(p.items))process.exit(1);for(const x of p.items){if(!['MARKET','SECTOR'].includes(x.scope)||x.verification!=='DISCOVERY'||!x.title||!x.link)process.exit(1)}"
+      - name: Repository contracts
+        run: npm run check && npm test
+      - name: Commit market news
+        run: |
+          git config user.name 'TAGX3 Market News Bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/market-news.json
+          git diff --cached --quiet && exit 0
+          git commit -m 'data: refresh market and sector news'
+          for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && exit 0; sleep $((i*4)); done
+          exit 1
