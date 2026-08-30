@@ -17,7 +17,12 @@ const completenessScore=raw=>{
   if(!flt)score-=8;
   return Math.max(0,Math.min(100,score));
 };
-function isClosedDiscoverySnapshot(raw){return raw?.marketClockSession==='closed'&&(raw?.discoveryOnly===true||raw?.liveBacked===false||raw?.marketObservation===false)}
+function rawDiscoveryOnly(raw){return raw?.discoveryOnly===true||raw?.liveBacked===false||raw?.marketObservation===false}
+function withProvenanceContext(raw,context={}){
+  if(!rawDiscoveryOnly(raw))return context;
+  return {...context,sourceMeta:{...(context.sourceMeta||{}),discoveryOnly:true}};
+}
+function isClosedDiscoverySnapshot(raw){return raw?.marketClockSession==='closed'&&rawDiscoveryOnly(raw)}
 function isSessionFinal(raw){
   if(isClosedDiscoverySnapshot(raw))return false;
   if(raw?.marketClockSession!=='closed'&&!raw?.sessionFinal)return false;
@@ -26,7 +31,11 @@ function isSessionFinal(raw){
   return Number.isFinite(age)&&age>=0&&age<=96;
 }
 E.analyze=function(raw,context={},previous={}){
-  const out=baseAnalyze(raw,context,previous);
+  // Trust row-level provenance over container/source labels. Finviz-only rows can
+  // travel inside the Live Quotes merged payload, so sourceMeta must not erase
+  // discoveryOnly/liveBacked/marketObservation truth during market hours.
+  const effectiveContext=withProvenanceContext(raw,context);
+  const out=baseAnalyze(raw,effectiveContext,previous);
   if(isClosedDiscoverySnapshot(raw)){
     const current=Number(out.dataConfidence?.score);
     out.dataConfidence={
@@ -60,4 +69,5 @@ E.analyze=function(raw,context={},previous={}){
   out.modelNote='آخر لقطة موثقة من الجلسة السابقة؛ صالحة للتحليل التاريخي/التحضيري وليست سعرًا حيًا أو إشارة تنفيذ لحظي.';
   return out;
 };
+window.TAGX3SessionFinalPolicy={rawDiscoveryOnly,withProvenanceContext,isClosedDiscoverySnapshot,isSessionFinal};
 })();
