@@ -1,0 +1,29 @@
+(()=>{
+'use strict';
+const LIVE='/ai/tag/data/live-quotes.json',INTEL='./data/intelligence.json';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt=(v,d=2)=>Number.isFinite(+v)?(+v).toFixed(d):'—';
+const when=v=>{if(!v)return'—';const t=new Date(v);return Number.isNaN(t.getTime())?'—':t.toLocaleString('ar-SA',{dateStyle:'short',timeStyle:'short'});};
+async function json(url){try{const r=await fetch(`${url}?board=${Date.now()}`,{cache:'no-store'});return r.ok?await r.json():null}catch{return null}}
+function eventsOf(p){return Array.isArray(p?.events)?p.events:[]}
+function eventTime(e){return e?.publishedAt||e?.eventAt||e?.acceptedAt||e?.filedAt||e?.observedAt||null}
+function eventTitle(e){return e?.headline||e?.title||(e?.form?`SEC ${e.form}`:e?.type||'حدث سوقي')}
+function style(){if(document.getElementById('market-overview-style'))return;const s=document.createElement('style');s.id='market-overview-style';s.textContent=`
+.market-overview{margin:12px 0 18px;display:grid;gap:12px}.market-overview .mo-head{display:flex;align-items:end;justify-content:space-between;gap:12px}.market-overview h2{margin:0;font-size:17px}.market-overview .mo-sub{font-size:10px;color:var(--muted)}.mo-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.mo-kpi,.mo-box{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:11px}.mo-kpi span{font-size:9px;color:var(--muted);display:block}.mo-kpi b{font-size:18px;display:block;margin-top:4px}.mo-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:10px}.mo-box h3{margin:0 0 8px;font-size:12px}.mo-events,.mo-watch{display:grid;gap:7px}.mo-event,.mo-stock{padding:8px;border:1px solid var(--line2);border-radius:10px;background:var(--surface)}.mo-event-top,.mo-stock-top{display:flex;justify-content:space-between;gap:8px;align-items:center}.mo-event b,.mo-stock b{font-size:12px}.mo-event small,.mo-stock small{font-size:9px;color:var(--muted)}.mo-event p{margin:5px 0 0;font-size:10px;line-height:1.5}.mo-stock .scores{font-size:9px;color:var(--muted);margin-top:5px}.mo-note{font-size:9px;color:var(--muted);line-height:1.5;margin-top:7px}@media(max-width:760px){.mo-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.mo-grid{grid-template-columns:1fr}.market-overview{margin-top:10px}.market-overview .mo-head{align-items:start}.market-overview h2{font-size:15px}}
+`;document.head.appendChild(s)}
+function build(live,intel){
+  const ev=eventsOf(intel).slice().sort((a,b)=>new Date(eventTime(b)||0)-new Date(eventTime(a)||0));
+  const sec=ev.filter(e=>String(e?.type||'').toUpperCase()==='SEC'||e?.form),news=ev.filter(e=>String(e?.type||'').toUpperCase().includes('NEWS'));
+  const shortlist=Array.isArray(intel?.shortlist)?intel.shortlist:[];
+  const session=live?.marketClockSession||intel?.sourceStatus?.marketSession||'unknown';
+  const coverage=Number(live?.count||live?.requested||0),fresh=Number(live?.freshCount||0),mw=Number(intel?.sourceStatus?.secMarketwideEventCount||0);
+  const latest=ev.slice(0,6);
+  return `<section class="market-overview" id="marketOverview"><div class="mo-head"><div><span class="kicker">MARKET BULLETIN · EVENT RADAR · MODEL WATCHLIST</span><h2>النشرة الذكية للسوق</h2></div><span class="mo-sub">آخر تحديث ذكاء ${esc(when(intel?.generatedAt))}</span></div>
+  <div class="mo-kpis"><div class="mo-kpi"><span>حالة السوق</span><b>${esc(session==='closed'?'مغلق / آخر جلسة':session)}</b></div><div class="mo-kpi"><span>تغطية الأسهم</span><b>${coverage||'—'}</b><small>${fresh} live الآن</small></div><div class="mo-kpi"><span>SEC / محفزات</span><b>${sec.length}</b><small>${mw?`${mw} market-wide`:''}</small></div><div class="mo-kpi"><span>أخبار مكتشفة</span><b>${news.length}</b><small>ليست كلها أدلة مؤكدة</small></div></div>
+  <div class="mo-grid"><div class="mo-box"><h3>أحدث المؤثرات والأخبار</h3><div class="mo-events">${latest.length?latest.map(e=>`<div class="mo-event"><div class="mo-event-top"><b>${esc(String(e.symbol||'MARKET').toUpperCase())} · ${esc(e.form||e.type||'EVENT')}</b><small>${esc(when(eventTime(e)))}</small></div><p>${esc(eventTitle(e))}</p><small>${esc(e.source||e.domain||e.verification||'source')}</small></div>`).join(''):'<div class="empty">لا توجد أحداث قابلة للعرض في آخر intelligence payload.</div>'}</div></div>
+  <div class="mo-box"><h3>الرصد الاستباقي للنموذج</h3><div class="mo-watch">${shortlist.slice(0,8).map((x,i)=>`<div class="mo-stock"><div class="mo-stock-top"><b>#${i+1} ${esc(x.symbol)}</b><span>$${fmt(x.price,4)} · ${Number.isFinite(+x.changePct)?`${+x.changePct>=0?'+':''}${fmt(x.changePct)}%`:'—'}</span></div><div class="scores">Early ${fmt(x.early,0)} · Ignition ${fmt(x.ignition,0)} · رصد ${esc(when(x.observedAt))}</div></div>`).join('')||'<div class="empty">لا توجد قائمة رصد نموذجية متاحة.</div>'}</div><div class="mo-note">هذه درجات نموذج تجريبي غير معايرة كاحتمالات. عند إغلاق السوق تمثل جاهزية البحث للجلسة التالية، وليست أسعارًا أو توصيات حية.</div></div></div></section>`;
+}
+async function render(){style();const [live,intel]=await Promise.all([json(LIVE),json(INTEL)]);let host=document.getElementById('marketOverview');const html=build(live||{},intel||{});if(host){host.outerHTML=html;return}const notice=document.querySelector('.notice');if(notice)notice.insertAdjacentHTML('afterend',html)}
+window.addEventListener('DOMContentLoaded',()=>setTimeout(render,180),{once:true});window.addEventListener('load',()=>setTimeout(render,500),{once:true});document.getElementById('refreshBtn')?.addEventListener('click',()=>setTimeout(render,450));
+window.TAGX3MarketOverview={eventsOf,eventTime,eventTitle,build};
+})();
