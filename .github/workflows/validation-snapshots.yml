@@ -1,6 +1,13 @@
 name: TAGX3 Validation Snapshots
 on:
   workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - 'scripts/capture-validation-snapshot.mjs'
+      - 'tests/validation-snapshot-contract.mjs'
+      - '.github/workflows/validation-snapshots.yml'
+      - 'package.json'
   schedule:
     - cron: '7 12-22 * * 1-5'
 permissions:
