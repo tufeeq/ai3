@@ -12,31 +12,38 @@ function isClosedSessionQuote(symbol){if(!marketClosed())return false;const q=ro
 function decorateCard(card){
   const symbol=card.querySelector('.ticker')?.textContent?.trim()?.toUpperCase();if(!symbol)return false;
   const badges=card.querySelector('.badges');const badgeList=[...card.querySelectorAll('.badges .badge')];
-  const lifecycle=badgeList[0]?.textContent?.trim()||'';const sharia=badgeList[1]?.textContent?.trim()||'';const dataBadge=badgeList.at(-1);
+  const lifecycle=badgeList[0]?.textContent?.trim()||'';const sharia=badgeList[1]?.textContent?.trim()||'';let dataBadge=badgeList.find(b=>['LOW','MEDIUM','HIGH','SESSION FINAL'].includes(b.textContent.trim()))||badgeList.at(-1);
   if(dataBadge&&isClosedSessionQuote(symbol)&&['LOW','MEDIUM','HIGH'].includes(dataBadge.textContent.trim())){
     dataBadge.textContent='SESSION FINAL';dataBadge.classList.remove('bad');dataBadge.classList.add('session-final');dataBadge.title='السوق مغلق؛ هذه آخر لقطة جلسة متاحة وليست قراءة لحظية متقادمة.';
   }
-  card.querySelector('.evidence-news')?.remove();
+  card.querySelector('.evidence-news')?.remove();card.querySelectorAll('.badge.evidence').forEach(x=>x.remove());
   const events=eventsFor(symbol);const recent=events.filter(e=>{const t=new Date(e.publishedAt||0).getTime();return Number.isFinite(t)&&Date.now()-t<=7*86400000}).slice(0,3);
   if(recent.length&&badges){const b=document.createElement('span');b.className='badge evidence';b.textContent=`NEWS ${recent.length}`;badges.appendChild(b);const top=recent[0];const box=document.createElement('div');box.className='evidence-news';box.innerHTML=`<b>${esc(top.type==='SEC'?`SEC ${top.form||''}`:'NEWS DISCOVERY')}</b> · ${esc(top.headline||'')}<br><span>${esc(top.source||top.domain||'source')} · ${esc(top.publishedAt||'')}</span>`;card.querySelector('.why')?.insertAdjacentElement('afterend',box)}
-  const dataOk=!dataBadge?.classList.contains('bad');
-  const shariaBlocked=sharia==='NON_COMPLIANT';
+  const dataOk=!!dataBadge&&!dataBadge.classList.contains('bad');
+  const shariaOk=['VERIFIED','LIKELY_COMPLIANT'].includes(sharia);
+  const shariaBlocked=['UNVERIFIED','CONFLICT_REVIEW','NON_COMPLIANT'].includes(sharia);
   const technicalConfirmed=['ACCUMULATING','ARMED','IGNITING','EXPANDING'].includes(lifecycle)&&dataOk;
   const evidenceOk=recent.length>0||technicalConfirmed;
-  const ready=dataOk&&!shariaBlocked&&evidenceOk;
+  const ready=dataOk&&shariaOk&&evidenceOk;
   card.dataset.evidenceReady=ready?'1':'0';
-  card.dataset.shariaResearchPending=sharia==='UNVERIFIED'?'1':'0';
+  card.dataset.shariaResearchPending=shariaBlocked?'1':'0';
   return ready;
+}
+function restorePending(list){
+  const wrap=list.parentElement?.querySelector('.evidence-pending-wrap');
+  if(!wrap)return;
+  [...wrap.querySelectorAll('.opp-card')].forEach(card=>list.appendChild(card));
+  wrap.remove();
 }
 function applyGate(){
   injectStyle();const list=document.getElementById('opportunities');if(!list)return;
-  const existing=list.parentElement?.querySelector('.evidence-pending-wrap');existing?.remove();
+  restorePending(list);
   const cards=[...list.querySelectorAll('.opp-card')];if(!cards.length)return;
   let ready=0;const pending=[];for(const c of cards){decorateCard(c)?ready++:pending.push(c)}
-  const head=list.closest('.opportunity-panel')?.querySelector('.section-head h2');if(head)head.textContent='الفرص مكتملة بيانات السوق';
-  let count=list.closest('.opportunity-panel')?.querySelector('.evidence-ready-count');if(!count){count=document.createElement('div');count.className='evidence-ready-count';list.before(count)}count.textContent=`${ready} مكتملة سوقيًا/فنيًا · ${pending.length} قيد الاستكمال`;
-  if(pending.length){const d=document.createElement('details');d.className='evidence-pending-wrap';d.innerHTML=`<summary>قيد استكمال بيانات السوق/الدليل (${pending.length}) — ليست فرصًا تنفيذية</summary><div class="evidence-pending"></div>`;list.after(d);const box=d.querySelector('.evidence-pending');pending.forEach(c=>box.appendChild(c));}
-  if(!ready&&list.querySelectorAll('.opp-card').length===0)list.insertAdjacentHTML('beforeend','<div class="empty">لا توجد حاليًا فرصة مكتملة بيانات السوق + تأكيد فني/محفز. التصنيف الشرعي غير المتحقق يظهر كحالة بحثية ولا يحجب الفرصة، بينما NON_COMPLIANT فقط هو المستبعد عند تفعيل الفلتر.</div>');
+  const head=list.closest('.opportunity-panel')?.querySelector('.section-head h2');if(head)head.textContent='الفرص مكتملة الأدلة';
+  let count=list.closest('.opportunity-panel')?.querySelector('.evidence-ready-count');if(!count){count=document.createElement('div');count.className='evidence-ready-count';list.before(count)}count.textContent=`${ready} مكتملة الأدلة · ${pending.length} قيد الاستكمال`;
+  if(pending.length){const d=document.createElement('details');d.className='evidence-pending-wrap';d.innerHTML=`<summary>قيد استكمال الأدلة (${pending.length}) — ليست فرصًا تنفيذية</summary><div class="evidence-pending"></div>`;list.after(d);const box=d.querySelector('.evidence-pending');pending.forEach(c=>box.appendChild(c));}
+  if(!ready&&list.querySelectorAll('.opp-card').length===0)list.insertAdjacentHTML('beforeend','<div class="empty">لا توجد حاليًا فرصة مكتملة: بيانات سوق صالحة + تصنيف شرعي VERIFIED/LIKELY_COMPLIANT + محفز حديث أو تأكيد فني. الحالات UNVERIFIED وCONFLICT_REVIEW وNON_COMPLIANT تبقى خارج قائمة الفرص المكتملة.</div>');
 }
 async function refreshEvidence(){[live,intel]=await Promise.all([json(LIVE),json(INTEL)]);applyGate();setTimeout(applyGate,900)}
 window.addEventListener('DOMContentLoaded',()=>setTimeout(refreshEvidence,350),{once:true});
