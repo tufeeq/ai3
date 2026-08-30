@@ -1,0 +1,17 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const src=fs.readFileSync('feed-health-truth.js','utf8');
+for(const forbidden of ['executeTrade','autoBuy','autoSell','setThreshold'])assert(!src.includes(forbidden),`feed health layer must not expose ${forbidden}`);
+const sandbox={window:{MutationObserver:null},document:{readyState:'loading',addEventListener:()=>{},querySelector:()=>null},setInterval:()=>0,fetch:async()=>({ok:true,json:async()=>({})}),Date,console};
+vm.runInNewContext(src,sandbox);
+const api=sandbox.window.TAGX3FeedTruth;assert(api,'feed truth API should initialize');
+const health={overall:'HEALTHY',feeds:{fast:{status:'HEALTHY',count:1664,sourceTimestamp:'2026-08-28T21:12:10Z'}}};
+let a=api.assess(health,{marketClockSession:'closed',requested:500,count:500,freshCount:0,dataConfidence:'LOW'},Date.parse('2026-08-30T18:35:00Z'));
+assert.strictEqual(a.pipelineHealthy,true,'pipeline can be healthy while market is closed');
+assert.strictEqual(a.marketFresh,false,'HEALTHY pipeline must never imply fresh quotes');
+assert.strictEqual(a.marketMode,'SESSION_FINAL','closed market must be labeled session-final');
+assert(a.feeds[0].sourceAgeMin>2000,'source age must preserve stale upstream timestamp evidence');
+a=api.assess({overall:'HEALTHY'},{marketClockSession:'regular',requested:500,count:500,freshCount:487,dataConfidence:'HIGH'});
+assert.strictEqual(a.marketFresh,true,'fresh regular-session quotes should be live');
+a=api.assess({overall:'HEALTHY'},{marketClockSession:'regular',requested:500,count:500,freshCount:0,dataConfidence:'LOW'});
+assert.strictEqual(a.marketMode,'STALE_OR_UNAVAILABLE','open market with zero fresh quotes must fail closed');
+console.log('feed-health-truth contract: ok');
