@@ -11,6 +11,7 @@
   const symbolOf=x=>String(x?.symbol||'').toUpperCase().trim();
   const indexObs=s=>new Map((s?.observations||[]).map(o=>[symbolOf(o),o]).filter(([k])=>k));
   const indexSignals=s=>new Map((s?.signals||[]).map(o=>[symbolOf(o),o]).filter(([k])=>k));
+  const obsMs=o=>ms(o?.observedAt);
 
   function futureSnapshots(snapshots,base){
     const bt=ms(base?.capturedAt);if(bt==null)return[];
@@ -29,11 +30,20 @@
     return best;
   }
 
+  function observationAdvanced(baseObs,futureObs){
+    const b=obsMs(baseObs),f=obsMs(futureObs);
+    return b!=null&&f!=null&&f>b;
+  }
+
   function pathStats(snapshots,base,symbol,endAt){
     const bt=ms(base?.capturedAt),et=ms(endAt);if(bt==null||et==null||et<=bt)return{count:0,mfePct:null,maePct:null,peakAt:null,troughAt:null};
-    const start=indexObs(base).get(symbol),p0=num(start?.price);if(!(p0>0))return{count:0,mfePct:null,maePct:null,peakAt:null,troughAt:null};
+    const start=indexObs(base).get(symbol),p0=num(start?.price),baseObsAt=obsMs(start);if(!(p0>0)||baseObsAt==null)return{count:0,mfePct:null,maePct:null,peakAt:null,troughAt:null};
     let mfe=-Infinity,mae=Infinity,peakAt=null,troughAt=null,count=0;
-    for(const s of snapshots||[]){const t=ms(s?.capturedAt);if(t==null||t<=bt||t>et)continue;const o=indexObs(s).get(symbol),p=num(o?.price);if(!(p>0))continue;const r=pct(p0,p);count++;if(r>mfe){mfe=r;peakAt=s.capturedAt}if(r<mae){mae=r;troughAt=s.capturedAt}}
+    for(const s of snapshots||[]){
+      const t=ms(s?.capturedAt);if(t==null||t<=bt||t>et)continue;
+      const o=indexObs(s).get(symbol),p=num(o?.price),ot=obsMs(o);if(!(p>0)||ot==null||ot<=baseObsAt)continue;
+      const r=pct(p0,p);count++;if(r>mfe){mfe=r;peakAt=s.capturedAt}if(r<mae){mae=r;troughAt=s.capturedAt}
+    }
     return{count,mfePct:Number.isFinite(mfe)?mfe:null,maePct:Number.isFinite(mae)?mae:null,peakAt,troughAt};
   }
 
@@ -52,7 +62,12 @@
         if(!target){outcomes[h]={status:'MISSING'};continue;}
         const fo=indexObs(target).get(symbol),p0=num(o.price),p1=num(fo?.price);
         if(!(p0>0&&p1>0)){outcomes[h]={status:'MISSING_SYMBOL',snapshotAt:target.capturedAt};continue;}
+        if(!observationAdvanced(o,fo)){
+          outcomes[h]={status:'STALE_OBSERVATION',snapshotAt:target.capturedAt,baseObservedAt:o?.observedAt||null,targetObservedAt:fo?.observedAt||null};
+          continue;
+        }
         const path=pathStats(snapshots,base,symbol,target.capturedAt);
+        if(!path.count){outcomes[h]={status:'NO_FRESH_PATH',snapshotAt:target.capturedAt};continue;}
         outcomes[h]={status:'OK',snapshotAt:target.capturedAt,returnPct:pct(p0,p1),mfePct:path.mfePct,maePct:path.maePct,peakAt:path.peakAt,troughAt:path.troughAt};
       }
       rows.push({symbol,lifecycle,detected,actionable,shariaStatus:sig.shariaStatus||'UNVERIFIED',shariaEligible,movementIndex:num(sig.movementIndex),ignitionIndex:num(sig.ignitionIndex),continuationIndex:num(sig.continuationIndex),distributionRisk:num(sig.distributionRisk),riskScore:num(sig.riskScore),basePrice:num(o.price),baseObservedAt:o.observedAt||null,outcomes});
@@ -72,7 +87,8 @@
     const falsePos=detected.filter(r=>(r.outcomes[h].mfePct??Infinity)<=fpMax);
     const actionableFalsePos=actionable.filter(r=>(r.outcomes[h].mfePct??Infinity)<=fpMax);
     const avg=(xs,key)=>{const a=xs.map(x=>x.outcomes[h]?.[key]).filter(Number.isFinite);return a.length?a.reduce((s,v)=>s+v,0)/a.length:null};
-    return {horizonMin:+h,validCount:valid.length,moverCount:movers.length,detectedCount:detected.length,actionableCount:actionable.length,earlyCaptureRate:movers.length?captured.length/movers.length:null,missedMoverRate:movers.length?missed.length/movers.length:null,falsePositiveRate:detected.length?falsePos.length/detected.length:null,actionableFalsePositiveRate:actionable.length?actionableFalsePos.length/actionable.length:null,avgDetectedMFE:avg(detected,'mfePct'),avgDetectedMAE:avg(detected,'maePct'),avgActionableMFE:avg(actionable,'mfePct'),avgActionableMAE:avg(actionable,'maePct')};
+    const excluded=rows.reduce((acc,r)=>{const s=r.outcomes?.[h]?.status;if(s&&s!=='OK')acc[s]=(acc[s]||0)+1;return acc;},{});
+    return {horizonMin:+h,validCount:valid.length,moverCount:movers.length,detectedCount:detected.length,actionableCount:actionable.length,earlyCaptureRate:movers.length?captured.length/movers.length:null,missedMoverRate:movers.length?missed.length/movers.length:null,falsePositiveRate:detected.length?falsePos.length/detected.length:null,actionableFalsePositiveRate:actionable.length?actionableFalsePos.length/actionable.length:null,avgDetectedMFE:avg(detected,'mfePct'),avgDetectedMAE:avg(detected,'maePct'),avgActionableMFE:avg(actionable,'mfePct'),avgActionableMAE:avg(actionable,'maePct'),excludedOutcomeCounts:excluded};
   }
 
   function buildScorecard(snapshots,protocol){
@@ -86,5 +102,5 @@
     return{schemaVersion:1,kind:'TAGX3_VALIDATION_SCORECARD',generatedAt:new Date().toISOString(),protocol:{name:protocol.name,frozenAt:protocol.frozenAt,horizonsMin:protocol.horizonsMin,horizonToleranceMin:protocol.horizonToleranceMin,moverThresholdPct:protocol.moverThresholdPct,falsePositiveMaxMfePct:protocol.falsePositiveMaxMfePct},status:usablePairs?'MEASURING':'INSUFFICIENT_FUTURE_SNAPSHOTS',sessions:sessionSet.size,snapshotCount:ordered.length,horizons,rows:baseRows};
   }
 
-  return{selectHorizonSnapshot,pathStats,evaluateBase,metricsForHorizon,buildScorecard};
+  return{selectHorizonSnapshot,observationAdvanced,pathStats,evaluateBase,metricsForHorizon,buildScorecard};
 });
