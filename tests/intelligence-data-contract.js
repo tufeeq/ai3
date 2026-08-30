@@ -22,9 +22,12 @@ for(const r of x.shortlist){
   assert(Number.isFinite(at),`shortlist ${r.symbol} observedAt must be parseable`);
   assert(at<=generated+5*60*1000,`shortlist ${r.symbol} cannot be observed after feed generation`);
 }
-const eventKeys=new Set();
+const eventKeys=new Set(),eventSymbols=new Set();
 for(const e of x.events){
-  assert(shortlistSymbols.has(e.symbol),`event ${e.symbol} must belong to current shortlist`);
+  assert(/^[A-Z0-9.\-]+$/.test(String(e.symbol||'')),`invalid event symbol ${e.symbol}`);
+  eventSymbols.add(e.symbol);
+  const outsideShortlist=!shortlistSymbols.has(e.symbol);
+  if(outsideShortlist)assert(e.type==='SEC'&&e.verification==='PRIMARY'&&e.discoveryScope==='MARKET_WIDE',`outside-shortlist event ${e.symbol} must be primary market-wide SEC discovery`);
   assert(['SEC','NEWS'].includes(e.type),`unsupported event type ${e.type}`);
   assert(e.headline&&e.source,'events require headline and source provenance');
   const at=Date.parse(e.publishedAt||'');
@@ -34,17 +37,25 @@ for(const e of x.events){
     assert.strictEqual(e.verification,'PRIMARY','SEC events must be primary-source verified');
     assert.strictEqual(e.source,'SEC EDGAR','SEC events must identify EDGAR provenance');
     assert(/^https:\/\/www\.sec\.gov\//.test(String(e.url||'')),'SEC event must link to sec.gov');
+    if(e.discoveryScope)assert(['MARKET_WIDE','SHORTLIST_ENRICHMENT'].includes(e.discoveryScope),`unsupported SEC discovery scope ${e.discoveryScope}`);
   }else{
     assert.strictEqual(e.verification,'DISCOVERY','news must remain discovery-only until source-level verification');
+    assert(!outsideShortlist,'discovery-only news may not enter intelligence outside the price shortlist');
   }
   const key=`${e.symbol}|${e.type}|${e.headline}|${e.publishedAt}`;
   assert(!eventKeys.has(key),`duplicate event ${key}`); eventKeys.add(key);
 }
-for(const symbol of shortlistSymbols){
+for(const symbol of new Set([...shortlistSymbols,...eventSymbols])){
   const bucket=x.bySymbol[symbol];
   assert(bucket&&Array.isArray(bucket.events),`bySymbol missing ${symbol}`);
   const all=x.events.filter(e=>e.symbol===symbol);
   assert.strictEqual(bucket.eventCount,all.length,`bySymbol eventCount mismatch for ${symbol}`);
   assert.deepStrictEqual(bucket.events,all.slice(0,8),`bySymbol event slice mismatch for ${symbol}`);
 }
-console.log(`intelligence-data contract ok: ${x.shortlist.length} symbols, ${x.events.length} events, live=${s.live}`);
+if(Object.prototype.hasOwnProperty.call(s,'secMarketwideDiscovery')){
+  assert.strictEqual(typeof s.secMarketwideDiscovery,'boolean','secMarketwideDiscovery must be boolean');
+  assert(Number.isInteger(s.secMarketwideEventCount)&&s.secMarketwideEventCount>=0,'secMarketwideEventCount must be a non-negative integer');
+  const actual=x.events.filter(e=>e.type==='SEC'&&e.discoveryScope==='MARKET_WIDE').length;
+  assert.strictEqual(s.secMarketwideEventCount,actual,'market-wide SEC count must match events');
+}
+console.log(`intelligence-data contract ok: ${x.shortlist.length} shortlist symbols, ${eventSymbols.size} event symbols, ${x.events.length} events, live=${s.live}`);
