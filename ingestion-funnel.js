@@ -9,12 +9,22 @@ const QUOTE_PATHS=new Set(['/ai/tag/data/live-quotes.json','/ai/tag/data/tagx2-s
 const KEYS=['data','quotes','results','stocks','items','candidates','opportunities','rows'];
 const HISTORY_KEY='tagx3.ingestionFunnel.v1';
 const HISTORY_LIMIT=96;
+function symbolOf(row){return String(row?.symbol||row?.ticker||row?.code||'').trim().toUpperCase();}
+function objectRows(map){
+  if(!map||typeof map!=='object'||Array.isArray(map))return [];
+  return Object.entries(map).map(([key,value])=>{
+    if(value&&typeof value==='object'&&!Array.isArray(value)) return symbolOf(value)?value:{symbol:key,...value};
+    return {symbol:key,value};
+  });
+}
 function rowsOf(payload){
   if(Array.isArray(payload))return payload;
-  for(const key of KEYS)if(Array.isArray(payload?.[key]))return payload[key];
+  for(const key of KEYS){
+    if(Array.isArray(payload?.[key]))return payload[key];
+    const mapped=objectRows(payload?.[key]);if(mapped.length)return mapped;
+  }
   return [];
 }
-function symbolOf(row){return String(row?.symbol||row?.ticker||row?.code||'').trim().toUpperCase();}
 function summarizeFeeds(records){
   const seen=new Set();let rows=0;
   const feeds=[];
