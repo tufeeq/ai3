@@ -17,7 +17,9 @@ const completenessScore=raw=>{
   if(!flt)score-=8;
   return Math.max(0,Math.min(100,score));
 };
+function isClosedDiscoverySnapshot(raw){return raw?.marketClockSession==='closed'&&(raw?.discoveryOnly===true||raw?.liveBacked===false||raw?.marketObservation===false)}
 function isSessionFinal(raw){
+  if(isClosedDiscoverySnapshot(raw))return false;
   if(raw?.marketClockSession!=='closed'&&!raw?.sessionFinal)return false;
   const ts=raw?.observedAt||raw?.timestamp||raw?.updatedAt||raw?.quoteTime||raw?.timestampET;
   const age=ageHours(ts);
@@ -25,6 +27,22 @@ function isSessionFinal(raw){
 }
 E.analyze=function(raw,context={},previous={}){
   const out=baseAnalyze(raw,context,previous);
+  if(isClosedDiscoverySnapshot(raw)){
+    const current=Number(out.dataConfidence?.score);
+    out.dataConfidence={
+      ...(out.dataConfidence||{}),
+      score:Number.isFinite(current)?Math.min(current,40):40,
+      label:'LOW',
+      fresh:false,
+      sessionFinal:false,
+      usable:false,
+      freshnessClass:'CLOSED_DISCOVERY_SNAPSHOT'
+    };
+    out.sessionFinal=false;
+    out.executable=false;
+    out.modelNote='لقطة اكتشاف محدثة أثناء إغلاق السوق وليست ملاحظة سعر سوق جديدة؛ تستخدم للاكتشاف فقط ولا تمنح ثقة freshness أو SESSION FINAL.';
+    return out;
+  }
   if(!isSessionFinal(raw))return out;
   const score=completenessScore(raw);
   out.dataConfidence={
