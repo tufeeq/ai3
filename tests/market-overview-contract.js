@@ -1,0 +1,15 @@
+const fs=require('fs'),assert=require('assert');
+const truth=fs.readFileSync('ui-truth.js','utf8'),board=fs.readFileSync('market-overview.js','utf8'),html=fs.readFileSync('index.html','utf8');
+assert(truth.includes('freshCount'),'market truth must use source freshCount');
+assert(truth.includes("m.session==='closed'"),'closed market must be handled explicitly');
+assert(!truth.includes('q.fresh'),'market truth must not infer freshness from rendered cards');
+assert(truth.includes('لا تصفها بأنها بيانات حية'),'closed-session copy must explicitly reject live-data wording');
+assert(board.includes("'./data/intelligence.json'"),'market bulletin must consume repository intelligence');
+assert(board.includes("'/ai/tag/data/live-quotes.json'"),'market bulletin must consume market coverage metadata');
+assert(board.includes('النشرة الذكية للسوق'),'market bulletin must be visible to Arabic users');
+assert(board.includes('أحدث المؤثرات والأخبار'),'event/news radar must be surfaced');
+assert(board.includes('الرصد الاستباقي للنموذج'),'model watchlist must be surfaced');
+assert(board.includes('غير معايرة كاحتمالات'),'model scores must not be represented as calibrated predictions');
+assert(html.includes('<script src="market-overview.js"></script>'),'dashboard must load market overview');
+for(const forbidden of ['autoBuy','autoSell','executeTrade','setThreshold'])assert(!board.includes(forbidden),`market overview must not expose ${forbidden}`);
+console.log('market overview contract: OK');
