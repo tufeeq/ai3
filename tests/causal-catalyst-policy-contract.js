@@ -1,0 +1,12 @@
+const assert=require('node:assert/strict');
+const P=require('../causal-catalyst-policy.js');
+const raw={symbol:'TEST',observedAt:'2026-08-28T14:00:00Z'};
+const future={catalystScore:80,catalystAt:'2026-08-28T14:30:00Z',catalystType:'SEC 8-K',catalystObservedAt:'2026-08-28T14:30:00Z',daysToCatalyst:0,other:'keep'};
+const blocked=P.causalContext(raw,future);
+assert.equal(blocked.catalystScore,undefined,'future catalyst score must not reach historical observation');
+assert.equal(blocked.catalystAt,undefined,'future catalyst timestamp must be removed');
+assert.equal(blocked.other,'keep','non-catalyst context must be preserved');
+assert.equal(blocked.catalystCausalGuard.blocked,true);
+const known={catalystScore:60,catalystAt:'2026-08-28T13:55:00Z',catalystObservedAt:'2026-08-28T13:55:00Z'};
+assert.strictEqual(P.causalContext(raw,known),known,'already-known catalyst evidence must remain unchanged');
+console.log('causal-catalyst-policy contract: OK');
