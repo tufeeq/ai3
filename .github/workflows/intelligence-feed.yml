@@ -6,8 +6,10 @@ on:
     paths:
       - 'scripts/build-intelligence.mjs'
       - '.github/workflows/intelligence-feed.yml'
+  # GitHub documents that scheduled jobs near the start of the hour can be delayed
+  # or dropped under load. Use off-quarter minutes to reduce synchronized cron load.
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '7,22,37,52 * * * *'
 permissions:
   contents: write
 concurrency:
@@ -25,7 +27,17 @@ jobs:
       - name: Build market intelligence feed
         run: node scripts/build-intelligence.mjs
       - name: Validate intelligence payload
-        run: node -e "const x=require('./data/intelligence.json'); if(!x.generatedAt||!Array.isArray(x.events)||!Array.isArray(x.shortlist)||!x.bySymbol) process.exit(1); console.log({events:x.events.length,shortlist:x.shortlist.length,errors:x.errors.length})"
+        run: |
+          node - <<'NODE'
+          const x=require('./data/intelligence.json');
+          const generated=Date.parse(x.generatedAt||'');
+          const ageMs=Date.now()-generated;
+          const shapeOk=Number.isFinite(generated)&&Array.isArray(x.events)&&Array.isArray(x.shortlist)&&x.bySymbol&&typeof x.bySymbol==='object';
+          const liveOk=x.sourceStatus?.live===true;
+          const freshBuild=ageMs>=0&&ageMs<=10*60*1000;
+          console.log({generatedAt:x.generatedAt,ageSeconds:Math.round(ageMs/1000),events:x.events?.length,shortlist:x.shortlist?.length,sourceStatus:x.sourceStatus,errors:Array.isArray(x.errors)?x.errors.length:null});
+          if(!shapeOk||!liveOk||!freshBuild) process.exit(1);
+          NODE
       - name: Commit changed intelligence only
         run: |
           git config user.name 'tagx3-intelligence-bot'
