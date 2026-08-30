@@ -11,7 +11,7 @@ function injectStyle(){if(document.getElementById('evidence-intelligence-style')
 function rowsMap(){const q=live?.quotes;return q&&typeof q==='object'&&!Array.isArray(q)?q:{}}
 function eventsFor(symbol){const direct=intel?.bySymbol?.[symbol]?.events;if(Array.isArray(direct))return direct;return Array.isArray(intel?.events)?intel.events.filter(e=>String(e?.symbol||'').toUpperCase()===symbol):[]}
 function marketClosed(){return live?.marketClockSession==='closed'}
-function isClosedSessionQuote(symbol){if(!marketClosed())return false;const q=rowsMap()[symbol];if(!q)return true;const t=new Date(q.timestampET||q.observedAt||0).getTime();const age=(Date.now()-t)/3600000;return Number.isFinite(age)&&age>=0&&age<=96}
+function isClosedSessionQuote(symbol){if(!marketClosed())return false;const q=rowsMap()[symbol];if(!q)return false;const rawTs=q.timestampET||q.observedAt||q.updatedAt||q.timestamp;if(!rawTs)return false;const t=new Date(rawTs).getTime();const age=(Date.now()-t)/3600000;return Number.isFinite(age)&&age>=0&&age<=96}
 function decorateCard(card){
   const symbol=card.querySelector('.ticker')?.textContent?.trim()?.toUpperCase();if(!symbol)return false;
   const badges=card.querySelector('.badges');const badgeList=[...card.querySelectorAll('.badges .badge')];
