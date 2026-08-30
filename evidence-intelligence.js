@@ -1,6 +1,9 @@
 (()=>{
 'use strict';
-const INTEL='/data/intelligence.json',LIVE='/ai/tag/data/live-quotes.json';
+// Project Pages are served from /ai3/. Keep repo-owned intelligence relative to
+// the application root; a leading slash would incorrectly request
+// https://tufeeq.github.io/data/intelligence.json instead of /ai3/data/....
+const INTEL='./data/intelligence.json',LIVE='/ai/tag/data/live-quotes.json';
 let intel=null,live=null;
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 async function json(url){try{const r=await fetch(`${url}?v=${Date.now()}`,{cache:'no-store'});return r.ok?await r.json():null}catch{return null}}
