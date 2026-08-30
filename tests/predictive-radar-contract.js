@@ -1,0 +1,17 @@
+const assert=require('assert');
+const P=require('../predictive-radar.js');
+const base={symbol:'TEST',price:10,changePct:2,observedAt:new Date().toISOString(),movementIndex:72,ignitionIndex:68,continuationIndex:70,distributionRisk:22,riskScore:30,lifecycle:'ARMED',stage:'PRE_IGNITION',dataConfidence:{fresh:true,score:90},sharia:{status:'VERIFIED'},whyNow:['تراكم سيولة','تسارع حجم التداول'],invalidation:'structure failure'};
+const p=P.build(base,'2026-08-31T00:00:00Z');
+assert.equal(p.status,'EXPERIMENTAL');
+assert.equal(p.calibration,'UNCALIBRATED');
+assert.equal(p.probability,null,'must not invent probability before calibration');
+assert.equal(p.direction,'UPSIDE');
+assert.ok(p.expectedMoveRangePct.maxPct>p.expectedMoveRangePct.minPct);
+assert.equal(p.evidenceCutoff,base.observedAt);
+assert.equal(P.build({...base,sharia:{status:'NON_COMPLIANT'}}).blockedReason,'SHARIA_NON_COMPLIANT');
+assert.equal(P.build({...base,sharia:{status:'CONFLICT_REVIEW'}}).blockedReason,'SHARIA_CONFLICT_REVIEW');
+assert.equal(P.build({...base,dataConfidence:{fresh:false,score:90}}).blockedReason,'DATA_NOT_FRESH_ENOUGH');
+const mem=new Map();const storage={getItem:k=>mem.get(k)||null,setItem:(k,v)=>mem.set(k,v)};
+P.persist([p],storage);P.persist([{...p,evidenceScore:1}],storage);
+assert.equal(JSON.parse(mem.get(P.KEY))[0].evidenceScore,p.evidenceScore,'frozen prediction must not be overwritten');
+console.log('predictive-radar-contract: ok');

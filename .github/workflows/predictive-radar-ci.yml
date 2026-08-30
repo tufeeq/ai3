@@ -1,0 +1,22 @@
+name: Predictive Radar CI
+on:
+  push:
+    paths:
+      - 'predictive-radar.js'
+      - 'tests/predictive-radar-contract.js'
+      - '.github/workflows/predictive-radar-ci.yml'
+  pull_request:
+    paths:
+      - 'predictive-radar.js'
+      - 'tests/predictive-radar-contract.js'
+      - '.github/workflows/predictive-radar-ci.yml'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node --check predictive-radar.js
+      - run: node tests/predictive-radar-contract.js
