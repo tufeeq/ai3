@@ -1,23 +1,25 @@
 (()=>{
 'use strict';
-// Project Pages are served from /ai3/. Keep repo-owned intelligence relative to
-// the application root; a leading slash would incorrectly request
-// https://tufeeq.github.io/data/intelligence.json instead of /ai3/data/....
 const INTEL='./data/intelligence.json',LIVE='/ai/tag/data/live-quotes.json';
 let intel=null,live=null;
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 async function json(url){try{const r=await fetch(`${url}?v=${Date.now()}`,{cache:'no-store'});return r.ok?await r.json():null}catch{return null}}
 function injectStyle(){if(document.getElementById('evidence-intelligence-style'))return;const s=document.createElement('style');s.id='evidence-intelligence-style';s.textContent=`.evidence-news{margin-top:7px;padding:7px 8px;border:1px solid rgba(47,128,255,.2);border-radius:8px;background:rgba(47,128,255,.06);font-size:9px;line-height:1.5;color:#8da5c2}.evidence-news b{color:#cfe1f7}.evidence-pending-wrap{margin-top:10px;padding:10px;border:1px dashed var(--line2);border-radius:12px}.evidence-pending-wrap>summary{cursor:pointer;font-size:11px;font-weight:800;color:var(--muted)}.evidence-pending{display:grid;gap:7px;margin-top:8px}.evidence-pending .opp-card{opacity:.78}.badge.evidence{color:#8fc3ff;background:rgba(47,128,255,.12)}.badge.session-final{color:#8ea2ba;background:#edf2f7}.evidence-ready-count{font-size:9px;color:var(--muted);margin-top:3px}`;document.head.appendChild(s)}
-function rowsMap(){const q=live?.quotes;return q&&typeof q==='object'&&!Array.isArray(q)?q:{}}
+function rowsMap(){
+  const q=live?.quotes;
+  if(q&&typeof q==='object'&&!Array.isArray(q))return q;
+  if(Array.isArray(q))return Object.fromEntries(q.map(x=>[String(x?.symbol||x?.ticker||'').toUpperCase(),x]).filter(([s])=>s));
+  return {};
+}
 function eventsFor(symbol){const direct=intel?.bySymbol?.[symbol]?.events;if(Array.isArray(direct))return direct;return Array.isArray(intel?.events)?intel.events.filter(e=>String(e?.symbol||'').toUpperCase()===symbol):[]}
 function marketClosed(){return live?.marketClockSession==='closed'}
-function isClosedSessionQuote(symbol){if(!marketClosed())return false;const q=rowsMap()[symbol];if(!q)return false;const rawTs=q.timestampET||q.observedAt||q.updatedAt||q.timestamp;if(!rawTs)return false;const t=new Date(rawTs).getTime();const age=(Date.now()-t)/3600000;return Number.isFinite(age)&&age>=0&&age<=96}
+function isClosedSessionQuote(symbol){if(!marketClosed())return false;const q=rowsMap()[symbol];if(!q)return false;if(q.sessionFinal===true)return true;const rawTs=q.timestampET||q.observedAt||q.updatedAt||q.timestamp;if(!rawTs)return false;const t=new Date(rawTs).getTime();const age=(Date.now()-t)/3600000;return Number.isFinite(age)&&age>=0&&age<=96}
 function decorateCard(card){
   const symbol=card.querySelector('.ticker')?.textContent?.trim()?.toUpperCase();if(!symbol)return false;
   const badges=card.querySelector('.badges');const badgeList=[...card.querySelectorAll('.badges .badge')];
   const lifecycle=badgeList[0]?.textContent?.trim()||'';const sharia=badgeList[1]?.textContent?.trim()||'';let dataBadge=badgeList.find(b=>['LOW','MEDIUM','HIGH','SESSION FINAL'].includes(b.textContent.trim()))||badgeList.at(-1);
-  if(dataBadge&&isClosedSessionQuote(symbol)&&['LOW','MEDIUM','HIGH'].includes(dataBadge.textContent.trim())){
-    dataBadge.textContent='SESSION FINAL';dataBadge.classList.remove('bad');dataBadge.classList.add('session-final');dataBadge.title='السوق مغلق؛ هذه آخر لقطة جلسة متاحة وليست قراءة لحظية متقادمة.';
+  if(dataBadge&&isClosedSessionQuote(symbol)){
+    dataBadge.textContent='SESSION FINAL';dataBadge.classList.remove('bad');dataBadge.classList.add('session-final');dataBadge.title='السوق مغلق؛ هذه آخر لقطة موثقة من الجلسة السابقة، صالحة للتحليل التحضيري وليست سعرًا حيًا.';
   }
   card.querySelector('.evidence-news')?.remove();card.querySelectorAll('.badge.evidence').forEach(x=>x.remove());
   const events=eventsFor(symbol);const recent=events.filter(e=>{const t=new Date(e.publishedAt||0).getTime();return Number.isFinite(t)&&Date.now()-t<=7*86400000}).slice(0,3);
