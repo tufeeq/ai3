@@ -11,19 +11,27 @@ const QUOTE_PATHS=new Set([
   '/ai/tag/data/coverage-rescue.json'
 ]);
 const KEYS=['quotes','data','results','stocks','items','candidates','opportunities','rows'];
-function rowFromEntry(symbol,value){
-  if(value&&typeof value==='object'&&!Array.isArray(value)){
-    if(value.symbol||value.ticker||value.code)return value;
-    return {symbol:String(symbol).toUpperCase(),...value};
-  }
-  return {symbol:String(symbol).toUpperCase(),value};
+function canonicalRow(row,symbol,fallbackObservedAt){
+  if(!row||typeof row!=='object'||Array.isArray(row))return {symbol:String(symbol||'').toUpperCase(),value:row};
+  const out={...row};
+  if(!out.symbol&&!out.ticker&&!out.code&&symbol)out.symbol=String(symbol).toUpperCase();
+  if(out.velocity5m==null&&out.priceVelocity5mPct!=null)out.velocity5m=out.priceVelocity5mPct;
+  if(out.velocity15m==null&&out.priceVelocity15mPct!=null)out.velocity15m=out.priceVelocity15mPct;
+  if(!out.observedAt)out.observedAt=out.timestampET||out.timestamp||out.updatedAt||fallbackObservedAt||null;
+  return out;
 }
 function normalizePayload(payload){
   if(!payload||typeof payload!=='object'||Array.isArray(payload))return payload;
+  const fallbackObservedAt=payload.updatedAt||payload.updatedAtUTC||payload.updatedAtET||payload.timestamp||null;
   for(const key of KEYS){
     const value=payload[key];
-    if(value&&typeof value==='object'&&!Array.isArray(value)){
-      return {...payload,[key]:Object.entries(value).map(([symbol,row])=>rowFromEntry(symbol,row)),quoteShapeNormalized:{key,count:Object.keys(value).length}};
+    if(Array.isArray(value)){
+      const rows=value.map(row=>canonicalRow(row,null,fallbackObservedAt));
+      return {...payload,[key]:rows,quoteShapeNormalized:{key,count:rows.length,canonicalized:true}};
+    }
+    if(value&&typeof value==='object'){
+      const rows=Object.entries(value).map(([symbol,row])=>canonicalRow(row,symbol,fallbackObservedAt));
+      return {...payload,[key]:rows,quoteShapeNormalized:{key,count:rows.length,canonicalized:true}};
     }
   }
   return payload;
@@ -50,5 +58,5 @@ function install(root){
   };
   return true;
 }
-return {QUOTE_PATHS,normalizePayload,install};
+return {QUOTE_PATHS,canonicalRow,normalizePayload,install};
 });
