@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-08-30T04:18:17.613Z",
+  "generatedAt": "2026-08-30T09:21:49.309Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,7 +8,7 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-08-28T23:59:58.000Z",
-    "marketDataAgeMin": 1698.3,
+    "marketDataAgeMin": 2001.9,
     "secMapping": true,
     "newsDiscovery": true
   },
@@ -206,6 +206,14 @@
       "observedAt": "2026-08-28T19:59:02-04:00"
     },
     {
+      "symbol": "KZIA",
+      "price": 13.9225,
+      "changePct": 2.5220913107510996,
+      "early": 66,
+      "ignition": 74,
+      "observedAt": "2026-08-28T19:30:05-04:00"
+    },
+    {
       "symbol": "TWG",
       "price": 0.5117,
       "changePct": 6.51540383014156,
@@ -228,14 +236,6 @@
       "early": 66,
       "ignition": 74,
       "observedAt": "2026-08-28T19:59:23-04:00"
-    },
-    {
-      "symbol": "KZIA",
-      "price": 13.9225,
-      "changePct": 2.5220913107510996,
-      "early": 66,
-      "ignition": 74,
-      "observedAt": "2026-08-28T19:30:05-04:00"
     },
     {
       "symbol": "CLGN",
@@ -431,6 +431,10 @@
       "title": "First Breach, Inc.",
       "cik": "0001892704"
     },
+    "KZIA": {
+      "title": "KAZIA THERAPEUTICS LTD",
+      "cik": "0001075880"
+    },
     "TWG": {
       "title": "Top Wealth Group Holding Ltd",
       "cik": "0001978057"
@@ -442,10 +446,6 @@
     "OSS": {
       "title": "ONE STOP SYSTEMS, INC.",
       "cik": "0001394056"
-    },
-    "KZIA": {
-      "title": "KAZIA THERAPEUTICS LTD",
-      "cik": "0001075880"
     },
     "CLGN": {
       "title": "CollPlant Biotechnologies Ltd",
@@ -1995,76 +1995,6 @@
       ],
       "eventCount": 3
     },
-    "TWG": {
-      "events": [
-        {
-          "symbol": "TWG",
-          "title": "Top Wealth Group Holding Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-08-19T12:58:51.000Z",
-          "headline": "6-K filing — Top Wealth Group Holding Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1978057/000121390026091431/ea0302674-6k_top.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY"
-        },
-        {
-          "symbol": "TWG",
-          "title": "Top Wealth Group Holding Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-08-18T20:01:15.000Z",
-          "headline": "6-K filing — Top Wealth Group Holding Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1978057/000121390026091210/ea0302395-6k_topwealth.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY"
-        }
-      ],
-      "eventCount": 2
-    },
-    "STKE": {
-      "events": [
-        {
-          "symbol": "STKE",
-          "title": "SOL Strategies Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-08-17T21:48:44.000Z",
-          "headline": "6-K filing — SOL Strategies Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1846839/000106299326004461/form6k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY"
-        },
-        {
-          "symbol": "STKE",
-          "title": "SOL Strategies Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-08-17T18:45:26.000Z",
-          "headline": "6-K filing — SOL Strategies Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1846839/000110465926097779/tm2622851d1_6k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY"
-        }
-      ],
-      "eventCount": 2
-    },
-    "OSS": {
-      "events": [
-        {
-          "symbol": "OSS",
-          "title": "ONE STOP SYSTEMS, INC.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-08-24T23:31:58.000Z",
-          "headline": "S-3 filing — ONE STOP SYSTEMS, INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1394056/000119312526363751/oss-20260824.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY"
-        }
-      ],
-      "eventCount": 1
-    },
     "KZIA": {
       "events": [
         {
@@ -2157,6 +2087,76 @@
         }
       ],
       "eventCount": 8
+    },
+    "TWG": {
+      "events": [
+        {
+          "symbol": "TWG",
+          "title": "Top Wealth Group Holding Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-08-19T12:58:51.000Z",
+          "headline": "6-K filing — Top Wealth Group Holding Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1978057/000121390026091431/ea0302674-6k_top.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY"
+        },
+        {
+          "symbol": "TWG",
+          "title": "Top Wealth Group Holding Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-08-18T20:01:15.000Z",
+          "headline": "6-K filing — Top Wealth Group Holding Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1978057/000121390026091210/ea0302395-6k_topwealth.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY"
+        }
+      ],
+      "eventCount": 2
+    },
+    "STKE": {
+      "events": [
+        {
+          "symbol": "STKE",
+          "title": "SOL Strategies Inc.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-08-17T21:48:44.000Z",
+          "headline": "6-K filing — SOL Strategies Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1846839/000106299326004461/form6k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY"
+        },
+        {
+          "symbol": "STKE",
+          "title": "SOL Strategies Inc.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-08-17T18:45:26.000Z",
+          "headline": "6-K filing — SOL Strategies Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1846839/000110465926097779/tm2622851d1_6k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY"
+        }
+      ],
+      "eventCount": 2
+    },
+    "OSS": {
+      "events": [
+        {
+          "symbol": "OSS",
+          "title": "ONE STOP SYSTEMS, INC.",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-08-24T23:31:58.000Z",
+          "headline": "S-3 filing — ONE STOP SYSTEMS, INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1394056/000119312526363751/oss-20260824.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY"
+        }
+      ],
+      "eventCount": 1
     },
     "CLGN": {
       "events": [
