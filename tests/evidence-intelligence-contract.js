@@ -1,9 +1,13 @@
 const fs=require('fs');
 const assert=require('assert');
 const src=fs.readFileSync('evidence-intelligence.js','utf8');
+const fast=fs.readFileSync('fast-fetch.js','utf8');
 const html=fs.readFileSync('index.html','utf8');
 assert(html.includes('evidence-intelligence.js'),'index must load evidence intelligence');
-assert(src.includes("const INTEL='/data/intelligence.json'"),'must consume generated intelligence feed');
+assert(src.includes("const INTEL='./data/intelligence.json'"),'project Pages must consume repo-owned intelligence with a relative URL');
+assert(!src.includes("const INTEL='/data/intelligence.json'"),'must not request intelligence from the GitHub Pages domain root');
+assert(fast.includes("new URL('./data/intelligence.json',location.href).pathname"),'fast-fetch must resolve the intelligence path from the deployed app root');
+assert(!fast.includes("'/data/intelligence.json'"),'fast-fetch must not hard-code a domain-root intelligence path');
 assert(src.includes("dataOk&&shariaOk&&evidenceOk"),'readiness must require data + Sharia + evidence');
 for(const token of ['UNVERIFIED','CONFLICT_REVIEW','NON_COMPLIANT'])assert(src.includes(token),`must retain Sharia block: ${token}`);
 assert(src.includes('SESSION FINAL'),'closed-session quotes must be represented as session-final, not fake live data');
