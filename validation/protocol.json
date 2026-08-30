@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "name": "TAGX3 Commercial Validation Protocol v1",
+  "frozenAt": "2026-08-30T22:40:00Z",
+  "purpose": "Measure detection quality and timing without changing production model thresholds from isolated cases.",
+  "horizonsMin": [15, 30, 120],
+  "horizonToleranceMin": 9,
+  "moverThresholdPct": 10,
+  "falsePositiveMaxMfePct": 3,
+  "detectedLifecycles": ["WATCH", "ACCUMULATING", "ARMED", "IGNITING", "EXPANDING"],
+  "actionableLifecycles": ["ACCUMULATING", "ARMED", "IGNITING", "EXPANDING"],
+  "excludedLifecycles": ["DISTRIBUTING", "CLOSED"],
+  "shariaEligible": ["VERIFIED", "LIKELY_COMPLIANT"],
+  "rules": [
+    "No production score/weight/threshold changes are authorized by this protocol.",
+    "Every outcome must use a snapshot captured after the signal observation; future evidence may not be injected into the historical signal.",
+    "If the requested horizon has no captured observation within tolerance, the outcome is MISSING rather than interpolated or fabricated.",
+    "Sharia eligibility is reported separately from raw model detection quality; NON_COMPLIANT/UNVERIFIED cases are not promoted to evidence-complete opportunities.",
+    "Commercial edge may not be claimed until multiple sessions and an out-of-sample holdout have been evaluated."
+  ]
+}
