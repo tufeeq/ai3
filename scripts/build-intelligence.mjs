@@ -40,6 +40,20 @@ function shortlist(rows,n=40){
   })).sort((a,b)=>(b.early+b.ignition)-(a.early+a.ignition)).slice(0,n);
 }
 
+function marketTruth(picks){
+  const parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(now);
+  const p=Object.fromEntries(parts.map(x=>[x.type,x.value]));
+  const hm=Number(p.hour)*60+Number(p.minute);
+  const weekday=!['Sat','Sun'].includes(p.weekday);
+  const marketWindowOpen=weekday&&hm>=240&&hm<=1200;
+  const session=!weekday?'closed':hm<240?'closed':hm<570?'pre-market':hm<960?'regular':hm<=1200?'after-hours':'closed';
+  const observed=picks.map(x=>Date.parse(x.observedAt||'')).filter(Number.isFinite);
+  const newestObservedAt=observed.length?new Date(Math.max(...observed)).toISOString():null;
+  const marketDataAgeMin=newestObservedAt?Math.max(0,(Date.now()-Date.parse(newestObservedAt))/60000):null;
+  const marketDataFresh=marketWindowOpen&&marketDataAgeMin!==null&&marketDataAgeMin<=15;
+  return {marketDataLoaded:picks.length>0,marketDataFresh,marketWindowOpen,marketSession:session,newestObservedAt,marketDataAgeMin:marketDataAgeMin===null?null:Number(marketDataAgeMin.toFixed(1))};
+}
+
 function secRecent(sub,symbol,title){
   const r=sub?.filings?.recent||{}; const out=[];
   const forms=r.form||[], dates=r.filingDate||[], accepted=r.acceptanceDateTime||[], acc=r.accessionNumber||[], docs=r.primaryDocument||[];
@@ -72,6 +86,7 @@ async function main(){
   try{live=await getJson('https://raw.githubusercontent.com/tufeeq/ai/main/tag/data/live-quotes.json',{timeout:10000})}catch(e){errors.push(`LIVE:${e.message}`)}
   try{mapping=await getJson('https://www.sec.gov/files/company_tickers.json',{timeout:10000})}catch(e){errors.push(`SEC_MAPPING:${e.message}`)}
   const picks=shortlist(liveRows(live),40);
+  const truth=marketTruth(picks);
   const map=new Map();
   if(mapping)for(const v of Object.values(mapping)){if(v?.ticker)map.set(String(v.ticker).toUpperCase(),v)}
   const companies={};
@@ -97,8 +112,8 @@ async function main(){
   const events=[...secResults.flat(),...newsResults.flat()];
   const seen=new Set(); const dedup=events.filter(e=>{const k=`${e.symbol}|${e.type}|${e.headline}|${e.publishedAt}`;if(seen.has(k))return false;seen.add(k);return true}).sort((a,b)=>new Date(b.publishedAt||0)-new Date(a.publishedAt||0));
   const bySymbol={}; for(const p of picks){const own=dedup.filter(e=>e.symbol===p.symbol);bySymbol[p.symbol]={events:own.slice(0,8),eventCount:own.length};}
-  const payload={schemaVersion:2,generatedAt:iso,sourceStatus:{live:!!live,secMapping:!!mapping,newsDiscovery:true},shortlist:picks,companies,eventCount:dedup.length,events:dedup,bySymbol,errors:errors.slice(0,30),policy:'Public-source intelligence. SEC filings are primary-source events; GDELT is discovery-only and requires source-level verification before trade decisions.'};
+  const payload={schemaVersion:3,generatedAt:iso,sourceStatus:{live:truth.marketDataFresh,marketDataLoaded:truth.marketDataLoaded,marketDataFresh:truth.marketDataFresh,marketWindowOpen:truth.marketWindowOpen,marketSession:truth.marketSession,newestObservedAt:truth.newestObservedAt,marketDataAgeMin:truth.marketDataAgeMin,secMapping:!!mapping,newsDiscovery:true},shortlist:picks,companies,eventCount:dedup.length,events:dedup,bySymbol,errors:errors.slice(0,30),policy:'Public-source intelligence. `sourceStatus.live` means market data is fresh inside the active US extended-hours window; loaded-but-stale/session-final data is never labeled live. SEC filings are primary-source events; GDELT is discovery-only and requires source-level verification before trade decisions.'};
   await fs.mkdir('data',{recursive:true}); await fs.writeFile(OUT,JSON.stringify(payload,null,2));
-  console.log(`wrote ${OUT}: ${dedup.length} events for ${picks.length} symbols; errors=${errors.length}`);
+  console.log(`wrote ${OUT}: ${dedup.length} events for ${picks.length} symbols; market=${truth.marketSession}; live=${truth.marketDataFresh}; ageMin=${truth.marketDataAgeMin}; errors=${errors.length}`);
 }
 main().catch(e=>{console.error(e);process.exit(1)});
