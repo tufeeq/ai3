@@ -6,6 +6,7 @@ import {fileURLToPath} from 'node:url';
 
 const require=createRequire(import.meta.url);
 const U=require('../market-universe-bridge.js');
+const E=require('../core/engine.js');
 
 export const SOURCES={
   live:'https://raw.githubusercontent.com/tufeeq/ai/main/tag/data/live-quotes.json',
@@ -44,23 +45,38 @@ export function shariaSummary(payload){
   return out;
 }
 
+export function shariaIndex(payload){
+  const m=new Map();
+  for(const r of rowsOf(payload)){const s=symbolOf(r);if(!s)continue;m.set(s,String(r?.status||r?.classification||r?.result||'UNVERIFIED').toUpperCase())}
+  return m;
+}
+
+export function catalystIndex(intel,capturedAt){
+  const cutoff=new Date(capturedAt).getTime(),m=new Map();
+  for(const e of Array.isArray(intel?.events)?intel.events:[]){
+    const symbol=symbolOf(e);if(!symbol)continue;
+    const at=iso(e.publishedAt||e.acceptedAt||e.filedAt||e.eventAt);if(!at||new Date(at).getTime()>cutoff)continue;
+    const score=n(e.score??e.materialityScore??e.catalystScore)??45;
+    const old=m.get(symbol);if(!old||new Date(at)>new Date(old.catalystObservedAt))m.set(symbol,{catalystScore:E.clamp(score),catalystType:e.form||e.type||e.eventType||'EVENT',catalystAt:at,catalystObservedAt:at,daysToCatalyst:0});
+  }
+  return m;
+}
+
 export function minimalObservation(r){
   const symbol=symbolOf(r);if(!symbol)return null;
   const price=n(r.price??r.Price??r.last);if(!(price>0))return null;
-  return {
-    symbol,
-    price,
-    changePct:n(r.changePct??r.Change??r.changePercent),
-    volume:n(r.volume??r.Volume),
-    avgVolume:n(r.avgVolume??r['Avg Volume']??r['Average Volume']),
-    floatShares:n(r.floatShares??r.Float??r['Shares Float']),
-    sharesOutstanding:n(r.sharesOutstanding??r.Outstanding??r['Shares Outstanding']),
-    shortFloat:n(r.shortFloat??r['Short Float']??r['Short Float %']),
-    observedAt:iso(r.observedAt||r._snapshotTimestampUTC||r.timestampUTC||r.timestampET||r.updatedAt),
-    source:String(r.source||r._source||'unknown'),
-    discoveryOnly:r.discoveryOnly===true||r._discoveryOnly===true,
-    liveBacked:r.liveBacked===true
-  };
+  return {symbol,price,changePct:n(r.changePct??r.Change??r.changePercent),volume:n(r.volume??r.Volume),avgVolume:n(r.avgVolume??r['Avg Volume']??r['Average Volume']),floatShares:n(r.floatShares??r.Float??r['Shares Float']),sharesOutstanding:n(r.sharesOutstanding??r.Outstanding??r['Shares Outstanding']),shortFloat:n(r.shortFloat??r['Short Float']??r['Short Float %']),observedAt:iso(r.observedAt||r._snapshotTimestampUTC||r.timestampUTC||r.timestampET||r.updatedAt),source:String(r.source||r._source||'unknown'),discoveryOnly:r.discoveryOnly===true||r._discoveryOnly===true,liveBacked:r.liveBacked===true};
+}
+
+export function signalRows(mergedRows,intel,shariaPayload,capturedAt){
+  const cats=catalystIndex(intel,capturedAt),sh=shariaIndex(shariaPayload),out=[];
+  for(const raw of mergedRows||[]){
+    const symbol=symbolOf(raw);if(!symbol||!(n(raw.price??raw.Price??raw.last)>0))continue;
+    const cat=cats.get(symbol)||{};
+    const c=E.analyze(raw,{...cat,source:raw.source||'validation-snapshot',sourceMeta:{discoveryOnly:raw.discoveryOnly===true||raw.liveBacked===false}},{});
+    out.push({symbol,lifecycle:c.lifecycle,stage:c.stage,movementIndex:c.movementIndex,ignitionIndex:c.ignitionIndex,continuationIndex:c.continuationIndex,distributionRisk:c.distributionRisk,riskScore:c.riskScore,dataConfidence:c.dataConfidence?.label||'LOW',dataFresh:c.dataConfidence?.fresh===true,catalystType:c.catalystType||null,catalystAt:c.catalystAt||null,shariaStatus:sh.get(symbol)||'UNVERIFIED'});
+  }
+  return out.sort((a,b)=>a.symbol.localeCompare(b.symbol));
 }
 
 async function fetchJson(name,url){
@@ -78,18 +94,20 @@ export function buildSnapshot(downloads,capturedAt=new Date().toISOString()){
   const observations=merged.quotes.map(minimalObservation).filter(Boolean).sort((a,b)=>a.symbol.localeCompare(b.symbol));
   const symbols=observations.map(x=>x.symbol);
   const intel=by.intelligence.data||{},news=by.marketNews.data||{};
+  const signals=signalRows(merged.quotes,intel,by.sharia.data,capturedAt);
   return {
-    schemaVersion:1,
+    schemaVersion:2,
     kind:'TAGX3_VALIDATION_SNAPSHOT',
     capturedAt,
     immutable:true,
-    methodology:{purpose:'out-of-sample measurement; no threshold tuning from isolated cases',executable:false},
+    methodology:{purpose:'out-of-sample measurement; no threshold tuning from isolated cases',executable:false,signalCapture:'production engine outputs frozen at capture time'},
     market:{session:by.live.data?.marketClockSession||by.live.data?.session||null,freshCount:n(by.live.data?.freshCount),liveRequested:n(by.live.data?.requested),liveCount:n(by.live.data?.count)},
-    coverage:{mergedSymbols:observations.length,broadRows:rowsOf(by.broad.data).length,fastRows:rowsOf(by.fast.data).length,richRows:rowsOf(by.rich.data).length,extendedRows:rowsOf(by.extended.data).length,hotRows:rowsOf(by.hot.data).length,symbolsSha256:sha256(symbols.join('\n'))},
+    coverage:{mergedSymbols:observations.length,signalSymbols:signals.length,broadRows:rowsOf(by.broad.data).length,fastRows:rowsOf(by.fast.data).length,richRows:rowsOf(by.rich.data).length,extendedRows:rowsOf(by.extended.data).length,hotRows:rowsOf(by.hot.data).length,symbolsSha256:sha256(symbols.join('\n'))},
     intelligence:{generatedAt:intel.generatedAt||intel.updatedAt||null,eventCount:Array.isArray(intel.events)?intel.events.length:0,bySymbolCount:intel.bySymbol&&typeof intel.bySymbol==='object'?Object.keys(intel.bySymbol).length:0,marketNewsGeneratedAt:news.generatedAt||null,marketNewsCount:Array.isArray(news.items)?news.items.length:0},
     sharia:shariaSummary(by.sharia.data),
     sources:Object.fromEntries(downloads.map(x=>[x.name,{url:x.url,sha256:x.sha256,bytes:x.bytes,fetchedAt:x.fetchedAt,latencyMs:x.latencyMs,sourceUpdatedAt:x.data?.updatedAt||x.data?.updatedAtUTC||x.data?.generatedAt||x.data?.snapshotTimestampUTC||null,count:n(x.data?.count)??rowsOf(x.data).length}])),
-    observations
+    observations,
+    signals
   };
 }
 
@@ -99,8 +117,10 @@ export function validateSnapshot(s){
   if(s?.immutable!==true)errors.push('snapshot must be immutable');
   if(!Number.isInteger(s?.coverage?.mergedSymbols)||s.coverage.mergedSymbols<1)errors.push('no merged symbols');
   if(!Array.isArray(s?.observations)||s.observations.length!==s?.coverage?.mergedSymbols)errors.push('observation count mismatch');
+  if(s.schemaVersion>=2&&(!Array.isArray(s.signals)||s.signals.length!==s.coverage.signalSymbols))errors.push('signal count mismatch');
   const seen=new Set();
   for(const o of s?.observations||[]){if(!o.symbol||!(o.price>0))errors.push('invalid observation');if(seen.has(o.symbol))errors.push(`duplicate ${o.symbol}`);seen.add(o.symbol)}
+  const sigSeen=new Set();for(const x of s?.signals||[]){if(!x.symbol||sigSeen.has(x.symbol))errors.push(`invalid/duplicate signal ${x.symbol}`);sigSeen.add(x.symbol)}
   for(const [name,meta] of Object.entries(s?.sources||{})){if(!/^[a-f0-9]{64}$/.test(meta.sha256||''))errors.push(`missing source hash ${name}`)}
   return errors;
 }
@@ -115,8 +135,8 @@ async function main(){
   const dir=path.join('validation','snapshots',day);await fs.mkdir(dir,{recursive:true});
   const file=path.join(dir,`${stamp}.json`);
   try{await fs.access(file);throw new Error(`immutable snapshot already exists: ${file}`)}catch(e){if(e?.code!=='ENOENT')throw e}
-  await fs.writeFile(file,JSON.stringify(snapshot,null,2)+'\n','utf8');
-  console.log(JSON.stringify({file,mergedSymbols:snapshot.coverage.mergedSymbols,session:snapshot.market.session,events:snapshot.intelligence.eventCount,marketNews:snapshot.intelligence.marketNewsCount,sharia:snapshot.sharia},null,2));
+  await fs.writeFile(file,JSON.stringify(snapshot)+'\n','utf8');
+  console.log(JSON.stringify({file,mergedSymbols:snapshot.coverage.mergedSymbols,signals:snapshot.coverage.signalSymbols,session:snapshot.market.session,events:snapshot.intelligence.eventCount,marketNews:snapshot.intelligence.marketNewsCount,sharia:snapshot.sharia},null,2));
 }
 
 const isMain=process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url);
