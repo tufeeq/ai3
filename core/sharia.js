@@ -16,11 +16,19 @@
     let verdict='UNKNOWN';
     if(POSITIVE.has(n)) verdict='PASS';
     if(NEGATIVE.has(n)) verdict='FAIL';
-    return {symbol,source,verdict,rawValue:candidate,observedAt:raw?.updatedAt||raw?.observedAt||raw?.asOf||null,methodology:raw?.methodology||null,details:raw?.reason||raw?.details||null};
+    return {symbol,source,verdict,rawValue:candidate,observedAt:raw?.updatedAt||raw?.observedAt||raw?.checkedAt||raw?.asOf||null,methodology:raw?.methodology||null,details:raw?.reason||raw?.activityReason||raw?.details||null};
+  }
+
+  function rowsFromPayload(payload){
+    if(Array.isArray(payload)) return payload;
+    for(const key of ['data','results','stocks','items']) if(Array.isArray(payload?.[key])) return payload[key];
+    if(Array.isArray(payload?.rows)) return payload.rows;
+    if(payload?.rows&&typeof payload.rows==='object') return Object.entries(payload.rows).map(([symbol,row])=>({symbol,...(row||{})}));
+    return [];
   }
 
   function indexPayload(payload,source='external'){
-    const rows=Array.isArray(payload)?payload:Array.isArray(payload?.data)?payload.data:Array.isArray(payload?.results)?payload.results:Array.isArray(payload?.stocks)?payload.stocks:[];
+    const rows=rowsFromPayload(payload);
     const map=new Map();
     for(const r of rows){
       const p=parseSourceRow(r,source);
@@ -68,5 +76,5 @@
     });
   }
 
-  return {STATUS,parseSourceRow,indexPayload,classify,attach};
+  return {STATUS,parseSourceRow,rowsFromPayload,indexPayload,classify,attach};
 });
