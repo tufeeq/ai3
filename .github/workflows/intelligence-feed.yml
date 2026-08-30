@@ -41,6 +41,12 @@ jobs:
           console.log({generatedAt:x.generatedAt,ageSeconds:Math.round(ageMs/1000),events:x.events?.length,shortlist:x.shortlist?.length,sourceStatus:s,errors:Array.isArray(x.errors)?x.errors.length:null});
           if(!shapeOk||!loadedOk||!freshnessShape||!freshnessTruth||!freshBuild) process.exit(1);
           NODE
+      # Commits made with the workflow GITHUB_TOKEN do not trigger normal push CI.
+      # Run the same syntax/core/UI/data-contract suite here before any bot commit reaches main.
+      - name: Full repository contracts before data commit
+        run: |
+          npm run check
+          npm test
       - name: Commit changed intelligence only
         run: |
           git config user.name 'tagx3-intelligence-bot'
