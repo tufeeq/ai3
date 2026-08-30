@@ -25,7 +25,7 @@ function normalizeFinviz(r,updatedAt){
     marketCap:num(first(r,['Market Cap','MarketCap']))??null,
     sector:first(r,['Sector','sector']),industry:first(r,['Industry','industry']),company:first(r,['Company','company']),
     observedAt:first(r,['_snapshotTimestampUTC','observedAt','timestamp'])||updatedAt||new Date().toISOString(),
-    source:'Finviz Elite',finviz:true
+    source:'Finviz Elite',finviz:true,liveBacked:false,discoveryOnly:true,marketObservation:false
   };
 }
 function payloadRows(p){if(Array.isArray(p))return p;if(Array.isArray(p?.data))return p.data;if(Array.isArray(p?.rows))return p.rows;return[]}
@@ -48,7 +48,7 @@ function liveRows(p){
 }
 function merge(live,finviz){
   const by=new Map();
-  for(const f of finviz.rows||[])by.set(f.symbol,f);
+  for(const f of finviz.rows||[])by.set(f.symbol,{...f,marketClockSession:finviz.session||null,sourcePayloadUpdatedAt:finviz.updatedAt||null,sessionFinal:false,liveBacked:false,discoveryOnly:true,marketObservation:false});
   for(const l0 of liveRows(live)){
     const s=sym(l0);if(!s)continue;const f=by.get(s)||{};
     const observedAt=first(l0,['observedAt','timestamp','updatedAt','quoteTime','timestampET'])||f.observedAt;
@@ -62,7 +62,10 @@ function merge(live,finviz){
       observedAt,
       marketClockSession:live?.marketClockSession||null,
       sourcePayloadUpdatedAt:live?.updatedAtUTC||live?.updatedAt||null,
-      sessionFinal
+      sessionFinal,
+      liveBacked:true,
+      discoveryOnly:false,
+      marketObservation:true
     });
   }
   return [...by.values()].filter(x=>x.symbol&&x.price>0);
@@ -76,7 +79,8 @@ window.fetch=async function(input,init={}){
     const live=await baseResp.clone().json();
     const rows=merge(live,fz);
     const sessionFinalCount=rows.filter(x=>x.sessionFinal).length;
-    const payload={...live,quotes:rows,finvizBridge:{enabled:true,count:fz.rows.length,updatedAt:fz.updatedAt,session:fz.session,sessionBucket:fz.sessionBucket},mergedCount:rows.length,sessionFinalCount};
+    const discoveryOnlyCount=rows.filter(x=>x.discoveryOnly).length;
+    const payload={...live,quotes:rows,finvizBridge:{enabled:true,count:fz.rows.length,updatedAt:fz.updatedAt,session:fz.session,sessionBucket:fz.sessionBucket},mergedCount:rows.length,sessionFinalCount,discoveryOnlyCount};
     return new Response(JSON.stringify(payload),{status:200,statusText:'OK',headers:{'content-type':'application/json','x-tagx-finviz-bridge':'1'}});
   }catch{return baseResp}
 };
