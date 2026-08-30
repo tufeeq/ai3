@@ -86,6 +86,31 @@ async function gdeltNews(query,symbol,title=null){
   }catch{return[]}
 }
 
+function canonicalEventKey(e){
+  const parsed=Date.parse(e?.publishedAt||'');
+  const at=Number.isFinite(parsed)?new Date(parsed).toISOString():String(e?.publishedAt||'');
+  const symbol=String(e?.symbol||'').toUpperCase();
+  const type=String(e?.type||'').toUpperCase();
+  if(type==='SEC'){
+    const form=String(e?.form||'').toUpperCase().replace(/\s+/g,' ').trim();
+    return `${symbol}|SEC|${form}|${at}`;
+  }
+  const headline=String(e?.headline||'').toLowerCase().replace(/\s+/g,' ').trim();
+  return `${symbol}|${type}|${headline}|${at}`;
+}
+
+function dedupeEvents(events){
+  const best=new Map();
+  for(const e of events){
+    const k=canonicalEventKey(e);
+    const old=best.get(k);
+    if(!old){best.set(k,e);continue}
+    const score=x=>(x?.verification==='PRIMARY'?4:0)+(x?.url?2:0)+(x?.discoveryScope==='MARKET_WIDE'?1:0);
+    if(score(e)>score(old))best.set(k,e);
+  }
+  return [...best.values()].sort((a,b)=>new Date(b.publishedAt||0)-new Date(a.publishedAt||0));
+}
+
 async function main(){
   const errors=[];
   let live=null, mapping=null;
@@ -101,8 +126,6 @@ async function main(){
   }
   const companies={};
 
-  // Event-first primary-source sweep. This is deliberately independent of the price shortlist:
-  // current SEC filings can surface a catalyst before abnormal price action appears in TAGX quotes.
   const currentForms=['8-K','6-K','S-1','S-3','424B','SC 13D','SC 13G'];
   let marketwideSecOk=!!mapping;
   const marketwideSecResults=mapping?await mapBatches(currentForms,1,async form=>{
@@ -131,11 +154,7 @@ async function main(){
   },200);
 
   const events=[...marketwideSecResults.flat(),...secResults.flat(),...newsResults.flat()];
-  const seen=new Set(); const dedup=events.filter(e=>{
-    const at=new Date(e.publishedAt||0).toISOString?.()||String(e.publishedAt||'');
-    const k=`${e.symbol}|${e.type}|${e.form||''}|${e.url||''}|${at}`;
-    if(seen.has(k))return false;seen.add(k);return true;
-  }).sort((a,b)=>new Date(b.publishedAt||0)-new Date(a.publishedAt||0));
+  const dedup=dedupeEvents(events);
   const allSymbols=new Set([...picks.map(p=>p.symbol),...dedup.map(e=>e.symbol)]);
   const bySymbol={}; for(const symbol of allSymbols){const own=dedup.filter(e=>e.symbol===symbol);bySymbol[symbol]={events:own.slice(0,8),eventCount:own.length};}
   const marketwideSecCount=dedup.filter(e=>e.type==='SEC'&&e.discoveryScope==='MARKET_WIDE').length;
