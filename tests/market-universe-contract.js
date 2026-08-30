@@ -1,0 +1,17 @@
+const assert=require('assert');
+const U=require('../market-universe-bridge.js');
+const live={count:2,requested:2,quotes:{AAA:{ticker:'AAA',price:10,volume:1000,observedAt:'2026-08-28T20:00:00Z',liveBacked:true},BBB:{ticker:'BBB',price:2,volume:100}}};
+const fast={updatedAt:'2026-08-28T21:00:00Z',session:'after-hours',rows:[{Ticker:'CCC',Price:'1.20',Change:'5%',Volume:'250000',Company:'CCC Corp'},{Ticker:'AAA',Price:'9.9',Volume:'900'}]};
+const rich={updatedAt:'2026-08-28T21:00:00Z',session:'after-hours',rows:[{Ticker:'CCC',Company:'CCC Holdings',Price:'1.20',Volume:'250000',Float:'3.5',Outstanding:'8.2','Short Float':'12.5%','Avg Volume':'125.0'}]};
+const out=U.merge(live,fast,rich);
+assert.strictEqual(out.count,3,'union must exceed the live snapshot when discovery contains new symbols');
+assert.strictEqual(out.quotes.find(x=>x.symbol==='AAA').price,10,'live-backed price must remain authoritative over discovery duplicate');
+const c=out.quotes.find(x=>x.symbol==='CCC');
+assert(c,'discovery-only symbol must enter the analyzed universe');
+assert.strictEqual(c.company,'CCC Holdings');
+assert.strictEqual(c.floatShares,3500000);
+assert.strictEqual(c.sharesOutstanding,8200000);
+assert.strictEqual(c.shortFloat,12.5);
+assert.strictEqual(c.avgVolume,125000);
+assert(out.universeCoverage.discoveryFast===2&&out.universeCoverage.discoveryRich===1,'coverage metadata must expose source contribution');
+console.log('market universe contract: OK');
