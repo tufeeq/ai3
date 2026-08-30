@@ -1,30 +1,15 @@
 (()=>{
 'use strict';
 const REQUIRED=[
-  '/ai/tag/data/live-quotes.json','/ai/tag/data/tagx2-sentinel.json','/ai/tag/data/coverage-rescue.json',
-  '/ai/tag/data/sec-catalysts.json','/ai/tag/data/sharia.json','/ai/tag/data/sharia-v4-challenger.json',
-  '/ai/tag/data/tagx2-top20-audit.json','/ai/tag/data/enrichment.json','/ai/tag/data/feed-health.json','/ai3/data/intelligence.json'
+  '/ai/tag/data/live-quotes.json','/ai/tag/data/discovery-fast.json','/ai/tag/data/discovery.json','/ai/tag/data/tagx2-sentinel.json','/ai/tag/data/coverage-rescue.json',
+  '/ai/tag/data/sec-catalysts.json','/ai/tag/data/sharia.json','/ai/tag/data/sharia-v4-challenger.json','/ai/tag/data/enrichment.json','/ai/tag/data/feed-health.json','/ai3/data/intelligence.json'
 ];
 const state=new Map(REQUIRED.map(x=>[x,'pending']));
 let installed=false,hideTimer=null;
 const normalize=input=>{try{const u=new URL(typeof input==='string'?input:input?.url,location.href);return u.pathname}catch{return''}};
-function ensure(){
-  let root=document.getElementById('dataLoadProgress');if(root)return root;
-  root=document.createElement('div');root.id='dataLoadProgress';root.className='data-load-progress';root.setAttribute('role','status');root.setAttribute('aria-live','polite');
-  root.innerHTML='<div class="dlp-row"><b>تحميل بيانات السوق والذكاء</b><span class="dlp-label">0%</span></div><div class="dlp-track"><i></i></div><small class="dlp-detail">تهيئة المصادر المطلوبة…</small>';
-  const style=document.createElement('style');style.id='data-load-progress-style';style.textContent='.data-load-progress{margin:0 0 10px;padding:9px 12px;border:1px solid var(--line);border-radius:12px;background:var(--panel);transition:opacity .25s ease}.data-load-progress.done{opacity:0;pointer-events:none}.dlp-row{display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:10px}.dlp-row b{font-size:10px}.dlp-label,.dlp-detail{color:var(--muted)}.dlp-track{height:5px;border-radius:999px;background:var(--line2);overflow:hidden;margin:7px 0 4px}.dlp-track i{display:block;height:100%;width:0;background:var(--accent);transition:width .2s ease}@media(max-width:760px){.data-load-progress{margin:0 0 8px;padding:8px 10px}}';
-  if(!document.getElementById(style.id))document.head.appendChild(style);
-  const main=document.querySelector('main');if(main)main.insertAdjacentElement('afterbegin',root);else if(document.body)document.body.prepend(root);
-  return root;
-}
-function update(){
-  const root=ensure();if(!root)return;const vals=[...state.values()],total=vals.length,done=vals.filter(x=>x==='ok'||x==='error').length,ok=vals.filter(x=>x==='ok').length,err=vals.filter(x=>x==='error').length;
-  const pct=Math.round(done/Math.max(1,total)*100);root.querySelector('.dlp-label').textContent=`${pct}%`;root.querySelector('.dlp-track i').style.width=`${pct}%`;
-  root.querySelector('.dlp-detail').textContent=done<total?`${done}/${total} مصادر اكتمل تحميلها`:`اكتمل ${ok}/${total} مصدر${err?` · تعذر ${err}`:''}`;
-  if(done===total){clearTimeout(hideTimer);hideTimer=setTimeout(()=>root.classList.add('done'),850)}else root.classList.remove('done');
-}
+function ensure(){let root=document.getElementById('dataLoadProgress');if(root)return root;root=document.createElement('div');root.id='dataLoadProgress';root.className='data-load-progress';root.setAttribute('role','status');root.setAttribute('aria-live','polite');root.innerHTML='<div class="dlp-row"><b>تحميل بيانات السوق والذكاء</b><span class="dlp-label">0%</span></div><div class="dlp-track"><i></i></div><small class="dlp-detail">تهيئة المصادر المطلوبة…</small>';const style=document.createElement('style');style.id='data-load-progress-style';style.textContent='.data-load-progress{margin:0 0 10px;padding:9px 12px;border:1px solid var(--line);border-radius:12px;background:var(--panel);transition:opacity .25s ease}.data-load-progress.done{opacity:0;pointer-events:none}.dlp-row{display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:10px}.dlp-row b{font-size:10px}.dlp-label,.dlp-detail{color:var(--muted)}.dlp-track{height:5px;border-radius:999px;background:var(--line2);overflow:hidden;margin:7px 0 4px}.dlp-track i{display:block;height:100%;width:0;background:var(--accent);transition:width .2s ease}@media(max-width:760px){.data-load-progress{margin:0 0 8px;padding:8px 10px}}';if(!document.getElementById(style.id))document.head.appendChild(style);const main=document.querySelector('main');if(main)main.insertAdjacentElement('afterbegin',root);else if(document.body)document.body.prepend(root);return root}
+function update(){const root=ensure();if(!root)return;const vals=[...state.values()],total=vals.length,done=vals.filter(x=>x==='ok'||x==='error').length,ok=vals.filter(x=>x==='ok').length,err=vals.filter(x=>x==='error').length;const pct=Math.round(done/Math.max(1,total)*100);root.querySelector('.dlp-label').textContent=`${pct}%`;root.querySelector('.dlp-track i').style.width=`${pct}%`;root.querySelector('.dlp-detail').textContent=done<total?`${done}/${total} مصادر اكتمل تحميلها`:`اكتمل ${ok}/${total} مصدر${err?` · تعذر ${err}`:''}`;if(done===total){clearTimeout(hideTimer);hideTimer=setTimeout(()=>root.classList.add('done'),850)}else root.classList.remove('done')}
 function mark(path,status){for(const key of state.keys())if(path===key||path.endsWith(key)){state.set(key,status);update();return}}
 function install(){if(installed)return;installed=true;const original=window.fetch.bind(window);window.fetch=async function(input,init){const path=normalize(input),tracked=[...state.keys()].some(k=>path===k||path.endsWith(k));if(tracked){mark(path,'loading');try{const r=await original(input,init);mark(path,r.ok?'ok':'error');return r}catch(e){mark(path,'error');throw e}}return original(input,init)};queueMicrotask(update)}
-install();
-window.TAGX3LoadingProgress={state,mark,normalize};
+install();window.TAGX3LoadingProgress={state,mark,normalize};
 })();
