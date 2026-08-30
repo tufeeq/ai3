@@ -1,0 +1,13 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const src=fs.readFileSync('research-intelligence.js','utf8');
+assert(src.includes("'/ai/tag/data/enrichment.json'"),'research desk must use production enrichment feed');
+assert(src.includes('cache:\'no-store\''),'research feed must bypass stale browser cache');
+assert(src.includes('لا تُنشئ الأداة معلومات بديلة أو وهمية'),'missing research data must be explicit, not fabricated');
+for(const forbidden of ['setThreshold','executeTrade','autoBuy','autoSell'])assert(!src.includes(forbidden),`research layer must not expose ${forbidden}`);
+const sandbox={window:{},document:{querySelector:()=>null,addEventListener:()=>{}},setInterval:()=>0,fetch:async()=>({ok:true,json:async()=>({rows:{}})}),URL,Date,console};
+vm.runInNewContext(src,sandbox);
+const api=sandbox.window.TAGX3Research;assert(api,'research API should initialize');
+const rows=api.rowsOf({rows:{ABC:{ticker:'ABC',news:[{title:'Evidence'}]},XYZ:{price:{last:2}}}});
+assert.strictEqual(rows.length,2,'object-map enrichment rows must be consumed');
+assert.strictEqual(rows[0].symbol,'ABC','ticker key must be retained as symbol');
+console.log('research-intelligence contract ok');
