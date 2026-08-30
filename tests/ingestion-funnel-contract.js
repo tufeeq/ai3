@@ -2,15 +2,24 @@ const assert=require('node:assert/strict');
 const F=require('../ingestion-funnel.js');
 
 const records=[
-  {path:'/ai/tag/data/live-quotes.json',payload:{marketClockSession:'closed',quotes:[{symbol:'AAA'},{symbol:'BBB'}]}},
+  {path:'/ai/tag/data/live-quotes.json',payload:{marketClockSession:'closed',quotes:{AAA:{price:1.1},BBB:{symbol:'BBB',price:2.2}}}},
   {path:'/ai/tag/data/tagx2-sentinel.json',payload:{session:'after-hours',data:[{ticker:'BBB'},{ticker:'CCC'}]}},
   {path:'/ai/tag/data/coverage-rescue.json',payload:{rows:[{code:'DDD'},{foo:'missing-symbol'}]}}
 ];
 const s=F.summarizeFeeds(records);
 assert.equal(s.feedRows,6);
 assert.equal(s.uniqueSymbols,4);
+assert.equal(s.feeds[0].rows,2);
+assert.equal(s.feeds[0].validSymbols,2);
 assert.equal(s.feeds[0].session,'closed');
 assert.equal(s.feeds[1].session,'after-hours');
+
+// Production live-quotes uses an object map keyed by ticker. Telemetry must count it
+// exactly as ingestion does, including restoring the symbol from the object key.
+const mapped=F.rowsOf({quotes:{XYZ:{price:3.1},QRS:{ticker:'QRS',price:4.2}}});
+assert.equal(mapped.length,2);
+assert.equal(F.symbolOf(mapped[0]),'XYZ');
+assert.equal(F.symbolOf(mapped[1]),'QRS');
 
 const c=F.summarizeCases([
   {symbol:'AAA',sharia:'VERIFIED'},
