@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "kind": "TAGX3_VALIDATION_SCORECARD_SUMMARY",
+  "generatedAt": "2026-08-30T22:55:22.368Z",
+  "status": "INSUFFICIENT_FUTURE_SNAPSHOTS",
+  "sessions": 1,
+  "snapshotCount": 3,
+  "protocol": {
+    "name": "TAGX3 Commercial Validation Protocol v1",
+    "frozenAt": "2026-08-30T22:40:00Z",
+    "horizonsMin": [
+      15,
+      30,
+      120
+    ],
+    "horizonToleranceMin": 9,
+    "moverThresholdPct": 10,
+    "falsePositiveMaxMfePct": 3
+  },
+  "horizons": {
+    "15": {
+      "horizonMin": 15,
+      "validCount": 0,
+      "moverCount": 0,
+      "detectedCount": 0,
+      "actionableCount": 0,
+      "earlyCaptureRate": null,
+      "missedMoverRate": null,
+      "falsePositiveRate": null,
+      "actionableFalsePositiveRate": null,
+      "avgDetectedMFE": null,
+      "avgDetectedMAE": null,
+      "avgActionableMFE": null,
+      "avgActionableMAE": null
+    },
+    "30": {
+      "horizonMin": 30,
+      "validCount": 0,
+      "moverCount": 0,
+      "detectedCount": 0,
+      "actionableCount": 0,
+      "earlyCaptureRate": null,
+      "missedMoverRate": null,
+      "falsePositiveRate": null,
+      "actionableFalsePositiveRate": null,
+      "avgDetectedMFE": null,
+      "avgDetectedMAE": null,
+      "avgActionableMFE": null,
+      "avgActionableMAE": null
+    },
+    "120": {
+      "horizonMin": 120,
+      "validCount": 0,
+      "moverCount": 0,
+      "detectedCount": 0,
+      "actionableCount": 0,
+      "earlyCaptureRate": null,
+      "missedMoverRate": null,
+      "falsePositiveRate": null,
+      "actionableFalsePositiveRate": null,
+      "avgDetectedMFE": null,
+      "avgDetectedMAE": null,
+      "avgActionableMFE": null,
+      "avgActionableMAE": null
+    }
+  },
+  "diagnostics": {
+    "15": {
+      "missedMovers": [],
+      "falsePositives": []
+    },
+    "30": {
+      "missedMovers": [],
+      "falsePositives": []
+    },
+    "120": {
+      "missedMovers": [],
+      "falsePositives": []
+    }
+  },
+  "guardrails": {
+    "thresholdsChanged": false,
+    "edgeClaimed": false,
+    "missingOutcomesInterpolated": false
+  }
+}
