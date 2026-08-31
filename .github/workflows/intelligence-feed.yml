@@ -8,6 +8,7 @@ on:
     branches: [ main ]
     paths:
       - 'scripts/build-intelligence.mjs'
+      - 'scripts/build-market-news.mjs'
       - 'scripts/sec-current-feed.mjs'
       - '.github/workflows/intelligence-feed.yml'
   # Prefer causal rebuilds after the upstream market-news workflow completes.
@@ -32,6 +33,24 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
+      # GitHub scheduled workflows can be delayed. On independent fallback runs,
+      # refresh market news in-process so intelligence never depends solely on
+      # a separate cron having fired recently. workflow_run already follows a
+      # successful Market News build, so avoid duplicate work there.
+      - name: Refresh market news fallback
+        if: github.event_name != 'workflow_run'
+        run: node scripts/build-market-news.mjs
+      - name: Validate market news payload
+        if: github.event_name != 'workflow_run'
+        run: |
+          node - <<'NODE'
+          const p=require('./data/market-news.json');
+          const generated=Date.parse(p.generatedAt||'');
+          const ageMs=Date.now()-generated;
+          const ok=p.scope==='MARKET_AND_SECTOR_ONLY'&&Array.isArray(p.items)&&Number.isFinite(generated)&&ageMs>=0&&ageMs<=10*60*1000;
+          for(const x of p.items||[]){if(!['MARKET','SECTOR'].includes(x.scope)||x.verification!=='DISCOVERY'||!x.title||!x.link)process.exit(1)}
+          if(!ok) process.exit(1);
+          NODE
       - name: Build market intelligence feed
         run: node scripts/build-intelligence.mjs
       - name: Validate intelligence payload
@@ -55,28 +74,38 @@ jobs:
         run: |
           npm run check
           npm test
-      - name: Commit changed intelligence only
+      - name: Commit changed intelligence and fallback news only
         run: |
           set -euo pipefail
           git config user.name 'tagx3-intelligence-bot'
           git config user.email 'actions@users.noreply.github.com'
           cp data/intelligence.json /tmp/tagx3-intelligence.json
-          BUILDER_SHA="$(git hash-object scripts/build-intelligence.mjs)"
+          if [ -f data/market-news.json ]; then cp data/market-news.json /tmp/tagx3-market-news.json; fi
+          INTEL_BUILDER_SHA="$(git hash-object scripts/build-intelligence.mjs)"
+          NEWS_BUILDER_SHA="$(git hash-object scripts/build-market-news.mjs)"
           for i in 1 2 3; do
             git fetch origin main
             git reset --hard origin/main
-            if [ "$(git hash-object scripts/build-intelligence.mjs)" != "$BUILDER_SHA" ]; then
+            REBUILD=0
+            if [ "$(git hash-object scripts/build-intelligence.mjs)" != "$INTEL_BUILDER_SHA" ]; then REBUILD=1; fi
+            if [ "$(git hash-object scripts/build-market-news.mjs)" != "$NEWS_BUILDER_SHA" ]; then REBUILD=1; fi
+            if [ "$REBUILD" -eq 1 ]; then
+              if [ "${{ github.event_name }}" != "workflow_run" ]; then node scripts/build-market-news.mjs; fi
               node scripts/build-intelligence.mjs
               cp data/intelligence.json /tmp/tagx3-intelligence.json
-              BUILDER_SHA="$(git hash-object scripts/build-intelligence.mjs)"
+              if [ -f data/market-news.json ]; then cp data/market-news.json /tmp/tagx3-market-news.json; fi
+              INTEL_BUILDER_SHA="$(git hash-object scripts/build-intelligence.mjs)"
+              NEWS_BUILDER_SHA="$(git hash-object scripts/build-market-news.mjs)"
             else
               cp /tmp/tagx3-intelligence.json data/intelligence.json
+              if [ "${{ github.event_name }}" != "workflow_run" ] && [ -f /tmp/tagx3-market-news.json ]; then cp /tmp/tagx3-market-news.json data/market-news.json; fi
             fi
             npm run check
             npm test
             git add data/intelligence.json
+            if [ "${{ github.event_name }}" != "workflow_run" ]; then git add data/market-news.json; fi
             git diff --cached --quiet && exit 0
-            git commit -m 'data: refresh catalyst and news intelligence'
+            git commit -m 'data: refresh catalyst, news, and market intelligence'
             if git push origin HEAD:main; then exit 0; fi
             sleep $((i*4))
           done
