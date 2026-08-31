@@ -17,5 +17,7 @@ jobs:
           node-version: '24'
       - name: Syntax and static checks
         run: npm run check
+      - name: Critical live-feed guard contract
+        run: node --check live-source-guard.js && node --check tests/live-source-guard-contract.js && node tests/live-source-guard-contract.js
       - name: Core and UI contract tests
         run: npm test
