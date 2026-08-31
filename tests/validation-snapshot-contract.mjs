@@ -31,4 +31,17 @@ assert.deepEqual(validateSnapshot(s),[]);
 const broken=structuredClone(s);broken.sources.live.sha256='bad';broken.observations.push({...broken.observations[0]});broken.signals.push({...broken.signals[0]});
 assert(validateSnapshot(broken).some(x=>x.includes('source hash')));
 assert(validateSnapshot(broken).some(x=>x.includes('duplicate')));
+
+const missingTimestampDownloads=structuredClone(downloads);
+missingTimestampDownloads.find(x=>x.name==='live').data.quotes.push({symbol:'ZZZ',price:7,volume:700,source:'Live Quotes',liveBacked:true});
+const missingTimestampSnapshot=buildSnapshot(missingTimestampDownloads,'2026-08-31T00:01:00Z');
+const zzz=missingTimestampSnapshot.observations.find(x=>x.symbol==='ZZZ');
+assert.equal(zzz?.observedAt,null,'missing observation time must remain null, never epoch/current time');
+assert(validateSnapshot(missingTimestampSnapshot).some(x=>x.includes('missing observation timestamp ZZZ')),'snapshot validation must reject untimestamped observations');
+
+const invalidTimestampDownloads=structuredClone(downloads);
+invalidTimestampDownloads.find(x=>x.name==='live').data.quotes.push({symbol:'YYY',price:8,volume:800,observedAt:'not-a-date',source:'Live Quotes',liveBacked:true});
+const invalidTimestampSnapshot=buildSnapshot(invalidTimestampDownloads,'2026-08-31T00:01:00Z');
+assert.equal(invalidTimestampSnapshot.observations.find(x=>x.symbol==='YYY')?.observedAt,null,'invalid observation time must fail closed');
+assert(validateSnapshot(invalidTimestampSnapshot).some(x=>x.includes('missing observation timestamp YYY')),'invalid timestamps must block snapshot publication');
 console.log('validation snapshot contract: OK');
