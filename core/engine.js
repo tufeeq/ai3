@@ -155,7 +155,6 @@
     const risk=clamp(22+distribution*0.48+(reactive.noNews?12:0)+(q.floatShares>0&&q.floatShares<8e6?9:0)+(q.changePct>15?8:0));
     const dc=dataConfidence(q,context.sourceMeta||{});
     const lifecycle=lifecycleFor({movement,ignition,continuation,distribution,risk},previous.lifecycle);
-    const now=new Date().toISOString();
     const firstSeen=previous.firstSeen||context.firstSeen||q.observedAt||null;
     const featureBook={
       velocity5m:feature(q.v5,q.observedAt,HALF_LIFE_MIN.velocity5m,'new 5m observation','market'),
@@ -165,9 +164,9 @@
       floatCapture:feature(f.floatTurnover*100,q.observedAt,HALF_LIFE_MIN.floatCapture,'float turnover normalization','derived'),
       extendedHoursPersistence:feature(f.extendedHoursPersistence,q.observedAt,HALF_LIFE_MIN.extendedHoursPersistence,'extended-hours reversal','derived'),
       accumulation:feature(f.accumulation,q.observedAt,HALF_LIFE_MIN.accumulation,'liquidity collapse / structure failure','derived'),
-      catalyst:feature(f.catalyst,context.catalystObservedAt||now,HALF_LIFE_MIN.catalyst,'event resolved/cancelled','event'),
-      formerRunner:feature(f.formerRunner,context.memoryObservedAt||now,HALF_LIFE_MIN.formerRunner,'memory expiry','memory'),
-      sectorLeadLag:feature(f.sectorLeadLag,context.sectorObservedAt||now,HALF_LIFE_MIN.sectorLeadLag,'sector divergence','memory')
+      catalyst:feature(f.catalyst,context.catalystObservedAt,HALF_LIFE_MIN.catalyst,'event resolved/cancelled','event'),
+      formerRunner:feature(f.formerRunner,context.memoryObservedAt,HALF_LIFE_MIN.formerRunner,'memory expiry','memory'),
+      sectorLeadLag:feature(f.sectorLeadLag,context.sectorObservedAt,HALF_LIFE_MIN.sectorLeadLag,'sector divergence','memory')
     };
     const why=[];
     if(f.accumulation>=60) why.push('تراكم سيولة');
