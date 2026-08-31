@@ -27,6 +27,23 @@ assert(['DISTRIBUTING','CLOSED'].includes(late.lifecycle));
 const poor=E.analyze(q({volume:0,avgVolume:0}),{},{});
 assert(poor.dataConfidence.score<a.dataConfidence.score);
 
+// Missing/invalid quote timestamps must never be fabricated as "now" or marked fresh.
+const missingTs=E.analyze(q({observedAt:undefined}),{},{});
+assert.equal(missingTs.observedAt,null);
+assert.equal(missingTs.firstSeen,null);
+assert.equal(missingTs.dataConfidence.fresh,false);
+assert.equal(missingTs.dataConfidence.score,0);
+assert.equal(missingTs.features.velocity5m.observedAt,null);
+const invalidTs=E.analyze(q({observedAt:'not-a-date'}),{},{});
+assert.equal(invalidTs.observedAt,null);
+assert.equal(invalidTs.dataConfidence.fresh,false);
+assert.equal(invalidTs.dataConfidence.score,0);
+
+// Reconciliation must prefer a timestamped observation over an untimestamped duplicate.
+const merged=E.mergeQuoteSources([{data:[q({symbol:'STAMPED',observedAt:'2026-08-29T20:00:00Z',price:2})]},{data:[q({symbol:'STAMPED',observedAt:undefined,price:9})]}]);
+assert.equal(merged.length,1);
+assert.equal(merged[0].price,2);
+
 // UNVERIFIED is not NON_COMPLIANT and must not block discovery.
 const u=S.classify('TEST',[],{parserFailure:true});
 assert.equal(u.status,S.STATUS.UNVERIFIED);
