@@ -29,7 +29,7 @@
   }
 
   function compactSnapshot(c){
-    return {price:c.price,lifecycle:c.lifecycle,movementIndex:c.movementIndex,ignitionIndex:c.ignitionIndex,continuationIndex:c.continuationIndex,distributionRisk:c.distributionRisk,riskScore:c.riskScore,sharia:c.sharia?.status||'UNVERIFIED',dataConfidence:c.dataConfidence?.label||'LOW',dataFresh:c.dataConfidence?.fresh!==false,observedAt:c.observedAt,whyNow:c.whyNow||[]};
+    return {price:c.price,lifecycle:c.lifecycle,movementIndex:c.movementIndex,ignitionIndex:c.ignitionIndex,continuationIndex:c.continuationIndex,distributionRisk:c.distributionRisk,riskScore:c.riskScore,sharia:c.sharia?.status||'UNVERIFIED',dataConfidence:c.dataConfidence?.label||'LOW',dataFresh:c.dataConfidence?.fresh===true,observedAt:c.observedAt,whyNow:c.whyNow||[]};
   }
 
   function alert(severity,type,message,trade,c){
@@ -41,18 +41,20 @@
     const prev=trade.lastSnapshot||trade.entrySnapshot||{};
     const alerts=[];
     const sh=c.sharia?.status||'UNVERIFIED';
+    const marketFresh=c.dataConfidence?.fresh===true;
     const explicitlyStale=c.dataConfidence?.fresh===false;
+    const freshnessUnknown=!marketFresh&&!explicitlyStale;
     const lowQuality=c.dataConfidence?.label==='LOW';
 
-    if((lowQuality&&prev.dataConfidence!=='LOW')||(explicitlyStale&&prev.dataFresh!==false))
-      alerts.push(alert('WARNING',explicitlyStale?'DATA_STALE':'DATA_DEGRADED',explicitlyStale?'بيانات السوق غير طازجة؛ تم تعليق تنبيهات السعر/الوقف ومقاييس MFE/MAE حتى وصول رصد سوقي حديث.':'جودة البيانات انخفضت؛ لا تعتمد على الإشارة دون تحقق إضافي.',trade,c));
+    if((lowQuality&&prev.dataConfidence!=='LOW')||(!marketFresh&&prev.dataFresh!==false))
+      alerts.push(alert('WARNING',explicitlyStale?'DATA_STALE':'DATA_FRESHNESS_UNVERIFIED',explicitlyStale?'بيانات السوق غير طازجة؛ تم تعليق تنبيهات السعر/الوقف ومقاييس MFE/MAE حتى وصول رصد سوقي حديث.':freshnessUnknown?'تعذر إثبات حداثة بيانات السوق؛ تم تعليق تنبيهات السعر/الوقف ومقاييس MFE/MAE حتى وصول رصد مؤكد الحداثة.':'جودة البيانات انخفضت؛ لا تعتمد على الإشارة دون تحقق إضافي.',trade,c));
 
     // Sharia evidence can change independently of quote freshness, so keep this safeguard active.
     if(prev.sharia&&prev.sharia!==sh) alerts.push(alert(sh==='NON_COMPLIANT'?'CRITICAL':'WARNING','SHARIA_CHANGED',`الحالة الشرعية تغيرت من ${prev.sharia} إلى ${sh}.`,trade,c));
 
-    // Fail closed on explicitly stale market observations. Do not turn an old/session-final quote
-    // into a live stop, lifecycle, thesis, P&L excursion, or entry/exit monitoring signal.
-    if(explicitlyStale){
+    // Fail closed unless freshness is positively verified. Missing/unknown freshness must never turn
+    // a quote into a live stop, lifecycle, thesis, P&L excursion, or entry/exit monitoring signal.
+    if(!marketFresh){
       trade.lastSnapshot={...prev,sharia:sh,dataConfidence:c.dataConfidence?.label||prev.dataConfidence||'LOW',dataFresh:false,observedAt:c.observedAt||prev.observedAt};
       trade.updatedAt=new Date().toISOString();
       trade.alerts=[...(alerts.map(a=>a.id)),...(trade.alerts||[])].slice(0,30);
