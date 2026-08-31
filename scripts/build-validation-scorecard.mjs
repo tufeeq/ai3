@@ -22,13 +22,18 @@ function diagnostics(card,horizon){
 function summary(card){
   const horizons=Object.fromEntries(Object.entries(card.horizons||{}).map(([h,m])=>[h,compactMetric(m)]));
   const diagnosticsByHorizon={};for(const h of Object.keys(horizons))diagnosticsByHorizon[h]=diagnostics(card,h);
-  return{schemaVersion:1,kind:'TAGX3_VALIDATION_SCORECARD_SUMMARY',generatedAt:card.generatedAt,status:card.status,sessions:card.sessions,snapshotCount:card.snapshotCount,protocol:card.protocol,horizons,diagnostics:diagnosticsByHorizon,guardrails:{thresholdsChanged:false,edgeClaimed:false,missingOutcomesInterpolated:false}};
+  return{schemaVersion:1,kind:'TAGX3_VALIDATION_SCORECARD_SUMMARY',generatedAt:card.generatedAt,status:card.status,sessions:card.sessions,snapshotCount:card.snapshotCount,cadence:compactMetric(card.cadence),protocol:card.protocol,horizons,diagnostics:diagnosticsByHorizon,guardrails:{thresholdsChanged:false,edgeClaimed:false,missingOutcomesInterpolated:false}};
 }
 function markdown(s){
-  const lines=['# TAGX3 Validation Scorecard','',`Generated: ${s.generatedAt}`,`Status: **${s.status}**`,`Sessions: **${s.sessions}** · Snapshots: **${s.snapshotCount}**`,'','> Measurement only. No production thresholds are changed and no trading edge is claimed.','', '| Horizon | Valid | Movers | Detected | Capture | Missed | False positive | Avg detected MFE | Avg detected MAE |','|---:|---:|---:|---:|---:|---:|---:|---:|---:|'];
+  const lines=['# TAGX3 Validation Scorecard','',`Generated: ${s.generatedAt}`,`Status: **${s.status}**`,`Sessions: **${s.sessions}** · Snapshots: **${s.snapshotCount}**`];
+  if(s.cadence)lines.push(`Cadence: target **${s.cadence.targetIntervalMin}m** · median **${s.cadence.medianGapMin??'—'}m** · max **${s.cadence.maxGapMin??'—'}m** · excessive gaps **${s.cadence.excessiveGapCount??0}** · healthy **${s.cadence.coverageHealthy===true?'yes':'no'}**`);
+  lines.push('','> Measurement only. No production thresholds are changed and no trading edge is claimed.','', '| Horizon | Valid | Movers | Detected | Capture | Missed | False positive | Avg detected MFE | Avg detected MAE |','|---:|---:|---:|---:|---:|---:|---:|---:|---:|');
   const f=v=>v==null?'—':`${(v*100).toFixed(1)}%`,n=v=>v==null?'—':Number(v).toFixed(2);
   for(const [h,m] of Object.entries(s.horizons||{}))lines.push(`| ${h}m | ${m.validCount} | ${m.moverCount} | ${m.detectedCount} | ${f(m.earlyCaptureRate)} | ${f(m.missedMoverRate)} | ${f(m.falsePositiveRate)} | ${n(m.avgDetectedMFE)}% | ${n(m.avgDetectedMAE)}% |`);
-  lines.push('','## Readiness note','',s.status==='MEASURING'?'Metrics are accumulating. Do not interpret a single session as validated performance.':'Insufficient future snapshots for the configured horizons; metrics remain intentionally unavailable.','');return lines.join('\n');
+  let note='Insufficient future snapshots for the configured horizons; metrics remain intentionally unavailable.';
+  if(s.status==='MEASURING')note='Metrics are accumulating. Do not interpret a single session as validated performance.';
+  else if(s.cadence&&s.cadence.coverageHealthy===false)note=`Snapshot cadence is incomplete (${s.cadence.excessiveGapCount||0} gap(s) above ${s.cadence.gapLimitMin} minutes). Repair measurement coverage before interpreting model performance.`;
+  lines.push('','## Readiness note','',note,'');return lines.join('\n');
 }
 
 export async function build(root='validation/snapshots'){
@@ -42,7 +47,7 @@ export async function build(root='validation/snapshots'){
   await fs.writeFile('validation/scorecards/latest.md',markdown(s)+'\n');
   const byDay=new Map();for(const x of eligible){const d=x.capturedAt.slice(0,10);if(!byDay.has(d))byDay.set(d,[]);byDay.get(d).push(x)}
   for(const [day,rows] of byDay){const ds=summary(V.buildScorecard(rows,protocol));await fs.writeFile(`validation/scorecards/${day}.json`,JSON.stringify(ds,null,2)+'\n')}
-  console.log(JSON.stringify({snapshots:snapshots.length,eligibleSignalSnapshots:eligible.length,status:s.status,horizons:s.horizons},null,2));
+  console.log(JSON.stringify({snapshots:snapshots.length,eligibleSignalSnapshots:eligible.length,status:s.status,cadence:s.cadence,horizons:s.horizons},null,2));
   return s;
 }
 
