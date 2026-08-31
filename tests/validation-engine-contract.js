@@ -13,12 +13,24 @@ assert.equal(card.status,'MEASURING');
 assert.equal(card.snapshotCount,4);
 assert.ok(card.horizons[15].validCount>0);
 assert.ok(card.horizons[15].moverCount>=1);
+assert.equal(card.cadence.targetIntervalMin,15);
+assert.equal(card.cadence.medianGapMin,15);
+assert.equal(card.cadence.maxGapMin,15);
+assert.equal(card.cadence.excessiveGapCount,0);
+assert.equal(card.cadence.coverageHealthy,true,'regular 15-minute captures should be diagnosed as cadence-healthy');
 const eval0=V.evaluateBase(rows[0],rows,protocol).find(x=>x.symbol==='AAA');
 assert.equal(eval0.detected,true);assert.equal(eval0.shariaEligible,true);assert.equal(eval0.outcomes[15].status,'OK');
 const evalB=V.evaluateBase(rows[0],rows,protocol).find(x=>x.symbol==='BBB');
 assert.equal(evalB.detected,false);assert.equal(evalB.shariaEligible,false);
 const futureLeak=V.evaluateBase(rows[2],rows.slice(0,2),protocol).find(x=>x.symbol==='AAA');
 assert.equal(futureLeak.outcomes[15].status,'MISSING','engine must never use a snapshot earlier than the base as a future outcome');
+
+const cadenceGap=[rows[0],rows[1],snap('2026-08-30T15:05:00Z',12,10.2)];
+const gapDiag=V.cadenceDiagnostics(cadenceGap,protocol);
+assert.equal(gapDiag.gapLimitMin,17);
+assert.equal(gapDiag.maxGapMin,50);
+assert.equal(gapDiag.excessiveGapCount,1);
+assert.equal(gapDiag.coverageHealthy,false,'missing scheduled captures must be exposed rather than hidden behind outcome metrics');
 
 const staleRows=[
   snap('2026-08-30T20:00:00Z',10,10,'2026-08-30T19:59:00Z'),
