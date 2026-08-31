@@ -14,12 +14,19 @@
 
   const clamp=(v,min=0,max=100)=>Math.max(min,Math.min(max,Number.isFinite(+v)?+v:min));
   const num=(v,fallback=0)=>Number.isFinite(+v)?+v:fallback;
-  const nowMs=(iso)=>iso?new Date(iso).getTime():Date.now();
-  const ageMin=(ts,now=Date.now())=>Math.max(0,(now-new Date(ts).getTime())/60000);
+  const parseTimestamp=v=>{
+    if(v==null||v==='') return null;
+    const t=new Date(v).getTime();
+    return Number.isFinite(t)?new Date(t).toISOString():null;
+  };
+  const ageMin=(ts,now=Date.now())=>{
+    const t=ts?new Date(ts).getTime():NaN;
+    return Number.isFinite(t)?Math.max(0,(now-t)/60000):Infinity;
+  };
   const decay=(value,minutes,halfLife)=>num(value)*Math.pow(0.5,Math.max(0,minutes)/Math.max(1,halfLife));
 
   function feature(value, observedAt, halfLifeMin, invalidation, source){
-    return {value:num(value),observedAt:observedAt||new Date().toISOString(),halfLifeMin:halfLifeMin||60,invalidation:invalidation||null,source:source||'derived'};
+    return {value:num(value),observedAt:parseTimestamp(observedAt),halfLifeMin:halfLifeMin||60,invalidation:invalidation||null,source:source||'derived'};
   }
 
   function normalizeQuote(raw,source='live'){
@@ -31,7 +38,7 @@
     const floatShares=num(raw.floatShares??raw.float??raw.sharesFloat);
     const preMarketChangePct=num(raw.preMarketChangePct??raw.preMarketChangePercent);
     const afterHoursChangePct=num(raw.afterHoursChangePct??raw.postMarketChangePercent);
-    const observedAt=raw.observedAt||raw.timestamp||raw.updatedAt||raw.quoteTime||new Date().toISOString();
+    const observedAt=parseTimestamp(raw.observedAt||raw.timestamp||raw.updatedAt||raw.quoteTime);
     const v5=num(raw.velocity5m??raw.v5??raw.change5m);
     const v15=num(raw.velocity15m??raw.v15??raw.change15m);
     const tradesPerMin=num(raw.tradesPerMin??raw.tpm);
@@ -101,6 +108,7 @@
   function dataConfidence(q,sourceMeta={}){
     const age=ageMin(q.observedAt);
     let score=100;
+    if(!Number.isFinite(age)) score-=100;
     if(!q.price) score-=45;
     if(!q.volume) score-=18;
     if(!q.avgVolume) score-=8;
@@ -108,7 +116,7 @@
     if(age>6) score-=25;
     if(age>15) score-=35;
     if(sourceMeta.discoveryOnly) score-=20;
-    return {score:clamp(score),ageMin:age,label:score>=82?'HIGH':score>=58?'MEDIUM':'LOW',fresh:age<=10};
+    return {score:clamp(score),ageMin:age,label:score>=82?'HIGH':score>=58?'MEDIUM':'LOW',fresh:Number.isFinite(age)&&age<=10};
   }
 
   function lifecycleFor(indices,previousState='DISCOVERED'){
@@ -148,7 +156,7 @@
     const dc=dataConfidence(q,context.sourceMeta||{});
     const lifecycle=lifecycleFor({movement,ignition,continuation,distribution,risk},previous.lifecycle);
     const now=new Date().toISOString();
-    const firstSeen=previous.firstSeen||context.firstSeen||q.observedAt||now;
+    const firstSeen=previous.firstSeen||context.firstSeen||q.observedAt||null;
     const featureBook={
       velocity5m:feature(q.v5,q.observedAt,HALF_LIFE_MIN.velocity5m,'new 5m observation','market'),
       velocity15m:feature(q.v15,q.observedAt,HALF_LIFE_MIN.velocity15m,'new 15m observation','market'),
@@ -194,10 +202,13 @@
         const q=normalizeQuote(raw,p?.source||raw?.source||'feed');
         if(!q.symbol||!q.price) continue;
         const old=by.get(q.symbol);
-        if(!old||new Date(q.observedAt)>=new Date(old.observedAt)) by.set(q.symbol,q.raw);
+        if(!old){by.set(q.symbol,{raw:q.raw,observedAt:q.observedAt});continue;}
+        const nextTs=q.observedAt?Date.parse(q.observedAt):NaN;
+        const oldTs=old.observedAt?Date.parse(old.observedAt):NaN;
+        if(Number.isFinite(nextTs)&&(!Number.isFinite(oldTs)||nextTs>=oldTs)) by.set(q.symbol,{raw:q.raw,observedAt:q.observedAt});
       }
     }
-    return Array.from(by.values());
+    return Array.from(by.values(),x=>x.raw);
   }
 
   function rank(cases){
