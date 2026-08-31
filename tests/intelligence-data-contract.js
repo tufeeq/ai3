@@ -58,4 +58,14 @@ if(Object.prototype.hasOwnProperty.call(s,'secMarketwideDiscovery')){
   const actual=x.events.filter(e=>e.type==='SEC'&&e.discoveryScope==='MARKET_WIDE').length;
   assert.strictEqual(s.secMarketwideEventCount,actual,'market-wide SEC count must match events');
 }
-console.log(`intelligence-data contract ok: ${x.shortlist.length} shortlist symbols, ${eventSymbols.size} event symbols, ${x.events.length} events, live=${s.live}`);
+// Operational freshness contract: the validation workflow is the high-cadence
+// watchdog and must dispatch the intelligence workflow after repository gates.
+// This guards against multi-hour stale intelligence when an independent GitHub
+// schedule is delayed, without weakening the intelligence workflow's own
+// source-age/provenance validation.
+const validationWorkflow=fs.readFileSync('.github/workflows/validation-snapshots.yml','utf8');
+assert(/actions:\s*write/.test(validationWorkflow),'validation cadence keeper requires actions: write');
+assert(validationWorkflow.includes('Dispatch intelligence freshness reconciliation'),'validation cadence keeper step is missing');
+assert(/gh workflow run intelligence-feed\.yml/.test(validationWorkflow),'validation cadence keeper must dispatch intelligence-feed.yml');
+assert(validationWorkflow.indexOf('Core/UI/data-contract gate')<validationWorkflow.indexOf('Dispatch intelligence freshness reconciliation'),'intelligence dispatch must occur only after repository contracts pass');
+console.log(`intelligence-data contract ok: ${x.shortlist.length} shortlist symbols, ${eventSymbols.size} event symbols, ${x.events.length} events, live=${s.live}; cadence keeper locked`);
