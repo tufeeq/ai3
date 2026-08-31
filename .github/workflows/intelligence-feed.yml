@@ -57,10 +57,27 @@ jobs:
           npm test
       - name: Commit changed intelligence only
         run: |
+          set -euo pipefail
           git config user.name 'tagx3-intelligence-bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/intelligence.json
-          git diff --cached --quiet && exit 0
-          git commit -m 'data: refresh catalyst and news intelligence'
-          for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && exit 0; sleep $((i*4)); done
+          cp data/intelligence.json /tmp/tagx3-intelligence.json
+          BUILDER_SHA="$(git hash-object scripts/build-intelligence.mjs)"
+          for i in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            if [ "$(git hash-object scripts/build-intelligence.mjs)" != "$BUILDER_SHA" ]; then
+              node scripts/build-intelligence.mjs
+              cp data/intelligence.json /tmp/tagx3-intelligence.json
+              BUILDER_SHA="$(git hash-object scripts/build-intelligence.mjs)"
+            else
+              cp /tmp/tagx3-intelligence.json data/intelligence.json
+            fi
+            npm run check
+            npm test
+            git add data/intelligence.json
+            git diff --cached --quiet && exit 0
+            git commit -m 'data: refresh catalyst and news intelligence'
+            if git push origin HEAD:main; then exit 0; fi
+            sleep $((i*4))
+          done
           exit 1
