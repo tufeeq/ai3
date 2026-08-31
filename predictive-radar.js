@@ -45,12 +45,14 @@
   }
 
   function build(c,generatedAt){
-    const gate=eligibility(c), at=iso(generatedAt)||new Date().toISOString(), observedAt=iso(c?.observedAt);
+    const gate=eligibility(c), observedAt=iso(c?.observedAt), at=iso(generatedAt)||new Date().toISOString();
     if(!gate.ok) return {symbol:c?.symbol||'',status:'BLOCKED',blockedReason:gate.reason,generatedAt:at,evidenceCutoff:observedAt};
+    if(!observedAt) return {symbol:c?.symbol||'',status:'BLOCKED',blockedReason:'MISSING_EVIDENCE_CUTOFF',generatedAt:at,evidenceCutoff:null};
+    if(Date.parse(at)<Date.parse(observedAt)) return {symbol:c?.symbol||'',status:'BLOCKED',blockedReason:'PREDICTION_BEFORE_EVIDENCE_CUTOFF',generatedAt:at,evidenceCutoff:observedAt};
     const direction=directionFor(c), range=scenarioRange(c,direction);
     const evidenceScore=Math.round(clamp(Number(c.movementIndex||0)*0.30+Number(c.ignitionIndex||0)*0.24+Number(c.continuationIndex||0)*0.20+(100-Number(c.distributionRisk||0))*0.12+Number(c.dataConfidence?.score||0)*0.14));
     return {
-      id:`${c.symbol}:${observedAt||at}`,
+      id:`${c.symbol}:${observedAt}`,
       symbol:c.symbol,status:'EXPERIMENTAL',calibration:'UNCALIBRATED',probability:null,
       direction,horizon:horizonFor(c),expectedMoveRangePct:range,evidenceScore,
       generatedAt:at,evidenceCutoff:observedAt,priceAtPrediction:Number(c.price),
