@@ -1,8 +1,8 @@
 # TAGX3 Validation Scorecard
 
-Generated: 2026-08-31T06:27:39.544Z
+Generated: 2026-08-31T10:16:33.033Z
 Status: **INSUFFICIENT_FUTURE_SNAPSHOTS**
-Sessions: **2** · Snapshots: **9**
+Sessions: **2** · Snapshots: **10**
 
 > Measurement only. No production thresholds are changed and no trading edge is claimed.
 
