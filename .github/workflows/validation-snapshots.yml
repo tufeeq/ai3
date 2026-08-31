@@ -1,6 +1,9 @@
 name: TAGX3 Validation Snapshots
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows: ["TAGX3 Intelligence Feed"]
+    types: [completed]
   push:
     branches: [ main ]
     paths:
@@ -10,18 +13,22 @@ on:
       - 'scripts/build-validation-scorecard.mjs'
       - 'tests/validation-snapshot-contract.mjs'
       - 'tests/validation-engine-contract.js'
+      - 'tests/validation-workflow-contract.js'
       - '.github/workflows/validation-snapshots.yml'
       - 'package.json'
+  # Keep the original 15-minute schedule as an independent fallback. The primary
+  # measurement path is now event-coupled to a successful production intelligence
+  # rebuild, because measured cadence showed scheduled capture alone was not reliable.
   schedule:
     - cron: '7,22,37,52 12-22 * * 1-5'
 permissions:
   contents: write
-  actions: write
 concurrency:
   group: tagx3-validation-snapshots
   cancel-in-progress: false
 jobs:
   capture:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -38,15 +45,6 @@ jobs:
         run: npm run check
       - name: Core/UI/data-contract gate
         run: npm test
-      # The validation cadence is empirically more reliable than the independent
-      # intelligence/news crons. Reconcile intelligence after the full repository
-      # gate so a stale artifact cannot remain live for hours merely because one
-      # scheduled workflow was delayed. The intelligence workflow still owns all
-      # build-time freshness, provenance and full-contract validation.
-      - name: Dispatch intelligence freshness reconciliation
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh workflow run intelligence-feed.yml --repo "${{ github.repository }}" --ref main
       - name: Capture immutable validation snapshot
         run: node scripts/capture-validation-snapshot.mjs
       - name: Build causal validation scorecards
