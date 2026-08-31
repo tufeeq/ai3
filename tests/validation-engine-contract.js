@@ -36,4 +36,15 @@ const missingTime=structuredClone(rows);
 delete missingTime[1].observations[0].observedAt;
 const missingEval=V.evaluateBase(missingTime[0],missingTime,protocol).find(x=>x.symbol==='AAA');
 assert.equal(missingEval.outcomes[15].status,'STALE_OBSERVATION','unknown target observation time must fail closed');
+
+const missingCaptured=structuredClone(rows);
+delete missingCaptured[0].capturedAt;
+const missingCapturedCard=V.buildScorecard(missingCaptured,protocol);
+assert.equal(missingCapturedCard.snapshotCount,3,'snapshot without capturedAt must be excluded rather than treated as epoch');
+assert.equal(V.selectHorizonSnapshot(rows,{...rows[0],capturedAt:null},15,2),null,'missing base capturedAt must fail closed');
+
+const invalidCaptured=structuredClone(rows);
+invalidCaptured[0].capturedAt='not-a-date';
+const invalidCapturedCard=V.buildScorecard(invalidCaptured,protocol);
+assert.equal(invalidCapturedCard.snapshotCount,3,'snapshot with invalid capturedAt must be excluded');
 console.log('validation engine contract: ok');
