@@ -1,0 +1,16 @@
+(()=>{
+'use strict';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const num=v=>Number.isFinite(+v)?+v:null;
+const pct=v=>{const x=num(v);return x==null?'—':`${x>=0?'+':''}${x.toFixed(2)}%`};
+const money=v=>{const x=num(v);return x==null?'—':`$${x.toFixed(x<1?4:2)}`};
+const row=s=>window.TAGX3MarketUniverse?.last?.rows?.get(String(s||'').toUpperCase())||null;
+function sessionMeta(r){if(!r)return null;const s=String(r.extendedSession||'').toLowerCase();if(s.includes('pre')&&num(r.preMarketPrice)!=null)return{code:'PRE',label:'ما قبل الافتتاح',price:r.preMarketPrice,change:r.preMarketChangePct,at:r.extendedObservedAt};if(s.includes('after')&&num(r.afterHoursPrice)!=null)return{code:'AH',label:'بعد الإغلاق',price:r.afterHoursPrice,change:r.afterHoursChangePct,at:r.extendedObservedAt};return null}
+function style(){if(document.getElementById('extended-session-style'))return;const s=document.createElement('style');s.id='extended-session-style';s.textContent='.badge.extended-session{background:rgba(80,110,255,.12);color:#4863d8}.extended-session-box{margin:8px 0;padding:9px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}.extended-session-box b{display:block;margin-bottom:4px}.extended-session-box span{font-size:9px;color:var(--muted);margin-inline-end:10px}';document.head.appendChild(s)}
+function patchCards(){style();document.querySelectorAll('.opp-card').forEach(card=>{const s=card.querySelector('.ticker')?.textContent?.trim();const m=sessionMeta(row(s));const badges=card.querySelector('.badges');let b=card.querySelector('.badge.extended-session');if(!m){b?.remove();return}if(!b&&badges){b=document.createElement('span');b.className='badge extended-session';badges.appendChild(b)}if(b){b.textContent=`${m.code} ${pct(m.change)}`;b.title=`${m.label}: ${money(m.price)} · ${pct(m.change)}`}})}
+function patchDialog(symbol){const r=row(symbol),m=sessionMeta(r),body=document.getElementById('detailBody');if(!m||!body)return;body.querySelector('.extended-session-box')?.remove();const box=document.createElement('div');box.className='extended-session-box';box.innerHTML=`<b>${esc(m.label)} · ${money(m.price)} · ${pct(m.change)}</b><span>إغلاق الجلسة العادية: ${money(r.regularClose??r.rthClose)}</span><span>الحجم الممتد: ${num(r.extendedVolume)==null?'—':Math.round(+r.extendedVolume).toLocaleString()}</span><span>الرصد: ${m.at?esc(new Date(m.at).toLocaleString('ar-SA')):'—'}</span>`;body.prepend(box)}
+function symbolFromClick(e){const d=e.target.closest('[data-detail]');if(d?.dataset.detail)return d.dataset.detail;const c=e.target.closest('.opp-card');return c?.querySelector('.ticker')?.textContent?.trim()||null}
+document.addEventListener('click',e=>{const s=symbolFromClick(e);if(s)setTimeout(()=>patchDialog(s),60)},true);
+window.addEventListener('DOMContentLoaded',()=>{setTimeout(patchCards,900);[1800,3200].forEach(ms=>setTimeout(patchCards,ms))},{once:true});
+document.getElementById('refreshBtn')?.addEventListener('click',()=>setTimeout(patchCards,1200));
+})();
