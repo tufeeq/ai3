@@ -1,27 +1,34 @@
 name: TAGX3 Intelligence Feed
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows: ["TAGX3 Market News"]
+    types: [completed]
   push:
     branches: [ main ]
     paths:
       - 'scripts/build-intelligence.mjs'
       - 'scripts/sec-current-feed.mjs'
       - '.github/workflows/intelligence-feed.yml'
-  # GitHub documents that scheduled jobs near the start of the hour can be delayed
-  # or dropped under load. Use off-quarter minutes to reduce synchronized cron load.
+  # Prefer causal rebuilds after the upstream market-news workflow completes.
+  # Keep one independent hourly run as a safety net if the upstream trigger is delayed or unavailable.
   schedule:
-    - cron: '7,22,37,52 * * * *'
+    - cron: '47 * * * *'
 permissions:
   contents: write
 concurrency:
   group: tagx3-intelligence-feed
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
@@ -55,5 +62,5 @@ jobs:
           git add data/intelligence.json
           git diff --cached --quiet && exit 0
           git commit -m 'data: refresh catalyst and news intelligence'
-          git pull --rebase origin main
-          git push
+          for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && exit 0; sleep $((i*4)); done
+          exit 1
