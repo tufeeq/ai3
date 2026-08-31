@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-08-31T01:36:17.360Z",
+  "generatedAt": "2026-08-31T07:23:30.573Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,7 +8,7 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-08-28T23:59:58.000Z",
-    "marketDataAgeMin": 2976.3,
+    "marketDataAgeMin": 3323.6,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 266,
@@ -136,20 +136,20 @@
       "observedAt": "2026-08-28T19:30:07-04:00"
     },
     {
-      "symbol": "FTCI",
-      "price": 2.65,
-      "changePct": 3.921568627450984,
-      "early": 72,
-      "ignition": 80,
-      "observedAt": "2026-08-28T19:54:36-04:00"
-    },
-    {
       "symbol": "GCL",
       "price": 0.7,
       "changePct": 1.9367991845056034,
       "early": 72,
       "ignition": 80,
       "observedAt": "2026-08-28T19:56:30-04:00"
+    },
+    {
+      "symbol": "FTCI",
+      "price": 2.65,
+      "changePct": 3.921568627450984,
+      "early": 72,
+      "ignition": 80,
+      "observedAt": "2026-08-28T19:54:36-04:00"
     },
     {
       "symbol": "VCIG",
@@ -397,13 +397,13 @@
       "title": "Powerlaw Corp.",
       "cik": "0002052053"
     },
-    "FTCI": {
-      "title": "FTC Solar, Inc.",
-      "cik": "0001828161"
-    },
     "GCL": {
       "title": "GCL Global Holdings Ltd",
       "cik": "0002002045"
+    },
+    "FTCI": {
+      "title": "FTC Solar, Inc.",
+      "cik": "0001828161"
     },
     "VCIG": {
       "title": "VCI Global Ltd",
@@ -4937,6 +4937,35 @@
       ],
       "eventCount": 2
     },
+    "GCL": {
+      "events": [
+        {
+          "symbol": "GCL",
+          "title": "GCL Global Holdings Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-08-28T07:35:36.000Z",
+          "headline": "6-K filing — GCL Global Holdings Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/2002045/000121390026094639/ea0303805-6k_gcl.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "GCL",
+          "title": "GCL Global Holdings Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-08-12T10:07:52.000Z",
+          "headline": "6-K filing — GCL Global Holdings Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/2002045/000121390026087996/ea0301715-6k_gcl.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 2
+    },
     "FTCI": {
       "events": [
         {
@@ -5001,35 +5030,6 @@
         }
       ],
       "eventCount": 5
-    },
-    "GCL": {
-      "events": [
-        {
-          "symbol": "GCL",
-          "title": "GCL Global Holdings Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-08-28T07:35:36.000Z",
-          "headline": "6-K filing — GCL Global Holdings Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/2002045/000121390026094639/ea0303805-6k_gcl.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "GCL",
-          "title": "GCL Global Holdings Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-08-12T10:07:52.000Z",
-          "headline": "6-K filing — GCL Global Holdings Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/2002045/000121390026087996/ea0301715-6k_gcl.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
     },
     "VCIG": {
       "events": [
