@@ -46,8 +46,10 @@
     const freshnessUnknown=!marketFresh&&!explicitlyStale;
     const lowQuality=c.dataConfidence?.label==='LOW';
 
-    if((lowQuality&&prev.dataConfidence!=='LOW')||(!marketFresh&&prev.dataFresh!==false))
-      alerts.push(alert('WARNING',explicitlyStale?'DATA_STALE':'DATA_FRESHNESS_UNVERIFIED',explicitlyStale?'بيانات السوق غير طازجة؛ تم تعليق تنبيهات السعر/الوقف ومقاييس MFE/MAE حتى وصول رصد سوقي حديث.':freshnessUnknown?'تعذر إثبات حداثة بيانات السوق؛ تم تعليق تنبيهات السعر/الوقف ومقاييس MFE/MAE حتى وصول رصد مؤكد الحداثة.':'جودة البيانات انخفضت؛ لا تعتمد على الإشارة دون تحقق إضافي.',trade,c));
+    if(lowQuality&&prev.dataConfidence!=='LOW')
+      alerts.push(alert('WARNING','DATA_DEGRADED','جودة البيانات انخفضت؛ لا تعتمد على الإشارة دون تحقق إضافي.',trade,c));
+    if(!marketFresh&&prev.dataFresh!==false)
+      alerts.push(alert('WARNING',explicitlyStale?'DATA_STALE':'DATA_FRESHNESS_UNVERIFIED',explicitlyStale?'بيانات السوق غير طازجة؛ تم تعليق تنبيهات السعر/الوقف ومقاييس MFE/MAE حتى وصول رصد سوقي حديث.':freshnessUnknown?'تعذر إثبات حداثة بيانات السوق؛ تم تعليق تنبيهات السعر/الوقف ومقاييس MFE/MAE حتى وصول رصد مؤكد الحداثة.':'تعذر إثبات حداثة بيانات السوق.',trade,c));
 
     // Sharia evidence can change independently of quote freshness, so keep this safeguard active.
     if(prev.sharia&&prev.sharia!==sh) alerts.push(alert(sh==='NON_COMPLIANT'?'CRITICAL':'WARNING','SHARIA_CHANGED',`الحالة الشرعية تغيرت من ${prev.sharia} إلى ${sh}.`,trade,c));
