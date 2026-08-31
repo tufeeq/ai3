@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="decision-intelligence.css">
 <link rel="stylesheet" href="research-intelligence.css">
 <link rel="stylesheet" href="mobile.css">
+<link rel="stylesheet" href="evidence-first.css">
 </head>
 <body>
 <div class="app-shell">
@@ -18,6 +19,7 @@
   <div class="brand"><span class="brand-mark">T</span><div><b>TAGX</b><small>3.0</small></div></div>
   <nav class="side-nav">
     <button class="active" data-jump="dashboard"><span>◫</span><em>الرئيسية</em></button>
+    <button data-jump="predictivePanel"><span>⌁</span><em>التوقعات</em></button>
     <button data-jump="opportunities"><span>◎</span><em>الفرص</em></button>
     <button data-jump="trades"><span>◈</span><em>مراكزي</em></button>
     <button data-jump="alerts"><span>◉</span><em>التنبيهات</em></button>
@@ -27,7 +29,7 @@
 </aside>
 <div class="workspace">
 <header class="topbar">
-  <div class="market-title"><span class="eyebrow">MARKET · TRADING · SHORT-TERM INVESTMENT INTELLIGENCE</span><h1>غرفة ذكاء السوق والاستثمار</h1></div>
+  <div class="market-title"><span class="eyebrow">EVIDENCE → PREDICTION → CONFIRMATION → OUTCOME</span><h1>غرفة ذكاء السوق والاستثمار</h1></div>
   <div class="top-tools">
     <div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="بحث بالرمز…" autocomplete="off"></div>
     <button id="refreshBtn" class="primary">↻ تحديث</button>
@@ -35,8 +37,12 @@
   </div>
 </header>
 <main id="dashboard">
-  <section class="notice"><span class="notice-icon">◷</span><div><b>جارٍ التحقق من حالة السوق وجودة التغذية</b><span>تجمع TAGX بين رصد الحركة والسيولة والمحفزات والأخبار والبحث الاستثماري. صلاحية كل معلومة تبقى مرتبطة بحداثة المصدر وجودته.</span></div></section>
+  <section class="notice"><span class="notice-icon">◷</span><div><b>الحقيقة أولاً</b><span>لا تعرض TAGX تنبؤاً عند ضعف حداثة بيانات السوق أو التعارض الشرعي. الدرجات التجريبية ليست احتمالات إحصائية حتى تثبت المعايرة متعددة الجلسات.</span></div></section>
   <section id="summary" class="summary" hidden aria-hidden="true"></section>
+  <section class="panel predictive-panel" id="predictivePanel">
+    <div class="section-head"><div><span class="kicker">PREDICTIVE RADAR · EXPERIMENTAL</span><h2>ما المتوقع أن يتحرك — ولماذا؟</h2><p>يعرض فقط الحالات التي تجتاز حداثة البيانات والبوابة الشرعية. Evidence Score يصف قوة الأدلة الحالية وليس احتمال نجاح.</p></div></div>
+    <div id="predictiveRadar"><div class="predictive-empty">جارٍ فحص البيانات والأدلة…</div></div>
+  </section>
   <section class="lane-bar">
     <nav class="tabs" aria-label="Opportunity lanes">
       <button data-tab="building" class="active"><span>BUILDING NOW</span><em>0</em></button>
@@ -48,11 +54,11 @@
   </section>
   <section class="command-grid">
     <section class="panel opportunity-panel" id="opportunitiesPanel">
-      <div class="section-head"><div><span class="kicker">OPPORTUNITY QUEUE</span><h2>قائمة الفرص للتحقق</h2></div><span class="panel-hint">اضغط على السهم لعرض الشركة والسيولة والفلوت والشورت والأخبار وقراءة النموذج</span></div>
+      <div class="section-head"><div><span class="kicker">LIVE CONFIRMATION QUEUE</span><h2>فرص قيد التأكيد</h2></div><span class="panel-hint">هذه القائمة للرصد والتأكيد، وليست توصيات شراء.</span></div>
       <div id="opportunities" class="opportunities"></div>
     </section>
     <section class="panel focus-panel">
-      <div id="focusView" class="focus-view"><div class="empty">اختر فرصة لعرض التحليل البصري.</div></div>
+      <div id="focusView" class="focus-view"><div class="empty">اختر فرصة لعرض الأدلة المتاحة.</div></div>
     </section>
     <aside class="insight-column">
       <section class="panel"><div class="section-head"><div><span class="kicker">KEY RATINGS</span><h2>مؤشرات القرار</h2></div></div><div id="ratingPanel"></div></section>
@@ -60,18 +66,18 @@
       <section class="panel"><div class="section-head"><div><span class="kicker">SHARIAH INTELLIGENCE</span><h2>التحليل الشرعي</h2></div></div><div id="shariaPanel"></div></section>
     </aside>
   </section>
-  <section class="analytics-grid">
-    <section class="panel"><div class="section-head"><div><span class="kicker">SIGNAL MATRIX</span><h2>خريطة الإشارة</h2></div></div><div id="signalMatrix"></div></section>
+  <section class="analytics-grid secondary-analytics">
+    <section class="panel"><div class="section-head"><div><span class="kicker">SIGNAL MATRIX</span><h2>تفاصيل الإشارة</h2></div></div><div id="signalMatrix"></div></section>
     <section class="panel"><div class="section-head"><div><span class="kicker">LIQUIDITY LIFECYCLE</span><h2>دورة السيولة</h2></div></div><div id="liquidityLifecycle"></div></section>
     <section class="panel"><div class="section-head"><div><span class="kicker">DATA HEALTH</span><h2>موثوقية البيانات</h2></div></div><div id="feedGrid" class="feed-grid"></div></section>
   </section>
   <section class="panel" id="tradesPanel"><div class="section-head"><div><span class="kicker">MY TRADES</span><h2>مراكزي</h2><p>متابعة مخصصة من سعر دخولك الفعلي.</p></div></div><div id="trades"></div></section>
   <section class="panel" id="alertsPanel"><div class="section-head"><div><span class="kicker">LIVE THESIS MONITOR</span><h2>تنبيهات المتابعة</h2><p>تغير الفرضية، التصريف، الوقف الشخصي والحالة الشرعية.</p></div><button id="clearAlerts">مسح</button></div><div id="alerts" class="alerts"></div></section>
 </main>
-<footer>TAGX 3.0 · Observe → Research → Anticipate → Detect → Cross-Validate → Challenge → Prioritize → Track → Reassess → Replay → Learn</footer>
+<footer>TAGX 3.0 · Evidence → Predict → Confirm → Invalidate → Measure → Learn</footer>
 </div>
 </div>
 <dialog id="tradeDialog"><form id="tradeForm" method="dialog"><h3>إضافة إلى My Trades</h3><p id="tradeContext" class="muted"></p><input id="tradeSymbol" type="hidden"><label>سعر الدخول الفعلي<input id="entryPrice" type="number" step="0.0001" min="0.0001" required></label><label>الكمية — اختياري<input id="quantity" type="number" step="1" min="0"></label><label>وقفك الشخصي — اختياري<input id="personalStop" type="number" step="0.0001" min="0"></label><label>ملاحظات<textarea id="tradeNotes" rows="3"></textarea></label><div id="tradeError" class="error"></div><div class="dialog-actions"><button type="button" id="cancelTrade">إلغاء</button><button type="submit" class="primary">حفظ ومتابعة</button></div></form></dialog>
 <dialog id="detailDialog"><div class="detail-wrap"><div class="section-head sticky-dialog-head"><h3 id="detailTitle">تفاصيل</h3><button id="closeDetail">إغلاق</button></div><div id="detailBody"></div></div></dialog>
-<script src="loading-progress.js"></script><script src="fast-fetch.js"></script><script src="finviz-bridge.js"></script><script src="quote-shape-adapter.js"></script><script src="market-universe-bridge.js"></script><script src="catalyst-shape-adapter.js"></script><script src="catalyst-intelligence-bridge.js"></script><script src="ingestion-funnel.js"></script><script src="core/engine.js"></script><script src="session-final-policy.js"></script><script src="causal-catalyst-policy.js"></script><script src="core/sharia.js"></script><script src="core/trade-monitor.js"></script><script src="core/learning.js"></script><script src="app.js"></script><script src="ui-enhancements.js"></script><script src="decision-intelligence.js"></script><script src="evidence-intelligence.js"></script><script src="research-intelligence.js"></script><script src="market-overview.js"></script><script src="stock-card-enhancer.js"></script><script src="universe-visibility.js"></script><script src="ui-truth.js"></script><script src="feed-health-truth.js"></script>
+<script src="loading-progress.js"></script><script src="fast-fetch.js"></script><script src="finviz-bridge.js"></script><script src="quote-shape-adapter.js"></script><script src="market-universe-bridge.js"></script><script src="catalyst-shape-adapter.js"></script><script src="catalyst-intelligence-bridge.js"></script><script src="ingestion-funnel.js"></script><script src="core/engine.js"></script><script src="session-final-policy.js"></script><script src="causal-catalyst-policy.js"></script><script src="core/sharia.js"></script><script src="core/trade-monitor.js"></script><script src="core/learning.js"></script><script src="predictive-radar.js"></script><script src="app.js"></script><script src="ui-enhancements.js"></script><script src="decision-intelligence.js"></script><script src="evidence-intelligence.js"></script><script src="research-intelligence.js"></script><script src="market-overview.js"></script><script src="stock-card-enhancer.js"></script><script src="universe-visibility.js"></script><script src="ui-truth.js"></script><script src="feed-health-truth.js"></script>
 </body></html>
