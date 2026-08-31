@@ -3,6 +3,7 @@ const fs=require('node:fs');
 
 const html=fs.readFileSync('index.html','utf8');
 const theme=fs.readFileSync('theme.css','utf8');
+const concise=fs.readFileSync('concise-v3.css','utf8');
 const ui=fs.readFileSync('ui-enhancements.js','utf8');
 const real=fs.readFileSync('decision-intelligence.js','utf8');
 const realCss=fs.readFileSync('decision-intelligence.css','utf8');
@@ -36,5 +37,19 @@ assert(pipeline.includes('api.gdeltproject.org'),'news discovery pipeline missin
 assert(app.includes('data-detail'),'opportunity detail action missing');
 assert(!html.includes('<script src="http:'),'insecure script reference detected');
 assert(!html.includes('<link rel="stylesheet" href="http:'),'insecure stylesheet reference detected');
+
+// Regression contract for the compact decision screen. Legacy intelligence modules run
+// after app.js and may append/reveal large panels, so the final compact stylesheet must
+// load after every legacy UI script and must explicitly suppress those injected surfaces.
+const compactLink=html.lastIndexOf('concise-v3.css');
+const lastLegacyScript=html.lastIndexOf('feed-health-truth.js');
+assert(compactLink>lastLegacyScript,'compact UI override must load after all legacy UI scripts');
+assert(concise.includes('main>section{display:none!important}'),'compact UI must fail closed for unapproved top-level sections');
+assert(concise.includes('main>.lane-bar,main>.command-grid,main>#tradesPanel{display:block!important}'),'compact UI approved decision flow contract missing');
+assert(concise.includes('.command-grid>.insight-column{display:none!important}'),'legacy diagnostic column must remain off the primary decision surface');
+assert(concise.includes('.secondary-analytics'),'legacy analytics must be suppressed on the primary surface');
+assert(concise.includes('.opp-card:nth-child(n+6){display:none!important}'),'desktop top-5 opportunity cap missing');
+assert(concise.includes('.opp-card:nth-child(n+4){display:none!important}'),'mobile top-3 opportunity cap missing');
+assert(concise.includes('.visual-stage,.feature-bars,.score-ring'),'duplicative primary-card diagnostics must stay hidden');
 
 console.log('TAGX3 UI contract: OK');
