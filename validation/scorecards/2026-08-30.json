@@ -1,10 +1,20 @@
 {
   "schemaVersion": 1,
   "kind": "TAGX3_VALIDATION_SCORECARD_SUMMARY",
-  "generatedAt": "2026-08-31T22:19:22.658Z",
+  "generatedAt": "2026-08-31T22:21:48.142Z",
   "status": "INSUFFICIENT_FRESH_OBSERVATIONS",
   "sessions": 1,
   "snapshotCount": 6,
+  "cadence": {
+    "targetIntervalMin": 15,
+    "toleranceMin": 9,
+    "gapLimitMin": 24,
+    "intervalCount": 5,
+    "medianGapMin": 1.1015,
+    "maxGapMin": 20.1142,
+    "excessiveGapCount": 0,
+    "coverageHealthy": true
+  },
   "protocol": {
     "name": "TAGX3 Commercial Validation Protocol v1",
     "frozenAt": "2026-08-30T22:40:00Z",

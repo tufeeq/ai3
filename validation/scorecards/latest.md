@@ -1,8 +1,9 @@
 # TAGX3 Validation Scorecard
 
-Generated: 2026-08-31T22:18:31.083Z
+Generated: 2026-08-31T22:20:56.384Z
 Status: **INSUFFICIENT_FRESH_OBSERVATIONS**
-Sessions: **2** · Snapshots: **17**
+Sessions: **2** · Snapshots: **18**
+Cadence: target **15m** · median **20.1142m** · max **275.0846m** · excessive gaps **8** · healthy **no**
 
 > Measurement only. No production thresholds are changed and no trading edge is claimed.
 
@@ -14,5 +15,5 @@ Sessions: **2** · Snapshots: **17**
 
 ## Readiness note
 
-Insufficient future snapshots for the configured horizons; metrics remain intentionally unavailable.
+Snapshot cadence is incomplete (8 gap(s) above 24 minutes). Repair measurement coverage before interpreting model performance.
 
