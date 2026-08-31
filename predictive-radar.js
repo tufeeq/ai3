@@ -7,7 +7,7 @@
   const KEY='tagx3.predictiveRadar.v1';
   const clamp=(v,min=0,max=100)=>Math.max(min,Math.min(max,Number(v)||0));
   const finite=v=>Number.isFinite(Number(v));
-  const iso=v=>{const d=new Date(v);return Number.isFinite(d.getTime())?d.toISOString():null};
+  const iso=v=>{if(v==null||v==='')return null;const d=new Date(v);return Number.isFinite(d.getTime())?d.toISOString():null};
 
   function eligibility(c){
     if(!c||!c.symbol||!finite(c.price)||Number(c.price)<=0) return {ok:false,reason:'INVALID_MARKET_DATA'};
