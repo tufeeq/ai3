@@ -28,5 +28,14 @@ const predictiveFeeds=jsonUrls(predictive);
 // a market/catalyst/Sharia source that the primary app does not reconcile.
 for(const url of predictiveFeeds) assert(appFeeds.has(url),`predictive-only feed bypasses primary reconciliation: ${url}`);
 
+// Missing source time must remain missing. Reconciliation may use a feed-level timestamp,
+// but it must never manufacture browser time and make an undated quote look fresh.
+const dedupeMatch=app.match(/function dedupeQuotes\(results\)\{[\s\S]*?\}return\[\.\.\.by\.values\(\)\]\}/);
+assert(dedupeMatch,'dedupeQuotes implementation not found');
+const dedupe=dedupeMatch[0];
+assert(!dedupe.includes('new Date().toISOString()'),'app reconciliation must not invent quote observedAt from browser time');
+assert(dedupe.includes("f.data?.updatedAt||null"),'app reconciliation must fail closed when quote and feed timestamps are missing');
+assert(!predictive.includes("f.data?.updatedAt||new Date().toISOString()"),'predictive reconciliation must not invent quote timestamps');
+
 assert.equal(shared.filter(x=>appFeeds.has(x)&&predictiveFeeds.has(x)).length,shared.length);
-console.log(`reconciliation-source-contract: ok (${shared.length} shared production feeds locked)`);
+console.log(`reconciliation-source-contract: ok (${shared.length} shared feeds; missing quote time fails closed)`);
