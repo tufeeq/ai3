@@ -28,9 +28,13 @@ const staleRows=[
 const staleEval=V.evaluateBase(staleRows[0],staleRows,protocol).find(x=>x.symbol==='AAA');
 assert.equal(staleEval.outcomes[15].status,'STALE_OBSERVATION','repeated capture time must not manufacture a price outcome when the market observation did not advance');
 const staleCard=V.buildScorecard(staleRows,protocol);
+assert.equal(staleCard.status,'INSUFFICIENT_FRESH_OBSERVATIONS','future snapshots with non-advancing observations must be diagnosed as a freshness gap, not missing future snapshots');
 assert.equal(staleCard.horizons[15].validCount,0,'stale observations must be excluded from performance denominators');
 assert.ok(staleCard.horizons[15].excludedOutcomeCounts.STALE_OBSERVATION>0,'scorecard must expose stale exclusions for data-quality diagnosis');
 assert.equal(staleCard.horizons[15].falsePositiveRate,null,'stale repeated prices must not be counted as false positives');
+
+const missingOnly=[snap('2026-08-30T21:00:00Z',10,10)];
+assert.equal(V.buildScorecard(missingOnly,protocol).status,'INSUFFICIENT_FUTURE_SNAPSHOTS','absence of horizon snapshots must remain a distinct diagnosis');
 
 const missingTime=structuredClone(rows);
 delete missingTime[1].observations[0].observedAt;
