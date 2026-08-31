@@ -58,14 +58,14 @@ if(Object.prototype.hasOwnProperty.call(s,'secMarketwideDiscovery')){
   const actual=x.events.filter(e=>e.type==='SEC'&&e.discoveryScope==='MARKET_WIDE').length;
   assert.strictEqual(s.secMarketwideEventCount,actual,'market-wide SEC count must match events');
 }
-// Operational freshness contract: the validation workflow is the high-cadence
-// watchdog and must dispatch the intelligence workflow after repository gates.
-// This guards against multi-hour stale intelligence when an independent GitHub
-// schedule is delayed, without weakening the intelligence workflow's own
-// source-age/provenance validation.
+// Operational measurement contract: validation must observe the artifact after a
+// successful production intelligence rebuild. A scheduled fallback remains, but
+// validation must not dispatch intelligence itself; that old feedback topology
+// produced measured gaps far above the 15-minute target and could snapshot the
+// pre-reconciliation artifact.
 const validationWorkflow=fs.readFileSync('.github/workflows/validation-snapshots.yml','utf8');
-assert(/actions:\s*write/.test(validationWorkflow),'validation cadence keeper requires actions: write');
-assert(validationWorkflow.includes('Dispatch intelligence freshness reconciliation'),'validation cadence keeper step is missing');
-assert(/gh workflow run intelligence-feed\.yml/.test(validationWorkflow),'validation cadence keeper must dispatch intelligence-feed.yml');
-assert(validationWorkflow.indexOf('Core/UI/data-contract gate')<validationWorkflow.indexOf('Dispatch intelligence freshness reconciliation'),'intelligence dispatch must occur only after repository contracts pass');
-console.log(`intelligence-data contract ok: ${x.shortlist.length} shortlist symbols, ${eventSymbols.size} event symbols, ${x.events.length} events, live=${s.live}; cadence keeper locked`);
+assert(/workflow_run:\s*\n\s*workflows:\s*\["TAGX3 Intelligence Feed"\]/m.test(validationWorkflow),'validation must follow TAGX3 Intelligence Feed');
+assert(/github\.event_name != 'workflow_run' \|\| github\.event\.workflow_run\.conclusion == 'success'/.test(validationWorkflow),'failed intelligence runs must not produce measurement snapshots');
+assert(!/gh workflow run intelligence-feed\.yml/.test(validationWorkflow),'validation must not dispatch intelligence or create a feedback loop');
+assert(validationWorkflow.indexOf('Core/UI/data-contract gate')<validationWorkflow.indexOf('Capture immutable validation snapshot'),'snapshot publication must remain behind full repository contracts');
+console.log(`intelligence-data contract ok: ${x.shortlist.length} shortlist symbols, ${eventSymbols.size} event symbols, ${x.events.length} events, live=${s.live}; post-intelligence validation coupling locked`);
