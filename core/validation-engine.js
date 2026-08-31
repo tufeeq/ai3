@@ -5,7 +5,7 @@
 })(typeof globalThis!=='undefined'?globalThis:this,function(){
   'use strict';
 
-  const ms=v=>{const t=new Date(v||0).getTime();return Number.isFinite(t)?t:null};
+  const ms=v=>{if(v==null||v==='')return null;const t=new Date(v).getTime();return Number.isFinite(t)?t:null};
   const num=v=>Number.isFinite(+v)?+v:null;
   const pct=(a,b)=>a>0&&b>0?((b-a)/a)*100:null;
   const symbolOf=x=>String(x?.symbol||'').toUpperCase().trim();
