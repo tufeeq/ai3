@@ -1,5 +1,6 @@
-const assert=require('assert');
+const fs=require('fs'),assert=require('assert');
 const U=require('../market-universe-bridge.js');
+const G=require('../live-source-guard.js');
 const live={count:2,requested:2,quotes:{AAA:{ticker:'AAA',price:10,volume:1000,observedAt:'2026-08-28T20:00:00Z',source:'Live Quotes',liveBacked:true},BBB:{ticker:'BBB',price:2,volume:100}}};
 const broad={updatedAt:'2026-08-28T20:30:00Z',rows:[{Ticker:'FFF',Company:'FFF Inc',Price:'6.2',Volume:'50000',Float:'9.0',Outstanding:'20.0','Short Float':'4.2%'}]};
 const fast={updatedAt:'2026-08-28T21:00:00Z',session:'after-hours',rows:[{Ticker:'CCC',Price:'1.20',Change:'5%',Volume:'250000',Company:'CCC Corp'},{Ticker:'AAA',Price:'9.9',Volume:'900'}]};
@@ -14,4 +15,12 @@ const f=out.quotes.find(x=>x.symbol==='FFF');assert(f&&f.company==='FFF Inc'&&f.
 const d=out.quotes.find(x=>x.symbol==='DDD');assert(d&&d.marketObservation===true&&d.discoveryOnly===false&&d.liveBacked===false,'Yahoo extended-hours quote is a real market observation, not discovery metadata');
 assert(out.universeCoverage.broadUniverse===1&&out.universeCoverage.discoveryFast===2&&out.universeCoverage.discoveryRich===1&&out.universeCoverage.extendedHours===2&&out.universeCoverage.extendedHot===1,'coverage metadata must expose every source contribution');
 assert(out.universeCoverage.unique===6,'coverage must report de-duplicated unique symbols, not summed rows');
+const page={updatedAtUTC:'2026-08-31T00:00:00Z',marketClockSession:'closed',freshCount:0};
+const raw={updatedAtUTC:'2026-08-31T14:09:11Z',marketClockSession:'regular',freshCount:437};
+const picked=G.chooseNewest(page,raw);
+assert.strictEqual(picked.source,'raw-github','fresh raw GitHub snapshot must beat a stale Pages snapshot');
+assert.strictEqual(picked.payload.freshCount,437,'fresh snapshot payload must survive selection unchanged');
+const html=fs.readFileSync('index.html','utf8');
+assert(html.indexOf('live-source-guard.js')>=0,'homepage must load live source guard');
+assert(html.indexOf('live-source-guard.js')<html.indexOf('market-universe-bridge.js'),'live source guard must install before the universe bridge');
 console.log('market universe contract: OK');
