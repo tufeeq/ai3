@@ -22,7 +22,7 @@ export const SOURCES={
 
 const sha256=s=>crypto.createHash('sha256').update(s).digest('hex');
 const n=v=>{if(v==null||v==='')return null;const x=Number(String(v).replace(/[%,$,]/g,''));return Number.isFinite(x)?x:null};
-const iso=v=>{const t=new Date(v||0);return Number.isFinite(t.getTime())?t.toISOString():null};
+const iso=v=>{if(v==null||v==='')return null;const t=new Date(v);return Number.isFinite(t.getTime())?t.toISOString():null};
 const symbolOf=r=>String(r?.symbol||r?.ticker||r?.Ticker||'').toUpperCase().trim();
 
 export function rowsOf(payload){
@@ -119,7 +119,7 @@ export function validateSnapshot(s){
   if(!Array.isArray(s?.observations)||s.observations.length!==s?.coverage?.mergedSymbols)errors.push('observation count mismatch');
   if(s.schemaVersion>=2&&(!Array.isArray(s.signals)||s.signals.length!==s.coverage.signalSymbols))errors.push('signal count mismatch');
   const seen=new Set();
-  for(const o of s?.observations||[]){if(!o.symbol||!(o.price>0))errors.push('invalid observation');if(seen.has(o.symbol))errors.push(`duplicate ${o.symbol}`);seen.add(o.symbol)}
+  for(const o of s?.observations||[]){if(!o.symbol||!(o.price>0))errors.push('invalid observation');if(!o.observedAt)errors.push(`missing observation timestamp ${o.symbol||'UNKNOWN'}`);if(seen.has(o.symbol))errors.push(`duplicate ${o.symbol}`);seen.add(o.symbol)}
   const sigSeen=new Set();for(const x of s?.signals||[]){if(!x.symbol||sigSeen.has(x.symbol))errors.push(`invalid/duplicate signal ${x.symbol}`);sigSeen.add(x.symbol)}
   for(const [name,meta] of Object.entries(s?.sources||{})){if(!/^[a-f0-9]{64}$/.test(meta.sha256||''))errors.push(`missing source hash ${name}`)}
   return errors;
