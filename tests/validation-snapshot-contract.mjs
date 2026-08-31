@@ -4,8 +4,8 @@ import {buildSnapshot,validateSnapshot,SOURCES} from '../scripts/capture-validat
 const wrap=(name,data)=>({name,url:SOURCES[name],data,bytes:123,sha256:'a'.repeat(64),fetchedAt:'2026-08-31T00:00:00Z',latencyMs:10});
 const downloads=[
   wrap('live',{marketClockSession:'closed',freshCount:0,requested:2,count:2,quotes:[{symbol:'AAA',price:10,volume:1000,observedAt:'2026-08-28T20:00:00Z',source:'Live Quotes',liveBacked:true},{symbol:'BBB',price:5,volume:500,observedAt:'2026-08-28T20:00:00Z',source:'Live Quotes',liveBacked:true}]}),
-  wrap('broad',{rows:[{Ticker:'AAA',Company:'Alpha',Price:'10',Volume:'1000'},{Ticker:'CCC',Company:'Gamma',Price:'3',Volume:'200'}]}),
-  wrap('fast',{rows:[{Ticker:'CCC',Price:'3',Volume:'200'}]}),
+  wrap('broad',{rows:[{Ticker:'AAA',Company:'Alpha',Price:'10',Volume:'1000'},{Ticker:'CCC',Company:'Gamma',Price:'3',Volume:'200',observedAt:'2026-08-28T20:00:00Z'}]}),
+  wrap('fast',{rows:[{Ticker:'CCC',Price:'3',Volume:'200',observedAt:'2026-08-28T20:00:00Z'}]}),
   wrap('rich',{rows:[{Ticker:'AAA',Company:'Alpha',Price:'10',Float:'8.2'}]}),
   wrap('extended',{rows:[]}),wrap('hot',{rows:[]}),
   wrap('sharia',{rows:{AAA:{status:'VERIFIED'},BBB:{status:'UNVERIFIED'},CCC:{status:'NON_COMPLIANT'}}}),
