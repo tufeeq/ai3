@@ -65,8 +65,8 @@ const h3=L.hypothesisFromFailures([{missed:true},{missed:true},{missed:true}]);
 assert.equal(h3[0].status,'CHALLENGER_CANDIDATE');
 
 // My Trades must preserve excursion metrics and emit actionable monitoring alerts without executing trades.
-const trade={id:'TEST-1',symbol:'TEST',entryPrice:10,status:'OPEN',personalStop:9.5,mfePct:0,maePct:0,alerts:[],entrySnapshot:{lifecycle:'WATCH',distributionRisk:20,continuationIndex:70,sharia:'UNVERIFIED',dataConfidence:'HIGH'},lastSnapshot:{lifecycle:'WATCH',distributionRisk:20,continuationIndex:70,sharia:'UNVERIFIED',dataConfidence:'HIGH'}};
-const monitored=T.evaluate(trade,{symbol:'TEST',price:9.4,lifecycle:'DISTRIBUTING',movementIndex:30,ignitionIndex:20,continuationIndex:30,distributionRisk:75,riskScore:80,sharia:{status:'NON_COMPLIANT'},dataConfidence:{label:'LOW'},observedAt:'2026-08-29T20:00:00Z',whyNow:[]});
+const trade={id:'TEST-1',symbol:'TEST',entryPrice:10,status:'OPEN',personalStop:9.5,mfePct:0,maePct:0,alerts:[],entrySnapshot:{lifecycle:'WATCH',distributionRisk:20,continuationIndex:70,sharia:'UNVERIFIED',dataConfidence:'HIGH',dataFresh:true},lastSnapshot:{lifecycle:'WATCH',distributionRisk:20,continuationIndex:70,sharia:'UNVERIFIED',dataConfidence:'HIGH',dataFresh:true}};
+const monitored=T.evaluate(trade,{symbol:'TEST',price:9.4,lifecycle:'DISTRIBUTING',movementIndex:30,ignitionIndex:20,continuationIndex:30,distributionRisk:75,riskScore:80,sharia:{status:'NON_COMPLIANT'},dataConfidence:{label:'LOW',fresh:true},observedAt:'2026-08-29T20:00:00Z',whyNow:[]});
 assert(Math.abs(monitored.trade.maePct-(-6))<1e-9);
 assert.equal(monitored.trade.mfePct,0);
 for(const type of ['PERSONAL_STOP','DATA_DEGRADED','DISTRIBUTION','TRIM_WATCH','THESIS_WEAKENING','SHARIA_CHANGED']) assert(monitored.alerts.some(x=>x.type===type),`missing My Trades alert ${type}`);
