@@ -91,6 +91,18 @@
     return {horizonMin:+h,validCount:valid.length,moverCount:movers.length,detectedCount:detected.length,actionableCount:actionable.length,earlyCaptureRate:movers.length?captured.length/movers.length:null,missedMoverRate:movers.length?missed.length/movers.length:null,falsePositiveRate:detected.length?falsePos.length/detected.length:null,actionableFalsePositiveRate:actionable.length?actionableFalsePos.length/actionable.length:null,avgDetectedMFE:avg(detected,'mfePct'),avgDetectedMAE:avg(detected,'maePct'),avgActionableMFE:avg(actionable,'mfePct'),avgActionableMAE:avg(actionable,'maePct'),excludedOutcomeCounts:excluded};
   }
 
+  function cadenceDiagnostics(snapshots,protocol={}){
+    const times=(snapshots||[]).map(s=>ms(s?.capturedAt)).filter(v=>v!=null).sort((a,b)=>a-b);
+    const targetMin=Math.min(...(protocol?.horizonsMin||[15]).map(Number).filter(v=>Number.isFinite(v)&&v>0),15);
+    const gaps=[];for(let i=1;i<times.length;i++)gaps.push((times[i]-times[i-1])/60000);
+    const sorted=[...gaps].sort((a,b)=>a-b),median=sorted.length?(sorted.length%2?sorted[(sorted.length-1)/2]:(sorted[sorted.length/2-1]+sorted[sorted.length/2])/2):null;
+    const maxGap=gaps.length?Math.max(...gaps):null;
+    const tolerance=Math.max(Number(protocol?.horizonToleranceMin)||0,1);
+    const gapLimit=targetMin+tolerance;
+    const excessive=gaps.filter(g=>g>gapLimit);
+    return{targetIntervalMin:targetMin,toleranceMin:tolerance,gapLimitMin:gapLimit,intervalCount:gaps.length,medianGapMin:median,maxGapMin:maxGap,excessiveGapCount:excessive.length,coverageHealthy:gaps.length>0&&excessive.length===0};
+  }
+
   function diagnosticStatus(horizons,usablePairs){
     if(usablePairs)return'MEASURING';
     const excluded=Object.values(horizons||{}).map(x=>x?.excludedOutcomeCounts||{});
@@ -100,14 +112,14 @@
 
   function buildScorecard(snapshots,protocol){
     const ordered=(snapshots||[]).filter(s=>ms(s?.capturedAt)!=null).sort((a,b)=>ms(a.capturedAt)-ms(b.capturedAt));
-    if(!ordered.length)return{schemaVersion:1,kind:'TAGX3_VALIDATION_SCORECARD',status:'NO_SNAPSHOTS',sessions:0,snapshotCount:0,horizons:{},rows:[]};
+    if(!ordered.length)return{schemaVersion:1,kind:'TAGX3_VALIDATION_SCORECARD',status:'NO_SNAPSHOTS',sessions:0,snapshotCount:0,cadence:cadenceDiagnostics([],protocol),horizons:{},rows:[]};
     const baseRows=[];
     for(const base of ordered){const rows=evaluateBase(base,ordered,protocol);for(const r of rows)baseRows.push({baseAt:base.capturedAt,...r});}
     const horizons={};for(const h of protocol.horizonsMin||[])horizons[h]=metricsForHorizon(baseRows,h,protocol);
     const sessionSet=new Set(ordered.map(s=>String(s.capturedAt).slice(0,10)));
     const usablePairs=Object.values(horizons).reduce((n,x)=>n+(x.validCount||0),0);
-    return{schemaVersion:1,kind:'TAGX3_VALIDATION_SCORECARD',generatedAt:new Date().toISOString(),protocol:{name:protocol.name,frozenAt:protocol.frozenAt,horizonsMin:protocol.horizonsMin,horizonToleranceMin:protocol.horizonToleranceMin,moverThresholdPct:protocol.moverThresholdPct,falsePositiveMaxMfePct:protocol.falsePositiveMaxMfePct},status:diagnosticStatus(horizons,usablePairs),sessions:sessionSet.size,snapshotCount:ordered.length,horizons,rows:baseRows};
+    return{schemaVersion:1,kind:'TAGX3_VALIDATION_SCORECARD',generatedAt:new Date().toISOString(),protocol:{name:protocol.name,frozenAt:protocol.frozenAt,horizonsMin:protocol.horizonsMin,horizonToleranceMin:protocol.horizonToleranceMin,moverThresholdPct:protocol.moverThresholdPct,falsePositiveMaxMfePct:protocol.falsePositiveMaxMfePct},status:diagnosticStatus(horizons,usablePairs),sessions:sessionSet.size,snapshotCount:ordered.length,cadence:cadenceDiagnostics(ordered,protocol),horizons,rows:baseRows};
   }
 
-  return{selectHorizonSnapshot,observationAdvanced,pathStats,evaluateBase,metricsForHorizon,diagnosticStatus,buildScorecard};
+  return{selectHorizonSnapshot,observationAdvanced,pathStats,evaluateBase,metricsForHorizon,cadenceDiagnostics,diagnosticStatus,buildScorecard};
 });
