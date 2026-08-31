@@ -3,13 +3,12 @@
 const nativeFetch=window.fetch.bind(window);
 const inflight=new Map();
 const memory=new Map();
-const CACHE='tagx3-runtime-v2';
+const CACHE='tagx3-runtime-v3';
 const BOOT_AT=performance.now();
-// GitHub project Pages live below /ai3/. Resolve repo-owned data from the
-// current application path instead of assuming a domain-root /data directory.
 const INTEL_PATH=new URL('./data/intelligence.json',location.href).pathname;
 const TARGETS=['/ai/tag/data/',INTEL_PATH];
-const CORE=['/ai/tag/data/live-quotes.json',INTEL_PATH];
+const LIVE='/ai/tag/data/live-quotes.json';
+const CORE=[LIVE,INTEL_PATH];
 const OPTIONAL=[
   '/ai/tag/data/tagx2-sentinel.json',
   '/ai/tag/data/coverage-rescue.json',
@@ -38,14 +37,14 @@ async function writeCache(url,rec){
   if(!('caches'in window))return;
   try{const c=await caches.open(CACHE);await c.put(url,responseFrom(rec))}catch{}
 }
-async function network(url,init={},timeoutMs=1800){
+async function network(url,init={},timeoutMs=1800,persist=true){
   const controller=new AbortController();
   const timer=setTimeout(()=>controller.abort(),timeoutMs);
   try{
-    const r=await nativeFetch(url,{...init,cache:'default',signal:controller.signal});
+    const r=await nativeFetch(url,{...init,cache:init.cache||'default',signal:controller.signal});
     const body=await r.text();
-    const rec={body,status:r.status,statusText:r.statusText,headers:{'content-type':r.headers.get('content-type')||'application/json'}};
-    if(r.ok)writeCache(url,rec);
+    const rec={body,status:r.status,statusText:r.statusText,headers:{'content-type':r.headers.get('content-type')||'application/json','x-tagx-live-source':r.headers.get('x-tagx-live-source')||'','x-tagx-live-updated-at':r.headers.get('x-tagx-live-updated-at')||''}};
+    if(r.ok&&persist)writeCache(url,rec);
     return rec;
   }finally{clearTimeout(timer)}
 }
@@ -59,6 +58,16 @@ window.fetch=async function(input,init={}){
   let u;try{u=normalize(input)}catch{return nativeFetch(input,init)}
   if(u.origin!==location.origin||!isTarget(u))return nativeFetch(input,init);
   const url=u.href,path=u.pathname;
+
+  // Trading-critical live quotes are NETWORK-FIRST and NEVER served from the
+  // persistent runtime cache. The upstream live-source guard already reconciles
+  // Pages vs raw GitHub and returns the newest timestamped snapshot. If that
+  // request fails, fail closed rather than resurrecting an old trading snapshot.
+  if(path===LIVE){
+    const rec=await network(url,{...init,cache:'no-store'},3200,false).catch(()=>null);
+    return rec&&rec.status>=200&&rec.status<300?responseFrom(rec):deferredResponse();
+  }
+
   const cached=await readCache(url);
   if(cached){warm(url,init,isCore(path)?2200:4500);return responseFrom(cached)}
 
@@ -80,6 +89,8 @@ window.fetch=async function(input,init={}){
   return rec?responseFrom(rec):deferredResponse();
 };
 
-// Warm the files needed for the visible dashboard as soon as possible.
-for(const p of CORE)warm(new URL(p,location.href).href,{},2200);
+// Warm only non-live visible data. Live quotes must be requested through the
+// network-first branch above so a previous-session CacheStorage entry can never
+// win the first render.
+for(const p of CORE.filter(p=>p!==LIVE))warm(new URL(p,location.href).href,{},2200);
 })();
