@@ -10,17 +10,17 @@ on:
       - 'core/validation-engine.js'
       - 'validation/protocol.json'
       - 'scripts/capture-validation-snapshot.mjs'
-      - 'scripts/build-validation-scorecard.mjs'
       - 'tests/validation-snapshot-contract.mjs'
       - 'tests/validation-engine-contract.js'
       - 'tests/validation-workflow-contract.js'
       - '.github/workflows/validation-snapshots.yml'
+      - '.github/workflows/validation-scorecard.yml'
       - 'package.json'
   # The primary measurement path remains event-coupled to a successful production
-  # intelligence rebuild. The independent ten-minute fallback must cover the same
-  # 04:00-20:00 America/New_York extended-hours window used by marketTruth(). Two
-  # UTC ranges cover both EDT and EST without changing validation/trading thresholds;
-  # closed-edge captures are retained but ignored by active-market cadence diagnostics.
+  # intelligence rebuild. The independent ten-minute fallback covers the same
+  # 04:00-20:00 America/New_York extended-hours window used by marketTruth().
+  # Snapshot capture stays deliberately lightweight; expensive scorecard rebuilding
+  # runs independently so it cannot serialize and delay the measurement cadence.
   schedule:
     - cron: '7,17,27,37,47,57 8-23 * * 1-5'
     - cron: '7,17,27,37,47,57 0-1 * * 2-6'
@@ -33,7 +33,7 @@ jobs:
   capture:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
         with:
@@ -50,16 +50,14 @@ jobs:
         run: npm test
       - name: Capture immutable validation snapshot
         run: node scripts/capture-validation-snapshot.mjs
-      - name: Build causal validation scorecards
-        run: npm run validation:scorecard
-      - name: Commit snapshot and scorecards
+      - name: Commit snapshot
         run: |
           set -euo pipefail
           git config user.name 'TAGX3 Validation Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add validation/snapshots validation/scorecards
+          git add validation/snapshots
           git diff --cached --quiet && exit 0
-          git commit -m 'validation: capture snapshot and refresh scorecard'
+          git commit -m 'validation: capture immutable snapshot'
           for i in 1 2 3; do
             git pull --rebase origin main && git push origin HEAD:main && exit 0
             sleep $((i*5))
