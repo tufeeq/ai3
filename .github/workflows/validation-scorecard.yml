@@ -1,0 +1,57 @@
+name: TAGX3 Validation Scorecard
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - 'core/validation-engine.js'
+      - 'validation/protocol.json'
+      - 'scripts/build-validation-scorecard.mjs'
+      - 'tests/validation-engine-contract.js'
+      - 'tests/validation-scorecard-report-contract.mjs'
+      - 'tests/validation-workflow-contract.js'
+      - '.github/workflows/validation-scorecard.yml'
+      - 'package.json'
+  # Scorecard generation is intentionally slower and isolated from immutable
+  # snapshot capture. Twice-hourly analysis leaves ample room for the current
+  # ~13-minute causal aggregation without blocking the ten-minute capture lane.
+  schedule:
+    - cron: '5,35 * * * *'
+permissions:
+  contents: write
+concurrency:
+  group: tagx3-validation-scorecard
+  cancel-in-progress: false
+jobs:
+  scorecard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Rebase latest main
+        run: git pull --rebase origin main
+      - name: Syntax/static gate
+        run: npm run check
+      - name: Core/UI/data-contract gate
+        run: npm test
+      - name: Build causal validation scorecards
+        run: npm run validation:scorecard
+      - name: Commit scorecards
+        run: |
+          set -euo pipefail
+          git config user.name 'TAGX3 Validation Bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add validation/scorecards
+          git diff --cached --quiet && exit 0
+          git commit -m 'validation: refresh causal scorecards'
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep $((i*5))
+          done
+          exit 1
