@@ -86,9 +86,10 @@
     const missed=movers.filter(r=>!r.detected);
     const falsePos=detected.filter(r=>(r.outcomes[h].mfePct??Infinity)<=fpMax);
     const actionableFalsePos=actionable.filter(r=>(r.outcomes[h].mfePct??Infinity)<=fpMax);
+    const flat=valid.filter(r=>Math.abs(r.outcomes[h]?.returnPct??Infinity)<1e-12&&Math.abs(r.outcomes[h]?.mfePct??Infinity)<1e-12&&Math.abs(r.outcomes[h]?.maePct??Infinity)<1e-12);
     const avg=(xs,key)=>{const a=xs.map(x=>x.outcomes[h]?.[key]).filter(Number.isFinite);return a.length?a.reduce((s,v)=>s+v,0)/a.length:null};
     const excluded=rows.reduce((acc,r)=>{const s=r.outcomes?.[h]?.status;if(s&&s!=='OK')acc[s]=(acc[s]||0)+1;return acc;},{});
-    return {horizonMin:+h,validCount:valid.length,moverCount:movers.length,detectedCount:detected.length,actionableCount:actionable.length,earlyCaptureRate:movers.length?captured.length/movers.length:null,missedMoverRate:movers.length?missed.length/movers.length:null,falsePositiveRate:detected.length?falsePos.length/detected.length:null,actionableFalsePositiveRate:actionable.length?actionableFalsePos.length/actionable.length:null,avgDetectedMFE:avg(detected,'mfePct'),avgDetectedMAE:avg(detected,'maePct'),avgActionableMFE:avg(actionable,'mfePct'),avgActionableMAE:avg(actionable,'maePct'),excludedOutcomeCounts:excluded};
+    return {horizonMin:+h,validCount:valid.length,moverCount:movers.length,detectedCount:detected.length,actionableCount:actionable.length,flatOutcomeCount:flat.length,flatOutcomeRate:valid.length?flat.length/valid.length:null,earlyCaptureRate:movers.length?captured.length/movers.length:null,missedMoverRate:movers.length?missed.length/movers.length:null,falsePositiveRate:detected.length?falsePos.length/detected.length:null,actionableFalsePositiveRate:actionable.length?actionableFalsePos.length/actionable.length:null,avgDetectedMFE:avg(detected,'mfePct'),avgDetectedMAE:avg(detected,'maePct'),avgActionableMFE:avg(actionable,'mfePct'),avgActionableMAE:avg(actionable,'maePct'),excludedOutcomeCounts:excluded};
   }
 
   function cadenceDiagnostics(snapshots,protocol={}){
