@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {markdown} from '../scripts/build-validation-scorecard.mjs';
+import {markdown,sessionCadence} from '../scripts/build-validation-scorecard.mjs';
 
 const base={generatedAt:'2026-09-01T00:00:00Z',status:'MEASURING',sessions:2,snapshotCount:20,cadence:{targetIntervalMin:15,medianGapMin:31.3,maxGapMin:275.1,excessiveGapCount:10,gapLimitMin:24,coverageHealthy:false},horizons:{30:{validCount:445,moverCount:15,detectedCount:57,flatOutcomeRate:0,singlePointPathCount:400,singlePointPathRate:.8989,sourceChangedOutcomeCount:0,sourceChangedOutcomeRate:0,liveBackedChangedOutcomeCount:0,liveBackedChangedOutcomeRate:0,earlyCaptureRate:.2667,missedMoverRate:.7333,falsePositiveRate:.8421,avgDetectedMFE:.9386,avgDetectedMAE:.9386}}};
 const degraded=markdown(base);
@@ -17,4 +17,27 @@ const provenance=markdown({...deepBase,horizons:{30:{...deepBase.horizons[30],so
 assert.match(provenance,/change quote source or live-backed provenance/,'provenance transitions must be visible before interpreting performance');
 assert.doesNotMatch(provenance,/Metrics are accumulating/,'known provenance shifts must outrank generic readiness text');
 assert.match(provenance,/Source shift/,'scorecard table must expose source-shift rate');
+
+const protocol={horizonsMin:[15,30],horizonToleranceMin:9};
+const captures=[
+  {capturedAt:'2026-08-31T20:00:00Z'},
+  {capturedAt:'2026-08-31T20:15:00Z'},
+  {capturedAt:'2026-08-31T20:30:00Z'},
+  {capturedAt:'2026-09-01T12:00:00Z'},
+  {capturedAt:'2026-09-01T12:15:00Z'},
+  {capturedAt:'2026-09-01T12:30:00Z'}
+];
+const sessionAware=sessionCadence(captures,protocol);
+assert.equal(sessionAware.scope,'WITHIN_SESSION');
+assert.equal(sessionAware.sessionCount,2);
+assert.equal(sessionAware.ignoredCrossSessionGapCount,1,'overnight boundary must be explicitly counted but excluded from cadence health');
+assert.equal(sessionAware.intervalCount,4,'only within-session intervals belong in cadence diagnostics');
+assert.equal(sessionAware.medianGapMin,15);
+assert.equal(sessionAware.maxGapMin,15);
+assert.equal(sessionAware.excessiveGapCount,0);
+assert.equal(sessionAware.coverageHealthy,true,'healthy per-session cadence must not be marked unhealthy solely by an overnight gap');
+const sessionAwareMd=markdown({...deepBase,cadence:sessionAware});
+assert.match(sessionAwareMd,/scope \*\*within-session\*\*/,'aggregate scorecard must disclose session-aware cadence scope');
+assert.match(sessionAwareMd,/cross-session gaps ignored \*\*1\*\*/,'aggregate scorecard must disclose ignored cross-session boundaries');
+
 console.log('validation scorecard report contract: OK');
