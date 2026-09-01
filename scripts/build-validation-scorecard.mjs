@@ -21,13 +21,24 @@ function diagnostics(card,horizon){
   return{missedMovers:missed.map(slim),falsePositives:falsePos.map(slim),provenanceChanges:provenanceChanges.map(slim)};
 }
 
+const nyClockFormatter=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'});
+function activeTradingDay(t){
+  try{
+    const parts=nyClockFormatter.formatToParts(new Date(t)),get=type=>parts.find(p=>p.type===type)?.value;
+    const weekday=get('weekday');if(['Sat','Sun'].includes(weekday))return null;
+    const mins=(Number(get('hour'))*60)+Number(get('minute'));if(mins<240||mins>1200)return null;
+    return `${get('year')}-${get('month')}-${get('day')}`;
+  }catch{return null}
+}
+
 export function sessionCadence(snapshots,protocol={}){
-  const groups=new Map();let ignoredClosedSnapshotCount=0;
+  const groups=new Map();let ignoredClosedSnapshotCount=0,ignoredOutsideMarketWindowCount=0;
   for(const s of snapshots||[]){
     const t=new Date(s?.capturedAt).getTime();if(!Number.isFinite(t))continue;
     const marketSession=String(s?.market?.session||'').trim().toLowerCase();
     if(marketSession==='closed'){ignoredClosedSnapshotCount++;continue}
-    const day=new Date(t).toISOString().slice(0,10);if(!groups.has(day))groups.set(day,[]);groups.get(day).push(t);
+    const tradingDay=activeTradingDay(t);if(!tradingDay){ignoredOutsideMarketWindowCount++;continue}
+    if(!groups.has(tradingDay))groups.set(tradingDay,[]);groups.get(tradingDay).push(t);
   }
   const targetMin=Math.min(...(protocol?.horizonsMin||[15]).map(Number).filter(v=>Number.isFinite(v)&&v>0),15);
   const tolerance=Math.max(Number(protocol?.horizonToleranceMin)||0,1),gapLimit=targetMin+tolerance,gaps=[];
@@ -36,7 +47,7 @@ export function sessionCadence(snapshots,protocol={}){
   }
   const sorted=[...gaps].sort((a,b)=>a-b),median=sorted.length?(sorted.length%2?sorted[(sorted.length-1)/2]:(sorted[sorted.length/2-1]+sorted[sorted.length/2])/2):null;
   const excessive=gaps.filter(g=>g>gapLimit);
-  return{scope:'ACTIVE_MARKET_WITHIN_SESSION',sessionCount:groups.size,ignoredCrossSessionGapCount:Math.max(groups.size-1,0),ignoredClosedSnapshotCount,targetIntervalMin:targetMin,toleranceMin:tolerance,gapLimitMin:gapLimit,intervalCount:gaps.length,medianGapMin:median,maxGapMin:gaps.length?Math.max(...gaps):null,excessiveGapCount:excessive.length,coverageHealthy:gaps.length>0&&excessive.length===0};
+  return{scope:'ACTIVE_MARKET_WITHIN_SESSION',sessionCount:groups.size,ignoredCrossSessionGapCount:Math.max(groups.size-1,0),ignoredClosedSnapshotCount,ignoredOutsideMarketWindowCount,targetIntervalMin:targetMin,toleranceMin:tolerance,gapLimitMin:gapLimit,intervalCount:gaps.length,medianGapMin:median,maxGapMin:gaps.length?Math.max(...gaps):null,excessiveGapCount:excessive.length,coverageHealthy:gaps.length>0&&excessive.length===0};
 }
 
 function summary(card,cadenceOverride=null){
@@ -46,7 +57,7 @@ function summary(card,cadenceOverride=null){
 }
 export function markdown(s){
   const lines=['# TAGX3 Validation Scorecard','',`Generated: ${s.generatedAt}`,`Status: **${s.status}**`,`Sessions: **${s.sessions}** · Snapshots: **${s.snapshotCount}**`];
-  if(s.cadence)lines.push(`Cadence: target **${s.cadence.targetIntervalMin}m** · median **${s.cadence.medianGapMin??'—'}m** · max **${s.cadence.maxGapMin??'—'}m** · excessive gaps **${s.cadence.excessiveGapCount??0}** · healthy **${s.cadence.coverageHealthy===true?'yes':'no'}**${s.cadence.scope==='ACTIVE_MARKET_WITHIN_SESSION'?` · scope **active-market within-session** · closed snapshots ignored **${s.cadence.ignoredClosedSnapshotCount??0}** · cross-session gaps ignored **${s.cadence.ignoredCrossSessionGapCount??0}**`:s.cadence.scope==='WITHIN_SESSION'?` · scope **within-session** · cross-session gaps ignored **${s.cadence.ignoredCrossSessionGapCount??0}**`:''}`);
+  if(s.cadence)lines.push(`Cadence: target **${s.cadence.targetIntervalMin}m** · median **${s.cadence.medianGapMin??'—'}m** · max **${s.cadence.maxGapMin??'—'}m** · excessive gaps **${s.cadence.excessiveGapCount??0}** · healthy **${s.cadence.coverageHealthy===true?'yes':'no'}**${s.cadence.scope==='ACTIVE_MARKET_WITHIN_SESSION'?` · scope **active-market within-session** · closed snapshots ignored **${s.cadence.ignoredClosedSnapshotCount??0}** · outside-window snapshots ignored **${s.cadence.ignoredOutsideMarketWindowCount??0}** · cross-session gaps ignored **${s.cadence.ignoredCrossSessionGapCount??0}**`:s.cadence.scope==='WITHIN_SESSION'?` · scope **within-session** · cross-session gaps ignored **${s.cadence.ignoredCrossSessionGapCount??0}**`:''}`);
   lines.push('','> Measurement only. No production thresholds are changed and no trading edge is claimed.','', '| Horizon | Valid | Flat | 1-point path | Source shift | Live-backed shift | Movers | Detected | Capture | Missed | False positive | Avg detected MFE | Avg detected MAE |','|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|');
   const f=v=>v==null?'—':`${(v*100).toFixed(1)}%`,n=v=>v==null?'—':Number(v).toFixed(2);
   for(const [h,m] of Object.entries(s.horizons||{}))lines.push(`| ${h}m | ${m.validCount} | ${f(m.flatOutcomeRate)} | ${f(m.singlePointPathRate)} | ${f(m.sourceChangedOutcomeRate)} | ${f(m.liveBackedChangedOutcomeRate)} | ${m.moverCount} | ${m.detectedCount} | ${f(m.earlyCaptureRate)} | ${f(m.missedMoverRate)} | ${f(m.falsePositiveRate)} | ${n(m.avgDetectedMFE)}% | ${n(m.avgDetectedMAE)}% |`);
