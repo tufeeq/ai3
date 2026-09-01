@@ -16,22 +16,24 @@ function diagnostics(card,horizon){
   const movers=ok.filter(r=>(r.outcomes[h].mfePct??-Infinity)>=card.protocol.moverThresholdPct);
   const missed=movers.filter(r=>!r.detected).sort((a,b)=>(b.outcomes[h].mfePct??0)-(a.outcomes[h].mfePct??0)).slice(0,20);
   const falsePos=ok.filter(r=>r.detected&&(r.outcomes[h].mfePct??Infinity)<=card.protocol.falsePositiveMaxMfePct).sort((a,b)=>(a.outcomes[h].mfePct??0)-(b.outcomes[h].mfePct??0)).slice(0,20);
+  const provenanceChanges=ok.filter(r=>r.outcomes[h]?.sourceChanged===true||r.outcomes[h]?.liveBackedChanged===true).sort((a,b)=>Math.abs(b.outcomes[h].returnPct??0)-Math.abs(a.outcomes[h].returnPct??0)).slice(0,20);
   const slim=r=>({baseAt:r.baseAt,symbol:r.symbol,lifecycle:r.lifecycle,shariaStatus:r.shariaStatus,movementIndex:r.movementIndex,ignitionIndex:r.ignitionIndex,basePrice:r.basePrice,outcome:r.outcomes[h]});
-  return{missedMovers:missed.map(slim),falsePositives:falsePos.map(slim)};
+  return{missedMovers:missed.map(slim),falsePositives:falsePos.map(slim),provenanceChanges:provenanceChanges.map(slim)};
 }
 function summary(card){
   const horizons=Object.fromEntries(Object.entries(card.horizons||{}).map(([h,m])=>[h,compactMetric(m)]));
   const diagnosticsByHorizon={};for(const h of Object.keys(horizons))diagnosticsByHorizon[h]=diagnostics(card,h);
-  return{schemaVersion:1,kind:'TAGX3_VALIDATION_SCORECARD_SUMMARY',generatedAt:card.generatedAt,status:card.status,sessions:card.sessions,snapshotCount:card.snapshotCount,cadence:compactMetric(card.cadence),protocol:card.protocol,horizons,diagnostics:diagnosticsByHorizon,guardrails:{thresholdsChanged:false,edgeClaimed:false,missingOutcomesInterpolated:false}};
+  return{schemaVersion:1,kind:'TAGX3_VALIDATION_SCORECARD_SUMMARY',generatedAt:card.generatedAt,status:card.status,sessions:card.sessions,snapshotCount:card.snapshotCount,cadence:compactMetric(card.cadence),protocol:card.protocol,horizons,diagnostics:diagnosticsByHorizon,guardrails:{thresholdsChanged:false,edgeClaimed:false,missingOutcomesInterpolated:false,provenanceChangesExcluded:false}};
 }
 export function markdown(s){
   const lines=['# TAGX3 Validation Scorecard','',`Generated: ${s.generatedAt}`,`Status: **${s.status}**`,`Sessions: **${s.sessions}** · Snapshots: **${s.snapshotCount}**`];
   if(s.cadence)lines.push(`Cadence: target **${s.cadence.targetIntervalMin}m** · median **${s.cadence.medianGapMin??'—'}m** · max **${s.cadence.maxGapMin??'—'}m** · excessive gaps **${s.cadence.excessiveGapCount??0}** · healthy **${s.cadence.coverageHealthy===true?'yes':'no'}**`);
-  lines.push('','> Measurement only. No production thresholds are changed and no trading edge is claimed.','', '| Horizon | Valid | Flat | Movers | Detected | Capture | Missed | False positive | Avg detected MFE | Avg detected MAE |','|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|');
+  lines.push('','> Measurement only. No production thresholds are changed and no trading edge is claimed.','', '| Horizon | Valid | Flat | Source shift | Live-backed shift | Movers | Detected | Capture | Missed | False positive | Avg detected MFE | Avg detected MAE |','|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|');
   const f=v=>v==null?'—':`${(v*100).toFixed(1)}%`,n=v=>v==null?'—':Number(v).toFixed(2);
-  for(const [h,m] of Object.entries(s.horizons||{}))lines.push(`| ${h}m | ${m.validCount} | ${f(m.flatOutcomeRate)} | ${m.moverCount} | ${m.detectedCount} | ${f(m.earlyCaptureRate)} | ${f(m.missedMoverRate)} | ${f(m.falsePositiveRate)} | ${n(m.avgDetectedMFE)}% | ${n(m.avgDetectedMAE)}% |`);
+  for(const [h,m] of Object.entries(s.horizons||{}))lines.push(`| ${h}m | ${m.validCount} | ${f(m.flatOutcomeRate)} | ${f(m.sourceChangedOutcomeRate)} | ${f(m.liveBackedChangedOutcomeRate)} | ${m.moverCount} | ${m.detectedCount} | ${f(m.earlyCaptureRate)} | ${f(m.missedMoverRate)} | ${f(m.falsePositiveRate)} | ${n(m.avgDetectedMFE)}% | ${n(m.avgDetectedMAE)}% |`);
   let note='Insufficient future snapshots for the configured horizons; metrics remain intentionally unavailable.';
   if(s.cadence&&s.cadence.coverageHealthy===false)note=`Snapshot cadence is incomplete (${s.cadence.excessiveGapCount||0} gap(s) above ${s.cadence.gapLimitMin} minutes). Repair measurement coverage before interpreting model performance.`;
+  else if(Object.values(s.horizons||{}).some(m=>(m.sourceChangedOutcomeCount??0)>0||(m.liveBackedChangedOutcomeCount??0)>0))note='Some valid outcome windows change quote source or live-backed provenance between capture and resolution. They remain in the denominator, but reconciliation continuity must be reviewed before attributing large moves to model performance.';
   else if(Object.values(s.horizons||{}).some(m=>(m.flatOutcomeRate??0)>=0.8))note='A very high share of valid windows are completely flat. Treat false-positive and average-return metrics as potentially session/liquidity biased until multi-session coverage confirms otherwise.';
   else if(s.status==='MEASURING')note='Metrics are accumulating. Do not interpret a single session as validated performance.';
   lines.push('','## Readiness note','',note,'');return lines.join('\n');
