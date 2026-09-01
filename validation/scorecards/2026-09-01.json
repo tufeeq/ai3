@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "kind": "TAGX3_VALIDATION_SCORECARD_SUMMARY",
-  "generatedAt": "2026-09-01T06:36:21.862Z",
+  "generatedAt": "2026-09-01T07:02:19.224Z",
   "status": "MEASURING",
   "sessions": 1,
-  "snapshotCount": 15,
+  "snapshotCount": 16,
   "cadence": {
     "scope": "WITHIN_SESSION",
     "sessionCount": 1,
@@ -12,10 +12,10 @@
     "targetIntervalMin": 15,
     "toleranceMin": 9,
     "gapLimitMin": 24,
-    "intervalCount": 14,
-    "medianGapMin": 21.3536,
+    "intervalCount": 15,
+    "medianGapMin": 25.5373,
     "maxGapMin": 59.7064,
-    "excessiveGapCount": 7,
+    "excessiveGapCount": 8,
     "coverageHealthy": false
   },
   "protocol": {
@@ -54,7 +54,7 @@
       "avgActionableMFE": null,
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
-        "MISSING": 73610,
+        "MISSING": 80971,
         "STALE_OBSERVATION": 36805
       }
     },
@@ -81,8 +81,8 @@
       "avgActionableMFE": null,
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
-        "STALE_OBSERVATION": 16566,
-        "MISSING": 80971
+        "STALE_OBSERVATION": 31288,
+        "MISSING": 73610
       }
     },
     "120": {
@@ -109,7 +109,7 @@
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
         "STALE_OBSERVATION": 53371,
-        "MISSING": 44166
+        "MISSING": 51527
       }
     }
   },
