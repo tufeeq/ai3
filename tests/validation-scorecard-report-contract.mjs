@@ -20,24 +20,36 @@ assert.match(provenance,/Source shift/,'scorecard table must expose source-shift
 
 const protocol={horizonsMin:[15,30],horizonToleranceMin:9};
 const captures=[
-  {capturedAt:'2026-08-31T20:00:00Z'},
-  {capturedAt:'2026-08-31T20:15:00Z'},
-  {capturedAt:'2026-08-31T20:30:00Z'},
-  {capturedAt:'2026-09-01T12:00:00Z'},
-  {capturedAt:'2026-09-01T12:15:00Z'},
-  {capturedAt:'2026-09-01T12:30:00Z'}
+  {capturedAt:'2026-08-31T20:00:00Z',market:{session:'regular'}},
+  {capturedAt:'2026-08-31T20:15:00Z',market:{session:'afterhours'}},
+  {capturedAt:'2026-08-31T20:30:00Z',market:{session:'afterhours'}},
+  {capturedAt:'2026-09-01T01:00:00Z',market:{session:'closed'}},
+  {capturedAt:'2026-09-01T06:00:00Z',market:{session:'closed'}},
+  {capturedAt:'2026-09-01T12:00:00Z',market:{session:'premarket'}},
+  {capturedAt:'2026-09-01T12:15:00Z',market:{session:'premarket'}},
+  {capturedAt:'2026-09-01T12:30:00Z',market:{session:'regular'}}
 ];
 const sessionAware=sessionCadence(captures,protocol);
-assert.equal(sessionAware.scope,'WITHIN_SESSION');
+assert.equal(sessionAware.scope,'ACTIVE_MARKET_WITHIN_SESSION');
 assert.equal(sessionAware.sessionCount,2);
+assert.equal(sessionAware.ignoredClosedSnapshotCount,2,'closed-market captures must be disclosed but excluded from cadence health');
 assert.equal(sessionAware.ignoredCrossSessionGapCount,1,'overnight boundary must be explicitly counted but excluded from cadence health');
-assert.equal(sessionAware.intervalCount,4,'only within-session intervals belong in cadence diagnostics');
+assert.equal(sessionAware.intervalCount,4,'only active-market within-session intervals belong in cadence diagnostics');
 assert.equal(sessionAware.medianGapMin,15);
 assert.equal(sessionAware.maxGapMin,15);
 assert.equal(sessionAware.excessiveGapCount,0);
-assert.equal(sessionAware.coverageHealthy,true,'healthy per-session cadence must not be marked unhealthy solely by an overnight gap');
+assert.equal(sessionAware.coverageHealthy,true,'healthy active-market cadence must not be marked unhealthy by closed-market captures or an overnight gap');
 const sessionAwareMd=markdown({...deepBase,cadence:sessionAware});
-assert.match(sessionAwareMd,/scope \*\*within-session\*\*/,'aggregate scorecard must disclose session-aware cadence scope');
+assert.match(sessionAwareMd,/scope \*\*active-market within-session\*\*/,'aggregate scorecard must disclose active-market cadence scope');
+assert.match(sessionAwareMd,/closed snapshots ignored \*\*2\*\*/,'aggregate scorecard must disclose excluded closed-market captures');
 assert.match(sessionAwareMd,/cross-session gaps ignored \*\*1\*\*/,'aggregate scorecard must disclose ignored cross-session boundaries');
+
+const realGap=sessionCadence([
+  {capturedAt:'2026-09-01T12:00:00Z',market:{session:'premarket'}},
+  {capturedAt:'2026-09-01T12:15:00Z',market:{session:'premarket'}},
+  {capturedAt:'2026-09-01T12:45:00Z',market:{session:'regular'}}
+],protocol);
+assert.equal(realGap.excessiveGapCount,1,'a genuine active-market gap must remain visible');
+assert.equal(realGap.coverageHealthy,false,'closed-market filtering must not hide real intraday coverage failures');
 
 console.log('validation scorecard report contract: OK');
