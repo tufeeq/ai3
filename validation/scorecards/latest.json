@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
   "kind": "TAGX3_VALIDATION_SCORECARD_SUMMARY",
-  "generatedAt": "2026-09-01T00:24:07.303Z",
+  "generatedAt": "2026-09-01T00:54:13.292Z",
   "status": "MEASURING",
   "sessions": 3,
-  "snapshotCount": 22,
+  "snapshotCount": 23,
   "cadence": {
     "targetIntervalMin": 15,
     "toleranceMin": 9,
     "gapLimitMin": 24,
-    "intervalCount": 21,
-    "medianGapMin": 31.3165,
+    "intervalCount": 22,
+    "medianGapMin": 30.1559,
     "maxGapMin": 275.0846,
-    "excessiveGapCount": 11,
+    "excessiveGapCount": 12,
     "coverageHealthy": false
   },
   "protocol": {
@@ -44,26 +44,26 @@
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
         "STALE_OBSERVATION": 36643,
-        "MISSING": 124772
+        "MISSING": 132133
       }
     },
     "30": {
       "horizonMin": 30,
-      "validCount": 1103,
+      "validCount": 13981,
       "moverCount": 15,
-      "detectedCount": 96,
+      "detectedCount": 234,
       "actionableCount": 10,
       "earlyCaptureRate": 0.2667,
       "missedMoverRate": 0.7333,
-      "falsePositiveRate": 0.9063,
+      "falsePositiveRate": 0.9615,
       "actionableFalsePositiveRate": 0.9,
-      "avgDetectedMFE": 0.5573,
-      "avgDetectedMAE": 0.5573,
+      "avgDetectedMFE": 0.2286,
+      "avgDetectedMAE": 0.2286,
       "avgActionableMFE": -1.3035,
       "avgActionableMAE": -1.3035,
       "excludedOutcomeCounts": {
-        "STALE_OBSERVATION": 42942,
-        "MISSING": 117368,
+        "STALE_OBSERVATION": 44786,
+        "MISSING": 110007,
         "MISSING_SYMBOL": 2
       }
     },
@@ -82,7 +82,7 @@
       "avgActionableMFE": -4.4378,
       "avgActionableMAE": -7.2288,
       "excludedOutcomeCounts": {
-        "MISSING": 146695,
+        "MISSING": 154056,
         "STALE_OBSERVATION": 12398,
         "MISSING_SYMBOL": 4
       }
