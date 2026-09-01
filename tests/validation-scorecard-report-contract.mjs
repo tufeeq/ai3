@@ -33,6 +33,7 @@ const sessionAware=sessionCadence(captures,protocol);
 assert.equal(sessionAware.scope,'ACTIVE_MARKET_WITHIN_SESSION');
 assert.equal(sessionAware.sessionCount,2);
 assert.equal(sessionAware.ignoredClosedSnapshotCount,2,'closed-market captures must be disclosed but excluded from cadence health');
+assert.equal(sessionAware.ignoredOutsideMarketWindowCount,0,'correctly labelled active captures must remain inside the NY trading window');
 assert.equal(sessionAware.ignoredCrossSessionGapCount,1,'overnight boundary must be explicitly counted but excluded from cadence health');
 assert.equal(sessionAware.intervalCount,4,'only active-market within-session intervals belong in cadence diagnostics');
 assert.equal(sessionAware.medianGapMin,15);
@@ -42,7 +43,19 @@ assert.equal(sessionAware.coverageHealthy,true,'healthy active-market cadence mu
 const sessionAwareMd=markdown({...deepBase,cadence:sessionAware});
 assert.match(sessionAwareMd,/scope \*\*active-market within-session\*\*/,'aggregate scorecard must disclose active-market cadence scope');
 assert.match(sessionAwareMd,/closed snapshots ignored \*\*2\*\*/,'aggregate scorecard must disclose excluded closed-market captures');
+assert.match(sessionAwareMd,/outside-window snapshots ignored \*\*0\*\*/,'aggregate scorecard must disclose wall-clock exclusions');
 assert.match(sessionAwareMd,/cross-session gaps ignored \*\*1\*\*/,'aggregate scorecard must disclose ignored cross-session boundaries');
+
+const staleSessionLabels=sessionCadence([
+  {capturedAt:'2026-09-01T00:15:00Z',market:{session:'afterhours'}},
+  {capturedAt:'2026-09-01T08:15:00Z',market:{session:'premarket'}},
+  {capturedAt:'2026-09-01T08:30:00Z',market:{session:'premarket'}}
+],protocol);
+assert.equal(staleSessionLabels.ignoredOutsideMarketWindowCount,1,'a stale active session label outside the 04:00-20:00 New York window must not manufacture an overnight cadence gap');
+assert.equal(staleSessionLabels.intervalCount,1);
+assert.equal(staleSessionLabels.maxGapMin,15);
+assert.equal(staleSessionLabels.excessiveGapCount,0);
+assert.equal(staleSessionLabels.coverageHealthy,true,'wall-clock filtering must remove only the impossible overnight gap, not valid active-window cadence');
 
 const realGap=sessionCadence([
   {capturedAt:'2026-09-01T12:00:00Z',market:{session:'premarket'}},
