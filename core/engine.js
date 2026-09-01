@@ -38,7 +38,7 @@
     const floatShares=num(raw.floatShares??raw.float??raw.sharesFloat);
     const preMarketChangePct=num(raw.preMarketChangePct??raw.preMarketChangePercent);
     const afterHoursChangePct=num(raw.afterHoursChangePct??raw.postMarketChangePercent);
-    const observedAt=parseTimestamp(raw.observedAt||raw.timestamp||raw.updatedAt||raw.quoteTime);
+    const observedAt=parseTimestamp(raw.observedAt||raw.timestampET||raw.timestamp||raw.updatedAt||raw.quoteTime);
     const v5=num(raw.velocity5m??raw.v5??raw.change5m);
     const v15=num(raw.velocity15m??raw.v15??raw.change15m);
     const tradesPerMin=num(raw.tradesPerMin??raw.tpm);
