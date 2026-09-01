@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "kind": "TAGX3_VALIDATION_SCORECARD_SUMMARY",
-  "generatedAt": "2026-09-01T09:31:53.622Z",
+  "generatedAt": "2026-09-01T11:30:49.334Z",
   "status": "MEASURING",
   "sessions": 1,
-  "snapshotCount": 20,
+  "snapshotCount": 21,
   "cadence": {
     "scope": "ACTIVE_MARKET_WITHIN_SESSION",
     "sessionCount": 1,
@@ -14,10 +14,10 @@
     "targetIntervalMin": 15,
     "toleranceMin": 9,
     "gapLimitMin": 24,
-    "intervalCount": 2,
-    "medianGapMin": 30.6506,
-    "maxGapMin": 48.8106,
-    "excessiveGapCount": 1,
+    "intervalCount": 3,
+    "medianGapMin": 48.8106,
+    "maxGapMin": 120.0602,
+    "excessiveGapCount": 2,
     "coverageHealthy": false
   },
   "protocol": {
@@ -56,7 +56,7 @@
       "avgActionableMFE": null,
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
-        "MISSING": 103036,
+        "MISSING": 110387,
         "STALE_OBSERVATION": 44157
       }
     },
@@ -84,19 +84,19 @@
       "avgActionableMAE": 18.5323,
       "excludedOutcomeCounts": {
         "STALE_OBSERVATION": 37977,
-        "MISSING": 95666,
+        "MISSING": 103017,
         "MISSING_SYMBOL": 12
       }
     },
     "120": {
       "horizonMin": 120,
-      "validCount": 14198,
+      "validCount": 14202,
       "moverCount": 10,
       "detectedCount": 218,
       "actionableCount": 4,
-      "flatOutcomeCount": 14016,
-      "flatOutcomeRate": 0.9872,
-      "singlePointPathCount": 14198,
+      "flatOutcomeCount": 14018,
+      "flatOutcomeRate": 0.987,
+      "singlePointPathCount": 14202,
       "singlePointPathRate": 1,
       "sourceChangedOutcomeCount": 1008,
       "sourceChangedOutcomeRate": 0.071,
@@ -111,9 +111,9 @@
       "avgActionableMFE": 27.7985,
       "avgActionableMAE": 27.7985,
       "excludedOutcomeCounts": {
-        "STALE_OBSERVATION": 66749,
-        "MISSING": 66222,
-        "MISSING_SYMBOL": 24
+        "STALE_OBSERVATION": 74095,
+        "MISSING": 66221,
+        "MISSING_SYMBOL": 26
       }
     }
   },
