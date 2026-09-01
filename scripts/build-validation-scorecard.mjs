@@ -27,11 +27,12 @@ function summary(card){
 export function markdown(s){
   const lines=['# TAGX3 Validation Scorecard','',`Generated: ${s.generatedAt}`,`Status: **${s.status}**`,`Sessions: **${s.sessions}** · Snapshots: **${s.snapshotCount}**`];
   if(s.cadence)lines.push(`Cadence: target **${s.cadence.targetIntervalMin}m** · median **${s.cadence.medianGapMin??'—'}m** · max **${s.cadence.maxGapMin??'—'}m** · excessive gaps **${s.cadence.excessiveGapCount??0}** · healthy **${s.cadence.coverageHealthy===true?'yes':'no'}**`);
-  lines.push('','> Measurement only. No production thresholds are changed and no trading edge is claimed.','', '| Horizon | Valid | Movers | Detected | Capture | Missed | False positive | Avg detected MFE | Avg detected MAE |','|---:|---:|---:|---:|---:|---:|---:|---:|---:|');
+  lines.push('','> Measurement only. No production thresholds are changed and no trading edge is claimed.','', '| Horizon | Valid | Flat | Movers | Detected | Capture | Missed | False positive | Avg detected MFE | Avg detected MAE |','|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|');
   const f=v=>v==null?'—':`${(v*100).toFixed(1)}%`,n=v=>v==null?'—':Number(v).toFixed(2);
-  for(const [h,m] of Object.entries(s.horizons||{}))lines.push(`| ${h}m | ${m.validCount} | ${m.moverCount} | ${m.detectedCount} | ${f(m.earlyCaptureRate)} | ${f(m.missedMoverRate)} | ${f(m.falsePositiveRate)} | ${n(m.avgDetectedMFE)}% | ${n(m.avgDetectedMAE)}% |`);
+  for(const [h,m] of Object.entries(s.horizons||{}))lines.push(`| ${h}m | ${m.validCount} | ${f(m.flatOutcomeRate)} | ${m.moverCount} | ${m.detectedCount} | ${f(m.earlyCaptureRate)} | ${f(m.missedMoverRate)} | ${f(m.falsePositiveRate)} | ${n(m.avgDetectedMFE)}% | ${n(m.avgDetectedMAE)}% |`);
   let note='Insufficient future snapshots for the configured horizons; metrics remain intentionally unavailable.';
   if(s.cadence&&s.cadence.coverageHealthy===false)note=`Snapshot cadence is incomplete (${s.cadence.excessiveGapCount||0} gap(s) above ${s.cadence.gapLimitMin} minutes). Repair measurement coverage before interpreting model performance.`;
+  else if(Object.values(s.horizons||{}).some(m=>(m.flatOutcomeRate??0)>=0.8))note='A very high share of valid windows are completely flat. Treat false-positive and average-return metrics as potentially session/liquidity biased until multi-session coverage confirms otherwise.';
   else if(s.status==='MEASURING')note='Metrics are accumulating. Do not interpret a single session as validated performance.';
   lines.push('','## Readiness note','',note,'');return lines.join('\n');
 }
