@@ -111,6 +111,29 @@ export function buildSnapshot(downloads,capturedAt=new Date().toISOString()){
   };
 }
 
+export function sameEvidenceWithin(previous,current,maxGapMs=120000){
+  const a=Date.parse(previous?.capturedAt),b=Date.parse(current?.capturedAt);
+  if(!Number.isFinite(a)||!Number.isFinite(b)||b<a||b-a>maxGapMs)return false;
+  const prevNames=Object.keys(previous?.sources||{}).sort();
+  const currNames=Object.keys(current?.sources||{}).sort();
+  if(prevNames.length!==currNames.length||prevNames.some((name,i)=>name!==currNames[i]))return false;
+  return currNames.length>0&&currNames.every(name=>{
+    const x=previous.sources?.[name]?.sha256,y=current.sources?.[name]?.sha256;
+    return /^[a-f0-9]{64}$/.test(x||'')&&x===y;
+  });
+}
+
+async function latestSnapshotFile(root=path.join('validation','snapshots')){
+  let days;
+  try{days=await fs.readdir(root,{withFileTypes:true})}catch(e){if(e?.code==='ENOENT')return null;throw e}
+  for(const day of days.filter(x=>x.isDirectory()).map(x=>x.name).sort().reverse()){
+    const dir=path.join(root,day);
+    const files=(await fs.readdir(dir,{withFileTypes:true})).filter(x=>x.isFile()&&x.name.endsWith('.json')).map(x=>x.name).sort().reverse();
+    if(files.length)return path.join(dir,files[0]);
+  }
+  return null;
+}
+
 export function validateSnapshot(s){
   const errors=[];
   if(s?.kind!=='TAGX3_VALIDATION_SNAPSHOT')errors.push('wrong kind');
@@ -130,6 +153,14 @@ async function main(){
   const capturedAt=new Date().toISOString();
   const snapshot=buildSnapshot(downloads,capturedAt);
   const errors=validateSnapshot(snapshot);if(errors.length)throw new Error(errors.join('; '));
+  const previousFile=await latestSnapshotFile();
+  if(previousFile){
+    const previous=JSON.parse(await fs.readFile(previousFile,'utf8'));
+    if(sameEvidenceWithin(previous,snapshot)){
+      console.log(JSON.stringify({skipped:'NEAR_DUPLICATE_EVIDENCE',previousFile,gapSeconds:(Date.parse(capturedAt)-Date.parse(previous.capturedAt))/1000},null,2));
+      return;
+    }
+  }
   const stamp=capturedAt.replace(/:/g,'-').replace(/\.\d{3}Z$/,'Z');
   const day=capturedAt.slice(0,10);
   const dir=path.join('validation','snapshots',day);await fs.mkdir(dir,{recursive:true});
