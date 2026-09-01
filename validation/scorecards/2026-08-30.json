@@ -1,11 +1,14 @@
 {
   "schemaVersion": 1,
   "kind": "TAGX3_VALIDATION_SCORECARD_SUMMARY",
-  "generatedAt": "2026-09-01T04:34:26.667Z",
+  "generatedAt": "2026-09-01T05:24:14.630Z",
   "status": "INSUFFICIENT_FRESH_OBSERVATIONS",
   "sessions": 1,
   "snapshotCount": 6,
   "cadence": {
+    "scope": "WITHIN_SESSION",
+    "sessionCount": 1,
+    "ignoredCrossSessionGapCount": 0,
     "targetIntervalMin": 15,
     "toleranceMin": 9,
     "gapLimitMin": 24,
