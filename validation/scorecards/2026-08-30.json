@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "kind": "TAGX3_VALIDATION_SCORECARD_SUMMARY",
-  "generatedAt": "2026-09-01T02:27:03.139Z",
+  "generatedAt": "2026-09-01T02:34:52.362Z",
   "status": "INSUFFICIENT_FRESH_OBSERVATIONS",
   "sessions": 1,
   "snapshotCount": 6,
@@ -106,20 +106,24 @@
   "diagnostics": {
     "15": {
       "missedMovers": [],
-      "falsePositives": []
+      "falsePositives": [],
+      "provenanceChanges": []
     },
     "30": {
       "missedMovers": [],
-      "falsePositives": []
+      "falsePositives": [],
+      "provenanceChanges": []
     },
     "120": {
       "missedMovers": [],
-      "falsePositives": []
+      "falsePositives": [],
+      "provenanceChanges": []
     }
   },
   "guardrails": {
     "thresholdsChanged": false,
     "edgeClaimed": false,
-    "missingOutcomesInterpolated": false
+    "missingOutcomesInterpolated": false,
+    "provenanceChangesExcluded": false
   }
 }

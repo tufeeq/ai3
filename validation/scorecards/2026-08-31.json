@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "kind": "TAGX3_VALIDATION_SCORECARD_SUMMARY",
-  "generatedAt": "2026-09-01T02:27:19.810Z",
+  "generatedAt": "2026-09-01T02:35:05.636Z",
   "status": "MEASURING",
   "sessions": 1,
   "snapshotCount": 14,
@@ -107,7 +107,8 @@
   "diagnostics": {
     "15": {
       "missedMovers": [],
-      "falsePositives": []
+      "falsePositives": [],
+      "provenanceChanges": []
     },
     "30": {
       "missedMovers": [
@@ -857,16 +858,500 @@
             "liveBackedChanged": false
           }
         }
+      ],
+      "provenanceChanges": [
+        {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "IMCC",
+          "lifecycle": "DISCOVERED",
+          "shariaStatus": "EXCLUDED",
+          "movementIndex": 17,
+          "ignitionIndex": 7,
+          "basePrice": 0.1121,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-08-31T23:43:00.802Z",
+            "returnPct": 2629.705619982159,
+            "mfePct": 2629.705619982159,
+            "maePct": 2629.705619982159,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Discovery Rich",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "YMT",
+          "lifecycle": "DISCOVERED",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 15,
+          "ignitionIndex": 2,
+          "basePrice": 0.1888,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-08-31T23:43:00.802Z",
+            "returnPct": 1398.9406779661017,
+            "mfePct": 1398.9406779661017,
+            "maePct": 1398.9406779661017,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Broad Universe",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "CRE",
+          "lifecycle": "DISCOVERED",
+          "shariaStatus": "EXCLUDED",
+          "movementIndex": 15,
+          "ignitionIndex": 5,
+          "basePrice": 6.3,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-08-31T23:43:00.802Z",
+            "returnPct": -49.841269841269835,
+            "mfePct": -49.841269841269835,
+            "maePct": -49.841269841269835,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Discovery Rich",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "CISS",
+          "lifecycle": "DISCOVERED",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 24,
+          "ignitionIndex": 16,
+          "basePrice": 3,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-08-31T23:43:00.802Z",
+            "returnPct": -43,
+            "mfePct": -43,
+            "maePct": -43,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Discovery Rich",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "PETZ",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 51,
+          "ignitionIndex": 39,
+          "basePrice": 1.15,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-08-31T23:43:00.802Z",
+            "returnPct": 36.45217391304348,
+            "mfePct": 36.45217391304348,
+            "maePct": 36.45217391304348,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "IPST",
+          "lifecycle": "DISCOVERED",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 16,
+          "ignitionIndex": 5,
+          "basePrice": 5.8996,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-08-31T23:43:00.802Z",
+            "returnPct": -33.2158112414401,
+            "mfePct": -33.2158112414401,
+            "maePct": -33.2158112414401,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Discovery Rich",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "OLOX",
+          "lifecycle": "DISCOVERED",
+          "shariaStatus": "EXCLUDED",
+          "movementIndex": 26,
+          "ignitionIndex": 30,
+          "basePrice": 1.48,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-08-31T23:43:00.802Z",
+            "returnPct": -33.108108108108105,
+            "mfePct": -33.108108108108105,
+            "maePct": -33.108108108108105,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Discovery Rich",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "WNW",
+          "lifecycle": "DISTRIBUTING",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 8,
+          "ignitionIndex": 2,
+          "basePrice": 3.74,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-08-31T23:43:00.802Z",
+            "returnPct": -32.88770053475937,
+            "mfePct": -32.88770053475937,
+            "maePct": -32.88770053475937,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Broad Universe",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "YYGH",
+          "lifecycle": "DISCOVERED",
+          "shariaStatus": "EXCLUDED",
+          "movementIndex": 31,
+          "ignitionIndex": 34,
+          "basePrice": 1.94,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-08-31T23:43:00.802Z",
+            "returnPct": -31.958762886597935,
+            "mfePct": -31.958762886597935,
+            "maePct": -31.958762886597935,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Discovery Rich",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "SWVL",
+          "lifecycle": "DISCOVERED",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 29,
+          "ignitionIndex": 16,
+          "basePrice": 2.2603,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-08-31T23:43:00.802Z",
+            "returnPct": 28.74397203910986,
+            "mfePct": 28.74397203910986,
+            "maePct": 28.74397203910986,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Broad Universe",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "FTFT",
+          "lifecycle": "WATCH",
+          "shariaStatus": "EXCLUDED",
+          "movementIndex": 42,
+          "ignitionIndex": 22,
+          "basePrice": 1.91,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-08-31T23:43:00.802Z",
+            "returnPct": 28.272251308900536,
+            "mfePct": 28.272251308900536,
+            "maePct": 28.272251308900536,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hours",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "TRUG",
+          "lifecycle": "DISCOVERED",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 19,
+          "ignitionIndex": 6,
+          "basePrice": 0.63,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-08-31T23:43:00.802Z",
+            "returnPct": -25.396825396825403,
+            "mfePct": -25.396825396825403,
+            "maePct": -25.396825396825403,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Broad Universe",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "GPUS",
+          "lifecycle": "DISCOVERED",
+          "shariaStatus": "EXCLUDED",
+          "movementIndex": 19,
+          "ignitionIndex": 6,
+          "basePrice": 0.374,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-08-31T23:43:00.802Z",
+            "returnPct": -25.133689839572188,
+            "mfePct": -25.133689839572188,
+            "maePct": -25.133689839572188,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Discovery Rich",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "AIXI",
+          "lifecycle": "DISCOVERED",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 16,
+          "ignitionIndex": 7,
+          "basePrice": 0.6501,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-08-31T23:43:00.802Z",
+            "returnPct": -23.088755576065225,
+            "mfePct": -23.088755576065225,
+            "maePct": -23.088755576065225,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Broad Universe",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "AMIX",
+          "lifecycle": "DISCOVERED",
+          "shariaStatus": "EXCLUDED",
+          "movementIndex": 18,
+          "ignitionIndex": 10,
+          "basePrice": 6.25,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-08-31T23:43:00.802Z",
+            "returnPct": -22.72,
+            "mfePct": -22.72,
+            "maePct": -22.72,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Discovery Rich",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "GIPR",
+          "lifecycle": "DISCOVERED",
+          "shariaStatus": "EXCLUDED",
+          "movementIndex": 19,
+          "ignitionIndex": 11,
+          "basePrice": 0.47,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-08-31T23:43:00.802Z",
+            "returnPct": -21.276595744680847,
+            "mfePct": -21.276595744680847,
+            "maePct": -21.276595744680847,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Discovery Rich",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "DBGI",
+          "lifecycle": "DISCOVERED",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 21,
+          "ignitionIndex": 11,
+          "basePrice": 8.14,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-08-31T23:43:00.802Z",
+            "returnPct": -21.25307125307126,
+            "mfePct": -21.25307125307126,
+            "maePct": -21.25307125307126,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Discovery Rich",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "EXYN",
+          "lifecycle": "DISCOVERED",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 28,
+          "ignitionIndex": 14,
+          "basePrice": 4,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-08-31T23:43:00.802Z",
+            "returnPct": -21.250000000000004,
+            "mfePct": -21.250000000000004,
+            "maePct": -21.250000000000004,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Broad Universe",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "LUCY",
+          "lifecycle": "DISCOVERED",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 17,
+          "ignitionIndex": 11,
+          "basePrice": 1.14,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-08-31T23:43:00.802Z",
+            "returnPct": -21.05263157894736,
+            "mfePct": -21.05263157894736,
+            "maePct": -21.05263157894736,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Broad Universe",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "SMTK",
+          "lifecycle": "DISCOVERED",
+          "shariaStatus": "EXCLUDED",
+          "movementIndex": 31,
+          "ignitionIndex": 23,
+          "basePrice": 3.8399,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-08-31T23:43:00.802Z",
+            "returnPct": -20.05000130211725,
+            "mfePct": -20.05000130211725,
+            "maePct": -20.05000130211725,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Discovery Rich",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        }
       ]
     },
     "120": {
       "missedMovers": [],
-      "falsePositives": []
+      "falsePositives": [],
+      "provenanceChanges": []
     }
   },
   "guardrails": {
     "thresholdsChanged": false,
     "edgeClaimed": false,
-    "missingOutcomesInterpolated": false
+    "missingOutcomesInterpolated": false,
+    "provenanceChangesExcluded": false
   }
 }

@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "kind": "TAGX3_VALIDATION_SCORECARD_SUMMARY",
-  "generatedAt": "2026-09-01T02:29:45.971Z",
+  "generatedAt": "2026-09-01T02:37:12.388Z",
   "status": "MEASURING",
   "sessions": 1,
-  "snapshotCount": 7,
+  "snapshotCount": 8,
   "cadence": {
     "targetIntervalMin": 15,
     "toleranceMin": 9,
     "gapLimitMin": 24,
-    "intervalCount": 6,
-    "medianGapMin": 21.3536,
+    "intervalCount": 7,
+    "medianGapMin": 14.0573,
     "maxGapMin": 41.0176,
     "excessiveGapCount": 3,
     "coverageHealthy": false
@@ -50,7 +50,7 @@
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
         "MISSING": 44166,
-        "STALE_OBSERVATION": 7361
+        "STALE_OBSERVATION": 14722
       }
     },
     "30": {
@@ -74,7 +74,7 @@
       "avgActionableMFE": null,
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
-        "STALE_OBSERVATION": 9205,
+        "STALE_OBSERVATION": 16566,
         "MISSING": 29444
       }
     },
@@ -100,14 +100,15 @@
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
         "STALE_OBSERVATION": 1844,
-        "MISSING": 36805
+        "MISSING": 44166
       }
     }
   },
   "diagnostics": {
     "15": {
       "missedMovers": [],
-      "falsePositives": []
+      "falsePositives": [],
+      "provenanceChanges": []
     },
     "30": {
       "missedMovers": [],
@@ -592,7 +593,8 @@
             "liveBackedChanged": false
           }
         }
-      ]
+      ],
+      "provenanceChanges": []
     },
     "120": {
       "missedMovers": [],
@@ -1077,12 +1079,14 @@
             "liveBackedChanged": false
           }
         }
-      ]
+      ],
+      "provenanceChanges": []
     }
   },
   "guardrails": {
     "thresholdsChanged": false,
     "edgeClaimed": false,
-    "missingOutcomesInterpolated": false
+    "missingOutcomesInterpolated": false,
+    "provenanceChangesExcluded": false
   }
 }
