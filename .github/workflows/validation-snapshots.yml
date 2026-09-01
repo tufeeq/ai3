@@ -16,11 +16,13 @@ on:
       - 'tests/validation-workflow-contract.js'
       - '.github/workflows/validation-snapshots.yml'
       - 'package.json'
-  # Keep the original 15-minute schedule as an independent fallback. The primary
-  # measurement path is now event-coupled to a successful production intelligence
-  # rebuild, because measured cadence showed scheduled capture alone was not reliable.
+  # The primary measurement path remains event-coupled to a successful production
+  # intelligence rebuild. Multi-session scorecards showed the original 15-minute
+  # fallback produced a 24.38-minute median within-session gap and zero valid 15m
+  # outcomes, so use a modest 10-minute fallback to absorb GitHub cron/queue delay
+  # without changing any validation or trading threshold.
   schedule:
-    - cron: '7,22,37,52 12-22 * * 1-5'
+    - cron: '7,17,27,37,47,57 12-22 * * 1-5'
 permissions:
   contents: write
 concurrency:
