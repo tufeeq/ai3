@@ -45,6 +45,16 @@ assert.equal(staleCard.horizons[15].validCount,0,'stale observations must be exc
 assert.ok(staleCard.horizons[15].excludedOutcomeCounts.STALE_OBSERVATION>0,'scorecard must expose stale exclusions for data-quality diagnosis');
 assert.equal(staleCard.horizons[15].falsePositiveRate,null,'stale repeated prices must not be counted as false positives');
 
+const flatRows=[
+  snap('2026-08-30T22:00:00Z',10,10,'2026-08-30T22:00:00Z'),
+  snap('2026-08-30T22:15:00Z',10,10,'2026-08-30T22:15:00Z'),
+  snap('2026-08-30T22:30:00Z',10,10,'2026-08-30T22:30:00Z')
+];
+const flatCard=V.buildScorecard(flatRows,protocol);
+assert.equal(flatCard.horizons[15].validCount,4,'advanced observations with unchanged prices remain valid measurements');
+assert.equal(flatCard.horizons[15].flatOutcomeCount,4,'scorecard must quantify flat outcomes rather than silently folding them into false positives');
+assert.equal(flatCard.horizons[15].flatOutcomeRate,1,'all-flat outcome windows must be surfaced as a measurement-bias diagnostic');
+
 const missingOnly=[snap('2026-08-30T21:00:00Z',10,10)];
 assert.equal(V.buildScorecard(missingOnly,protocol).status,'INSUFFICIENT_FUTURE_SNAPSHOTS','absence of horizon snapshots must remain a distinct diagnosis');
 
