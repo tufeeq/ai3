@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "kind": "TAGX3_VALIDATION_SCORECARD_SUMMARY",
-  "generatedAt": "2026-09-01T03:24:15.012Z",
+  "generatedAt": "2026-09-01T03:33:58.830Z",
   "status": "MEASURING",
   "sessions": 3,
-  "snapshotCount": 29,
+  "snapshotCount": 30,
   "cadence": {
     "targetIntervalMin": 15,
     "toleranceMin": 9,
     "gapLimitMin": 24,
-    "intervalCount": 28,
-    "medianGapMin": 28.8226,
+    "intervalCount": 29,
+    "medianGapMin": 28.65,
     "maxGapMin": 275.0846,
     "excessiveGapCount": 15,
     "coverageHealthy": false
@@ -51,7 +51,7 @@
       "avgActionableMFE": null,
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
-        "STALE_OBSERVATION": 51365,
+        "STALE_OBSERVATION": 58726,
         "MISSING": 161577
       }
     },
@@ -79,7 +79,7 @@
       "avgActionableMAE": -1.3035,
       "excludedOutcomeCounts": {
         "STALE_OBSERVATION": 59508,
-        "MISSING": 139451,
+        "MISSING": 146812,
         "MISSING_SYMBOL": 2
       }
     },
@@ -106,7 +106,7 @@
       "avgActionableMFE": -3.5016,
       "avgActionableMAE": -5.3623,
       "excludedOutcomeCounts": {
-        "MISSING": 161418,
+        "MISSING": 168779,
         "STALE_OBSERVATION": 28965,
         "MISSING_SYMBOL": 6
       }
@@ -2914,6 +2914,7 @@
     "thresholdsChanged": false,
     "edgeClaimed": false,
     "missingOutcomesInterpolated": false,
-    "provenanceChangesExcluded": false
+    "provenanceChangesExcluded": false,
+    "singlePointPathsExcluded": false
   }
 }
