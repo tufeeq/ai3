@@ -40,9 +40,12 @@
     const bt=ms(base?.capturedAt),et=ms(endAt);if(bt==null||et==null||et<=bt)return{count:0,mfePct:null,maePct:null,peakAt:null,troughAt:null};
     const start=indexObs(base).get(symbol),p0=num(start?.price),baseObsAt=obsMs(start);if(!(p0>0)||baseObsAt==null)return{count:0,mfePct:null,maePct:null,peakAt:null,troughAt:null};
     let mfe=-Infinity,mae=Infinity,peakAt=null,troughAt=null,count=0;
+    const seenObservedAt=new Set();
     for(const s of snapshots||[]){
       const t=ms(s?.capturedAt);if(t==null||t<=bt||t>et)continue;
       const o=indexObs(s).get(symbol),p=num(o?.price),ot=obsMs(o);if(!(p>0)||ot==null||ot<=baseObsAt)continue;
+      if(seenObservedAt.has(ot))continue;
+      seenObservedAt.add(ot);
       const r=pct(p0,p);count++;if(r>mfe){mfe=r;peakAt=s.capturedAt}if(r<mae){mae=r;troughAt=s.capturedAt}
     }
     return{count,mfePct:Number.isFinite(mfe)?mfe:null,maePct:Number.isFinite(mae)?mae:null,peakAt,troughAt};
