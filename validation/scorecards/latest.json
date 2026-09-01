@@ -1,21 +1,22 @@
 {
   "schemaVersion": 1,
   "kind": "TAGX3_VALIDATION_SCORECARD_SUMMARY",
-  "generatedAt": "2026-09-01T08:37:09.023Z",
+  "generatedAt": "2026-09-01T09:26:10.771Z",
   "status": "MEASURING",
   "sessions": 3,
-  "snapshotCount": 39,
+  "snapshotCount": 40,
   "cadence": {
     "scope": "ACTIVE_MARKET_WITHIN_SESSION",
     "sessionCount": 2,
     "ignoredCrossSessionGapCount": 1,
     "ignoredClosedSnapshotCount": 26,
+    "ignoredOutsideMarketWindowCount": 2,
     "targetIntervalMin": 15,
     "toleranceMin": 9,
     "gapLimitMin": 24,
-    "intervalCount": 11,
-    "medianGapMin": 31.3165,
-    "maxGapMin": 474.935,
+    "intervalCount": 10,
+    "medianGapMin": 39.024,
+    "maxGapMin": 275.0846,
     "excessiveGapCount": 6,
     "coverageHealthy": false
   },
@@ -56,7 +57,7 @@
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
         "STALE_OBSERVATION": 80800,
-        "MISSING": 205734
+        "MISSING": 213086
       }
     },
     "30": {
@@ -83,7 +84,7 @@
       "avgActionableMAE": 3.274,
       "excludedOutcomeCounts": {
         "STALE_OBSERVATION": 80919,
-        "MISSING": 190960,
+        "MISSING": 198312,
         "MISSING_SYMBOL": 14
       }
     },
@@ -110,7 +111,7 @@
       "avgActionableMFE": 0.9698,
       "avgActionableMAE": -0.625,
       "excludedOutcomeCounts": {
-        "MISSING": 183483,
+        "MISSING": 190835,
         "STALE_OBSERVATION": 79148,
         "MISSING_SYMBOL": 30
       }
