@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "kind": "TAGX3_VALIDATION_SCORECARD_SUMMARY",
-  "generatedAt": "2026-09-01T02:11:21.875Z",
+  "generatedAt": "2026-09-01T02:29:45.971Z",
   "status": "MEASURING",
   "sessions": 1,
-  "snapshotCount": 6,
+  "snapshotCount": 7,
   "cadence": {
     "targetIntervalMin": 15,
     "toleranceMin": 9,
     "gapLimitMin": 24,
-    "intervalCount": 5,
-    "medianGapMin": 28.65,
+    "intervalCount": 6,
+    "medianGapMin": 21.3536,
     "maxGapMin": 41.0176,
     "excessiveGapCount": 3,
     "coverageHealthy": false
@@ -36,6 +36,10 @@
       "actionableCount": 0,
       "flatOutcomeCount": 0,
       "flatOutcomeRate": null,
+      "sourceChangedOutcomeCount": 0,
+      "sourceChangedOutcomeRate": null,
+      "liveBackedChangedOutcomeCount": 0,
+      "liveBackedChangedOutcomeRate": null,
       "earlyCaptureRate": null,
       "missedMoverRate": null,
       "falsePositiveRate": null,
@@ -45,7 +49,8 @@
       "avgActionableMFE": null,
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
-        "MISSING": 44166
+        "MISSING": 44166,
+        "STALE_OBSERVATION": 7361
       }
     },
     "30": {
@@ -56,6 +61,10 @@
       "actionableCount": 0,
       "flatOutcomeCount": 12864,
       "flatOutcomeRate": 0.9989,
+      "sourceChangedOutcomeCount": 0,
+      "sourceChangedOutcomeRate": 0,
+      "liveBackedChangedOutcomeCount": 0,
+      "liveBackedChangedOutcomeRate": 0,
       "earlyCaptureRate": null,
       "missedMoverRate": null,
       "falsePositiveRate": 1,
@@ -66,27 +75,32 @@
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
         "STALE_OBSERVATION": 9205,
-        "MISSING": 22083
+        "MISSING": 29444
       }
     },
     "120": {
       "horizonMin": 120,
-      "validCount": 0,
+      "validCount": 12878,
       "moverCount": 0,
-      "detectedCount": 0,
+      "detectedCount": 138,
       "actionableCount": 0,
-      "flatOutcomeCount": 0,
-      "flatOutcomeRate": null,
+      "flatOutcomeCount": 12864,
+      "flatOutcomeRate": 0.9989,
+      "sourceChangedOutcomeCount": 0,
+      "sourceChangedOutcomeRate": 0,
+      "liveBackedChangedOutcomeCount": 0,
+      "liveBackedChangedOutcomeRate": 0,
       "earlyCaptureRate": null,
       "missedMoverRate": null,
-      "falsePositiveRate": null,
+      "falsePositiveRate": 1,
       "actionableFalsePositiveRate": null,
-      "avgDetectedMFE": null,
-      "avgDetectedMAE": null,
+      "avgDetectedMFE": 0,
+      "avgDetectedMAE": 0,
       "avgActionableMFE": null,
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
-        "MISSING": 44166
+        "STALE_OBSERVATION": 1844,
+        "MISSING": 36805
       }
     }
   },
@@ -113,7 +127,13 @@
             "mfePct": 0,
             "maePct": 0,
             "peakAt": "2026-09-01T00:51:43.760Z",
-            "troughAt": "2026-09-01T00:51:43.760Z"
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -131,7 +151,13 @@
             "mfePct": 0,
             "maePct": 0,
             "peakAt": "2026-09-01T00:51:43.760Z",
-            "troughAt": "2026-09-01T00:51:43.760Z"
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -149,7 +175,13 @@
             "mfePct": 0,
             "maePct": 0,
             "peakAt": "2026-09-01T00:51:43.760Z",
-            "troughAt": "2026-09-01T00:51:43.760Z"
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -167,7 +199,13 @@
             "mfePct": 0,
             "maePct": 0,
             "peakAt": "2026-09-01T00:51:43.760Z",
-            "troughAt": "2026-09-01T00:51:43.760Z"
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -185,7 +223,13 @@
             "mfePct": 0,
             "maePct": 0,
             "peakAt": "2026-09-01T00:51:43.760Z",
-            "troughAt": "2026-09-01T00:51:43.760Z"
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -203,7 +247,13 @@
             "mfePct": 0,
             "maePct": 0,
             "peakAt": "2026-09-01T00:51:43.760Z",
-            "troughAt": "2026-09-01T00:51:43.760Z"
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -221,7 +271,13 @@
             "mfePct": 0,
             "maePct": 0,
             "peakAt": "2026-09-01T00:51:43.760Z",
-            "troughAt": "2026-09-01T00:51:43.760Z"
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -239,7 +295,13 @@
             "mfePct": 0,
             "maePct": 0,
             "peakAt": "2026-09-01T00:51:43.760Z",
-            "troughAt": "2026-09-01T00:51:43.760Z"
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -257,7 +319,13 @@
             "mfePct": 0,
             "maePct": 0,
             "peakAt": "2026-09-01T00:51:43.760Z",
-            "troughAt": "2026-09-01T00:51:43.760Z"
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -275,7 +343,13 @@
             "mfePct": 0,
             "maePct": 0,
             "peakAt": "2026-09-01T00:51:43.760Z",
-            "troughAt": "2026-09-01T00:51:43.760Z"
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -293,7 +367,13 @@
             "mfePct": 0,
             "maePct": 0,
             "peakAt": "2026-09-01T00:51:43.760Z",
-            "troughAt": "2026-09-01T00:51:43.760Z"
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -311,7 +391,13 @@
             "mfePct": 0,
             "maePct": 0,
             "peakAt": "2026-09-01T00:51:43.760Z",
-            "troughAt": "2026-09-01T00:51:43.760Z"
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -329,7 +415,13 @@
             "mfePct": 0,
             "maePct": 0,
             "peakAt": "2026-09-01T00:51:43.760Z",
-            "troughAt": "2026-09-01T00:51:43.760Z"
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -347,7 +439,13 @@
             "mfePct": 0,
             "maePct": 0,
             "peakAt": "2026-09-01T00:51:43.760Z",
-            "troughAt": "2026-09-01T00:51:43.760Z"
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -365,7 +463,13 @@
             "mfePct": 0,
             "maePct": 0,
             "peakAt": "2026-09-01T00:51:43.760Z",
-            "troughAt": "2026-09-01T00:51:43.760Z"
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -383,7 +487,13 @@
             "mfePct": 0,
             "maePct": 0,
             "peakAt": "2026-09-01T00:51:43.760Z",
-            "troughAt": "2026-09-01T00:51:43.760Z"
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -401,7 +511,13 @@
             "mfePct": 0,
             "maePct": 0,
             "peakAt": "2026-09-01T00:51:43.760Z",
-            "troughAt": "2026-09-01T00:51:43.760Z"
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -419,7 +535,13 @@
             "mfePct": 0,
             "maePct": 0,
             "peakAt": "2026-09-01T00:51:43.760Z",
-            "troughAt": "2026-09-01T00:51:43.760Z"
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -437,7 +559,13 @@
             "mfePct": 0,
             "maePct": 0,
             "peakAt": "2026-09-01T00:51:43.760Z",
-            "troughAt": "2026-09-01T00:51:43.760Z"
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -455,14 +583,501 @@
             "mfePct": 0,
             "maePct": 0,
             "peakAt": "2026-09-01T00:51:43.760Z",
-            "troughAt": "2026-09-01T00:51:43.760Z"
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         }
       ]
     },
     "120": {
       "missedMovers": [],
-      "falsePositives": []
+      "falsePositives": [
+        {
+          "baseAt": "2026-09-01T00:19:44.157Z",
+          "symbol": "ACWX",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 43,
+          "ignitionIndex": 19,
+          "basePrice": 77.4,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T02:21:08.452Z",
+            "returnPct": 0,
+            "mfePct": 0,
+            "maePct": 0,
+            "peakAt": "2026-09-01T00:51:43.760Z",
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-09-01T00:19:44.157Z",
+          "symbol": "AIOS",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 52,
+          "ignitionIndex": 25,
+          "basePrice": 15.55,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T02:21:08.452Z",
+            "returnPct": 0,
+            "mfePct": 0,
+            "maePct": 0,
+            "peakAt": "2026-09-01T00:51:43.760Z",
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-09-01T00:19:44.157Z",
+          "symbol": "ALLE",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 48,
+          "ignitionIndex": 23,
+          "basePrice": 155.25,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T02:21:08.452Z",
+            "returnPct": 0,
+            "mfePct": 0,
+            "maePct": 0,
+            "peakAt": "2026-09-01T00:51:43.760Z",
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-09-01T00:19:44.157Z",
+          "symbol": "APTV",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 50,
+          "ignitionIndex": 26,
+          "basePrice": 44.76,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T02:21:08.452Z",
+            "returnPct": 0,
+            "mfePct": 0,
+            "maePct": 0,
+            "peakAt": "2026-09-01T00:51:43.760Z",
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-09-01T00:19:44.157Z",
+          "symbol": "ATI",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 48,
+          "ignitionIndex": 23,
+          "basePrice": 204.2,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T02:21:08.452Z",
+            "returnPct": 0,
+            "mfePct": 0,
+            "maePct": 0,
+            "peakAt": "2026-09-01T00:51:43.760Z",
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-09-01T00:19:44.157Z",
+          "symbol": "AVY",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 51,
+          "ignitionIndex": 26,
+          "basePrice": 174.11,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T02:21:08.452Z",
+            "returnPct": 0,
+            "mfePct": 0,
+            "maePct": 0,
+            "peakAt": "2026-09-01T00:51:43.760Z",
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-09-01T00:19:44.157Z",
+          "symbol": "BBW",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 38,
+          "ignitionIndex": 24,
+          "basePrice": 30.27,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T02:21:08.452Z",
+            "returnPct": 0,
+            "mfePct": 0,
+            "maePct": 0,
+            "peakAt": "2026-09-01T00:51:43.760Z",
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-09-01T00:19:44.157Z",
+          "symbol": "BHYB",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 51,
+          "ignitionIndex": 25,
+          "basePrice": 54.08,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T02:21:08.452Z",
+            "returnPct": 0,
+            "mfePct": 0,
+            "maePct": 0,
+            "peakAt": "2026-09-01T00:51:43.760Z",
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-09-01T00:19:44.157Z",
+          "symbol": "BWZ",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 51,
+          "ignitionIndex": 25,
+          "basePrice": 27.26,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T02:21:08.452Z",
+            "returnPct": 0,
+            "mfePct": 0,
+            "maePct": 0,
+            "peakAt": "2026-09-01T00:51:43.760Z",
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-09-01T00:19:44.157Z",
+          "symbol": "CLOZ",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 38,
+          "ignitionIndex": 17,
+          "basePrice": 26.2,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T02:21:08.452Z",
+            "returnPct": 0,
+            "mfePct": 0,
+            "maePct": 0,
+            "peakAt": "2026-09-01T00:51:43.760Z",
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-09-01T00:19:44.157Z",
+          "symbol": "CLX",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 46,
+          "ignitionIndex": 22,
+          "basePrice": 97.68,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T02:21:08.452Z",
+            "returnPct": 0,
+            "mfePct": 0,
+            "maePct": 0,
+            "peakAt": "2026-09-01T00:51:43.760Z",
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-09-01T00:19:44.157Z",
+          "symbol": "CNH",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 53,
+          "ignitionIndex": 32,
+          "basePrice": 11.83,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T02:21:08.452Z",
+            "returnPct": 0,
+            "mfePct": 0,
+            "maePct": 0,
+            "peakAt": "2026-09-01T00:51:43.760Z",
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-09-01T00:19:44.157Z",
+          "symbol": "CRS",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 46,
+          "ignitionIndex": 22,
+          "basePrice": 476.42,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T02:21:08.452Z",
+            "returnPct": 0,
+            "mfePct": 0,
+            "maePct": 0,
+            "peakAt": "2026-09-01T00:51:43.760Z",
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-09-01T00:19:44.157Z",
+          "symbol": "CSGP",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 43,
+          "ignitionIndex": 20,
+          "basePrice": 32.07,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T02:21:08.452Z",
+            "returnPct": 0,
+            "mfePct": 0,
+            "maePct": 0,
+            "peakAt": "2026-09-01T00:51:43.760Z",
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-09-01T00:19:44.157Z",
+          "symbol": "CSL",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 51,
+          "ignitionIndex": 26,
+          "basePrice": 346.58,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T02:21:08.452Z",
+            "returnPct": 0,
+            "mfePct": 0,
+            "maePct": 0,
+            "peakAt": "2026-09-01T00:51:43.760Z",
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-09-01T00:19:44.157Z",
+          "symbol": "EIX",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 52,
+          "ignitionIndex": 26,
+          "basePrice": 53.98,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T02:21:08.452Z",
+            "returnPct": 0,
+            "mfePct": 0,
+            "maePct": 0,
+            "peakAt": "2026-09-01T00:51:43.760Z",
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-09-01T00:19:44.157Z",
+          "symbol": "EMHY",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 51,
+          "ignitionIndex": 25,
+          "basePrice": 40.22,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T02:21:08.452Z",
+            "returnPct": 0,
+            "mfePct": 0,
+            "maePct": 0,
+            "peakAt": "2026-09-01T00:51:43.760Z",
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-09-01T00:19:44.157Z",
+          "symbol": "ERIE",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 51,
+          "ignitionIndex": 26,
+          "basePrice": 255.56,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T02:21:08.452Z",
+            "returnPct": 0,
+            "mfePct": 0,
+            "maePct": 0,
+            "peakAt": "2026-09-01T00:51:43.760Z",
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-09-01T00:19:44.157Z",
+          "symbol": "ERY",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 49,
+          "ignitionIndex": 23,
+          "basePrice": 8.94,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T02:21:08.452Z",
+            "returnPct": 0,
+            "mfePct": 0,
+            "maePct": 0,
+            "peakAt": "2026-09-01T00:51:43.760Z",
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        },
+        {
+          "baseAt": "2026-09-01T00:19:44.157Z",
+          "symbol": "EWO",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 51,
+          "ignitionIndex": 25,
+          "basePrice": 44.04,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T02:21:08.452Z",
+            "returnPct": 0,
+            "mfePct": 0,
+            "maePct": 0,
+            "peakAt": "2026-09-01T00:51:43.760Z",
+            "troughAt": "2026-09-01T00:51:43.760Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Broad Universe",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
+          }
+        }
+      ]
     }
   },
   "guardrails": {

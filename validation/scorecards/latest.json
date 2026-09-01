@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "kind": "TAGX3_VALIDATION_SCORECARD_SUMMARY",
-  "generatedAt": "2026-09-01T02:09:46.293Z",
+  "generatedAt": "2026-09-01T02:26:09.527Z",
   "status": "MEASURING",
   "sessions": 3,
-  "snapshotCount": 26,
+  "snapshotCount": 27,
   "cadence": {
     "targetIntervalMin": 15,
     "toleranceMin": 9,
     "gapLimitMin": 24,
-    "intervalCount": 25,
-    "medianGapMin": 28.9953,
+    "intervalCount": 26,
+    "medianGapMin": 28.8226,
     "maxGapMin": 275.0846,
     "excessiveGapCount": 14,
     "coverageHealthy": false
@@ -36,6 +36,10 @@
       "actionableCount": 0,
       "flatOutcomeCount": 0,
       "flatOutcomeRate": null,
+      "sourceChangedOutcomeCount": 0,
+      "sourceChangedOutcomeRate": null,
+      "liveBackedChangedOutcomeCount": 0,
+      "liveBackedChangedOutcomeRate": null,
       "earlyCaptureRate": null,
       "missedMoverRate": null,
       "falsePositiveRate": null,
@@ -45,7 +49,7 @@
       "avgActionableMFE": null,
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
-        "STALE_OBSERVATION": 36643,
+        "STALE_OBSERVATION": 44004,
         "MISSING": 154216
       }
     },
@@ -57,6 +61,10 @@
       "actionableCount": 10,
       "flatOutcomeCount": 13565,
       "flatOutcomeRate": 0.9702,
+      "sourceChangedOutcomeCount": 395,
+      "sourceChangedOutcomeRate": 0.0283,
+      "liveBackedChangedOutcomeCount": 0,
+      "liveBackedChangedOutcomeRate": 0,
       "earlyCaptureRate": 0.2667,
       "missedMoverRate": 0.7333,
       "falsePositiveRate": 0.9615,
@@ -67,29 +75,33 @@
       "avgActionableMAE": -1.3035,
       "excludedOutcomeCounts": {
         "STALE_OBSERVATION": 52147,
-        "MISSING": 124729,
+        "MISSING": 132090,
         "MISSING_SYMBOL": 2
       }
     },
     "120": {
       "horizonMin": 120,
-      "validCount": 9675,
+      "validCount": 22553,
       "moverCount": 92,
-      "detectedCount": 353,
+      "detectedCount": 491,
       "actionableCount": 24,
-      "flatOutcomeCount": 7917,
-      "flatOutcomeRate": 0.8183,
+      "flatOutcomeCount": 20781,
+      "flatOutcomeRate": 0.9214,
+      "sourceChangedOutcomeCount": 1479,
+      "sourceChangedOutcomeRate": 0.0656,
+      "liveBackedChangedOutcomeCount": 0,
+      "liveBackedChangedOutcomeRate": 0,
       "earlyCaptureRate": 0.3478,
       "missedMoverRate": 0.6522,
-      "falsePositiveRate": 0.864,
+      "falsePositiveRate": 0.9022,
       "actionableFalsePositiveRate": 0.875,
-      "avgDetectedMFE": 13.0239,
-      "avgDetectedMAE": 11.5667,
+      "avgDetectedMFE": 9.3634,
+      "avgDetectedMAE": 8.3158,
       "avgActionableMFE": -3.5016,
       "avgActionableMAE": -5.3623,
       "excludedOutcomeCounts": {
-        "MISSING": 168779,
-        "STALE_OBSERVATION": 12399,
+        "MISSING": 161418,
+        "STALE_OBSERVATION": 14243,
         "MISSING_SYMBOL": 6
       }
     }
@@ -116,7 +128,13 @@
             "mfePct": 2629.705619982159,
             "maePct": 2629.705619982159,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Discovery Rich",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -134,7 +152,13 @@
             "mfePct": 1398.9406779661017,
             "maePct": 1398.9406779661017,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Broad Universe",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -152,7 +176,13 @@
             "mfePct": 1189.1344383057092,
             "maePct": 1189.1344383057092,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -170,7 +200,13 @@
             "mfePct": 675.9182786350792,
             "maePct": 675.9182786350792,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -188,7 +224,13 @@
             "mfePct": 108.42982862436313,
             "maePct": 108.42982862436313,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -206,7 +248,13 @@
             "mfePct": 28.74397203910986,
             "maePct": 28.74397203910986,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Broad Universe",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -224,7 +272,13 @@
             "mfePct": 19.468776490534054,
             "maePct": 19.468776490534054,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -242,7 +296,13 @@
             "mfePct": 14.772727272727273,
             "maePct": 14.772727272727273,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Discovery Rich",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -260,7 +320,13 @@
             "mfePct": 14.1169362958985,
             "maePct": 14.1169362958985,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Broad Universe",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -278,7 +344,13 @@
             "mfePct": 11.54772467993408,
             "maePct": 11.54772467993408,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Discovery Rich",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -296,7 +368,13 @@
             "mfePct": 11.361310133060403,
             "maePct": 11.361310133060403,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         }
       ],
@@ -316,7 +394,13 @@
             "mfePct": -14.857142857142858,
             "maePct": -14.857142857142858,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -334,7 +418,13 @@
             "mfePct": -10.37735849056604,
             "maePct": -10.37735849056604,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Discovery Fast",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -352,7 +442,13 @@
             "mfePct": -8.317393311786828,
             "maePct": -8.317393311786828,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Discovery Rich",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -370,7 +466,13 @@
             "mfePct": -5.088495575221243,
             "maePct": -5.088495575221243,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hours",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -388,7 +490,13 @@
             "mfePct": -3.555365174555584,
             "maePct": -3.555365174555584,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hours",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -406,7 +514,13 @@
             "mfePct": -3.1044967194751116,
             "maePct": -3.1044967194751116,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hours",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -424,7 +538,13 @@
             "mfePct": -2.9239766081871217,
             "maePct": -2.9239766081871217,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hours",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -442,7 +562,13 @@
             "mfePct": -2.4916289147134227,
             "maePct": -2.4916289147134227,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hours",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -460,7 +586,13 @@
             "mfePct": -2.3427331887201803,
             "maePct": -2.3427331887201803,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hours",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -478,7 +610,13 @@
             "mfePct": -2.040816326530614,
             "maePct": -2.040816326530614,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hours",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -496,7 +634,13 @@
             "mfePct": -1.9530201342281814,
             "maePct": -1.9530201342281814,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hours",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -514,7 +658,13 @@
             "mfePct": -1.8644067796610073,
             "maePct": -1.8644067796610073,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hours",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -532,7 +682,13 @@
             "mfePct": -1.81818181818182,
             "maePct": -1.81818181818182,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hours",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -550,7 +706,13 @@
             "mfePct": -1.7096999302163347,
             "maePct": -1.7096999302163347,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hours",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -568,7 +730,13 @@
             "mfePct": -1.5384615384615399,
             "maePct": -1.5384615384615399,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hours",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -586,7 +754,13 @@
             "mfePct": -1.5113350125944598,
             "maePct": -1.5113350125944598,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -604,7 +778,13 @@
             "mfePct": -1.4485256078634232,
             "maePct": -1.4485256078634232,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hours",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -622,7 +802,13 @@
             "mfePct": -1.4472777394900196,
             "maePct": -1.4472777394900196,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hours",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -640,7 +826,13 @@
             "mfePct": -1.42857142857143,
             "maePct": -1.42857142857143,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Discovery Fast",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -658,7 +850,13 @@
             "mfePct": -1.3657853265627786,
             "maePct": -1.3657853265627786,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hours",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         }
       ]
@@ -680,7 +878,13 @@
             "mfePct": 3394.505494505495,
             "maePct": 3383.5164835164833,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:11:41.813Z"
+            "troughAt": "2026-08-31T23:11:41.813Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -698,7 +902,13 @@
             "mfePct": 3394.505494505495,
             "maePct": 3383.5164835164833,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:11:41.813Z"
+            "troughAt": "2026-08-31T23:11:41.813Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -716,7 +926,13 @@
             "mfePct": 2629.705619982159,
             "maePct": 2629.705619982159,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Discovery Rich",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -734,7 +950,13 @@
             "mfePct": 2629.705619982159,
             "maePct": 2629.705619982159,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Discovery Rich",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -752,7 +974,13 @@
             "mfePct": 2629.705619982159,
             "maePct": 2629.705619982159,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Discovery Rich",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -770,7 +998,13 @@
             "mfePct": 2350.847457627119,
             "maePct": 2306.779661016949,
             "peakAt": "2026-08-31T23:11:41.813Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hours",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -788,7 +1022,13 @@
             "mfePct": 2350.847457627119,
             "maePct": 2306.779661016949,
             "peakAt": "2026-08-31T23:11:41.813Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hours",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -806,7 +1046,13 @@
             "mfePct": 1398.9406779661017,
             "maePct": 1398.9406779661017,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Broad Universe",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -824,7 +1070,13 @@
             "mfePct": 1398.9406779661017,
             "maePct": 1398.9406779661017,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Broad Universe",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -842,7 +1094,13 @@
             "mfePct": 1398.9406779661017,
             "maePct": 1398.9406779661017,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Broad Universe",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -860,7 +1118,13 @@
             "mfePct": 1189.1344383057092,
             "maePct": 1189.1344383057092,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -878,7 +1142,13 @@
             "mfePct": 1189.1344383057092,
             "maePct": 1189.1344383057092,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -896,7 +1166,13 @@
             "mfePct": 1189.1344383057092,
             "maePct": 1189.1344383057092,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -914,7 +1190,13 @@
             "mfePct": 675.9182786350792,
             "maePct": 675.9182786350792,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -932,7 +1214,13 @@
             "mfePct": 675.9182786350792,
             "maePct": 675.9182786350792,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -950,7 +1238,13 @@
             "mfePct": 675.9182786350792,
             "maePct": 675.9182786350792,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -968,7 +1262,13 @@
             "mfePct": 108.42982862436313,
             "maePct": 108.42982862436313,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -986,7 +1286,13 @@
             "mfePct": 108.42982862436313,
             "maePct": 108.42982862436313,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -1004,7 +1310,13 @@
             "mfePct": 108.42982862436313,
             "maePct": 108.42982862436313,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -1022,7 +1334,13 @@
             "mfePct": 31.67272727272725,
             "maePct": 30.909090909090892,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:11:41.813Z"
+            "troughAt": "2026-08-31T23:11:41.813Z",
+            "baseSource": "Extended Hours",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         }
       ],
@@ -1042,7 +1360,13 @@
             "mfePct": -42.96754250386399,
             "maePct": -43.43122102009273,
             "peakAt": "2026-08-31T23:11:41.813Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -1060,7 +1384,13 @@
             "mfePct": -42.96754250386399,
             "maePct": -43.43122102009273,
             "peakAt": "2026-08-31T23:11:41.813Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -1078,7 +1408,13 @@
             "mfePct": -25.430764033013176,
             "maePct": -28.809305468410628,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:11:41.813Z"
+            "troughAt": "2026-08-31T23:11:41.813Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -1096,7 +1432,13 @@
             "mfePct": -25.430764033013176,
             "maePct": -28.809305468410628,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:11:41.813Z"
+            "troughAt": "2026-08-31T23:11:41.813Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -1114,7 +1456,13 @@
             "mfePct": -24.22579380635045,
             "maePct": -25.323402587220695,
             "peakAt": "2026-08-31T23:11:41.813Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -1132,7 +1480,13 @@
             "mfePct": -24.22579380635045,
             "maePct": -25.323402587220695,
             "peakAt": "2026-08-31T23:11:41.813Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -1150,7 +1504,13 @@
             "mfePct": -22.764227642276424,
             "maePct": -22.764227642276424,
             "peakAt": "2026-08-31T23:11:41.813Z",
-            "troughAt": "2026-08-31T23:11:41.813Z"
+            "troughAt": "2026-08-31T23:11:41.813Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -1168,7 +1528,13 @@
             "mfePct": -22.764227642276424,
             "maePct": -22.764227642276424,
             "peakAt": "2026-08-31T23:11:41.813Z",
-            "troughAt": "2026-08-31T23:11:41.813Z"
+            "troughAt": "2026-08-31T23:11:41.813Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -1186,7 +1552,13 @@
             "mfePct": -20.710382513661195,
             "maePct": -21.857923497267766,
             "peakAt": "2026-08-31T23:11:41.813Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -1204,7 +1576,13 @@
             "mfePct": -20.710382513661195,
             "maePct": -21.857923497267766,
             "peakAt": "2026-08-31T23:11:41.813Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -1222,7 +1600,13 @@
             "mfePct": -15.277777777777779,
             "maePct": -15.314814814814822,
             "peakAt": "2026-08-31T23:11:41.813Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -1240,7 +1624,13 @@
             "mfePct": -15.277777777777779,
             "maePct": -15.314814814814822,
             "peakAt": "2026-08-31T23:11:41.813Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Extended Hot",
+            "sourceChanged": false,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -1258,7 +1648,13 @@
             "mfePct": -14.857142857142858,
             "maePct": -14.857142857142858,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -1276,7 +1672,13 @@
             "mfePct": -14.857142857142858,
             "maePct": -14.857142857142858,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -1294,7 +1696,13 @@
             "mfePct": -14.857142857142858,
             "maePct": -14.857142857142858,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Broad Universe",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -1312,7 +1720,13 @@
             "mfePct": -11.153119092627609,
             "maePct": -11.153119092627609,
             "peakAt": "2026-09-01T00:19:44.157Z",
-            "troughAt": "2026-09-01T00:19:44.157Z"
+            "troughAt": "2026-09-01T00:19:44.157Z",
+            "baseSource": "Extended Hours",
+            "targetSource": "Discovery Rich",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -1330,7 +1744,13 @@
             "mfePct": -10.37735849056604,
             "maePct": -10.37735849056604,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Discovery Fast",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -1348,7 +1768,13 @@
             "mfePct": -10.37735849056604,
             "maePct": -10.37735849056604,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Discovery Fast",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -1366,7 +1792,13 @@
             "mfePct": -10.37735849056604,
             "maePct": -10.37735849056604,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Discovery Fast",
+            "targetSource": "Extended Hot",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         },
         {
@@ -1384,7 +1816,13 @@
             "mfePct": -8.317393311786828,
             "maePct": -8.317393311786828,
             "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
+            "troughAt": "2026-08-31T23:43:00.802Z",
+            "baseSource": "Extended Hot",
+            "targetSource": "Discovery Rich",
+            "sourceChanged": true,
+            "baseLiveBacked": false,
+            "targetLiveBacked": false,
+            "liveBackedChanged": false
           }
         }
       ]
