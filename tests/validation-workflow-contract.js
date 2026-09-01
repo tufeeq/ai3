@@ -9,5 +9,5 @@ assert(!/gh workflow run intelligence-feed\.yml/.test(yml),'validation must not 
 assert(!/actions:\s*write/.test(yml),'validation no longer needs workflow-dispatch permission');
 assert(/npm run check/.test(yml)&&/npm test/.test(yml),'snapshot publication must remain behind full repository contracts');
 assert(/node scripts\/capture-validation-snapshot\.mjs/.test(yml)&&/npm run validation:scorecard/.test(yml),'snapshot and causal scorecard steps must remain present');
-assert(/cron:\s*'7,22,37,52 12-22 \* \* 1-5'/.test(yml),'scheduled fallback cadence must remain available independently of event coupling');
+assert(/cron:\s*'7,17,27,37,47,57 12-22 \* \* 1-5'/.test(yml),'scheduled fallback must retain the evidence-backed ten-minute capture cadence');
 console.log('validation workflow contract: OK');
