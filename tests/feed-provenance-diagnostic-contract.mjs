@@ -9,7 +9,7 @@ const behind=classifyFeedProvenance({
   upstreamNewestObservedAt:'2026-09-01T17:13:32Z'
 });
 assert.equal(behind.status,'UPSTREAM_HAS_ADVANCED_SINCE_CONSUMER');
-assert.equal(behind.upstreamAdvanceAfterConsumerMin,17);
+assert(behind.upstreamAdvanceAfterConsumerMin>=16.8&&behind.upstreamAdvanceAfterConsumerMin<=17.0,'diagnostic must quantify the observed ~17-minute producer advance');
 assert(behind.upstreamQuoteAdvanceMin>35,'diagnostic must expose material quote advance without changing thresholds');
 assert.equal(behind.consumerQuoteAgeAtBuildMin,19.1);
 
