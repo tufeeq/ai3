@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {buildSnapshot,validateSnapshot,SOURCES} from '../scripts/capture-validation-snapshot.mjs';
+import {buildSnapshot,validateSnapshot,sameEvidenceWithin,SOURCES} from '../scripts/capture-validation-snapshot.mjs';
 
 const wrap=(name,data)=>({name,url:SOURCES[name],data,bytes:123,sha256:'a'.repeat(64),fetchedAt:'2026-08-31T00:00:00Z',latencyMs:10});
 const downloads=[
@@ -31,6 +31,13 @@ assert.deepEqual(validateSnapshot(s),[]);
 const broken=structuredClone(s);broken.sources.live.sha256='bad';broken.observations.push({...broken.observations[0]});broken.signals.push({...broken.signals[0]});
 assert(validateSnapshot(broken).some(x=>x.includes('source hash')));
 assert(validateSnapshot(broken).some(x=>x.includes('duplicate')));
+
+const nearDuplicate=structuredClone(s);nearDuplicate.capturedAt='2026-08-31T00:02:00Z';
+assert.equal(sameEvidenceWithin(s,nearDuplicate),true,'identical evidence inside two minutes should be suppressed when event and fallback triggers collide');
+const scheduledSample=structuredClone(s);scheduledSample.capturedAt='2026-08-31T00:11:00Z';
+assert.equal(sameEvidenceWithin(s,scheduledSample),false,'normal ten-minute sampling must remain intact even when upstream evidence is unchanged');
+const changedEvidence=structuredClone(nearDuplicate);changedEvidence.sources.live.sha256='b'.repeat(64);
+assert.equal(sameEvidenceWithin(s,changedEvidence),false,'any changed source payload must be captured immediately');
 
 const missingTimestampDownloads=structuredClone(downloads);
 missingTimestampDownloads.find(x=>x.name==='live').data.quotes.push({symbol:'ZZZ',price:7,volume:700,source:'Live Quotes',liveBacked:true});
