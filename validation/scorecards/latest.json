@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
   "kind": "TAGX3_VALIDATION_SCORECARD_SUMMARY",
-  "generatedAt": "2026-09-01T00:54:13.292Z",
+  "generatedAt": "2026-09-01T01:23:46.743Z",
   "status": "MEASURING",
   "sessions": 3,
-  "snapshotCount": 23,
+  "snapshotCount": 24,
   "cadence": {
     "targetIntervalMin": 15,
     "toleranceMin": 9,
     "gapLimitMin": 24,
-    "intervalCount": 22,
-    "medianGapMin": 30.1559,
+    "intervalCount": 23,
+    "medianGapMin": 28.9953,
     "maxGapMin": 275.0846,
-    "excessiveGapCount": 12,
+    "excessiveGapCount": 13,
     "coverageHealthy": false
   },
   "protocol": {
@@ -34,6 +34,8 @@
       "moverCount": 0,
       "detectedCount": 0,
       "actionableCount": 0,
+      "flatOutcomeCount": 0,
+      "flatOutcomeRate": null,
       "earlyCaptureRate": null,
       "missedMoverRate": null,
       "falsePositiveRate": null,
@@ -44,7 +46,7 @@
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
         "STALE_OBSERVATION": 36643,
-        "MISSING": 132133
+        "MISSING": 139494
       }
     },
     "30": {
@@ -53,6 +55,8 @@
       "moverCount": 15,
       "detectedCount": 234,
       "actionableCount": 10,
+      "flatOutcomeCount": 13565,
+      "flatOutcomeRate": 0.9702,
       "earlyCaptureRate": 0.2667,
       "missedMoverRate": 0.7333,
       "falsePositiveRate": 0.9615,
@@ -62,29 +66,31 @@
       "avgActionableMFE": -1.3035,
       "avgActionableMAE": -1.3035,
       "excludedOutcomeCounts": {
-        "STALE_OBSERVATION": 44786,
+        "STALE_OBSERVATION": 52147,
         "MISSING": 110007,
         "MISSING_SYMBOL": 2
       }
     },
     "120": {
       "horizonMin": 120,
-      "validCount": 2318,
-      "moverCount": 76,
-      "detectedCount": 190,
-      "actionableCount": 16,
-      "earlyCaptureRate": 0.3684,
-      "missedMoverRate": 0.6316,
-      "falsePositiveRate": 0.8,
+      "validCount": 9675,
+      "moverCount": 92,
+      "detectedCount": 353,
+      "actionableCount": 24,
+      "flatOutcomeCount": 7917,
+      "flatOutcomeRate": 0.8183,
+      "earlyCaptureRate": 0.3478,
+      "missedMoverRate": 0.6522,
+      "falsePositiveRate": 0.864,
       "actionableFalsePositiveRate": 0.875,
-      "avgDetectedMFE": 23.9329,
-      "avgDetectedMAE": 21.2257,
-      "avgActionableMFE": -4.4378,
-      "avgActionableMAE": -7.2288,
+      "avgDetectedMFE": 13.0239,
+      "avgDetectedMAE": 11.5667,
+      "avgActionableMFE": -3.5016,
+      "avgActionableMAE": -5.3623,
       "excludedOutcomeCounts": {
-        "MISSING": 154056,
-        "STALE_OBSERVATION": 12398,
-        "MISSING_SYMBOL": 4
+        "MISSING": 154057,
+        "STALE_OBSERVATION": 12399,
+        "MISSING_SYMBOL": 6
       }
     }
   },
@@ -732,6 +738,24 @@
           }
         },
         {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "IMCC",
+          "lifecycle": "DISCOVERED",
+          "shariaStatus": "EXCLUDED",
+          "movementIndex": 17,
+          "ignitionIndex": 7,
+          "basePrice": 0.1121,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T01:20:22.758Z",
+            "returnPct": 2629.705619982159,
+            "mfePct": 2629.705619982159,
+            "maePct": 2629.705619982159,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z"
+          }
+        },
+        {
           "baseAt": "2026-08-31T22:17:28.618Z",
           "symbol": "NXL",
           "lifecycle": "DISCOVERED",
@@ -804,6 +828,24 @@
           }
         },
         {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "YMT",
+          "lifecycle": "DISCOVERED",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 15,
+          "ignitionIndex": 2,
+          "basePrice": 0.1888,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T01:20:22.758Z",
+            "returnPct": 1398.9406779661017,
+            "mfePct": 1398.9406779661017,
+            "maePct": 1398.9406779661017,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z"
+          }
+        },
+        {
           "baseAt": "2026-08-31T22:17:28.618Z",
           "symbol": "GCTK",
           "lifecycle": "DISCOVERED",
@@ -832,6 +874,24 @@
           "outcome": {
             "status": "OK",
             "snapshotAt": "2026-09-01T00:19:44.157Z",
+            "returnPct": 1189.1344383057092,
+            "mfePct": 1189.1344383057092,
+            "maePct": 1189.1344383057092,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z"
+          }
+        },
+        {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "GCTK",
+          "lifecycle": "DISCOVERED",
+          "shariaStatus": "EXCLUDED",
+          "movementIndex": 20,
+          "ignitionIndex": 15,
+          "basePrice": 0.3258,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T01:20:22.758Z",
             "returnPct": 1189.1344383057092,
             "mfePct": 1189.1344383057092,
             "maePct": 1189.1344383057092,
@@ -876,6 +936,24 @@
           }
         },
         {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "CYCU",
+          "lifecycle": "DISCOVERED",
+          "shariaStatus": "EXCLUDED",
+          "movementIndex": 15,
+          "ignitionIndex": 3,
+          "basePrice": 0.4601,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T01:20:22.758Z",
+            "returnPct": 675.9182786350792,
+            "mfePct": 675.9182786350792,
+            "maePct": 675.9182786350792,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z"
+          }
+        },
+        {
           "baseAt": "2026-08-31T22:17:28.618Z",
           "symbol": "CELU",
           "lifecycle": "DISCOVERED",
@@ -912,6 +990,24 @@
           }
         },
         {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "CELU",
+          "lifecycle": "DISCOVERED",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 19,
+          "ignitionIndex": 6,
+          "basePrice": 0.8636,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T01:20:22.758Z",
+            "returnPct": 108.42982862436313,
+            "mfePct": 108.42982862436313,
+            "maePct": 108.42982862436313,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z"
+          }
+        },
+        {
           "baseAt": "2026-08-31T22:17:28.618Z",
           "symbol": "AVAT",
           "lifecycle": "DISCOVERED",
@@ -925,96 +1021,6 @@
             "returnPct": 31.67272727272725,
             "mfePct": 31.67272727272725,
             "maePct": 30.909090909090892,
-            "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:11:41.813Z"
-          }
-        },
-        {
-          "baseAt": "2026-08-31T22:19:53.369Z",
-          "symbol": "AVAT",
-          "lifecycle": "DISCOVERED",
-          "shariaStatus": "UNVERIFIED",
-          "movementIndex": 19,
-          "ignitionIndex": 2,
-          "basePrice": 0.55,
-          "outcome": {
-            "status": "OK",
-            "snapshotAt": "2026-09-01T00:19:44.157Z",
-            "returnPct": 31.67272727272725,
-            "mfePct": 31.67272727272725,
-            "maePct": 30.909090909090892,
-            "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:11:41.813Z"
-          }
-        },
-        {
-          "baseAt": "2026-08-31T22:17:28.618Z",
-          "symbol": "SWVL",
-          "lifecycle": "DISCOVERED",
-          "shariaStatus": "UNVERIFIED",
-          "movementIndex": 16,
-          "ignitionIndex": 4,
-          "basePrice": 2.2603,
-          "outcome": {
-            "status": "OK",
-            "snapshotAt": "2026-09-01T00:19:44.157Z",
-            "returnPct": 28.74397203910986,
-            "mfePct": 28.74397203910986,
-            "maePct": 28.74397203910986,
-            "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
-          }
-        },
-        {
-          "baseAt": "2026-08-31T22:19:53.369Z",
-          "symbol": "SWVL",
-          "lifecycle": "DISCOVERED",
-          "shariaStatus": "UNVERIFIED",
-          "movementIndex": 16,
-          "ignitionIndex": 4,
-          "basePrice": 2.2603,
-          "outcome": {
-            "status": "OK",
-            "snapshotAt": "2026-09-01T00:19:44.157Z",
-            "returnPct": 28.74397203910986,
-            "mfePct": 28.74397203910986,
-            "maePct": 28.74397203910986,
-            "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:43:00.802Z"
-          }
-        },
-        {
-          "baseAt": "2026-08-31T22:17:28.618Z",
-          "symbol": "FAMI",
-          "lifecycle": "DISCOVERED",
-          "shariaStatus": "EXCLUDED",
-          "movementIndex": 37,
-          "ignitionIndex": 46,
-          "basePrice": 0.1006,
-          "outcome": {
-            "status": "OK",
-            "snapshotAt": "2026-09-01T00:19:44.157Z",
-            "returnPct": 23.658051689860837,
-            "mfePct": 23.658051689860837,
-            "maePct": 19.383697813121277,
-            "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:11:41.813Z"
-          }
-        },
-        {
-          "baseAt": "2026-08-31T22:19:53.369Z",
-          "symbol": "FAMI",
-          "lifecycle": "DISCOVERED",
-          "shariaStatus": "EXCLUDED",
-          "movementIndex": 37,
-          "ignitionIndex": 46,
-          "basePrice": 0.1006,
-          "outcome": {
-            "status": "OK",
-            "snapshotAt": "2026-09-01T00:19:44.157Z",
-            "returnPct": 23.658051689860837,
-            "mfePct": 23.658051689860837,
-            "maePct": 19.383697813121277,
             "peakAt": "2026-08-31T23:43:00.802Z",
             "troughAt": "2026-08-31T23:11:41.813Z"
           }
@@ -1274,6 +1280,42 @@
           }
         },
         {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "CVKD",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 48,
+          "ignitionIndex": 60,
+          "basePrice": 1.75,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T01:20:22.758Z",
+            "returnPct": -14.857142857142858,
+            "mfePct": -14.857142857142858,
+            "maePct": -14.857142857142858,
+            "peakAt": "2026-08-31T23:43:00.802Z",
+            "troughAt": "2026-08-31T23:43:00.802Z"
+          }
+        },
+        {
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "MSN",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 42,
+          "ignitionIndex": 45,
+          "basePrice": 0.529,
+          "outcome": {
+            "status": "OK",
+            "snapshotAt": "2026-09-01T01:20:22.758Z",
+            "returnPct": -11.153119092627609,
+            "mfePct": -11.153119092627609,
+            "maePct": -11.153119092627609,
+            "peakAt": "2026-09-01T00:19:44.157Z",
+            "troughAt": "2026-09-01T00:19:44.157Z"
+          }
+        },
+        {
           "baseAt": "2026-08-31T22:17:28.618Z",
           "symbol": "ARTL",
           "lifecycle": "WATCH",
@@ -1310,75 +1352,39 @@
           }
         },
         {
-          "baseAt": "2026-08-31T22:17:28.618Z",
-          "symbol": "CLGN",
-          "lifecycle": "IGNITING",
-          "shariaStatus": "EXCLUDED",
-          "movementIndex": 66,
-          "ignitionIndex": 82,
-          "basePrice": 0.39,
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "ARTL",
+          "lifecycle": "WATCH",
+          "shariaStatus": "UNVERIFIED",
+          "movementIndex": 53,
+          "ignitionIndex": 30,
+          "basePrice": 6.36,
           "outcome": {
             "status": "OK",
-            "snapshotAt": "2026-09-01T00:19:44.157Z",
-            "returnPct": -10.615384615384613,
-            "mfePct": -7.923076923076932,
-            "maePct": -10.615384615384613,
-            "peakAt": "2026-08-31T23:11:41.813Z",
+            "snapshotAt": "2026-09-01T01:20:22.758Z",
+            "returnPct": -10.37735849056604,
+            "mfePct": -10.37735849056604,
+            "maePct": -10.37735849056604,
+            "peakAt": "2026-08-31T23:43:00.802Z",
             "troughAt": "2026-08-31T23:43:00.802Z"
           }
         },
         {
-          "baseAt": "2026-08-31T22:19:53.369Z",
-          "symbol": "CLGN",
-          "lifecycle": "IGNITING",
+          "baseAt": "2026-08-31T23:11:41.813Z",
+          "symbol": "POLA",
+          "lifecycle": "WATCH",
           "shariaStatus": "EXCLUDED",
-          "movementIndex": 66,
-          "ignitionIndex": 82,
-          "basePrice": 0.39,
+          "movementIndex": 47,
+          "ignitionIndex": 75,
+          "basePrice": 1.5161,
           "outcome": {
             "status": "OK",
-            "snapshotAt": "2026-09-01T00:19:44.157Z",
-            "returnPct": -10.615384615384613,
-            "mfePct": -7.923076923076932,
-            "maePct": -10.615384615384613,
-            "peakAt": "2026-08-31T23:11:41.813Z",
+            "snapshotAt": "2026-09-01T01:20:22.758Z",
+            "returnPct": -8.317393311786828,
+            "mfePct": -8.317393311786828,
+            "maePct": -8.317393311786828,
+            "peakAt": "2026-08-31T23:43:00.802Z",
             "troughAt": "2026-08-31T23:43:00.802Z"
-          }
-        },
-        {
-          "baseAt": "2026-08-31T22:17:28.618Z",
-          "symbol": "GMHS",
-          "lifecycle": "WATCH",
-          "shariaStatus": "EXCLUDED",
-          "movementIndex": 43,
-          "ignitionIndex": 40,
-          "basePrice": 0.85,
-          "outcome": {
-            "status": "OK",
-            "snapshotAt": "2026-09-01T00:19:44.157Z",
-            "returnPct": -7.36470588235294,
-            "mfePct": -7.36470588235294,
-            "maePct": -9.235294117647062,
-            "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:11:41.813Z"
-          }
-        },
-        {
-          "baseAt": "2026-08-31T22:19:53.369Z",
-          "symbol": "GMHS",
-          "lifecycle": "WATCH",
-          "shariaStatus": "EXCLUDED",
-          "movementIndex": 43,
-          "ignitionIndex": 40,
-          "basePrice": 0.85,
-          "outcome": {
-            "status": "OK",
-            "snapshotAt": "2026-09-01T00:19:44.157Z",
-            "returnPct": -7.36470588235294,
-            "mfePct": -7.36470588235294,
-            "maePct": -9.235294117647062,
-            "peakAt": "2026-08-31T23:43:00.802Z",
-            "troughAt": "2026-08-31T23:11:41.813Z"
           }
         }
       ]
