@@ -1,21 +1,22 @@
 {
   "schemaVersion": 1,
   "kind": "TAGX3_VALIDATION_SCORECARD_SUMMARY",
-  "generatedAt": "2026-09-01T06:57:22.643Z",
+  "generatedAt": "2026-09-01T07:49:23.216Z",
   "status": "MEASURING",
   "sessions": 3,
-  "snapshotCount": 36,
+  "snapshotCount": 37,
   "cadence": {
-    "scope": "WITHIN_SESSION",
-    "sessionCount": 3,
-    "ignoredCrossSessionGapCount": 2,
+    "scope": "ACTIVE_MARKET_WITHIN_SESSION",
+    "sessionCount": 2,
+    "ignoredCrossSessionGapCount": 1,
+    "ignoredClosedSnapshotCount": 26,
     "targetIntervalMin": 15,
     "toleranceMin": 9,
     "gapLimitMin": 24,
-    "intervalCount": 33,
-    "medianGapMin": 25.5373,
+    "intervalCount": 9,
+    "medianGapMin": 31.3165,
     "maxGapMin": 275.0846,
-    "excessiveGapCount": 17,
+    "excessiveGapCount": 5,
     "coverageHealthy": false
   },
   "protocol": {
@@ -55,7 +56,7 @@
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
         "STALE_OBSERVATION": 73448,
-        "MISSING": 191021
+        "MISSING": 198382
       }
     },
     "30": {
@@ -82,7 +83,7 @@
       "avgActionableMAE": -1.3035,
       "excludedOutcomeCounts": {
         "STALE_OBSERVATION": 74230,
-        "MISSING": 176256,
+        "MISSING": 183617,
         "MISSING_SYMBOL": 2
       }
     },
@@ -109,7 +110,7 @@
       "avgActionableMFE": -3.5016,
       "avgActionableMAE": -5.3623,
       "excludedOutcomeCounts": {
-        "MISSING": 176140,
+        "MISSING": 183501,
         "STALE_OBSERVATION": 65770,
         "MISSING_SYMBOL": 6
       }

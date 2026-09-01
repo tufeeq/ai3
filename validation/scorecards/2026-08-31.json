@@ -1,21 +1,22 @@
 {
   "schemaVersion": 1,
   "kind": "TAGX3_VALIDATION_SCORECARD_SUMMARY",
-  "generatedAt": "2026-09-01T06:58:29.477Z",
+  "generatedAt": "2026-09-01T07:50:18.684Z",
   "status": "MEASURING",
   "sessions": 1,
   "snapshotCount": 14,
   "cadence": {
-    "scope": "WITHIN_SESSION",
+    "scope": "ACTIVE_MARKET_WITHIN_SESSION",
     "sessionCount": 1,
     "ignoredCrossSessionGapCount": 0,
+    "ignoredClosedSnapshotCount": 5,
     "targetIntervalMin": 15,
     "toleranceMin": 9,
     "gapLimitMin": 24,
-    "intervalCount": 13,
-    "medianGapMin": 51.8074,
+    "intervalCount": 8,
+    "medianGapMin": 39.024,
     "maxGapMin": 275.0846,
-    "excessiveGapCount": 9,
+    "excessiveGapCount": 5,
     "coverageHealthy": false
   },
   "protocol": {

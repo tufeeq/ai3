@@ -1,22 +1,23 @@
 {
   "schemaVersion": 1,
   "kind": "TAGX3_VALIDATION_SCORECARD_SUMMARY",
-  "generatedAt": "2026-09-01T07:02:19.224Z",
+  "generatedAt": "2026-09-01T07:53:31.243Z",
   "status": "MEASURING",
   "sessions": 1,
-  "snapshotCount": 16,
+  "snapshotCount": 17,
   "cadence": {
-    "scope": "WITHIN_SESSION",
+    "scope": "ACTIVE_MARKET_WITHIN_SESSION",
     "sessionCount": 1,
     "ignoredCrossSessionGapCount": 0,
+    "ignoredClosedSnapshotCount": 15,
     "targetIntervalMin": 15,
     "toleranceMin": 9,
     "gapLimitMin": 24,
-    "intervalCount": 15,
-    "medianGapMin": 25.5373,
-    "maxGapMin": 59.7064,
-    "excessiveGapCount": 8,
-    "coverageHealthy": false
+    "intervalCount": 1,
+    "medianGapMin": 2.9981,
+    "maxGapMin": 2.9981,
+    "excessiveGapCount": 0,
+    "coverageHealthy": true
   },
   "protocol": {
     "name": "TAGX3 Commercial Validation Protocol v1",
@@ -54,7 +55,7 @@
       "avgActionableMFE": null,
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
-        "MISSING": 80971,
+        "MISSING": 88332,
         "STALE_OBSERVATION": 36805
       }
     },
@@ -82,7 +83,7 @@
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
         "STALE_OBSERVATION": 31288,
-        "MISSING": 73610
+        "MISSING": 80971
       }
     },
     "120": {
@@ -109,7 +110,7 @@
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
         "STALE_OBSERVATION": 53371,
-        "MISSING": 51527
+        "MISSING": 58888
       }
     }
   },

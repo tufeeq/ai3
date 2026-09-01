@@ -1,22 +1,23 @@
 {
   "schemaVersion": 1,
   "kind": "TAGX3_VALIDATION_SCORECARD_SUMMARY",
-  "generatedAt": "2026-09-01T06:58:13.568Z",
+  "generatedAt": "2026-09-01T07:50:05.389Z",
   "status": "INSUFFICIENT_FRESH_OBSERVATIONS",
   "sessions": 1,
   "snapshotCount": 6,
   "cadence": {
-    "scope": "WITHIN_SESSION",
-    "sessionCount": 1,
+    "scope": "ACTIVE_MARKET_WITHIN_SESSION",
+    "sessionCount": 0,
     "ignoredCrossSessionGapCount": 0,
+    "ignoredClosedSnapshotCount": 6,
     "targetIntervalMin": 15,
     "toleranceMin": 9,
     "gapLimitMin": 24,
-    "intervalCount": 5,
-    "medianGapMin": 1.1015,
-    "maxGapMin": 20.1142,
+    "intervalCount": 0,
+    "medianGapMin": null,
+    "maxGapMin": null,
     "excessiveGapCount": 0,
-    "coverageHealthy": true
+    "coverageHealthy": false
   },
   "protocol": {
     "name": "TAGX3 Commercial Validation Protocol v1",
