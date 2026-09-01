@@ -12,9 +12,10 @@ on:
       - 'scripts/sec-current-feed.mjs'
       - '.github/workflows/intelligence-feed.yml'
   # Prefer causal rebuilds after the upstream market-news workflow completes.
-  # Keep one independent hourly run as a safety net if the upstream trigger is delayed or unavailable.
+  # Keep an independent quarter-hour safety net because GitHub scheduled workflows
+  # can be delayed or skipped; each fallback refreshes market news in-process first.
   schedule:
-    - cron: '47 * * * *'
+    - cron: '2,17,32,47 * * * *'
 permissions:
   contents: write
 concurrency:
