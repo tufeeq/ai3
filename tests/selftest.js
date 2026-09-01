@@ -18,6 +18,13 @@ assert.notEqual(a.lifecycle,undefined);
 // Strong early signal should never be marked executable by the analysis engine itself.
 assert.equal(a.executable,false);
 
+// Live quote producer uses timestampET; it must survive normalization and freshness gating.
+const liveTimestampET=new Date().toISOString();
+const liveTimestampCase=E.analyze(q({observedAt:undefined,timestampET:liveTimestampET}),{},{});
+assert.equal(liveTimestampCase.observedAt,new Date(liveTimestampET).toISOString());
+assert.equal(liveTimestampCase.dataConfidence.fresh,true);
+assert.notEqual(liveTimestampCase.firstSeen,null);
+
 // Late/exhausted displacement must raise distribution/risk rather than look better just because price is up.
 const late=E.analyze(q({changePct:55,velocity5m:-1,velocity15m:-2}),{},{});
 assert(late.distributionRisk>a.distributionRisk);
