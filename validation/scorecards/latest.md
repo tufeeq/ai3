@@ -1,9 +1,9 @@
 # TAGX3 Validation Scorecard
 
-Generated: 2026-09-01T08:24:29.581Z
+Generated: 2026-09-01T08:37:09.023Z
 Status: **MEASURING**
-Sessions: **3** · Snapshots: **38**
-Cadence: target **15m** · median **39.024m** · max **474.935m** · excessive gaps **6** · healthy **no** · scope **active-market within-session** · closed snapshots ignored **26** · cross-session gaps ignored **1**
+Sessions: **3** · Snapshots: **39**
+Cadence: target **15m** · median **31.3165m** · max **474.935m** · excessive gaps **6** · healthy **no** · scope **active-market within-session** · closed snapshots ignored **26** · cross-session gaps ignored **1**
 
 > Measurement only. No production thresholds are changed and no trading edge is claimed.
 

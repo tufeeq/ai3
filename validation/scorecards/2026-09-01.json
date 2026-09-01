@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "kind": "TAGX3_VALIDATION_SCORECARD_SUMMARY",
-  "generatedAt": "2026-09-01T08:29:54.572Z",
+  "generatedAt": "2026-09-01T08:42:45.252Z",
   "status": "MEASURING",
   "sessions": 1,
-  "snapshotCount": 18,
+  "snapshotCount": 19,
   "cadence": {
     "scope": "ACTIVE_MARKET_WITHIN_SESSION",
     "sessionCount": 1,
@@ -13,8 +13,8 @@
     "targetIntervalMin": 15,
     "toleranceMin": 9,
     "gapLimitMin": 24,
-    "intervalCount": 2,
-    "medianGapMin": 238.9665,
+    "intervalCount": 3,
+    "medianGapMin": 12.4906,
     "maxGapMin": 474.935,
     "excessiveGapCount": 1,
     "coverageHealthy": false
@@ -56,7 +56,7 @@
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
         "MISSING": 95684,
-        "STALE_OBSERVATION": 36805
+        "STALE_OBSERVATION": 44157
       }
     },
     "30": {
@@ -83,7 +83,7 @@
       "avgActionableMAE": 18.5323,
       "excludedOutcomeCounts": {
         "STALE_OBSERVATION": 37977,
-        "MISSING": 80962,
+        "MISSING": 88314,
         "MISSING_SYMBOL": 12
       }
     },
@@ -111,7 +111,7 @@
       "avgActionableMAE": 27.7985,
       "excludedOutcomeCounts": {
         "STALE_OBSERVATION": 66749,
-        "MISSING": 51518,
+        "MISSING": 58870,
         "MISSING_SYMBOL": 24
       }
     }
@@ -1267,7 +1267,7 @@
           "basePrice": 3.43,
           "outcome": {
             "status": "OK",
-            "snapshotAt": "2026-09-01T08:17:40.142Z",
+            "snapshotAt": "2026-09-01T08:30:09.577Z",
             "returnPct": 37.02623906705539,
             "mfePct": 37.02623906705539,
             "maePct": 37.02623906705539,
@@ -1317,7 +1317,7 @@
           "basePrice": 1.19,
           "outcome": {
             "status": "OK",
-            "snapshotAt": "2026-09-01T08:17:40.142Z",
+            "snapshotAt": "2026-09-01T08:30:09.577Z",
             "returnPct": 36.13445378151262,
             "mfePct": 36.13445378151262,
             "maePct": 36.13445378151262,
@@ -1367,7 +1367,7 @@
           "basePrice": 1.32,
           "outcome": {
             "status": "OK",
-            "snapshotAt": "2026-09-01T08:17:40.142Z",
+            "snapshotAt": "2026-09-01T08:30:09.577Z",
             "returnPct": 15.909090909090907,
             "mfePct": 15.909090909090907,
             "maePct": 15.909090909090907,
@@ -1417,7 +1417,7 @@
           "basePrice": 4.56,
           "outcome": {
             "status": "OK",
-            "snapshotAt": "2026-09-01T08:17:40.142Z",
+            "snapshotAt": "2026-09-01T08:30:09.577Z",
             "returnPct": 12.061403508771946,
             "mfePct": 12.061403508771946,
             "maePct": 12.061403508771946,
@@ -1469,7 +1469,7 @@
           "basePrice": 0.43,
           "outcome": {
             "status": "OK",
-            "snapshotAt": "2026-09-01T08:17:40.142Z",
+            "snapshotAt": "2026-09-01T08:30:09.577Z",
             "returnPct": -4.651162790697678,
             "mfePct": -4.651162790697678,
             "maePct": -4.651162790697678,
@@ -1971,7 +1971,7 @@
           "basePrice": 2.68,
           "outcome": {
             "status": "OK",
-            "snapshotAt": "2026-09-01T08:17:40.142Z",
+            "snapshotAt": "2026-09-01T08:30:09.577Z",
             "returnPct": 55.597014925373124,
             "mfePct": 55.597014925373124,
             "maePct": 55.597014925373124,
@@ -2021,7 +2021,7 @@
           "basePrice": 1.19,
           "outcome": {
             "status": "OK",
-            "snapshotAt": "2026-09-01T08:17:40.142Z",
+            "snapshotAt": "2026-09-01T08:30:09.577Z",
             "returnPct": 36.13445378151262,
             "mfePct": 36.13445378151262,
             "maePct": 36.13445378151262,
@@ -2071,7 +2071,7 @@
           "basePrice": 1.23,
           "outcome": {
             "status": "OK",
-            "snapshotAt": "2026-09-01T08:17:40.142Z",
+            "snapshotAt": "2026-09-01T08:30:09.577Z",
             "returnPct": 5.691056910569111,
             "mfePct": 5.691056910569111,
             "maePct": 5.691056910569111,
