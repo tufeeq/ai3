@@ -55,6 +55,27 @@ assert.equal(flatCard.horizons[15].validCount,4,'advanced observations with unch
 assert.equal(flatCard.horizons[15].flatOutcomeCount,4,'scorecard must quantify flat outcomes rather than silently folding them into false positives');
 assert.equal(flatCard.horizons[15].flatOutcomeRate,1,'all-flat outcome windows must be surfaced as a measurement-bias diagnostic');
 
+const provenanceRows=[
+  snap('2026-08-30T23:00:00Z',10,10,'2026-08-30T23:00:00Z'),
+  snap('2026-08-30T23:15:00Z',10.2,10.1,'2026-08-30T23:15:00Z'),
+  snap('2026-08-30T23:30:00Z',10.3,10.2,'2026-08-30T23:30:00Z')
+];
+for(const o of provenanceRows[0].observations){o.source='feed-A';o.liveBacked=true}
+for(const o of provenanceRows[1].observations){o.source='feed-B';o.liveBacked=false}
+for(const o of provenanceRows[2].observations){o.source='feed-B';o.liveBacked=false}
+const provenanceEval=V.evaluateBase(provenanceRows[0],provenanceRows,protocol).find(x=>x.symbol==='AAA');
+assert.equal(provenanceEval.outcomes[15].status,'OK','provenance transitions are diagnostics, not automatic outcome exclusions');
+assert.equal(provenanceEval.outcomes[15].sourceChanged,true);
+assert.equal(provenanceEval.outcomes[15].baseSource,'feed-A');
+assert.equal(provenanceEval.outcomes[15].targetSource,'feed-B');
+assert.equal(provenanceEval.outcomes[15].liveBackedChanged,true);
+const provenanceCard=V.buildScorecard(provenanceRows,protocol);
+assert.equal(provenanceCard.horizons[15].validCount,4,'source diagnostics must not alter the performance denominator');
+assert.equal(provenanceCard.horizons[15].sourceChangedOutcomeCount,2,'source transitions must be quantified across valid outcomes');
+assert.equal(provenanceCard.horizons[15].sourceChangedOutcomeRate,0.5);
+assert.equal(provenanceCard.horizons[15].liveBackedChangedOutcomeCount,2);
+assert.equal(provenanceCard.horizons[15].liveBackedChangedOutcomeRate,0.5);
+
 const missingOnly=[snap('2026-08-30T21:00:00Z',10,10)];
 assert.equal(V.buildScorecard(missingOnly,protocol).status,'INSUFFICIENT_FUTURE_SNAPSHOTS','absence of horizon snapshots must remain a distinct diagnosis');
 
