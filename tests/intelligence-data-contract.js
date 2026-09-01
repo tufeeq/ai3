@@ -58,6 +58,19 @@ if(Object.prototype.hasOwnProperty.call(s,'secMarketwideDiscovery')){
   const actual=x.events.filter(e=>e.type==='SEC'&&e.discoveryScope==='MARKET_WIDE').length;
   assert.strictEqual(s.secMarketwideEventCount,actual,'market-wide SEC count must match events');
 }
+// Feed-level freshness must be measured across every loaded quote, not only the
+// ranked shortlist. Otherwise a fresh low-ranked quote can coexist with a stale
+// top-40 and incorrectly force the whole intelligence artifact fail-closed.
+const intelligenceBuilder=fs.readFileSync('scripts/build-intelligence.mjs','utf8');
+assert(/const rows=liveRows\(live\);/.test(intelligenceBuilder),'intelligence must preserve the full loaded quote universe for feed truth');
+assert(/const picks=shortlist\(rows,40\);/.test(intelligenceBuilder),'shortlist ranking must remain separate from feed truth');
+assert(/const truth=marketTruth\(rows\);/.test(intelligenceBuilder),'feed freshness must be computed from all loaded quotes');
+assert(!/marketTruth\(picks\)/.test(intelligenceBuilder),'shortlist must never determine feed-level freshness');
+assert(/x\.timestampET\|\|x\.observedAt/.test(intelligenceBuilder),'feed truth must accept upstream timestampET observations');
+if(Object.prototype.hasOwnProperty.call(s,'freshnessScope')){
+  assert.strictEqual(s.freshnessScope,'ALL_LOADED_QUOTES','freshness scope must remain full loaded universe');
+  assert(Number.isInteger(s.quoteCount)&&s.quoteCount>=x.shortlist.length,'quoteCount must cover at least the shortlist');
+}
 // Operational measurement contract: validation must observe the artifact after a
 // successful production intelligence rebuild. A scheduled fallback remains, but
 // validation must not dispatch intelligence itself; that old feedback topology
@@ -68,4 +81,4 @@ assert(/workflow_run:\s*\n\s*workflows:\s*\["TAGX3 Intelligence Feed"\]/m.test(v
 assert(/github\.event_name != 'workflow_run' \|\| github\.event\.workflow_run\.conclusion == 'success'/.test(validationWorkflow),'failed intelligence runs must not produce measurement snapshots');
 assert(!/gh workflow run intelligence-feed\.yml/.test(validationWorkflow),'validation must not dispatch intelligence or create a feedback loop');
 assert(validationWorkflow.indexOf('Core/UI/data-contract gate')<validationWorkflow.indexOf('Capture immutable validation snapshot'),'snapshot publication must remain behind full repository contracts');
-console.log(`intelligence-data contract ok: ${x.shortlist.length} shortlist symbols, ${eventSymbols.size} event symbols, ${x.events.length} events, live=${s.live}; post-intelligence validation coupling locked`);
+console.log(`intelligence-data contract ok: ${x.shortlist.length} shortlist symbols, ${eventSymbols.size} event symbols, ${x.events.length} events, live=${s.live}; full-universe freshness and post-intelligence validation coupling locked`);
