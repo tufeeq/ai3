@@ -8,6 +8,15 @@ assert.equal(V.selectHorizonSnapshot(rows,rows[0],30,2).capturedAt,'2026-08-30T1
 assert.equal(V.selectHorizonSnapshot(rows,rows[0],60,2),null,'missing horizon must not be interpolated');
 const p=V.pathStats(rows,rows[0],'AAA','2026-08-30T14:30:00Z');
 assert.equal(p.count,2);assert.ok(Math.abs(p.mfePct-20)<1e-9);assert.ok(p.maePct>=14.9,'path uses only future fresh observations through horizon');
+const duplicateQuoteRows=[
+  snap('2026-08-30T16:00:00Z',10,10,'2026-08-30T16:00:00Z'),
+  snap('2026-08-30T16:10:00Z',11,10.1,'2026-08-30T16:10:00Z'),
+  snap('2026-08-30T16:20:00Z',11,10.1,'2026-08-30T16:10:00Z'),
+  snap('2026-08-30T16:30:00Z',12,10.2,'2026-08-30T16:30:00Z')
+];
+const duplicatePath=V.pathStats(duplicateQuoteRows,duplicateQuoteRows[0],'AAA','2026-08-30T16:30:00Z');
+assert.equal(duplicatePath.count,2,'repeated captures of the same observedAt must not manufacture extra path depth');
+assert.ok(Math.abs(duplicatePath.mfePct-20)<1e-9,'deduplicating quote timestamps must preserve measured price excursion');
 const card=V.buildScorecard(rows,protocol);
 assert.equal(card.status,'MEASURING');
 assert.equal(card.snapshotCount,4);
