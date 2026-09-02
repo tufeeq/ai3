@@ -71,6 +71,26 @@ if(Object.prototype.hasOwnProperty.call(s,'freshnessScope')){
   assert.strictEqual(s.freshnessScope,'ALL_LOADED_QUOTES','freshness scope must remain full loaded universe');
   assert(Number.isInteger(s.quoteCount)&&s.quoteCount>=x.shortlist.length,'quoteCount must cover at least the shortlist');
 }
+// Operational provenance must be captured at build time so historical artifacts
+// can distinguish producer/envelope lag from stale quote observations. These
+// diagnostics must not participate in marketDataFresh/live eligibility.
+for(const token of ['upstreamFeedFetchedAt','upstreamUpdatedAtAtBuild','upstreamNewestObservedAtAtBuild','upstreamUpdateAgeAtFetchMin','upstreamObservationAgeAtFetchMin']){
+  assert(intelligenceBuilder.includes(token),`intelligence builder must retain ${token}`);
+}
+assert(/upstreamUpdatedAt=normalizedIso\(live\?\.updatedAtUTC\|\|live\?\.updatedAtET\)/.test(intelligenceBuilder),'upstream envelope timestamp must come from the fetched feed itself');
+assert(/upstreamObservationAgeAtFetchMin=ageMinBetween\(liveFetchedAt,truth\.newestObservedAt\)/.test(intelligenceBuilder),'upstream observation age must compare fetch time to quote observation time');
+assert(/marketDataFresh=marketWindowOpen&&marketDataAgeMin!==null&&marketDataAgeMin<=15/.test(intelligenceBuilder),'freshness gate must remain quote-observation based and <=15 minutes');
+assert(!/marketDataFresh[^;\n]*upstream(Update|Observation|Feed)/.test(intelligenceBuilder),'diagnostic upstream provenance must never override freshness eligibility');
+assert(/Upstream feed timestamps are retained only as operational provenance/.test(intelligenceBuilder),'policy must state that upstream provenance is diagnostic only');
+// Once a generated artifact contains the additive provenance fields, keep their
+// shape strict without making old pre-migration artifacts fail CI before the next
+// scheduled Intelligence rebuild lands.
+if(Object.prototype.hasOwnProperty.call(s,'upstreamFeedFetchedAt')){
+  for(const k of ['upstreamFeedFetchedAt','upstreamUpdatedAtAtBuild','upstreamNewestObservedAtAtBuild']){
+    assert(Number.isFinite(Date.parse(s[k]||'')),`${k} must be parseable when present`);
+  }
+  for(const k of ['upstreamUpdateAgeAtFetchMin','upstreamObservationAgeAtFetchMin'])assert(Number.isFinite(s[k])&&s[k]>=0,`${k} must be a non-negative number when present`);
+}
 // Operational measurement contract: validation must observe the artifact after a
 // successful production intelligence rebuild. A scheduled fallback remains, but
 // validation must not dispatch intelligence itself; that old feedback topology
@@ -81,4 +101,4 @@ assert(/workflow_run:\s*\n\s*workflows:\s*\["TAGX3 Intelligence Feed"\]/m.test(v
 assert(/github\.event_name != 'workflow_run' \|\| github\.event\.workflow_run\.conclusion == 'success'/.test(validationWorkflow),'failed intelligence runs must not produce measurement snapshots');
 assert(!/gh workflow run intelligence-feed\.yml/.test(validationWorkflow),'validation must not dispatch intelligence or create a feedback loop');
 assert(validationWorkflow.indexOf('Core/UI/data-contract gate')<validationWorkflow.indexOf('Capture immutable validation snapshot'),'snapshot publication must remain behind full repository contracts');
-console.log(`intelligence-data contract ok: ${x.shortlist.length} shortlist symbols, ${eventSymbols.size} event symbols, ${x.events.length} events, live=${s.live}; full-universe freshness and post-intelligence validation coupling locked`);
+console.log(`intelligence-data contract ok: ${x.shortlist.length} shortlist symbols, ${eventSymbols.size} event symbols, ${x.events.length} events, live=${s.live}; full-universe freshness, immutable upstream provenance, and post-intelligence validation coupling locked`);
