@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-02T01:17:47.030Z",
+  "generatedAt": "2026-09-02T02:16:52.722Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,12 +8,17 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-09-02T00:00:00.000Z",
-    "marketDataAgeMin": 77.8,
+    "marketDataAgeMin": 136.9,
     "quoteCount": 500,
     "freshnessScope": "ALL_LOADED_QUOTES",
+    "upstreamFeedFetchedAt": "2026-09-02T02:16:53.023Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-02T01:15:26.231Z",
+    "upstreamNewestObservedAtAtBuild": "2026-09-02T00:00:00.000Z",
+    "upstreamUpdateAgeAtFetchMin": 61.4,
+    "upstreamObservationAgeAtFetchMin": 136.9,
     "secMapping": true,
-    "secMarketwideDiscovery": false,
-    "secMarketwideEventCount": 239,
+    "secMarketwideDiscovery": true,
+    "secMarketwideEventCount": 234,
     "newsDiscovery": true
   },
   "shortlist": [
@@ -500,7 +505,7 @@
       "cik": "0001422892"
     }
   },
-  "eventCount": 313,
+  "eventCount": 308,
   "events": [
     {
       "symbol": "GS-PD",
@@ -678,6 +683,18 @@
       "publishedAt": "2026-09-01T17:22:13-04:00",
       "headline": "424B filing — JPMORGAN CHASE & CO",
       "url": "https://www.sec.gov/Archives/edgar/data/19617/000191870426026052/0001918704-26-026052-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "CYAB",
+      "title": "CYABRA, INC.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-01T17:21:59-04:00",
+      "headline": "S-1 filing — CYABRA, INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2032341/000121390026096300/0001213900-26-096300-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -942,6 +959,18 @@
       "publishedAt": "2026-09-01T17:15:27-04:00",
       "headline": "8-K filing — authID Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1534154/000121390026096295/0001213900-26-096295-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "FNGR",
+      "title": "FingerMotion, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-01T17:15:24-04:00",
+      "headline": "S-1 filing — FingerMotion, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1602409/000149315226041059/0001493152-26-041059-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -3167,6 +3196,30 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "CAPI",
+      "title": "CAPSTONE 72, INC.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-01T06:05:11-04:00",
+      "headline": "S-1 filing — CAPSTONE 72, INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2066925/000149315226040914/0001493152-26-040914-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "ENT",
+      "title": "ENTRATA, INC.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-01T06:03:52-04:00",
+      "headline": "S-1 filing — ENTRATA, INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2028464/000162828026059692/0001628280-26-059692-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "SNAL",
       "title": "Snail, Inc.",
       "type": "SEC",
@@ -3191,6 +3244,18 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
+      "symbol": "USDEW",
+      "title": "StableCoinX Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-08-31T17:29:44-04:00",
+      "headline": "S-1 filing — StableCoinX Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2080215/000121390026095808/0001213900-26-095808-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "TGEN",
       "title": "TECOGEN INC.",
       "type": "SEC",
@@ -3198,6 +3263,18 @@
       "publishedAt": "2026-08-31T17:24:24-04:00",
       "headline": "S-3 filing — TECOGEN INC.",
       "url": "https://www.sec.gov/Archives/edgar/data/1537435/000153743526000073/0001537435-26-000073-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "TGEN",
+      "title": "TECOGEN INC.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-08-31T17:22:09-04:00",
+      "headline": "S-1 filing — TECOGEN INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1537435/000153743526000071/0001537435-26-000071-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -3263,6 +3340,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "MENW",
+      "title": "Tailored Brands, Inc. / DE",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-08-31T16:11:30-04:00",
+      "headline": "S-1 filing — Tailored Brands, Inc. / DE",
+      "url": "https://www.sec.gov/Archives/edgar/data/2045151/000121390026095715/0001213900-26-095715-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "PMVP",
       "title": "PMV Pharmaceuticals, Inc.",
       "type": "SEC",
@@ -3273,6 +3362,30 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "ONCO",
+      "title": "Onconetix, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-08-31T16:05:41-04:00",
+      "headline": "S-1 filing — Onconetix, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1782107/000121390026095703/0001213900-26-095703-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "SYTN",
+      "title": "Syntiant Corp.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-08-31T12:56:42-04:00",
+      "headline": "S-1 filing — Syntiant Corp.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1718728/000119312526376166/0001193125-26-376166-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
     },
     {
       "symbol": "BLRX",
@@ -3323,162 +3436,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "ETS",
-      "title": "Elite Express Holding Inc.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-08-28T19:50:12-04:00",
-      "headline": "S-3 filing — Elite Express Holding Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2053641/000110465926103393/0001104659-26-103393-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "SPRO",
-      "title": "Spero Therapeutics, Inc.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-08-28T17:04:22-04:00",
-      "headline": "S-3 filing — Spero Therapeutics, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1701108/000119312526374702/0001193125-26-374702-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "FLO",
-      "title": "FLOWERS FOODS INC",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-08-28T16:58:01-04:00",
-      "headline": "S-3 filing — FLOWERS FOODS INC",
-      "url": "https://www.sec.gov/Archives/edgar/data/1128928/000119312526374687/0001193125-26-374687-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "ADIL",
-      "title": "ADIAL PHARMACEUTICALS, INC.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-08-28T16:49:01-04:00",
-      "headline": "S-3 filing — ADIAL PHARMACEUTICALS, INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1513525/000121390026095122/0001213900-26-095122-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "H",
-      "title": "Hyatt Hotels Corp",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-08-28T16:39:37-04:00",
-      "headline": "S-3 filing — Hyatt Hotels Corp",
-      "url": "https://www.sec.gov/Archives/edgar/data/1468174/000110465926103248/0001104659-26-103248-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "HOVRW",
-      "title": "New Horizon Aircraft Ltd.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-08-28T16:30:50-04:00",
-      "headline": "S-3 filing — New Horizon Aircraft Ltd.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1930021/000121390026095090/0001213900-26-095090-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "LOW",
-      "title": "LOWES COMPANIES INC",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-08-28T16:26:10-04:00",
-      "headline": "S-3 filing — LOWES COMPANIES INC",
-      "url": "https://www.sec.gov/Archives/edgar/data/60667/000162828026059420/0001628280-26-059420-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "OSS",
-      "title": "ONE STOP SYSTEMS, INC.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-08-28T16:25:05-04:00",
-      "headline": "S-3 filing — ONE STOP SYSTEMS, INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1394056/000119312526374513/0001193125-26-374513-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "TGT",
-      "title": "TARGET CORP",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-08-28T16:25:00-04:00",
-      "headline": "S-3 filing — TARGET CORP",
-      "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000045/0000027419-26-000045-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "VNRX",
-      "title": "VOLITIONRX LTD",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-08-28T16:21:00-04:00",
-      "headline": "S-3 filing — VOLITIONRX LTD",
-      "url": "https://www.sec.gov/Archives/edgar/data/93314/000147793226005317/0001477932-26-005317-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "FET",
-      "title": "FORUM ENERGY TECHNOLOGIES, INC.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-08-28T16:12:15-04:00",
-      "headline": "S-3 filing — FORUM ENERGY TECHNOLOGIES, INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1401257/000140125726000061/0001401257-26-000061-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "KRP",
-      "title": "Kimbell Royalty Partners, LP",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-08-28T16:10:33-04:00",
-      "headline": "S-3 filing — Kimbell Royalty Partners, LP",
-      "url": "https://www.sec.gov/Archives/edgar/data/1657788/000110465926103195/0001104659-26-103195-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "LIVE",
-      "title": "LIVE VENTURES Inc",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-08-28T14:53:15-04:00",
-      "headline": "S-3 filing — LIVE VENTURES Inc",
-      "url": "https://www.sec.gov/Archives/edgar/data/1045742/000143774926029163/0001437749-26-029163-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
       "symbol": "SBFM",
       "title": "Sunshine Biopharma Inc.",
       "type": "SEC",
@@ -3501,18 +3458,6 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "MBUU",
-      "title": "MALIBU BOATS, INC.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-08-28T09:10:13-04:00",
-      "headline": "S-3 filing — MALIBU BOATS, INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1590976/000119312526372426/0001193125-26-372426-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
     },
     {
       "symbol": "BLRX",
@@ -5824,6 +5769,23 @@
       ],
       "eventCount": 11
     },
+    "CYAB": {
+      "events": [
+        {
+          "symbol": "CYAB",
+          "title": "CYABRA, INC.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-01T17:21:59-04:00",
+          "headline": "S-1 filing — CYABRA, INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2032341/000121390026096300/0001213900-26-096300-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "DSGX": {
       "events": [
         {
@@ -6163,6 +6125,23 @@
           "publishedAt": "2026-09-01T17:15:27-04:00",
           "headline": "8-K filing — authID Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1534154/000121390026096295/0001213900-26-096295-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "FNGR": {
+      "events": [
+        {
+          "symbol": "FNGR",
+          "title": "FingerMotion, Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-01T17:15:24-04:00",
+          "headline": "S-1 filing — FingerMotion, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1602409/000149315226041059/0001493152-26-041059-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -8717,6 +8696,57 @@
       ],
       "eventCount": 1
     },
+    "CAPI": {
+      "events": [
+        {
+          "symbol": "CAPI",
+          "title": "CAPSTONE 72, INC.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-01T06:05:11-04:00",
+          "headline": "S-1 filing — CAPSTONE 72, INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2066925/000149315226040914/0001493152-26-040914-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "ENT": {
+      "events": [
+        {
+          "symbol": "ENT",
+          "title": "ENTRATA, INC.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-01T06:03:52-04:00",
+          "headline": "S-1 filing — ENTRATA, INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2028464/000162828026059692/0001628280-26-059692-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "USDEW": {
+      "events": [
+        {
+          "symbol": "USDEW",
+          "title": "StableCoinX Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-08-31T17:29:44-04:00",
+          "headline": "S-1 filing — StableCoinX Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2080215/000121390026095808/0001213900-26-095808-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "TGEN": {
       "events": [
         {
@@ -8730,9 +8760,21 @@
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "TGEN",
+          "title": "TECOGEN INC.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-08-31T17:22:09-04:00",
+          "headline": "S-1 filing — TECOGEN INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1537435/000153743526000071/0001537435-26-000071-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
         }
       ],
-      "eventCount": 1
+      "eventCount": 2
     },
     "EOSEW": {
       "events": [
@@ -8785,16 +8827,16 @@
       ],
       "eventCount": 1
     },
-    "ETS": {
+    "MENW": {
       "events": [
         {
-          "symbol": "ETS",
-          "title": "Elite Express Holding Inc.",
+          "symbol": "MENW",
+          "title": "Tailored Brands, Inc. / DE",
           "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-08-28T19:50:12-04:00",
-          "headline": "S-3 filing — Elite Express Holding Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2053641/000110465926103393/0001104659-26-103393-index.htm",
+          "form": "S-1",
+          "publishedAt": "2026-08-31T16:11:30-04:00",
+          "headline": "S-1 filing — Tailored Brands, Inc. / DE",
+          "url": "https://www.sec.gov/Archives/edgar/data/2045151/000121390026095715/0001213900-26-095715-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -8802,16 +8844,16 @@
       ],
       "eventCount": 1
     },
-    "SPRO": {
+    "ONCO": {
       "events": [
         {
-          "symbol": "SPRO",
-          "title": "Spero Therapeutics, Inc.",
+          "symbol": "ONCO",
+          "title": "Onconetix, Inc.",
           "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-08-28T17:04:22-04:00",
-          "headline": "S-3 filing — Spero Therapeutics, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1701108/000119312526374702/0001193125-26-374702-index.htm",
+          "form": "S-1",
+          "publishedAt": "2026-08-31T16:05:41-04:00",
+          "headline": "S-1 filing — Onconetix, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1782107/000121390026095703/0001213900-26-095703-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -8819,203 +8861,16 @@
       ],
       "eventCount": 1
     },
-    "FLO": {
+    "SYTN": {
       "events": [
         {
-          "symbol": "FLO",
-          "title": "FLOWERS FOODS INC",
+          "symbol": "SYTN",
+          "title": "Syntiant Corp.",
           "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-08-28T16:58:01-04:00",
-          "headline": "S-3 filing — FLOWERS FOODS INC",
-          "url": "https://www.sec.gov/Archives/edgar/data/1128928/000119312526374687/0001193125-26-374687-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "ADIL": {
-      "events": [
-        {
-          "symbol": "ADIL",
-          "title": "ADIAL PHARMACEUTICALS, INC.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-08-28T16:49:01-04:00",
-          "headline": "S-3 filing — ADIAL PHARMACEUTICALS, INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1513525/000121390026095122/0001213900-26-095122-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "H": {
-      "events": [
-        {
-          "symbol": "H",
-          "title": "Hyatt Hotels Corp",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-08-28T16:39:37-04:00",
-          "headline": "S-3 filing — Hyatt Hotels Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/1468174/000110465926103248/0001104659-26-103248-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "HOVRW": {
-      "events": [
-        {
-          "symbol": "HOVRW",
-          "title": "New Horizon Aircraft Ltd.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-08-28T16:30:50-04:00",
-          "headline": "S-3 filing — New Horizon Aircraft Ltd.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1930021/000121390026095090/0001213900-26-095090-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "LOW": {
-      "events": [
-        {
-          "symbol": "LOW",
-          "title": "LOWES COMPANIES INC",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-08-28T16:26:10-04:00",
-          "headline": "S-3 filing — LOWES COMPANIES INC",
-          "url": "https://www.sec.gov/Archives/edgar/data/60667/000162828026059420/0001628280-26-059420-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "OSS": {
-      "events": [
-        {
-          "symbol": "OSS",
-          "title": "ONE STOP SYSTEMS, INC.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-08-28T16:25:05-04:00",
-          "headline": "S-3 filing — ONE STOP SYSTEMS, INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1394056/000119312526374513/0001193125-26-374513-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "TGT": {
-      "events": [
-        {
-          "symbol": "TGT",
-          "title": "TARGET CORP",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-08-28T16:25:00-04:00",
-          "headline": "S-3 filing — TARGET CORP",
-          "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000045/0000027419-26-000045-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "VNRX": {
-      "events": [
-        {
-          "symbol": "VNRX",
-          "title": "VOLITIONRX LTD",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-08-28T16:21:00-04:00",
-          "headline": "S-3 filing — VOLITIONRX LTD",
-          "url": "https://www.sec.gov/Archives/edgar/data/93314/000147793226005317/0001477932-26-005317-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "FET": {
-      "events": [
-        {
-          "symbol": "FET",
-          "title": "FORUM ENERGY TECHNOLOGIES, INC.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-08-28T16:12:15-04:00",
-          "headline": "S-3 filing — FORUM ENERGY TECHNOLOGIES, INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1401257/000140125726000061/0001401257-26-000061-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "KRP": {
-      "events": [
-        {
-          "symbol": "KRP",
-          "title": "Kimbell Royalty Partners, LP",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-08-28T16:10:33-04:00",
-          "headline": "S-3 filing — Kimbell Royalty Partners, LP",
-          "url": "https://www.sec.gov/Archives/edgar/data/1657788/000110465926103195/0001104659-26-103195-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "LIVE": {
-      "events": [
-        {
-          "symbol": "LIVE",
-          "title": "LIVE VENTURES Inc",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-08-28T14:53:15-04:00",
-          "headline": "S-3 filing — LIVE VENTURES Inc",
-          "url": "https://www.sec.gov/Archives/edgar/data/1045742/000143774926029163/0001437749-26-029163-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "MBUU": {
-      "events": [
-        {
-          "symbol": "MBUU",
-          "title": "MALIBU BOATS, INC.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-08-28T09:10:13-04:00",
-          "headline": "S-3 filing — MALIBU BOATS, INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1590976/000119312526372426/0001193125-26-372426-index.htm",
+          "form": "S-1",
+          "publishedAt": "2026-08-31T12:56:42-04:00",
+          "headline": "S-1 filing — Syntiant Corp.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1718728/000119312526376166/0001193125-26-376166-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -9024,9 +8879,6 @@
       "eventCount": 1
     }
   },
-  "errors": [
-    "SEC_CURRENT_S-1:This operation was aborted",
-    "SEC_CURRENT_SC 13G:This operation was aborted"
-  ],
-  "policy": "Public-source intelligence. Market-wide SEC current-filing discovery is primary-source and independent of the price shortlist. `sourceStatus.live` means the loaded market universe contains fresh market data inside the active US extended-hours window; loaded-but-stale/session-final data is never labeled live. Shortlist ranking does not determine feed-level freshness. SEC filings are primary-source events; GDELT is discovery-only and requires source-level verification before trade decisions."
+  "errors": [],
+  "policy": "Public-source intelligence. Market-wide SEC current-filing discovery is primary-source and independent of the price shortlist. `sourceStatus.live` means the loaded market universe contains fresh market data inside the active US extended-hours window; loaded-but-stale/session-final data is never labeled live. Shortlist ranking does not determine feed-level freshness. Upstream feed timestamps are retained only as operational provenance and do not override quote observation freshness or trading eligibility. SEC filings are primary-source events; GDELT is discovery-only and requires source-level verification before trade decisions."
 }
