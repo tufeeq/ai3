@@ -79,8 +79,9 @@ for(const token of ['upstreamFeedFetchedAt','upstreamUpdatedAtAtBuild','upstream
 }
 assert(/upstreamUpdatedAt=normalizedIso\(live\?\.updatedAtUTC\|\|live\?\.updatedAtET\)/.test(intelligenceBuilder),'upstream envelope timestamp must come from the fetched feed itself');
 assert(/upstreamObservationAgeAtFetchMin=ageMinBetween\(liveFetchedAt,truth\.newestObservedAt\)/.test(intelligenceBuilder),'upstream observation age must compare fetch time to quote observation time');
-assert(/marketDataFresh=marketWindowOpen&&marketDataAgeMin!==null&&marketDataAgeMin<=15/.test(intelligenceBuilder),'freshness gate must remain quote-observation based and <=15 minutes');
-assert(!/marketDataFresh[^;\n]*upstream(Update|Observation|Feed)/.test(intelligenceBuilder),'diagnostic upstream provenance must never override freshness eligibility');
+const marketTruthSource=(intelligenceBuilder.match(/function marketTruth\(rows\)\{[\s\S]*?\n\}/)||[])[0]||'';
+assert(/marketDataFresh=marketWindowOpen&&marketDataAgeMin!==null&&marketDataAgeMin<=15/.test(marketTruthSource),'freshness gate must remain quote-observation based and <=15 minutes');
+assert(!/upstream(Update|Observation|Feed)/.test(marketTruthSource),'diagnostic upstream provenance must never enter market freshness truth');
 assert(/Upstream feed timestamps are retained only as operational provenance/.test(intelligenceBuilder),'policy must state that upstream provenance is diagnostic only');
 // Once a generated artifact contains the additive provenance fields, keep their
 // shape strict without making old pre-migration artifacts fail CI before the next
