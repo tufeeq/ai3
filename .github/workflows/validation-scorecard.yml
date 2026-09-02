@@ -7,8 +7,10 @@ on:
       - 'core/validation-engine.js'
       - 'validation/protocol.json'
       - 'scripts/build-validation-scorecard.mjs'
+      - 'scripts/build-validation-capture-provenance.mjs'
       - 'tests/validation-engine-contract.js'
       - 'tests/validation-scorecard-report-contract.mjs'
+      - 'tests/validation-capture-provenance-contract.mjs'
       - 'tests/validation-workflow-contract.js'
       - '.github/workflows/validation-scorecard.yml'
       - 'package.json'
@@ -42,6 +44,8 @@ jobs:
         run: npm test
       - name: Build causal validation scorecards
         run: npm run validation:scorecard
+      - name: Build capture provenance diagnostics
+        run: npm run validation:capture-provenance
       - name: Commit scorecards
         run: |
           set -euo pipefail
