@@ -24,6 +24,18 @@ const sha256=s=>crypto.createHash('sha256').update(s).digest('hex');
 const n=v=>{if(v==null||v==='')return null;const x=Number(String(v).replace(/[%,$,]/g,''));return Number.isFinite(x)?x:null};
 const iso=v=>{if(v==null||v==='')return null;const t=new Date(v);return Number.isFinite(t.getTime())?t.toISOString():null};
 const symbolOf=r=>String(r?.symbol||r?.ticker||r?.Ticker||'').toUpperCase().trim();
+const str=v=>{const x=String(v??'').trim();return x||null};
+
+export function captureContext(env=process.env){
+  return {
+    trigger:str(env.GITHUB_EVENT_NAME)||'local',
+    workflow:str(env.GITHUB_WORKFLOW),
+    runId:str(env.GITHUB_RUN_ID),
+    runAttempt:n(env.GITHUB_RUN_ATTEMPT),
+    headSha:str(env.GITHUB_SHA),
+    refName:str(env.GITHUB_REF_NAME)
+  };
+}
 
 export function rowsOf(payload){
   if(Array.isArray(payload))return payload;
@@ -88,7 +100,7 @@ async function fetchJson(name,url){
   return {name,url,data,bytes:Buffer.byteLength(text),sha256:sha256(text),fetchedAt:new Date().toISOString(),latencyMs:Date.now()-started};
 }
 
-export function buildSnapshot(downloads,capturedAt=new Date().toISOString()){
+export function buildSnapshot(downloads,capturedAt=new Date().toISOString(),capture=captureContext({})){
   const by=Object.fromEntries(downloads.map(x=>[x.name,x]));
   const merged=U.merge(by.live.data,by.broad.data,by.fast.data,by.rich.data,by.extended.data,by.hot.data);
   const observations=merged.quotes.map(minimalObservation).filter(Boolean).sort((a,b)=>a.symbol.localeCompare(b.symbol));
@@ -96,10 +108,11 @@ export function buildSnapshot(downloads,capturedAt=new Date().toISOString()){
   const intel=by.intelligence.data||{},news=by.marketNews.data||{};
   const signals=signalRows(merged.quotes,intel,by.sharia.data,capturedAt);
   return {
-    schemaVersion:2,
+    schemaVersion:3,
     kind:'TAGX3_VALIDATION_SNAPSHOT',
     capturedAt,
     immutable:true,
+    capture,
     methodology:{purpose:'out-of-sample measurement; no threshold tuning from isolated cases',executable:false,signalCapture:'production engine outputs frozen at capture time'},
     market:{session:by.live.data?.marketClockSession||by.live.data?.session||null,freshCount:n(by.live.data?.freshCount),liveRequested:n(by.live.data?.requested),liveCount:n(by.live.data?.count)},
     coverage:{mergedSymbols:observations.length,signalSymbols:signals.length,broadRows:rowsOf(by.broad.data).length,fastRows:rowsOf(by.fast.data).length,richRows:rowsOf(by.rich.data).length,extendedRows:rowsOf(by.extended.data).length,hotRows:rowsOf(by.hot.data).length,symbolsSha256:sha256(symbols.join('\n'))},
@@ -138,6 +151,7 @@ export function validateSnapshot(s){
   const errors=[];
   if(s?.kind!=='TAGX3_VALIDATION_SNAPSHOT')errors.push('wrong kind');
   if(s?.immutable!==true)errors.push('snapshot must be immutable');
+  if(s?.schemaVersion>=3&&!str(s?.capture?.trigger))errors.push('missing capture trigger provenance');
   if(!Number.isInteger(s?.coverage?.mergedSymbols)||s.coverage.mergedSymbols<1)errors.push('no merged symbols');
   if(!Array.isArray(s?.observations)||s.observations.length!==s?.coverage?.mergedSymbols)errors.push('observation count mismatch');
   if(s.schemaVersion>=2&&(!Array.isArray(s.signals)||s.signals.length!==s.coverage.signalSymbols))errors.push('signal count mismatch');
@@ -151,7 +165,7 @@ export function validateSnapshot(s){
 async function main(){
   const downloads=await Promise.all(Object.entries(SOURCES).map(([name,url])=>fetchJson(name,url)));
   const capturedAt=new Date().toISOString();
-  const snapshot=buildSnapshot(downloads,capturedAt);
+  const snapshot=buildSnapshot(downloads,capturedAt,captureContext());
   const errors=validateSnapshot(snapshot);if(errors.length)throw new Error(errors.join('; '));
   const previousFile=await latestSnapshotFile();
   if(previousFile){
@@ -167,7 +181,7 @@ async function main(){
   const file=path.join(dir,`${stamp}.json`);
   try{await fs.access(file);throw new Error(`immutable snapshot already exists: ${file}`)}catch(e){if(e?.code!=='ENOENT')throw e}
   await fs.writeFile(file,JSON.stringify(snapshot)+'\n','utf8');
-  console.log(JSON.stringify({file,mergedSymbols:snapshot.coverage.mergedSymbols,signals:snapshot.coverage.signalSymbols,session:snapshot.market.session,events:snapshot.intelligence.eventCount,marketNews:snapshot.intelligence.marketNewsCount,sharia:snapshot.sharia},null,2));
+  console.log(JSON.stringify({file,mergedSymbols:snapshot.coverage.mergedSymbols,signals:snapshot.coverage.signalSymbols,session:snapshot.market.session,trigger:snapshot.capture.trigger,runId:snapshot.capture.runId,events:snapshot.intelligence.eventCount,marketNews:snapshot.intelligence.marketNewsCount,sharia:snapshot.sharia},null,2));
 }
 
 const isMain=process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url);
