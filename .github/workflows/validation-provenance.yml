@@ -1,0 +1,45 @@
+name: TAGX3 Validation Provenance
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["TAGX3 Validation Snapshots"]
+    types: [completed]
+permissions:
+  contents: write
+concurrency:
+  group: tagx3-validation-provenance
+  cancel-in-progress: true
+jobs:
+  provenance:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Rebase latest main
+        run: git pull --rebase origin main
+      - name: Syntax/static gate
+        run: npm run check
+      - name: Capture provenance contract
+        run: node tests/validation-capture-provenance-contract.mjs
+      - name: Refresh capture provenance diagnostics
+        run: npm run validation:capture-provenance
+      - name: Commit provenance diagnostics
+        run: |
+          set -euo pipefail
+          git config user.name 'TAGX3 Validation Bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add validation/scorecards/capture-provenance.json validation/scorecards/capture-provenance.md
+          git diff --cached --quiet && exit 0
+          git commit -m 'validation: refresh capture provenance'
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep $((i*5))
+          done
+          exit 1
