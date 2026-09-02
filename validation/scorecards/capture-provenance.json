@@ -1,27 +1,28 @@
 {
-  "generatedAt": "2026-09-02T07:04:26.633Z",
+  "generatedAt": "2026-09-02T12:04:21.513Z",
   "schemaVersion": 1,
   "kind": "TAGX3_VALIDATION_CAPTURE_PROVENANCE",
-  "snapshotCount": 68,
-  "eligibleSignalSnapshotCount": 67,
-  "activeMarketEligibleSnapshotCount": 30,
-  "schemaV3Count": 3,
-  "triggerProvenanceCount": 3,
-  "triggerProvenanceCoverageRate": 0.0441,
-  "runIdCount": 3,
-  "runIdCoverageRate": 0.0441,
+  "snapshotCount": 70,
+  "eligibleSignalSnapshotCount": 69,
+  "activeMarketEligibleSnapshotCount": 31,
+  "schemaV3Count": 5,
+  "triggerProvenanceCount": 5,
+  "triggerProvenanceCoverageRate": 0.0714,
+  "runIdCount": 5,
+  "runIdCoverageRate": 0.0714,
   "byTrigger": {
     "MISSING": 65,
     "push": 2,
-    "workflow_run": 1
+    "workflow_run": 3
   },
   "eligibleByTrigger": {
     "MISSING": 64,
     "push": 2,
-    "workflow_run": 1
+    "workflow_run": 3
   },
   "activeMarketByTrigger": {
-    "MISSING": 30
+    "MISSING": 30,
+    "workflow_run": 1
   },
   "guardrails": {
     "tradingThresholdsChanged": false,
