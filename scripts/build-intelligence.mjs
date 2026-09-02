@@ -7,6 +7,8 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const now=new Date();
 const iso=now.toISOString();
 const daysAgo=(d,n)=>Date.now()-new Date(d||0).getTime()<=n*86400000;
+const normalizedIso=v=>{const t=Date.parse(v||'');return Number.isFinite(t)?new Date(t).toISOString():null};
+const ageMinBetween=(newer,older)=>{const a=Date.parse(newer||''),b=Date.parse(older||'');return Number.isFinite(a)&&Number.isFinite(b)?Number(Math.max(0,(a-b)/60000).toFixed(1)):null};
 
 async function getJson(url,{headers={},timeout=10000}={}){
   const ac=new AbortController(); const t=setTimeout(()=>ac.abort(),timeout);
@@ -113,12 +115,15 @@ function dedupeEvents(events){
 
 async function main(){
   const errors=[];
-  let live=null, mapping=null;
-  try{live=await getJson('https://raw.githubusercontent.com/tufeeq/ai/main/tag/data/live-quotes.json',{timeout:10000})}catch(e){errors.push(`LIVE:${e.message}`)}
+  let live=null, mapping=null, liveFetchedAt=null;
+  try{live=await getJson('https://raw.githubusercontent.com/tufeeq/ai/main/tag/data/live-quotes.json',{timeout:10000});liveFetchedAt=new Date().toISOString()}catch(e){errors.push(`LIVE:${e.message}`)}
   try{mapping=await getJson('https://www.sec.gov/files/company_tickers.json',{timeout:10000})}catch(e){errors.push(`SEC_MAPPING:${e.message}`)}
   const rows=liveRows(live);
   const picks=shortlist(rows,40);
   const truth=marketTruth(rows);
+  const upstreamUpdatedAt=normalizedIso(live?.updatedAtUTC||live?.updatedAtET);
+  const upstreamUpdateAgeAtFetchMin=ageMinBetween(liveFetchedAt,upstreamUpdatedAt);
+  const upstreamObservationAgeAtFetchMin=ageMinBetween(liveFetchedAt,truth.newestObservedAt);
   const map=new Map(),tickerByCik=new Map(),companyByCik=new Map();
   if(mapping)for(const v of Object.values(mapping)){
     if(!v?.ticker)continue;
@@ -159,8 +164,8 @@ async function main(){
   const allSymbols=new Set([...picks.map(p=>p.symbol),...dedup.map(e=>e.symbol)]);
   const bySymbol={}; for(const symbol of allSymbols){const own=dedup.filter(e=>e.symbol===symbol);bySymbol[symbol]={events:own.slice(0,8),eventCount:own.length};}
   const marketwideSecCount=dedup.filter(e=>e.type==='SEC'&&e.discoveryScope==='MARKET_WIDE').length;
-  const payload={schemaVersion:3,generatedAt:iso,sourceStatus:{live:truth.marketDataFresh,marketDataLoaded:truth.marketDataLoaded,marketDataFresh:truth.marketDataFresh,marketWindowOpen:truth.marketWindowOpen,marketSession:truth.marketSession,newestObservedAt:truth.newestObservedAt,marketDataAgeMin:truth.marketDataAgeMin,quoteCount:rows.length,freshnessScope:'ALL_LOADED_QUOTES',secMapping:!!mapping,secMarketwideDiscovery:marketwideSecOk,secMarketwideEventCount:marketwideSecCount,newsDiscovery:true},shortlist:picks,companies,eventCount:dedup.length,events:dedup,bySymbol,errors:errors.slice(0,30),policy:'Public-source intelligence. Market-wide SEC current-filing discovery is primary-source and independent of the price shortlist. `sourceStatus.live` means the loaded market universe contains fresh market data inside the active US extended-hours window; loaded-but-stale/session-final data is never labeled live. Shortlist ranking does not determine feed-level freshness. SEC filings are primary-source events; GDELT is discovery-only and requires source-level verification before trade decisions.'};
+  const payload={schemaVersion:3,generatedAt:iso,sourceStatus:{live:truth.marketDataFresh,marketDataLoaded:truth.marketDataLoaded,marketDataFresh:truth.marketDataFresh,marketWindowOpen:truth.marketWindowOpen,marketSession:truth.marketSession,newestObservedAt:truth.newestObservedAt,marketDataAgeMin:truth.marketDataAgeMin,quoteCount:rows.length,freshnessScope:'ALL_LOADED_QUOTES',upstreamFeedFetchedAt:liveFetchedAt,upstreamUpdatedAtAtBuild:upstreamUpdatedAt,upstreamNewestObservedAtAtBuild:truth.newestObservedAt,upstreamUpdateAgeAtFetchMin,upstreamObservationAgeAtFetchMin,secMapping:!!mapping,secMarketwideDiscovery:marketwideSecOk,secMarketwideEventCount:marketwideSecCount,newsDiscovery:true},shortlist:picks,companies,eventCount:dedup.length,events:dedup,bySymbol,errors:errors.slice(0,30),policy:'Public-source intelligence. Market-wide SEC current-filing discovery is primary-source and independent of the price shortlist. `sourceStatus.live` means the loaded market universe contains fresh market data inside the active US extended-hours window; loaded-but-stale/session-final data is never labeled live. Shortlist ranking does not determine feed-level freshness. Upstream feed timestamps are retained only as operational provenance and do not override quote observation freshness or trading eligibility. SEC filings are primary-source events; GDELT is discovery-only and requires source-level verification before trade decisions.'};
   await fs.mkdir('data',{recursive:true}); await fs.writeFile(OUT,JSON.stringify(payload,null,2));
-  console.log(`wrote ${OUT}: ${dedup.length} events (${marketwideSecCount} market-wide SEC) for ${allSymbols.size} symbols; quotes=${rows.length}; shortlist=${picks.length}; market=${truth.marketSession}; live=${truth.marketDataFresh}; ageMin=${truth.marketDataAgeMin}; errors=${errors.length}`);
+  console.log(`wrote ${OUT}: ${dedup.length} events (${marketwideSecCount} market-wide SEC) for ${allSymbols.size} symbols; quotes=${rows.length}; shortlist=${picks.length}; market=${truth.marketSession}; live=${truth.marketDataFresh}; ageMin=${truth.marketDataAgeMin}; upstreamUpdateAgeAtFetchMin=${upstreamUpdateAgeAtFetchMin}; upstreamObservationAgeAtFetchMin=${upstreamObservationAgeAtFetchMin}; errors=${errors.length}`);
 }
 main().catch(e=>{console.error(e);process.exit(1)});
