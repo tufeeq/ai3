@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-02T03:19:22.053Z",
+  "generatedAt": "2026-09-02T06:15:20.097Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-09-02T00:00:00.000Z",
-    "marketDataAgeMin": 199.4,
+    "marketDataAgeMin": 375.3,
     "quoteCount": 500,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-02T03:19:22.523Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-02T01:15:26.231Z",
+    "upstreamFeedFetchedAt": "2026-09-02T06:15:20.576Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-02T05:56:06.385Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-02T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 123.9,
-    "upstreamObservationAgeAtFetchMin": 199.4,
+    "upstreamUpdateAgeAtFetchMin": 19.2,
+    "upstreamObservationAgeAtFetchMin": 375.3,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 234,
@@ -183,14 +183,6 @@
       "observedAt": "2026-09-01T19:24:46-04:00"
     },
     {
-      "symbol": "SBFM",
-      "price": 1.1423,
-      "changePct": 1.991071428571427,
-      "early": 62,
-      "ignition": 70,
-      "observedAt": "2026-09-01T19:21:07-04:00"
-    },
-    {
       "symbol": "ADXN",
       "price": 3.65,
       "changePct": -6.887755102040817,
@@ -199,12 +191,12 @@
       "observedAt": "2026-09-01T19:12:09-04:00"
     },
     {
-      "symbol": "SQFT",
-      "price": 1.62,
-      "changePct": -17.3469387755102,
-      "early": 61,
-      "ignition": 69,
-      "observedAt": "2026-09-01T19:30:01-04:00"
+      "symbol": "SBFM",
+      "price": 1.1423,
+      "changePct": 1.991071428571427,
+      "early": 62,
+      "ignition": 70,
+      "observedAt": "2026-09-01T19:21:07-04:00"
     },
     {
       "symbol": "PYXS",
@@ -213,6 +205,14 @@
       "early": 61,
       "ignition": 69,
       "observedAt": "2026-09-01T19:56:42-04:00"
+    },
+    {
+      "symbol": "SQFT",
+      "price": 1.62,
+      "changePct": -17.3469387755102,
+      "early": 61,
+      "ignition": 69,
+      "observedAt": "2026-09-01T19:30:01-04:00"
     },
     {
       "symbol": "CRIS",
@@ -311,20 +311,20 @@
       "observedAt": "2026-09-01T18:20:08-04:00"
     },
     {
-      "symbol": "SSTI",
-      "price": 5.97,
-      "changePct": -7.298136645962742,
-      "early": 57,
-      "ignition": 65,
-      "observedAt": "2026-09-01T19:30:05-04:00"
-    },
-    {
       "symbol": "NFGC",
       "price": 1.8,
       "changePct": -4.761904761904755,
       "early": 57,
       "ignition": 65,
       "observedAt": "2026-09-01T19:58:47-04:00"
+    },
+    {
+      "symbol": "SSTI",
+      "price": 5.97,
+      "changePct": -7.298136645962742,
+      "early": 57,
+      "ignition": 65,
+      "observedAt": "2026-09-01T19:30:05-04:00"
     },
     {
       "symbol": "CNXC",
@@ -335,12 +335,12 @@
       "observedAt": "2026-09-01T19:30:00-04:00"
     },
     {
-      "symbol": "SGLY",
-      "price": 1.4301,
-      "changePct": 5.154411764705869,
-      "early": 60,
-      "ignition": 60,
-      "observedAt": "2026-09-01T19:53:32-04:00"
+      "symbol": "FWDI",
+      "price": 6.33,
+      "changePct": -0.1577287066246023,
+      "early": 56,
+      "ignition": 64,
+      "observedAt": "2026-09-01T19:53:21-04:00"
     }
   ],
   "companies": {
@@ -424,21 +424,21 @@
       "title": "Top Wealth Group Holding Ltd",
       "cik": "0001978057"
     },
-    "SBFM": {
-      "title": "Sunshine Biopharma Inc.",
-      "cik": "0001402328"
-    },
     "ADXN": {
       "title": "Addex Therapeutics Ltd.",
       "cik": "0001574232"
     },
-    "SQFT": {
-      "title": "Presidio Property Trust, Inc.",
-      "cik": "0001080657"
+    "SBFM": {
+      "title": "Sunshine Biopharma Inc.",
+      "cik": "0001402328"
     },
     "PYXS": {
       "title": "Pyxis Oncology, Inc.",
       "cik": "0001782223"
+    },
+    "SQFT": {
+      "title": "Presidio Property Trust, Inc.",
+      "cik": "0001080657"
     },
     "CRIS": {
       "title": "CURIS INC",
@@ -488,24 +488,24 @@
       "title": "DarkIris Inc.",
       "cik": "0002058584"
     },
-    "SSTI": {
-      "title": "SOUNDTHINKING, INC.",
-      "cik": "0001351636"
-    },
     "NFGC": {
       "title": "New Found Gold Corp.",
       "cik": "0001840616"
+    },
+    "SSTI": {
+      "title": "SOUNDTHINKING, INC.",
+      "cik": "0001351636"
     },
     "CNXC": {
       "title": "Concentrix Corp",
       "cik": "0001803599"
     },
-    "SGLY": {
-      "title": "Singularity Future Technology Ltd.",
-      "cik": "0001422892"
+    "FWDI": {
+      "title": "Forward Industries, Inc.",
+      "cik": "0000038264"
     }
   },
-  "eventCount": 308,
+  "eventCount": 304,
   "events": [
     {
       "symbol": "GS-PD",
@@ -2416,18 +2416,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "IPST",
-      "title": "IP STRATEGY HOLDINGS, INC.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-09-01T17:20:10.000Z",
-      "headline": "8-K filing — IP STRATEGY HOLDINGS, INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1788230/000178823026000079/ipst-20260826.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "NAK",
       "title": "NORTHERN DYNASTY MINERALS LTD",
       "type": "SEC",
@@ -2944,6 +2932,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "SNAL",
+      "title": "Snail, Inc.",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-09-01T13:00:11.000Z",
+      "headline": "8-K filing — Snail, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1886894/000149315226040943/form8-k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
       "symbol": "CLIK",
       "title": "Click Holdings Ltd.",
       "type": "SEC",
@@ -3218,18 +3218,6 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "SNAL",
-      "title": "Snail, Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-09-01T09:00:11.000Z",
-      "headline": "8-K filing — Snail, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1886894/000149315226040943/form8-k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "UUU",
@@ -3700,18 +3688,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "SGLY",
-      "title": "Singularity Future Technology Ltd.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-08-24T21:34:11.000Z",
-      "headline": "8-K filing — Singularity Future Technology Ltd.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1422892/000121390026093148/ea0303205-8k_singularity.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "CALC",
       "title": "CalciMedica, Inc.",
       "type": "SEC",
@@ -3827,18 +3803,6 @@
       "publishedAt": "2026-08-21T15:47:19.000Z",
       "headline": "6-K filing — SU Group Holdings Ltd",
       "url": "https://www.sec.gov/Archives/edgar/data/1969863/000175392626001577/g085887_6k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "SGLY",
-      "title": "Singularity Future Technology Ltd.",
-      "type": "SEC",
-      "form": "424B5",
-      "publishedAt": "2026-08-21T15:00:24.000Z",
-      "headline": "424B5 filing — Singularity Future Technology Ltd.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1422892/000121390026092429/ea0302988-424b5_singularity.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -3976,18 +3940,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "SGLY",
-      "title": "Singularity Future Technology Ltd.",
-      "type": "SEC",
-      "form": "424B5",
-      "publishedAt": "2026-08-19T15:18:39.000Z",
-      "headline": "424B5 filing — Singularity Future Technology Ltd.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1422892/000121390026091496/ea0302658-424b5_singularity.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "TWG",
       "title": "Top Wealth Group Holding Ltd",
       "type": "SEC",
@@ -4024,18 +3976,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "SGLY",
-      "title": "Singularity Future Technology Ltd.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-08-18T20:05:30.000Z",
-      "headline": "8-K filing — Singularity Future Technology Ltd.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1422892/000121390026091215/ea0302109-8k_singularity.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "BLRX",
       "title": "BioLineRx Ltd.",
       "type": "SEC",
@@ -4060,13 +4000,37 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "SGLY",
-      "title": "Singularity Future Technology Ltd.",
+      "symbol": "FWDI",
+      "title": "Forward Industries, Inc.",
       "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-08-17T21:00:14.000Z",
-      "headline": "8-K filing — Singularity Future Technology Ltd.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1422892/000121390026090819/ea0302435-8k_singularity.htm",
+      "form": "4",
+      "publishedAt": "2026-08-17T22:06:19.000Z",
+      "headline": "4 filing — Forward Industries, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/38264/000168316826006540/xslF345X06/ownership.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "FWDI",
+      "title": "Forward Industries, Inc.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-08-17T21:47:05.000Z",
+      "headline": "4 filing — Forward Industries, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/38264/000168316826006538/xslF345X06/ownership.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "FWDI",
+      "title": "Forward Industries, Inc.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-08-17T20:10:04.000Z",
+      "headline": "4 filing — Forward Industries, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/38264/000168316826006530/xslF345X06/ownership.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4139,18 +4103,6 @@
       "publishedAt": "2026-08-13T20:13:20.000Z",
       "headline": "8-K filing — SOUNDTHINKING, INC.",
       "url": "https://www.sec.gov/Archives/edgar/data/1351636/000119312526349212/ssti-20260813.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "SGLY",
-      "title": "Singularity Future Technology Ltd.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-08-13T20:05:56.000Z",
-      "headline": "8-K filing — Singularity Future Technology Ltd.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1422892/000121390026089086/ea0301820-8k_singularity.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4510,7 +4462,7 @@
           "title": "Snail, Inc.",
           "type": "SEC",
           "form": "8-K",
-          "publishedAt": "2026-09-01T09:00:11.000Z",
+          "publishedAt": "2026-09-01T13:00:11.000Z",
           "headline": "8-K filing — Snail, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1886894/000149315226040943/form8-k.htm",
           "source": "SEC EDGAR",
@@ -4578,21 +4530,9 @@
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "IPST",
-          "title": "IP STRATEGY HOLDINGS, INC.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-01T17:20:10.000Z",
-          "headline": "8-K filing — IP STRATEGY HOLDINGS, INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1788230/000178823026000079/ipst-20260826.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 2
+      "eventCount": 1
     },
     "SUGP": {
       "events": [
@@ -4719,6 +4659,23 @@
       ],
       "eventCount": 2
     },
+    "ADXN": {
+      "events": [
+        {
+          "symbol": "ADXN",
+          "title": "Addex Therapeutics Ltd.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-08-26T10:05:03.000Z",
+          "headline": "6-K filing — Addex Therapeutics Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1574232/000117184326005744/f6k_082626.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
     "SBFM": {
       "events": [
         {
@@ -4747,40 +4704,6 @@
         }
       ],
       "eventCount": 2
-    },
-    "ADXN": {
-      "events": [
-        {
-          "symbol": "ADXN",
-          "title": "Addex Therapeutics Ltd.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-08-26T10:05:03.000Z",
-          "headline": "6-K filing — Addex Therapeutics Ltd.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1574232/000117184326005744/f6k_082626.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
-    "SQFT": {
-      "events": [
-        {
-          "symbol": "SQFT",
-          "title": "Presidio Property Trust, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-08-24T20:05:26.000Z",
-          "headline": "8-K filing — Presidio Property Trust, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1080657/000149315226039864/form8-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
     },
     "PYXS": {
       "events": [
@@ -4858,6 +4781,23 @@
         }
       ],
       "eventCount": 6
+    },
+    "SQFT": {
+      "events": [
+        {
+          "symbol": "SQFT",
+          "title": "Presidio Property Trust, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-08-24T20:05:26.000Z",
+          "headline": "8-K filing — Presidio Property Trust, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1080657/000149315226039864/form8-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
     },
     "CRIS": {
       "events": [
@@ -5167,23 +5107,6 @@
       ],
       "eventCount": 1
     },
-    "SSTI": {
-      "events": [
-        {
-          "symbol": "SSTI",
-          "title": "SOUNDTHINKING, INC.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-08-13T20:13:20.000Z",
-          "headline": "8-K filing — SOUNDTHINKING, INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1351636/000119312526349212/ssti-20260813.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
     "NFGC": {
       "events": [
         {
@@ -5213,86 +5136,67 @@
       ],
       "eventCount": 2
     },
-    "CNXC": {
-      "events": [],
-      "eventCount": 0
-    },
-    "SGLY": {
+    "SSTI": {
       "events": [
         {
-          "symbol": "SGLY",
-          "title": "Singularity Future Technology Ltd.",
+          "symbol": "SSTI",
+          "title": "SOUNDTHINKING, INC.",
           "type": "SEC",
           "form": "8-K",
-          "publishedAt": "2026-08-24T21:34:11.000Z",
-          "headline": "8-K filing — Singularity Future Technology Ltd.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1422892/000121390026093148/ea0303205-8k_singularity.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "SGLY",
-          "title": "Singularity Future Technology Ltd.",
-          "type": "SEC",
-          "form": "424B5",
-          "publishedAt": "2026-08-21T15:00:24.000Z",
-          "headline": "424B5 filing — Singularity Future Technology Ltd.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1422892/000121390026092429/ea0302988-424b5_singularity.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "SGLY",
-          "title": "Singularity Future Technology Ltd.",
-          "type": "SEC",
-          "form": "424B5",
-          "publishedAt": "2026-08-19T15:18:39.000Z",
-          "headline": "424B5 filing — Singularity Future Technology Ltd.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1422892/000121390026091496/ea0302658-424b5_singularity.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "SGLY",
-          "title": "Singularity Future Technology Ltd.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-08-18T20:05:30.000Z",
-          "headline": "8-K filing — Singularity Future Technology Ltd.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1422892/000121390026091215/ea0302109-8k_singularity.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "SGLY",
-          "title": "Singularity Future Technology Ltd.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-08-17T21:00:14.000Z",
-          "headline": "8-K filing — Singularity Future Technology Ltd.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1422892/000121390026090819/ea0302435-8k_singularity.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "SGLY",
-          "title": "Singularity Future Technology Ltd.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-08-13T20:05:56.000Z",
-          "headline": "8-K filing — Singularity Future Technology Ltd.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1422892/000121390026089086/ea0301820-8k_singularity.htm",
+          "publishedAt": "2026-08-13T20:13:20.000Z",
+          "headline": "8-K filing — SOUNDTHINKING, INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1351636/000119312526349212/ssti-20260813.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 6
+      "eventCount": 1
+    },
+    "CNXC": {
+      "events": [],
+      "eventCount": 0
+    },
+    "FWDI": {
+      "events": [
+        {
+          "symbol": "FWDI",
+          "title": "Forward Industries, Inc.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-08-17T22:06:19.000Z",
+          "headline": "4 filing — Forward Industries, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/38264/000168316826006540/xslF345X06/ownership.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "FWDI",
+          "title": "Forward Industries, Inc.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-08-17T21:47:05.000Z",
+          "headline": "4 filing — Forward Industries, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/38264/000168316826006538/xslF345X06/ownership.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "FWDI",
+          "title": "Forward Industries, Inc.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-08-17T20:10:04.000Z",
+          "headline": "4 filing — Forward Industries, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/38264/000168316826006530/xslF345X06/ownership.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 3
     },
     "GS-PD": {
       "events": [
