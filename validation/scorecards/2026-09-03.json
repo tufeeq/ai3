@@ -1,23 +1,23 @@
 {
   "schemaVersion": 1,
   "kind": "TAGX3_VALIDATION_SCORECARD_SUMMARY",
-  "generatedAt": "2026-09-03T04:41:16.755Z",
+  "generatedAt": "2026-09-03T14:13:50.988Z",
   "status": "MEASURING",
   "sessions": 1,
-  "snapshotCount": 4,
+  "snapshotCount": 9,
   "cadence": {
     "scope": "ACTIVE_MARKET_WITHIN_SESSION",
-    "sessionCount": 0,
+    "sessionCount": 1,
     "ignoredCrossSessionGapCount": 0,
-    "ignoredClosedSnapshotCount": 3,
+    "ignoredClosedSnapshotCount": 5,
     "ignoredOutsideMarketWindowCount": 1,
     "targetIntervalMin": 15,
     "toleranceMin": 9,
     "gapLimitMin": 24,
-    "intervalCount": 0,
-    "medianGapMin": null,
-    "maxGapMin": null,
-    "excessiveGapCount": 0,
+    "intervalCount": 2,
+    "medianGapMin": 37.9087,
+    "maxGapMin": 70.1571,
+    "excessiveGapCount": 1,
     "coverageHealthy": false
   },
   "protocol": {
@@ -56,7 +56,7 @@
       "avgActionableMFE": null,
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
-        "MISSING": 29496
+        "MISSING": 66197
       }
     },
     "30": {
@@ -82,7 +82,7 @@
       "avgActionableMFE": null,
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
-        "MISSING": 29496
+        "MISSING": 66197
       }
     },
     "120": {
@@ -108,8 +108,8 @@
       "avgActionableMFE": null,
       "avgActionableMAE": null,
       "excludedOutcomeCounts": {
-        "MISSING": 22122,
-        "STALE_OBSERVATION": 950
+        "MISSING": 51449,
+        "STALE_OBSERVATION": 8324
       }
     }
   },
