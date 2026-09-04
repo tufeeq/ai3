@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-04T01:16:00.515Z",
+  "generatedAt": "2026-09-04T05:55:10.640Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,17 +8,17 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-09-04T00:00:00.000Z",
-    "marketDataAgeMin": 76,
+    "marketDataAgeMin": 355.2,
     "quoteCount": 500,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-04T01:16:01.061Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-04T01:08:05.180Z",
+    "upstreamFeedFetchedAt": "2026-09-04T05:55:11.134Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-04T05:54:02.835Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-04T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 7.9,
-    "upstreamObservationAgeAtFetchMin": 76,
+    "upstreamUpdateAgeAtFetchMin": 1.1,
+    "upstreamObservationAgeAtFetchMin": 355.2,
     "secMapping": true,
-    "secMarketwideDiscovery": false,
-    "secMarketwideEventCount": 261,
+    "secMarketwideDiscovery": true,
+    "secMarketwideEventCount": 265,
     "newsDiscovery": true
   },
   "shortlist": [
@@ -143,20 +143,20 @@
       "observedAt": "2026-09-03T19:59:25-04:00"
     },
     {
-      "symbol": "YSG",
-      "price": 2.49,
-      "changePct": -1.5810276679841737,
-      "early": 69,
-      "ignition": 77,
-      "observedAt": "2026-09-03T19:49:25-04:00"
-    },
-    {
       "symbol": "JTAI",
       "price": 1.359,
       "changePct": 6.1718749999999964,
       "early": 69,
       "ignition": 77,
       "observedAt": "2026-09-03T19:58:33-04:00"
+    },
+    {
+      "symbol": "YSG",
+      "price": 2.49,
+      "changePct": -1.5810276679841737,
+      "early": 69,
+      "ignition": 77,
+      "observedAt": "2026-09-03T19:49:25-04:00"
     },
     {
       "symbol": "OLOX",
@@ -183,20 +183,20 @@
       "observedAt": "2026-09-03T19:59:42-04:00"
     },
     {
-      "symbol": "WLDS",
-      "price": 1.9197,
-      "changePct": -4.965346534653468,
-      "early": 65,
-      "ignition": 73,
-      "observedAt": "2026-09-03T19:58:52-04:00"
-    },
-    {
       "symbol": "AMIX",
       "price": 4.66,
       "changePct": 3.555555555555559,
       "early": 65,
       "ignition": 73,
       "observedAt": "2026-09-03T19:59:22-04:00"
+    },
+    {
+      "symbol": "WLDS",
+      "price": 1.9197,
+      "changePct": -4.965346534653468,
+      "early": 65,
+      "ignition": 73,
+      "observedAt": "2026-09-03T19:58:52-04:00"
     },
     {
       "symbol": "OSTX",
@@ -404,13 +404,13 @@
       "title": "AMAZE HOLDINGS, INC.",
       "cik": "0001880343"
     },
-    "YSG": {
-      "title": "Yatsen Holding Ltd",
-      "cik": "0001819580"
-    },
     "JTAI": {
       "title": "Jet.AI Inc.",
       "cik": "0001861622"
+    },
+    "YSG": {
+      "title": "Yatsen Holding Ltd",
+      "cik": "0001819580"
     },
     "OLOX": {
       "title": "OLENOX INDUSTRIES INC.",
@@ -424,13 +424,13 @@
       "title": "GD Culture Group Ltd",
       "cik": "0001641398"
     },
-    "WLDS": {
-      "title": "Wearable Devices Ltd.",
-      "cik": "0001887673"
-    },
     "AMIX": {
       "title": "Autonomix Medical, Inc.",
       "cik": "0001617867"
+    },
+    "WLDS": {
+      "title": "Wearable Devices Ltd.",
+      "cik": "0001887673"
     },
     "OSTX": {
       "title": "OS Therapies Inc",
@@ -611,6 +611,30 @@
       "publishedAt": "2026-09-03T17:21:39-04:00",
       "headline": "424B filing — BANK OF AMERICA CORP /DE/",
       "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426026580/0001918704-26-026580-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "DFNSW",
+      "title": "T3 Defense Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-03T17:21:18-04:00",
+      "headline": "S-1 filing — T3 Defense Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1787518/000118518526003839/0001185185-26-003839-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "DFNSW",
+      "title": "T3 Defense Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-03T17:21:15-04:00",
+      "headline": "S-1 filing — T3 Defense Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1787518/000121390026097287/0001213900-26-097287-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -976,6 +1000,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "VHUB",
+      "title": "VenHub Global, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-03T17:00:28-04:00",
+      "headline": "S-1 filing — VenHub Global, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1972234/000121390026097253/0001213900-26-097253-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "PPSI",
       "title": "PIONEER POWER SOLUTIONS, INC.",
       "type": "SEC",
@@ -983,6 +1019,18 @@
       "publishedAt": "2026-09-03T17:00:27-04:00",
       "headline": "S-3 filing — PIONEER POWER SOLUTIONS, INC.",
       "url": "https://www.sec.gov/Archives/edgar/data/1449792/000149315226041392/0001493152-26-041392-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "NXL",
+      "title": "Nexalin Technology, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-03T17:00:26-04:00",
+      "headline": "S-1 filing — Nexalin Technology, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1527352/000182912626009723/0001829126-26-009723-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -2752,30 +2800,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "EZRA",
-      "title": "Reliance Global Group, Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-09-03T16:20:14.000Z",
-      "headline": "8-K filing — Reliance Global Group, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1812727/000149315226041371/form8-k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "DPU",
-      "title": "Top KingWin Ltd",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-09-03T16:15:02.000Z",
-      "headline": "6-K filing — Top KingWin Ltd",
-      "url": "https://www.sec.gov/Archives/edgar/data/1938865/000121390026097196/ea0304491-6k_topking.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "ALP",
       "title": "Alpha Compute Corp",
       "type": "SEC",
@@ -2795,6 +2819,18 @@
       "publishedAt": "2026-09-03T11:57:47-04:00",
       "headline": "6-K filing — Blue Moon Metals Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1732379/000155485526001951/0001554855-26-001951-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "FBDT",
+      "title": "First Breach, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-03T11:52:44-04:00",
+      "headline": "S-1 filing — First Breach, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1892704/000149315226041268/0001493152-26-041268-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -2870,18 +2906,6 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "CGTL",
-      "title": "Creative Global Technology Holdings Ltd",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-09-03T14:02:15.000Z",
-      "headline": "6-K filing — Creative Global Technology Holdings Ltd",
-      "url": "https://www.sec.gov/Archives/edgar/data/1967822/000121390026097117/ea0304265-6k_creative.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "DEFT",
@@ -3580,18 +3604,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "CANG",
-      "title": "Cango Inc.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-09-03T06:11:49.000Z",
-      "headline": "6-K filing — Cango Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1725123/000149315226041303/form6-k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "PMA",
       "title": "Ming Shing Group Holdings Ltd",
       "type": "SEC",
@@ -3676,6 +3688,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "HYAC",
+      "title": "Haymaker Acquisition Corp V",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-02T15:24:39-04:00",
+      "headline": "S-1 filing — Haymaker Acquisition Corp V",
+      "url": "https://www.sec.gov/Archives/edgar/data/2111838/000119312526380080/0001193125-26-380080-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "QNME",
       "title": "Quanome Technologies, Inc.",
       "type": "SEC",
@@ -3736,28 +3760,16 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "BBOT",
-      "title": "BridgeBio Oncology Therapeutics, Inc.",
+      "symbol": "EZRA",
+      "title": "Reliance Global Group, Inc.",
       "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-09-01T17:15:15-04:00",
-      "headline": "S-3 filing — BridgeBio Oncology Therapeutics, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1869105/000119312526378637/0001193125-26-378637-index.htm",
+      "form": "EFFECT",
+      "publishedAt": "2026-09-01T04:15:21.000Z",
+      "headline": "EFFECT filing — Reliance Global Group, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1812727/999999999526002841/xslEFFECTX01/primary_doc.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "A",
-      "title": "AGILENT TECHNOLOGIES, INC.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-09-01T17:11:49-04:00",
-      "headline": "S-3 filing — AGILENT TECHNOLOGIES, INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1090872/000119312526378628/0001193125-26-378628-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "XPON",
@@ -3779,18 +3791,6 @@
       "publishedAt": "2026-09-01T01:40:37.000Z",
       "headline": "4 filing — Expion Energy, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1894954/000190359626000337/xslF345X06/ownership.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "EZRA",
-      "title": "Reliance Global Group, Inc.",
-      "type": "SEC",
-      "form": "EFFECT",
-      "publishedAt": "2026-09-01T00:15:21.000Z",
-      "headline": "EFFECT filing — Reliance Global Group, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1812727/999999999526002841/xslEFFECTX01/primary_doc.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4442,18 +4442,6 @@
           "title": "Creative Global Technology Holdings Ltd",
           "type": "SEC",
           "form": "6-K",
-          "publishedAt": "2026-09-03T14:02:15.000Z",
-          "headline": "6-K filing — Creative Global Technology Holdings Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1967822/000121390026097117/ea0304265-6k_creative.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "CGTL",
-          "title": "Creative Global Technology Holdings Ltd",
-          "type": "SEC",
-          "form": "6-K",
           "publishedAt": "2026-08-25T14:30:03.000Z",
           "headline": "6-K filing — Creative Global Technology Holdings Ltd",
           "url": "https://www.sec.gov/Archives/edgar/data/1967822/000121390026093330/ea0302482-6k_creative.htm",
@@ -4474,7 +4462,7 @@
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 4
+      "eventCount": 3
     },
     "DKI": {
       "events": [],
@@ -4503,18 +4491,6 @@
           "title": "Top KingWin Ltd",
           "type": "SEC",
           "form": "6-K",
-          "publishedAt": "2026-09-03T16:15:02.000Z",
-          "headline": "6-K filing — Top KingWin Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1938865/000121390026097196/ea0304491-6k_topking.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "DPU",
-          "title": "Top KingWin Ltd",
-          "type": "SEC",
-          "form": "6-K",
           "publishedAt": "2026-08-19T20:05:53.000Z",
           "headline": "6-K filing — Top KingWin Ltd",
           "url": "https://www.sec.gov/Archives/edgar/data/1938865/000121390026091662/ea0302051-6k_topking.htm",
@@ -4523,7 +4499,7 @@
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 3
+      "eventCount": 2
     },
     "BGMS": {
       "events": [],
@@ -4580,20 +4556,8 @@
           "symbol": "EZRA",
           "title": "Reliance Global Group, Inc.",
           "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-03T16:20:14.000Z",
-          "headline": "8-K filing — Reliance Global Group, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1812727/000149315226041371/form8-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "EZRA",
-          "title": "Reliance Global Group, Inc.",
-          "type": "SEC",
           "form": "EFFECT",
-          "publishedAt": "2026-09-01T00:15:21.000Z",
+          "publishedAt": "2026-09-01T04:15:21.000Z",
           "headline": "EFFECT filing — Reliance Global Group, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1812727/999999999526002841/xslEFFECTX01/primary_doc.xml",
           "source": "SEC EDGAR",
@@ -4625,7 +4589,7 @@
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 5
+      "eventCount": 4
     },
     "AMZE": {
       "events": [
@@ -4656,6 +4620,10 @@
       ],
       "eventCount": 2
     },
+    "JTAI": {
+      "events": [],
+      "eventCount": 0
+    },
     "YSG": {
       "events": [
         {
@@ -4672,10 +4640,6 @@
         }
       ],
       "eventCount": 1
-    },
-    "JTAI": {
-      "events": [],
-      "eventCount": 0
     },
     "OLOX": {
       "events": [],
@@ -4714,6 +4678,23 @@
       "events": [],
       "eventCount": 0
     },
+    "AMIX": {
+      "events": [
+        {
+          "symbol": "AMIX",
+          "title": "Autonomix Medical, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-08-26T21:02:11.000Z",
+          "headline": "8-K filing — Autonomix Medical, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1617867/000143774926029024/amix20260826_8k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
     "WLDS": {
       "events": [
         {
@@ -4742,23 +4723,6 @@
         }
       ],
       "eventCount": 2
-    },
-    "AMIX": {
-      "events": [
-        {
-          "symbol": "AMIX",
-          "title": "Autonomix Medical, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-08-26T21:02:11.000Z",
-          "headline": "8-K filing — Autonomix Medical, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1617867/000143774926029024/amix20260826_8k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
     },
     "OSTX": {
       "events": [
@@ -5338,18 +5302,6 @@
           "title": "Cango Inc.",
           "type": "SEC",
           "form": "6-K",
-          "publishedAt": "2026-09-03T06:11:49.000Z",
-          "headline": "6-K filing — Cango Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1725123/000149315226041303/form6-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "CANG",
-          "title": "Cango Inc.",
-          "type": "SEC",
-          "form": "6-K",
           "publishedAt": "2026-08-31T20:05:01.000Z",
           "headline": "6-K filing — Cango Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1725123/000149315226040816/form6-k.htm",
@@ -5358,7 +5310,7 @@
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 3
+      "eventCount": 2
     },
     "GS-PD": {
       "events": [
@@ -5701,6 +5653,35 @@
         }
       ],
       "eventCount": 6
+    },
+    "DFNSW": {
+      "events": [
+        {
+          "symbol": "DFNSW",
+          "title": "T3 Defense Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-03T17:21:18-04:00",
+          "headline": "S-1 filing — T3 Defense Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1787518/000118518526003839/0001185185-26-003839-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "DFNSW",
+          "title": "T3 Defense Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-03T17:21:15-04:00",
+          "headline": "S-1 filing — T3 Defense Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1787518/000121390026097287/0001213900-26-097287-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 2
     },
     "RLGT": {
       "events": [
@@ -6140,6 +6121,23 @@
       ],
       "eventCount": 1
     },
+    "VHUB": {
+      "events": [
+        {
+          "symbol": "VHUB",
+          "title": "VenHub Global, Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-03T17:00:28-04:00",
+          "headline": "S-1 filing — VenHub Global, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1972234/000121390026097253/0001213900-26-097253-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "PPSI": {
       "events": [
         {
@@ -6150,6 +6148,23 @@
           "publishedAt": "2026-09-03T17:00:27-04:00",
           "headline": "S-3 filing — PIONEER POWER SOLUTIONS, INC.",
           "url": "https://www.sec.gov/Archives/edgar/data/1449792/000149315226041392/0001493152-26-041392-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "NXL": {
+      "events": [
+        {
+          "symbol": "NXL",
+          "title": "Nexalin Technology, Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-03T17:00:26-04:00",
+          "headline": "S-1 filing — Nexalin Technology, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1527352/000182912626009723/0001829126-26-009723-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -8088,6 +8103,23 @@
       ],
       "eventCount": 1
     },
+    "FBDT": {
+      "events": [
+        {
+          "symbol": "FBDT",
+          "title": "First Breach, Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-03T11:52:44-04:00",
+          "headline": "S-1 filing — First Breach, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1892704/000149315226041268/0001493152-26-041268-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "CANF": {
       "events": [
         {
@@ -9207,6 +9239,23 @@
       ],
       "eventCount": 1
     },
+    "HYAC": {
+      "events": [
+        {
+          "symbol": "HYAC",
+          "title": "Haymaker Acquisition Corp V",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-02T15:24:39-04:00",
+          "headline": "S-1 filing — Haymaker Acquisition Corp V",
+          "url": "https://www.sec.gov/Archives/edgar/data/2111838/000119312526380080/0001193125-26-380080-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "QNME": {
       "events": [
         {
@@ -9223,44 +9272,8 @@
         }
       ],
       "eventCount": 1
-    },
-    "BBOT": {
-      "events": [
-        {
-          "symbol": "BBOT",
-          "title": "BridgeBio Oncology Therapeutics, Inc.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-09-01T17:15:15-04:00",
-          "headline": "S-3 filing — BridgeBio Oncology Therapeutics, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1869105/000119312526378637/0001193125-26-378637-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "A": {
-      "events": [
-        {
-          "symbol": "A",
-          "title": "AGILENT TECHNOLOGIES, INC.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-09-01T17:11:49-04:00",
-          "headline": "S-3 filing — AGILENT TECHNOLOGIES, INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1090872/000119312526378628/0001193125-26-378628-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
     }
   },
-  "errors": [
-    "SEC_CURRENT_S-1:This operation was aborted"
-  ],
+  "errors": [],
   "policy": "Public-source intelligence. Market-wide SEC current-filing discovery is primary-source and independent of the price shortlist. `sourceStatus.live` means the loaded market universe contains fresh market data inside the active US extended-hours window; loaded-but-stale/session-final data is never labeled live. Shortlist ranking does not determine feed-level freshness. Upstream feed timestamps are retained only as operational provenance and do not override quote observation freshness or trading eligibility. SEC filings are primary-source events; GDELT is discovery-only and requires source-level verification before trade decisions."
 }
