@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-05T18:49:24.242Z",
+  "generatedAt": "2026-09-05T19:23:25.494Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-09-04T23:59:59.000Z",
-    "marketDataAgeMin": 1129.4,
+    "marketDataAgeMin": 1163.5,
     "quoteCount": 500,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-05T18:49:25.150Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-05T17:20:41.021Z",
+    "upstreamFeedFetchedAt": "2026-09-05T19:23:25.991Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-05T19:12:00.765Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-04T23:59:59.000Z",
-    "upstreamUpdateAgeAtFetchMin": 88.7,
-    "upstreamObservationAgeAtFetchMin": 1129.4,
+    "upstreamUpdateAgeAtFetchMin": 11.4,
+    "upstreamObservationAgeAtFetchMin": 1163.4,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 294,
@@ -271,6 +271,22 @@
       "observedAt": "2026-09-04T19:47:19-04:00"
     },
     {
+      "symbol": "SJ",
+      "price": 0.9989,
+      "changePct": -4.685114503816797,
+      "early": 57,
+      "ignition": 65,
+      "observedAt": "2026-09-04T19:24:14-04:00"
+    },
+    {
+      "symbol": "DDC",
+      "price": 0.3399,
+      "changePct": 6.551724137931027,
+      "early": 61,
+      "ignition": 61,
+      "observedAt": "2026-09-04T19:54:13-04:00"
+    },
+    {
       "symbol": "AVAT",
       "price": 0.747,
       "changePct": 0,
@@ -285,22 +301,6 @@
       "early": 61,
       "ignition": 61,
       "observedAt": "2026-09-04T19:27:32-04:00"
-    },
-    {
-      "symbol": "DDC",
-      "price": 0.3399,
-      "changePct": 6.551724137931027,
-      "early": 61,
-      "ignition": 61,
-      "observedAt": "2026-09-04T19:54:13-04:00"
-    },
-    {
-      "symbol": "SJ",
-      "price": 0.9989,
-      "changePct": -4.685114503816797,
-      "early": 57,
-      "ignition": 65,
-      "observedAt": "2026-09-04T19:24:14-04:00"
     },
     {
       "symbol": "MSGM",
@@ -468,6 +468,14 @@
       "title": "DataMeds AI, Inc.",
       "cik": "0002030763"
     },
+    "SJ": {
+      "title": "Scienjoy Holding Corp",
+      "cik": "0001753673"
+    },
+    "DDC": {
+      "title": "DDC Enterprise Ltd",
+      "cik": "0001808110"
+    },
     "AVAT": {
       "title": "Avalanche Treasury Corp",
       "cik": "0002092446"
@@ -475,14 +483,6 @@
     "HODO": {
       "title": "House of Doge Inc.",
       "cik": "0001903595"
-    },
-    "DDC": {
-      "title": "DDC Enterprise Ltd",
-      "cik": "0001808110"
-    },
-    "SJ": {
-      "title": "Scienjoy Holding Corp",
-      "cik": "0001753673"
     },
     "MSGM": {
       "title": "Motorsport Games Inc.",
@@ -5864,6 +5864,40 @@
       ],
       "eventCount": 1
     },
+    "SJ": {
+      "events": [
+        {
+          "symbol": "SJ",
+          "title": "Scienjoy Holding Corp",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-03T00:45:16.000Z",
+          "headline": "6-K filing — Scienjoy Holding Corp",
+          "url": "https://www.sec.gov/Archives/edgar/data/1753673/000121390026096863/ea0304420-6k_scienjoy.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
+    "DDC": {
+      "events": [
+        {
+          "symbol": "DDC",
+          "title": "DDC Enterprise Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-02T12:16:15.000Z",
+          "headline": "6-K filing — DDC Enterprise Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1808110/000121390026096455/ea0304225-6k_ddcenter.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
     "AVAT": {
       "events": [
         {
@@ -5932,40 +5966,6 @@
     "HODO": {
       "events": [],
       "eventCount": 0
-    },
-    "DDC": {
-      "events": [
-        {
-          "symbol": "DDC",
-          "title": "DDC Enterprise Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-02T12:16:15.000Z",
-          "headline": "6-K filing — DDC Enterprise Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1808110/000121390026096455/ea0304225-6k_ddcenter.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
-    "SJ": {
-      "events": [
-        {
-          "symbol": "SJ",
-          "title": "Scienjoy Holding Corp",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-03T00:45:16.000Z",
-          "headline": "6-K filing — Scienjoy Holding Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/1753673/000121390026096863/ea0304420-6k_scienjoy.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
     },
     "MSGM": {
       "events": [
