@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-05T20:44:56.485Z",
+  "generatedAt": "2026-09-05T21:33:45.086Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-09-04T23:59:59.000Z",
-    "marketDataAgeMin": 1245,
+    "marketDataAgeMin": 1293.8,
     "quoteCount": 500,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-05T20:44:56.788Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-05T19:12:00.765Z",
+    "upstreamFeedFetchedAt": "2026-09-05T21:33:45.416Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-05T21:18:15.727Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-04T23:59:59.000Z",
-    "upstreamUpdateAgeAtFetchMin": 92.9,
-    "upstreamObservationAgeAtFetchMin": 1245,
+    "upstreamUpdateAgeAtFetchMin": 15.5,
+    "upstreamObservationAgeAtFetchMin": 1293.8,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 294,
@@ -159,20 +159,20 @@
       "observedAt": "2026-09-04T19:30:03-04:00"
     },
     {
-      "symbol": "VIOT",
-      "price": 1.19,
-      "changePct": 4.3859649122807065,
-      "early": 70,
-      "ignition": 78,
-      "observedAt": "2026-09-04T19:51:42-04:00"
-    },
-    {
       "symbol": "NXTT",
       "price": 5.4733,
       "changePct": 4.055133079847914,
       "early": 70,
       "ignition": 78,
       "observedAt": "2026-09-04T19:57:11-04:00"
+    },
+    {
+      "symbol": "VIOT",
+      "price": 1.19,
+      "changePct": 4.3859649122807065,
+      "early": 70,
+      "ignition": 78,
+      "observedAt": "2026-09-04T19:51:42-04:00"
     },
     {
       "symbol": "VACI",
@@ -279,14 +279,6 @@
       "observedAt": "2026-09-04T19:24:14-04:00"
     },
     {
-      "symbol": "DDC",
-      "price": 0.3399,
-      "changePct": 6.551724137931027,
-      "early": 61,
-      "ignition": 61,
-      "observedAt": "2026-09-04T19:54:13-04:00"
-    },
-    {
       "symbol": "AVAT",
       "price": 0.747,
       "changePct": 0,
@@ -301,6 +293,14 @@
       "early": 61,
       "ignition": 61,
       "observedAt": "2026-09-04T19:27:32-04:00"
+    },
+    {
+      "symbol": "DDC",
+      "price": 0.3399,
+      "changePct": 6.551724137931027,
+      "early": 61,
+      "ignition": 61,
+      "observedAt": "2026-09-04T19:54:13-04:00"
     },
     {
       "symbol": "MSGM",
@@ -412,13 +412,13 @@
       "title": "My Size, Inc.",
       "cik": "0001211805"
     },
-    "VIOT": {
-      "title": "Viomi Technology Co., Ltd",
-      "cik": "0001742770"
-    },
     "NXTT": {
       "title": "Next Technology Holding Inc.",
       "cik": "0001784970"
+    },
+    "VIOT": {
+      "title": "Viomi Technology Co., Ltd",
+      "cik": "0001742770"
     },
     "VACI": {
       "title": "Viking Acquisition Corp I",
@@ -472,10 +472,6 @@
       "title": "Scienjoy Holding Corp",
       "cik": "0001753673"
     },
-    "DDC": {
-      "title": "DDC Enterprise Ltd",
-      "cik": "0001808110"
-    },
     "AVAT": {
       "title": "Avalanche Treasury Corp",
       "cik": "0002092446"
@@ -483,6 +479,10 @@
     "HODO": {
       "title": "House of Doge Inc.",
       "cik": "0001903595"
+    },
+    "DDC": {
+      "title": "DDC Enterprise Ltd",
+      "cik": "0001808110"
     },
     "MSGM": {
       "title": "Motorsport Games Inc.",
@@ -5328,6 +5328,10 @@
       ],
       "eventCount": 1
     },
+    "NXTT": {
+      "events": [],
+      "eventCount": 0
+    },
     "VIOT": {
       "events": [
         {
@@ -5344,10 +5348,6 @@
         }
       ],
       "eventCount": 1
-    },
-    "NXTT": {
-      "events": [],
-      "eventCount": 0
     },
     "VACI": {
       "events": [
@@ -5881,23 +5881,6 @@
       ],
       "eventCount": 1
     },
-    "DDC": {
-      "events": [
-        {
-          "symbol": "DDC",
-          "title": "DDC Enterprise Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-02T12:16:15.000Z",
-          "headline": "6-K filing — DDC Enterprise Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1808110/000121390026096455/ea0304225-6k_ddcenter.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
     "AVAT": {
       "events": [
         {
@@ -5966,6 +5949,23 @@
     "HODO": {
       "events": [],
       "eventCount": 0
+    },
+    "DDC": {
+      "events": [
+        {
+          "symbol": "DDC",
+          "title": "DDC Enterprise Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-02T12:16:15.000Z",
+          "headline": "6-K filing — DDC Enterprise Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1808110/000121390026096455/ea0304225-6k_ddcenter.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
     },
     "MSGM": {
       "events": [
