@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-06T03:22:02.365Z",
+  "generatedAt": "2026-09-06T06:01:18.445Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,17 +8,17 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-09-04T23:59:59.000Z",
-    "marketDataAgeMin": 1642.1,
+    "marketDataAgeMin": 1801.3,
     "quoteCount": 500,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-06T03:22:02.733Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-06T00:51:34.379Z",
+    "upstreamFeedFetchedAt": "2026-09-06T06:01:18.975Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-06T05:22:25.740Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-04T23:59:59.000Z",
-    "upstreamUpdateAgeAtFetchMin": 150.5,
-    "upstreamObservationAgeAtFetchMin": 1642.1,
+    "upstreamUpdateAgeAtFetchMin": 38.9,
+    "upstreamObservationAgeAtFetchMin": 1801.3,
     "secMapping": true,
     "secMarketwideDiscovery": true,
-    "secMarketwideEventCount": 294,
+    "secMarketwideEventCount": 295,
     "newsDiscovery": true
   },
   "shortlist": [
@@ -287,20 +287,20 @@
       "observedAt": "2026-09-04T19:30:03-04:00"
     },
     {
-      "symbol": "TNON",
-      "price": 3.72,
-      "changePct": -1.3262599469495973,
-      "early": 59,
-      "ignition": 67,
-      "observedAt": "2026-09-04T19:30:02-04:00"
-    },
-    {
       "symbol": "PMAX",
       "price": 0.8799,
       "changePct": 2.3139534883720962,
       "early": 63,
       "ignition": 63,
       "observedAt": "2026-09-04T17:48:07-04:00"
+    },
+    {
+      "symbol": "TNON",
+      "price": 3.72,
+      "changePct": -1.3262599469495973,
+      "early": 59,
+      "ignition": 67,
+      "observedAt": "2026-09-04T19:30:02-04:00"
     },
     {
       "symbol": "AHMA",
@@ -476,13 +476,13 @@
       "title": "My Size, Inc.",
       "cik": "0001211805"
     },
-    "TNON": {
-      "title": "Tenon Medical, Inc.",
-      "cik": "0001560293"
-    },
     "PMAX": {
       "title": "Powell Max Ltd",
       "cik": "0002012096"
+    },
+    "TNON": {
+      "title": "Tenon Medical, Inc.",
+      "cik": "0001560293"
     },
     "AHMA": {
       "title": "AMBITIONS ENTERPRISE MANAGEMENT CO. L.L.C",
@@ -505,7 +505,7 @@
       "cik": "0001784970"
     }
   },
-  "eventCount": 382,
+  "eventCount": 383,
   "events": [
     {
       "symbol": "JJETF",
@@ -647,6 +647,18 @@
       "publishedAt": "2026-09-04T17:22:07-04:00",
       "headline": "6-K filing — NOVARTIS AG",
       "url": "https://www.sec.gov/Archives/edgar/data/1114448/000117184326005896/0001171843-26-005896-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "SBE",
+      "title": "SB Energy, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-04T17:19:39-04:00",
+      "headline": "S-1 filing — SB Energy, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026060761/0001628280-26-060761-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -868,7 +880,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "DTG",
+      "symbol": "DTB",
       "title": "DTE ENERGY CO",
       "type": "SEC",
       "form": "8-K",
@@ -1780,7 +1792,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "MS-PA",
+      "symbol": "MS-PQ",
       "title": "MORGAN STANLEY",
       "type": "SEC",
       "form": "424B",
@@ -2380,7 +2392,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "HLX",
+      "symbol": "HOS",
       "title": "HORNBECK OFFSHORE SERVICES, INC.",
       "type": "SEC",
       "form": "8-K",
@@ -6175,6 +6187,10 @@
       ],
       "eventCount": 1
     },
+    "PMAX": {
+      "events": [],
+      "eventCount": 0
+    },
     "TNON": {
       "events": [
         {
@@ -6251,10 +6267,6 @@
         }
       ],
       "eventCount": 6
-    },
-    "PMAX": {
-      "events": [],
-      "eventCount": 0
     },
     "AHMA": {
       "events": [],
@@ -6634,6 +6646,23 @@
       ],
       "eventCount": 1
     },
+    "SBE": {
+      "events": [
+        {
+          "symbol": "SBE",
+          "title": "SB Energy, Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-04T17:19:39-04:00",
+          "headline": "S-1 filing — SB Energy, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026060761/0001628280-26-060761-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "RGEN": {
       "events": [
         {
@@ -6937,10 +6966,10 @@
       ],
       "eventCount": 1
     },
-    "DTG": {
+    "DTB": {
       "events": [
         {
-          "symbol": "DTG",
+          "symbol": "DTB",
           "title": "DTE ENERGY CO",
           "type": "SEC",
           "form": "8-K",
@@ -7881,10 +7910,10 @@
       ],
       "eventCount": 1
     },
-    "MS-PA": {
+    "MS-PQ": {
       "events": [
         {
-          "symbol": "MS-PA",
+          "symbol": "MS-PQ",
           "title": "MORGAN STANLEY",
           "type": "SEC",
           "form": "424B",
@@ -8352,10 +8381,10 @@
       ],
       "eventCount": 1
     },
-    "HLX": {
+    "HOS": {
       "events": [
         {
-          "symbol": "HLX",
+          "symbol": "HOS",
           "title": "HORNBECK OFFSHORE SERVICES, INC.",
           "type": "SEC",
           "form": "8-K",
