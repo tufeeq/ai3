@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-06T17:39:04.535Z",
+  "generatedAt": "2026-09-06T18:56:14.578Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-09-04T23:59:59.000Z",
-    "marketDataAgeMin": 2499.1,
+    "marketDataAgeMin": 2576.3,
     "quoteCount": 500,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-06T17:39:05.003Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-06T16:15:14.592Z",
+    "upstreamFeedFetchedAt": "2026-09-06T18:56:14.837Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-06T18:24:50.202Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-04T23:59:59.000Z",
-    "upstreamUpdateAgeAtFetchMin": 83.8,
-    "upstreamObservationAgeAtFetchMin": 2499.1,
+    "upstreamUpdateAgeAtFetchMin": 31.4,
+    "upstreamObservationAgeAtFetchMin": 2576.3,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 294,
@@ -143,20 +143,20 @@
       "observedAt": "2026-09-04T19:30:18-04:00"
     },
     {
-      "symbol": "SJ",
-      "price": 0.9989,
-      "changePct": 14.816091954022989,
-      "early": 69,
-      "ignition": 77,
-      "observedAt": "2026-09-04T19:24:14-04:00"
-    },
-    {
       "symbol": "AVAT",
       "price": 0.747,
       "changePct": 2.6098901098901126,
       "early": 69,
       "ignition": 77,
       "observedAt": "2026-09-04T19:39:54-04:00"
+    },
+    {
+      "symbol": "SJ",
+      "price": 0.9989,
+      "changePct": 14.816091954022989,
+      "early": 69,
+      "ignition": 77,
+      "observedAt": "2026-09-04T19:24:14-04:00"
     },
     {
       "symbol": "MSGM",
@@ -287,20 +287,20 @@
       "observedAt": "2026-09-04T19:30:03-04:00"
     },
     {
-      "symbol": "TNON",
-      "price": 3.72,
-      "changePct": -1.3262599469495973,
-      "early": 59,
-      "ignition": 67,
-      "observedAt": "2026-09-04T19:30:02-04:00"
-    },
-    {
       "symbol": "PMAX",
       "price": 0.8799,
       "changePct": 2.3139534883720962,
       "early": 63,
       "ignition": 63,
       "observedAt": "2026-09-04T17:48:07-04:00"
+    },
+    {
+      "symbol": "TNON",
+      "price": 3.72,
+      "changePct": -1.3262599469495973,
+      "early": 59,
+      "ignition": 67,
+      "observedAt": "2026-09-04T19:30:02-04:00"
     },
     {
       "symbol": "AHMA",
@@ -335,12 +335,12 @@
       "observedAt": "2026-09-04T19:30:03-04:00"
     },
     {
-      "symbol": "VIOT",
-      "price": 1.19,
-      "changePct": -12.50000000000001,
+      "symbol": "NXTT",
+      "price": 5.4733,
+      "changePct": -7.701517706576723,
       "early": 58,
       "ignition": 66,
-      "observedAt": "2026-09-04T19:51:42-04:00"
+      "observedAt": "2026-09-04T19:57:11-04:00"
     }
   ],
   "companies": {
@@ -404,13 +404,13 @@
       "title": "Ernexa Therapeutics Inc.",
       "cik": "0000748592"
     },
-    "SJ": {
-      "title": "Scienjoy Holding Corp",
-      "cik": "0001753673"
-    },
     "AVAT": {
       "title": "Avalanche Treasury Corp",
       "cik": "0002092446"
+    },
+    "SJ": {
+      "title": "Scienjoy Holding Corp",
+      "cik": "0001753673"
     },
     "MSGM": {
       "title": "Motorsport Games Inc.",
@@ -476,13 +476,13 @@
       "title": "My Size, Inc.",
       "cik": "0001211805"
     },
-    "TNON": {
-      "title": "Tenon Medical, Inc.",
-      "cik": "0001560293"
-    },
     "PMAX": {
       "title": "Powell Max Ltd",
       "cik": "0002012096"
+    },
+    "TNON": {
+      "title": "Tenon Medical, Inc.",
+      "cik": "0001560293"
     },
     "AHMA": {
       "title": "AMBITIONS ENTERPRISE MANAGEMENT CO. L.L.C",
@@ -500,12 +500,12 @@
       "title": "OneWater Marine Inc.",
       "cik": "0001772921"
     },
-    "VIOT": {
-      "title": "Viomi Technology Co., Ltd",
-      "cik": "0001742770"
+    "NXTT": {
+      "title": "Next Technology Holding Inc.",
+      "cik": "0001784970"
     }
   },
-  "eventCount": 383,
+  "eventCount": 382,
   "events": [
     {
       "symbol": "JJETF",
@@ -4624,18 +4624,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "VIOT",
-      "title": "Viomi Technology Co., Ltd",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-08-27T10:52:03.000Z",
-      "headline": "6-K filing — Viomi Technology Co., Ltd",
-      "url": "https://www.sec.gov/Archives/edgar/data/1742770/000149315226040317/form6-k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "IPEX",
       "title": "Inflection Point Acquisition Corp. V",
       "type": "SEC",
@@ -5487,23 +5475,6 @@
       ],
       "eventCount": 6
     },
-    "SJ": {
-      "events": [
-        {
-          "symbol": "SJ",
-          "title": "Scienjoy Holding Corp",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-03T00:45:16.000Z",
-          "headline": "6-K filing — Scienjoy Holding Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/1753673/000121390026096863/ea0304420-6k_scienjoy.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
     "AVAT": {
       "events": [
         {
@@ -5568,6 +5539,23 @@
         }
       ],
       "eventCount": 5
+    },
+    "SJ": {
+      "events": [
+        {
+          "symbol": "SJ",
+          "title": "Scienjoy Holding Corp",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-03T00:45:16.000Z",
+          "headline": "6-K filing — Scienjoy Holding Corp",
+          "url": "https://www.sec.gov/Archives/edgar/data/1753673/000121390026096863/ea0304420-6k_scienjoy.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
     },
     "MSGM": {
       "events": [
@@ -6187,6 +6175,10 @@
       ],
       "eventCount": 1
     },
+    "PMAX": {
+      "events": [],
+      "eventCount": 0
+    },
     "TNON": {
       "events": [
         {
@@ -6263,10 +6255,6 @@
         }
       ],
       "eventCount": 6
-    },
-    "PMAX": {
-      "events": [],
-      "eventCount": 0
     },
     "AHMA": {
       "events": [],
@@ -6383,22 +6371,9 @@
       ],
       "eventCount": 2
     },
-    "VIOT": {
-      "events": [
-        {
-          "symbol": "VIOT",
-          "title": "Viomi Technology Co., Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-08-27T10:52:03.000Z",
-          "headline": "6-K filing — Viomi Technology Co., Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1742770/000149315226040317/form6-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
+    "NXTT": {
+      "events": [],
+      "eventCount": 0
     },
     "JJETF": {
       "events": [
