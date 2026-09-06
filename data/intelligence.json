@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-06T12:06:04.685Z",
+  "generatedAt": "2026-09-06T14:01:36.399Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-09-04T23:59:59.000Z",
-    "marketDataAgeMin": 2166.1,
+    "marketDataAgeMin": 2281.6,
     "quoteCount": 500,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-06T12:06:05.078Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-06T09:34:34.525Z",
+    "upstreamFeedFetchedAt": "2026-09-06T14:01:36.852Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-06T13:06:49.354Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-04T23:59:59.000Z",
-    "upstreamUpdateAgeAtFetchMin": 151.5,
-    "upstreamObservationAgeAtFetchMin": 2166.1,
+    "upstreamUpdateAgeAtFetchMin": 54.8,
+    "upstreamObservationAgeAtFetchMin": 2281.6,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 294,
@@ -127,20 +127,20 @@
       "observedAt": "2026-09-04T16:28:10-04:00"
     },
     {
-      "symbol": "GWAV",
-      "price": 5.24,
-      "changePct": 2.745098039215698,
-      "early": 71,
-      "ignition": 79,
-      "observedAt": "2026-09-04T19:30:01-04:00"
-    },
-    {
       "symbol": "ERNA",
       "price": 4.579,
       "changePct": 1.0816777041942491,
       "early": 71,
       "ignition": 79,
       "observedAt": "2026-09-04T19:30:18-04:00"
+    },
+    {
+      "symbol": "GWAV",
+      "price": 5.24,
+      "changePct": 2.745098039215698,
+      "early": 71,
+      "ignition": 79,
+      "observedAt": "2026-09-04T19:30:01-04:00"
     },
     {
       "symbol": "SJ",
@@ -287,20 +287,20 @@
       "observedAt": "2026-09-04T19:30:03-04:00"
     },
     {
-      "symbol": "PMAX",
-      "price": 0.8799,
-      "changePct": 2.3139534883720962,
-      "early": 63,
-      "ignition": 63,
-      "observedAt": "2026-09-04T17:48:07-04:00"
-    },
-    {
       "symbol": "TNON",
       "price": 3.72,
       "changePct": -1.3262599469495973,
       "early": 59,
       "ignition": 67,
       "observedAt": "2026-09-04T19:30:02-04:00"
+    },
+    {
+      "symbol": "PMAX",
+      "price": 0.8799,
+      "changePct": 2.3139534883720962,
+      "early": 63,
+      "ignition": 63,
+      "observedAt": "2026-09-04T17:48:07-04:00"
     },
     {
       "symbol": "AHMA",
@@ -335,12 +335,12 @@
       "observedAt": "2026-09-04T19:30:03-04:00"
     },
     {
-      "symbol": "NXTT",
-      "price": 5.4733,
-      "changePct": -7.701517706576723,
+      "symbol": "VIOT",
+      "price": 1.19,
+      "changePct": -12.50000000000001,
       "early": 58,
       "ignition": 66,
-      "observedAt": "2026-09-04T19:57:11-04:00"
+      "observedAt": "2026-09-04T19:51:42-04:00"
     }
   ],
   "companies": {
@@ -396,13 +396,13 @@
       "title": "Primech Holdings Ltd",
       "cik": "0001891944"
     },
-    "GWAV": {
-      "title": "Greenwave Technology Solutions, Inc.",
-      "cik": "0001589149"
-    },
     "ERNA": {
       "title": "Ernexa Therapeutics Inc.",
       "cik": "0000748592"
+    },
+    "GWAV": {
+      "title": "Greenwave Technology Solutions, Inc.",
+      "cik": "0001589149"
     },
     "SJ": {
       "title": "Scienjoy Holding Corp",
@@ -476,13 +476,13 @@
       "title": "My Size, Inc.",
       "cik": "0001211805"
     },
-    "PMAX": {
-      "title": "Powell Max Ltd",
-      "cik": "0002012096"
-    },
     "TNON": {
       "title": "Tenon Medical, Inc.",
       "cik": "0001560293"
+    },
+    "PMAX": {
+      "title": "Powell Max Ltd",
+      "cik": "0002012096"
     },
     "AHMA": {
       "title": "AMBITIONS ENTERPRISE MANAGEMENT CO. L.L.C",
@@ -500,12 +500,12 @@
       "title": "OneWater Marine Inc.",
       "cik": "0001772921"
     },
-    "NXTT": {
-      "title": "Next Technology Holding Inc.",
-      "cik": "0001784970"
+    "VIOT": {
+      "title": "Viomi Technology Co., Ltd",
+      "cik": "0001742770"
     }
   },
-  "eventCount": 382,
+  "eventCount": 383,
   "events": [
     {
       "symbol": "JJETF",
@@ -4624,6 +4624,18 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
+      "symbol": "VIOT",
+      "title": "Viomi Technology Co., Ltd",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-08-27T10:52:03.000Z",
+      "headline": "6-K filing — Viomi Technology Co., Ltd",
+      "url": "https://www.sec.gov/Archives/edgar/data/1742770/000149315226040317/form6-k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
       "symbol": "IPEX",
       "title": "Inflection Point Acquisition Corp. V",
       "type": "SEC",
@@ -5381,23 +5393,6 @@
       ],
       "eventCount": 2
     },
-    "GWAV": {
-      "events": [
-        {
-          "symbol": "GWAV",
-          "title": "Greenwave Technology Solutions, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-08-27T20:50:48.000Z",
-          "headline": "8-K filing — Greenwave Technology Solutions, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1589149/000149315226040419/form8-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
     "ERNA": {
       "events": [
         {
@@ -5474,6 +5469,23 @@
         }
       ],
       "eventCount": 6
+    },
+    "GWAV": {
+      "events": [
+        {
+          "symbol": "GWAV",
+          "title": "Greenwave Technology Solutions, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-08-27T20:50:48.000Z",
+          "headline": "8-K filing — Greenwave Technology Solutions, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1589149/000149315226040419/form8-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
     },
     "SJ": {
       "events": [
@@ -6175,10 +6187,6 @@
       ],
       "eventCount": 1
     },
-    "PMAX": {
-      "events": [],
-      "eventCount": 0
-    },
     "TNON": {
       "events": [
         {
@@ -6255,6 +6263,10 @@
         }
       ],
       "eventCount": 6
+    },
+    "PMAX": {
+      "events": [],
+      "eventCount": 0
     },
     "AHMA": {
       "events": [],
@@ -6371,9 +6383,22 @@
       ],
       "eventCount": 2
     },
-    "NXTT": {
-      "events": [],
-      "eventCount": 0
+    "VIOT": {
+      "events": [
+        {
+          "symbol": "VIOT",
+          "title": "Viomi Technology Co., Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-08-27T10:52:03.000Z",
+          "headline": "6-K filing — Viomi Technology Co., Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1742770/000149315226040317/form6-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
     },
     "JJETF": {
       "events": [
