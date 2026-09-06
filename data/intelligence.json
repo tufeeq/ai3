@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-05T23:58:22.987Z",
+  "generatedAt": "2026-09-06T01:15:23.681Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-09-04T23:59:59.000Z",
-    "marketDataAgeMin": 1438.4,
+    "marketDataAgeMin": 1515.4,
     "quoteCount": 500,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-05T23:58:23.380Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-05T23:01:00.291Z",
+    "upstreamFeedFetchedAt": "2026-09-06T01:15:24.163Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-06T00:51:34.379Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-04T23:59:59.000Z",
-    "upstreamUpdateAgeAtFetchMin": 57.4,
-    "upstreamObservationAgeAtFetchMin": 1438.4,
+    "upstreamUpdateAgeAtFetchMin": 23.8,
+    "upstreamObservationAgeAtFetchMin": 1515.4,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 294,
@@ -143,20 +143,20 @@
       "observedAt": "2026-09-04T19:30:18-04:00"
     },
     {
-      "symbol": "AVAT",
-      "price": 0.747,
-      "changePct": 2.6098901098901126,
-      "early": 69,
-      "ignition": 77,
-      "observedAt": "2026-09-04T19:39:54-04:00"
-    },
-    {
       "symbol": "SJ",
       "price": 0.9989,
       "changePct": 14.816091954022989,
       "early": 69,
       "ignition": 77,
       "observedAt": "2026-09-04T19:24:14-04:00"
+    },
+    {
+      "symbol": "AVAT",
+      "price": 0.747,
+      "changePct": 2.6098901098901126,
+      "early": 69,
+      "ignition": 77,
+      "observedAt": "2026-09-04T19:39:54-04:00"
     },
     {
       "symbol": "MSGM",
@@ -287,20 +287,20 @@
       "observedAt": "2026-09-04T19:30:03-04:00"
     },
     {
-      "symbol": "PMAX",
-      "price": 0.8799,
-      "changePct": 2.3139534883720962,
-      "early": 63,
-      "ignition": 63,
-      "observedAt": "2026-09-04T17:48:07-04:00"
-    },
-    {
       "symbol": "TNON",
       "price": 3.72,
       "changePct": -1.3262599469495973,
       "early": 59,
       "ignition": 67,
       "observedAt": "2026-09-04T19:30:02-04:00"
+    },
+    {
+      "symbol": "PMAX",
+      "price": 0.8799,
+      "changePct": 2.3139534883720962,
+      "early": 63,
+      "ignition": 63,
+      "observedAt": "2026-09-04T17:48:07-04:00"
     },
     {
       "symbol": "AHMA",
@@ -404,13 +404,13 @@
       "title": "Ernexa Therapeutics Inc.",
       "cik": "0000748592"
     },
-    "AVAT": {
-      "title": "Avalanche Treasury Corp",
-      "cik": "0002092446"
-    },
     "SJ": {
       "title": "Scienjoy Holding Corp",
       "cik": "0001753673"
+    },
+    "AVAT": {
+      "title": "Avalanche Treasury Corp",
+      "cik": "0002092446"
     },
     "MSGM": {
       "title": "Motorsport Games Inc.",
@@ -476,13 +476,13 @@
       "title": "My Size, Inc.",
       "cik": "0001211805"
     },
-    "PMAX": {
-      "title": "Powell Max Ltd",
-      "cik": "0002012096"
-    },
     "TNON": {
       "title": "Tenon Medical, Inc.",
       "cik": "0001560293"
+    },
+    "PMAX": {
+      "title": "Powell Max Ltd",
+      "cik": "0002012096"
     },
     "AHMA": {
       "title": "AMBITIONS ENTERPRISE MANAGEMENT CO. L.L.C",
@@ -5475,6 +5475,23 @@
       ],
       "eventCount": 6
     },
+    "SJ": {
+      "events": [
+        {
+          "symbol": "SJ",
+          "title": "Scienjoy Holding Corp",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-03T00:45:16.000Z",
+          "headline": "6-K filing — Scienjoy Holding Corp",
+          "url": "https://www.sec.gov/Archives/edgar/data/1753673/000121390026096863/ea0304420-6k_scienjoy.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
     "AVAT": {
       "events": [
         {
@@ -5539,23 +5556,6 @@
         }
       ],
       "eventCount": 5
-    },
-    "SJ": {
-      "events": [
-        {
-          "symbol": "SJ",
-          "title": "Scienjoy Holding Corp",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-03T00:45:16.000Z",
-          "headline": "6-K filing — Scienjoy Holding Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/1753673/000121390026096863/ea0304420-6k_scienjoy.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
     },
     "MSGM": {
       "events": [
@@ -6175,10 +6175,6 @@
       ],
       "eventCount": 1
     },
-    "PMAX": {
-      "events": [],
-      "eventCount": 0
-    },
     "TNON": {
       "events": [
         {
@@ -6255,6 +6251,10 @@
         }
       ],
       "eventCount": 6
+    },
+    "PMAX": {
+      "events": [],
+      "eventCount": 0
     },
     "AHMA": {
       "events": [],
