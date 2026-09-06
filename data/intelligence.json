@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-06T15:28:49.049Z",
+  "generatedAt": "2026-09-06T16:55:20.001Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-09-04T23:59:59.000Z",
-    "marketDataAgeMin": 2368.8,
+    "marketDataAgeMin": 2455.4,
     "quoteCount": 500,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-06T15:28:49.620Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-06T13:06:49.354Z",
+    "upstreamFeedFetchedAt": "2026-09-06T16:55:20.215Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-06T16:15:14.592Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-04T23:59:59.000Z",
-    "upstreamUpdateAgeAtFetchMin": 142,
-    "upstreamObservationAgeAtFetchMin": 2368.8,
+    "upstreamUpdateAgeAtFetchMin": 40.1,
+    "upstreamObservationAgeAtFetchMin": 2455.4,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 294,
@@ -127,20 +127,20 @@
       "observedAt": "2026-09-04T16:28:10-04:00"
     },
     {
-      "symbol": "ERNA",
-      "price": 4.579,
-      "changePct": 1.0816777041942491,
-      "early": 71,
-      "ignition": 79,
-      "observedAt": "2026-09-04T19:30:18-04:00"
-    },
-    {
       "symbol": "GWAV",
       "price": 5.24,
       "changePct": 2.745098039215698,
       "early": 71,
       "ignition": 79,
       "observedAt": "2026-09-04T19:30:01-04:00"
+    },
+    {
+      "symbol": "ERNA",
+      "price": 4.579,
+      "changePct": 1.0816777041942491,
+      "early": 71,
+      "ignition": 79,
+      "observedAt": "2026-09-04T19:30:18-04:00"
     },
     {
       "symbol": "SJ",
@@ -396,13 +396,13 @@
       "title": "Primech Holdings Ltd",
       "cik": "0001891944"
     },
-    "ERNA": {
-      "title": "Ernexa Therapeutics Inc.",
-      "cik": "0000748592"
-    },
     "GWAV": {
       "title": "Greenwave Technology Solutions, Inc.",
       "cik": "0001589149"
+    },
+    "ERNA": {
+      "title": "Ernexa Therapeutics Inc.",
+      "cik": "0000748592"
     },
     "SJ": {
       "title": "Scienjoy Holding Corp",
@@ -5393,6 +5393,23 @@
       ],
       "eventCount": 2
     },
+    "GWAV": {
+      "events": [
+        {
+          "symbol": "GWAV",
+          "title": "Greenwave Technology Solutions, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-08-27T20:50:48.000Z",
+          "headline": "8-K filing — Greenwave Technology Solutions, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1589149/000149315226040419/form8-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
     "ERNA": {
       "events": [
         {
@@ -5469,23 +5486,6 @@
         }
       ],
       "eventCount": 6
-    },
-    "GWAV": {
-      "events": [
-        {
-          "symbol": "GWAV",
-          "title": "Greenwave Technology Solutions, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-08-27T20:50:48.000Z",
-          "headline": "8-K filing — Greenwave Technology Solutions, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1589149/000149315226040419/form8-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
     },
     "SJ": {
       "events": [
