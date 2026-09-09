@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-09T01:24:09.713Z",
+  "generatedAt": "2026-09-09T06:00:03.507Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,17 +8,17 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-09-09T00:00:00.000Z",
-    "marketDataAgeMin": 84.2,
+    "marketDataAgeMin": 360.1,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-09T01:24:09.868Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-09T00:44:39.420Z",
+    "upstreamFeedFetchedAt": "2026-09-09T06:00:04.806Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-09T05:23:53.589Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-09T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 39.5,
-    "upstreamObservationAgeAtFetchMin": 84.2,
+    "upstreamUpdateAgeAtFetchMin": 36.2,
+    "upstreamObservationAgeAtFetchMin": 360.1,
     "secMapping": true,
     "secMarketwideDiscovery": true,
-    "secMarketwideEventCount": 291,
+    "secMarketwideEventCount": 274,
     "newsDiscovery": true
   },
   "shortlist": [
@@ -295,14 +295,6 @@
       "observedAt": "2026-09-08T18:58:10-04:00"
     },
     {
-      "symbol": "IMRN",
-      "price": 1.8398,
-      "changePct": 2.2111111111111144,
-      "early": 56,
-      "ignition": 64,
-      "observedAt": "2026-09-08T19:59:37-04:00"
-    },
-    {
       "symbol": "CTNT",
       "price": 1.32,
       "changePct": 5.600000000000005,
@@ -317,6 +309,14 @@
       "early": 56,
       "ignition": 64,
       "observedAt": "2026-09-08T19:58:36-04:00"
+    },
+    {
+      "symbol": "IMRN",
+      "price": 1.8398,
+      "changePct": 2.2111111111111144,
+      "early": 56,
+      "ignition": 64,
+      "observedAt": "2026-09-08T19:59:37-04:00"
     },
     {
       "symbol": "ITG",
@@ -460,10 +460,6 @@
       "title": "PERSHING SQUARE INC.",
       "cik": "0002026053"
     },
-    "IMRN": {
-      "title": "Immuron Ltd",
-      "cik": "0001660046"
-    },
     "CTNT": {
       "title": "CHEETAH NET SUPPLY CHAIN SERVICE INC.",
       "cik": "0001951667"
@@ -471,6 +467,10 @@
     "SLDP": {
       "title": "Solid Power, Inc.",
       "cik": "0001844862"
+    },
+    "IMRN": {
+      "title": "Immuron Ltd",
+      "cik": "0001660046"
     },
     "ITG": {
       "title": "ITG, Inc./DE/",
@@ -481,7 +481,7 @@
       "cik": "0001534525"
     }
   },
-  "eventCount": 332,
+  "eventCount": 314,
   "events": [
     {
       "symbol": "CDTTW",
@@ -1840,7 +1840,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "MS-PQ",
+      "symbol": "MS-PA",
       "title": "MORGAN STANLEY",
       "type": "SEC",
       "form": "424B",
@@ -2224,6 +2224,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "SXTP",
+      "title": "60 DEGREES PHARMACEUTICALS, INC.",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-09-08T20:27:21.000Z",
+      "headline": "8-K filing — 60 DEGREES PHARMACEUTICALS, INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1946563/000121390026098056/ea0304862-8k_60degrees.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
       "symbol": "TYGO",
       "title": "TIGO ENERGY, INC.",
       "type": "SEC",
@@ -2452,7 +2464,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "DTB",
+      "symbol": "DTG",
       "title": "DTE ENERGY CO",
       "type": "SEC",
       "form": "8-K",
@@ -2848,18 +2860,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "SXTP",
-      "title": "60 DEGREES PHARMACEUTICALS, INC.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-09-08T16:27:21.000Z",
-      "headline": "8-K filing — 60 DEGREES PHARMACEUTICALS, INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1946563/000121390026098056/ea0304862-8k_60degrees.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "SA",
       "title": "SEABRIDGE GOLD INC",
       "type": "SEC",
@@ -3062,6 +3062,18 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "EVI",
+      "title": "EVI INDUSTRIES, INC.",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-09-08T12:47:59.000Z",
+      "headline": "8-K filing — EVI INDUSTRIES, INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/65312/000143774926029760/evi20260327_8k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "EMAT",
@@ -3628,30 +3640,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "EVI",
-      "title": "EVI INDUSTRIES, INC.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-09-08T08:47:59.000Z",
-      "headline": "8-K filing — EVI INDUSTRIES, INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/65312/000143774926029760/evi20260327_8k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "PLSM",
-      "title": "Pulsenmore Ltd.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-09-08T07:10:53.000Z",
-      "headline": "6-K filing — Pulsenmore Ltd.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2064764/000149315226041693/form6-k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "LASE",
       "title": "Laser Photonics Corp",
       "type": "SEC",
@@ -3659,18 +3647,6 @@
       "publishedAt": "2026-09-04T17:30:46-04:00",
       "headline": "S-1 filing — Laser Photonics Corp",
       "url": "https://www.sec.gov/Archives/edgar/data/1807887/000149315226041613/0001493152-26-041613-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "SBE",
-      "title": "SB Energy, Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-09-04T17:19:39-04:00",
-      "headline": "S-1 filing — SB Energy, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026060761/0001628280-26-060761-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -3832,18 +3808,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "AIXC",
-      "title": "AIxCrypto Holdings, Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-09-03T21:47:25-04:00",
-      "headline": "S-1 filing — AIxCrypto Holdings, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1460702/000149315226041428/0001493152-26-041428-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
       "symbol": "IMRN",
       "title": "Immuron Ltd",
       "type": "SEC",
@@ -3856,54 +3820,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "ILXP",
-      "title": "ECOMINAS CORP.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-09-03T19:22:44-04:00",
-      "headline": "S-1 filing — ECOMINAS CORP.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1115864/000147793226005410/0001477932-26-005410-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "HD",
-      "title": "HOME DEPOT, INC.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-09-03T17:57:35-04:00",
-      "headline": "S-3 filing — HOME DEPOT, INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495026000163/0000354950-26-000163-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "DFNSW",
-      "title": "T3 Defense Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-09-03T17:21:18-04:00",
-      "headline": "S-1 filing — T3 Defense Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1787518/000118518526003839/0001185185-26-003839-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "DFNSW",
-      "title": "T3 Defense Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-09-03T17:21:15-04:00",
-      "headline": "S-1 filing — T3 Defense Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1787518/000121390026097287/0001213900-26-097287-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
       "symbol": "MODD",
       "title": "Modular Medical, Inc.",
       "type": "SEC",
@@ -3914,102 +3830,6 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "FEMY",
-      "title": "FEMASYS INC",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-09-03T17:06:19-04:00",
-      "headline": "S-3 filing — FEMASYS INC",
-      "url": "https://www.sec.gov/Archives/edgar/data/1339005/000114036126035625/0001140361-26-035625-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "VHUB",
-      "title": "VenHub Global, Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-09-03T17:00:28-04:00",
-      "headline": "S-1 filing — VenHub Global, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1972234/000121390026097253/0001213900-26-097253-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "PPSI",
-      "title": "PIONEER POWER SOLUTIONS, INC.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-09-03T17:00:27-04:00",
-      "headline": "S-3 filing — PIONEER POWER SOLUTIONS, INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1449792/000149315226041392/0001493152-26-041392-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "NXL",
-      "title": "Nexalin Technology, Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-09-03T17:00:26-04:00",
-      "headline": "S-1 filing — Nexalin Technology, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1527352/000182912626009723/0001829126-26-009723-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "PHR",
-      "title": "Phreesia, Inc.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-09-03T16:54:07-04:00",
-      "headline": "S-3 filing — Phreesia, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1412408/000162828026060497/0001628280-26-060497-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "AMRX",
-      "title": "Amneal Pharmaceuticals, Inc.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-09-03T16:44:14-04:00",
-      "headline": "S-3 filing — Amneal Pharmaceuticals, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1723128/000114036126035617/0001140361-26-035617-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "KFY",
-      "title": "KORN FERRY",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-09-03T16:30:44-04:00",
-      "headline": "S-3 filing — KORN FERRY",
-      "url": "https://www.sec.gov/Archives/edgar/data/56679/000119312526381964/0001193125-26-381964-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "BROS",
-      "title": "Dutch Bros Inc.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-09-03T16:15:23-04:00",
-      "headline": "S-3 filing — Dutch Bros Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1866581/000162828026060458/0001628280-26-060458-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
     },
     {
       "symbol": "NXTC",
@@ -4034,42 +3854,6 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "EP",
-      "title": "EMPIRE PETROLEUM CORP",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-09-03T16:03:00-04:00",
-      "headline": "S-3 filing — EMPIRE PETROLEUM CORP",
-      "url": "https://www.sec.gov/Archives/edgar/data/887396/000107261326000747/0001072613-26-000747-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "BIAFW",
-      "title": "bioAffinity Technologies, Inc.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-09-03T16:00:43-04:00",
-      "headline": "S-3 filing — bioAffinity Technologies, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1712762/000149315226041354/0001493152-26-041354-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "FBDT",
-      "title": "First Breach, Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-09-03T11:52:44-04:00",
-      "headline": "S-1 filing — First Breach, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1892704/000149315226041268/0001493152-26-041268-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
     },
     {
       "symbol": "ILLR",
@@ -4480,7 +4264,7 @@
           "title": "60 DEGREES PHARMACEUTICALS, INC.",
           "type": "SEC",
           "form": "8-K",
-          "publishedAt": "2026-09-08T16:27:21.000Z",
+          "publishedAt": "2026-09-08T20:27:21.000Z",
           "headline": "8-K filing — 60 DEGREES PHARMACEUTICALS, INC.",
           "url": "https://www.sec.gov/Archives/edgar/data/1946563/000121390026098056/ea0304862-8k_60degrees.htm",
           "source": "SEC EDGAR",
@@ -4801,18 +4585,6 @@
           "symbol": "PLSM",
           "title": "Pulsenmore Ltd.",
           "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-08T07:10:53.000Z",
-          "headline": "6-K filing — Pulsenmore Ltd.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2064764/000149315226041693/form6-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "PLSM",
-          "title": "Pulsenmore Ltd.",
-          "type": "SEC",
           "form": "EFFECT",
           "publishedAt": "2026-09-02T04:15:20.000Z",
           "headline": "EFFECT filing — Pulsenmore Ltd.",
@@ -4834,7 +4606,7 @@
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 4
+      "eventCount": 3
     },
     "SDP": {
       "events": [],
@@ -5020,7 +4792,7 @@
           "title": "EVI INDUSTRIES, INC.",
           "type": "SEC",
           "form": "8-K",
-          "publishedAt": "2026-09-08T08:47:59.000Z",
+          "publishedAt": "2026-09-08T12:47:59.000Z",
           "headline": "8-K filing — EVI INDUSTRIES, INC.",
           "url": "https://www.sec.gov/Archives/edgar/data/65312/000143774926029760/evi20260327_8k.htm",
           "source": "SEC EDGAR",
@@ -5079,35 +4851,6 @@
       "events": [],
       "eventCount": 0
     },
-    "IMRN": {
-      "events": [
-        {
-          "symbol": "IMRN",
-          "title": "Immuron Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-04T00:38:41.000Z",
-          "headline": "6-K filing — Immuron Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1660046/000121390026097357/ea0304669-6k_immuron.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "IMRN",
-          "title": "Immuron Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-08-28T12:00:09.000Z",
-          "headline": "6-K filing — Immuron Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1660046/000121390026094657/ea0303772-6k_immuron.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
-    },
     "CTNT": {
       "events": [
         {
@@ -5140,6 +4883,35 @@
     "SLDP": {
       "events": [],
       "eventCount": 0
+    },
+    "IMRN": {
+      "events": [
+        {
+          "symbol": "IMRN",
+          "title": "Immuron Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-04T00:38:41.000Z",
+          "headline": "6-K filing — Immuron Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1660046/000121390026097357/ea0304669-6k_immuron.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "IMRN",
+          "title": "Immuron Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-08-28T12:00:09.000Z",
+          "headline": "6-K filing — Immuron Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1660046/000121390026094657/ea0303772-6k_immuron.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 2
     },
     "ITG": {
       "events": [],
@@ -6809,10 +6581,10 @@
       ],
       "eventCount": 1
     },
-    "MS-PQ": {
+    "MS-PA": {
       "events": [
         {
-          "symbol": "MS-PQ",
+          "symbol": "MS-PA",
           "title": "MORGAN STANLEY",
           "type": "SEC",
           "form": "424B",
@@ -6936,21 +6708,9 @@
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "KFY",
-          "title": "KORN FERRY",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-09-03T16:30:44-04:00",
-          "headline": "S-3 filing — KORN FERRY",
-          "url": "https://www.sec.gov/Archives/edgar/data/56679/000119312526381964/0001193125-26-381964-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
         }
       ],
-      "eventCount": 2
+      "eventCount": 1
     },
     "FLL": {
       "events": [
@@ -7576,10 +7336,10 @@
       ],
       "eventCount": 1
     },
-    "DTB": {
+    "DTG": {
       "events": [
         {
-          "symbol": "DTB",
+          "symbol": "DTG",
           "title": "DTE ENERGY CO",
           "type": "SEC",
           "form": "8-K",
@@ -9154,23 +8914,6 @@
       ],
       "eventCount": 1
     },
-    "SBE": {
-      "events": [
-        {
-          "symbol": "SBE",
-          "title": "SB Energy, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-09-04T17:19:39-04:00",
-          "headline": "S-1 filing — SB Energy, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026060761/0001628280-26-060761-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
     "USAR": {
       "events": [
         {
@@ -9363,256 +9106,6 @@
           "publishedAt": "2026-09-04T11:07:28-04:00",
           "headline": "S-3 filing — Health In Tech, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/2019505/000121390026097336/0001213900-26-097336-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "AIXC": {
-      "events": [
-        {
-          "symbol": "AIXC",
-          "title": "AIxCrypto Holdings, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-09-03T21:47:25-04:00",
-          "headline": "S-1 filing — AIxCrypto Holdings, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1460702/000149315226041428/0001493152-26-041428-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "ILXP": {
-      "events": [
-        {
-          "symbol": "ILXP",
-          "title": "ECOMINAS CORP.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-09-03T19:22:44-04:00",
-          "headline": "S-1 filing — ECOMINAS CORP.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1115864/000147793226005410/0001477932-26-005410-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "HD": {
-      "events": [
-        {
-          "symbol": "HD",
-          "title": "HOME DEPOT, INC.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-09-03T17:57:35-04:00",
-          "headline": "S-3 filing — HOME DEPOT, INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495026000163/0000354950-26-000163-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "DFNSW": {
-      "events": [
-        {
-          "symbol": "DFNSW",
-          "title": "T3 Defense Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-09-03T17:21:18-04:00",
-          "headline": "S-1 filing — T3 Defense Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1787518/000118518526003839/0001185185-26-003839-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "DFNSW",
-          "title": "T3 Defense Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-09-03T17:21:15-04:00",
-          "headline": "S-1 filing — T3 Defense Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1787518/000121390026097287/0001213900-26-097287-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 2
-    },
-    "FEMY": {
-      "events": [
-        {
-          "symbol": "FEMY",
-          "title": "FEMASYS INC",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-09-03T17:06:19-04:00",
-          "headline": "S-3 filing — FEMASYS INC",
-          "url": "https://www.sec.gov/Archives/edgar/data/1339005/000114036126035625/0001140361-26-035625-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "VHUB": {
-      "events": [
-        {
-          "symbol": "VHUB",
-          "title": "VenHub Global, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-09-03T17:00:28-04:00",
-          "headline": "S-1 filing — VenHub Global, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1972234/000121390026097253/0001213900-26-097253-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "PPSI": {
-      "events": [
-        {
-          "symbol": "PPSI",
-          "title": "PIONEER POWER SOLUTIONS, INC.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-09-03T17:00:27-04:00",
-          "headline": "S-3 filing — PIONEER POWER SOLUTIONS, INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1449792/000149315226041392/0001493152-26-041392-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "NXL": {
-      "events": [
-        {
-          "symbol": "NXL",
-          "title": "Nexalin Technology, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-09-03T17:00:26-04:00",
-          "headline": "S-1 filing — Nexalin Technology, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1527352/000182912626009723/0001829126-26-009723-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "PHR": {
-      "events": [
-        {
-          "symbol": "PHR",
-          "title": "Phreesia, Inc.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-09-03T16:54:07-04:00",
-          "headline": "S-3 filing — Phreesia, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1412408/000162828026060497/0001628280-26-060497-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "AMRX": {
-      "events": [
-        {
-          "symbol": "AMRX",
-          "title": "Amneal Pharmaceuticals, Inc.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-09-03T16:44:14-04:00",
-          "headline": "S-3 filing — Amneal Pharmaceuticals, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1723128/000114036126035617/0001140361-26-035617-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "BROS": {
-      "events": [
-        {
-          "symbol": "BROS",
-          "title": "Dutch Bros Inc.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-09-03T16:15:23-04:00",
-          "headline": "S-3 filing — Dutch Bros Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1866581/000162828026060458/0001628280-26-060458-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "EP": {
-      "events": [
-        {
-          "symbol": "EP",
-          "title": "EMPIRE PETROLEUM CORP",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-09-03T16:03:00-04:00",
-          "headline": "S-3 filing — EMPIRE PETROLEUM CORP",
-          "url": "https://www.sec.gov/Archives/edgar/data/887396/000107261326000747/0001072613-26-000747-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "BIAFW": {
-      "events": [
-        {
-          "symbol": "BIAFW",
-          "title": "bioAffinity Technologies, Inc.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-09-03T16:00:43-04:00",
-          "headline": "S-3 filing — bioAffinity Technologies, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1712762/000149315226041354/0001493152-26-041354-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "FBDT": {
-      "events": [
-        {
-          "symbol": "FBDT",
-          "title": "First Breach, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-09-03T11:52:44-04:00",
-          "headline": "S-1 filing — First Breach, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1892704/000149315226041268/0001493152-26-041268-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
