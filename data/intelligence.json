@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-09T06:00:03.507Z",
+  "generatedAt": "2026-09-09T06:29:06.068Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,17 +8,17 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-09-09T00:00:00.000Z",
-    "marketDataAgeMin": 360.1,
+    "marketDataAgeMin": 389.1,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-09T06:00:04.806Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-09T05:23:53.589Z",
+    "upstreamFeedFetchedAt": "2026-09-09T06:29:06.563Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-09T06:22:04.613Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-09T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 36.2,
-    "upstreamObservationAgeAtFetchMin": 360.1,
+    "upstreamUpdateAgeAtFetchMin": 7,
+    "upstreamObservationAgeAtFetchMin": 389.1,
     "secMapping": true,
     "secMarketwideDiscovery": true,
-    "secMarketwideEventCount": 274,
+    "secMarketwideEventCount": 275,
     "newsDiscovery": true
   },
   "shortlist": [
@@ -207,20 +207,20 @@
       "observedAt": "2026-09-08T19:54:51-04:00"
     },
     {
-      "symbol": "MF",
-      "price": 13.3,
-      "changePct": 10.64891846921798,
-      "early": 62,
-      "ignition": 62,
-      "observedAt": "2026-09-08T19:30:08-04:00"
-    },
-    {
       "symbol": "TRUG",
       "price": 0.422,
       "changePct": 11.169652265542675,
       "early": 62,
       "ignition": 62,
       "observedAt": "2026-09-08T19:58:59-04:00"
+    },
+    {
+      "symbol": "MF",
+      "price": 13.3,
+      "changePct": 10.64891846921798,
+      "early": 62,
+      "ignition": 62,
+      "observedAt": "2026-09-08T19:30:08-04:00"
     },
     {
       "symbol": "BVC",
@@ -263,20 +263,20 @@
       "observedAt": "2026-09-08T15:58:00-04:00"
     },
     {
-      "symbol": "BRZU",
-      "price": 109.22,
-      "changePct": 4.327060846308149,
-      "early": 59,
-      "ignition": 65,
-      "observedAt": "2026-09-08T16:00:00-04:00"
-    },
-    {
       "symbol": "QEW",
       "price": 30.29,
       "changePct": 1.1014686248331051,
       "early": 62,
       "ignition": 62,
       "observedAt": "2026-09-08T18:51:13-04:00"
+    },
+    {
+      "symbol": "BRZU",
+      "price": 109.22,
+      "changePct": 4.327060846308149,
+      "early": 59,
+      "ignition": 65,
+      "observedAt": "2026-09-08T16:00:00-04:00"
     },
     {
       "symbol": "PS",
@@ -303,20 +303,20 @@
       "observedAt": "2026-09-08T19:57:19-04:00"
     },
     {
-      "symbol": "SLDP",
-      "price": 2.61,
-      "changePct": 3.7773359840954175,
-      "early": 56,
-      "ignition": 64,
-      "observedAt": "2026-09-08T19:58:36-04:00"
-    },
-    {
       "symbol": "IMRN",
       "price": 1.8398,
       "changePct": 2.2111111111111144,
       "early": 56,
       "ignition": 64,
       "observedAt": "2026-09-08T19:59:37-04:00"
+    },
+    {
+      "symbol": "SLDP",
+      "price": 2.61,
+      "changePct": 3.7773359840954175,
+      "early": 56,
+      "ignition": 64,
+      "observedAt": "2026-09-08T19:58:36-04:00"
     },
     {
       "symbol": "ITG",
@@ -432,13 +432,13 @@
       "title": "ProFrac Holding Corp.",
       "cik": "0001881487"
     },
-    "MF": {
-      "title": "MindForge Inc.",
-      "cik": "0001888525"
-    },
     "TRUG": {
       "title": "TruGolf Holdings, Inc.",
       "cik": "0001857086"
+    },
+    "MF": {
+      "title": "MindForge Inc.",
+      "cik": "0001888525"
     },
     "BVC": {
       "title": "BitVentures Ltd",
@@ -464,24 +464,28 @@
       "title": "CHEETAH NET SUPPLY CHAIN SERVICE INC.",
       "cik": "0001951667"
     },
-    "SLDP": {
-      "title": "Solid Power, Inc.",
-      "cik": "0001844862"
-    },
     "IMRN": {
       "title": "Immuron Ltd",
       "cik": "0001660046"
     },
+    "SLDP": {
+      "title": "Solid Power, Inc.",
+      "cik": "0001844862"
+    },
     "ITG": {
       "title": "ITG, Inc./DE/",
       "cik": "0002110117"
+    },
+    "SGRX": {
+      "title": "SANGRIX INC.",
+      "cik": "0001735556"
     },
     "XBIO": {
       "title": "Xenetic Biosciences, Inc.",
       "cik": "0001534525"
     }
   },
-  "eventCount": 314,
+  "eventCount": 317,
   "events": [
     {
       "symbol": "CDTTW",
@@ -1468,7 +1472,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "WFC-PZ",
+      "symbol": "WFC-PA",
       "title": "WELLS FARGO & COMPANY/MN",
       "type": "SEC",
       "form": "424B",
@@ -1840,7 +1844,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "MS-PA",
+      "symbol": "MS-PQ",
       "title": "MORGAN STANLEY",
       "type": "SEC",
       "form": "424B",
@@ -3652,6 +3656,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "SBE",
+      "title": "SB Energy, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-04T17:19:39-04:00",
+      "headline": "S-1 filing — SB Energy, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026060761/0001628280-26-060761-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "USAR",
       "title": "USA Rare Earth, Inc.",
       "type": "SEC",
@@ -3851,6 +3867,18 @@
       "publishedAt": "2026-09-03T20:06:05.000Z",
       "headline": "4 filing — FUEL TECH, INC.",
       "url": "https://www.sec.gov/Archives/edgar/data/846913/000143774926029608/xslF345X06/rdgdoc.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "SGRX",
+      "title": "SANGRIX INC.",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-09-03T13:05:14.000Z",
+      "headline": "6-K filing — SANGRIX INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1735556/000110465926104943/tm2624620d1_6k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4199,6 +4227,18 @@
       "publishedAt": "2026-08-21T20:35:54.000Z",
       "headline": "144 filing — Starling Oncology, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1799191/000195004726008532/xsl144X01/primary_doc.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "SGRX",
+      "title": "SANGRIX INC.",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-08-21T20:30:31.000Z",
+      "headline": "6-K filing — SANGRIX INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1735556/000110465926099708/tm2623750d1_6k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4707,10 +4747,6 @@
       ],
       "eventCount": 2
     },
-    "MF": {
-      "events": [],
-      "eventCount": 0
-    },
     "TRUG": {
       "events": [
         {
@@ -4751,6 +4787,10 @@
         }
       ],
       "eventCount": 3
+    },
+    "MF": {
+      "events": [],
+      "eventCount": 0
     },
     "BVC": {
       "events": [],
@@ -4835,11 +4875,11 @@
       "events": [],
       "eventCount": 0
     },
-    "BRZU": {
+    "QEW": {
       "events": [],
       "eventCount": 0
     },
-    "QEW": {
+    "BRZU": {
       "events": [],
       "eventCount": 0
     },
@@ -4880,10 +4920,6 @@
       ],
       "eventCount": 2
     },
-    "SLDP": {
-      "events": [],
-      "eventCount": 0
-    },
     "IMRN": {
       "events": [
         {
@@ -4913,13 +4949,42 @@
       ],
       "eventCount": 2
     },
+    "SLDP": {
+      "events": [],
+      "eventCount": 0
+    },
     "ITG": {
       "events": [],
       "eventCount": 0
     },
     "SGRX": {
-      "events": [],
-      "eventCount": 0
+      "events": [
+        {
+          "symbol": "SGRX",
+          "title": "SANGRIX INC.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-03T13:05:14.000Z",
+          "headline": "6-K filing — SANGRIX INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1735556/000110465926104943/tm2624620d1_6k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "SGRX",
+          "title": "SANGRIX INC.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-08-21T20:30:31.000Z",
+          "headline": "6-K filing — SANGRIX INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1735556/000110465926099708/tm2623750d1_6k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 2
     },
     "XBIO": {
       "events": [],
@@ -6242,10 +6307,10 @@
       ],
       "eventCount": 1
     },
-    "WFC-PZ": {
+    "WFC-PA": {
       "events": [
         {
-          "symbol": "WFC-PZ",
+          "symbol": "WFC-PA",
           "title": "WELLS FARGO & COMPANY/MN",
           "type": "SEC",
           "form": "424B",
@@ -6581,10 +6646,10 @@
       ],
       "eventCount": 1
     },
-    "MS-PA": {
+    "MS-PQ": {
       "events": [
         {
-          "symbol": "MS-PA",
+          "symbol": "MS-PQ",
           "title": "MORGAN STANLEY",
           "type": "SEC",
           "form": "424B",
@@ -8907,6 +8972,23 @@
           "publishedAt": "2026-09-04T17:30:46-04:00",
           "headline": "S-1 filing — Laser Photonics Corp",
           "url": "https://www.sec.gov/Archives/edgar/data/1807887/000149315226041613/0001493152-26-041613-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "SBE": {
+      "events": [
+        {
+          "symbol": "SBE",
+          "title": "SB Energy, Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-04T17:19:39-04:00",
+          "headline": "S-1 filing — SB Energy, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2133037/000162828026060761/0001628280-26-060761-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
