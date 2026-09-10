@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-10T01:04:53.476Z",
+  "generatedAt": "2026-09-10T01:23:59.203Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-09-10T00:00:00.000Z",
-    "marketDataAgeMin": 64.9,
+    "marketDataAgeMin": 84,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-10T01:04:54.106Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-10T00:41:58.223Z",
+    "upstreamFeedFetchedAt": "2026-09-10T01:23:59.675Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-10T01:12:32.757Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-10T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 22.9,
-    "upstreamObservationAgeAtFetchMin": 64.9,
+    "upstreamUpdateAgeAtFetchMin": 11.4,
+    "upstreamObservationAgeAtFetchMin": 84,
     "secMapping": true,
     "secMarketwideDiscovery": false,
     "secMarketwideEventCount": 281,
@@ -287,20 +287,20 @@
       "observedAt": "2026-09-09T19:43:10-04:00"
     },
     {
-      "symbol": "IBMQ",
-      "price": 25.4,
-      "changePct": -0.07867820613691237,
-      "early": 58,
-      "ignition": 64,
-      "observedAt": "2026-09-09T16:00:00-04:00"
-    },
-    {
       "symbol": "TRX",
       "price": 1.174,
       "changePct": 3.8938053097345176,
       "early": 61,
       "ignition": 61,
       "observedAt": "2026-09-09T18:45:15-04:00"
+    },
+    {
+      "symbol": "IBMQ",
+      "price": 25.4,
+      "changePct": -0.07867820613691237,
+      "early": 58,
+      "ignition": 64,
+      "observedAt": "2026-09-09T16:00:00-04:00"
     },
     {
       "symbol": "IBMT",
@@ -4864,11 +4864,11 @@
       ],
       "eventCount": 1
     },
-    "IBMQ": {
+    "TRX": {
       "events": [],
       "eventCount": 0
     },
-    "TRX": {
+    "IBMQ": {
       "events": [],
       "eventCount": 0
     },
@@ -9205,7 +9205,7 @@
     }
   },
   "errors": [
-    "SEC_CURRENT_SC 13D:This operation was aborted"
+    "SEC_CURRENT_SC 13G:This operation was aborted"
   ],
   "policy": "Public-source intelligence. Market-wide SEC current-filing discovery is primary-source and independent of the price shortlist. `sourceStatus.live` means the loaded market universe contains fresh market data inside the active US extended-hours window; loaded-but-stale/session-final data is never labeled live. Shortlist ranking does not determine feed-level freshness. Upstream feed timestamps are retained only as operational provenance and do not override quote observation freshness or trading eligibility. SEC filings are primary-source events; GDELT is discovery-only and requires source-level verification before trade decisions."
 }
