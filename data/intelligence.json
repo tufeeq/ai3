@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-13T06:38:24.757Z",
+  "generatedAt": "2026-09-13T11:56:03.956Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-09-12T00:00:00.000Z",
-    "marketDataAgeMin": 1838.4,
+    "marketDataAgeMin": 2156.1,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-13T06:38:25.271Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-13T06:04:20.506Z",
+    "upstreamFeedFetchedAt": "2026-09-13T11:56:04.301Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-13T11:41:17.238Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-12T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 34.1,
-    "upstreamObservationAgeAtFetchMin": 1838.4,
+    "upstreamUpdateAgeAtFetchMin": 14.8,
+    "upstreamObservationAgeAtFetchMin": 2156.1,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 285,
@@ -31,20 +31,20 @@
       "observedAt": "2026-09-11T18:06:31-04:00"
     },
     {
-      "symbol": "OBAI",
-      "price": 0.3449,
-      "changePct": 9.283903675538655,
-      "early": 85,
-      "ignition": 85,
-      "observedAt": "2026-09-11T19:58:51-04:00"
-    },
-    {
       "symbol": "EHLD",
       "price": 16.6079,
       "changePct": 5.78280254777071,
       "early": 85,
       "ignition": 85,
       "observedAt": "2026-09-11T19:58:37-04:00"
+    },
+    {
+      "symbol": "OBAI",
+      "price": 0.3449,
+      "changePct": 9.283903675538655,
+      "early": 85,
+      "ignition": 85,
+      "observedAt": "2026-09-11T19:58:51-04:00"
     },
     {
       "symbol": "NXTT",
@@ -287,20 +287,20 @@
       "observedAt": "2026-09-11T19:30:08-04:00"
     },
     {
-      "symbol": "AMIX",
-      "price": 4.55,
-      "changePct": 3.762827822120868,
-      "early": 66,
-      "ignition": 66,
-      "observedAt": "2026-09-11T19:53:30-04:00"
-    },
-    {
       "symbol": "FTMA",
       "price": 8.729999542236328,
       "changePct": 0.5528627302041896,
       "early": 59,
       "ignition": 73,
       "observedAt": "2026-09-11T15:59:00-04:00"
+    },
+    {
+      "symbol": "AMIX",
+      "price": 4.55,
+      "changePct": 3.762827822120868,
+      "early": 66,
+      "ignition": 66,
+      "observedAt": "2026-09-11T19:53:30-04:00"
     },
     {
       "symbol": "CNXU",
@@ -327,20 +327,20 @@
       "observedAt": "2026-09-11T19:55:55-04:00"
     },
     {
-      "symbol": "GBND",
-      "price": 48.994300842285156,
-      "changePct": -0.11355587709447688,
-      "early": 58,
-      "ignition": 72,
-      "observedAt": "2026-09-11T15:56:00-04:00"
-    },
-    {
       "symbol": "IVOV",
       "price": 112.25,
       "changePct": 0.7811097144909361,
       "early": 58,
       "ignition": 72,
       "observedAt": "2026-09-11T15:59:00-04:00"
+    },
+    {
+      "symbol": "BBEU",
+      "price": 78.51,
+      "changePct": 0.6796614516542718,
+      "early": 58,
+      "ignition": 72,
+      "observedAt": "2026-09-11T16:00:00-04:00"
     }
   ],
   "companies": {
@@ -348,13 +348,13 @@
       "title": "MDB Capital Holdings, LLC",
       "cik": "0001934642"
     },
-    "OBAI": {
-      "title": "Our Bond, Inc.",
-      "cik": "0001756064"
-    },
     "EHLD": {
       "title": "Euroholdings Ltd.",
       "cik": "0002032779"
+    },
+    "OBAI": {
+      "title": "Our Bond, Inc.",
+      "cik": "0001756064"
     },
     "NXTT": {
       "title": "Next Technology Holding Inc.",
@@ -4721,23 +4721,6 @@
       "events": [],
       "eventCount": 0
     },
-    "OBAI": {
-      "events": [
-        {
-          "symbol": "OBAI",
-          "title": "Our Bond, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-08-27T10:06:18.000Z",
-          "headline": "8-K filing — Our Bond, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1756064/000149315226040297/form8-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
     "EHLD": {
       "events": [
         {
@@ -4748,6 +4731,23 @@
           "publishedAt": "2026-09-02T21:09:04.000Z",
           "headline": "6-K filing — Euroholdings Ltd.",
           "url": "https://www.sec.gov/Archives/edgar/data/2032779/000131786126000043/f090226ehld6k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
+    "OBAI": {
+      "events": [
+        {
+          "symbol": "OBAI",
+          "title": "Our Bond, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-08-27T10:06:18.000Z",
+          "headline": "8-K filing — Our Bond, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1756064/000149315226040297/form8-k.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -5571,6 +5571,10 @@
       ],
       "eventCount": 3
     },
+    "FTMA": {
+      "events": [],
+      "eventCount": 0
+    },
     "AMIX": {
       "events": [
         {
@@ -5660,10 +5664,6 @@
       ],
       "eventCount": 7
     },
-    "FTMA": {
-      "events": [],
-      "eventCount": 0
-    },
     "CNXU": {
       "events": [
         {
@@ -5750,11 +5750,11 @@
       ],
       "eventCount": 3
     },
-    "GBND": {
+    "IVOV": {
       "events": [],
       "eventCount": 0
     },
-    "IVOV": {
+    "BBEU": {
       "events": [],
       "eventCount": 0
     },
