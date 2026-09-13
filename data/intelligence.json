@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-13T01:22:25.099Z",
+  "generatedAt": "2026-09-13T06:16:42.994Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-09-12T00:00:00.000Z",
-    "marketDataAgeMin": 1522.4,
+    "marketDataAgeMin": 1816.7,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-13T01:22:26.022Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-13T01:08:09.113Z",
+    "upstreamFeedFetchedAt": "2026-09-13T06:16:43.267Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-13T06:04:20.506Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-12T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 14.3,
-    "upstreamObservationAgeAtFetchMin": 1522.4,
+    "upstreamUpdateAgeAtFetchMin": 12.4,
+    "upstreamObservationAgeAtFetchMin": 1816.7,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 285,
@@ -239,20 +239,20 @@
       "observedAt": "2026-09-11T19:59:17-04:00"
     },
     {
-      "symbol": "ZKH",
-      "price": 2.92,
-      "changePct": 0.6896551724137937,
-      "early": 60,
-      "ignition": 74,
-      "observedAt": "2026-09-11T16:00:00-04:00"
-    },
-    {
       "symbol": "ARBE",
       "price": 0.808,
       "changePct": 6.483921982076966,
       "early": 67,
       "ignition": 67,
       "observedAt": "2026-09-11T19:52:57-04:00"
+    },
+    {
+      "symbol": "ZKH",
+      "price": 2.92,
+      "changePct": 0.6896551724137937,
+      "early": 60,
+      "ignition": 74,
+      "observedAt": "2026-09-11T16:00:00-04:00"
     },
     {
       "symbol": "CHRN",
@@ -287,20 +287,20 @@
       "observedAt": "2026-09-11T19:30:08-04:00"
     },
     {
-      "symbol": "FTMA",
-      "price": 8.729999542236328,
-      "changePct": 0.5528627302041896,
-      "early": 59,
-      "ignition": 73,
-      "observedAt": "2026-09-11T15:59:00-04:00"
-    },
-    {
       "symbol": "AMIX",
       "price": 4.55,
       "changePct": 3.762827822120868,
       "early": 66,
       "ignition": 66,
       "observedAt": "2026-09-11T19:53:30-04:00"
+    },
+    {
+      "symbol": "FTMA",
+      "price": 8.729999542236328,
+      "changePct": 0.5528627302041896,
+      "early": 59,
+      "ignition": 73,
+      "observedAt": "2026-09-11T15:59:00-04:00"
     },
     {
       "symbol": "CNXU",
@@ -327,17 +327,17 @@
       "observedAt": "2026-09-11T19:55:55-04:00"
     },
     {
+      "symbol": "GBND",
+      "price": 48.994300842285156,
+      "changePct": -0.11355587709447688,
+      "early": 58,
+      "ignition": 72,
+      "observedAt": "2026-09-11T15:56:00-04:00"
+    },
+    {
       "symbol": "IVOV",
       "price": 112.25,
       "changePct": 0.7811097144909361,
-      "early": 58,
-      "ignition": 72,
-      "observedAt": "2026-09-11T15:59:00-04:00"
-    },
-    {
-      "symbol": "DFCA",
-      "price": 48.79999923706055,
-      "changePct": 0.18476542200892224,
       "early": 58,
       "ignition": 72,
       "observedAt": "2026-09-11T15:59:00-04:00"
@@ -448,13 +448,13 @@
       "title": "Glucotrack, Inc.",
       "cik": "0001506983"
     },
-    "ZKH": {
-      "title": "ZKH Group Ltd",
-      "cik": "0001862044"
-    },
     "ARBE": {
       "title": "Arbe Robotics Ltd.",
       "cik": "0001861841"
+    },
+    "ZKH": {
+      "title": "ZKH Group Ltd",
+      "cik": "0001862044"
     },
     "CHRN": {
       "title": "ChronoScale Holdings Corp",
@@ -5325,47 +5325,6 @@
       ],
       "eventCount": 4
     },
-    "ZKH": {
-      "events": [
-        {
-          "symbol": "ZKH",
-          "title": "ZKH Group Ltd",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-11T10:33:21.000Z",
-          "headline": "4 filing — ZKH Group Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1862044/000110465926106881/xslF345X06/tm2625264-1_4seq1.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "ZKH",
-          "title": "ZKH Group Ltd",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-02T20:15:14.000Z",
-          "headline": "4 filing — ZKH Group Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1862044/000210561126000006/xslF345X06/form4-09022026_040903.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "ZKH",
-          "title": "ZKH Group Ltd",
-          "type": "SEC",
-          "form": "144",
-          "publishedAt": "2026-09-01T10:41:41.000Z",
-          "headline": "144 filing — ZKH Group Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1862044/000210561126000005/xsl144X01/primary_doc.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 3
-    },
     "ARBE": {
       "events": [
         {
@@ -5430,6 +5389,47 @@
         }
       ],
       "eventCount": 5
+    },
+    "ZKH": {
+      "events": [
+        {
+          "symbol": "ZKH",
+          "title": "ZKH Group Ltd",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-09-11T10:33:21.000Z",
+          "headline": "4 filing — ZKH Group Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1862044/000110465926106881/xslF345X06/tm2625264-1_4seq1.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "ZKH",
+          "title": "ZKH Group Ltd",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-09-02T20:15:14.000Z",
+          "headline": "4 filing — ZKH Group Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1862044/000210561126000006/xslF345X06/form4-09022026_040903.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "ZKH",
+          "title": "ZKH Group Ltd",
+          "type": "SEC",
+          "form": "144",
+          "publishedAt": "2026-09-01T10:41:41.000Z",
+          "headline": "144 filing — ZKH Group Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1862044/000210561126000005/xsl144X01/primary_doc.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 3
     },
     "CHRN": {
       "events": [
@@ -5571,10 +5571,6 @@
       ],
       "eventCount": 3
     },
-    "FTMA": {
-      "events": [],
-      "eventCount": 0
-    },
     "AMIX": {
       "events": [
         {
@@ -5664,6 +5660,10 @@
       ],
       "eventCount": 7
     },
+    "FTMA": {
+      "events": [],
+      "eventCount": 0
+    },
     "CNXU": {
       "events": [
         {
@@ -5750,11 +5750,11 @@
       ],
       "eventCount": 3
     },
-    "IVOV": {
+    "GBND": {
       "events": [],
       "eventCount": 0
     },
-    "DFCA": {
+    "IVOV": {
       "events": [],
       "eventCount": 0
     },
