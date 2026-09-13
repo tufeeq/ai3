@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-13T18:58:38.336Z",
+  "generatedAt": "2026-09-13T21:02:41.441Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-09-12T00:00:00.000Z",
-    "marketDataAgeMin": 2578.7,
-    "quoteCount": 799,
+    "marketDataAgeMin": 2702.7,
+    "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-13T18:58:41.000Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-13T18:05:50.174Z",
+    "upstreamFeedFetchedAt": "2026-09-13T21:02:41.843Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-13T20:43:34.641Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-12T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 52.8,
-    "upstreamObservationAgeAtFetchMin": 2578.7,
+    "upstreamUpdateAgeAtFetchMin": 19.1,
+    "upstreamObservationAgeAtFetchMin": 2702.7,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 285,
@@ -183,20 +183,20 @@
       "observedAt": "2026-09-11T16:10:04-04:00"
     },
     {
-      "symbol": "SVRN",
-      "price": 12.1,
-      "changePct": 16.458132820019237,
-      "early": 71,
-      "ignition": 71,
-      "observedAt": "2026-09-11T19:30:04-04:00"
-    },
-    {
       "symbol": "VGAS",
       "price": 1.41,
       "changePct": 8.461538461538453,
       "early": 71,
       "ignition": 71,
       "observedAt": "2026-09-11T19:30:06-04:00"
+    },
+    {
+      "symbol": "SVRN",
+      "price": 12.1,
+      "changePct": 16.458132820019237,
+      "early": 71,
+      "ignition": 71,
+      "observedAt": "2026-09-11T19:30:04-04:00"
     },
     {
       "symbol": "CDZI",
@@ -287,20 +287,20 @@
       "observedAt": "2026-09-11T19:30:08-04:00"
     },
     {
-      "symbol": "AMIX",
-      "price": 4.55,
-      "changePct": 3.762827822120868,
-      "early": 66,
-      "ignition": 66,
-      "observedAt": "2026-09-11T19:53:30-04:00"
-    },
-    {
       "symbol": "FTMA",
       "price": 8.729999542236328,
       "changePct": 0.5528627302041896,
       "early": 59,
       "ignition": 73,
       "observedAt": "2026-09-11T15:59:00-04:00"
+    },
+    {
+      "symbol": "AMIX",
+      "price": 4.55,
+      "changePct": 3.762827822120868,
+      "early": 66,
+      "ignition": 66,
+      "observedAt": "2026-09-11T19:53:30-04:00"
     },
     {
       "symbol": "CNXU",
@@ -327,12 +327,12 @@
       "observedAt": "2026-09-11T17:42:44-04:00"
     },
     {
-      "symbol": "BBEU",
-      "price": 78.51,
-      "changePct": 0.6796614516542718,
+      "symbol": "GBND",
+      "price": 48.994300842285156,
+      "changePct": -0.11355587709447688,
       "early": 58,
       "ignition": 72,
-      "observedAt": "2026-09-11T16:00:00-04:00"
+      "observedAt": "2026-09-11T15:56:00-04:00"
     },
     {
       "symbol": "IVOV",
@@ -420,13 +420,13 @@
       "title": "EUDA Health Holdings Ltd",
       "cik": "0001847846"
     },
-    "SVRN": {
-      "title": "OceanPal Inc.",
-      "cik": "0001869467"
-    },
     "VGAS": {
       "title": "Verde Clean Fuels, Inc.",
       "cik": "0001841425"
+    },
+    "SVRN": {
+      "title": "OceanPal Inc.",
+      "cik": "0001869467"
     },
     "CDZI": {
       "title": "CADIZ INC",
@@ -5172,6 +5172,10 @@
       ],
       "eventCount": 1
     },
+    "VGAS": {
+      "events": [],
+      "eventCount": 0
+    },
     "SVRN": {
       "events": [
         {
@@ -5188,10 +5192,6 @@
         }
       ],
       "eventCount": 1
-    },
-    "VGAS": {
-      "events": [],
-      "eventCount": 0
     },
     "CDZI": {
       "events": [
@@ -5571,6 +5571,10 @@
       ],
       "eventCount": 3
     },
+    "FTMA": {
+      "events": [],
+      "eventCount": 0
+    },
     "AMIX": {
       "events": [
         {
@@ -5660,10 +5664,6 @@
       ],
       "eventCount": 7
     },
-    "FTMA": {
-      "events": [],
-      "eventCount": 0
-    },
     "CNXU": {
       "events": [
         {
@@ -5750,7 +5750,7 @@
       "events": [],
       "eventCount": 0
     },
-    "BBEU": {
+    "GBND": {
       "events": [],
       "eventCount": 0
     },
