@@ -1,66 +1,66 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-16T21:57:36.597Z",
+  "generatedAt": "2026-09-16T22:41:13.435Z",
   "sourceStatus": {
-    "live": true,
+    "live": false,
     "marketDataLoaded": true,
-    "marketDataFresh": true,
+    "marketDataFresh": false,
     "marketWindowOpen": true,
     "marketSession": "after-hours",
-    "newestObservedAt": "2026-09-16T21:46:35.000Z",
-    "marketDataAgeMin": 11,
+    "newestObservedAt": "2026-09-16T22:09:53.000Z",
+    "marketDataAgeMin": 31.4,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-16T21:57:36.841Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-16T21:46:34.204Z",
-    "upstreamNewestObservedAtAtBuild": "2026-09-16T21:46:35.000Z",
-    "upstreamUpdateAgeAtFetchMin": 11,
-    "upstreamObservationAgeAtFetchMin": 11,
+    "upstreamFeedFetchedAt": "2026-09-16T22:41:13.970Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-16T22:09:52.389Z",
+    "upstreamNewestObservedAtAtBuild": "2026-09-16T22:09:53.000Z",
+    "upstreamUpdateAgeAtFetchMin": 31.4,
+    "upstreamObservationAgeAtFetchMin": 31.3,
     "secMapping": true,
-    "secMarketwideDiscovery": false,
-    "secMarketwideEventCount": 267,
+    "secMarketwideDiscovery": true,
+    "secMarketwideEventCount": 281,
     "newsDiscovery": true
   },
   "shortlist": [
+    {
+      "symbol": "CRIS",
+      "price": 1.19,
+      "changePct": 6.249999999999986,
+      "early": 89,
+      "ignition": 97,
+      "observedAt": "2026-09-16T17:35:38-04:00"
+    },
+    {
+      "symbol": "DXF",
+      "price": 0.55,
+      "changePct": 3.383458646616544,
+      "early": 87,
+      "ignition": 95,
+      "observedAt": "2026-09-16T18:07:07-04:00"
+    },
     {
       "symbol": "VBIO",
       "price": 2.28,
       "changePct": 9.615384615384603,
       "early": 86,
       "ignition": 94,
-      "observedAt": "2026-09-16T17:16:50-04:00"
+      "observedAt": "2026-09-16T17:16:00-04:00"
     },
     {
-      "symbol": "RADX",
-      "price": 1.8,
-      "changePct": 7.7844311377245585,
+      "symbol": "TCRT",
+      "price": 1.41,
+      "changePct": 10.156249999999991,
       "early": 85,
       "ignition": 93,
-      "observedAt": "2026-09-16T17:36:00-04:00"
+      "observedAt": "2026-09-16T17:51:01-04:00"
     },
     {
-      "symbol": "CHGA",
-      "price": 1.97,
-      "changePct": 5.913978494623649,
-      "early": 85,
-      "ignition": 93,
-      "observedAt": "2026-09-16T17:38:01-04:00"
-    },
-    {
-      "symbol": "MODD",
-      "price": 2.4499,
-      "changePct": 6.286334056399124,
-      "early": 85,
-      "ignition": 93,
-      "observedAt": "2026-09-16T17:26:17-04:00"
-    },
-    {
-      "symbol": "CAMP",
-      "price": 4.07,
-      "changePct": 5.440414507772032,
+      "symbol": "SMTK",
+      "price": 2.4652,
+      "changePct": 4.902127659574457,
       "early": 84,
       "ignition": 92,
-      "observedAt": "2026-09-16T16:22:00-04:00"
+      "observedAt": "2026-09-16T18:08:44-04:00"
     },
     {
       "symbol": "WATR",
@@ -68,15 +68,23 @@
       "changePct": 5.294117647058829,
       "early": 83,
       "ignition": 91,
-      "observedAt": "2026-09-16T17:12:27-04:00"
+      "observedAt": "2026-09-16T17:12:00-04:00"
     },
     {
-      "symbol": "IMNN",
-      "price": 1.4792,
-      "changePct": 4.907801418439727,
+      "symbol": "NPT",
+      "price": 3.25,
+      "changePct": 4.838709677419352,
       "early": 80,
       "ignition": 88,
-      "observedAt": "2026-09-16T16:11:00-04:00"
+      "observedAt": "2026-09-16T18:09:18-04:00"
+    },
+    {
+      "symbol": "EDRY",
+      "price": 80.15,
+      "changePct": 15.689953810623564,
+      "early": 80,
+      "ignition": 88,
+      "observedAt": "2026-09-16T18:09:37-04:00"
     },
     {
       "symbol": "KMI",
@@ -87,14 +95,6 @@
       "observedAt": "2026-09-16T17:21:24-04:00"
     },
     {
-      "symbol": "AAME",
-      "price": 1.38,
-      "changePct": 2.2222222222222077,
-      "early": 78,
-      "ignition": 86,
-      "observedAt": "2026-09-16T16:48:08-04:00"
-    },
-    {
       "symbol": "TURB",
       "price": 0.9297,
       "changePct": 4.051482932288753,
@@ -103,20 +103,12 @@
       "observedAt": "2026-09-16T17:43:47-04:00"
     },
     {
-      "symbol": "FCHL",
-      "price": 1.08,
-      "changePct": 4.854368932038839,
+      "symbol": "AAME",
+      "price": 1.38,
+      "changePct": 2.2222222222222077,
       "early": 78,
       "ignition": 86,
-      "observedAt": "2026-09-16T17:44:00-04:00"
-    },
-    {
-      "symbol": "ALLR",
-      "price": 1.2207,
-      "changePct": 5.6883116883116775,
-      "early": 77,
-      "ignition": 85,
-      "observedAt": "2026-09-16T17:15:00-04:00"
+      "observedAt": "2026-09-16T16:48:08-04:00"
     },
     {
       "symbol": "GITS",
@@ -127,12 +119,28 @@
       "observedAt": "2026-09-16T16:44:34-04:00"
     },
     {
-      "symbol": "IPDN",
-      "price": 3.16,
-      "changePct": 3.2679738562091534,
+      "symbol": "CHGA",
+      "price": 2.09,
+      "changePct": 12.365591397849448,
+      "early": 77,
+      "ignition": 85,
+      "observedAt": "2026-09-16T18:09:46-04:00"
+    },
+    {
+      "symbol": "JAGX",
+      "price": 0.2336,
+      "changePct": 0.3005581794761727,
+      "early": 77,
+      "ignition": 85,
+      "observedAt": "2026-09-16T18:07:52-04:00"
+    },
+    {
+      "symbol": "PRFX",
+      "price": 1.02,
+      "changePct": 0.990099009900991,
       "early": 76,
       "ignition": 84,
-      "observedAt": "2026-09-16T17:44:38-04:00"
+      "observedAt": "2026-09-16T18:09:51-04:00"
     },
     {
       "symbol": "EONR",
@@ -143,36 +151,20 @@
       "observedAt": "2026-09-16T17:30:14-04:00"
     },
     {
-      "symbol": "NEXR",
-      "price": 1.53,
-      "changePct": 7.746478873239444,
+      "symbol": "SMXT",
+      "price": 2.15,
+      "changePct": 10.824742268041236,
       "early": 74,
       "ignition": 82,
-      "observedAt": "2026-09-16T17:46:31-04:00"
+      "observedAt": "2026-09-16T17:53:13-04:00"
     },
     {
-      "symbol": "NIXX",
-      "price": 0.43,
-      "changePct": 4.040648439390272,
-      "early": 74,
-      "ignition": 82,
-      "observedAt": "2026-09-16T17:42:27-04:00"
-    },
-    {
-      "symbol": "PMVP",
-      "price": 1.5043,
-      "changePct": 5.1958041958041985,
+      "symbol": "FGL",
+      "price": 4.51,
+      "changePct": 3.6781609195402334,
       "early": 73,
       "ignition": 81,
-      "observedAt": "2026-09-16T16:44:53-04:00"
-    },
-    {
-      "symbol": "RENT",
-      "price": 1.98,
-      "changePct": 2.061855670103095,
-      "early": 73,
-      "ignition": 81,
-      "observedAt": "2026-09-16T16:55:01-04:00"
+      "observedAt": "2026-09-16T18:09:36-04:00"
     },
     {
       "symbol": "QTRX",
@@ -181,14 +173,6 @@
       "early": 71,
       "ignition": 79,
       "observedAt": "2026-09-16T17:06:00-04:00"
-    },
-    {
-      "symbol": "CRE",
-      "price": 2.87,
-      "changePct": 3.237410071942457,
-      "early": 71,
-      "ignition": 79,
-      "observedAt": "2026-09-16T17:15:39-04:00"
     },
     {
       "symbol": "BUR",
@@ -215,36 +199,12 @@
       "observedAt": "2026-09-16T16:16:59-04:00"
     },
     {
-      "symbol": "AKAN",
-      "price": 2.8,
-      "changePct": 2.9411764705882213,
-      "early": 70,
-      "ignition": 78,
-      "observedAt": "2026-09-16T17:44:18-04:00"
-    },
-    {
-      "symbol": "CPRI",
-      "price": 15.165,
-      "changePct": 2.9531568228105822,
+      "symbol": "ATCH",
+      "price": 0.17,
+      "changePct": 6.250000000000005,
       "early": 69,
       "ignition": 77,
-      "observedAt": "2026-09-16T17:16:02-04:00"
-    },
-    {
-      "symbol": "SNTI",
-      "price": 0.325,
-      "changePct": 4.5016077170418045,
-      "early": 69,
-      "ignition": 77,
-      "observedAt": "2026-09-16T17:45:09-04:00"
-    },
-    {
-      "symbol": "GNTA",
-      "price": 0.8254,
-      "changePct": 11.34493457439634,
-      "early": 69,
-      "ignition": 77,
-      "observedAt": "2026-09-16T17:43:44-04:00"
+      "observedAt": "2026-09-16T17:50:28-04:00"
     },
     {
       "symbol": "RCKT",
@@ -263,12 +223,12 @@
       "observedAt": "2026-09-16T17:39:34-04:00"
     },
     {
-      "symbol": "GMEX",
-      "price": 0.4528,
-      "changePct": 6.2412013139371085,
+      "symbol": "CTOR",
+      "price": 0.9799,
+      "changePct": 2.714884696016775,
       "early": 68,
       "ignition": 76,
-      "observedAt": "2026-09-16T17:46:30-04:00"
+      "observedAt": "2026-09-16T17:47:52-04:00"
     },
     {
       "symbol": "HUIZ",
@@ -287,28 +247,36 @@
       "observedAt": "2026-09-16T17:21:17-04:00"
     },
     {
-      "symbol": "BZFD",
-      "price": 1.1154,
-      "changePct": 2.330275229357786,
-      "early": 66,
-      "ignition": 74,
-      "observedAt": "2026-09-16T17:01:01-04:00"
+      "symbol": "SNTI",
+      "price": 0.3467,
+      "changePct": 11.479099678456596,
+      "early": 67,
+      "ignition": 75,
+      "observedAt": "2026-09-16T18:09:19-04:00"
     },
     {
-      "symbol": "YAAS",
-      "price": 1.28,
-      "changePct": 2.400000000000002,
+      "symbol": "ZTG",
+      "price": 1.35,
+      "changePct": 14.406779661016964,
       "early": 66,
       "ignition": 74,
-      "observedAt": "2026-09-16T17:23:04-04:00"
+      "observedAt": "2026-09-16T18:09:38-04:00"
     },
     {
-      "symbol": "FRGT",
-      "price": 1,
-      "changePct": -2.9126213592233037,
-      "early": 65,
-      "ignition": 73,
-      "observedAt": "2026-09-16T17:31:08-04:00"
+      "symbol": "RADX",
+      "price": 1.74,
+      "changePct": 4.19161676646707,
+      "early": 66,
+      "ignition": 74,
+      "observedAt": "2026-09-16T18:08:50-04:00"
+    },
+    {
+      "symbol": "GMEX",
+      "price": 0.4699,
+      "changePct": 10.253402158610971,
+      "early": 70,
+      "ignition": 70,
+      "observedAt": "2026-09-16T18:09:20-04:00"
     },
     {
       "symbol": "HUHU",
@@ -319,12 +287,12 @@
       "observedAt": "2026-09-16T16:28:04-04:00"
     },
     {
-      "symbol": "CELZ",
-      "price": 0.84,
-      "changePct": 2.1897810218978124,
+      "symbol": "ECOR",
+      "price": 10.8851,
+      "changePct": 2.2075117370891943,
       "early": 65,
       "ignition": 73,
-      "observedAt": "2026-09-16T17:07:00-04:00"
+      "observedAt": "2026-09-16T16:20:28-04:00"
     },
     {
       "symbol": "AMOD",
@@ -335,98 +303,122 @@
       "observedAt": "2026-09-16T17:12:56-04:00"
     },
     {
-      "symbol": "KSCP",
-      "price": 1.21,
-      "changePct": 4.310344827586212,
-      "early": 65,
-      "ignition": 73,
-      "observedAt": "2026-09-16T17:07:00-04:00"
+      "symbol": "RAYA",
+      "price": 2.2406,
+      "changePct": 0.4753363228699625,
+      "early": 64,
+      "ignition": 72,
+      "observedAt": "2026-09-16T18:03:59-04:00"
+    },
+    {
+      "symbol": "NOMA",
+      "price": 1.48,
+      "changePct": 2.0689655172413812,
+      "early": 64,
+      "ignition": 72,
+      "observedAt": "2026-09-16T17:37:54-04:00"
+    },
+    {
+      "symbol": "GWAV",
+      "price": 2.38,
+      "changePct": 2.145922746781108,
+      "early": 64,
+      "ignition": 72,
+      "observedAt": "2026-09-16T16:56:37-04:00"
+    },
+    {
+      "symbol": "OCGN",
+      "price": 1.02,
+      "changePct": 2.163461538461545,
+      "early": 64,
+      "ignition": 72,
+      "observedAt": "2026-09-16T18:04:57-04:00"
+    },
+    {
+      "symbol": "OBAI",
+      "price": 0.2705,
+      "changePct": 4.038461538461542,
+      "early": 64,
+      "ignition": 64,
+      "observedAt": "2026-09-16T17:54:35-04:00"
     }
   ],
   "companies": {
+    "CRIS": {
+      "title": "CURIS INC",
+      "cik": "0001108205"
+    },
+    "DXF": {
+      "title": "Eason Technology Ltd",
+      "cik": "0001499494"
+    },
     "VBIO": {
       "title": "Valion Bio, Inc.",
       "cik": "0001787740"
     },
-    "RADX": {
-      "title": "Radiopharm Theranostics Ltd",
-      "cik": "0001949257"
+    "TCRT": {
+      "title": "Alaunos Therapeutics, Inc.",
+      "cik": "0001107421"
     },
-    "CHGA": {
-      "title": "Change Agents Corporation.",
-      "cik": "0001630212"
-    },
-    "MODD": {
-      "title": "Modular Medical, Inc.",
-      "cik": "0001074871"
-    },
-    "CAMP": {
-      "title": "Camp4 Therapeutics Corp",
-      "cik": "0001736730"
+    "SMTK": {
+      "title": "SmartKem, Inc.",
+      "cik": "0001817760"
     },
     "WATR": {
       "title": "Air Water Ventures Ltd",
       "cik": "0002092314"
     },
-    "IMNN": {
-      "title": "Imunon, Inc.",
-      "cik": "0000749647"
+    "NPT": {
+      "title": "Texxon Holding Ltd",
+      "cik": "0002014337"
+    },
+    "EDRY": {
+      "title": "EuroDry Ltd.",
+      "cik": "0001731388"
     },
     "KMI": {
       "title": "KINDER MORGAN, INC.",
       "cik": "0001506307"
     },
-    "AAME": {
-      "title": "ATLANTIC AMERICAN CORP",
-      "cik": "0000008177"
-    },
     "TURB": {
       "title": "Turbo Energy, S.A.",
       "cik": "0001963439"
     },
-    "FCHL": {
-      "title": "Fitness Champs Holdings Ltd",
-      "cik": "0002023796"
-    },
-    "ALLR": {
-      "title": "Allarity Therapeutics, Inc.",
-      "cik": "0001860657"
+    "AAME": {
+      "title": "ATLANTIC AMERICAN CORP",
+      "cik": "0000008177"
     },
     "GITS": {
       "title": "Global Interactive Technologies, Inc.",
       "cik": "0001911545"
     },
-    "IPDN": {
-      "title": "Professional Diversity Network, Inc.",
-      "cik": "0001546296"
+    "CHGA": {
+      "title": "Change Agents Corporation.",
+      "cik": "0001630212"
+    },
+    "JAGX": {
+      "title": "Jaguar Health, Inc.",
+      "cik": "0001585608"
+    },
+    "PRFX": {
+      "title": "PRF Technologies Ltd.",
+      "cik": "0001801834"
     },
     "EONR": {
       "title": "EON Resources Inc.",
       "cik": "0001842556"
     },
-    "NEXR": {
-      "title": "Nexera Technologies Ltd",
-      "cik": "0001885408"
+    "SMXT": {
+      "title": "SolarMax Technology, Inc.",
+      "cik": "0001519472"
     },
-    "NIXX": {
-      "title": "Nixxy, Inc.",
-      "cik": "0001462223"
-    },
-    "PMVP": {
-      "title": "PMV Pharmaceuticals, Inc.",
-      "cik": "0001699382"
-    },
-    "RENT": {
-      "title": "Rent the Runway, Inc.",
-      "cik": "0001468327"
+    "FGL": {
+      "title": "Founder Group Ltd",
+      "cik": "0001989930"
     },
     "QTRX": {
       "title": "Quanterix Corp",
       "cik": "0001503274"
-    },
-    "CRE": {
-      "title": "Cre8 Enterprise Ltd",
-      "cik": "0002003977"
     },
     "BUR": {
       "title": "Burford Capital Ltd",
@@ -440,21 +432,9 @@
       "title": "Top KingWin Ltd",
       "cik": "0001938865"
     },
-    "AKAN": {
-      "title": "AKANDA CORP.",
-      "cik": "0001888014"
-    },
-    "CPRI": {
-      "title": "Capri Holdings Ltd",
-      "cik": "0001530721"
-    },
-    "SNTI": {
-      "title": "Senti Biosciences Holdings, Inc.",
-      "cik": "0001854270"
-    },
-    "GNTA": {
-      "title": "Genenta Science S.p.A.",
-      "cik": "0001838716"
+    "ATCH": {
+      "title": "AtlasClear Holdings, Inc.",
+      "cik": "0001963088"
     },
     "RCKT": {
       "title": "ROCKET PHARMACEUTICALS, INC.",
@@ -464,9 +444,9 @@
       "title": "Ohmyhome Ltd",
       "cik": "0001944902"
     },
-    "GMEX": {
-      "title": "GMEX Robotics Corp",
-      "cik": "0001928581"
+    "CTOR": {
+      "title": "CITIUS ONCOLOGY, INC.",
+      "cik": "0001851484"
     },
     "HUIZ": {
       "title": "Huize Holding Ltd",
@@ -476,33 +456,53 @@
       "title": "FG Nexus Inc.",
       "cik": "0001591890"
     },
-    "BZFD": {
-      "title": "BuzzFeed, Inc.",
-      "cik": "0001828972"
+    "SNTI": {
+      "title": "Senti Biosciences Holdings, Inc.",
+      "cik": "0001854270"
     },
-    "YAAS": {
-      "title": "Youxin Technology Ltd",
-      "cik": "0001964946"
+    "ZTG": {
+      "title": "Zenta Group Co Ltd",
+      "cik": "0002011458"
     },
-    "FRGT": {
-      "title": "Freight Technologies, Inc.",
-      "cik": "0001687542"
+    "RADX": {
+      "title": "Radiopharm Theranostics Ltd",
+      "cik": "0001949257"
+    },
+    "GMEX": {
+      "title": "GMEX Robotics Corp",
+      "cik": "0001928581"
     },
     "HUHU": {
       "title": "HUHUTECH International Group Inc.",
       "cik": "0001945415"
     },
-    "CELZ": {
-      "title": "CREATIVE MEDICAL TECHNOLOGY HOLDINGS, INC.",
-      "cik": "0001187953"
+    "ECOR": {
+      "title": "electroCore, Inc.",
+      "cik": "0001560258"
     },
     "AMOD": {
       "title": "ALPHA MODUS HOLDINGS, INC.",
       "cik": "0001862463"
     },
-    "KSCP": {
-      "title": "Knightscope, Inc.",
-      "cik": "0001600983"
+    "RAYA": {
+      "title": "Erayak Power Solution Group Inc.",
+      "cik": "0001825875"
+    },
+    "NOMA": {
+      "title": "Nomadar Corp.",
+      "cik": "0001994214"
+    },
+    "GWAV": {
+      "title": "Greenwave Technology Solutions, Inc.",
+      "cik": "0001589149"
+    },
+    "OCGN": {
+      "title": "Ocugen, Inc.",
+      "cik": "0001372299"
+    },
+    "OBAI": {
+      "title": "Our Bond, Inc.",
+      "cik": "0001756064"
     }
   },
   "eventCount": 352,
@@ -587,6 +587,18 @@
       "publishedAt": "2026-09-16T17:25:46-04:00",
       "headline": "8-K filing — Aperture AC",
       "url": "https://www.sec.gov/Archives/edgar/data/2093524/000121390026100601/0001213900-26-100601-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "JILL",
+      "title": "J.Jill, Inc.",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-16T17:25:45-04:00",
+      "headline": "S-3 filing — J.Jill, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1687932/000119312526393259/0001193125-26-393259-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -1528,6 +1540,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "BUSEP",
+      "title": "FIRST BUSEY CORP /NV/",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-16T16:48:54-04:00",
+      "headline": "S-3 filing — FIRST BUSEY CORP /NV/",
+      "url": "https://www.sec.gov/Archives/edgar/data/314489/000031448926000061/0000314489-26-000061-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "RM",
       "title": "Regional Management Corp.",
       "type": "SEC",
@@ -1859,6 +1883,18 @@
       "publishedAt": "2026-09-16T16:36:30-04:00",
       "headline": "8-K filing — SYSCO CORP",
       "url": "https://www.sec.gov/Archives/edgar/data/96021/000110465926108285/0001104659-26-108285-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "SDEV",
+      "title": "Stablecoin Development Corp",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-16T16:36:24-04:00",
+      "headline": "S-3 filing — Stablecoin Development Corp",
+      "url": "https://www.sec.gov/Archives/edgar/data/1389545/000143774926030554/0001437749-26-030554-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -2776,66 +2812,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "RENT",
-      "title": "Rent the Runway, Inc.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-16T16:55:20.000Z",
-      "headline": "4 filing — Rent the Runway, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1468327/000146832726000102/xslF345X06/wk-form4_1789592118.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "RENT",
-      "title": "Rent the Runway, Inc.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-16T16:53:01.000Z",
-      "headline": "4 filing — Rent the Runway, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1468327/000146832726000100/xslF345X06/wk-form4_1789591978.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "RENT",
-      "title": "Rent the Runway, Inc.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-16T16:48:28.000Z",
-      "headline": "4 filing — Rent the Runway, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1468327/000146832726000098/xslF345X06/wk-form4_1789591705.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "CPRI",
-      "title": "Capri Holdings Ltd",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-09-16T16:34:45.000Z",
-      "headline": "8-K filing — Capri Holdings Ltd",
-      "url": "https://www.sec.gov/Archives/edgar/data/1530721/000095014226002556/eh260831247_8k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "BZFD",
-      "title": "BuzzFeed, Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-09-16T16:21:43.000Z",
-      "headline": "8-K filing — BuzzFeed, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1828972/000182897226000146/bzfd-20260911.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "VMET",
       "title": "Versamet Royalties Corp",
       "type": "SEC",
@@ -3508,13 +3484,25 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "ALLR",
-      "title": "Allarity Therapeutics, Inc.",
+      "symbol": "PRFX",
+      "title": "PRF Technologies Ltd.",
       "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-09-16T08:00:14.000Z",
-      "headline": "8-K filing — Allarity Therapeutics, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1860657/000121390026100350/ea0305570-8k_allarity.htm",
+      "form": "6-K",
+      "publishedAt": "2026-09-16T09:12:45.000Z",
+      "headline": "6-K filing — PRF Technologies Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1801834/000117891326004526/zk2636122.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "ZTG",
+      "title": "Zenta Group Co Ltd",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-09-16T06:03:07.000Z",
+      "headline": "6-K filing — Zenta Group Co Ltd",
+      "url": "https://www.sec.gov/Archives/edgar/data/2011458/000149315226042820/form6-k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -3530,18 +3518,6 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "BZFD",
-      "title": "BuzzFeed, Inc.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-16T01:00:42.000Z",
-      "headline": "4 filing — BuzzFeed, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1828972/000149315226042804/xslF345X06/ownership.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "CYAB",
@@ -3616,6 +3592,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "DFNSW",
+      "title": "T3 Defense Inc.",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-15T17:29:55-04:00",
+      "headline": "S-3 filing — T3 Defense Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1787518/000118518526004031/0001185185-26-004031-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "CHGA",
       "title": "Change Agents Corporation.",
       "type": "SEC",
@@ -3652,6 +3640,30 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "HOS",
+      "title": "HORNBECK OFFSHORE SERVICES, INC.",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-15T17:14:32-04:00",
+      "headline": "S-3 filing — HORNBECK OFFSHORE SERVICES, INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/866829/000119312526392128/0001193125-26-392128-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "MGY",
+      "title": "Magnolia Oil & Gas Corp",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-15T17:11:08-04:00",
+      "headline": "S-3 filing — Magnolia Oil & Gas Corp",
+      "url": "https://www.sec.gov/Archives/edgar/data/1698990/000110465926107975/0001104659-26-107975-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "BHST",
       "title": "BIOHARVEST SCIENCES INC.",
       "type": "SEC",
@@ -3676,6 +3688,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "KPLT",
+      "title": "Katapult Holdings, Inc.",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-15T17:04:24-04:00",
+      "headline": "S-3 filing — Katapult Holdings, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1785424/000110465926107971/0001104659-26-107971-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "GSL-PB",
       "title": "Global Ship Lease, Inc.",
       "type": "SEC",
@@ -3683,6 +3707,18 @@
       "publishedAt": "2026-09-15T17:03:06-04:00",
       "headline": "6-K filing — Global Ship Lease, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1430725/000114036126036677/0001140361-26-036677-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "INBS",
+      "title": "INTELLIGENT BIO SOLUTIONS INC.",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-15T17:00:49-04:00",
+      "headline": "S-3 filing — INTELLIGENT BIO SOLUTIONS INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1725430/000149315226042775/0001493152-26-042775-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -3724,18 +3760,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "RENT",
-      "title": "Rent the Runway, Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-09-15T20:57:56.000Z",
-      "headline": "8-K filing — Rent the Runway, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1468327/000095010326013999/dp253357_8k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "RCKT",
       "title": "ROCKET PHARMACEUTICALS, INC.",
       "type": "SEC",
@@ -3772,37 +3796,25 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "IMNN",
-      "title": "Imunon, Inc.",
+      "symbol": "ATCH",
+      "title": "AtlasClear Holdings, Inc.",
       "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-15T16:43:30.000Z",
-      "headline": "4 filing — Imunon, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/749647/000143774926030415/xslF345X06/rdgdoc.xml",
+      "form": "8-K",
+      "publishedAt": "2026-09-15T19:36:36.000Z",
+      "headline": "8-K filing — AtlasClear Holdings, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1963088/000149315226042800/form8-k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "IMNN",
-      "title": "Imunon, Inc.",
+      "symbol": "JAGX",
+      "title": "Jaguar Health, Inc.",
       "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-15T16:42:25.000Z",
-      "headline": "4 filing — Imunon, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/749647/000143774926030414/xslF345X06/rdgdoc.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "IMNN",
-      "title": "Imunon, Inc.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-15T16:41:21.000Z",
-      "headline": "4 filing — Imunon, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/749647/000143774926030413/xslF345X06/rdgdoc.xml",
+      "form": "8-K",
+      "publishedAt": "2026-09-15T17:44:55.000Z",
+      "headline": "8-K filing — Jaguar Health, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1585608/000119312526391682/d162139d8k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -3820,6 +3832,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "JAGX",
+      "title": "Jaguar Health, Inc.",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-09-15T13:10:08.000Z",
+      "headline": "8-K filing — Jaguar Health, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1585608/000119312526391415/d105876d8k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
       "symbol": "RCKT",
       "title": "ROCKET PHARMACEUTICALS, INC.",
       "type": "SEC",
@@ -3830,6 +3854,18 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "SAFX",
+      "title": "XCF Global, Inc.",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-15T06:06:22-04:00",
+      "headline": "S-3 filing — XCF Global, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2019793/000149315226042652/0001493152-26-042652-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
     },
     {
       "symbol": "PURR",
@@ -3868,30 +3904,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BZFD",
-      "title": "BuzzFeed, Inc.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-14T23:50:04.000Z",
-      "headline": "4 filing — BuzzFeed, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1828972/000182897226000142/xslF345X06/wk-form4_1789429801.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "BZFD",
-      "title": "BuzzFeed, Inc.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-14T23:49:58.000Z",
-      "headline": "4 filing — BuzzFeed, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1828972/000182897226000141/xslF345X06/wk-form4_1789429795.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "VRHID",
       "title": "Veri MedTech Holdings, Inc.",
       "type": "SEC",
@@ -3911,6 +3923,42 @@
       "publishedAt": "2026-09-14T17:25:47-04:00",
       "headline": "S-1 filing — Polar Power, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1622345/000149315226042616/0001493152-26-042616-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "OPAL",
+      "title": "OPAL Fuels Inc.",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-14T17:21:48-04:00",
+      "headline": "S-3 filing — OPAL Fuels Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1842279/000162828026061907/0001628280-26-061907-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "BNTC",
+      "title": "Benitec Biopharma Inc.",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-14T17:09:51-04:00",
+      "headline": "S-3 filing — Benitec Biopharma Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1808898/000119312526390758/0001193125-26-390758-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "SYY",
+      "title": "SYSCO CORP",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-14T16:48:09-04:00",
+      "headline": "S-3 filing — SYSCO CORP",
+      "url": "https://www.sec.gov/Archives/edgar/data/96021/000110465926107527/0001104659-26-107527-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -3952,6 +4000,18 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
+      "symbol": "ZTG",
+      "title": "Zenta Group Co Ltd",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-09-14T20:00:30.000Z",
+      "headline": "6-K filing — Zenta Group Co Ltd",
+      "url": "https://www.sec.gov/Archives/edgar/data/2011458/000149315226042570/form6-k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
       "symbol": "RCKT",
       "title": "ROCKET PHARMACEUTICALS, INC.",
       "type": "SEC",
@@ -3964,28 +4024,40 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "RENT",
-      "title": "Rent the Runway, Inc.",
+      "symbol": "SMTK",
+      "title": "SmartKem, Inc.",
       "type": "SEC",
-      "form": "144",
-      "publishedAt": "2026-09-14T17:17:12.000Z",
-      "headline": "144 filing — Rent the Runway, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1468327/000146832726000094/xsl144X01/primary_doc.xml",
+      "form": "8-K",
+      "publishedAt": "2026-09-14T12:55:14.000Z",
+      "headline": "8-K filing — SmartKem, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1817760/000110465926107296/tm2625314d1_8k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "ALLR",
-      "title": "Allarity Therapeutics, Inc.",
+      "symbol": "NOMA",
+      "title": "Nomadar Corp.",
       "type": "SEC",
       "form": "8-K",
-      "publishedAt": "2026-09-14T16:14:05.000Z",
-      "headline": "8-K filing — Allarity Therapeutics, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1860657/000121390026099576/ea0305408-8k_allarity.htm",
+      "publishedAt": "2026-09-14T12:10:18.000Z",
+      "headline": "8-K filing — Nomadar Corp.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994214/000149315226042486/form8-k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "CHWY",
+      "title": "Chewy, Inc.",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-14T07:01:10-04:00",
+      "headline": "S-3 filing — Chewy, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1766502/000119312526389818/0001193125-26-389818-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
     },
     {
       "symbol": "BMB",
@@ -3998,6 +4070,18 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "ECOR",
+      "title": "electroCore, Inc.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-09-14T10:45:15.000Z",
+      "headline": "4 filing — electroCore, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1560258/000149315226042472/xslF345X06/ownership.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "RADX",
@@ -4024,13 +4108,37 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "IPDN",
-      "title": "Professional Diversity Network, Inc.",
+      "symbol": "TYRA",
+      "title": "Tyra Biosciences, Inc.",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-14T06:02:04-04:00",
+      "headline": "S-3 filing — Tyra Biosciences, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1863127/000119312526389752/0001193125-26-389752-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "OCGN",
+      "title": "Ocugen, Inc.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-09-12T01:13:47.000Z",
+      "headline": "4 filing — Ocugen, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1372299/000162828026061626/xslF345X06/wk-form4_1789175624.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "GWAV",
+      "title": "Greenwave Technology Solutions, Inc.",
       "type": "SEC",
       "form": "8-K",
-      "publishedAt": "2026-09-11T20:59:26.000Z",
-      "headline": "8-K filing — Professional Diversity Network, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1546296/000143774926030185/ipdn20260907_8k.htm",
+      "publishedAt": "2026-09-11T21:25:15.000Z",
+      "headline": "8-K filing — Greenwave Technology Solutions, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1589149/000149315226042431/form8-k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4060,37 +4168,25 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "GNTA",
-      "title": "Genenta Science S.p.A.",
+      "symbol": "EDRY",
+      "title": "EuroDry Ltd.",
       "type": "SEC",
       "form": "6-K",
-      "publishedAt": "2026-09-11T20:05:22.000Z",
-      "headline": "6-K filing — Genenta Science S.p.A.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1838716/000149315226042377/form6-k.htm",
+      "publishedAt": "2026-09-11T20:03:51.000Z",
+      "headline": "6-K filing — EuroDry Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1731388/000091957426006296/p15078651_6-k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "RENT",
-      "title": "Rent the Runway, Inc.",
+      "symbol": "EDRY",
+      "title": "EuroDry Ltd.",
       "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-09-11T12:32:04.000Z",
-      "headline": "S-1 filing — Rent the Runway, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1468327/000095010326013811/dp253177_s1.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "RENT",
-      "title": "Rent the Runway, Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-09-11T12:10:26.000Z",
-      "headline": "8-K filing — Rent the Runway, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1468327/000095010326013810/dp253178_8k.htm",
+      "form": "424B5",
+      "publishedAt": "2026-09-11T20:02:48.000Z",
+      "headline": "424B5 filing — EuroDry Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1731388/000091957426006294/p15075106_424b5.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4108,13 +4204,13 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "RENT",
-      "title": "Rent the Runway, Inc.",
+      "symbol": "ECOR",
+      "title": "electroCore, Inc.",
       "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-09-11T11:59:45.000Z",
-      "headline": "8-K filing — Rent the Runway, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1468327/000146832726000086/wdq-20260911.htm",
+      "form": "4",
+      "publishedAt": "2026-09-10T21:04:17.000Z",
+      "headline": "4 filing — electroCore, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1560258/000149315226042217/xslF345X06/ownership.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4156,13 +4252,121 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "AKAN",
-      "title": "AKANDA CORP.",
+      "symbol": "ECOR",
+      "title": "electroCore, Inc.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-09-10T20:05:16.000Z",
+      "headline": "4 filing — electroCore, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1560258/000149315226042151/xslF345X06/ownership.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "ECOR",
+      "title": "electroCore, Inc.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-09-10T20:05:14.000Z",
+      "headline": "4 filing — electroCore, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1560258/000149315226042150/xslF345X06/ownership.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "ECOR",
+      "title": "electroCore, Inc.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-09-10T20:05:13.000Z",
+      "headline": "4 filing — electroCore, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1560258/000149315226042148/xslF345X06/ownership.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "ECOR",
+      "title": "electroCore, Inc.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-09-10T20:05:11.000Z",
+      "headline": "4 filing — electroCore, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1560258/000149315226042149/xslF345X06/ownership.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "ECOR",
+      "title": "electroCore, Inc.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-09-10T20:05:10.000Z",
+      "headline": "4 filing — electroCore, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1560258/000149315226042146/xslF345X06/ownership.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "ECOR",
+      "title": "electroCore, Inc.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-09-10T20:05:08.000Z",
+      "headline": "4 filing — electroCore, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1560258/000149315226042145/xslF345X06/ownership.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "GWAV",
+      "title": "Greenwave Technology Solutions, Inc.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-09-09T21:42:38.000Z",
+      "headline": "4 filing — Greenwave Technology Solutions, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1589149/000149315226042006/xslF345X06/ownership.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "OCGN",
+      "title": "Ocugen, Inc.",
+      "type": "SEC",
+      "form": "144",
+      "publishedAt": "2026-09-09T20:30:29.000Z",
+      "headline": "144 filing — Ocugen, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1372299/000162828026061150/xsl144X01/primary_doc.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "ZTG",
+      "title": "Zenta Group Co Ltd",
       "type": "SEC",
       "form": "6-K",
-      "publishedAt": "2026-09-09T21:15:01.000Z",
-      "headline": "6-K filing — AKANDA CORP.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1888014/000121390026098448/ea030501701-6k_akanda.htm",
+      "publishedAt": "2026-09-09T20:00:31.000Z",
+      "headline": "6-K filing — Zenta Group Co Ltd",
+      "url": "https://www.sec.gov/Archives/edgar/data/2011458/000149315226041956/form6-k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "PRFX",
+      "title": "PRF Technologies Ltd.",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-09-09T13:02:49.000Z",
+      "headline": "6-K filing — PRF Technologies Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1801834/000117891326004455/zk2636092.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4180,6 +4384,18 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
+      "symbol": "OCGN",
+      "title": "Ocugen, Inc.",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-09-08T21:27:11.000Z",
+      "headline": "8-K filing — Ocugen, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1372299/000110465926105968/tm2624985d1_8k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
       "symbol": "GMEX",
       "title": "GMEX Robotics Corp",
       "type": "SEC",
@@ -4192,49 +4408,49 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "BZFD",
-      "title": "BuzzFeed, Inc.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-04T21:06:47.000Z",
-      "headline": "4 filing — BuzzFeed, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1828972/000160227326000015/xslF345X06/wk-form4_1788556004.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "BZFD",
-      "title": "BuzzFeed, Inc.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-04T21:06:35.000Z",
-      "headline": "4 filing — BuzzFeed, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1828972/000149761726000007/xslF345X06/wk-form4_1788555992.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "KSCP",
-      "title": "Knightscope, Inc.",
+      "symbol": "GWAV",
+      "title": "Greenwave Technology Solutions, Inc.",
       "type": "SEC",
       "form": "8-K",
-      "publishedAt": "2026-09-04T21:00:23.000Z",
-      "headline": "8-K filing — Knightscope, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1600983/000110465926105544/kscp-20260902x8k.htm",
+      "publishedAt": "2026-09-08T10:05:15.000Z",
+      "headline": "8-K filing — Greenwave Technology Solutions, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1589149/000149315226041650/form8-k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "AKAN",
-      "title": "AKANDA CORP.",
+      "symbol": "JAGX",
+      "title": "Jaguar Health, Inc.",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-09-04T20:15:12.000Z",
+      "headline": "8-K filing — Jaguar Health, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1585608/000119312526383673/d111700d8k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "SMTK",
+      "title": "SmartKem, Inc.",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-09-04T20:05:38.000Z",
+      "headline": "8-K filing — SmartKem, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1817760/000110465926105497/tm2624843d1_8k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "FGL",
+      "title": "Founder Group Ltd",
       "type": "SEC",
       "form": "6-K",
-      "publishedAt": "2026-09-04T13:23:31.000Z",
-      "headline": "6-K filing — AKANDA CORP.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1888014/000121390026097448/ea0304628-6k_akanda.htm",
+      "publishedAt": "2026-09-04T12:00:12.000Z",
+      "headline": "6-K filing — Founder Group Ltd",
+      "url": "https://www.sec.gov/Archives/edgar/data/1989930/000121390026097414/ea0304688-6k_founder.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4252,13 +4468,25 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "NIXX",
-      "title": "Nixxy, Inc.",
+      "symbol": "EDRY",
+      "title": "EuroDry Ltd.",
       "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-09-03T22:17:28.000Z",
-      "headline": "8-K filing — Nixxy, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1462223/000168316826006941/nixxy_8k.htm",
+      "form": "EFFECT",
+      "publishedAt": "2026-09-04T04:15:18.000Z",
+      "headline": "EFFECT filing — EuroDry Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1731388/999999999526002883/xslEFFECTX01/primary_doc.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "PRFX",
+      "title": "PRF Technologies Ltd.",
+      "type": "SEC",
+      "form": "EFFECT",
+      "publishedAt": "2026-09-04T04:15:09.000Z",
+      "headline": "EFFECT filing — PRF Technologies Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1801834/999999999526002876/xslEFFECTX01/primary_doc.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4276,30 +4504,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "MODD",
-      "title": "Modular Medical, Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-09-03T21:15:14.000Z",
-      "headline": "8-K filing — Modular Medical, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1074871/000121390026097280/ea0304617-8k_modular.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "NEXR",
-      "title": "Nexera Technologies Ltd",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-09-03T20:15:50.000Z",
-      "headline": "6-K filing — Nexera Technologies Ltd",
-      "url": "https://www.sec.gov/Archives/edgar/data/1885408/000121390026097197/ea0304566-6k_nexera.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "DPU",
       "title": "Top KingWin Ltd",
       "type": "SEC",
@@ -4312,13 +4516,25 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "CAMP",
-      "title": "Camp4 Therapeutics Corp",
+      "symbol": "PRFX",
+      "title": "PRF Technologies Ltd.",
       "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-02T23:50:12.000Z",
-      "headline": "4 filing — Camp4 Therapeutics Corp",
-      "url": "https://www.sec.gov/Archives/edgar/data/1736730/000162828026060234/xslF345X06/wk-form4_1788393010.xml",
+      "form": "6-K",
+      "publishedAt": "2026-09-03T12:39:48.000Z",
+      "headline": "6-K filing — PRF Technologies Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1801834/000117891326004401/zk2635991.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "JAGX",
+      "title": "Jaguar Health, Inc.",
+      "type": "SEC",
+      "form": "424B5",
+      "publishedAt": "2026-09-03T12:30:12.000Z",
+      "headline": "424B5 filing — Jaguar Health, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1585608/000119312526381113/d126561d424b5.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4336,85 +4552,13 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "FRGT",
-      "title": "Freight Technologies, Inc.",
+      "symbol": "FGL",
+      "title": "Founder Group Ltd",
       "type": "SEC",
       "form": "4",
-      "publishedAt": "2026-09-02T19:07:57.000Z",
-      "headline": "4 filing — Freight Technologies, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1687542/000147559726000229/xslF345X06/primary_doc.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "PMVP",
-      "title": "PMV Pharmaceuticals, Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-09-01T22:23:31.000Z",
-      "headline": "8-K filing — PMV Pharmaceuticals, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1699382/000119312526378838/d113784d8k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "PMVP",
-      "title": "PMV Pharmaceuticals, Inc.",
-      "type": "SEC",
-      "form": "424B5",
-      "publishedAt": "2026-09-01T22:01:52.000Z",
-      "headline": "424B5 filing — PMV Pharmaceuticals, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1699382/000119312526378780/d95425d424b5.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "GNTA",
-      "title": "Genenta Science S.p.A.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-09-01T21:42:20.000Z",
-      "headline": "6-K filing — Genenta Science S.p.A.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1838716/000149315226041066/form6-k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "IMNN",
-      "title": "Imunon, Inc.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-01T20:10:02.000Z",
-      "headline": "4 filing — Imunon, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/749647/000143774926029409/xslF345X06/rdgdoc.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "IMNN",
-      "title": "Imunon, Inc.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-01T20:09:17.000Z",
-      "headline": "4 filing — Imunon, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/749647/000143774926029408/xslF345X06/rdgdoc.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "IMNN",
-      "title": "Imunon, Inc.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-01T20:07:31.000Z",
-      "headline": "4 filing — Imunon, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/749647/000143774926029407/xslF345X06/rdgdoc.xml",
+      "publishedAt": "2026-09-01T20:27:28.000Z",
+      "headline": "4 filing — Founder Group Ltd",
+      "url": "https://www.sec.gov/Archives/edgar/data/1989930/000147559726000225/xslF345X06/primary_doc.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4432,42 +4576,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "IMNN",
-      "title": "Imunon, Inc.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-01T20:06:35.000Z",
-      "headline": "4 filing — Imunon, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/749647/000143774926029405/xslF345X06/rdgdoc.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "FRGT",
-      "title": "Freight Technologies, Inc.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-01T20:06:31.000Z",
-      "headline": "4 filing — Freight Technologies, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1687542/000147559726000224/xslF345X06/primary_doc.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "NEXR",
-      "title": "Nexera Technologies Ltd",
-      "type": "SEC",
-      "form": "424B3",
-      "publishedAt": "2026-09-01T10:16:02.000Z",
-      "headline": "424B3 filing — Nexera Technologies Ltd",
-      "url": "https://www.sec.gov/Archives/edgar/data/1885408/000121390026095928/ea0304197-424b3_nexera.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "VBIO",
       "title": "Valion Bio, Inc.",
       "type": "SEC",
@@ -4475,66 +4583,6 @@
       "publishedAt": "2026-09-01T10:00:22.000Z",
       "headline": "8-K filing — Valion Bio, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1787740/000168316826006848/valion_8k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "NIXX",
-      "title": "Nixxy, Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-08-31T21:36:50.000Z",
-      "headline": "8-K filing — Nixxy, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1462223/000168316826006832/nixxy_8k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "CAMP",
-      "title": "Camp4 Therapeutics Corp",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-08-31T21:05:12.000Z",
-      "headline": "4 filing — Camp4 Therapeutics Corp",
-      "url": "https://www.sec.gov/Archives/edgar/data/1736730/000159854926000011/xslF345X06/form4-08312026_090809.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "PMVP",
-      "title": "PMV Pharmaceuticals, Inc.",
-      "type": "SEC",
-      "form": "424B3",
-      "publishedAt": "2026-08-31T21:01:56.000Z",
-      "headline": "424B3 filing — PMV Pharmaceuticals, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1699382/000119312526377000/d172117d424b3.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "PMVP",
-      "title": "PMV Pharmaceuticals, Inc.",
-      "type": "SEC",
-      "form": "424B5",
-      "publishedAt": "2026-08-31T20:25:34.000Z",
-      "headline": "424B5 filing — PMV Pharmaceuticals, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1699382/000119312526376860/d95425d424b5.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "PMVP",
-      "title": "PMV Pharmaceuticals, Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-08-31T20:06:01.000Z",
-      "headline": "8-K filing — PMV Pharmaceuticals, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1699382/000119312526376723/d441751d8k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4552,30 +4600,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "CELZ",
-      "title": "CREATIVE MEDICAL TECHNOLOGY HOLDINGS, INC.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-08-31T20:05:33.000Z",
-      "headline": "8-K filing — CREATIVE MEDICAL TECHNOLOGY HOLDINGS, INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1187953/000147793226005329/celz_8k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "NEXR",
-      "title": "Nexera Technologies Ltd",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-08-31T20:01:44.000Z",
-      "headline": "6-K filing — Nexera Technologies Ltd",
-      "url": "https://www.sec.gov/Archives/edgar/data/1885408/000121390026095699/ea0302958-6k_nexera.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "CHGA",
       "title": "Change Agents Corporation.",
       "type": "SEC",
@@ -4588,13 +4612,13 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "NEXR",
-      "title": "Nexera Technologies Ltd",
+      "symbol": "FGL",
+      "title": "Founder Group Ltd",
       "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-08-28T20:15:25.000Z",
-      "headline": "6-K filing — Nexera Technologies Ltd",
-      "url": "https://www.sec.gov/Archives/edgar/data/1885408/000121390026095055/ea0303709-6k_nexera.htm",
+      "form": "4",
+      "publishedAt": "2026-08-28T17:43:39.000Z",
+      "headline": "4 filing — Founder Group Ltd",
+      "url": "https://www.sec.gov/Archives/edgar/data/1989930/000147559726000219/xslF345X06/primary_doc.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4612,37 +4636,13 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "BZFD",
-      "title": "BuzzFeed, Inc.",
+      "symbol": "GWAV",
+      "title": "Greenwave Technology Solutions, Inc.",
       "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-08-27T21:47:59.000Z",
-      "headline": "4 filing — BuzzFeed, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1828972/000213674726000005/xslF345X06/wk-form4_1787867277.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "BZFD",
-      "title": "BuzzFeed, Inc.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-08-27T21:47:30.000Z",
-      "headline": "4 filing — BuzzFeed, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1828972/000213617126000005/xslF345X06/wk-form4_1787867247.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "CPRI",
-      "title": "Capri Holdings Ltd",
-      "type": "SEC",
-      "form": "144",
-      "publishedAt": "2026-08-27T20:21:06.000Z",
-      "headline": "144 filing — Capri Holdings Ltd",
-      "url": "https://www.sec.gov/Archives/edgar/data/1530721/000195004726008770/xsl144X01/primary_doc.xml",
+      "form": "8-K",
+      "publishedAt": "2026-08-27T20:50:48.000Z",
+      "headline": "8-K filing — Greenwave Technology Solutions, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1589149/000149315226040419/form8-k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4660,13 +4660,13 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "FCHL",
-      "title": "Fitness Champs Holdings Ltd",
+      "symbol": "EDRY",
+      "title": "EuroDry Ltd.",
       "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-08-27T16:33:29.000Z",
-      "headline": "6-K filing — Fitness Champs Holdings Ltd",
-      "url": "https://www.sec.gov/Archives/edgar/data/2023796/000149315226040358/form6-k.htm",
+      "form": "4",
+      "publishedAt": "2026-08-27T15:27:39.000Z",
+      "headline": "4 filing — EuroDry Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1731388/000212748426000016/xslF345X06/primary_doc.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4720,19 +4720,27 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "YAAS",
-      "title": "Youxin Technology Ltd",
+      "symbol": "OBAI",
+      "title": "Our Bond, Inc.",
       "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-08-27T11:30:50.000Z",
-      "headline": "6-K filing — Youxin Technology Ltd",
-      "url": "https://www.sec.gov/Archives/edgar/data/1964946/000149315226040322/form6-k.htm",
+      "form": "8-K",
+      "publishedAt": "2026-08-27T10:06:18.000Z",
+      "headline": "8-K filing — Our Bond, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1756064/000149315226040297/form8-k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     }
   ],
   "bySymbol": {
+    "CRIS": {
+      "events": [],
+      "eventCount": 0
+    },
+    "DXF": {
+      "events": [],
+      "eventCount": 0
+    },
     "VBIO": {
       "events": [
         {
@@ -4762,70 +4770,153 @@
       ],
       "eventCount": 2
     },
-    "RADX": {
+    "TCRT": {
+      "events": [],
+      "eventCount": 0
+    },
+    "SMTK": {
       "events": [
         {
-          "symbol": "RADX",
-          "title": "Radiopharm Theranostics Ltd",
+          "symbol": "SMTK",
+          "title": "SmartKem, Inc.",
           "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-14T10:11:21.000Z",
-          "headline": "6-K filing — Radiopharm Theranostics Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1949257/000121390026099435/ea0305391-6k_radiopharm.htm",
+          "form": "8-K",
+          "publishedAt": "2026-09-14T12:55:14.000Z",
+          "headline": "8-K filing — SmartKem, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1817760/000110465926107296/tm2625314d1_8k.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         },
         {
-          "symbol": "RADX",
-          "title": "Radiopharm Theranostics Ltd",
+          "symbol": "SMTK",
+          "title": "SmartKem, Inc.",
           "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-11T12:00:02.000Z",
-          "headline": "6-K filing — Radiopharm Theranostics Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1949257/000121390026098976/ea0305226-6k_radiopharm.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "RADX",
-          "title": "Radiopharm Theranostics Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-09T12:00:01.000Z",
-          "headline": "6-K filing — Radiopharm Theranostics Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1949257/000121390026098219/ea0304932-6k_radio.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "RADX",
-          "title": "Radiopharm Theranostics Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-08-28T12:00:05.000Z",
-          "headline": "6-K filing — Radiopharm Theranostics Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1949257/000121390026094655/ea0303798-6k_radio.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "RADX",
-          "title": "Radiopharm Theranostics Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-08-27T12:00:12.000Z",
-          "headline": "6-K filing — Radiopharm Theranostics Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1949257/000121390026094127/ea0303589-6k_radiopharm.htm",
+          "form": "8-K",
+          "publishedAt": "2026-09-04T20:05:38.000Z",
+          "headline": "8-K filing — SmartKem, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1817760/000110465926105497/tm2624843d1_8k.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 5
+      "eventCount": 2
+    },
+    "WATR": {
+      "events": [],
+      "eventCount": 0
+    },
+    "NPT": {
+      "events": [],
+      "eventCount": 0
+    },
+    "EDRY": {
+      "events": [
+        {
+          "symbol": "EDRY",
+          "title": "EuroDry Ltd.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-11T20:03:51.000Z",
+          "headline": "6-K filing — EuroDry Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1731388/000091957426006296/p15078651_6-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "EDRY",
+          "title": "EuroDry Ltd.",
+          "type": "SEC",
+          "form": "424B5",
+          "publishedAt": "2026-09-11T20:02:48.000Z",
+          "headline": "424B5 filing — EuroDry Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1731388/000091957426006294/p15075106_424b5.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "EDRY",
+          "title": "EuroDry Ltd.",
+          "type": "SEC",
+          "form": "EFFECT",
+          "publishedAt": "2026-09-04T04:15:18.000Z",
+          "headline": "EFFECT filing — EuroDry Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1731388/999999999526002883/xslEFFECTX01/primary_doc.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "EDRY",
+          "title": "EuroDry Ltd.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-08-27T15:27:39.000Z",
+          "headline": "4 filing — EuroDry Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1731388/000212748426000016/xslF345X06/primary_doc.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 4
+    },
+    "KMI": {
+      "events": [
+        {
+          "symbol": "KMI",
+          "title": "KINDER MORGAN, INC.",
+          "type": "SEC",
+          "form": "144",
+          "publishedAt": "2026-09-16T13:31:18.000Z",
+          "headline": "144 filing — KINDER MORGAN, INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1506307/000196530126000143/xsl144X01/primary_doc.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "KMI",
+          "title": "KINDER MORGAN, INC.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-09-03T21:37:32.000Z",
+          "headline": "8-K filing — KINDER MORGAN, INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630726000115/kmi-20260903.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 2
+    },
+    "TURB": {
+      "events": [],
+      "eventCount": 0
+    },
+    "AAME": {
+      "events": [],
+      "eventCount": 0
+    },
+    "GITS": {
+      "events": [
+        {
+          "symbol": "GITS",
+          "title": "Global Interactive Technologies, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-09-10T20:10:40.000Z",
+          "headline": "8-K filing — Global Interactive Technologies, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1911545/000149315226042159/form8-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
     },
     "CHGA": {
       "events": [
@@ -4892,312 +4983,52 @@
       ],
       "eventCount": 5
     },
-    "MODD": {
+    "JAGX": {
       "events": [
         {
-          "symbol": "MODD",
-          "title": "Modular Medical, Inc.",
+          "symbol": "JAGX",
+          "title": "Jaguar Health, Inc.",
           "type": "SEC",
           "form": "8-K",
-          "publishedAt": "2026-09-03T21:15:14.000Z",
-          "headline": "8-K filing — Modular Medical, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1074871/000121390026097280/ea0304617-8k_modular.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
-    "CAMP": {
-      "events": [
-        {
-          "symbol": "CAMP",
-          "title": "Camp4 Therapeutics Corp",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-02T23:50:12.000Z",
-          "headline": "4 filing — Camp4 Therapeutics Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/1736730/000162828026060234/xslF345X06/wk-form4_1788393010.xml",
+          "publishedAt": "2026-09-15T17:44:55.000Z",
+          "headline": "8-K filing — Jaguar Health, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1585608/000119312526391682/d162139d8k.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         },
         {
-          "symbol": "CAMP",
-          "title": "Camp4 Therapeutics Corp",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-08-31T21:05:12.000Z",
-          "headline": "4 filing — Camp4 Therapeutics Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/1736730/000159854926000011/xslF345X06/form4-08312026_090809.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
-    },
-    "WATR": {
-      "events": [],
-      "eventCount": 0
-    },
-    "IMNN": {
-      "events": [
-        {
-          "symbol": "IMNN",
-          "title": "Imunon, Inc.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-15T16:43:30.000Z",
-          "headline": "4 filing — Imunon, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/749647/000143774926030415/xslF345X06/rdgdoc.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "IMNN",
-          "title": "Imunon, Inc.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-15T16:42:25.000Z",
-          "headline": "4 filing — Imunon, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/749647/000143774926030414/xslF345X06/rdgdoc.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "IMNN",
-          "title": "Imunon, Inc.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-15T16:41:21.000Z",
-          "headline": "4 filing — Imunon, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/749647/000143774926030413/xslF345X06/rdgdoc.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "IMNN",
-          "title": "Imunon, Inc.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-01T20:10:02.000Z",
-          "headline": "4 filing — Imunon, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/749647/000143774926029409/xslF345X06/rdgdoc.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "IMNN",
-          "title": "Imunon, Inc.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-01T20:09:17.000Z",
-          "headline": "4 filing — Imunon, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/749647/000143774926029408/xslF345X06/rdgdoc.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "IMNN",
-          "title": "Imunon, Inc.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-01T20:07:31.000Z",
-          "headline": "4 filing — Imunon, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/749647/000143774926029407/xslF345X06/rdgdoc.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "IMNN",
-          "title": "Imunon, Inc.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-01T20:06:35.000Z",
-          "headline": "4 filing — Imunon, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/749647/000143774926029405/xslF345X06/rdgdoc.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 7
-    },
-    "KMI": {
-      "events": [
-        {
-          "symbol": "KMI",
-          "title": "KINDER MORGAN, INC.",
-          "type": "SEC",
-          "form": "144",
-          "publishedAt": "2026-09-16T13:31:18.000Z",
-          "headline": "144 filing — KINDER MORGAN, INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1506307/000196530126000143/xsl144X01/primary_doc.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "KMI",
-          "title": "KINDER MORGAN, INC.",
+          "symbol": "JAGX",
+          "title": "Jaguar Health, Inc.",
           "type": "SEC",
           "form": "8-K",
-          "publishedAt": "2026-09-03T21:37:32.000Z",
-          "headline": "8-K filing — KINDER MORGAN, INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630726000115/kmi-20260903.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
-    },
-    "AAME": {
-      "events": [],
-      "eventCount": 0
-    },
-    "TURB": {
-      "events": [],
-      "eventCount": 0
-    },
-    "FCHL": {
-      "events": [
-        {
-          "symbol": "FCHL",
-          "title": "Fitness Champs Holdings Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-08-27T16:33:29.000Z",
-          "headline": "6-K filing — Fitness Champs Holdings Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/2023796/000149315226040358/form6-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
-    "ALLR": {
-      "events": [
-        {
-          "symbol": "ALLR",
-          "title": "Allarity Therapeutics, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-16T08:00:14.000Z",
-          "headline": "8-K filing — Allarity Therapeutics, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1860657/000121390026100350/ea0305570-8k_allarity.htm",
+          "publishedAt": "2026-09-15T13:10:08.000Z",
+          "headline": "8-K filing — Jaguar Health, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1585608/000119312526391415/d105876d8k.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         },
         {
-          "symbol": "ALLR",
-          "title": "Allarity Therapeutics, Inc.",
+          "symbol": "JAGX",
+          "title": "Jaguar Health, Inc.",
           "type": "SEC",
           "form": "8-K",
-          "publishedAt": "2026-09-14T16:14:05.000Z",
-          "headline": "8-K filing — Allarity Therapeutics, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1860657/000121390026099576/ea0305408-8k_allarity.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
-    },
-    "GITS": {
-      "events": [
-        {
-          "symbol": "GITS",
-          "title": "Global Interactive Technologies, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-10T20:10:40.000Z",
-          "headline": "8-K filing — Global Interactive Technologies, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1911545/000149315226042159/form8-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
-    "IPDN": {
-      "events": [
-        {
-          "symbol": "IPDN",
-          "title": "Professional Diversity Network, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-11T20:59:26.000Z",
-          "headline": "8-K filing — Professional Diversity Network, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1546296/000143774926030185/ipdn20260907_8k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
-    "EONR": {
-      "events": [],
-      "eventCount": 0
-    },
-    "NEXR": {
-      "events": [
-        {
-          "symbol": "NEXR",
-          "title": "Nexera Technologies Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-03T20:15:50.000Z",
-          "headline": "6-K filing — Nexera Technologies Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1885408/000121390026097197/ea0304566-6k_nexera.htm",
+          "publishedAt": "2026-09-04T20:15:12.000Z",
+          "headline": "8-K filing — Jaguar Health, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1585608/000119312526383673/d111700d8k.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         },
         {
-          "symbol": "NEXR",
-          "title": "Nexera Technologies Ltd",
+          "symbol": "JAGX",
+          "title": "Jaguar Health, Inc.",
           "type": "SEC",
-          "form": "424B3",
-          "publishedAt": "2026-09-01T10:16:02.000Z",
-          "headline": "424B3 filing — Nexera Technologies Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1885408/000121390026095928/ea0304197-424b3_nexera.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "NEXR",
-          "title": "Nexera Technologies Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-08-31T20:01:44.000Z",
-          "headline": "6-K filing — Nexera Technologies Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1885408/000121390026095699/ea0302958-6k_nexera.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "NEXR",
-          "title": "Nexera Technologies Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-08-28T20:15:25.000Z",
-          "headline": "6-K filing — Nexera Technologies Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1885408/000121390026095055/ea0303709-6k_nexera.htm",
+          "form": "424B5",
+          "publishedAt": "2026-09-03T12:30:12.000Z",
+          "headline": "424B5 filing — Jaguar Health, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1585608/000119312526381113/d126561d424b5.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -5205,93 +5036,64 @@
       ],
       "eventCount": 4
     },
-    "NIXX": {
+    "PRFX": {
       "events": [
         {
-          "symbol": "NIXX",
-          "title": "Nixxy, Inc.",
+          "symbol": "PRFX",
+          "title": "PRF Technologies Ltd.",
           "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-03T22:17:28.000Z",
-          "headline": "8-K filing — Nixxy, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1462223/000168316826006941/nixxy_8k.htm",
+          "form": "6-K",
+          "publishedAt": "2026-09-16T09:12:45-04:00",
+          "headline": "6-K filing — PRF Technologies Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1801834/000117891326004526/0001178913-26-004526-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "PRFX",
+          "title": "PRF Technologies Ltd.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-16T09:12:45.000Z",
+          "headline": "6-K filing — PRF Technologies Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1801834/000117891326004526/zk2636122.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         },
         {
-          "symbol": "NIXX",
-          "title": "Nixxy, Inc.",
+          "symbol": "PRFX",
+          "title": "PRF Technologies Ltd.",
           "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-08-31T21:36:50.000Z",
-          "headline": "8-K filing — Nixxy, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1462223/000168316826006832/nixxy_8k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
-    },
-    "PMVP": {
-      "events": [
-        {
-          "symbol": "PMVP",
-          "title": "PMV Pharmaceuticals, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-01T22:23:31.000Z",
-          "headline": "8-K filing — PMV Pharmaceuticals, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1699382/000119312526378838/d113784d8k.htm",
+          "form": "6-K",
+          "publishedAt": "2026-09-09T13:02:49.000Z",
+          "headline": "6-K filing — PRF Technologies Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1801834/000117891326004455/zk2636092.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         },
         {
-          "symbol": "PMVP",
-          "title": "PMV Pharmaceuticals, Inc.",
+          "symbol": "PRFX",
+          "title": "PRF Technologies Ltd.",
           "type": "SEC",
-          "form": "424B5",
-          "publishedAt": "2026-09-01T22:01:52.000Z",
-          "headline": "424B5 filing — PMV Pharmaceuticals, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1699382/000119312526378780/d95425d424b5.htm",
+          "form": "EFFECT",
+          "publishedAt": "2026-09-04T04:15:09.000Z",
+          "headline": "EFFECT filing — PRF Technologies Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1801834/999999999526002876/xslEFFECTX01/primary_doc.xml",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         },
         {
-          "symbol": "PMVP",
-          "title": "PMV Pharmaceuticals, Inc.",
+          "symbol": "PRFX",
+          "title": "PRF Technologies Ltd.",
           "type": "SEC",
-          "form": "424B3",
-          "publishedAt": "2026-08-31T21:01:56.000Z",
-          "headline": "424B3 filing — PMV Pharmaceuticals, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1699382/000119312526377000/d172117d424b3.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "PMVP",
-          "title": "PMV Pharmaceuticals, Inc.",
-          "type": "SEC",
-          "form": "424B5",
-          "publishedAt": "2026-08-31T20:25:34.000Z",
-          "headline": "424B5 filing — PMV Pharmaceuticals, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1699382/000119312526376860/d95425d424b5.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "PMVP",
-          "title": "PMV Pharmaceuticals, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-08-31T20:06:01.000Z",
-          "headline": "8-K filing — PMV Pharmaceuticals, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1699382/000119312526376723/d441751d8k.htm",
+          "form": "6-K",
+          "publishedAt": "2026-09-03T12:39:48.000Z",
+          "headline": "6-K filing — PRF Technologies Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1801834/000117891326004401/zk2635991.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -5299,106 +5101,54 @@
       ],
       "eventCount": 5
     },
-    "RENT": {
+    "EONR": {
+      "events": [],
+      "eventCount": 0
+    },
+    "SMXT": {
+      "events": [],
+      "eventCount": 0
+    },
+    "FGL": {
       "events": [
         {
-          "symbol": "RENT",
-          "title": "Rent the Runway, Inc.",
+          "symbol": "FGL",
+          "title": "Founder Group Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-04T12:00:12.000Z",
+          "headline": "6-K filing — Founder Group Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1989930/000121390026097414/ea0304688-6k_founder.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "FGL",
+          "title": "Founder Group Ltd",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-09-16T16:55:20.000Z",
-          "headline": "4 filing — Rent the Runway, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1468327/000146832726000102/xslF345X06/wk-form4_1789592118.xml",
+          "publishedAt": "2026-09-01T20:27:28.000Z",
+          "headline": "4 filing — Founder Group Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1989930/000147559726000225/xslF345X06/primary_doc.xml",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         },
         {
-          "symbol": "RENT",
-          "title": "Rent the Runway, Inc.",
+          "symbol": "FGL",
+          "title": "Founder Group Ltd",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-09-16T16:53:01.000Z",
-          "headline": "4 filing — Rent the Runway, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1468327/000146832726000100/xslF345X06/wk-form4_1789591978.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "RENT",
-          "title": "Rent the Runway, Inc.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-16T16:48:28.000Z",
-          "headline": "4 filing — Rent the Runway, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1468327/000146832726000098/xslF345X06/wk-form4_1789591705.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "RENT",
-          "title": "Rent the Runway, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-15T20:57:56.000Z",
-          "headline": "8-K filing — Rent the Runway, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1468327/000095010326013999/dp253357_8k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "RENT",
-          "title": "Rent the Runway, Inc.",
-          "type": "SEC",
-          "form": "144",
-          "publishedAt": "2026-09-14T17:17:12.000Z",
-          "headline": "144 filing — Rent the Runway, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1468327/000146832726000094/xsl144X01/primary_doc.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "RENT",
-          "title": "Rent the Runway, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-09-11T12:32:04.000Z",
-          "headline": "S-1 filing — Rent the Runway, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1468327/000095010326013811/dp253177_s1.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "RENT",
-          "title": "Rent the Runway, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-11T12:10:26.000Z",
-          "headline": "8-K filing — Rent the Runway, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1468327/000095010326013810/dp253178_8k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "RENT",
-          "title": "Rent the Runway, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-11T11:59:45.000Z",
-          "headline": "8-K filing — Rent the Runway, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1468327/000146832726000086/wdq-20260911.htm",
+          "publishedAt": "2026-08-28T17:43:39.000Z",
+          "headline": "4 filing — Founder Group Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1989930/000147559726000219/xslF345X06/primary_doc.xml",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 8
+      "eventCount": 3
     },
     "QTRX": {
       "events": [
@@ -5428,10 +5178,6 @@
         }
       ],
       "eventCount": 2
-    },
-    "CRE": {
-      "events": [],
-      "eventCount": 0
     },
     "BUR": {
       "events": [
@@ -5471,133 +5217,22 @@
       ],
       "eventCount": 1
     },
-    "AKAN": {
+    "ATCH": {
       "events": [
         {
-          "symbol": "AKAN",
-          "title": "AKANDA CORP.",
+          "symbol": "ATCH",
+          "title": "AtlasClear Holdings, Inc.",
           "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-09T21:15:01.000Z",
-          "headline": "6-K filing — AKANDA CORP.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1888014/000121390026098448/ea030501701-6k_akanda.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "AKAN",
-          "title": "AKANDA CORP.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-04T13:23:31.000Z",
-          "headline": "6-K filing — AKANDA CORP.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1888014/000121390026097448/ea0304628-6k_akanda.htm",
+          "form": "8-K",
+          "publishedAt": "2026-09-15T19:36:36.000Z",
+          "headline": "8-K filing — AtlasClear Holdings, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1963088/000149315226042800/form8-k.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 2
-    },
-    "CPRI": {
-      "events": [
-        {
-          "symbol": "CPRI",
-          "title": "Capri Holdings Ltd",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-16T16:34:45-04:00",
-          "headline": "8-K filing — Capri Holdings Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1530721/000095014226002556/0000950142-26-002556-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "CPRI",
-          "title": "Capri Holdings Ltd",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-16T16:34:45.000Z",
-          "headline": "8-K filing — Capri Holdings Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1530721/000095014226002556/eh260831247_8k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "CPRI",
-          "title": "Capri Holdings Ltd",
-          "type": "SEC",
-          "form": "144",
-          "publishedAt": "2026-08-27T20:21:06.000Z",
-          "headline": "144 filing — Capri Holdings Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1530721/000195004726008770/xsl144X01/primary_doc.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 3
-    },
-    "SNTI": {
-      "events": [
-        {
-          "symbol": "SNTI",
-          "title": "Senti Biosciences Holdings, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-04T10:01:29.000Z",
-          "headline": "8-K filing — Senti Biosciences Holdings, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1854270/000162828026060600/snti-20260903.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "SNTI",
-          "title": "Senti Biosciences Holdings, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-02T20:29:56.000Z",
-          "headline": "8-K filing — Senti Biosciences Holdings, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1854270/000162828026060124/snti-20260827.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
-    },
-    "GNTA": {
-      "events": [
-        {
-          "symbol": "GNTA",
-          "title": "Genenta Science S.p.A.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-11T20:05:22.000Z",
-          "headline": "6-K filing — Genenta Science S.p.A.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1838716/000149315226042377/form6-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "GNTA",
-          "title": "Genenta Science S.p.A.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-01T21:42:20.000Z",
-          "headline": "6-K filing — Genenta Science S.p.A.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1838716/000149315226041066/form6-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
+      "eventCount": 1
     },
     "RCKT": {
       "events": [
@@ -5705,34 +5340,9 @@
       ],
       "eventCount": 1
     },
-    "GMEX": {
-      "events": [
-        {
-          "symbol": "GMEX",
-          "title": "GMEX Robotics Corp",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-10T20:17:30.000Z",
-          "headline": "4 filing — GMEX Robotics Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/1928581/000147559726000238/xslF345X06/primary_doc.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "GMEX",
-          "title": "GMEX Robotics Corp",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-08T17:11:25.000Z",
-          "headline": "4 filing — GMEX Robotics Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/1928581/000147559726000233/xslF345X06/primary_doc.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
+    "CTOR": {
+      "events": [],
+      "eventCount": 0
     },
     "HUIZ": {
       "events": [],
@@ -5767,146 +5377,175 @@
       ],
       "eventCount": 2
     },
-    "BZFD": {
+    "SNTI": {
       "events": [
         {
-          "symbol": "BZFD",
-          "title": "BuzzFeed, Inc.",
+          "symbol": "SNTI",
+          "title": "Senti Biosciences Holdings, Inc.",
           "type": "SEC",
           "form": "8-K",
-          "publishedAt": "2026-09-16T16:21:43.000Z",
-          "headline": "8-K filing — BuzzFeed, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1828972/000182897226000146/bzfd-20260911.htm",
+          "publishedAt": "2026-09-04T10:01:29.000Z",
+          "headline": "8-K filing — Senti Biosciences Holdings, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1854270/000162828026060600/snti-20260903.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         },
         {
-          "symbol": "BZFD",
-          "title": "BuzzFeed, Inc.",
+          "symbol": "SNTI",
+          "title": "Senti Biosciences Holdings, Inc.",
           "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-16T01:00:42.000Z",
-          "headline": "4 filing — BuzzFeed, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1828972/000149315226042804/xslF345X06/ownership.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "BZFD",
-          "title": "BuzzFeed, Inc.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-14T23:50:04.000Z",
-          "headline": "4 filing — BuzzFeed, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1828972/000182897226000142/xslF345X06/wk-form4_1789429801.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "BZFD",
-          "title": "BuzzFeed, Inc.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-14T23:49:58.000Z",
-          "headline": "4 filing — BuzzFeed, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1828972/000182897226000141/xslF345X06/wk-form4_1789429795.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "BZFD",
-          "title": "BuzzFeed, Inc.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-04T21:06:47.000Z",
-          "headline": "4 filing — BuzzFeed, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1828972/000160227326000015/xslF345X06/wk-form4_1788556004.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "BZFD",
-          "title": "BuzzFeed, Inc.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-04T21:06:35.000Z",
-          "headline": "4 filing — BuzzFeed, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1828972/000149761726000007/xslF345X06/wk-form4_1788555992.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "BZFD",
-          "title": "BuzzFeed, Inc.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-08-27T21:47:59.000Z",
-          "headline": "4 filing — BuzzFeed, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1828972/000213674726000005/xslF345X06/wk-form4_1787867277.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "BZFD",
-          "title": "BuzzFeed, Inc.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-08-27T21:47:30.000Z",
-          "headline": "4 filing — BuzzFeed, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1828972/000213617126000005/xslF345X06/wk-form4_1787867247.xml",
+          "form": "8-K",
+          "publishedAt": "2026-09-02T20:29:56.000Z",
+          "headline": "8-K filing — Senti Biosciences Holdings, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1854270/000162828026060124/snti-20260827.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 8
+      "eventCount": 2
     },
-    "YAAS": {
+    "ZTG": {
       "events": [
         {
-          "symbol": "YAAS",
-          "title": "Youxin Technology Ltd",
+          "symbol": "ZTG",
+          "title": "Zenta Group Co Ltd",
           "type": "SEC",
           "form": "6-K",
-          "publishedAt": "2026-08-27T11:30:50.000Z",
-          "headline": "6-K filing — Youxin Technology Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1964946/000149315226040322/form6-k.htm",
+          "publishedAt": "2026-09-16T06:03:07-04:00",
+          "headline": "6-K filing — Zenta Group Co Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/2011458/000149315226042820/0001493152-26-042820-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
-    "FRGT": {
-      "events": [
+          "discoveryScope": "MARKET_WIDE"
+        },
         {
-          "symbol": "FRGT",
-          "title": "Freight Technologies, Inc.",
+          "symbol": "ZTG",
+          "title": "Zenta Group Co Ltd",
           "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-02T19:07:57.000Z",
-          "headline": "4 filing — Freight Technologies, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1687542/000147559726000229/xslF345X06/primary_doc.xml",
+          "form": "6-K",
+          "publishedAt": "2026-09-16T06:03:07.000Z",
+          "headline": "6-K filing — Zenta Group Co Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/2011458/000149315226042820/form6-k.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         },
         {
-          "symbol": "FRGT",
-          "title": "Freight Technologies, Inc.",
+          "symbol": "ZTG",
+          "title": "Zenta Group Co Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-14T20:00:30.000Z",
+          "headline": "6-K filing — Zenta Group Co Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/2011458/000149315226042570/form6-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "ZTG",
+          "title": "Zenta Group Co Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-09T20:00:31.000Z",
+          "headline": "6-K filing — Zenta Group Co Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/2011458/000149315226041956/form6-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 4
+    },
+    "RADX": {
+      "events": [
+        {
+          "symbol": "RADX",
+          "title": "Radiopharm Theranostics Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-14T10:11:21.000Z",
+          "headline": "6-K filing — Radiopharm Theranostics Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1949257/000121390026099435/ea0305391-6k_radiopharm.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "RADX",
+          "title": "Radiopharm Theranostics Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-11T12:00:02.000Z",
+          "headline": "6-K filing — Radiopharm Theranostics Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1949257/000121390026098976/ea0305226-6k_radiopharm.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "RADX",
+          "title": "Radiopharm Theranostics Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-09T12:00:01.000Z",
+          "headline": "6-K filing — Radiopharm Theranostics Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1949257/000121390026098219/ea0304932-6k_radio.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "RADX",
+          "title": "Radiopharm Theranostics Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-08-28T12:00:05.000Z",
+          "headline": "6-K filing — Radiopharm Theranostics Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1949257/000121390026094655/ea0303798-6k_radio.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "RADX",
+          "title": "Radiopharm Theranostics Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-08-27T12:00:12.000Z",
+          "headline": "6-K filing — Radiopharm Theranostics Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1949257/000121390026094127/ea0303589-6k_radiopharm.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 5
+    },
+    "GMEX": {
+      "events": [
+        {
+          "symbol": "GMEX",
+          "title": "GMEX Robotics Corp",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-09-01T20:06:31.000Z",
-          "headline": "4 filing — Freight Technologies, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1687542/000147559726000224/xslF345X06/primary_doc.xml",
+          "publishedAt": "2026-09-10T20:17:30.000Z",
+          "headline": "4 filing — GMEX Robotics Corp",
+          "url": "https://www.sec.gov/Archives/edgar/data/1928581/000147559726000238/xslF345X06/primary_doc.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "GMEX",
+          "title": "GMEX Robotics Corp",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-09-08T17:11:25.000Z",
+          "headline": "4 filing — GMEX Robotics Corp",
+          "url": "https://www.sec.gov/Archives/edgar/data/1928581/000147559726000233/xslF345X06/primary_doc.xml",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -5918,22 +5557,106 @@
       "events": [],
       "eventCount": 0
     },
-    "CELZ": {
+    "ECOR": {
       "events": [
         {
-          "symbol": "CELZ",
-          "title": "CREATIVE MEDICAL TECHNOLOGY HOLDINGS, INC.",
+          "symbol": "ECOR",
+          "title": "electroCore, Inc.",
           "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-08-31T20:05:33.000Z",
-          "headline": "8-K filing — CREATIVE MEDICAL TECHNOLOGY HOLDINGS, INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1187953/000147793226005329/celz_8k.htm",
+          "form": "4",
+          "publishedAt": "2026-09-14T10:45:15.000Z",
+          "headline": "4 filing — electroCore, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1560258/000149315226042472/xslF345X06/ownership.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "ECOR",
+          "title": "electroCore, Inc.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-09-10T21:04:17.000Z",
+          "headline": "4 filing — electroCore, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1560258/000149315226042217/xslF345X06/ownership.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "ECOR",
+          "title": "electroCore, Inc.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-09-10T20:05:16.000Z",
+          "headline": "4 filing — electroCore, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1560258/000149315226042151/xslF345X06/ownership.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "ECOR",
+          "title": "electroCore, Inc.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-09-10T20:05:14.000Z",
+          "headline": "4 filing — electroCore, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1560258/000149315226042150/xslF345X06/ownership.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "ECOR",
+          "title": "electroCore, Inc.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-09-10T20:05:13.000Z",
+          "headline": "4 filing — electroCore, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1560258/000149315226042148/xslF345X06/ownership.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "ECOR",
+          "title": "electroCore, Inc.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-09-10T20:05:11.000Z",
+          "headline": "4 filing — electroCore, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1560258/000149315226042149/xslF345X06/ownership.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "ECOR",
+          "title": "electroCore, Inc.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-09-10T20:05:10.000Z",
+          "headline": "4 filing — electroCore, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1560258/000149315226042146/xslF345X06/ownership.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "ECOR",
+          "title": "electroCore, Inc.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-09-10T20:05:08.000Z",
+          "headline": "4 filing — electroCore, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1560258/000149315226042145/xslF345X06/ownership.xml",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 1
+      "eventCount": 8
     },
     "AMOD": {
       "events": [
@@ -5964,16 +5687,131 @@
       ],
       "eventCount": 2
     },
-    "KSCP": {
+    "RAYA": {
+      "events": [],
+      "eventCount": 0
+    },
+    "NOMA": {
       "events": [
         {
-          "symbol": "KSCP",
-          "title": "Knightscope, Inc.",
+          "symbol": "NOMA",
+          "title": "Nomadar Corp.",
           "type": "SEC",
           "form": "8-K",
-          "publishedAt": "2026-09-04T21:00:23.000Z",
-          "headline": "8-K filing — Knightscope, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1600983/000110465926105544/kscp-20260902x8k.htm",
+          "publishedAt": "2026-09-14T12:10:18.000Z",
+          "headline": "8-K filing — Nomadar Corp.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1994214/000149315226042486/form8-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
+    "GWAV": {
+      "events": [
+        {
+          "symbol": "GWAV",
+          "title": "Greenwave Technology Solutions, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-09-11T21:25:15.000Z",
+          "headline": "8-K filing — Greenwave Technology Solutions, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1589149/000149315226042431/form8-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "GWAV",
+          "title": "Greenwave Technology Solutions, Inc.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-09-09T21:42:38.000Z",
+          "headline": "4 filing — Greenwave Technology Solutions, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1589149/000149315226042006/xslF345X06/ownership.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "GWAV",
+          "title": "Greenwave Technology Solutions, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-09-08T10:05:15.000Z",
+          "headline": "8-K filing — Greenwave Technology Solutions, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1589149/000149315226041650/form8-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "GWAV",
+          "title": "Greenwave Technology Solutions, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-08-27T20:50:48.000Z",
+          "headline": "8-K filing — Greenwave Technology Solutions, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1589149/000149315226040419/form8-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 4
+    },
+    "OCGN": {
+      "events": [
+        {
+          "symbol": "OCGN",
+          "title": "Ocugen, Inc.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-09-12T01:13:47.000Z",
+          "headline": "4 filing — Ocugen, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1372299/000162828026061626/xslF345X06/wk-form4_1789175624.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "OCGN",
+          "title": "Ocugen, Inc.",
+          "type": "SEC",
+          "form": "144",
+          "publishedAt": "2026-09-09T20:30:29.000Z",
+          "headline": "144 filing — Ocugen, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1372299/000162828026061150/xsl144X01/primary_doc.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "OCGN",
+          "title": "Ocugen, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-09-08T21:27:11.000Z",
+          "headline": "8-K filing — Ocugen, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1372299/000110465926105968/tm2624985d1_8k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 3
+    },
+    "OBAI": {
+      "events": [
+        {
+          "symbol": "OBAI",
+          "title": "Our Bond, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-08-27T10:06:18.000Z",
+          "headline": "8-K filing — Our Bond, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1756064/000149315226040297/form8-k.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -6249,6 +6087,23 @@
           "publishedAt": "2026-09-16T17:25:46-04:00",
           "headline": "8-K filing — Aperture AC",
           "url": "https://www.sec.gov/Archives/edgar/data/2093524/000121390026100601/0001213900-26-100601-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "JILL": {
+      "events": [
+        {
+          "symbol": "JILL",
+          "title": "J.Jill, Inc.",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-16T17:25:45-04:00",
+          "headline": "S-3 filing — J.Jill, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1687932/000119312526393259/0001193125-26-393259-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -7304,6 +7159,23 @@
       ],
       "eventCount": 1
     },
+    "BUSEP": {
+      "events": [
+        {
+          "symbol": "BUSEP",
+          "title": "FIRST BUSEY CORP /NV/",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-16T16:48:54-04:00",
+          "headline": "S-3 filing — FIRST BUSEY CORP /NV/",
+          "url": "https://www.sec.gov/Archives/edgar/data/314489/000031448926000061/0000314489-26-000061-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "RM": {
       "events": [
         {
@@ -7572,6 +7444,35 @@
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "SYY",
+          "title": "SYSCO CORP",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-14T16:48:09-04:00",
+          "headline": "S-3 filing — SYSCO CORP",
+          "url": "https://www.sec.gov/Archives/edgar/data/96021/000110465926107527/0001104659-26-107527-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 2
+    },
+    "SDEV": {
+      "events": [
+        {
+          "symbol": "SDEV",
+          "title": "Stablecoin Development Corp",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-16T16:36:24-04:00",
+          "headline": "S-3 filing — Stablecoin Development Corp",
+          "url": "https://www.sec.gov/Archives/edgar/data/1389545/000143774926030554/0001437749-26-030554-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
         }
       ],
       "eventCount": 1
@@ -7586,6 +7487,23 @@
           "publishedAt": "2026-09-16T16:36:09-04:00",
           "headline": "8-K filing — Public Storage",
           "url": "https://www.sec.gov/Archives/edgar/data/1393311/000119312526393149/0001193125-26-393149-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "CPRI": {
+      "events": [
+        {
+          "symbol": "CPRI",
+          "title": "Capri Holdings Ltd",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-09-16T16:34:45-04:00",
+          "headline": "8-K filing — Capri Holdings Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1530721/000095014226002556/0000950142-26-002556-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -8953,23 +8871,6 @@
       ],
       "eventCount": 1
     },
-    "PRFX": {
-      "events": [
-        {
-          "symbol": "PRFX",
-          "title": "PRF Technologies Ltd.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-16T09:12:45-04:00",
-          "headline": "6-K filing — PRF Technologies Ltd.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1801834/000117891326004526/0001178913-26-004526-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
     "MBAI": {
       "events": [
         {
@@ -9661,23 +9562,6 @@
       ],
       "eventCount": 1
     },
-    "ZTG": {
-      "events": [
-        {
-          "symbol": "ZTG",
-          "title": "Zenta Group Co Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-16T06:03:07-04:00",
-          "headline": "6-K filing — Zenta Group Co Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/2011458/000149315226042820/0001493152-26-042820-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
     "BRSL": {
       "events": [
         {
@@ -9797,6 +9681,23 @@
       ],
       "eventCount": 1
     },
+    "DFNSW": {
+      "events": [
+        {
+          "symbol": "DFNSW",
+          "title": "T3 Defense Inc.",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-15T17:29:55-04:00",
+          "headline": "S-3 filing — T3 Defense Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1787518/000118518526004031/0001185185-26-004031-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "EVGN": {
       "events": [
         {
@@ -9807,6 +9708,40 @@
           "publishedAt": "2026-09-15T17:15:18-04:00",
           "headline": "6-K filing — Evogene Ltd.",
           "url": "https://www.sec.gov/Archives/edgar/data/1574565/000117891326004516/0001178913-26-004516-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "HOS": {
+      "events": [
+        {
+          "symbol": "HOS",
+          "title": "HORNBECK OFFSHORE SERVICES, INC.",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-15T17:14:32-04:00",
+          "headline": "S-3 filing — HORNBECK OFFSHORE SERVICES, INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/866829/000119312526392128/0001193125-26-392128-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "MGY": {
+      "events": [
+        {
+          "symbol": "MGY",
+          "title": "Magnolia Oil & Gas Corp",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-15T17:11:08-04:00",
+          "headline": "S-3 filing — Magnolia Oil & Gas Corp",
+          "url": "https://www.sec.gov/Archives/edgar/data/1698990/000110465926107975/0001104659-26-107975-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -9843,6 +9778,23 @@
       ],
       "eventCount": 2
     },
+    "KPLT": {
+      "events": [
+        {
+          "symbol": "KPLT",
+          "title": "Katapult Holdings, Inc.",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-15T17:04:24-04:00",
+          "headline": "S-3 filing — Katapult Holdings, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1785424/000110465926107971/0001104659-26-107971-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "GSL-PB": {
       "events": [
         {
@@ -9853,6 +9805,23 @@
           "publishedAt": "2026-09-15T17:03:06-04:00",
           "headline": "6-K filing — Global Ship Lease, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1430725/000114036126036677/0001140361-26-036677-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "INBS": {
+      "events": [
+        {
+          "symbol": "INBS",
+          "title": "INTELLIGENT BIO SOLUTIONS INC.",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-15T17:00:49-04:00",
+          "headline": "S-3 filing — INTELLIGENT BIO SOLUTIONS INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1725430/000149315226042775/0001493152-26-042775-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -9962,6 +9931,23 @@
       ],
       "eventCount": 1
     },
+    "SAFX": {
+      "events": [
+        {
+          "symbol": "SAFX",
+          "title": "XCF Global, Inc.",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-15T06:06:22-04:00",
+          "headline": "S-3 filing — XCF Global, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2019793/000149315226042652/0001493152-26-042652-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "PURR": {
       "events": [
         {
@@ -10047,6 +10033,40 @@
       ],
       "eventCount": 1
     },
+    "OPAL": {
+      "events": [
+        {
+          "symbol": "OPAL",
+          "title": "OPAL Fuels Inc.",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-14T17:21:48-04:00",
+          "headline": "S-3 filing — OPAL Fuels Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1842279/000162828026061907/0001628280-26-061907-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "BNTC": {
+      "events": [
+        {
+          "symbol": "BNTC",
+          "title": "Benitec Biopharma Inc.",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-14T17:09:51-04:00",
+          "headline": "S-3 filing — Benitec Biopharma Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1808898/000119312526390758/0001193125-26-390758-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "SYRA": {
       "events": [
         {
@@ -10057,6 +10077,23 @@
           "publishedAt": "2026-09-14T16:32:23-04:00",
           "headline": "S-1 filing — Syra Health Corp",
           "url": "https://www.sec.gov/Archives/edgar/data/1922335/000149315226042591/0001493152-26-042591-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "CHWY": {
+      "events": [
+        {
+          "symbol": "CHWY",
+          "title": "Chewy, Inc.",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-14T07:01:10-04:00",
+          "headline": "S-3 filing — Chewy, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1766502/000119312526389818/0001193125-26-389818-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -10097,10 +10134,25 @@
         }
       ],
       "eventCount": 1
+    },
+    "TYRA": {
+      "events": [
+        {
+          "symbol": "TYRA",
+          "title": "Tyra Biosciences, Inc.",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-14T06:02:04-04:00",
+          "headline": "S-3 filing — Tyra Biosciences, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1863127/000119312526389752/0001193125-26-389752-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
     }
   },
-  "errors": [
-    "SEC_CURRENT_S-3:This operation was aborted"
-  ],
+  "errors": [],
   "policy": "Public-source intelligence. Market-wide SEC current-filing discovery is primary-source and independent of the price shortlist. `sourceStatus.live` means the loaded market universe contains fresh market data inside the active US extended-hours window; loaded-but-stale/session-final data is never labeled live. Shortlist ranking does not determine feed-level freshness. Upstream feed timestamps are retained only as operational provenance and do not override quote observation freshness or trading eligibility. SEC filings are primary-source events; GDELT is discovery-only and requires source-level verification before trade decisions."
 }
