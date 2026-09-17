@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-17T00:53:57.989Z",
+  "generatedAt": "2026-09-17T04:56:20.576Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,17 +8,17 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-09-17T00:00:00.000Z",
-    "marketDataAgeMin": 54,
+    "marketDataAgeMin": 296.4,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-17T00:53:58.316Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-17T00:01:03.537Z",
+    "upstreamFeedFetchedAt": "2026-09-17T04:56:21.094Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-17T03:43:06.403Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-17T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 52.9,
-    "upstreamObservationAgeAtFetchMin": 54,
+    "upstreamUpdateAgeAtFetchMin": 73.2,
+    "upstreamObservationAgeAtFetchMin": 296.4,
     "secMapping": true,
-    "secMarketwideDiscovery": false,
-    "secMarketwideEventCount": 281,
+    "secMarketwideDiscovery": true,
+    "secMarketwideEventCount": 268,
     "newsDiscovery": true
   },
   "shortlist": [
@@ -119,6 +119,14 @@
       "observedAt": "2026-09-16T19:55:25-04:00"
     },
     {
+      "symbol": "ONMD",
+      "price": 0.6503,
+      "changePct": 5.739837398373983,
+      "early": 84,
+      "ignition": 92,
+      "observedAt": "2026-09-16T18:22:51-04:00"
+    },
+    {
       "symbol": "CPOP",
       "price": 3.49,
       "changePct": 11.501597444089468,
@@ -151,28 +159,12 @@
       "observedAt": "2026-09-16T19:55:24-04:00"
     },
     {
-      "symbol": "EAF",
-      "price": 8.3499,
-      "changePct": 2.958076448828612,
-      "early": 79,
-      "ignition": 87,
-      "observedAt": "2026-09-16T19:50:10-04:00"
-    },
-    {
       "symbol": "OMH",
       "price": 2.47,
       "changePct": 3.347280334728036,
       "early": 79,
       "ignition": 87,
       "observedAt": "2026-09-16T19:33:08-04:00"
-    },
-    {
-      "symbol": "ASTC",
-      "price": 6.29,
-      "changePct": 4.658901830282866,
-      "early": 79,
-      "ignition": 87,
-      "observedAt": "2026-09-16T19:47:37-04:00"
     },
     {
       "symbol": "LRHC",
@@ -183,12 +175,12 @@
       "observedAt": "2026-09-16T19:59:46-04:00"
     },
     {
-      "symbol": "IMDX",
-      "price": 3.67,
-      "changePct": 2.5139664804469235,
-      "early": 77,
-      "ignition": 85,
-      "observedAt": "2026-09-16T19:43:53-04:00"
+      "symbol": "ASTC",
+      "price": 6.29,
+      "changePct": 4.658901830282866,
+      "early": 79,
+      "ignition": 87,
+      "observedAt": "2026-09-16T19:47:37-04:00"
     },
     {
       "symbol": "BYAH",
@@ -197,6 +189,22 @@
       "early": 77,
       "ignition": 85,
       "observedAt": "2026-09-16T19:59:03-04:00"
+    },
+    {
+      "symbol": "IMDX",
+      "price": 3.67,
+      "changePct": 2.5139664804469235,
+      "early": 77,
+      "ignition": 85,
+      "observedAt": "2026-09-16T19:43:53-04:00"
+    },
+    {
+      "symbol": "IBO",
+      "price": 0.5399,
+      "changePct": 8.413654618473904,
+      "early": 77,
+      "ignition": 85,
+      "observedAt": "2026-09-16T19:50:48-04:00"
     },
     {
       "symbol": "BIOT",
@@ -221,6 +229,22 @@
       "early": 73,
       "ignition": 81,
       "observedAt": "2026-09-16T19:55:25-04:00"
+    },
+    {
+      "symbol": "MITQ",
+      "price": 0.63,
+      "changePct": 3.652517275419546,
+      "early": 73,
+      "ignition": 81,
+      "observedAt": "2026-09-16T19:55:21-04:00"
+    },
+    {
+      "symbol": "NIXX",
+      "price": 0.43,
+      "changePct": 4.040648439390272,
+      "early": 73,
+      "ignition": 81,
+      "observedAt": "2026-09-16T19:54:05-04:00"
     },
     {
       "symbol": "AMIX",
@@ -317,30 +341,6 @@
       "early": 66,
       "ignition": 74,
       "observedAt": "2026-09-16T19:58:19-04:00"
-    },
-    {
-      "symbol": "KSCP",
-      "price": 1.19,
-      "changePct": 2.5862068965517264,
-      "early": 66,
-      "ignition": 74,
-      "observedAt": "2026-09-16T19:55:17-04:00"
-    },
-    {
-      "symbol": "HCWC",
-      "price": 14.5352,
-      "changePct": 2.722261484098935,
-      "early": 65,
-      "ignition": 73,
-      "observedAt": "2026-09-16T19:58:09-04:00"
-    },
-    {
-      "symbol": "CLIR",
-      "price": 3.6,
-      "changePct": 2.2727272727272747,
-      "early": 65,
-      "ignition": 73,
-      "observedAt": "2026-09-16T19:30:03-04:00"
     }
   ],
   "companies": {
@@ -392,6 +392,10 @@
       "title": "Senti Biosciences Holdings, Inc.",
       "cik": "0001854270"
     },
+    "ONMD": {
+      "title": "OneMedNet Corp",
+      "cik": "0001849380"
+    },
     "CPOP": {
       "title": "Pop Culture Group Co., Ltd",
       "cik": "0001807389"
@@ -408,29 +412,29 @@
       "title": "Radiopharm Theranostics Ltd",
       "cik": "0001949257"
     },
-    "EAF": {
-      "title": "GRAFTECH INTERNATIONAL LTD",
-      "cik": "0000931148"
-    },
     "OMH": {
       "title": "Ohmyhome Ltd",
       "cik": "0001944902"
-    },
-    "ASTC": {
-      "title": "ASTROTECH Corp",
-      "cik": "0001001907"
     },
     "LRHC": {
       "title": "La Rosa Holdings Corp.",
       "cik": "0001879403"
     },
-    "IMDX": {
-      "title": "Insight Molecular Diagnostics Inc.",
-      "cik": "0001642380"
+    "ASTC": {
+      "title": "ASTROTECH Corp",
+      "cik": "0001001907"
     },
     "BYAH": {
       "title": "Park Ha Biological Technology Co., Ltd.",
       "cik": "0001986247"
+    },
+    "IMDX": {
+      "title": "Insight Molecular Diagnostics Inc.",
+      "cik": "0001642380"
+    },
+    "IBO": {
+      "title": "IMPACT BIOMEDICAL INC.",
+      "cik": "0001834105"
     },
     "BIOT": {
       "title": "INSTINCT BIO TECHNICAL CO HOLDINGS INC.",
@@ -443,6 +447,14 @@
     "TCRT": {
       "title": "Alaunos Therapeutics, Inc.",
       "cik": "0001107421"
+    },
+    "MITQ": {
+      "title": "MOVING iMAGE TECHNOLOGIES INC.",
+      "cik": "0001770236"
+    },
+    "NIXX": {
+      "title": "Nixxy, Inc.",
+      "cik": "0001462223"
     },
     "AMIX": {
       "title": "Autonomix Medical, Inc.",
@@ -491,21 +503,9 @@
     "AVX": {
       "title": "AVAX ONE TECHNOLOGY LTD.",
       "cik": "0001826397"
-    },
-    "KSCP": {
-      "title": "Knightscope, Inc.",
-      "cik": "0001600983"
-    },
-    "HCWC": {
-      "title": "HEALTHY CHOICE WELLNESS CORP.",
-      "cik": "0001948864"
-    },
-    "CLIR": {
-      "title": "ClearSign Technologies Corp",
-      "cik": "0001434524"
     }
   },
-  "eventCount": 338,
+  "eventCount": 323,
   "events": [
     {
       "symbol": "ERNAW",
@@ -2800,18 +2800,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "RTB",
-      "title": "RTB Digital, Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-09-16T16:45:35.000Z",
-      "headline": "8-K filing — RTB Digital, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1419275/000118518526004068/rtb8k091626.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "VMET",
       "title": "Versamet Royalties Corp",
       "type": "SEC",
@@ -3856,112 +3844,28 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "PURR",
-      "title": "Hyperliquid Strategies Inc",
+      "symbol": "ONMD",
+      "title": "OneMedNet Corp",
       "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-09-14T21:54:22-04:00",
-      "headline": "S-1 filing — Hyperliquid Strategies Inc",
-      "url": "https://www.sec.gov/Archives/edgar/data/2078856/000119312526391097/0001193125-26-391097-index.htm",
+      "form": "4",
+      "publishedAt": "2026-09-15T00:47:05.000Z",
+      "headline": "4 filing — OneMedNet Corp",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849380/000149315226042642/xslF345X06/ownership.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "CRTD",
-      "title": "Creatd, Inc.",
+      "symbol": "IBO",
+      "title": "IMPACT BIOMEDICAL INC.",
       "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-09-14T21:41:37-04:00",
-      "headline": "S-1 filing — Creatd, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1357671/000121390026099866/0001213900-26-099866-index.htm",
+      "form": "8-K",
+      "publishedAt": "2026-09-14T23:43:54.000Z",
+      "headline": "8-K filing — IMPACT BIOMEDICAL INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1834105/000149315226042635/form8-k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "HYAC",
-      "title": "Haymaker Acquisition Corp V",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-09-14T21:09:34-04:00",
-      "headline": "S-1 filing — Haymaker Acquisition Corp V",
-      "url": "https://www.sec.gov/Archives/edgar/data/2111838/000119312526391060/0001193125-26-391060-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "VRHID",
-      "title": "Veri MedTech Holdings, Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-09-14T17:27:32-04:00",
-      "headline": "S-1 filing — Veri MedTech Holdings, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2078149/000109690626001366/0001096906-26-001366-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "POLA",
-      "title": "Polar Power, Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-09-14T17:25:47-04:00",
-      "headline": "S-1 filing — Polar Power, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1622345/000149315226042616/0001493152-26-042616-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "OPAL",
-      "title": "OPAL Fuels Inc.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-09-14T17:21:48-04:00",
-      "headline": "S-3 filing — OPAL Fuels Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1842279/000162828026061907/0001628280-26-061907-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "BNTC",
-      "title": "Benitec Biopharma Inc.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-09-14T17:09:51-04:00",
-      "headline": "S-3 filing — Benitec Biopharma Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1808898/000119312526390758/0001193125-26-390758-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "SYY",
-      "title": "SYSCO CORP",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-09-14T16:48:09-04:00",
-      "headline": "S-3 filing — SYSCO CORP",
-      "url": "https://www.sec.gov/Archives/edgar/data/96021/000110465926107527/0001104659-26-107527-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "SYRA",
-      "title": "Syra Health Corp",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-09-14T16:32:23-04:00",
-      "headline": "S-1 filing — Syra Health Corp",
-      "url": "https://www.sec.gov/Archives/edgar/data/1922335/000149315226042591/0001493152-26-042591-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "AIFF",
@@ -3988,42 +3892,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "CLIR",
-      "title": "ClearSign Technologies Corp",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-09-14T12:45:32.000Z",
-      "headline": "8-K filing — ClearSign Technologies Corp",
-      "url": "https://www.sec.gov/Archives/edgar/data/1434524/000110465926107294/tm2625310d1_8k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "CHWY",
-      "title": "Chewy, Inc.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-09-14T07:01:10-04:00",
-      "headline": "S-3 filing — Chewy, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1766502/000119312526389818/0001193125-26-389818-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "BMB",
-      "title": "Bamboo Insurance Services, Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-09-14T06:53:44-04:00",
-      "headline": "S-1 filing — Bamboo Insurance Services, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2125355/000162828026061664/0001628280-26-061664-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
       "symbol": "RADX",
       "title": "Radiopharm Theranostics Ltd",
       "type": "SEC",
@@ -4034,30 +3902,6 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "ETRA",
-      "title": "Electra Therapeutics, Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-09-14T06:03:16-04:00",
-      "headline": "S-1 filing — Electra Therapeutics, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2088082/000119312526389755/0001193125-26-389755-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "TYRA",
-      "title": "Tyra Biosciences, Inc.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-09-14T06:02:04-04:00",
-      "headline": "S-3 filing — Tyra Biosciences, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1863127/000119312526389752/0001193125-26-389752-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
     },
     {
       "symbol": "DYAI",
@@ -4324,18 +4168,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "KSCP",
-      "title": "Knightscope, Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-09-04T21:00:23.000Z",
-      "headline": "8-K filing — Knightscope, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1600983/000110465926105544/kscp-20260902x8k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "CPOP",
       "title": "Pop Culture Group Co., Ltd",
       "type": "SEC",
@@ -4348,18 +4180,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "EAF",
-      "title": "GRAFTECH INTERNATIONAL LTD",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-04T19:35:49.000Z",
-      "headline": "4 filing — GRAFTECH INTERNATIONAL LTD",
-      "url": "https://www.sec.gov/Archives/edgar/data/931148/000093114826000077/xslF345X06/wk-form4_1788550547.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "SNTI",
       "title": "Senti Biosciences Holdings, Inc.",
       "type": "SEC",
@@ -4367,6 +4187,18 @@
       "publishedAt": "2026-09-04T10:01:29.000Z",
       "headline": "8-K filing — Senti Biosciences Holdings, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1854270/000162828026060600/snti-20260903.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "NIXX",
+      "title": "Nixxy, Inc.",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-09-03T22:17:28.000Z",
+      "headline": "8-K filing — Nixxy, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1462223/000168316826006941/nixxy_8k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4468,25 +4300,13 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "HCWC",
-      "title": "HEALTHY CHOICE WELLNESS CORP.",
+      "symbol": "NIXX",
+      "title": "Nixxy, Inc.",
       "type": "SEC",
       "form": "8-K",
-      "publishedAt": "2026-08-31T21:25:53.000Z",
-      "headline": "8-K filing — HEALTHY CHOICE WELLNESS CORP.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1948864/000149315226040875/form8-k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "EAF",
-      "title": "GRAFTECH INTERNATIONAL LTD",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-08-31T21:15:48.000Z",
-      "headline": "8-K filing — GRAFTECH INTERNATIONAL LTD",
-      "url": "https://www.sec.gov/Archives/edgar/data/931148/000093114826000075/gti-20260806.htm",
+      "publishedAt": "2026-08-31T21:36:50.000Z",
+      "headline": "8-K filing — Nixxy, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1462223/000168316826006832/nixxy_8k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4613,18 +4433,6 @@
           "title": "RTB Digital, Inc.",
           "type": "SEC",
           "form": "8-K",
-          "publishedAt": "2026-09-16T16:45:35.000Z",
-          "headline": "8-K filing — RTB Digital, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1419275/000118518526004068/rtb8k091626.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "RTB",
-          "title": "RTB Digital, Inc.",
-          "type": "SEC",
-          "form": "8-K",
           "publishedAt": "2026-09-15T14:08:09.000Z",
           "headline": "8-K filing — RTB Digital, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1419275/000118518526004012/rtb8k091526.htm",
@@ -4645,7 +4453,7 @@
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 5
+      "eventCount": 4
     },
     "YMAT": {
       "events": [],
@@ -4860,6 +4668,23 @@
       ],
       "eventCount": 2
     },
+    "ONMD": {
+      "events": [
+        {
+          "symbol": "ONMD",
+          "title": "OneMedNet Corp",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-09-15T00:47:05.000Z",
+          "headline": "4 filing — OneMedNet Corp",
+          "url": "https://www.sec.gov/Archives/edgar/data/1849380/000149315226042642/xslF345X06/ownership.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
     "CPOP": {
       "events": [
         {
@@ -4963,35 +4788,6 @@
       ],
       "eventCount": 4
     },
-    "EAF": {
-      "events": [
-        {
-          "symbol": "EAF",
-          "title": "GRAFTECH INTERNATIONAL LTD",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-04T19:35:49.000Z",
-          "headline": "4 filing — GRAFTECH INTERNATIONAL LTD",
-          "url": "https://www.sec.gov/Archives/edgar/data/931148/000093114826000077/xslF345X06/wk-form4_1788550547.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "EAF",
-          "title": "GRAFTECH INTERNATIONAL LTD",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-08-31T21:15:48.000Z",
-          "headline": "8-K filing — GRAFTECH INTERNATIONAL LTD",
-          "url": "https://www.sec.gov/Archives/edgar/data/931148/000093114826000075/gti-20260806.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
-    },
     "OMH": {
       "events": [
         {
@@ -5002,23 +4798,6 @@
           "publishedAt": "2026-09-10T20:30:32.000Z",
           "headline": "6-K filing — Ohmyhome Ltd",
           "url": "https://www.sec.gov/Archives/edgar/data/1944902/000121390026098819/ea0304832-6k_ohmyhome.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
-    "ASTC": {
-      "events": [
-        {
-          "symbol": "ASTC",
-          "title": "ASTROTECH Corp",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-01T20:25:29.000Z",
-          "headline": "4 filing — ASTROTECH Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/1001907/000143774926029417/xslF345X06/rdgdoc.xml",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -5055,9 +4834,22 @@
       ],
       "eventCount": 2
     },
-    "IMDX": {
-      "events": [],
-      "eventCount": 0
+    "ASTC": {
+      "events": [
+        {
+          "symbol": "ASTC",
+          "title": "ASTROTECH Corp",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-09-01T20:25:29.000Z",
+          "headline": "4 filing — ASTROTECH Corp",
+          "url": "https://www.sec.gov/Archives/edgar/data/1001907/000143774926029417/xslF345X06/rdgdoc.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
     },
     "BYAH": {
       "events": [
@@ -5087,6 +4879,27 @@
         }
       ],
       "eventCount": 2
+    },
+    "IMDX": {
+      "events": [],
+      "eventCount": 0
+    },
+    "IBO": {
+      "events": [
+        {
+          "symbol": "IBO",
+          "title": "IMPACT BIOMEDICAL INC.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-09-14T23:43:54.000Z",
+          "headline": "8-K filing — IMPACT BIOMEDICAL INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1834105/000149315226042635/form8-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
     },
     "BIOT": {
       "events": [
@@ -5137,6 +4950,39 @@
     "TCRT": {
       "events": [],
       "eventCount": 0
+    },
+    "MITQ": {
+      "events": [],
+      "eventCount": 0
+    },
+    "NIXX": {
+      "events": [
+        {
+          "symbol": "NIXX",
+          "title": "Nixxy, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-09-03T22:17:28.000Z",
+          "headline": "8-K filing — Nixxy, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1462223/000168316826006941/nixxy_8k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "NIXX",
+          "title": "Nixxy, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-08-31T21:36:50.000Z",
+          "headline": "8-K filing — Nixxy, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1462223/000168316826006832/nixxy_8k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 2
     },
     "AMIX": {
       "events": [
@@ -5407,57 +5253,6 @@
     "AVX": {
       "events": [],
       "eventCount": 0
-    },
-    "KSCP": {
-      "events": [
-        {
-          "symbol": "KSCP",
-          "title": "Knightscope, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-04T21:00:23.000Z",
-          "headline": "8-K filing — Knightscope, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1600983/000110465926105544/kscp-20260902x8k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
-    "HCWC": {
-      "events": [
-        {
-          "symbol": "HCWC",
-          "title": "HEALTHY CHOICE WELLNESS CORP.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-08-31T21:25:53.000Z",
-          "headline": "8-K filing — HEALTHY CHOICE WELLNESS CORP.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1948864/000149315226040875/form8-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
-    "CLIR": {
-      "events": [
-        {
-          "symbol": "CLIR",
-          "title": "ClearSign Technologies Corp",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-14T12:45:32.000Z",
-          "headline": "8-K filing — ClearSign Technologies Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/1434524/000110465926107294/tm2625310d1_8k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
     },
     "ERNAW": {
       "events": [
@@ -7067,21 +6862,9 @@
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "SYY",
-          "title": "SYSCO CORP",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-09-14T16:48:09-04:00",
-          "headline": "S-3 filing — SYSCO CORP",
-          "url": "https://www.sec.gov/Archives/edgar/data/96021/000110465926107527/0001104659-26-107527-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
         }
       ],
-      "eventCount": 2
+      "eventCount": 1
     },
     "SDEV": {
       "events": [
@@ -9604,214 +9387,8 @@
         }
       ],
       "eventCount": 1
-    },
-    "PURR": {
-      "events": [
-        {
-          "symbol": "PURR",
-          "title": "Hyperliquid Strategies Inc",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-09-14T21:54:22-04:00",
-          "headline": "S-1 filing — Hyperliquid Strategies Inc",
-          "url": "https://www.sec.gov/Archives/edgar/data/2078856/000119312526391097/0001193125-26-391097-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "CRTD": {
-      "events": [
-        {
-          "symbol": "CRTD",
-          "title": "Creatd, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-09-14T21:41:37-04:00",
-          "headline": "S-1 filing — Creatd, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1357671/000121390026099866/0001213900-26-099866-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "HYAC": {
-      "events": [
-        {
-          "symbol": "HYAC",
-          "title": "Haymaker Acquisition Corp V",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-09-14T21:09:34-04:00",
-          "headline": "S-1 filing — Haymaker Acquisition Corp V",
-          "url": "https://www.sec.gov/Archives/edgar/data/2111838/000119312526391060/0001193125-26-391060-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "VRHID": {
-      "events": [
-        {
-          "symbol": "VRHID",
-          "title": "Veri MedTech Holdings, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-09-14T17:27:32-04:00",
-          "headline": "S-1 filing — Veri MedTech Holdings, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2078149/000109690626001366/0001096906-26-001366-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "POLA": {
-      "events": [
-        {
-          "symbol": "POLA",
-          "title": "Polar Power, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-09-14T17:25:47-04:00",
-          "headline": "S-1 filing — Polar Power, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1622345/000149315226042616/0001493152-26-042616-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "OPAL": {
-      "events": [
-        {
-          "symbol": "OPAL",
-          "title": "OPAL Fuels Inc.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-09-14T17:21:48-04:00",
-          "headline": "S-3 filing — OPAL Fuels Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1842279/000162828026061907/0001628280-26-061907-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "BNTC": {
-      "events": [
-        {
-          "symbol": "BNTC",
-          "title": "Benitec Biopharma Inc.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-09-14T17:09:51-04:00",
-          "headline": "S-3 filing — Benitec Biopharma Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1808898/000119312526390758/0001193125-26-390758-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "SYRA": {
-      "events": [
-        {
-          "symbol": "SYRA",
-          "title": "Syra Health Corp",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-09-14T16:32:23-04:00",
-          "headline": "S-1 filing — Syra Health Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/1922335/000149315226042591/0001493152-26-042591-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "CHWY": {
-      "events": [
-        {
-          "symbol": "CHWY",
-          "title": "Chewy, Inc.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-09-14T07:01:10-04:00",
-          "headline": "S-3 filing — Chewy, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1766502/000119312526389818/0001193125-26-389818-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "BMB": {
-      "events": [
-        {
-          "symbol": "BMB",
-          "title": "Bamboo Insurance Services, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-09-14T06:53:44-04:00",
-          "headline": "S-1 filing — Bamboo Insurance Services, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2125355/000162828026061664/0001628280-26-061664-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "ETRA": {
-      "events": [
-        {
-          "symbol": "ETRA",
-          "title": "Electra Therapeutics, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-09-14T06:03:16-04:00",
-          "headline": "S-1 filing — Electra Therapeutics, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2088082/000119312526389755/0001193125-26-389755-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "TYRA": {
-      "events": [
-        {
-          "symbol": "TYRA",
-          "title": "Tyra Biosciences, Inc.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-09-14T06:02:04-04:00",
-          "headline": "S-3 filing — Tyra Biosciences, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1863127/000119312526389752/0001193125-26-389752-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
     }
   },
-  "errors": [
-    "SEC_CURRENT_SC 13G:This operation was aborted"
-  ],
+  "errors": [],
   "policy": "Public-source intelligence. Market-wide SEC current-filing discovery is primary-source and independent of the price shortlist. `sourceStatus.live` means the loaded market universe contains fresh market data inside the active US extended-hours window; loaded-but-stale/session-final data is never labeled live. Shortlist ranking does not determine feed-level freshness. Upstream feed timestamps are retained only as operational provenance and do not override quote observation freshness or trading eligibility. SEC filings are primary-source events; GDELT is discovery-only and requires source-level verification before trade decisions."
 }
