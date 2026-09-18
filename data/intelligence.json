@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-18T21:53:20.593Z",
+  "generatedAt": "2026-09-18T21:56:43.503Z",
   "sourceStatus": {
     "live": true,
     "marketDataLoaded": true,
@@ -8,17 +8,17 @@
     "marketWindowOpen": true,
     "marketSession": "after-hours",
     "newestObservedAt": "2026-09-18T21:53:16.000Z",
-    "marketDataAgeMin": 0.1,
+    "marketDataAgeMin": 3.5,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-18T21:53:21.089Z",
+    "upstreamFeedFetchedAt": "2026-09-18T21:56:44.284Z",
     "upstreamUpdatedAtAtBuild": "2026-09-18T21:53:14.796Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-18T21:53:16.000Z",
-    "upstreamUpdateAgeAtFetchMin": 0.1,
-    "upstreamObservationAgeAtFetchMin": 0.1,
+    "upstreamUpdateAgeAtFetchMin": 3.5,
+    "upstreamObservationAgeAtFetchMin": 3.5,
     "secMapping": true,
-    "secMarketwideDiscovery": false,
-    "secMarketwideEventCount": 187,
+    "secMarketwideDiscovery": true,
+    "secMarketwideEventCount": 290,
     "newsDiscovery": true
   },
   "shortlist": [
@@ -505,8 +505,68 @@
       "cik": "0001640384"
     }
   },
-  "eventCount": 257,
+  "eventCount": 360,
   "events": [
+    {
+      "symbol": "JJETF",
+      "title": "BARCLAYS BANK PLC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:31:03-04:00",
+      "headline": "424B filing — BARCLAYS BANK PLC",
+      "url": "https://www.sec.gov/Archives/edgar/data/312070/000191870426028136/0001918704-26-028136-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "VWAVW",
+      "title": "VisionWave Holdings, Inc.",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:30:50-04:00",
+      "headline": "424B filing — VisionWave Holdings, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2038439/000173112226001265/0001731122-26-001265-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "LABT",
+      "title": "Lakewood-Amedex Biotherapeutics Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-18T17:30:46-04:00",
+      "headline": "S-1 filing — Lakewood-Amedex Biotherapeutics Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2079272/000121390026101512/0001213900-26-101512-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "GOTV",
+      "title": "FullPAC, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-18T17:30:44-04:00",
+      "headline": "S-1 filing — FullPAC, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2076148/000149315226043417/0001493152-26-043417-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "MLSS",
+      "title": "MILESTONE SCIENTIFIC INC.",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-18T17:30:34-04:00",
+      "headline": "S-3 filing — MILESTONE SCIENTIFIC INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/855683/000149315226043419/0001493152-26-043419-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
     {
       "symbol": "VWAVW",
       "title": "VisionWave Holdings, Inc.",
@@ -515,6 +575,18 @@
       "publishedAt": "2026-09-18T17:30:09-04:00",
       "headline": "8-K filing — VisionWave Holdings, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/2038439/000173112226001264/0001731122-26-001264-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "JJETF",
+      "title": "BARCLAYS BANK PLC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:30:00-04:00",
+      "headline": "424B filing — BARCLAYS BANK PLC",
+      "url": "https://www.sec.gov/Archives/edgar/data/312070/000191870426028135/0001918704-26-028135-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -544,6 +616,30 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "DYAI",
+      "title": "DYADIC INTERNATIONAL INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:28:31-04:00",
+      "headline": "424B filing — DYADIC INTERNATIONAL INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/1213809/000149315226043416/0001493152-26-043416-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "GWAV",
+      "title": "Greenwave Technology Solutions, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-18T17:28:23-04:00",
+      "headline": "S-1 filing — Greenwave Technology Solutions, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1589149/000149315226043414/0001493152-26-043414-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "BCBP",
       "title": "BCB BANCORP INC",
       "type": "SEC",
@@ -551,6 +647,18 @@
       "publishedAt": "2026-09-18T17:28:16-04:00",
       "headline": "8-K filing — BCB BANCORP INC",
       "url": "https://www.sec.gov/Archives/edgar/data/1228454/000119312526395743/0001193125-26-395743-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "VRHID",
+      "title": "Veri MedTech Holdings, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-18T17:28:05-04:00",
+      "headline": "S-1 filing — Veri MedTech Holdings, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2078149/000109690626001390/0001096906-26-001390-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -568,6 +676,30 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "JEF",
+      "title": "Jefferies Financial Group Inc.",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:24:52-04:00",
+      "headline": "424B filing — Jefferies Financial Group Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/96223/000191870426028134/0001918704-26-028134-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "BML-PJ",
+      "title": "BANK OF AMERICA CORP /DE/",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:24:20-04:00",
+      "headline": "424B filing — BANK OF AMERICA CORP /DE/",
+      "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426028133/0001918704-26-028133-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "NUR",
       "title": "Nuran Wireless Inc.",
       "type": "SEC",
@@ -575,6 +707,42 @@
       "publishedAt": "2026-09-18T17:24:16-04:00",
       "headline": "6-K filing — Nuran Wireless Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1680637/000175392626001836/0001753926-26-001836-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "BSEM",
+      "title": "BioStem Technologies, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-18T17:24:16-04:00",
+      "headline": "S-1 filing — BioStem Technologies, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1658678/000121390026101505/0001213900-26-101505-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "CHGA",
+      "title": "Change Agents Corporation.",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:23:55-04:00",
+      "headline": "424B filing — Change Agents Corporation.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1630212/000121390026101506/0001213900-26-101506-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "C-PR",
+      "title": "CITIGROUP INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:22:00-04:00",
+      "headline": "424B filing — CITIGROUP INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/831001/000095010326014218/0000950103-26-014218-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -604,6 +772,42 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "CDTTW",
+      "title": "CDT Equity Inc.",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:20:09-04:00",
+      "headline": "424B filing — CDT Equity Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1896212/000149315226043404/0001493152-26-043404-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "C-PR",
+      "title": "CITIGROUP INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:20:01-04:00",
+      "headline": "424B filing — CITIGROUP INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/831001/000095010326014217/0000950103-26-014217-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "C-PR",
+      "title": "CITIGROUP INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:19:52-04:00",
+      "headline": "424B filing — CITIGROUP INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/831001/000095010326014216/0000950103-26-014216-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "CLSKW",
       "title": "CLEANSPARK, INC.",
       "type": "SEC",
@@ -611,6 +815,18 @@
       "publishedAt": "2026-09-18T17:18:37-04:00",
       "headline": "8-K filing — CLEANSPARK, INC.",
       "url": "https://www.sec.gov/Archives/edgar/data/827876/000119312526395727/0001193125-26-395727-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "C-PR",
+      "title": "CITIGROUP INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:17:32-04:00",
+      "headline": "424B filing — CITIGROUP INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/831001/000095010326014215/0000950103-26-014215-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -664,6 +880,42 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "GS-PD",
+      "title": "GOLDMAN SACHS GROUP INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:15:30-04:00",
+      "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526395719/0001193125-26-395719-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "C-PR",
+      "title": "CITIGROUP INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:15:08-04:00",
+      "headline": "424B filing — CITIGROUP INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/831001/000095010326014214/0000950103-26-014214-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "JJETF",
+      "title": "BARCLAYS BANK PLC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:13:08-04:00",
+      "headline": "424B filing — BARCLAYS BANK PLC",
+      "url": "https://www.sec.gov/Archives/edgar/data/312070/000095010326014213/0000950103-26-014213-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "INM",
       "title": "InMed Pharmaceuticals Inc.",
       "type": "SEC",
@@ -688,6 +940,78 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "BML-PJ",
+      "title": "BANK OF AMERICA CORP /DE/",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:08:40-04:00",
+      "headline": "424B filing — BANK OF AMERICA CORP /DE/",
+      "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426028130/0001918704-26-028130-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "GS-PD",
+      "title": "GOLDMAN SACHS GROUP INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:07:58-04:00",
+      "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526395704/0001193125-26-395704-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "JPM-PM",
+      "title": "JPMORGAN CHASE & CO",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:07:41-04:00",
+      "headline": "424B filing — JPMORGAN CHASE & CO",
+      "url": "https://www.sec.gov/Archives/edgar/data/19617/000121390026101486/0001213900-26-101486-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "GS-PD",
+      "title": "GOLDMAN SACHS GROUP INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:06:24-04:00",
+      "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526395703/0001193125-26-395703-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "JJETF",
+      "title": "BARCLAYS BANK PLC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:06:21-04:00",
+      "headline": "424B filing — BARCLAYS BANK PLC",
+      "url": "https://www.sec.gov/Archives/edgar/data/312070/000095010326014212/0000950103-26-014212-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "IFED",
+      "title": "UBS AG",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:05:48-04:00",
+      "headline": "424B filing — UBS AG",
+      "url": "https://www.sec.gov/Archives/edgar/data/1114446/000183988226046330/0001839882-26-046330-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "SLMT",
       "title": "Brera Holdings PLC",
       "type": "SEC",
@@ -707,6 +1031,66 @@
       "publishedAt": "2026-09-18T17:04:50-04:00",
       "headline": "8-K filing — Paradium.AI, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/894871/000149315226043382/0001493152-26-043382-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "C-PR",
+      "title": "CITIGROUP INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:04:46-04:00",
+      "headline": "424B filing — CITIGROUP INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/831001/000095010326014211/0000950103-26-014211-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "C-PR",
+      "title": "CITIGROUP INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:04:11-04:00",
+      "headline": "424B filing — CITIGROUP INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/831001/000095010326014210/0000950103-26-014210-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "JPM-PM",
+      "title": "JPMORGAN CHASE & CO",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:03:46-04:00",
+      "headline": "424B filing — JPMORGAN CHASE & CO",
+      "url": "https://www.sec.gov/Archives/edgar/data/19617/000121390026101479/0001213900-26-101479-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "GS-PD",
+      "title": "GOLDMAN SACHS GROUP INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:02:41-04:00",
+      "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526395698/0001193125-26-395698-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "EP",
+      "title": "EMPIRE PETROLEUM CORP",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-18T17:01:10-04:00",
+      "headline": "S-3 filing — EMPIRE PETROLEUM CORP",
+      "url": "https://www.sec.gov/Archives/edgar/data/887396/000107261326000792/0001072613-26-000792-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -748,6 +1132,42 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "JJETF",
+      "title": "BARCLAYS BANK PLC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:00:43-04:00",
+      "headline": "424B filing — BARCLAYS BANK PLC",
+      "url": "https://www.sec.gov/Archives/edgar/data/312070/000191870426028129/0001918704-26-028129-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "SKYQ",
+      "title": "Sky Quarry Inc.",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:00:42-04:00",
+      "headline": "424B filing — Sky Quarry Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1812447/000109690626001387/0001096906-26-001387-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "QNRX",
+      "title": "Quoin Pharmaceuticals Ltd.",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-18T17:00:40-04:00",
+      "headline": "S-3 filing — Quoin Pharmaceuticals Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1671502/000110465926108970/0001104659-26-108970-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "CIVB",
       "title": "CIVISTA BANCSHARES, INC.",
       "type": "SEC",
@@ -755,6 +1175,18 @@
       "publishedAt": "2026-09-18T17:00:33-04:00",
       "headline": "8-K filing — CIVISTA BANCSHARES, INC.",
       "url": "https://www.sec.gov/Archives/edgar/data/944745/000119312526395696/0001193125-26-395696-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "NIKI",
+      "title": "Niki BioSolutions, Inc.",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-18T17:00:32-04:00",
+      "headline": "S-3 filing — Niki BioSolutions, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1734005/000121390026101473/0001213900-26-101473-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -796,6 +1228,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "C-PR",
+      "title": "CITIGROUP INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T17:00:05-04:00",
+      "headline": "424B filing — CITIGROUP INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/831001/000095010326014209/0000950103-26-014209-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "RETO",
       "title": "ReTo Eco-Solutions, Inc.",
       "type": "SEC",
@@ -832,6 +1276,66 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "BNS",
+      "title": "BANK OF NOVA SCOTIA",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:59:32-04:00",
+      "headline": "424B filing — BANK OF NOVA SCOTIA",
+      "url": "https://www.sec.gov/Archives/edgar/data/9631/000183988226046328/0001839882-26-046328-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "GS-PD",
+      "title": "GOLDMAN SACHS GROUP INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:59:30-04:00",
+      "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526395683/0001193125-26-395683-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "GS-PD",
+      "title": "GOLDMAN SACHS GROUP INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:59:03-04:00",
+      "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526395681/0001193125-26-395681-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "C-PR",
+      "title": "CITIGROUP INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:58:10-04:00",
+      "headline": "424B filing — CITIGROUP INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/831001/000095010326014208/0000950103-26-014208-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "BML-PJ",
+      "title": "BANK OF AMERICA CORP /DE/",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:56:48-04:00",
+      "headline": "424B filing — BANK OF AMERICA CORP /DE/",
+      "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426028128/0001918704-26-028128-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "RTB",
       "title": "RTB Digital, Inc.",
       "type": "SEC",
@@ -856,6 +1360,30 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "SMTK",
+      "title": "SmartKem, Inc.",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-18T16:55:10-04:00",
+      "headline": "S-3 filing — SmartKem, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1817760/000110465926108966/0001104659-26-108966-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "SMTK",
+      "title": "SmartKem, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-18T16:54:55-04:00",
+      "headline": "S-1 filing — SmartKem, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1817760/000110465926108965/0001104659-26-108965-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "LII",
       "title": "LENNOX INTERNATIONAL INC",
       "type": "SEC",
@@ -863,6 +1391,102 @@
       "publishedAt": "2026-09-18T16:54:33-04:00",
       "headline": "8-K filing — LENNOX INTERNATIONAL INC",
       "url": "https://www.sec.gov/Archives/edgar/data/1069202/000106920226000091/0001069202-26-000091-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "GS-PD",
+      "title": "GOLDMAN SACHS GROUP INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:54:04-04:00",
+      "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526395673/0001193125-26-395673-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "C-PR",
+      "title": "CITIGROUP INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:53:34-04:00",
+      "headline": "424B filing — CITIGROUP INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/831001/000095010326014207/0000950103-26-014207-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "FLYU",
+      "title": "BANK OF MONTREAL /CAN/",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:53:28-04:00",
+      "headline": "424B filing — BANK OF MONTREAL /CAN/",
+      "url": "https://www.sec.gov/Archives/edgar/data/927971/000121465926011804/0001214659-26-011804-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "GS-PD",
+      "title": "GOLDMAN SACHS GROUP INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:53:24-04:00",
+      "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526395672/0001193125-26-395672-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "BML-PJ",
+      "title": "BANK OF AMERICA CORP /DE/",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:52:55-04:00",
+      "headline": "424B filing — BANK OF AMERICA CORP /DE/",
+      "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426028127/0001918704-26-028127-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "ETRA",
+      "title": "Electra Therapeutics, Inc.",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:52:38-04:00",
+      "headline": "424B filing — Electra Therapeutics, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2088082/000119312526395670/0001193125-26-395670-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "JJETF",
+      "title": "BARCLAYS BANK PLC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:52:10-04:00",
+      "headline": "424B filing — BARCLAYS BANK PLC",
+      "url": "https://www.sec.gov/Archives/edgar/data/312070/000095010326014206/0000950103-26-014206-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "KYIVW",
+      "title": "Kyivstar Group Ltd.",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:52:01-04:00",
+      "headline": "424B filing — Kyivstar Group Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2062440/000162828026062760/0001628280-26-062760-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -892,6 +1516,30 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "MS-PA",
+      "title": "MORGAN STANLEY",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:49:49-04:00",
+      "headline": "424B filing — MORGAN STANLEY",
+      "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226046327/0001839882-26-046327-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "RYLBF",
+      "title": "ROYAL BANK OF CANADA",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:47:47-04:00",
+      "headline": "424B filing — ROYAL BANK OF CANADA",
+      "url": "https://www.sec.gov/Archives/edgar/data/1000275/000095010326014205/0000950103-26-014205-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "CFND",
       "title": "C1 Fund Inc.",
       "type": "SEC",
@@ -904,6 +1552,30 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "C-PR",
+      "title": "CITIGROUP INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:46:14-04:00",
+      "headline": "424B filing — CITIGROUP INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/831001/000095010326014204/0000950103-26-014204-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "ABAT",
+      "title": "AMERICAN BATTERY TECHNOLOGY Co",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-18T16:45:37-04:00",
+      "headline": "S-3 filing — AMERICAN BATTERY TECHNOLOGY Co",
+      "url": "https://www.sec.gov/Archives/edgar/data/1576873/000149315226043371/0001493152-26-043371-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "CDIOW",
       "title": "Cardio Diagnostics Holdings, Inc.",
       "type": "SEC",
@@ -911,6 +1583,258 @@
       "publishedAt": "2026-09-18T16:45:30-04:00",
       "headline": "8-K filing — Cardio Diagnostics Holdings, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1870144/000155335026000131/0001553350-26-000131-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "NSRX",
+      "title": "Nasus Pharma Ltd",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:43:58-04:00",
+      "headline": "424B filing — Nasus Pharma Ltd",
+      "url": "https://www.sec.gov/Archives/edgar/data/2029039/000149315226043370/0001493152-26-043370-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "JPM-PM",
+      "title": "JPMORGAN CHASE & CO",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:42:39-04:00",
+      "headline": "424B filing — JPMORGAN CHASE & CO",
+      "url": "https://www.sec.gov/Archives/edgar/data/19617/000121390026101454/0001213900-26-101454-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "GS-PD",
+      "title": "GOLDMAN SACHS GROUP INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:41:07-04:00",
+      "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526395655/0001193125-26-395655-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "MS-PA",
+      "title": "MORGAN STANLEY",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:39:53-04:00",
+      "headline": "424B filing — MORGAN STANLEY",
+      "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226046326/0001839882-26-046326-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "IFED",
+      "title": "UBS AG",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:39:34-04:00",
+      "headline": "424B filing — UBS AG",
+      "url": "https://www.sec.gov/Archives/edgar/data/1114446/000111444626006688/0001114446-26-006688-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "IFED",
+      "title": "UBS AG",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:39:28-04:00",
+      "headline": "424B filing — UBS AG",
+      "url": "https://www.sec.gov/Archives/edgar/data/1114446/000111444626006687/0001114446-26-006687-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "IFED",
+      "title": "UBS AG",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:39:16-04:00",
+      "headline": "424B filing — UBS AG",
+      "url": "https://www.sec.gov/Archives/edgar/data/1114446/000111444626006686/0001114446-26-006686-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "IFED",
+      "title": "UBS AG",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:39:15-04:00",
+      "headline": "424B filing — UBS AG",
+      "url": "https://www.sec.gov/Archives/edgar/data/1114446/000111444626006685/0001114446-26-006685-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "MS-PA",
+      "title": "MORGAN STANLEY",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:39:14-04:00",
+      "headline": "424B filing — MORGAN STANLEY",
+      "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226046325/0001839882-26-046325-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "IFED",
+      "title": "UBS AG",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:39:11-04:00",
+      "headline": "424B filing — UBS AG",
+      "url": "https://www.sec.gov/Archives/edgar/data/1114446/000111444626006683/0001114446-26-006683-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "IFED",
+      "title": "UBS AG",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:39:01-04:00",
+      "headline": "424B filing — UBS AG",
+      "url": "https://www.sec.gov/Archives/edgar/data/1114446/000111444626006682/0001114446-26-006682-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "IFED",
+      "title": "UBS AG",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:39:00-04:00",
+      "headline": "424B filing — UBS AG",
+      "url": "https://www.sec.gov/Archives/edgar/data/1114446/000111444626006681/0001114446-26-006681-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "IFED",
+      "title": "UBS AG",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:38:57-04:00",
+      "headline": "424B filing — UBS AG",
+      "url": "https://www.sec.gov/Archives/edgar/data/1114446/000111444626006680/0001114446-26-006680-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "IFED",
+      "title": "UBS AG",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:38:48-04:00",
+      "headline": "424B filing — UBS AG",
+      "url": "https://www.sec.gov/Archives/edgar/data/1114446/000111444626006679/0001114446-26-006679-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "IFED",
+      "title": "UBS AG",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:38:43-04:00",
+      "headline": "424B filing — UBS AG",
+      "url": "https://www.sec.gov/Archives/edgar/data/1114446/000111444626006678/0001114446-26-006678-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "IFED",
+      "title": "UBS AG",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:38:33-04:00",
+      "headline": "424B filing — UBS AG",
+      "url": "https://www.sec.gov/Archives/edgar/data/1114446/000111444626006677/0001114446-26-006677-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "IFED",
+      "title": "UBS AG",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:38:30-04:00",
+      "headline": "424B filing — UBS AG",
+      "url": "https://www.sec.gov/Archives/edgar/data/1114446/000111444626006676/0001114446-26-006676-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "IFED",
+      "title": "UBS AG",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:38:20-04:00",
+      "headline": "424B filing — UBS AG",
+      "url": "https://www.sec.gov/Archives/edgar/data/1114446/000111444626006675/0001114446-26-006675-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "MS-PA",
+      "title": "MORGAN STANLEY",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:38:17-04:00",
+      "headline": "424B filing — MORGAN STANLEY",
+      "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226046324/0001839882-26-046324-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "OLOXF",
+      "title": "DEUTSCHE BANK AKTIENGESELLSCHAFT",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:38:04-04:00",
+      "headline": "424B filing — DEUTSCHE BANK AKTIENGESELLSCHAFT",
+      "url": "https://www.sec.gov/Archives/edgar/data/1159508/000095010326014202/0000950103-26-014202-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "IFED",
+      "title": "UBS AG",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-09-18T16:38:01-04:00",
+      "headline": "424B filing — UBS AG",
+      "url": "https://www.sec.gov/Archives/edgar/data/1114446/000111444626006674/0001114446-26-006674-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -947,6 +1871,18 @@
       "publishedAt": "2026-09-18T16:33:23-04:00",
       "headline": "8-K filing — FARMERS NATIONAL BANC CORP /OH/",
       "url": "https://www.sec.gov/Archives/edgar/data/709337/000143774926030756/0001437749-26-030756-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "FLDDW",
+      "title": "Fold Holdings, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-18T16:31:53-04:00",
+      "headline": "S-1 filing — Fold Holdings, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1889123/000121390026101444/0001213900-26-101444-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -1156,6 +2092,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "FCCN",
+      "title": "SPECTRAL CAPITAL Corp",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-18T16:25:31-04:00",
+      "headline": "S-1 filing — SPECTRAL CAPITAL Corp",
+      "url": "https://www.sec.gov/Archives/edgar/data/1131903/000121390026101431/0001213900-26-101431-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "AHR",
       "title": "American Healthcare REIT, Inc.",
       "type": "SEC",
@@ -1223,6 +2171,18 @@
       "publishedAt": "2026-09-18T16:15:55-04:00",
       "headline": "8-K filing — ChampionsGate Acquisition Corp",
       "url": "https://www.sec.gov/Archives/edgar/data/2024460/000121390026101422/0001213900-26-101422-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "MPLT",
+      "title": "MapLight Therapeutics, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-18T16:15:45-04:00",
+      "headline": "S-1 filing — MapLight Therapeutics, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1770069/000119312526395559/0001193125-26-395559-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -1684,6 +2644,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "KRG",
+      "title": "KITE REALTY GROUP TRUST",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-18T16:05:20-04:00",
+      "headline": "S-3 filing — KITE REALTY GROUP TRUST",
+      "url": "https://www.sec.gov/Archives/edgar/data/1286043/000110465926108929/0001104659-26-108929-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "CRMT",
       "title": "AMERICAS CARMART INC",
       "type": "SEC",
@@ -1739,6 +2711,18 @@
       "publishedAt": "2026-09-18T16:04:03-04:00",
       "headline": "6-K filing — ARM HOLDINGS PLC /UK",
       "url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000135/0001973239-26-000135-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "DNTH",
+      "title": "Dianthus Therapeutics, Inc. /DE/",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-18T16:02:30-04:00",
+      "headline": "S-3 filing — Dianthus Therapeutics, Inc. /DE/",
+      "url": "https://www.sec.gov/Archives/edgar/data/1690585/000119312526395502/0001193125-26-395502-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -2080,6 +3064,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "AMRO",
+      "title": "Amaero Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-18T09:51:16-04:00",
+      "headline": "S-1 filing — Amaero Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2141616/000119312526395150/0001193125-26-395150-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "MBFJF",
       "title": "MITSUBISHI UFJ FINANCIAL GROUP INC",
       "type": "SEC",
@@ -2111,6 +3107,18 @@
       "publishedAt": "2026-09-18T09:42:50-04:00",
       "headline": "6-K filing — COMPANHIA DE SANEAMENTO BASICO DO ESTADO DE SAO PAULO-SABESP",
       "url": "https://www.sec.gov/Archives/edgar/data/1170858/000129281426004598/0001292814-26-004598-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "WFCF",
+      "title": "Where Food Comes From, Inc.",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-18T09:40:26-04:00",
+      "headline": "S-3 filing — Where Food Comes From, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1360565/000149315226043268/0001493152-26-043268-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -2620,6 +3628,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "GCTK",
+      "title": "Glucotrack, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-17T21:20:53-04:00",
+      "headline": "S-1 filing — Glucotrack, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1506983/000149315226043195/0001493152-26-043195-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "HUSIF",
       "title": "NICOLA MINING INC.",
       "type": "SEC",
@@ -2627,6 +3647,18 @@
       "publishedAt": "2026-09-17T21:16:20-04:00",
       "headline": "6-K filing — NICOLA MINING INC.",
       "url": "https://www.sec.gov/Archives/edgar/data/1526475/000106299326005006/0001062993-26-005006-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "HODO",
+      "title": "House of Doge Inc.",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-17T21:11:47-04:00",
+      "headline": "S-3 filing — House of Doge Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1903595/000121390026101089/0001213900-26-101089-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -2663,6 +3695,18 @@
       "publishedAt": "2026-09-17T19:58:25-04:00",
       "headline": "6-K filing — ECOPETROL S.A.",
       "url": "https://www.sec.gov/Archives/edgar/data/1444406/000129281426004594/0001292814-26-004594-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "ETRA",
+      "title": "Electra Therapeutics, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-17T19:06:26-04:00",
+      "headline": "S-1 filing — Electra Therapeutics, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2088082/000119312526394715/0001193125-26-394715-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -2716,6 +3760,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "GVAC",
+      "title": "Gravity Acquisition Corp.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-17T17:29:48-04:00",
+      "headline": "S-1 filing — Gravity Acquisition Corp.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2123380/000118518526004107/0001185185-26-004107-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "GFRWF",
       "title": "Greenfire Resources Ltd.",
       "type": "SEC",
@@ -2735,6 +3791,18 @@
       "publishedAt": "2026-09-17T17:24:30-04:00",
       "headline": "6-K filing — VersaBank",
       "url": "https://www.sec.gov/Archives/edgar/data/1690639/000106299326005004/0001062993-26-005004-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "OMF",
+      "title": "OneMain Holdings, Inc.",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-17T17:22:21-04:00",
+      "headline": "S-3 filing — OneMain Holdings, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1584207/000158420726000036/0001584207-26-000036-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -2872,6 +3940,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "JLL",
+      "title": "JONES LANG LASALLE INC",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-17T16:50:17-04:00",
+      "headline": "S-3 filing — JONES LANG LASALLE INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/1037976/000162828026062551/0001628280-26-062551-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "ICON",
       "title": "Icon Energy Corp",
       "type": "SEC",
@@ -2891,6 +3971,18 @@
       "publishedAt": "2026-09-17T16:45:12-04:00",
       "headline": "6-K filing — Nano-X Imaging Ltd.",
       "url": "https://www.sec.gov/Archives/edgar/data/1795251/000121390026100989/0001213900-26-100989-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "NIMU",
+      "title": "NON INVASIVE MONITORING SYSTEMS INC /FL/",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-17T16:31:59-04:00",
+      "headline": "S-1 filing — NON INVASIVE MONITORING SYSTEMS INC /FL/",
+      "url": "https://www.sec.gov/Archives/edgar/data/720762/000149315226043137/0001493152-26-043137-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -2930,6 +4022,18 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "GOVX",
+      "title": "GeoVax Labs, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-17T16:06:33-04:00",
+      "headline": "S-1 filing — GeoVax Labs, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/832489/000143774926030676/0001437749-26-030676-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
     },
     {
       "symbol": "SDST",
@@ -3040,6 +4144,18 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
+      "symbol": "FRMEP",
+      "title": "FIRST MERCHANTS CORP",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-17T13:45:08-04:00",
+      "headline": "S-3 filing — FIRST MERCHANTS CORP",
+      "url": "https://www.sec.gov/Archives/edgar/data/712534/000119312526394120/0001193125-26-394120-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "ZBAO",
       "title": "Zhibao Technology Inc.",
       "type": "SEC",
@@ -3076,6 +4192,114 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
+      "symbol": "WOLF",
+      "title": "WOLFSPEED, INC.",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-16T18:25:53-04:00",
+      "headline": "S-3 filing — WOLFSPEED, INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/895419/000119312526393324/0001193125-26-393324-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "JILL",
+      "title": "J.Jill, Inc.",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-16T17:25:45-04:00",
+      "headline": "S-3 filing — J.Jill, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1687932/000119312526393259/0001193125-26-393259-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "NUOX",
+      "title": "NuvOx Therapeutics, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-16T17:19:22-04:00",
+      "headline": "S-1 filing — NuvOx Therapeutics, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1966126/000121390026100586/0001213900-26-100586-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "NRR",
+      "title": "Bitwise NEAR ETF",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-16T17:13:29-04:00",
+      "headline": "S-1 filing — Bitwise NEAR ETF",
+      "url": "https://www.sec.gov/Archives/edgar/data/2067111/000119312526393240/0001193125-26-393240-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "CHGA",
+      "title": "Change Agents Corporation.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-16T17:11:33-04:00",
+      "headline": "S-1 filing — Change Agents Corporation.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1630212/000121390026100576/0001213900-26-100576-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "DROR",
+      "title": "Dror Ortho-Design, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-16T17:01:55-04:00",
+      "headline": "S-1 filing — Dror Ortho-Design, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1282980/000121390026100567/0001213900-26-100567-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "LCAC",
+      "title": "Lower Cross Acquisitions Corp",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-16T17:00:51-04:00",
+      "headline": "S-1 filing — Lower Cross Acquisitions Corp",
+      "url": "https://www.sec.gov/Archives/edgar/data/2147457/000118518526004071/0001185185-26-004071-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "BUSEP",
+      "title": "FIRST BUSEY CORP /NV/",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-16T16:48:54-04:00",
+      "headline": "S-3 filing — FIRST BUSEY CORP /NV/",
+      "url": "https://www.sec.gov/Archives/edgar/data/314489/000031448926000061/0000314489-26-000061-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "SDEV",
+      "title": "Stablecoin Development Corp",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-09-16T16:36:24-04:00",
+      "headline": "S-3 filing — Stablecoin Development Corp",
+      "url": "https://www.sec.gov/Archives/edgar/data/1389545/000143774926030554/0001437749-26-030554-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "TELO",
       "title": "Telomir Pharmaceuticals, Inc.",
       "type": "SEC",
@@ -3086,6 +4310,18 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "NIAA",
+      "title": "New Iceland Arctic Acquisition Corp.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-09-16T15:15:33-04:00",
+      "headline": "S-1 filing — New Iceland Arctic Acquisition Corp.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2148245/000118518526004057/0001185185-26-004057-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
     },
     {
       "symbol": "SDST",
@@ -4196,6 +5432,18 @@
           "title": "Glucotrack, Inc.",
           "type": "SEC",
           "form": "S-1",
+          "publishedAt": "2026-09-17T21:20:53-04:00",
+          "headline": "S-1 filing — Glucotrack, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1506983/000149315226043195/0001493152-26-043195-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "GCTK",
+          "title": "Glucotrack, Inc.",
+          "type": "SEC",
+          "form": "S-1",
           "publishedAt": "2026-09-17T21:20:53.000Z",
           "headline": "S-1 filing — Glucotrack, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1506983/000149315226043195/forms-1.htm",
@@ -4240,7 +5488,7 @@
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 6
+      "eventCount": 7
     },
     "FGI": {
       "events": [],
@@ -4645,8 +5893,97 @@
       ],
       "eventCount": 1
     },
+    "JJETF": {
+      "events": [
+        {
+          "symbol": "JJETF",
+          "title": "BARCLAYS BANK PLC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:31:03-04:00",
+          "headline": "424B filing — BARCLAYS BANK PLC",
+          "url": "https://www.sec.gov/Archives/edgar/data/312070/000191870426028136/0001918704-26-028136-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "JJETF",
+          "title": "BARCLAYS BANK PLC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:30:00-04:00",
+          "headline": "424B filing — BARCLAYS BANK PLC",
+          "url": "https://www.sec.gov/Archives/edgar/data/312070/000191870426028135/0001918704-26-028135-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "JJETF",
+          "title": "BARCLAYS BANK PLC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:13:08-04:00",
+          "headline": "424B filing — BARCLAYS BANK PLC",
+          "url": "https://www.sec.gov/Archives/edgar/data/312070/000095010326014213/0000950103-26-014213-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "JJETF",
+          "title": "BARCLAYS BANK PLC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:06:21-04:00",
+          "headline": "424B filing — BARCLAYS BANK PLC",
+          "url": "https://www.sec.gov/Archives/edgar/data/312070/000095010326014212/0000950103-26-014212-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "JJETF",
+          "title": "BARCLAYS BANK PLC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:00:43-04:00",
+          "headline": "424B filing — BARCLAYS BANK PLC",
+          "url": "https://www.sec.gov/Archives/edgar/data/312070/000191870426028129/0001918704-26-028129-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "JJETF",
+          "title": "BARCLAYS BANK PLC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:52:10-04:00",
+          "headline": "424B filing — BARCLAYS BANK PLC",
+          "url": "https://www.sec.gov/Archives/edgar/data/312070/000095010326014206/0000950103-26-014206-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 6
+    },
     "VWAVW": {
       "events": [
+        {
+          "symbol": "VWAVW",
+          "title": "VisionWave Holdings, Inc.",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:30:50-04:00",
+          "headline": "424B filing — VisionWave Holdings, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2038439/000173112226001265/0001731122-26-001265-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
         {
           "symbol": "VWAVW",
           "title": "VisionWave Holdings, Inc.",
@@ -4655,6 +5992,57 @@
           "publishedAt": "2026-09-18T17:30:09-04:00",
           "headline": "8-K filing — VisionWave Holdings, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/2038439/000173112226001264/0001731122-26-001264-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 2
+    },
+    "LABT": {
+      "events": [
+        {
+          "symbol": "LABT",
+          "title": "Lakewood-Amedex Biotherapeutics Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-18T17:30:46-04:00",
+          "headline": "S-1 filing — Lakewood-Amedex Biotherapeutics Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2079272/000121390026101512/0001213900-26-101512-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "GOTV": {
+      "events": [
+        {
+          "symbol": "GOTV",
+          "title": "FullPAC, Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-18T17:30:44-04:00",
+          "headline": "S-1 filing — FullPAC, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2076148/000149315226043417/0001493152-26-043417-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "MLSS": {
+      "events": [
+        {
+          "symbol": "MLSS",
+          "title": "MILESTONE SCIENTIFIC INC.",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-18T17:30:34-04:00",
+          "headline": "S-3 filing — MILESTONE SCIENTIFIC INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/855683/000149315226043419/0001493152-26-043419-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -4696,6 +6084,40 @@
       ],
       "eventCount": 1
     },
+    "DYAI": {
+      "events": [
+        {
+          "symbol": "DYAI",
+          "title": "DYADIC INTERNATIONAL INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:28:31-04:00",
+          "headline": "424B filing — DYADIC INTERNATIONAL INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/1213809/000149315226043416/0001493152-26-043416-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "GWAV": {
+      "events": [
+        {
+          "symbol": "GWAV",
+          "title": "Greenwave Technology Solutions, Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-18T17:28:23-04:00",
+          "headline": "S-1 filing — Greenwave Technology Solutions, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1589149/000149315226043414/0001493152-26-043414-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "BCBP": {
       "events": [
         {
@@ -4706,6 +6128,23 @@
           "publishedAt": "2026-09-18T17:28:16-04:00",
           "headline": "8-K filing — BCB BANCORP INC",
           "url": "https://www.sec.gov/Archives/edgar/data/1228454/000119312526395743/0001193125-26-395743-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "VRHID": {
+      "events": [
+        {
+          "symbol": "VRHID",
+          "title": "Veri MedTech Holdings, Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-18T17:28:05-04:00",
+          "headline": "S-1 filing — Veri MedTech Holdings, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2078149/000109690626001390/0001096906-26-001390-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -4730,6 +6169,76 @@
       ],
       "eventCount": 1
     },
+    "JEF": {
+      "events": [
+        {
+          "symbol": "JEF",
+          "title": "Jefferies Financial Group Inc.",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:24:52-04:00",
+          "headline": "424B filing — Jefferies Financial Group Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/96223/000191870426028134/0001918704-26-028134-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "BML-PJ": {
+      "events": [
+        {
+          "symbol": "BML-PJ",
+          "title": "BANK OF AMERICA CORP /DE/",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:24:20-04:00",
+          "headline": "424B filing — BANK OF AMERICA CORP /DE/",
+          "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426028133/0001918704-26-028133-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "BML-PJ",
+          "title": "BANK OF AMERICA CORP /DE/",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:08:40-04:00",
+          "headline": "424B filing — BANK OF AMERICA CORP /DE/",
+          "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426028130/0001918704-26-028130-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "BML-PJ",
+          "title": "BANK OF AMERICA CORP /DE/",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:56:48-04:00",
+          "headline": "424B filing — BANK OF AMERICA CORP /DE/",
+          "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426028128/0001918704-26-028128-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "BML-PJ",
+          "title": "BANK OF AMERICA CORP /DE/",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:52:55-04:00",
+          "headline": "424B filing — BANK OF AMERICA CORP /DE/",
+          "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426028127/0001918704-26-028127-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 4
+    },
     "NUR": {
       "events": [
         {
@@ -4746,6 +6255,177 @@
         }
       ],
       "eventCount": 1
+    },
+    "BSEM": {
+      "events": [
+        {
+          "symbol": "BSEM",
+          "title": "BioStem Technologies, Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-18T17:24:16-04:00",
+          "headline": "S-1 filing — BioStem Technologies, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1658678/000121390026101505/0001213900-26-101505-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "BSEM",
+          "title": "BioStem Technologies, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-09-18T16:15:16-04:00",
+          "headline": "8-K filing — BioStem Technologies, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1658678/000119312526395556/0001193125-26-395556-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 2
+    },
+    "CHGA": {
+      "events": [
+        {
+          "symbol": "CHGA",
+          "title": "Change Agents Corporation.",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:23:55-04:00",
+          "headline": "424B filing — Change Agents Corporation.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1630212/000121390026101506/0001213900-26-101506-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "CHGA",
+          "title": "Change Agents Corporation.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-09-18T16:59:56-04:00",
+          "headline": "8-K filing — Change Agents Corporation.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1630212/000121390026101469/0001213900-26-101469-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "CHGA",
+          "title": "Change Agents Corporation.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-16T17:11:33-04:00",
+          "headline": "S-1 filing — Change Agents Corporation.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1630212/000121390026100576/0001213900-26-100576-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 3
+    },
+    "C-PR": {
+      "events": [
+        {
+          "symbol": "C-PR",
+          "title": "CITIGROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:22:00-04:00",
+          "headline": "424B filing — CITIGROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/831001/000095010326014218/0000950103-26-014218-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "C-PR",
+          "title": "CITIGROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:20:01-04:00",
+          "headline": "424B filing — CITIGROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/831001/000095010326014217/0000950103-26-014217-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "C-PR",
+          "title": "CITIGROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:19:52-04:00",
+          "headline": "424B filing — CITIGROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/831001/000095010326014216/0000950103-26-014216-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "C-PR",
+          "title": "CITIGROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:17:32-04:00",
+          "headline": "424B filing — CITIGROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/831001/000095010326014215/0000950103-26-014215-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "C-PR",
+          "title": "CITIGROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:15:08-04:00",
+          "headline": "424B filing — CITIGROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/831001/000095010326014214/0000950103-26-014214-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "C-PR",
+          "title": "CITIGROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:04:46-04:00",
+          "headline": "424B filing — CITIGROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/831001/000095010326014211/0000950103-26-014211-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "C-PR",
+          "title": "CITIGROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:04:11-04:00",
+          "headline": "424B filing — CITIGROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/831001/000095010326014210/0000950103-26-014210-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "C-PR",
+          "title": "CITIGROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:00:05-04:00",
+          "headline": "424B filing — CITIGROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/831001/000095010326014209/0000950103-26-014209-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 11
     },
     "SCZM": {
       "events": [
@@ -4780,6 +6460,35 @@
         }
       ],
       "eventCount": 1
+    },
+    "CDTTW": {
+      "events": [
+        {
+          "symbol": "CDTTW",
+          "title": "CDT Equity Inc.",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:20:09-04:00",
+          "headline": "424B filing — CDT Equity Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1896212/000149315226043404/0001493152-26-043404-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "CDTTW",
+          "title": "CDT Equity Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-09-18T17:15:32-04:00",
+          "headline": "8-K filing — CDT Equity Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1896212/000149315226043398/0001493152-26-043398-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 2
     },
     "CLSKW": {
       "events": [
@@ -4849,22 +6558,106 @@
       ],
       "eventCount": 1
     },
-    "CDTTW": {
+    "GS-PD": {
       "events": [
         {
-          "symbol": "CDTTW",
-          "title": "CDT Equity Inc.",
+          "symbol": "GS-PD",
+          "title": "GOLDMAN SACHS GROUP INC",
           "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-18T17:15:32-04:00",
-          "headline": "8-K filing — CDT Equity Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1896212/000149315226043398/0001493152-26-043398-index.htm",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:15:30-04:00",
+          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526395719/0001193125-26-395719-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "GS-PD",
+          "title": "GOLDMAN SACHS GROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:07:58-04:00",
+          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526395704/0001193125-26-395704-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "GS-PD",
+          "title": "GOLDMAN SACHS GROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:06:24-04:00",
+          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526395703/0001193125-26-395703-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "GS-PD",
+          "title": "GOLDMAN SACHS GROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:02:41-04:00",
+          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526395698/0001193125-26-395698-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "GS-PD",
+          "title": "GOLDMAN SACHS GROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:59:30-04:00",
+          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526395683/0001193125-26-395683-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "GS-PD",
+          "title": "GOLDMAN SACHS GROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:59:03-04:00",
+          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526395681/0001193125-26-395681-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "GS-PD",
+          "title": "GOLDMAN SACHS GROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:54:04-04:00",
+          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526395673/0001193125-26-395673-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "GS-PD",
+          "title": "GOLDMAN SACHS GROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:53:24-04:00",
+          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526395672/0001193125-26-395672-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
         }
       ],
-      "eventCount": 1
+      "eventCount": 9
     },
     "INM": {
       "events": [
@@ -4882,6 +6675,148 @@
         }
       ],
       "eventCount": 1
+    },
+    "JPM-PM": {
+      "events": [
+        {
+          "symbol": "JPM-PM",
+          "title": "JPMORGAN CHASE & CO",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:07:41-04:00",
+          "headline": "424B filing — JPMORGAN CHASE & CO",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000121390026101486/0001213900-26-101486-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "JPM-PM",
+          "title": "JPMORGAN CHASE & CO",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:03:46-04:00",
+          "headline": "424B filing — JPMORGAN CHASE & CO",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000121390026101479/0001213900-26-101479-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "JPM-PM",
+          "title": "JPMORGAN CHASE & CO",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:42:39-04:00",
+          "headline": "424B filing — JPMORGAN CHASE & CO",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000121390026101454/0001213900-26-101454-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 3
+    },
+    "IFED": {
+      "events": [
+        {
+          "symbol": "IFED",
+          "title": "UBS AG",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:05:48-04:00",
+          "headline": "424B filing — UBS AG",
+          "url": "https://www.sec.gov/Archives/edgar/data/1114446/000183988226046330/0001839882-26-046330-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "IFED",
+          "title": "UBS AG",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:39:34-04:00",
+          "headline": "424B filing — UBS AG",
+          "url": "https://www.sec.gov/Archives/edgar/data/1114446/000111444626006688/0001114446-26-006688-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "IFED",
+          "title": "UBS AG",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:39:28-04:00",
+          "headline": "424B filing — UBS AG",
+          "url": "https://www.sec.gov/Archives/edgar/data/1114446/000111444626006687/0001114446-26-006687-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "IFED",
+          "title": "UBS AG",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:39:16-04:00",
+          "headline": "424B filing — UBS AG",
+          "url": "https://www.sec.gov/Archives/edgar/data/1114446/000111444626006686/0001114446-26-006686-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "IFED",
+          "title": "UBS AG",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:39:15-04:00",
+          "headline": "424B filing — UBS AG",
+          "url": "https://www.sec.gov/Archives/edgar/data/1114446/000111444626006685/0001114446-26-006685-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "IFED",
+          "title": "UBS AG",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:39:11-04:00",
+          "headline": "424B filing — UBS AG",
+          "url": "https://www.sec.gov/Archives/edgar/data/1114446/000111444626006683/0001114446-26-006683-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "IFED",
+          "title": "UBS AG",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:39:01-04:00",
+          "headline": "424B filing — UBS AG",
+          "url": "https://www.sec.gov/Archives/edgar/data/1114446/000111444626006682/0001114446-26-006682-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "IFED",
+          "title": "UBS AG",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:39:00-04:00",
+          "headline": "424B filing — UBS AG",
+          "url": "https://www.sec.gov/Archives/edgar/data/1114446/000111444626006681/0001114446-26-006681-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 15
     },
     "SLMT": {
       "events": [
@@ -4910,6 +6845,23 @@
           "publishedAt": "2026-09-18T17:04:50-04:00",
           "headline": "8-K filing — Paradium.AI, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/894871/000149315226043382/0001493152-26-043382-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "EP": {
+      "events": [
+        {
+          "symbol": "EP",
+          "title": "EMPIRE PETROLEUM CORP",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-18T17:01:10-04:00",
+          "headline": "S-3 filing — EMPIRE PETROLEUM CORP",
+          "url": "https://www.sec.gov/Archives/edgar/data/887396/000107261326000792/0001072613-26-000792-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -4968,6 +6920,40 @@
       ],
       "eventCount": 1
     },
+    "SKYQ": {
+      "events": [
+        {
+          "symbol": "SKYQ",
+          "title": "Sky Quarry Inc.",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T17:00:42-04:00",
+          "headline": "424B filing — Sky Quarry Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1812447/000109690626001387/0001096906-26-001387-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "QNRX": {
+      "events": [
+        {
+          "symbol": "QNRX",
+          "title": "Quoin Pharmaceuticals Ltd.",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-18T17:00:40-04:00",
+          "headline": "S-3 filing — Quoin Pharmaceuticals Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1671502/000110465926108970/0001104659-26-108970-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "CIVB": {
       "events": [
         {
@@ -4978,6 +6964,23 @@
           "publishedAt": "2026-09-18T17:00:33-04:00",
           "headline": "8-K filing — CIVISTA BANCSHARES, INC.",
           "url": "https://www.sec.gov/Archives/edgar/data/944745/000119312526395696/0001193125-26-395696-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "NIKI": {
+      "events": [
+        {
+          "symbol": "NIKI",
+          "title": "Niki BioSolutions, Inc.",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-18T17:00:32-04:00",
+          "headline": "S-3 filing — Niki BioSolutions, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1734005/000121390026101473/0001213900-26-101473-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -5070,16 +7073,16 @@
       ],
       "eventCount": 1
     },
-    "CHGA": {
+    "BNS": {
       "events": [
         {
-          "symbol": "CHGA",
-          "title": "Change Agents Corporation.",
+          "symbol": "BNS",
+          "title": "BANK OF NOVA SCOTIA",
           "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-18T16:59:56-04:00",
-          "headline": "8-K filing — Change Agents Corporation.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1630212/000121390026101469/0001213900-26-101469-index.htm",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:59:32-04:00",
+          "headline": "424B filing — BANK OF NOVA SCOTIA",
+          "url": "https://www.sec.gov/Archives/edgar/data/9631/000183988226046328/0001839882-26-046328-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -5121,6 +7124,35 @@
       ],
       "eventCount": 1
     },
+    "SMTK": {
+      "events": [
+        {
+          "symbol": "SMTK",
+          "title": "SmartKem, Inc.",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-18T16:55:10-04:00",
+          "headline": "S-3 filing — SmartKem, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1817760/000110465926108966/0001104659-26-108966-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "SMTK",
+          "title": "SmartKem, Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-18T16:54:55-04:00",
+          "headline": "S-1 filing — SmartKem, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1817760/000110465926108965/0001104659-26-108965-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 2
+    },
     "LII": {
       "events": [
         {
@@ -5131,6 +7163,69 @@
           "publishedAt": "2026-09-18T16:54:33-04:00",
           "headline": "8-K filing — LENNOX INTERNATIONAL INC",
           "url": "https://www.sec.gov/Archives/edgar/data/1069202/000106920226000091/0001069202-26-000091-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "FLYU": {
+      "events": [
+        {
+          "symbol": "FLYU",
+          "title": "BANK OF MONTREAL /CAN/",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:53:28-04:00",
+          "headline": "424B filing — BANK OF MONTREAL /CAN/",
+          "url": "https://www.sec.gov/Archives/edgar/data/927971/000121465926011804/0001214659-26-011804-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "ETRA": {
+      "events": [
+        {
+          "symbol": "ETRA",
+          "title": "Electra Therapeutics, Inc.",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:52:38-04:00",
+          "headline": "424B filing — Electra Therapeutics, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2088082/000119312526395670/0001193125-26-395670-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "ETRA",
+          "title": "Electra Therapeutics, Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-17T19:06:26-04:00",
+          "headline": "S-1 filing — Electra Therapeutics, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2088082/000119312526394715/0001193125-26-394715-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 2
+    },
+    "KYIVW": {
+      "events": [
+        {
+          "symbol": "KYIVW",
+          "title": "Kyivstar Group Ltd.",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:52:01-04:00",
+          "headline": "424B filing — Kyivstar Group Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2062440/000162828026062760/0001628280-26-062760-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -5172,6 +7267,76 @@
       ],
       "eventCount": 1
     },
+    "MS-PA": {
+      "events": [
+        {
+          "symbol": "MS-PA",
+          "title": "MORGAN STANLEY",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:49:49-04:00",
+          "headline": "424B filing — MORGAN STANLEY",
+          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226046327/0001839882-26-046327-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "MS-PA",
+          "title": "MORGAN STANLEY",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:39:53-04:00",
+          "headline": "424B filing — MORGAN STANLEY",
+          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226046326/0001839882-26-046326-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "MS-PA",
+          "title": "MORGAN STANLEY",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:39:14-04:00",
+          "headline": "424B filing — MORGAN STANLEY",
+          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226046325/0001839882-26-046325-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "MS-PA",
+          "title": "MORGAN STANLEY",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:38:17-04:00",
+          "headline": "424B filing — MORGAN STANLEY",
+          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226046324/0001839882-26-046324-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 4
+    },
+    "RYLBF": {
+      "events": [
+        {
+          "symbol": "RYLBF",
+          "title": "ROYAL BANK OF CANADA",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:47:47-04:00",
+          "headline": "424B filing — ROYAL BANK OF CANADA",
+          "url": "https://www.sec.gov/Archives/edgar/data/1000275/000095010326014205/0000950103-26-014205-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "CFND": {
       "events": [
         {
@@ -5189,6 +7354,23 @@
       ],
       "eventCount": 1
     },
+    "ABAT": {
+      "events": [
+        {
+          "symbol": "ABAT",
+          "title": "AMERICAN BATTERY TECHNOLOGY Co",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-18T16:45:37-04:00",
+          "headline": "S-3 filing — AMERICAN BATTERY TECHNOLOGY Co",
+          "url": "https://www.sec.gov/Archives/edgar/data/1576873/000149315226043371/0001493152-26-043371-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "CDIOW": {
       "events": [
         {
@@ -5199,6 +7381,52 @@
           "publishedAt": "2026-09-18T16:45:30-04:00",
           "headline": "8-K filing — Cardio Diagnostics Holdings, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1870144/000155335026000131/0001553350-26-000131-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "NSRX": {
+      "events": [
+        {
+          "symbol": "NSRX",
+          "title": "Nasus Pharma Ltd",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:43:58-04:00",
+          "headline": "424B filing — Nasus Pharma Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/2029039/000149315226043370/0001493152-26-043370-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "NSRX",
+          "title": "Nasus Pharma Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-18T16:06:30-04:00",
+          "headline": "6-K filing — Nasus Pharma Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/2029039/000149315226043342/0001493152-26-043342-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 2
+    },
+    "OLOXF": {
+      "events": [
+        {
+          "symbol": "OLOXF",
+          "title": "DEUTSCHE BANK AKTIENGESELLSCHAFT",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-09-18T16:38:04-04:00",
+          "headline": "424B filing — DEUTSCHE BANK AKTIENGESELLSCHAFT",
+          "url": "https://www.sec.gov/Archives/edgar/data/1159508/000095010326014202/0000950103-26-014202-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -5250,6 +7478,23 @@
           "publishedAt": "2026-09-18T16:33:23-04:00",
           "headline": "8-K filing — FARMERS NATIONAL BANC CORP /OH/",
           "url": "https://www.sec.gov/Archives/edgar/data/709337/000143774926030756/0001437749-26-030756-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "FLDDW": {
+      "events": [
+        {
+          "symbol": "FLDDW",
+          "title": "Fold Holdings, Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-18T16:31:53-04:00",
+          "headline": "S-1 filing — Fold Holdings, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1889123/000121390026101444/0001213900-26-101444-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -5529,6 +7774,23 @@
       ],
       "eventCount": 1
     },
+    "FCCN": {
+      "events": [
+        {
+          "symbol": "FCCN",
+          "title": "SPECTRAL CAPITAL Corp",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-18T16:25:31-04:00",
+          "headline": "S-1 filing — SPECTRAL CAPITAL Corp",
+          "url": "https://www.sec.gov/Archives/edgar/data/1131903/000121390026101431/0001213900-26-101431-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "AHR": {
       "events": [
         {
@@ -5643,6 +7905,23 @@
       ],
       "eventCount": 1
     },
+    "MPLT": {
+      "events": [
+        {
+          "symbol": "MPLT",
+          "title": "MapLight Therapeutics, Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-18T16:15:45-04:00",
+          "headline": "S-1 filing — MapLight Therapeutics, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1770069/000119312526395559/0001193125-26-395559-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "NCEL": {
       "events": [
         {
@@ -5721,23 +8000,6 @@
           "publishedAt": "2026-09-18T16:15:18-04:00",
           "headline": "8-K filing — CONSTELLATION BRANDS, INC.",
           "url": "https://www.sec.gov/Archives/edgar/data/16918/000119312526395558/0001193125-26-395558-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "BSEM": {
-      "events": [
-        {
-          "symbol": "BSEM",
-          "title": "BioStem Technologies, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-18T16:15:16-04:00",
-          "headline": "8-K filing — BioStem Technologies, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1658678/000119312526395556/0001193125-26-395556-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -6017,23 +8279,6 @@
       ],
       "eventCount": 1
     },
-    "NSRX": {
-      "events": [
-        {
-          "symbol": "NSRX",
-          "title": "Nasus Pharma Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-18T16:06:30-04:00",
-          "headline": "6-K filing — Nasus Pharma Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/2029039/000149315226043342/0001493152-26-043342-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
     "GRCE": {
       "events": [
         {
@@ -6284,6 +8529,23 @@
       ],
       "eventCount": 1
     },
+    "KRG": {
+      "events": [
+        {
+          "symbol": "KRG",
+          "title": "KITE REALTY GROUP TRUST",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-18T16:05:20-04:00",
+          "headline": "S-3 filing — KITE REALTY GROUP TRUST",
+          "url": "https://www.sec.gov/Archives/edgar/data/1286043/000110465926108929/0001104659-26-108929-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "CRMT": {
       "events": [
         {
@@ -6345,6 +8607,23 @@
           "publishedAt": "2026-09-18T16:04:03-04:00",
           "headline": "6-K filing — ARM HOLDINGS PLC /UK",
           "url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000135/0001973239-26-000135-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "DNTH": {
+      "events": [
+        {
+          "symbol": "DNTH",
+          "title": "Dianthus Therapeutics, Inc. /DE/",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-18T16:02:30-04:00",
+          "headline": "S-3 filing — Dianthus Therapeutics, Inc. /DE/",
+          "url": "https://www.sec.gov/Archives/edgar/data/1690585/000119312526395502/0001193125-26-395502-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -6801,6 +9080,23 @@
       ],
       "eventCount": 2
     },
+    "AMRO": {
+      "events": [
+        {
+          "symbol": "AMRO",
+          "title": "Amaero Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-18T09:51:16-04:00",
+          "headline": "S-1 filing — Amaero Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2141616/000119312526395150/0001193125-26-395150-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "MBFJF": {
       "events": [
         {
@@ -6845,6 +9141,23 @@
           "publishedAt": "2026-09-18T09:42:50-04:00",
           "headline": "6-K filing — COMPANHIA DE SANEAMENTO BASICO DO ESTADO DE SAO PAULO-SABESP",
           "url": "https://www.sec.gov/Archives/edgar/data/1170858/000129281426004598/0001292814-26-004598-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "WFCF": {
+      "events": [
+        {
+          "symbol": "WFCF",
+          "title": "Where Food Comes From, Inc.",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-18T09:40:26-04:00",
+          "headline": "S-3 filing — Where Food Comes From, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1360565/000149315226043268/0001493152-26-043268-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -7488,6 +9801,23 @@
       ],
       "eventCount": 1
     },
+    "HODO": {
+      "events": [
+        {
+          "symbol": "HODO",
+          "title": "House of Doge Inc.",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-17T21:11:47-04:00",
+          "headline": "S-3 filing — House of Doge Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1903595/000121390026101089/0001213900-26-101089-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "DCX": {
       "events": [
         {
@@ -7585,6 +9915,23 @@
       ],
       "eventCount": 2
     },
+    "GVAC": {
+      "events": [
+        {
+          "symbol": "GVAC",
+          "title": "Gravity Acquisition Corp.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-17T17:29:48-04:00",
+          "headline": "S-1 filing — Gravity Acquisition Corp.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2123380/000118518526004107/0001185185-26-004107-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "GFRWF": {
       "events": [
         {
@@ -7612,6 +9959,23 @@
           "publishedAt": "2026-09-17T17:24:30-04:00",
           "headline": "6-K filing — VersaBank",
           "url": "https://www.sec.gov/Archives/edgar/data/1690639/000106299326005004/0001062993-26-005004-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "OMF": {
+      "events": [
+        {
+          "symbol": "OMF",
+          "title": "OneMain Holdings, Inc.",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-17T17:22:21-04:00",
+          "headline": "S-3 filing — OneMain Holdings, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1584207/000158420726000036/0001584207-26-000036-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -7716,6 +10080,23 @@
       ],
       "eventCount": 1
     },
+    "JLL": {
+      "events": [
+        {
+          "symbol": "JLL",
+          "title": "JONES LANG LASALLE INC",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-17T16:50:17-04:00",
+          "headline": "S-3 filing — JONES LANG LASALLE INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/1037976/000162828026062551/0001628280-26-062551-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "ICON": {
       "events": [
         {
@@ -7749,12 +10130,212 @@
         }
       ],
       "eventCount": 1
+    },
+    "NIMU": {
+      "events": [
+        {
+          "symbol": "NIMU",
+          "title": "NON INVASIVE MONITORING SYSTEMS INC /FL/",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-17T16:31:59-04:00",
+          "headline": "S-1 filing — NON INVASIVE MONITORING SYSTEMS INC /FL/",
+          "url": "https://www.sec.gov/Archives/edgar/data/720762/000149315226043137/0001493152-26-043137-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "GOVX": {
+      "events": [
+        {
+          "symbol": "GOVX",
+          "title": "GeoVax Labs, Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-17T16:06:33-04:00",
+          "headline": "S-1 filing — GeoVax Labs, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/832489/000143774926030676/0001437749-26-030676-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "FRMEP": {
+      "events": [
+        {
+          "symbol": "FRMEP",
+          "title": "FIRST MERCHANTS CORP",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-17T13:45:08-04:00",
+          "headline": "S-3 filing — FIRST MERCHANTS CORP",
+          "url": "https://www.sec.gov/Archives/edgar/data/712534/000119312526394120/0001193125-26-394120-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "WOLF": {
+      "events": [
+        {
+          "symbol": "WOLF",
+          "title": "WOLFSPEED, INC.",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-16T18:25:53-04:00",
+          "headline": "S-3 filing — WOLFSPEED, INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/895419/000119312526393324/0001193125-26-393324-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "JILL": {
+      "events": [
+        {
+          "symbol": "JILL",
+          "title": "J.Jill, Inc.",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-16T17:25:45-04:00",
+          "headline": "S-3 filing — J.Jill, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1687932/000119312526393259/0001193125-26-393259-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "NUOX": {
+      "events": [
+        {
+          "symbol": "NUOX",
+          "title": "NuvOx Therapeutics, Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-16T17:19:22-04:00",
+          "headline": "S-1 filing — NuvOx Therapeutics, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1966126/000121390026100586/0001213900-26-100586-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "NRR": {
+      "events": [
+        {
+          "symbol": "NRR",
+          "title": "Bitwise NEAR ETF",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-16T17:13:29-04:00",
+          "headline": "S-1 filing — Bitwise NEAR ETF",
+          "url": "https://www.sec.gov/Archives/edgar/data/2067111/000119312526393240/0001193125-26-393240-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "DROR": {
+      "events": [
+        {
+          "symbol": "DROR",
+          "title": "Dror Ortho-Design, Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-16T17:01:55-04:00",
+          "headline": "S-1 filing — Dror Ortho-Design, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1282980/000121390026100567/0001213900-26-100567-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "LCAC": {
+      "events": [
+        {
+          "symbol": "LCAC",
+          "title": "Lower Cross Acquisitions Corp",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-16T17:00:51-04:00",
+          "headline": "S-1 filing — Lower Cross Acquisitions Corp",
+          "url": "https://www.sec.gov/Archives/edgar/data/2147457/000118518526004071/0001185185-26-004071-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "BUSEP": {
+      "events": [
+        {
+          "symbol": "BUSEP",
+          "title": "FIRST BUSEY CORP /NV/",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-16T16:48:54-04:00",
+          "headline": "S-3 filing — FIRST BUSEY CORP /NV/",
+          "url": "https://www.sec.gov/Archives/edgar/data/314489/000031448926000061/0000314489-26-000061-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "SDEV": {
+      "events": [
+        {
+          "symbol": "SDEV",
+          "title": "Stablecoin Development Corp",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-09-16T16:36:24-04:00",
+          "headline": "S-3 filing — Stablecoin Development Corp",
+          "url": "https://www.sec.gov/Archives/edgar/data/1389545/000143774926030554/0001437749-26-030554-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "NIAA": {
+      "events": [
+        {
+          "symbol": "NIAA",
+          "title": "New Iceland Arctic Acquisition Corp.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-09-16T15:15:33-04:00",
+          "headline": "S-1 filing — New Iceland Arctic Acquisition Corp.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2148245/000118518526004057/0001185185-26-004057-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
     }
   },
-  "errors": [
-    "SEC_CURRENT_S-1:This operation was aborted",
-    "SEC_CURRENT_S-3:This operation was aborted",
-    "SEC_CURRENT_424B:This operation was aborted"
-  ],
+  "errors": [],
   "policy": "Public-source intelligence. Market-wide SEC current-filing discovery is primary-source and independent of the price shortlist. `sourceStatus.live` means the loaded market universe contains fresh market data inside the active US extended-hours window; loaded-but-stale/session-final data is never labeled live. Shortlist ranking does not determine feed-level freshness. Upstream feed timestamps are retained only as operational provenance and do not override quote observation freshness or trading eligibility. SEC filings are primary-source events; GDELT is discovery-only and requires source-level verification before trade decisions."
 }
