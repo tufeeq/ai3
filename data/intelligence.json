@@ -1,23 +1,23 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-18T05:01:13.261Z",
+  "generatedAt": "2026-09-18T09:08:35.078Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
     "marketDataFresh": false,
-    "marketWindowOpen": false,
-    "marketSession": "closed",
+    "marketWindowOpen": true,
+    "marketSession": "pre-market",
     "newestObservedAt": "2026-09-18T00:00:00.000Z",
-    "marketDataAgeMin": 301.2,
+    "marketDataAgeMin": 548.6,
     "quoteCount": 799,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-18T05:01:13.795Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-18T01:33:31.659Z",
+    "upstreamFeedFetchedAt": "2026-09-18T09:08:35.871Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-18T06:37:33.036Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-18T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 207.7,
-    "upstreamObservationAgeAtFetchMin": 301.2,
+    "upstreamUpdateAgeAtFetchMin": 151,
+    "upstreamObservationAgeAtFetchMin": 548.6,
     "secMapping": true,
-    "secMarketwideDiscovery": true,
+    "secMarketwideDiscovery": false,
     "secMarketwideEventCount": 273,
     "newsDiscovery": true
   },
@@ -207,20 +207,20 @@
       "observedAt": "2026-09-17T19:59:53-04:00"
     },
     {
-      "symbol": "RFIL",
-      "price": 8.09,
-      "changePct": 2.017654476670872,
-      "early": 63,
-      "ignition": 71,
-      "observedAt": "2026-09-17T19:30:05-04:00"
-    },
-    {
       "symbol": "GMEX",
       "price": 0.405,
       "changePct": -1.459854014598528,
       "early": 63,
       "ignition": 71,
       "observedAt": "2026-09-17T19:50:18-04:00"
+    },
+    {
+      "symbol": "RFIL",
+      "price": 8.09,
+      "changePct": 2.017654476670872,
+      "early": 63,
+      "ignition": 71,
+      "observedAt": "2026-09-17T19:30:05-04:00"
     },
     {
       "symbol": "NNNN",
@@ -303,20 +303,20 @@
       "observedAt": "2026-09-17T17:44:13-04:00"
     },
     {
-      "symbol": "WENN",
-      "price": 10.4,
-      "changePct": 0,
-      "early": 58,
-      "ignition": 64,
-      "observedAt": "2026-09-17T16:00:00-04:00"
-    },
-    {
       "symbol": "CNEY",
       "price": 0.5689,
       "changePct": 7.909711684370251,
       "early": 61,
       "ignition": 61,
       "observedAt": "2026-09-17T19:59:44-04:00"
+    },
+    {
+      "symbol": "WENN",
+      "price": 10.4,
+      "changePct": 0,
+      "early": 58,
+      "ignition": 64,
+      "observedAt": "2026-09-17T16:00:00-04:00"
     },
     {
       "symbol": "CUE",
@@ -436,13 +436,13 @@
       "title": "Kaixin Holdings",
       "cik": "0001713539"
     },
-    "RFIL": {
-      "title": "R F INDUSTRIES LTD",
-      "cik": "0000740664"
-    },
     "GMEX": {
       "title": "GMEX Robotics Corp",
       "cik": "0001928581"
+    },
+    "RFIL": {
+      "title": "R F INDUSTRIES LTD",
+      "cik": "0000740664"
     },
     "NNNN": {
       "title": "Anbio Biotechnology",
@@ -484,13 +484,13 @@
       "title": "BIOVIE INC.",
       "cik": "0001580149"
     },
-    "WENN": {
-      "title": "WEN Acquisition Corp",
-      "cik": "0002057043"
-    },
     "CNEY": {
       "title": "CN ENERGY GROUP. INC.",
       "cik": "0001780785"
+    },
+    "WENN": {
+      "title": "WEN Acquisition Corp",
+      "cik": "0002057043"
     },
     "CUE": {
       "title": "Cue Biopharma, Inc.",
@@ -5311,6 +5311,35 @@
       ],
       "eventCount": 2
     },
+    "GMEX": {
+      "events": [
+        {
+          "symbol": "GMEX",
+          "title": "GMEX Robotics Corp",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-09-10T20:17:30.000Z",
+          "headline": "4 filing — GMEX Robotics Corp",
+          "url": "https://www.sec.gov/Archives/edgar/data/1928581/000147559726000238/xslF345X06/primary_doc.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "GMEX",
+          "title": "GMEX Robotics Corp",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-09-08T17:11:25.000Z",
+          "headline": "4 filing — GMEX Robotics Corp",
+          "url": "https://www.sec.gov/Archives/edgar/data/1928581/000147559726000233/xslF345X06/primary_doc.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 2
+    },
     "RFIL": {
       "events": [
         {
@@ -5387,35 +5416,6 @@
         }
       ],
       "eventCount": 6
-    },
-    "GMEX": {
-      "events": [
-        {
-          "symbol": "GMEX",
-          "title": "GMEX Robotics Corp",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-10T20:17:30.000Z",
-          "headline": "4 filing — GMEX Robotics Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/1928581/000147559726000238/xslF345X06/primary_doc.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "GMEX",
-          "title": "GMEX Robotics Corp",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-08T17:11:25.000Z",
-          "headline": "4 filing — GMEX Robotics Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/1928581/000147559726000233/xslF345X06/primary_doc.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
     },
     "NNNN": {
       "events": [],
@@ -5777,11 +5777,11 @@
       ],
       "eventCount": 2
     },
-    "WENN": {
+    "CNEY": {
       "events": [],
       "eventCount": 0
     },
-    "CNEY": {
+    "WENN": {
       "events": [],
       "eventCount": 0
     },
@@ -9907,6 +9907,8 @@
       "eventCount": 1
     }
   },
-  "errors": [],
+  "errors": [
+    "SEC_CURRENT_SC 13G:This operation was aborted"
+  ],
   "policy": "Public-source intelligence. Market-wide SEC current-filing discovery is primary-source and independent of the price shortlist. `sourceStatus.live` means the loaded market universe contains fresh market data inside the active US extended-hours window; loaded-but-stale/session-final data is never labeled live. Shortlist ranking does not determine feed-level freshness. Upstream feed timestamps are retained only as operational provenance and do not override quote observation freshness or trading eligibility. SEC filings are primary-source events; GDELT is discovery-only and requires source-level verification before trade decisions."
 }
