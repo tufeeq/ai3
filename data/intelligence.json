@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-18T04:28:26.416Z",
+  "generatedAt": "2026-09-18T05:01:13.261Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-09-18T00:00:00.000Z",
-    "marketDataAgeMin": 268.4,
+    "marketDataAgeMin": 301.2,
     "quoteCount": 799,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-18T04:28:26.644Z",
+    "upstreamFeedFetchedAt": "2026-09-18T05:01:13.795Z",
     "upstreamUpdatedAtAtBuild": "2026-09-18T01:33:31.659Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-18T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 174.9,
-    "upstreamObservationAgeAtFetchMin": 268.4,
+    "upstreamUpdateAgeAtFetchMin": 207.7,
+    "upstreamObservationAgeAtFetchMin": 301.2,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 273,
@@ -505,7 +505,7 @@
       "cik": "0001854963"
     }
   },
-  "eventCount": 352,
+  "eventCount": 350,
   "events": [
     {
       "symbol": "ETRA",
@@ -518,6 +518,18 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "ALP",
+      "title": "Alpha Compute Corp",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-09-17T22:25:08.000Z",
+      "headline": "4 filing — Alpha Compute Corp",
+      "url": "https://www.sec.gov/Archives/edgar/data/1095435/000117184326006099/xslF345X06/ownership.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "GVAC",
@@ -758,6 +770,18 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "MNR",
+      "title": "MACH NATURAL RESOURCES LP",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-09-17T21:11:13.000Z",
+      "headline": "4 filing — MACH NATURAL RESOURCES LP",
+      "url": "https://www.sec.gov/Archives/edgar/data/1980088/000121390026101024/xslF345X06/ownership.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "PEP",
@@ -2860,18 +2884,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "ALP",
-      "title": "Alpha Compute Corp",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-17T18:25:08.000Z",
-      "headline": "4 filing — Alpha Compute Corp",
-      "url": "https://www.sec.gov/Archives/edgar/data/1095435/000117184326006099/xslF345X06/ownership.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "FRMEP",
       "title": "FIRST MERCHANTS CORP",
       "type": "SEC",
@@ -2906,18 +2918,6 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "MNR",
-      "title": "MACH NATURAL RESOURCES LP",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-17T17:11:13.000Z",
-      "headline": "4 filing — MACH NATURAL RESOURCES LP",
-      "url": "https://www.sec.gov/Archives/edgar/data/1980088/000121390026101024/xslF345X06/ownership.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "SVM",
@@ -3002,6 +3002,18 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "GIBO",
+      "title": "GIBO HOLDINGS Ltd",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-09-17T13:30:01.000Z",
+      "headline": "6-K filing — GIBO HOLDINGS Ltd",
+      "url": "https://www.sec.gov/Archives/edgar/data/2034520/000149315226043058/form6-k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "GMTL",
@@ -3544,37 +3556,13 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "GIBO",
-      "title": "GIBO HOLDINGS Ltd",
+      "symbol": "MOVE",
+      "title": "Corvex, Inc.",
       "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-09-17T09:30:01.000Z",
-      "headline": "6-K filing — GIBO HOLDINGS Ltd",
-      "url": "https://www.sec.gov/Archives/edgar/data/2034520/000149315226043058/form6-k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "TURB",
-      "title": "Turbo Energy, S.A.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-09-17T08:15:11.000Z",
-      "headline": "6-K filing — Turbo Energy, S.A.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1963439/000121390026100758/ea0305817-6k_turbo.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "MMA",
-      "title": "MIXED MARTIAL ARTS GROUP LTD",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-09-17T07:00:23.000Z",
-      "headline": "6-K filing — MIXED MARTIAL ARTS GROUP LTD",
-      "url": "https://www.sec.gov/Archives/edgar/data/1981519/000149315226043030/form6-k.htm",
+      "form": "EFFECT",
+      "publishedAt": "2026-09-17T04:15:11.000Z",
+      "headline": "EFFECT filing — Corvex, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1734750/999999999526002982/xslEFFECTX01/primary_doc.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -3592,13 +3580,13 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "MOVE",
-      "title": "Corvex, Inc.",
+      "symbol": "MNR",
+      "title": "MACH NATURAL RESOURCES LP",
       "type": "SEC",
-      "form": "EFFECT",
-      "publishedAt": "2026-09-17T00:15:11.000Z",
-      "headline": "EFFECT filing — Corvex, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1734750/999999999526002982/xslEFFECTX01/primary_doc.xml",
+      "form": "4",
+      "publishedAt": "2026-09-17T01:16:39.000Z",
+      "headline": "4 filing — MACH NATURAL RESOURCES LP",
+      "url": "https://www.sec.gov/Archives/edgar/data/1980088/000121390026100673/xslF345X06/ownership.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -3722,18 +3710,6 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "MNR",
-      "title": "MACH NATURAL RESOURCES LP",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-16T21:16:39.000Z",
-      "headline": "4 filing — MACH NATURAL RESOURCES LP",
-      "url": "https://www.sec.gov/Archives/edgar/data/1980088/000121390026100673/xslF345X06/ownership.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "CEPU",
@@ -4823,18 +4799,6 @@
           "title": "MIXED MARTIAL ARTS GROUP LTD",
           "type": "SEC",
           "form": "6-K",
-          "publishedAt": "2026-09-17T07:00:23.000Z",
-          "headline": "6-K filing — MIXED MARTIAL ARTS GROUP LTD",
-          "url": "https://www.sec.gov/Archives/edgar/data/1981519/000149315226043030/form6-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "MMA",
-          "title": "MIXED MARTIAL ARTS GROUP LTD",
-          "type": "SEC",
-          "form": "6-K",
           "publishedAt": "2026-09-15T12:00:00.000Z",
           "headline": "6-K filing — MIXED MARTIAL ARTS GROUP LTD",
           "url": "https://www.sec.gov/Archives/edgar/data/1981519/000149315226042666/form6-k.htm",
@@ -4879,7 +4843,7 @@
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 6
+      "eventCount": 5
     },
     "GWAV": {
       "events": [
@@ -5000,7 +4964,7 @@
           "title": "GIBO HOLDINGS Ltd",
           "type": "SEC",
           "form": "6-K",
-          "publishedAt": "2026-09-17T09:30:01.000Z",
+          "publishedAt": "2026-09-17T13:30:01.000Z",
           "headline": "6-K filing — GIBO HOLDINGS Ltd",
           "url": "https://www.sec.gov/Archives/edgar/data/2034520/000149315226043058/form6-k.htm",
           "source": "SEC EDGAR",
@@ -5141,21 +5105,9 @@
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "TURB",
-          "title": "Turbo Energy, S.A.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-17T08:15:11.000Z",
-          "headline": "6-K filing — Turbo Energy, S.A.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1963439/000121390026100758/ea0305817-6k_turbo.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 2
+      "eventCount": 1
     },
     "DC": {
       "events": [
@@ -5210,7 +5162,7 @@
           "title": "Corvex, Inc.",
           "type": "SEC",
           "form": "EFFECT",
-          "publishedAt": "2026-09-17T00:15:11.000Z",
+          "publishedAt": "2026-09-17T04:15:11.000Z",
           "headline": "EFFECT filing — Corvex, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1734750/999999999526002982/xslEFFECTX01/primary_doc.xml",
           "source": "SEC EDGAR",
@@ -5510,7 +5462,7 @@
           "title": "MACH NATURAL RESOURCES LP",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-09-17T17:11:13.000Z",
+          "publishedAt": "2026-09-17T21:11:13.000Z",
           "headline": "4 filing — MACH NATURAL RESOURCES LP",
           "url": "https://www.sec.gov/Archives/edgar/data/1980088/000121390026101024/xslF345X06/ownership.xml",
           "source": "SEC EDGAR",
@@ -5522,7 +5474,7 @@
           "title": "MACH NATURAL RESOURCES LP",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-09-16T21:16:39.000Z",
+          "publishedAt": "2026-09-17T01:16:39.000Z",
           "headline": "4 filing — MACH NATURAL RESOURCES LP",
           "url": "https://www.sec.gov/Archives/edgar/data/1980088/000121390026100673/xslF345X06/ownership.xml",
           "source": "SEC EDGAR",
@@ -5568,7 +5520,7 @@
           "title": "Alpha Compute Corp",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-09-17T18:25:08.000Z",
+          "publishedAt": "2026-09-17T22:25:08.000Z",
           "headline": "4 filing — Alpha Compute Corp",
           "url": "https://www.sec.gov/Archives/edgar/data/1095435/000117184326006099/xslF345X06/ownership.xml",
           "source": "SEC EDGAR",
