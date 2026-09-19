@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-19T18:44:47.389Z",
+  "generatedAt": "2026-09-19T20:55:10.329Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-09-19T00:00:00.000Z",
-    "marketDataAgeMin": 1124.8,
+    "marketDataAgeMin": 1255.2,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-19T18:44:47.611Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-19T17:25:16.087Z",
+    "upstreamFeedFetchedAt": "2026-09-19T20:55:10.753Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-19T19:27:19.482Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-19T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 79.5,
-    "upstreamObservationAgeAtFetchMin": 1124.8,
+    "upstreamUpdateAgeAtFetchMin": 87.9,
+    "upstreamObservationAgeAtFetchMin": 1255.2,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 280,
@@ -279,20 +279,20 @@
       "observedAt": "2026-09-18T19:30:03-04:00"
     },
     {
-      "symbol": "FLX",
-      "price": 0.7837,
-      "changePct": -2.524875621890559,
-      "early": 58,
-      "ignition": 66,
-      "observedAt": "2026-09-18T18:40:14-04:00"
-    },
-    {
       "symbol": "RUBI",
       "price": 1.2,
       "changePct": 5.263157894736848,
       "early": 62,
       "ignition": 62,
       "observedAt": "2026-09-18T19:50:15-04:00"
+    },
+    {
+      "symbol": "FLX",
+      "price": 0.7837,
+      "changePct": -2.524875621890559,
+      "early": 58,
+      "ignition": 66,
+      "observedAt": "2026-09-18T18:40:14-04:00"
     },
     {
       "symbol": "BLNE",
@@ -472,13 +472,13 @@
       "title": "BioStem Technologies, Inc.",
       "cik": "0001658678"
     },
-    "FLX": {
-      "title": "BingEx Ltd",
-      "cik": "0001858724"
-    },
     "RUBI": {
       "title": "Rubico Inc.",
       "cik": "0001943421"
+    },
+    "FLX": {
+      "title": "BingEx Ltd",
+      "cik": "0001858724"
     },
     "BLNE": {
       "title": "Beeline Holdings, Inc.",
@@ -5750,10 +5750,6 @@
       ],
       "eventCount": 8
     },
-    "FLX": {
-      "events": [],
-      "eventCount": 0
-    },
     "RUBI": {
       "events": [
         {
@@ -5782,6 +5778,10 @@
         }
       ],
       "eventCount": 2
+    },
+    "FLX": {
+      "events": [],
+      "eventCount": 0
     },
     "BLNE": {
       "events": [
