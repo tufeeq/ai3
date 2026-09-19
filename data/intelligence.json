@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-19T08:54:41.933Z",
+  "generatedAt": "2026-09-19T12:30:44.948Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-09-19T00:00:00.000Z",
-    "marketDataAgeMin": 534.7,
+    "marketDataAgeMin": 750.8,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-19T08:54:42.538Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-19T06:33:09.695Z",
+    "upstreamFeedFetchedAt": "2026-09-19T12:30:45.233Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-19T11:25:35.879Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-19T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 141.5,
-    "upstreamObservationAgeAtFetchMin": 534.7,
+    "upstreamUpdateAgeAtFetchMin": 65.2,
+    "upstreamObservationAgeAtFetchMin": 750.8,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 280,
@@ -63,20 +63,20 @@
       "observedAt": "2026-09-18T19:54:55-04:00"
     },
     {
-      "symbol": "AUXX",
-      "price": 6.81,
-      "changePct": 12.74834437086092,
-      "early": 80,
-      "ignition": 88,
-      "observedAt": "2026-09-18T19:47:46-04:00"
-    },
-    {
       "symbol": "VIOT",
       "price": 1.33,
       "changePct": 3.1007751937984525,
       "early": 80,
       "ignition": 88,
       "observedAt": "2026-09-18T19:41:24-04:00"
+    },
+    {
+      "symbol": "AUXX",
+      "price": 6.81,
+      "changePct": 12.74834437086092,
+      "early": 80,
+      "ignition": 88,
+      "observedAt": "2026-09-18T19:47:46-04:00"
     },
     {
       "symbol": "NIVF",
@@ -364,13 +364,13 @@
       "title": "OceanPal Inc.",
       "cik": "0001869467"
     },
-    "AUXX": {
-      "title": "Gold X2 Mining Inc.",
-      "cik": "0001961592"
-    },
     "VIOT": {
       "title": "Viomi Technology Co., Ltd",
       "cik": "0001742770"
+    },
+    "AUXX": {
+      "title": "Gold X2 Mining Inc.",
+      "cik": "0001961592"
     },
     "NIVF": {
       "title": "NewGenIvf Group Ltd",
@@ -4949,6 +4949,23 @@
       "events": [],
       "eventCount": 0
     },
+    "VIOT": {
+      "events": [
+        {
+          "symbol": "VIOT",
+          "title": "Viomi Technology Co., Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-18T07:00:28-04:00",
+          "headline": "6-K filing — Viomi Technology Co., Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1742770/000149315226043230/0001493152-26-043230-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "AUXX": {
       "events": [
         {
@@ -5001,23 +5018,6 @@
         }
       ],
       "eventCount": 4
-    },
-    "VIOT": {
-      "events": [
-        {
-          "symbol": "VIOT",
-          "title": "Viomi Technology Co., Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-18T07:00:28-04:00",
-          "headline": "6-K filing — Viomi Technology Co., Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1742770/000149315226043230/0001493152-26-043230-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
     },
     "NIVF": {
       "events": [
