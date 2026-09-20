@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-20T01:11:13.761Z",
+  "generatedAt": "2026-09-20T05:13:27.306Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-09-19T00:00:00.000Z",
-    "marketDataAgeMin": 1511.2,
+    "marketDataAgeMin": 1753.5,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-20T01:11:13.989Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-19T23:36:30.512Z",
+    "upstreamFeedFetchedAt": "2026-09-20T05:13:28.190Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-20T01:38:49.421Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-19T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 94.7,
-    "upstreamObservationAgeAtFetchMin": 1511.2,
+    "upstreamUpdateAgeAtFetchMin": 214.6,
+    "upstreamObservationAgeAtFetchMin": 1753.5,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 280,
@@ -63,20 +63,20 @@
       "observedAt": "2026-09-18T19:54:55-04:00"
     },
     {
-      "symbol": "VIOT",
-      "price": 1.33,
-      "changePct": 3.1007751937984525,
-      "early": 80,
-      "ignition": 88,
-      "observedAt": "2026-09-18T19:41:24-04:00"
-    },
-    {
       "symbol": "AUXX",
       "price": 6.81,
       "changePct": 12.74834437086092,
       "early": 80,
       "ignition": 88,
       "observedAt": "2026-09-18T19:47:46-04:00"
+    },
+    {
+      "symbol": "VIOT",
+      "price": 1.33,
+      "changePct": 3.1007751937984525,
+      "early": 80,
+      "ignition": 88,
+      "observedAt": "2026-09-18T19:41:24-04:00"
     },
     {
       "symbol": "NIVF",
@@ -279,20 +279,20 @@
       "observedAt": "2026-09-18T19:30:03-04:00"
     },
     {
-      "symbol": "RUBI",
-      "price": 1.2,
-      "changePct": 5.263157894736848,
-      "early": 62,
-      "ignition": 62,
-      "observedAt": "2026-09-18T19:50:15-04:00"
-    },
-    {
       "symbol": "FLX",
       "price": 0.7837,
       "changePct": -2.524875621890559,
       "early": 58,
       "ignition": 66,
       "observedAt": "2026-09-18T18:40:14-04:00"
+    },
+    {
+      "symbol": "RUBI",
+      "price": 1.2,
+      "changePct": 5.263157894736848,
+      "early": 62,
+      "ignition": 62,
+      "observedAt": "2026-09-18T19:50:15-04:00"
     },
     {
       "symbol": "BLNE",
@@ -364,13 +364,13 @@
       "title": "OceanPal Inc.",
       "cik": "0001869467"
     },
-    "VIOT": {
-      "title": "Viomi Technology Co., Ltd",
-      "cik": "0001742770"
-    },
     "AUXX": {
       "title": "Gold X2 Mining Inc.",
       "cik": "0001961592"
+    },
+    "VIOT": {
+      "title": "Viomi Technology Co., Ltd",
+      "cik": "0001742770"
     },
     "NIVF": {
       "title": "NewGenIvf Group Ltd",
@@ -472,13 +472,13 @@
       "title": "BioStem Technologies, Inc.",
       "cik": "0001658678"
     },
-    "RUBI": {
-      "title": "Rubico Inc.",
-      "cik": "0001943421"
-    },
     "FLX": {
       "title": "BingEx Ltd",
       "cik": "0001858724"
+    },
+    "RUBI": {
+      "title": "Rubico Inc.",
+      "cik": "0001943421"
     },
     "BLNE": {
       "title": "Beeline Holdings, Inc.",
@@ -4949,23 +4949,6 @@
       "events": [],
       "eventCount": 0
     },
-    "VIOT": {
-      "events": [
-        {
-          "symbol": "VIOT",
-          "title": "Viomi Technology Co., Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-18T07:00:28-04:00",
-          "headline": "6-K filing — Viomi Technology Co., Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1742770/000149315226043230/0001493152-26-043230-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
     "AUXX": {
       "events": [
         {
@@ -5018,6 +5001,23 @@
         }
       ],
       "eventCount": 4
+    },
+    "VIOT": {
+      "events": [
+        {
+          "symbol": "VIOT",
+          "title": "Viomi Technology Co., Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-18T07:00:28-04:00",
+          "headline": "6-K filing — Viomi Technology Co., Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1742770/000149315226043230/0001493152-26-043230-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
     },
     "NIVF": {
       "events": [
@@ -5750,6 +5750,10 @@
       ],
       "eventCount": 8
     },
+    "FLX": {
+      "events": [],
+      "eventCount": 0
+    },
     "RUBI": {
       "events": [
         {
@@ -5778,10 +5782,6 @@
         }
       ],
       "eventCount": 2
-    },
-    "FLX": {
-      "events": [],
-      "eventCount": 0
     },
     "BLNE": {
       "events": [
