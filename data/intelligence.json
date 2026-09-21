@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-21T06:23:14.683Z",
+  "generatedAt": "2026-09-21T06:50:21.512Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-09-19T00:00:00.000Z",
-    "marketDataAgeMin": 3263.3,
+    "marketDataAgeMin": 3290.4,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-21T06:23:14.965Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-21T03:21:39.119Z",
+    "upstreamFeedFetchedAt": "2026-09-21T06:50:22.157Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-21T06:31:12.105Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-19T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 181.6,
-    "upstreamObservationAgeAtFetchMin": 3263.2,
+    "upstreamUpdateAgeAtFetchMin": 19.2,
+    "upstreamObservationAgeAtFetchMin": 3290.4,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 280,
@@ -335,12 +335,12 @@
       "observedAt": "2026-09-18T19:58:57-04:00"
     },
     {
-      "symbol": "SGRX",
-      "price": 1.772,
-      "changePct": 9.315237507711291,
+      "symbol": "AIIO",
+      "price": 1.63,
+      "changePct": 6.535947712418292,
       "early": 61,
       "ignition": 61,
-      "observedAt": "2026-09-18T19:39:47-04:00"
+      "observedAt": "2026-09-18T19:30:04-04:00"
     }
   ],
   "companies": {
@@ -500,12 +500,12 @@
       "title": "BTC Digital Ltd.",
       "cik": "0001796514"
     },
-    "SGRX": {
-      "title": "SANGRIX INC.",
-      "cik": "0001735556"
+    "AIIO": {
+      "title": "ROBO.AI INC.",
+      "cik": "0001932737"
     }
   },
-  "eventCount": 360,
+  "eventCount": 365,
   "events": [
     {
       "symbol": "JJETF",
@@ -4156,18 +4156,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "SGRX",
-      "title": "SANGRIX INC.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-09-15T20:30:06.000Z",
-      "headline": "6-K filing — SANGRIX INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1735556/000110465926107943/tm2625401d1_6k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "ABEO",
       "title": "ABEONA THERAPEUTICS INC.",
       "type": "SEC",
@@ -4288,6 +4276,18 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
+      "symbol": "AIIO",
+      "title": "ROBO.AI INC.",
+      "type": "SEC",
+      "form": "424B3",
+      "publishedAt": "2026-09-11T20:10:17.000Z",
+      "headline": "424B3 filing — ROBO.AI INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1932737/000121390026099265/ea0305164-424b3_roboai.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
       "symbol": "RIBB",
       "title": "Ribbon Acquisition Corp.",
       "type": "SEC",
@@ -4295,6 +4295,18 @@
       "publishedAt": "2026-09-11T20:06:17.000Z",
       "headline": "8-K filing — Ribbon Acquisition Corp.",
       "url": "https://www.sec.gov/Archives/edgar/data/2035016/000121390026099263/ea0305254-8k_ribbon.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "AIIO",
+      "title": "ROBO.AI INC.",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-09-11T20:05:07.000Z",
+      "headline": "6-K filing — ROBO.AI INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1932737/000121390026099258/ea0305163-6k_roboai.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4372,6 +4384,18 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
+      "symbol": "AIIO",
+      "title": "ROBO.AI INC.",
+      "type": "SEC",
+      "form": "EFFECT",
+      "publishedAt": "2026-09-10T15:05:18.000Z",
+      "headline": "EFFECT filing — ROBO.AI INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1932737/999999999526002927/xslEFFECTX01/primary_doc.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
       "symbol": "TTRX",
       "title": "Turn Therapeutics Inc.",
       "type": "SEC",
@@ -4408,18 +4432,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "SGRX",
-      "title": "SANGRIX INC.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-09-09T20:30:25.000Z",
-      "headline": "6-K filing — SANGRIX INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1735556/000110465926106355/tm2625123d1_6k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "BAFN",
       "title": "BayFirst Financial Corp.",
       "type": "SEC",
@@ -4439,6 +4451,30 @@
       "publishedAt": "2026-09-09T16:28:28.000Z",
       "headline": "4 filing — BayFirst Financial Corp.",
       "url": "https://www.sec.gov/Archives/edgar/data/1649739/000188648426000009/xslF345X06/wk-form4_1788971305.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "AIIO",
+      "title": "ROBO.AI INC.",
+      "type": "SEC",
+      "form": "424B3",
+      "publishedAt": "2026-09-09T13:03:28.000Z",
+      "headline": "424B3 filing — ROBO.AI INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1932737/000121390026098239/ea0304953-424b3_roboai.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "AIIO",
+      "title": "ROBO.AI INC.",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-09-09T13:00:49.000Z",
+      "headline": "6-K filing — ROBO.AI INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1932737/000121390026098235/ea0304954-6k_roboai.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4499,6 +4535,30 @@
       "publishedAt": "2026-09-09T00:30:02.000Z",
       "headline": "6-K filing — Gold X2 Mining Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1961592/000106299326004855/form6k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "AIIO",
+      "title": "ROBO.AI INC.",
+      "type": "SEC",
+      "form": "424B3",
+      "publishedAt": "2026-09-08T20:07:13.000Z",
+      "headline": "424B3 filing — ROBO.AI INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1932737/000121390026098041/ea0304809-01.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "AIIO",
+      "title": "ROBO.AI INC.",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-09-08T20:05:38.000Z",
+      "headline": "6-K filing — ROBO.AI INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1932737/000121390026098039/ea0304811-01.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4588,13 +4648,13 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "SGRX",
-      "title": "SANGRIX INC.",
+      "symbol": "AIIO",
+      "title": "ROBO.AI INC.",
       "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-09-03T13:05:14.000Z",
-      "headline": "6-K filing — SANGRIX INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1735556/000110465926104943/tm2624620d1_6k.htm",
+      "form": "424B3",
+      "publishedAt": "2026-09-03T10:15:40.000Z",
+      "headline": "424B3 filing — ROBO.AI INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1932737/000121390026096902/ea0304518-424b3_roboai.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -6024,58 +6084,106 @@
       ],
       "eventCount": 4
     },
-    "SGRX": {
+    "AIIO": {
       "events": [
         {
-          "symbol": "SGRX",
-          "title": "SANGRIX INC.",
+          "symbol": "AIIO",
+          "title": "ROBO.AI INC.",
           "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-18T16:30:08-04:00",
-          "headline": "6-K filing — SANGRIX INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1735556/000110465926108949/0001104659-26-108949-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "SGRX",
-          "title": "SANGRIX INC.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-15T20:30:06.000Z",
-          "headline": "6-K filing — SANGRIX INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1735556/000110465926107943/tm2625401d1_6k.htm",
+          "form": "424B3",
+          "publishedAt": "2026-09-11T20:10:17.000Z",
+          "headline": "424B3 filing — ROBO.AI INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1932737/000121390026099265/ea0305164-424b3_roboai.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         },
         {
-          "symbol": "SGRX",
-          "title": "SANGRIX INC.",
+          "symbol": "AIIO",
+          "title": "ROBO.AI INC.",
           "type": "SEC",
           "form": "6-K",
-          "publishedAt": "2026-09-09T20:30:25.000Z",
-          "headline": "6-K filing — SANGRIX INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1735556/000110465926106355/tm2625123d1_6k.htm",
+          "publishedAt": "2026-09-11T20:05:07.000Z",
+          "headline": "6-K filing — ROBO.AI INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1932737/000121390026099258/ea0305163-6k_roboai.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         },
         {
-          "symbol": "SGRX",
-          "title": "SANGRIX INC.",
+          "symbol": "AIIO",
+          "title": "ROBO.AI INC.",
+          "type": "SEC",
+          "form": "EFFECT",
+          "publishedAt": "2026-09-10T15:05:18.000Z",
+          "headline": "EFFECT filing — ROBO.AI INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1932737/999999999526002927/xslEFFECTX01/primary_doc.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "AIIO",
+          "title": "ROBO.AI INC.",
+          "type": "SEC",
+          "form": "424B3",
+          "publishedAt": "2026-09-09T13:03:28.000Z",
+          "headline": "424B3 filing — ROBO.AI INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1932737/000121390026098239/ea0304953-424b3_roboai.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "AIIO",
+          "title": "ROBO.AI INC.",
           "type": "SEC",
           "form": "6-K",
-          "publishedAt": "2026-09-03T13:05:14.000Z",
-          "headline": "6-K filing — SANGRIX INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1735556/000110465926104943/tm2624620d1_6k.htm",
+          "publishedAt": "2026-09-09T13:00:49.000Z",
+          "headline": "6-K filing — ROBO.AI INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1932737/000121390026098235/ea0304954-6k_roboai.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "AIIO",
+          "title": "ROBO.AI INC.",
+          "type": "SEC",
+          "form": "424B3",
+          "publishedAt": "2026-09-08T20:07:13.000Z",
+          "headline": "424B3 filing — ROBO.AI INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1932737/000121390026098041/ea0304809-01.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "AIIO",
+          "title": "ROBO.AI INC.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-08T20:05:38.000Z",
+          "headline": "6-K filing — ROBO.AI INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1932737/000121390026098039/ea0304811-01.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "AIIO",
+          "title": "ROBO.AI INC.",
+          "type": "SEC",
+          "form": "424B3",
+          "publishedAt": "2026-09-03T10:15:40.000Z",
+          "headline": "424B3 filing — ROBO.AI INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1932737/000121390026096902/ea0304518-424b3_roboai.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 4
+      "eventCount": 8
     },
     "JJETF": {
       "events": [
@@ -7808,6 +7916,23 @@
           "publishedAt": "2026-09-18T16:30:17-04:00",
           "headline": "8-K filing — BeyondSpring Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1677940/000117184326006116/0001171843-26-006116-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "SGRX": {
+      "events": [
+        {
+          "symbol": "SGRX",
+          "title": "SANGRIX INC.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-18T16:30:08-04:00",
+          "headline": "6-K filing — SANGRIX INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1735556/000110465926108949/0001104659-26-108949-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
