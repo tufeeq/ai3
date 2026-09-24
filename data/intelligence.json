@@ -1,21 +1,21 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-24T05:16:56.444Z",
+  "generatedAt": "2026-09-24T08:43:17.309Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
     "marketDataFresh": false,
-    "marketWindowOpen": false,
-    "marketSession": "closed",
+    "marketWindowOpen": true,
+    "marketSession": "pre-market",
     "newestObservedAt": "2026-09-24T00:00:00.000Z",
-    "marketDataAgeMin": 316.9,
+    "marketDataAgeMin": 523.3,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-24T05:16:56.710Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-24T02:36:31.008Z",
+    "upstreamFeedFetchedAt": "2026-09-24T08:43:17.573Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-24T07:50:17.540Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-24T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 160.4,
-    "upstreamObservationAgeAtFetchMin": 316.9,
+    "upstreamUpdateAgeAtFetchMin": 53,
+    "upstreamObservationAgeAtFetchMin": 523.3,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 279,
@@ -143,20 +143,20 @@
       "observedAt": "2026-09-23T19:55:20-04:00"
     },
     {
-      "symbol": "CMND",
-      "price": 0.8509,
-      "changePct": 8.92217101894521,
-      "early": 68,
-      "ignition": 68,
-      "observedAt": "2026-09-23T19:50:24-04:00"
-    },
-    {
       "symbol": "NXTT",
       "price": 5.93,
       "changePct": -5.1200000000000045,
       "early": 68,
       "ignition": 68,
       "observedAt": "2026-09-23T19:40:19-04:00"
+    },
+    {
+      "symbol": "CMND",
+      "price": 0.8509,
+      "changePct": 8.92217101894521,
+      "early": 68,
+      "ignition": 68,
+      "observedAt": "2026-09-23T19:50:24-04:00"
     },
     {
       "symbol": "SKYE",
@@ -271,20 +271,20 @@
       "observedAt": "2026-09-23T19:21:36-04:00"
     },
     {
-      "symbol": "RRR",
-      "price": 51.99,
-      "changePct": 6.624282198523389,
-      "early": 58,
-      "ignition": 66,
-      "observedAt": "2026-09-23T19:30:01-04:00"
-    },
-    {
       "symbol": "IXHL",
       "price": 3.4785,
       "changePct": 2.459499263622972,
       "early": 62,
       "ignition": 62,
       "observedAt": "2026-09-23T19:49:48-04:00"
+    },
+    {
+      "symbol": "RRR",
+      "price": 51.99,
+      "changePct": 6.624282198523389,
+      "early": 58,
+      "ignition": 66,
+      "observedAt": "2026-09-23T19:30:01-04:00"
     },
     {
       "symbol": "SNT",
@@ -303,12 +303,12 @@
       "observedAt": "2026-09-23T19:51:42-04:00"
     },
     {
-      "symbol": "SHMD",
-      "price": 3.75,
-      "changePct": 4.456824512534823,
+      "symbol": "AIFC",
+      "price": 0.56,
+      "changePct": 9.803921568627459,
       "early": 61,
       "ignition": 61,
-      "observedAt": "2026-09-23T19:30:01-04:00"
+      "observedAt": "2026-09-23T19:36:25-04:00"
     },
     {
       "symbol": "APRE",
@@ -319,12 +319,12 @@
       "observedAt": "2026-09-23T19:30:05-04:00"
     },
     {
-      "symbol": "AIFC",
-      "price": 0.56,
-      "changePct": 9.803921568627459,
+      "symbol": "SHMD",
+      "price": 3.75,
+      "changePct": 4.456824512534823,
       "early": 61,
       "ignition": 61,
-      "observedAt": "2026-09-23T19:36:25-04:00"
+      "observedAt": "2026-09-23T19:30:01-04:00"
     },
     {
       "symbol": "FABC",
@@ -404,13 +404,13 @@
       "title": "SPRINGVIEW HOLDINGS LTD",
       "cik": "0002002236"
     },
-    "CMND": {
-      "title": "Clearmind Medicine Inc.",
-      "cik": "0001892500"
-    },
     "NXTT": {
       "title": "Next Technology Holding Inc.",
       "cik": "0001784970"
+    },
+    "CMND": {
+      "title": "Clearmind Medicine Inc.",
+      "cik": "0001892500"
     },
     "SKYE": {
       "title": "Skye Bioscience, Inc.",
@@ -468,13 +468,13 @@
       "title": "Acurx Pharmaceuticals, Inc.",
       "cik": "0001736243"
     },
-    "RRR": {
-      "title": "Red Rock Resorts, Inc.",
-      "cik": "0001653653"
-    },
     "IXHL": {
       "title": "Incannex Healthcare Inc.",
       "cik": "0001873875"
+    },
+    "RRR": {
+      "title": "Red Rock Resorts, Inc.",
+      "cik": "0001653653"
     },
     "SNT": {
       "title": "Senstar Technologies Corp",
@@ -484,17 +484,17 @@
       "title": "TIGO ENERGY, INC.",
       "cik": "0001855447"
     },
-    "SHMD": {
-      "title": "SCHMID Group N.V.",
-      "cik": "0001987240"
+    "AIFC": {
+      "title": "AI Financial Corp",
+      "cik": "0000862861"
     },
     "APRE": {
       "title": "Aprea Therapeutics, Inc.",
       "cik": "0001781983"
     },
-    "AIFC": {
-      "title": "AI Financial Corp",
-      "cik": "0000862861"
+    "SHMD": {
+      "title": "SCHMID Group N.V.",
+      "cik": "0001987240"
     },
     "FABC": {
       "title": "Fabric.AI, Inc.",
@@ -5032,6 +5032,10 @@
       ],
       "eventCount": 1
     },
+    "NXTT": {
+      "events": [],
+      "eventCount": 0
+    },
     "CMND": {
       "events": [
         {
@@ -5108,10 +5112,6 @@
         }
       ],
       "eventCount": 6
-    },
-    "NXTT": {
-      "events": [],
-      "eventCount": 0
     },
     "SKYE": {
       "events": [
@@ -5439,10 +5439,6 @@
       ],
       "eventCount": 3
     },
-    "RRR": {
-      "events": [],
-      "eventCount": 0
-    },
     "IXHL": {
       "events": [
         {
@@ -5459,6 +5455,10 @@
         }
       ],
       "eventCount": 1
+    },
+    "RRR": {
+      "events": [],
+      "eventCount": 0
     },
     "SNT": {
       "events": [],
@@ -5517,6 +5517,14 @@
       ],
       "eventCount": 4
     },
+    "AIFC": {
+      "events": [],
+      "eventCount": 0
+    },
+    "APRE": {
+      "events": [],
+      "eventCount": 0
+    },
     "SHMD": {
       "events": [
         {
@@ -5533,14 +5541,6 @@
         }
       ],
       "eventCount": 1
-    },
-    "APRE": {
-      "events": [],
-      "eventCount": 0
-    },
-    "AIFC": {
-      "events": [],
-      "eventCount": 0
     },
     "FABC": {
       "events": [],
