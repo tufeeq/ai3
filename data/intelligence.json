@@ -1,21 +1,21 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-25T05:26:24.140Z",
+  "generatedAt": "2026-09-25T09:27:49.315Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
     "marketDataFresh": false,
-    "marketWindowOpen": false,
-    "marketSession": "closed",
+    "marketWindowOpen": true,
+    "marketSession": "pre-market",
     "newestObservedAt": "2026-09-25T00:00:00.000Z",
-    "marketDataAgeMin": 326.4,
+    "marketDataAgeMin": 567.8,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-09-25T05:26:24.378Z",
-    "upstreamUpdatedAtAtBuild": "2026-09-25T05:25:41.175Z",
+    "upstreamFeedFetchedAt": "2026-09-25T09:27:50.001Z",
+    "upstreamUpdatedAtAtBuild": "2026-09-25T06:42:52.325Z",
     "upstreamNewestObservedAtAtBuild": "2026-09-25T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 0.7,
-    "upstreamObservationAgeAtFetchMin": 326.4,
+    "upstreamUpdateAgeAtFetchMin": 165,
+    "upstreamObservationAgeAtFetchMin": 567.8,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 203,
@@ -175,20 +175,20 @@
       "observedAt": "2026-09-24T18:37:10-04:00"
     },
     {
-      "symbol": "SPWR",
-      "price": 0.31,
-      "changePct": 3.3333333333333366,
-      "early": 65,
-      "ignition": 65,
-      "observedAt": "2026-09-24T17:49:28-04:00"
-    },
-    {
       "symbol": "MYSZ",
       "price": 1.79,
       "changePct": -4.787234042553185,
       "early": 65,
       "ignition": 65,
       "observedAt": "2026-09-24T19:56:00-04:00"
+    },
+    {
+      "symbol": "SPWR",
+      "price": 0.31,
+      "changePct": 3.3333333333333366,
+      "early": 65,
+      "ignition": 65,
+      "observedAt": "2026-09-24T17:49:28-04:00"
     },
     {
       "symbol": "ITUB",
@@ -255,20 +255,20 @@
       "observedAt": "2026-09-24T19:30:03-04:00"
     },
     {
-      "symbol": "VTIX",
-      "price": 1.2,
-      "changePct": 6.194690265486732,
-      "early": 58,
-      "ignition": 66,
-      "observedAt": "2026-09-24T19:30:04-04:00"
-    },
-    {
       "symbol": "ADPT",
       "price": 29.96,
       "changePct": 7.42201505916099,
       "early": 58,
       "ignition": 66,
       "observedAt": "2026-09-24T19:58:08-04:00"
+    },
+    {
+      "symbol": "VTIX",
+      "price": 1.2,
+      "changePct": 6.194690265486732,
+      "early": 58,
+      "ignition": 66,
+      "observedAt": "2026-09-24T19:30:04-04:00"
     },
     {
       "symbol": "PAPL",
@@ -279,20 +279,20 @@
       "observedAt": "2026-09-24T18:04:44-04:00"
     },
     {
-      "symbol": "CHAI",
-      "price": 0.2935,
-      "changePct": -3.738930796982624,
-      "early": 62,
-      "ignition": 62,
-      "observedAt": "2026-09-24T19:54:40-04:00"
-    },
-    {
       "symbol": "CNXU",
       "price": 4.15,
       "changePct": -1.4251781472683993,
       "early": 62,
       "ignition": 62,
       "observedAt": "2026-09-24T19:30:03-04:00"
+    },
+    {
+      "symbol": "CHAI",
+      "price": 0.2935,
+      "changePct": -3.738930796982624,
+      "early": 62,
+      "ignition": 62,
+      "observedAt": "2026-09-24T19:54:40-04:00"
     },
     {
       "symbol": "AVD",
@@ -420,13 +420,13 @@
       "title": "SAMFINE CREATION HOLDINGS GROUP Ltd",
       "cik": "0001926792"
     },
-    "SPWR": {
-      "title": "SunPower Inc.",
-      "cik": "0001838987"
-    },
     "MYSZ": {
       "title": "My Size, Inc.",
       "cik": "0001211805"
+    },
+    "SPWR": {
+      "title": "SunPower Inc.",
+      "cik": "0001838987"
     },
     "ITUB": {
       "title": "Itau Unibanco Holding S.A.",
@@ -460,25 +460,25 @@
       "title": "XTL BIOPHARMACEUTICALS LTD",
       "cik": "0001023549"
     },
-    "VTIX": {
-      "title": "Virtuix Holdings Inc.",
-      "cik": "0001606242"
-    },
     "ADPT": {
       "title": "Adaptive Biotechnologies Corp",
       "cik": "0001478320"
+    },
+    "VTIX": {
+      "title": "Virtuix Holdings Inc.",
+      "cik": "0001606242"
     },
     "PAPL": {
       "title": "Pineapple Financial Inc.",
       "cik": "0001938109"
     },
-    "CHAI": {
-      "title": "Core AI Holdings, Inc.",
-      "cik": "0001649009"
-    },
     "CNXU": {
       "title": "Conexeu Sciences Inc.",
       "cik": "0002066836"
+    },
+    "CHAI": {
+      "title": "Core AI Holdings, Inc.",
+      "cik": "0001649009"
     },
     "AVD": {
       "title": "AMERICAN VANGUARD CORP",
@@ -4255,6 +4255,23 @@
       "events": [],
       "eventCount": 0
     },
+    "MYSZ": {
+      "events": [
+        {
+          "symbol": "MYSZ",
+          "title": "My Size, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-09-16T13:28:19.000Z",
+          "headline": "8-K filing — My Size, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1211805/000149315226042852/form8-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
     "SPWR": {
       "events": [
         {
@@ -4355,23 +4372,6 @@
         }
       ],
       "eventCount": 8
-    },
-    "MYSZ": {
-      "events": [
-        {
-          "symbol": "MYSZ",
-          "title": "My Size, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-16T13:28:19.000Z",
-          "headline": "8-K filing — My Size, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1211805/000149315226042852/form8-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
     },
     "ITUB": {
       "events": [
@@ -4628,10 +4628,6 @@
       "events": [],
       "eventCount": 0
     },
-    "VTIX": {
-      "events": [],
-      "eventCount": 0
-    },
     "ADPT": {
       "events": [
         {
@@ -4685,26 +4681,13 @@
       ],
       "eventCount": 4
     },
-    "PAPL": {
+    "VTIX": {
       "events": [],
       "eventCount": 0
     },
-    "CHAI": {
-      "events": [
-        {
-          "symbol": "CHAI",
-          "title": "Core AI Holdings, Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-23T12:30:20.000Z",
-          "headline": "6-K filing — Core AI Holdings, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1649009/000149315226043824/form6-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
+    "PAPL": {
+      "events": [],
+      "eventCount": 0
     },
     "CNXU": {
       "events": [
@@ -4770,6 +4753,23 @@
         }
       ],
       "eventCount": 5
+    },
+    "CHAI": {
+      "events": [
+        {
+          "symbol": "CHAI",
+          "title": "Core AI Holdings, Inc.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-23T12:30:20.000Z",
+          "headline": "6-K filing — Core AI Holdings, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1649009/000149315226043824/form6-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
     },
     "AVD": {
       "events": [],
