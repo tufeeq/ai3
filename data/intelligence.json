@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-02T00:38:19.027Z",
+  "generatedAt": "2026-10-02T02:17:54.967Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,17 +8,17 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-02T00:00:00.000Z",
-    "marketDataAgeMin": 38.3,
+    "marketDataAgeMin": 137.9,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-02T00:38:19.747Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-02T00:00:52.311Z",
+    "upstreamFeedFetchedAt": "2026-10-02T02:17:55.193Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-02T01:43:09.508Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-02T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 37.5,
-    "upstreamObservationAgeAtFetchMin": 38.3,
+    "upstreamUpdateAgeAtFetchMin": 34.8,
+    "upstreamObservationAgeAtFetchMin": 137.9,
     "secMapping": true,
     "secMarketwideDiscovery": true,
-    "secMarketwideEventCount": 274,
+    "secMarketwideEventCount": 269,
     "newsDiscovery": true
   },
   "shortlist": [
@@ -183,14 +183,6 @@
       "observedAt": "2026-10-01T19:57:22-04:00"
     },
     {
-      "symbol": "CAPS",
-      "price": 0.1472,
-      "changePct": 2.222222222222228,
-      "early": 67,
-      "ignition": 67,
-      "observedAt": "2026-10-01T19:46:36-04:00"
-    },
-    {
       "symbol": "CMDB",
       "price": 23,
       "changePct": 5.407882676443628,
@@ -205,6 +197,14 @@
       "early": 60,
       "ignition": 74,
       "observedAt": "2026-10-01T16:01:23-04:00"
+    },
+    {
+      "symbol": "CAPS",
+      "price": 0.1472,
+      "changePct": 2.222222222222228,
+      "early": 67,
+      "ignition": 67,
+      "observedAt": "2026-10-01T19:46:36-04:00"
     },
     {
       "symbol": "CNH",
@@ -255,9 +255,25 @@
       "observedAt": "2026-10-01T19:59:55-04:00"
     },
     {
+      "symbol": "AXG",
+      "price": 0.128,
+      "changePct": 2.3181454836131206,
+      "early": 61,
+      "ignition": 69,
+      "observedAt": "2026-10-01T19:54:44-04:00"
+    },
+    {
       "symbol": "ICCM",
       "price": 1.69,
       "changePct": 4.643962848297211,
+      "early": 60,
+      "ignition": 68,
+      "observedAt": "2026-10-01T19:30:04-04:00"
+    },
+    {
+      "symbol": "FABC",
+      "price": 2.33,
+      "changePct": 2.192982456140363,
       "early": 60,
       "ignition": 68,
       "observedAt": "2026-10-01T19:30:04-04:00"
@@ -271,20 +287,12 @@
       "observedAt": "2026-10-01T16:01:24-04:00"
     },
     {
-      "symbol": "FABC",
-      "price": 2.33,
-      "changePct": 2.192982456140363,
-      "early": 60,
-      "ignition": 68,
-      "observedAt": "2026-10-01T19:30:04-04:00"
-    },
-    {
-      "symbol": "VLY",
-      "price": 12.4738,
-      "changePct": -1.1584786053882612,
+      "symbol": "IOT",
+      "price": 40.3,
+      "changePct": 5.691056910569091,
       "early": 63,
       "ignition": 63,
-      "observedAt": "2026-10-01T19:30:05-04:00"
+      "observedAt": "2026-10-01T19:59:02-04:00"
     },
     {
       "symbol": "NCI",
@@ -311,14 +319,6 @@
       "observedAt": "2026-10-01T16:03:47-04:00"
     },
     {
-      "symbol": "SGLY",
-      "price": 0.78,
-      "changePct": 3.986135181975742,
-      "early": 61,
-      "ignition": 61,
-      "observedAt": "2026-10-01T18:20:42-04:00"
-    },
-    {
       "symbol": "BURU",
       "price": 1.01,
       "changePct": 2.4236892810059865,
@@ -327,12 +327,12 @@
       "observedAt": "2026-10-01T19:54:49-04:00"
     },
     {
-      "symbol": "AXG",
-      "price": 0.128,
-      "changePct": 2.3181454836131206,
+      "symbol": "SGLY",
+      "price": 0.78,
+      "changePct": 3.986135181975742,
       "early": 61,
       "ignition": 61,
-      "observedAt": "2026-10-01T19:54:44-04:00"
+      "observedAt": "2026-10-01T18:20:42-04:00"
     },
     {
       "symbol": "FIVN",
@@ -424,10 +424,6 @@
       "title": "CALLAN JMB INC.",
       "cik": "0002032545"
     },
-    "CAPS": {
-      "title": "Capstone Holding Corp.",
-      "cik": "0000887151"
-    },
     "CMDB": {
       "title": "Costamare Bulkers Holdings Ltd",
       "cik": "0002033535"
@@ -435,6 +431,10 @@
     "HY": {
       "title": "HYSTER-YALE, INC.",
       "cik": "0001173514"
+    },
+    "CAPS": {
+      "title": "Capstone Holding Corp.",
+      "cik": "0000887151"
     },
     "CNH": {
       "title": "CNH Industrial N.V.",
@@ -460,21 +460,25 @@
       "title": "Catheter Precision, Inc.",
       "cik": "0001716621"
     },
+    "AXG": {
+      "title": "Solowin Holdings, Ltd.",
+      "cik": "0001959224"
+    },
     "ICCM": {
       "title": "IceCure Medical Ltd.",
       "cik": "0001584371"
-    },
-    "SAFE": {
-      "title": "Safehold Inc.",
-      "cik": "0001095651"
     },
     "FABC": {
       "title": "Fabric.AI, Inc.",
       "cik": "0001086745"
     },
-    "VLY": {
-      "title": "VALLEY NATIONAL BANCORP",
-      "cik": "0000714310"
+    "SAFE": {
+      "title": "Safehold Inc.",
+      "cik": "0001095651"
+    },
+    "IOT": {
+      "title": "Samsara Inc.",
+      "cik": "0001642896"
     },
     "NCI": {
       "title": "Neo-Concept International Group Holdings Ltd",
@@ -488,25 +492,45 @@
       "title": "HERC HOLDINGS INC",
       "cik": "0001364479"
     },
-    "SGLY": {
-      "title": "Singularity Future Technology Ltd.",
-      "cik": "0001422892"
-    },
     "BURU": {
       "title": "Nuburu, Inc.",
       "cik": "0001814215"
     },
-    "AXG": {
-      "title": "Solowin Holdings, Ltd.",
-      "cik": "0001959224"
+    "SGLY": {
+      "title": "Singularity Future Technology Ltd.",
+      "cik": "0001422892"
     },
     "FIVN": {
       "title": "Five9, Inc.",
       "cik": "0001288847"
     }
   },
-  "eventCount": 353,
+  "eventCount": 355,
   "events": [
+    {
+      "symbol": "IOT",
+      "title": "Samsara Inc.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-10-02T00:29:54.000Z",
+      "headline": "4 filing — Samsara Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1642896/000189511126000019/xslF345X06/form4-10022026_121049.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "IOT",
+      "title": "Samsara Inc.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-10-02T00:28:54.000Z",
+      "headline": "4 filing — Samsara Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1642896/000189510626000020/xslF345X06/form4-10022026_121048.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
     {
       "symbol": "FWDI",
       "title": "Forward Industries, Inc.",
@@ -2992,6 +3016,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "IOT",
+      "title": "Samsara Inc.",
+      "type": "SEC",
+      "form": "144",
+      "publishedAt": "2026-10-01T16:07:45.000Z",
+      "headline": "144 filing — Samsara Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1642896/000192109426001063/xsl144X01/primary_doc.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
       "symbol": "NMG",
       "title": "Nouveau Monde Graphite Inc.",
       "type": "SEC",
@@ -4024,40 +4060,40 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "SCQC",
-      "title": "SPACCircle Acquisition Corp.",
+      "symbol": "IOT",
+      "title": "Samsara Inc.",
       "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-09-29T17:34:37-04:00",
-      "headline": "S-1 filing — SPACCircle Acquisition Corp.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2131303/000118518526004412/0001185185-26-004412-index.htm",
+      "form": "4",
+      "publishedAt": "2026-09-29T22:48:05.000Z",
+      "headline": "4 filing — Samsara Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1642896/000189510126000020/xslF345X06/form4-09292026_100901.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "CPK",
-      "title": "CHESAPEAKE UTILITIES CORP",
+      "symbol": "IOT",
+      "title": "Samsara Inc.",
       "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-09-29T17:29:53-04:00",
-      "headline": "S-3 filing — CHESAPEAKE UTILITIES CORP",
-      "url": "https://www.sec.gov/Archives/edgar/data/19745/000119312526407842/0001193125-26-407842-index.htm",
+      "form": "144",
+      "publishedAt": "2026-09-29T21:11:12.000Z",
+      "headline": "144 filing — Samsara Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1642896/000192109426001057/xsl144X01/primary_doc.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "VLOSU",
-      "title": "Velos Acquisition I Corp.",
+      "symbol": "IOT",
+      "title": "Samsara Inc.",
       "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-09-29T17:04:40-04:00",
-      "headline": "S-1 filing — Velos Acquisition I Corp.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2016072/000121390026104746/0001213900-26-104746-index.htm",
+      "form": "144",
+      "publishedAt": "2026-09-29T21:09:05.000Z",
+      "headline": "144 filing — Samsara Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1642896/000192109426001056/xsl144X01/primary_doc.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "APYX",
@@ -4072,18 +4108,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "CCL",
-      "title": "Carnival Corp Ltd.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-09-29T16:14:03-04:00",
-      "headline": "S-3 filing — Carnival Corp Ltd.",
-      "url": "https://www.sec.gov/Archives/edgar/data/815097/000110465926111934/0001104659-26-111934-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
       "symbol": "CAPS",
       "title": "Capstone Holding Corp.",
       "type": "SEC",
@@ -4094,18 +4118,6 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "MBWM",
-      "title": "MERCANTILE BANK CORP",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-09-29T08:00:54-04:00",
-      "headline": "S-3 filing — MERCANTILE BANK CORP",
-      "url": "https://www.sec.gov/Archives/edgar/data/1042729/000143774926031418/0001437749-26-031418-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
     },
     {
       "symbol": "JELD",
@@ -4180,18 +4192,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "VLY",
-      "title": "VALLEY NATIONAL BANCORP",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-09-28T11:36:44.000Z",
-      "headline": "8-K filing — VALLEY NATIONAL BANCORP",
-      "url": "https://www.sec.gov/Archives/edgar/data/714310/000119312526403391/d31493d8k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "VTAK",
       "title": "Catheter Precision, Inc.",
       "type": "SEC",
@@ -4199,6 +4199,18 @@
       "publishedAt": "2026-09-25T21:26:11.000Z",
       "headline": "8-K filing — Catheter Precision, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1716621/000143774926031252/vtak20260925_8k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "IOT",
+      "title": "Samsara Inc.",
+      "type": "SEC",
+      "form": "144",
+      "publishedAt": "2026-09-25T20:19:45.000Z",
+      "headline": "144 filing — Samsara Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1642896/000195004726009825/xsl144X01/primary_doc.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4319,6 +4331,18 @@
       "publishedAt": "2026-09-22T11:43:14.000Z",
       "headline": "4 filing — SIMILARWEB LTD.",
       "url": "https://www.sec.gov/Archives/edgar/data/1842731/000197640826000859/xslF345X06/primary_doc.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "IOT",
+      "title": "Samsara Inc.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-09-21T21:16:20.000Z",
+      "headline": "4 filing — Samsara Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1642896/000207429826000018/xslF345X06/form4-09212026_090915.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -5501,35 +5525,6 @@
       "events": [],
       "eventCount": 0
     },
-    "CAPS": {
-      "events": [
-        {
-          "symbol": "CAPS",
-          "title": "Capstone Holding Corp.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-01T08:55:25.000Z",
-          "headline": "8-K filing — Capstone Holding Corp.",
-          "url": "https://www.sec.gov/Archives/edgar/data/887151/000143774926031664/caps20260930c_8k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "CAPS",
-          "title": "Capstone Holding Corp.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-29T12:55:12.000Z",
-          "headline": "8-K filing — Capstone Holding Corp.",
-          "url": "https://www.sec.gov/Archives/edgar/data/887151/000143774926031423/caps20260928_8k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
-    },
     "CMDB": {
       "events": [],
       "eventCount": 0
@@ -5635,6 +5630,35 @@
       ],
       "eventCount": 8
     },
+    "CAPS": {
+      "events": [
+        {
+          "symbol": "CAPS",
+          "title": "Capstone Holding Corp.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-01T08:55:25.000Z",
+          "headline": "8-K filing — Capstone Holding Corp.",
+          "url": "https://www.sec.gov/Archives/edgar/data/887151/000143774926031664/caps20260930c_8k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "CAPS",
+          "title": "Capstone Holding Corp.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-09-29T12:55:12.000Z",
+          "headline": "8-K filing — Capstone Holding Corp.",
+          "url": "https://www.sec.gov/Archives/edgar/data/887151/000143774926031423/caps20260928_8k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 2
+    },
     "CNH": {
       "events": [],
       "eventCount": 0
@@ -5698,6 +5722,35 @@
       ],
       "eventCount": 1
     },
+    "AXG": {
+      "events": [
+        {
+          "symbol": "AXG",
+          "title": "Solowin Holdings, Ltd.",
+          "type": "SEC",
+          "form": "424B5",
+          "publishedAt": "2026-09-21T19:40:22.000Z",
+          "headline": "424B5 filing — Solowin Holdings, Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1959224/000121390026101784/ea0306106-424b5_solowin.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "AXG",
+          "title": "Solowin Holdings, Ltd.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-21T19:20:11.000Z",
+          "headline": "6-K filing — Solowin Holdings, Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1959224/000121390026101769/ea0306103-6k_solowin.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 2
+    },
     "ICCM": {
       "events": [
         {
@@ -5715,30 +5768,114 @@
       ],
       "eventCount": 1
     },
-    "SAFE": {
-      "events": [],
-      "eventCount": 0
-    },
     "FABC": {
       "events": [],
       "eventCount": 0
     },
-    "VLY": {
+    "SAFE": {
+      "events": [],
+      "eventCount": 0
+    },
+    "IOT": {
       "events": [
         {
-          "symbol": "VLY",
-          "title": "VALLEY NATIONAL BANCORP",
+          "symbol": "IOT",
+          "title": "Samsara Inc.",
           "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-28T11:36:44.000Z",
-          "headline": "8-K filing — VALLEY NATIONAL BANCORP",
-          "url": "https://www.sec.gov/Archives/edgar/data/714310/000119312526403391/d31493d8k.htm",
+          "form": "4",
+          "publishedAt": "2026-10-02T00:29:54.000Z",
+          "headline": "4 filing — Samsara Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1642896/000189511126000019/xslF345X06/form4-10022026_121049.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "IOT",
+          "title": "Samsara Inc.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-10-02T00:28:54.000Z",
+          "headline": "4 filing — Samsara Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1642896/000189510626000020/xslF345X06/form4-10022026_121048.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "IOT",
+          "title": "Samsara Inc.",
+          "type": "SEC",
+          "form": "144",
+          "publishedAt": "2026-10-01T16:07:45.000Z",
+          "headline": "144 filing — Samsara Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1642896/000192109426001063/xsl144X01/primary_doc.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "IOT",
+          "title": "Samsara Inc.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-09-29T22:48:05.000Z",
+          "headline": "4 filing — Samsara Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1642896/000189510126000020/xslF345X06/form4-09292026_100901.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "IOT",
+          "title": "Samsara Inc.",
+          "type": "SEC",
+          "form": "144",
+          "publishedAt": "2026-09-29T21:11:12.000Z",
+          "headline": "144 filing — Samsara Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1642896/000192109426001057/xsl144X01/primary_doc.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "IOT",
+          "title": "Samsara Inc.",
+          "type": "SEC",
+          "form": "144",
+          "publishedAt": "2026-09-29T21:09:05.000Z",
+          "headline": "144 filing — Samsara Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1642896/000192109426001056/xsl144X01/primary_doc.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "IOT",
+          "title": "Samsara Inc.",
+          "type": "SEC",
+          "form": "144",
+          "publishedAt": "2026-09-25T20:19:45.000Z",
+          "headline": "144 filing — Samsara Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1642896/000195004726009825/xsl144X01/primary_doc.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "IOT",
+          "title": "Samsara Inc.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-09-21T21:16:20.000Z",
+          "headline": "4 filing — Samsara Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1642896/000207429826000018/xslF345X06/form4-09212026_090915.xml",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 1
+      "eventCount": 8
     },
     "NCI": {
       "events": [
@@ -5814,10 +5951,6 @@
       "events": [],
       "eventCount": 0
     },
-    "SGLY": {
-      "events": [],
-      "eventCount": 0
-    },
     "BURU": {
       "events": [
         {
@@ -5835,34 +5968,9 @@
       ],
       "eventCount": 1
     },
-    "AXG": {
-      "events": [
-        {
-          "symbol": "AXG",
-          "title": "Solowin Holdings, Ltd.",
-          "type": "SEC",
-          "form": "424B5",
-          "publishedAt": "2026-09-21T19:40:22.000Z",
-          "headline": "424B5 filing — Solowin Holdings, Ltd.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1959224/000121390026101784/ea0306106-424b5_solowin.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "AXG",
-          "title": "Solowin Holdings, Ltd.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-21T19:20:11.000Z",
-          "headline": "6-K filing — Solowin Holdings, Ltd.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1959224/000121390026101769/ea0306103-6k_solowin.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
+    "SGLY": {
+      "events": [],
+      "eventCount": 0
     },
     "FIVN": {
       "events": [
@@ -10018,91 +10126,6 @@
           "publishedAt": "2026-09-30T16:10:11-04:00",
           "headline": "S-1 filing — Cryptex Digital Market Cap ETF",
           "url": "https://www.sec.gov/Archives/edgar/data/2115027/000121390026105231/0001213900-26-105231-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "SCQC": {
-      "events": [
-        {
-          "symbol": "SCQC",
-          "title": "SPACCircle Acquisition Corp.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-09-29T17:34:37-04:00",
-          "headline": "S-1 filing — SPACCircle Acquisition Corp.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2131303/000118518526004412/0001185185-26-004412-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "CPK": {
-      "events": [
-        {
-          "symbol": "CPK",
-          "title": "CHESAPEAKE UTILITIES CORP",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-09-29T17:29:53-04:00",
-          "headline": "S-3 filing — CHESAPEAKE UTILITIES CORP",
-          "url": "https://www.sec.gov/Archives/edgar/data/19745/000119312526407842/0001193125-26-407842-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "VLOSU": {
-      "events": [
-        {
-          "symbol": "VLOSU",
-          "title": "Velos Acquisition I Corp.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-09-29T17:04:40-04:00",
-          "headline": "S-1 filing — Velos Acquisition I Corp.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2016072/000121390026104746/0001213900-26-104746-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "CCL": {
-      "events": [
-        {
-          "symbol": "CCL",
-          "title": "Carnival Corp Ltd.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-09-29T16:14:03-04:00",
-          "headline": "S-3 filing — Carnival Corp Ltd.",
-          "url": "https://www.sec.gov/Archives/edgar/data/815097/000110465926111934/0001104659-26-111934-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "MBWM": {
-      "events": [
-        {
-          "symbol": "MBWM",
-          "title": "MERCANTILE BANK CORP",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-09-29T08:00:54-04:00",
-          "headline": "S-3 filing — MERCANTILE BANK CORP",
-          "url": "https://www.sec.gov/Archives/edgar/data/1042729/000143774926031418/0001437749-26-031418-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
