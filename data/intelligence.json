@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-03T19:03:39.626Z",
+  "generatedAt": "2026-10-03T21:39:26.460Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-03T00:00:00.000Z",
-    "marketDataAgeMin": 1143.7,
-    "quoteCount": 800,
+    "marketDataAgeMin": 1299.4,
+    "quoteCount": 799,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-03T19:03:39.878Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-03T17:15:23.415Z",
+    "upstreamFeedFetchedAt": "2026-10-03T21:39:26.705Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-03T19:52:18.031Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-03T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 108.3,
-    "upstreamObservationAgeAtFetchMin": 1143.7,
+    "upstreamUpdateAgeAtFetchMin": 107.1,
+    "upstreamObservationAgeAtFetchMin": 1299.4,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 273,
@@ -167,20 +167,20 @@
       "observedAt": "2026-10-02T19:30:52-04:00"
     },
     {
-      "symbol": "ICU",
-      "price": 4.9,
-      "changePct": 4.477611940298506,
-      "early": 67,
-      "ignition": 75,
-      "observedAt": "2026-10-02T19:59:38-04:00"
-    },
-    {
       "symbol": "ATRA",
       "price": 9.65,
       "changePct": 1.7932489451476785,
       "early": 67,
       "ignition": 75,
       "observedAt": "2026-10-02T19:30:04-04:00"
+    },
+    {
+      "symbol": "ICU",
+      "price": 4.9,
+      "changePct": 4.477611940298506,
+      "early": 67,
+      "ignition": 75,
+      "observedAt": "2026-10-02T19:59:38-04:00"
     },
     {
       "symbol": "VYGR",
@@ -335,12 +335,12 @@
       "observedAt": "2026-10-02T19:59:22-04:00"
     },
     {
-      "symbol": "PRSO",
-      "price": 0.475,
-      "changePct": 0.3591802239594294,
+      "symbol": "ONCO",
+      "price": 0.74,
+      "changePct": 0.8586615783017544,
       "early": 56,
       "ignition": 64,
-      "observedAt": "2026-10-02T17:55:40-04:00"
+      "observedAt": "2026-10-02T19:50:31-04:00"
     }
   ],
   "companies": {
@@ -416,13 +416,13 @@
       "title": "BioStem Technologies, Inc.",
       "cik": "0001658678"
     },
-    "ICU": {
-      "title": "SeaStar Medical Holding Corp",
-      "cik": "0001831868"
-    },
     "ATRA": {
       "title": "Atara Biotherapeutics, Inc.",
       "cik": "0001604464"
+    },
+    "ICU": {
+      "title": "SeaStar Medical Holding Corp",
+      "cik": "0001831868"
     },
     "VYGR": {
       "title": "Voyager Therapeutics, Inc.",
@@ -500,25 +500,13 @@
       "title": "Zone Frontier Inc.",
       "cik": "0001956741"
     },
-    "PRSO": {
-      "title": "Peraso Inc.",
-      "cik": "0000890394"
+    "ONCO": {
+      "title": "Onconetix, Inc.",
+      "cik": "0001782107"
     }
   },
-  "eventCount": 340,
+  "eventCount": 341,
   "events": [
-    {
-      "symbol": "WVVI",
-      "title": "WILLAMETTE VALLEY VINEYARDS INC",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-10-03T00:14:47.000Z",
-      "headline": "4 filing — WILLAMETTE VALLEY VINEYARDS INC",
-      "url": "https://www.sec.gov/Archives/edgar/data/838875/000119983526000363/xslF345X06/ownership.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
     {
       "symbol": "TDBCP",
       "title": "TORONTO DOMINION BANK",
@@ -2560,6 +2548,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "WVVI",
+      "title": "WILLAMETTE VALLEY VINEYARDS INC",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-10-02T20:14:47.000Z",
+      "headline": "4 filing — WILLAMETTE VALLEY VINEYARDS INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/838875/000119983526000363/xslF345X06/ownership.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
       "symbol": "GFAIW",
       "title": "Guardforce AI Co., Ltd.",
       "type": "SEC",
@@ -2918,18 +2918,6 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "CNSY",
-      "title": "CERENOME, INC.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-10-02T15:30:19.000Z",
-      "headline": "8-K filing — CERENOME, INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1095981/000119312526411259/cnsy-20261002.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "CLVLF",
@@ -3292,6 +3280,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "CNSY",
+      "title": "CERENOME, INC.",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-10-02T11:30:19.000Z",
+      "headline": "8-K filing — CERENOME, INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1095981/000119312526411259/cnsy-20261002.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
       "symbol": "PHTCF",
       "title": "PLDT Inc.",
       "type": "SEC",
@@ -3520,18 +3520,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "WVVI",
-      "title": "WILLAMETTE VALLEY VINEYARDS INC",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-10-02T03:33:07.000Z",
-      "headline": "4 filing — WILLAMETTE VALLEY VINEYARDS INC",
-      "url": "https://www.sec.gov/Archives/edgar/data/838875/000119983526000361/xslF345X06/ownership.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "BLDP",
       "title": "Ballard Power Systems Inc.",
       "type": "SEC",
@@ -3650,6 +3638,18 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "WVVI",
+      "title": "WILLAMETTE VALLEY VINEYARDS INC",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-10-01T23:33:07.000Z",
+      "headline": "4 filing — WILLAMETTE VALLEY VINEYARDS INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/838875/000119983526000361/xslF345X06/ownership.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "DFNSW",
@@ -3832,11 +3832,23 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "QNME",
+      "title": "Quanome Technologies, Inc.",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-10-01T11:00:48-04:00",
+      "headline": "S-3 filing — Quanome Technologies, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1996192/000121390026105542/0001213900-26-105542-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "CNSY",
       "title": "CERENOME, INC.",
       "type": "SEC",
       "form": "4",
-      "publishedAt": "2026-10-01T16:00:09.000Z",
+      "publishedAt": "2026-10-01T12:00:09.000Z",
       "headline": "4 filing — CERENOME, INC.",
       "url": "https://www.sec.gov/Archives/edgar/data/1095981/000119312526409859/xslF345X06/ownership.xml",
       "source": "SEC EDGAR",
@@ -3848,7 +3860,7 @@
       "title": "CERENOME, INC.",
       "type": "SEC",
       "form": "4",
-      "publishedAt": "2026-10-01T16:00:08.000Z",
+      "publishedAt": "2026-10-01T12:00:08.000Z",
       "headline": "4 filing — CERENOME, INC.",
       "url": "https://www.sec.gov/Archives/edgar/data/1095981/000119312526409858/xslF345X06/ownership.xml",
       "source": "SEC EDGAR",
@@ -3860,7 +3872,7 @@
       "title": "CERENOME, INC.",
       "type": "SEC",
       "form": "4",
-      "publishedAt": "2026-10-01T16:00:07.000Z",
+      "publishedAt": "2026-10-01T12:00:07.000Z",
       "headline": "4 filing — CERENOME, INC.",
       "url": "https://www.sec.gov/Archives/edgar/data/1095981/000119312526409860/xslF345X06/ownership.xml",
       "source": "SEC EDGAR",
@@ -3872,7 +3884,7 @@
       "title": "CERENOME, INC.",
       "type": "SEC",
       "form": "4",
-      "publishedAt": "2026-10-01T16:00:05.000Z",
+      "publishedAt": "2026-10-01T12:00:05.000Z",
       "headline": "4 filing — CERENOME, INC.",
       "url": "https://www.sec.gov/Archives/edgar/data/1095981/000119312526409861/xslF345X06/ownership.xml",
       "source": "SEC EDGAR",
@@ -3884,24 +3896,12 @@
       "title": "CERENOME, INC.",
       "type": "SEC",
       "form": "4",
-      "publishedAt": "2026-10-01T16:00:03.000Z",
+      "publishedAt": "2026-10-01T12:00:03.000Z",
       "headline": "4 filing — CERENOME, INC.",
       "url": "https://www.sec.gov/Archives/edgar/data/1095981/000119312526409855/xslF345X06/ownership.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "QNME",
-      "title": "Quanome Technologies, Inc.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-10-01T11:00:48-04:00",
-      "headline": "S-3 filing — Quanome Technologies, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1996192/000121390026105542/0001213900-26-105542-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
     },
     {
       "symbol": "WBI",
@@ -4244,7 +4244,7 @@
       "title": "WILLAMETTE VALLEY VINEYARDS INC",
       "type": "SEC",
       "form": "4",
-      "publishedAt": "2026-09-22T19:16:43.000Z",
+      "publishedAt": "2026-09-22T15:16:43.000Z",
       "headline": "4 filing — WILLAMETTE VALLEY VINEYARDS INC",
       "url": "https://www.sec.gov/Archives/edgar/data/838875/000119983526000355/xslF345X06/ownership.xml",
       "source": "SEC EDGAR",
@@ -4552,6 +4552,18 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
+      "symbol": "ONCO",
+      "title": "Onconetix, Inc.",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-09-14T14:39:02.000Z",
+      "headline": "8-K filing — Onconetix, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1782107/000121390026099524/ea0305157-8k_onconetix.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
       "symbol": "CAN",
       "title": "Canaan Inc.",
       "type": "SEC",
@@ -4704,7 +4716,7 @@
           "title": "CERENOME, INC.",
           "type": "SEC",
           "form": "8-K",
-          "publishedAt": "2026-10-02T15:30:19.000Z",
+          "publishedAt": "2026-10-02T11:30:19.000Z",
           "headline": "8-K filing — CERENOME, INC.",
           "url": "https://www.sec.gov/Archives/edgar/data/1095981/000119312526411259/cnsy-20261002.htm",
           "source": "SEC EDGAR",
@@ -4716,7 +4728,7 @@
           "title": "CERENOME, INC.",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-10-01T16:00:09.000Z",
+          "publishedAt": "2026-10-01T12:00:09.000Z",
           "headline": "4 filing — CERENOME, INC.",
           "url": "https://www.sec.gov/Archives/edgar/data/1095981/000119312526409859/xslF345X06/ownership.xml",
           "source": "SEC EDGAR",
@@ -4728,7 +4740,7 @@
           "title": "CERENOME, INC.",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-10-01T16:00:08.000Z",
+          "publishedAt": "2026-10-01T12:00:08.000Z",
           "headline": "4 filing — CERENOME, INC.",
           "url": "https://www.sec.gov/Archives/edgar/data/1095981/000119312526409858/xslF345X06/ownership.xml",
           "source": "SEC EDGAR",
@@ -4740,7 +4752,7 @@
           "title": "CERENOME, INC.",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-10-01T16:00:07.000Z",
+          "publishedAt": "2026-10-01T12:00:07.000Z",
           "headline": "4 filing — CERENOME, INC.",
           "url": "https://www.sec.gov/Archives/edgar/data/1095981/000119312526409860/xslF345X06/ownership.xml",
           "source": "SEC EDGAR",
@@ -4752,7 +4764,7 @@
           "title": "CERENOME, INC.",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-10-01T16:00:05.000Z",
+          "publishedAt": "2026-10-01T12:00:05.000Z",
           "headline": "4 filing — CERENOME, INC.",
           "url": "https://www.sec.gov/Archives/edgar/data/1095981/000119312526409861/xslF345X06/ownership.xml",
           "source": "SEC EDGAR",
@@ -4764,7 +4776,7 @@
           "title": "CERENOME, INC.",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-10-01T16:00:03.000Z",
+          "publishedAt": "2026-10-01T12:00:03.000Z",
           "headline": "4 filing — CERENOME, INC.",
           "url": "https://www.sec.gov/Archives/edgar/data/1095981/000119312526409855/xslF345X06/ownership.xml",
           "source": "SEC EDGAR",
@@ -5203,11 +5215,11 @@
       ],
       "eventCount": 8
     },
-    "ICU": {
+    "ATRA": {
       "events": [],
       "eventCount": 0
     },
-    "ATRA": {
+    "ICU": {
       "events": [],
       "eventCount": 0
     },
@@ -5477,7 +5489,7 @@
           "title": "WILLAMETTE VALLEY VINEYARDS INC",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-10-03T00:14:47.000Z",
+          "publishedAt": "2026-10-02T20:14:47.000Z",
           "headline": "4 filing — WILLAMETTE VALLEY VINEYARDS INC",
           "url": "https://www.sec.gov/Archives/edgar/data/838875/000119983526000363/xslF345X06/ownership.xml",
           "source": "SEC EDGAR",
@@ -5489,7 +5501,7 @@
           "title": "WILLAMETTE VALLEY VINEYARDS INC",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-10-02T03:33:07.000Z",
+          "publishedAt": "2026-10-01T23:33:07.000Z",
           "headline": "4 filing — WILLAMETTE VALLEY VINEYARDS INC",
           "url": "https://www.sec.gov/Archives/edgar/data/838875/000119983526000361/xslF345X06/ownership.xml",
           "source": "SEC EDGAR",
@@ -5501,7 +5513,7 @@
           "title": "WILLAMETTE VALLEY VINEYARDS INC",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-09-22T19:16:43.000Z",
+          "publishedAt": "2026-09-22T15:16:43.000Z",
           "headline": "4 filing — WILLAMETTE VALLEY VINEYARDS INC",
           "url": "https://www.sec.gov/Archives/edgar/data/838875/000119983526000355/xslF345X06/ownership.xml",
           "source": "SEC EDGAR",
@@ -5599,9 +5611,22 @@
       ],
       "eventCount": 1
     },
-    "PRSO": {
-      "events": [],
-      "eventCount": 0
+    "ONCO": {
+      "events": [
+        {
+          "symbol": "ONCO",
+          "title": "Onconetix, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-09-14T14:39:02.000Z",
+          "headline": "8-K filing — Onconetix, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1782107/000121390026099524/ea0305157-8k_onconetix.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
     },
     "TDBCP": {
       "events": [
