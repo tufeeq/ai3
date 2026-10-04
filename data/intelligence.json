@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-04T06:22:54.953Z",
+  "generatedAt": "2026-10-04T11:59:22.531Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-03T00:00:00.000Z",
-    "marketDataAgeMin": 1822.9,
+    "marketDataAgeMin": 2159.4,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-04T06:22:55.407Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-04T01:54:34.967Z",
+    "upstreamFeedFetchedAt": "2026-10-04T11:59:23.172Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-04T07:46:26.777Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-03T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 268.3,
-    "upstreamObservationAgeAtFetchMin": 1822.9,
+    "upstreamUpdateAgeAtFetchMin": 252.9,
+    "upstreamObservationAgeAtFetchMin": 2159.4,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 273,
@@ -287,14 +287,6 @@
       "observedAt": "2026-10-02T17:15:24-04:00"
     },
     {
-      "symbol": "SMX",
-      "price": 3.8199,
-      "changePct": -0.002617801047114318,
-      "early": 57,
-      "ignition": 65,
-      "observedAt": "2026-10-02T19:59:53-04:00"
-    },
-    {
       "symbol": "DXST",
       "price": 2.379,
       "changePct": -1.6942148760330549,
@@ -303,12 +295,12 @@
       "observedAt": "2026-10-02T19:38:03-04:00"
     },
     {
-      "symbol": "BFRG",
-      "price": 0.61,
-      "changePct": -1.214574898785435,
+      "symbol": "SMX",
+      "price": 3.8199,
+      "changePct": -0.002617801047114318,
       "early": 57,
       "ignition": 65,
-      "observedAt": "2026-10-02T19:55:20-04:00"
+      "observedAt": "2026-10-02T19:59:53-04:00"
     },
     {
       "symbol": "DBGI",
@@ -317,6 +309,14 @@
       "early": 61,
       "ignition": 61,
       "observedAt": "2026-10-02T19:59:59-04:00"
+    },
+    {
+      "symbol": "BFRG",
+      "price": 0.61,
+      "changePct": -1.214574898785435,
+      "early": 57,
+      "ignition": 65,
+      "observedAt": "2026-10-02T19:55:20-04:00"
     },
     {
       "symbol": "LW",
@@ -476,21 +476,21 @@
       "title": "WILLAMETTE VALLEY VINEYARDS INC",
       "cik": "0000838875"
     },
-    "SMX": {
-      "title": "SMX (Security Matters) Public Ltd Co",
-      "cik": "0001940674"
-    },
     "DXST": {
       "title": "Decent Holding Inc.",
       "cik": "0001958133"
     },
-    "BFRG": {
-      "title": "BullFrog AI Holdings, Inc.",
-      "cik": "0001829247"
+    "SMX": {
+      "title": "SMX (Security Matters) Public Ltd Co",
+      "cik": "0001940674"
     },
     "DBGI": {
       "title": "Digital Brands Group, Inc.",
       "cik": "0001668010"
+    },
+    "BFRG": {
+      "title": "BullFrog AI Holdings, Inc.",
+      "cik": "0001829247"
     },
     "LW": {
       "title": "Lamb Weston Holdings, Inc.",
@@ -736,7 +736,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BACRP",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -820,7 +820,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BACRP",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -892,7 +892,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BACRP",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -928,7 +928,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BACRP",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1084,7 +1084,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BACRP",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1108,7 +1108,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BACRP",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1192,7 +1192,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BACRP",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1252,7 +1252,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BACRP",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1288,7 +1288,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BACRP",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1336,7 +1336,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BACRP",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1408,7 +1408,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BACRP",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1468,7 +1468,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BACRP",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -2524,7 +2524,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "FMCCI",
+      "symbol": "FMCCT",
       "title": "FEDERAL HOME LOAN MORTGAGE CORP",
       "type": "SEC",
       "form": "8-K",
@@ -2632,7 +2632,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "SPKLW",
+      "symbol": "SPKLU",
       "title": "Spark I Acquisition Corp",
       "type": "SEC",
       "form": "8-K",
@@ -2704,7 +2704,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "SPKLW",
+      "symbol": "SPKLU",
       "title": "Spark I Acquisition Corp",
       "type": "SEC",
       "form": "8-K",
@@ -3557,11 +3557,11 @@
     },
     {
       "symbol": "HELP",
-      "title": "CYBIN INC.",
+      "title": "Helus Pharma Inc.",
       "type": "SEC",
       "form": "6-K",
       "publishedAt": "2026-10-01T20:45:35-04:00",
-      "headline": "6-K filing — CYBIN INC.",
+      "headline": "6-K filing — Helus Pharma Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1833141/000183314126000087/0001833141-26-000087-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
@@ -5511,10 +5511,6 @@
       ],
       "eventCount": 3
     },
-    "SMX": {
-      "events": [],
-      "eventCount": 0
-    },
     "DXST": {
       "events": [
         {
@@ -5531,6 +5527,14 @@
         }
       ],
       "eventCount": 1
+    },
+    "SMX": {
+      "events": [],
+      "eventCount": 0
+    },
+    "DBGI": {
+      "events": [],
+      "eventCount": 0
     },
     "BFRG": {
       "events": [
@@ -5560,10 +5564,6 @@
         }
       ],
       "eventCount": 2
-    },
-    "DBGI": {
-      "events": [],
-      "eventCount": 0
     },
     "LW": {
       "events": [
@@ -5982,10 +5982,10 @@
       ],
       "eventCount": 3
     },
-    "BML-PJ": {
+    "BACRP": {
       "events": [
         {
-          "symbol": "BML-PJ",
+          "symbol": "BACRP",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -5997,7 +5997,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BML-PJ",
+          "symbol": "BACRP",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -6009,7 +6009,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BML-PJ",
+          "symbol": "BACRP",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -6021,7 +6021,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BML-PJ",
+          "symbol": "BACRP",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -6033,7 +6033,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BML-PJ",
+          "symbol": "BACRP",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -6045,7 +6045,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BML-PJ",
+          "symbol": "BACRP",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -6057,7 +6057,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BML-PJ",
+          "symbol": "BACRP",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -6069,7 +6069,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BML-PJ",
+          "symbol": "BACRP",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -8138,10 +8138,10 @@
       ],
       "eventCount": 1
     },
-    "FMCCI": {
+    "FMCCT": {
       "events": [
         {
-          "symbol": "FMCCI",
+          "symbol": "FMCCT",
           "title": "FEDERAL HOME LOAN MORTGAGE CORP",
           "type": "SEC",
           "form": "8-K",
@@ -8274,10 +8274,10 @@
       ],
       "eventCount": 1
     },
-    "SPKLW": {
+    "SPKLU": {
       "events": [
         {
-          "symbol": "SPKLW",
+          "symbol": "SPKLU",
           "title": "Spark I Acquisition Corp",
           "type": "SEC",
           "form": "8-K",
@@ -8289,7 +8289,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "SPKLW",
+          "symbol": "SPKLU",
           "title": "Spark I Acquisition Corp",
           "type": "SEC",
           "form": "8-K",
@@ -9482,11 +9482,11 @@
       "events": [
         {
           "symbol": "HELP",
-          "title": "CYBIN INC.",
+          "title": "Helus Pharma Inc.",
           "type": "SEC",
           "form": "6-K",
           "publishedAt": "2026-10-01T20:45:35-04:00",
-          "headline": "6-K filing — CYBIN INC.",
+          "headline": "6-K filing — Helus Pharma Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1833141/000183314126000087/0001833141-26-000087-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
