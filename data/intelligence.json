@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-04T22:56:36.328Z",
+  "generatedAt": "2026-10-05T01:41:01.682Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-03T00:00:00.000Z",
-    "marketDataAgeMin": 2816.6,
+    "marketDataAgeMin": 2981.1,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-04T22:56:36.863Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-04T20:32:02.197Z",
+    "upstreamFeedFetchedAt": "2026-10-05T01:41:03.489Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-04T23:35:33.359Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-03T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 144.6,
-    "upstreamObservationAgeAtFetchMin": 2816.6,
+    "upstreamUpdateAgeAtFetchMin": 125.5,
+    "upstreamObservationAgeAtFetchMin": 2981.1,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 273,
@@ -167,20 +167,20 @@
       "observedAt": "2026-10-02T19:30:52-04:00"
     },
     {
-      "symbol": "ATRA",
-      "price": 9.65,
-      "changePct": 1.7932489451476785,
-      "early": 67,
-      "ignition": 75,
-      "observedAt": "2026-10-02T19:30:04-04:00"
-    },
-    {
       "symbol": "ICU",
       "price": 4.9,
       "changePct": 4.477611940298506,
       "early": 67,
       "ignition": 75,
       "observedAt": "2026-10-02T19:59:38-04:00"
+    },
+    {
+      "symbol": "ATRA",
+      "price": 9.65,
+      "changePct": 1.7932489451476785,
+      "early": 67,
+      "ignition": 75,
+      "observedAt": "2026-10-02T19:30:04-04:00"
     },
     {
       "symbol": "VYGR",
@@ -287,14 +287,6 @@
       "observedAt": "2026-10-02T17:15:24-04:00"
     },
     {
-      "symbol": "DXST",
-      "price": 2.379,
-      "changePct": -1.6942148760330549,
-      "early": 57,
-      "ignition": 65,
-      "observedAt": "2026-10-02T19:38:03-04:00"
-    },
-    {
       "symbol": "SMX",
       "price": 3.8199,
       "changePct": -0.002617801047114318,
@@ -303,12 +295,12 @@
       "observedAt": "2026-10-02T19:59:53-04:00"
     },
     {
-      "symbol": "DBGI",
-      "price": 5.12,
-      "changePct": 5.133470225872689,
-      "early": 61,
-      "ignition": 61,
-      "observedAt": "2026-10-02T19:59:59-04:00"
+      "symbol": "DXST",
+      "price": 2.379,
+      "changePct": -1.6942148760330549,
+      "early": 57,
+      "ignition": 65,
+      "observedAt": "2026-10-02T19:38:03-04:00"
     },
     {
       "symbol": "BFRG",
@@ -317,6 +309,14 @@
       "early": 57,
       "ignition": 65,
       "observedAt": "2026-10-02T19:55:20-04:00"
+    },
+    {
+      "symbol": "DBGI",
+      "price": 5.12,
+      "changePct": 5.133470225872689,
+      "early": 61,
+      "ignition": 61,
+      "observedAt": "2026-10-02T19:59:59-04:00"
     },
     {
       "symbol": "LW",
@@ -416,13 +416,13 @@
       "title": "BioStem Technologies, Inc.",
       "cik": "0001658678"
     },
-    "ATRA": {
-      "title": "Atara Biotherapeutics, Inc.",
-      "cik": "0001604464"
-    },
     "ICU": {
       "title": "SeaStar Medical Holding Corp",
       "cik": "0001831868"
+    },
+    "ATRA": {
+      "title": "Atara Biotherapeutics, Inc.",
+      "cik": "0001604464"
     },
     "VYGR": {
       "title": "Voyager Therapeutics, Inc.",
@@ -476,21 +476,21 @@
       "title": "WILLAMETTE VALLEY VINEYARDS INC",
       "cik": "0000838875"
     },
-    "DXST": {
-      "title": "Decent Holding Inc.",
-      "cik": "0001958133"
-    },
     "SMX": {
       "title": "SMX (Security Matters) Public Ltd Co",
       "cik": "0001940674"
     },
-    "DBGI": {
-      "title": "Digital Brands Group, Inc.",
-      "cik": "0001668010"
+    "DXST": {
+      "title": "Decent Holding Inc.",
+      "cik": "0001958133"
     },
     "BFRG": {
       "title": "BullFrog AI Holdings, Inc.",
       "cik": "0001829247"
+    },
+    "DBGI": {
+      "title": "Digital Brands Group, Inc.",
+      "cik": "0001668010"
     },
     "LW": {
       "title": "Lamb Weston Holdings, Inc.",
@@ -505,7 +505,7 @@
       "cik": "0000890394"
     }
   },
-  "eventCount": 340,
+  "eventCount": 334,
   "events": [
     {
       "symbol": "TDBCP",
@@ -736,7 +736,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BACRP",
+      "symbol": "BML-PJ",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -820,7 +820,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BACRP",
+      "symbol": "BML-PJ",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -892,7 +892,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BACRP",
+      "symbol": "BML-PJ",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -928,7 +928,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BACRP",
+      "symbol": "BML-PJ",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1084,7 +1084,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BACRP",
+      "symbol": "BML-PJ",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1108,7 +1108,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BACRP",
+      "symbol": "BML-PJ",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1192,7 +1192,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BACRP",
+      "symbol": "BML-PJ",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1252,7 +1252,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BACRP",
+      "symbol": "BML-PJ",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1288,7 +1288,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BACRP",
+      "symbol": "BML-PJ",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1336,7 +1336,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BACRP",
+      "symbol": "BML-PJ",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1408,7 +1408,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BACRP",
+      "symbol": "BML-PJ",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1468,7 +1468,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BACRP",
+      "symbol": "BML-PJ",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -2524,7 +2524,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "FMCCT",
+      "symbol": "FMCCI",
       "title": "FEDERAL HOME LOAN MORTGAGE CORP",
       "type": "SEC",
       "form": "8-K",
@@ -2632,7 +2632,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "SPKLU",
+      "symbol": "SPKLW",
       "title": "Spark I Acquisition Corp",
       "type": "SEC",
       "form": "8-K",
@@ -2704,7 +2704,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "SPKLU",
+      "symbol": "SPKLW",
       "title": "Spark I Acquisition Corp",
       "type": "SEC",
       "form": "8-K",
@@ -3557,11 +3557,11 @@
     },
     {
       "symbol": "HELP",
-      "title": "Helus Pharma Inc.",
+      "title": "CYBIN INC.",
       "type": "SEC",
       "form": "6-K",
       "publishedAt": "2026-10-01T20:45:35-04:00",
-      "headline": "6-K filing — Helus Pharma Inc.",
+      "headline": "6-K filing — CYBIN INC.",
       "url": "https://www.sec.gov/Archives/edgar/data/1833141/000183314126000087/0001833141-26-000087-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
@@ -4514,78 +4514,6 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "ELUT",
-      "title": "ELUTIA INC.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-14T21:00:13.000Z",
-      "headline": "4 filing — ELUTIA INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1708527/000139824926000009/xslF345X06/form4-09142026_050909.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "ELUT",
-      "title": "ELUTIA INC.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-14T21:00:11.000Z",
-      "headline": "4 filing — ELUTIA INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1708527/000130407926000010/xslF345X06/form4-09142026_050907.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "ELUT",
-      "title": "ELUTIA INC.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-09-14T21:00:09.000Z",
-      "headline": "4 filing — ELUTIA INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1708527/000137093926000011/xslF345X06/form4-09142026_050904.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "CAN",
-      "title": "Canaan Inc.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-09-14T13:15:04.000Z",
-      "headline": "6-K filing — Canaan Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1780652/000110465926107320/tm2625372d1_6k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "DFDV",
-      "title": "DeFi Development Corp.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-09-14T12:35:30.000Z",
-      "headline": "8-K filing — DeFi Development Corp.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1805526/000180552626000107/dfdv-20260914.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "NOMA",
-      "title": "Nomadar Corp.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-09-14T12:10:18.000Z",
-      "headline": "8-K filing — Nomadar Corp.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1994214/000149315226042486/form8-k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
     }
   ],
   "bySymbol": {
@@ -4956,21 +4884,8 @@
       "eventCount": 0
     },
     "NOMA": {
-      "events": [
-        {
-          "symbol": "NOMA",
-          "title": "Nomadar Corp.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-14T12:10:18.000Z",
-          "headline": "8-K filing — Nomadar Corp.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1994214/000149315226042486/form8-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
+      "events": [],
+      "eventCount": 0
     },
     "STKH": {
       "events": [
@@ -5203,11 +5118,11 @@
       ],
       "eventCount": 8
     },
-    "ATRA": {
+    "ICU": {
       "events": [],
       "eventCount": 0
     },
-    "ICU": {
+    "ATRA": {
       "events": [],
       "eventCount": 0
     },
@@ -5288,42 +5203,17 @@
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "DFDV",
-          "title": "DeFi Development Corp.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-14T12:35:30.000Z",
-          "headline": "8-K filing — DeFi Development Corp.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1805526/000180552626000107/dfdv-20260914.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 7
+      "eventCount": 6
     },
     "ILLR": {
       "events": [],
       "eventCount": 0
     },
     "CAN": {
-      "events": [
-        {
-          "symbol": "CAN",
-          "title": "Canaan Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-14T13:15:04.000Z",
-          "headline": "6-K filing — Canaan Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1780652/000110465926107320/tm2625372d1_6k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
+      "events": [],
+      "eventCount": 0
     },
     "NXL": {
       "events": [
@@ -5371,45 +5261,8 @@
       "eventCount": 0
     },
     "ELUT": {
-      "events": [
-        {
-          "symbol": "ELUT",
-          "title": "ELUTIA INC.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-14T21:00:13.000Z",
-          "headline": "4 filing — ELUTIA INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1708527/000139824926000009/xslF345X06/form4-09142026_050909.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "ELUT",
-          "title": "ELUTIA INC.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-14T21:00:11.000Z",
-          "headline": "4 filing — ELUTIA INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1708527/000130407926000010/xslF345X06/form4-09142026_050907.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "ELUT",
-          "title": "ELUTIA INC.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-14T21:00:09.000Z",
-          "headline": "4 filing — ELUTIA INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1708527/000137093926000011/xslF345X06/form4-09142026_050904.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 3
+      "events": [],
+      "eventCount": 0
     },
     "FTHM": {
       "events": [
@@ -5511,6 +5364,10 @@
       ],
       "eventCount": 3
     },
+    "SMX": {
+      "events": [],
+      "eventCount": 0
+    },
     "DXST": {
       "events": [
         {
@@ -5527,14 +5384,6 @@
         }
       ],
       "eventCount": 1
-    },
-    "SMX": {
-      "events": [],
-      "eventCount": 0
-    },
-    "DBGI": {
-      "events": [],
-      "eventCount": 0
     },
     "BFRG": {
       "events": [
@@ -5564,6 +5413,10 @@
         }
       ],
       "eventCount": 2
+    },
+    "DBGI": {
+      "events": [],
+      "eventCount": 0
     },
     "LW": {
       "events": [
@@ -5982,10 +5835,10 @@
       ],
       "eventCount": 3
     },
-    "BACRP": {
+    "BML-PJ": {
       "events": [
         {
-          "symbol": "BACRP",
+          "symbol": "BML-PJ",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -5997,7 +5850,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BACRP",
+          "symbol": "BML-PJ",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -6009,7 +5862,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BACRP",
+          "symbol": "BML-PJ",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -6021,7 +5874,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BACRP",
+          "symbol": "BML-PJ",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -6033,7 +5886,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BACRP",
+          "symbol": "BML-PJ",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -6045,7 +5898,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BACRP",
+          "symbol": "BML-PJ",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -6057,7 +5910,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BACRP",
+          "symbol": "BML-PJ",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -6069,7 +5922,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BACRP",
+          "symbol": "BML-PJ",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -8138,10 +7991,10 @@
       ],
       "eventCount": 1
     },
-    "FMCCT": {
+    "FMCCI": {
       "events": [
         {
-          "symbol": "FMCCT",
+          "symbol": "FMCCI",
           "title": "FEDERAL HOME LOAN MORTGAGE CORP",
           "type": "SEC",
           "form": "8-K",
@@ -8274,10 +8127,10 @@
       ],
       "eventCount": 1
     },
-    "SPKLU": {
+    "SPKLW": {
       "events": [
         {
-          "symbol": "SPKLU",
+          "symbol": "SPKLW",
           "title": "Spark I Acquisition Corp",
           "type": "SEC",
           "form": "8-K",
@@ -8289,7 +8142,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "SPKLU",
+          "symbol": "SPKLW",
           "title": "Spark I Acquisition Corp",
           "type": "SEC",
           "form": "8-K",
@@ -9482,11 +9335,11 @@
       "events": [
         {
           "symbol": "HELP",
-          "title": "Helus Pharma Inc.",
+          "title": "CYBIN INC.",
           "type": "SEC",
           "form": "6-K",
           "publishedAt": "2026-10-01T20:45:35-04:00",
-          "headline": "6-K filing — Helus Pharma Inc.",
+          "headline": "6-K filing — CYBIN INC.",
           "url": "https://www.sec.gov/Archives/edgar/data/1833141/000183314126000087/0001833141-26-000087-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
