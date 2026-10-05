@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-05T01:44:38.383Z",
+  "generatedAt": "2026-10-05T07:42:30.714Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-03T00:00:00.000Z",
-    "marketDataAgeMin": 2984.7,
+    "marketDataAgeMin": 3342.5,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-05T01:44:38.873Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-04T23:35:33.359Z",
+    "upstreamFeedFetchedAt": "2026-10-05T07:42:31.213Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-05T04:06:35.194Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-03T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 129.1,
-    "upstreamObservationAgeAtFetchMin": 2984.6,
+    "upstreamUpdateAgeAtFetchMin": 215.9,
+    "upstreamObservationAgeAtFetchMin": 3342.5,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 273,
@@ -167,20 +167,20 @@
       "observedAt": "2026-10-02T19:30:52-04:00"
     },
     {
-      "symbol": "ICU",
-      "price": 4.9,
-      "changePct": 4.477611940298506,
-      "early": 67,
-      "ignition": 75,
-      "observedAt": "2026-10-02T19:59:38-04:00"
-    },
-    {
       "symbol": "ATRA",
       "price": 9.65,
       "changePct": 1.7932489451476785,
       "early": 67,
       "ignition": 75,
       "observedAt": "2026-10-02T19:30:04-04:00"
+    },
+    {
+      "symbol": "ICU",
+      "price": 4.9,
+      "changePct": 4.477611940298506,
+      "early": 67,
+      "ignition": 75,
+      "observedAt": "2026-10-02T19:59:38-04:00"
     },
     {
       "symbol": "VYGR",
@@ -303,20 +303,20 @@
       "observedAt": "2026-10-02T19:38:03-04:00"
     },
     {
-      "symbol": "BFRG",
-      "price": 0.61,
-      "changePct": -1.214574898785435,
-      "early": 57,
-      "ignition": 65,
-      "observedAt": "2026-10-02T19:55:20-04:00"
-    },
-    {
       "symbol": "DBGI",
       "price": 5.12,
       "changePct": 5.133470225872689,
       "early": 61,
       "ignition": 61,
       "observedAt": "2026-10-02T19:59:59-04:00"
+    },
+    {
+      "symbol": "BFRG",
+      "price": 0.61,
+      "changePct": -1.214574898785435,
+      "early": 57,
+      "ignition": 65,
+      "observedAt": "2026-10-02T19:55:20-04:00"
     },
     {
       "symbol": "LW",
@@ -416,13 +416,13 @@
       "title": "BioStem Technologies, Inc.",
       "cik": "0001658678"
     },
-    "ICU": {
-      "title": "SeaStar Medical Holding Corp",
-      "cik": "0001831868"
-    },
     "ATRA": {
       "title": "Atara Biotherapeutics, Inc.",
       "cik": "0001604464"
+    },
+    "ICU": {
+      "title": "SeaStar Medical Holding Corp",
+      "cik": "0001831868"
     },
     "VYGR": {
       "title": "Voyager Therapeutics, Inc.",
@@ -484,13 +484,13 @@
       "title": "Decent Holding Inc.",
       "cik": "0001958133"
     },
-    "BFRG": {
-      "title": "BullFrog AI Holdings, Inc.",
-      "cik": "0001829247"
-    },
     "DBGI": {
       "title": "Digital Brands Group, Inc.",
       "cik": "0001668010"
+    },
+    "BFRG": {
+      "title": "BullFrog AI Holdings, Inc.",
+      "cik": "0001829247"
     },
     "LW": {
       "title": "Lamb Weston Holdings, Inc.",
@@ -5118,11 +5118,11 @@
       ],
       "eventCount": 8
     },
-    "ICU": {
+    "ATRA": {
       "events": [],
       "eventCount": 0
     },
-    "ATRA": {
+    "ICU": {
       "events": [],
       "eventCount": 0
     },
@@ -5385,6 +5385,10 @@
       ],
       "eventCount": 1
     },
+    "DBGI": {
+      "events": [],
+      "eventCount": 0
+    },
     "BFRG": {
       "events": [
         {
@@ -5413,10 +5417,6 @@
         }
       ],
       "eventCount": 2
-    },
-    "DBGI": {
-      "events": [],
-      "eventCount": 0
     },
     "LW": {
       "events": [
