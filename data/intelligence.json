@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-05T16:24:16.842Z",
+  "generatedAt": "2026-10-05T16:27:11.364Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": true,
     "marketSession": "regular",
     "newestObservedAt": "2026-10-05T12:16:31.000Z",
-    "marketDataAgeMin": 247.8,
+    "marketDataAgeMin": 250.7,
     "quoteCount": 696,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-05T16:24:17.664Z",
+    "upstreamFeedFetchedAt": "2026-10-05T16:27:11.585Z",
     "upstreamUpdatedAtAtBuild": "2026-10-05T12:16:29.862Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-05T12:16:31.000Z",
-    "upstreamUpdateAgeAtFetchMin": 247.8,
-    "upstreamObservationAgeAtFetchMin": 247.8,
+    "upstreamUpdateAgeAtFetchMin": 250.7,
+    "upstreamObservationAgeAtFetchMin": 250.7,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 295,
@@ -507,6 +507,18 @@
   },
   "eventCount": 382,
   "events": [
+    {
+      "symbol": "STAA",
+      "title": "STAAR SURGICAL CO",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-10-05T12:25:39-04:00",
+      "headline": "8-K filing — STAAR SURGICAL CO",
+      "url": "https://www.sec.gov/Archives/edgar/data/718937/000119312526413763/0001193125-26-413763-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
     {
       "symbol": "JPM-PM",
       "title": "JPMORGAN CHASE & CO",
@@ -3419,18 +3431,6 @@
       "publishedAt": "2026-10-02T17:18:12-04:00",
       "headline": "6-K filing — SAFE BULKERS, INC.",
       "url": "https://www.sec.gov/Archives/edgar/data/1434754/000131786126000049/0001317861-26-000049-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "PLAG",
-      "title": "Planet Green Holdings Corp.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-10-02T17:17:56-04:00",
-      "headline": "8-K filing — Planet Green Holdings Corp.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1117057/000121390026106521/0001213900-26-106521-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -6362,6 +6362,23 @@
     "WVE": {
       "events": [],
       "eventCount": 0
+    },
+    "STAA": {
+      "events": [
+        {
+          "symbol": "STAA",
+          "title": "STAAR SURGICAL CO",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-05T12:25:39-04:00",
+          "headline": "8-K filing — STAAR SURGICAL CO",
+          "url": "https://www.sec.gov/Archives/edgar/data/718937/000119312526413763/0001193125-26-413763-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
     },
     "JPM-PM": {
       "events": [
@@ -9939,23 +9956,6 @@
           "publishedAt": "2026-10-02T17:18:12-04:00",
           "headline": "6-K filing — SAFE BULKERS, INC.",
           "url": "https://www.sec.gov/Archives/edgar/data/1434754/000131786126000049/0001317861-26-000049-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "PLAG": {
-      "events": [
-        {
-          "symbol": "PLAG",
-          "title": "Planet Green Holdings Corp.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-02T17:17:56-04:00",
-          "headline": "8-K filing — Planet Green Holdings Corp.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1117057/000121390026106521/0001213900-26-106521-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
