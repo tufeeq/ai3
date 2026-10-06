@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-06T16:08:57.619Z",
+  "generatedAt": "2026-10-06T16:11:50.967Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,17 +8,17 @@
     "marketWindowOpen": true,
     "marketSession": "regular",
     "newestObservedAt": "2026-10-06T15:12:17.000Z",
-    "marketDataAgeMin": 56.7,
+    "marketDataAgeMin": 59.6,
     "quoteCount": 797,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-06T16:08:58.294Z",
+    "upstreamFeedFetchedAt": "2026-10-06T16:11:51.342Z",
     "upstreamUpdatedAtAtBuild": "2026-10-06T15:12:15.450Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-06T15:12:17.000Z",
-    "upstreamUpdateAgeAtFetchMin": 56.7,
-    "upstreamObservationAgeAtFetchMin": 56.7,
+    "upstreamUpdateAgeAtFetchMin": 59.6,
+    "upstreamObservationAgeAtFetchMin": 59.6,
     "secMapping": true,
     "secMarketwideDiscovery": true,
-    "secMarketwideEventCount": 262,
+    "secMarketwideEventCount": 263,
     "newsDiscovery": true
   },
   "shortlist": [
@@ -505,8 +505,56 @@
       "cik": "0002032341"
     }
   },
-  "eventCount": 336,
+  "eventCount": 337,
   "events": [
+    {
+      "symbol": "MS-PQ",
+      "title": "MORGAN STANLEY",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-10-06T12:10:58-04:00",
+      "headline": "424B filing — MORGAN STANLEY",
+      "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226049760/0001839882-26-049760-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "TDBCP",
+      "title": "TORONTO DOMINION BANK",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-10-06T12:10:30-04:00",
+      "headline": "424B filing — TORONTO DOMINION BANK",
+      "url": "https://www.sec.gov/Archives/edgar/data/947263/000114036126038772/0001140361-26-038772-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "RYLBF",
+      "title": "ROYAL BANK OF CANADA",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-10-06T12:09:43-04:00",
+      "headline": "424B filing — ROYAL BANK OF CANADA",
+      "url": "https://www.sec.gov/Archives/edgar/data/1000275/000095010326015245/0000950103-26-015245-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "LUDG",
+      "title": "LUDWIG ENTERPRISES, INC.",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-10-06T12:08:49-04:00",
+      "headline": "8-K filing — LUDWIG ENTERPRISES, INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1960262/000196026226000006/0001960262-26-000006-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
     {
       "symbol": "RYLBF",
       "title": "ROYAL BANK OF CANADA",
@@ -1175,30 +1223,6 @@
       "publishedAt": "2026-10-06T11:13:42-04:00",
       "headline": "6-K filing — Alpha Compute Corp",
       "url": "https://www.sec.gov/Archives/edgar/data/1095435/000117184326006446/0001171843-26-006446-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "BML-PJ",
-      "title": "BANK OF AMERICA CORP /DE/",
-      "type": "SEC",
-      "form": "424B",
-      "publishedAt": "2026-10-06T11:13:38-04:00",
-      "headline": "424B filing — BANK OF AMERICA CORP /DE/",
-      "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426030673/0001918704-26-030673-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "JPM-PM",
-      "title": "JPMORGAN CHASE & CO",
-      "type": "SEC",
-      "form": "424B",
-      "publishedAt": "2026-10-06T11:13:10-04:00",
-      "headline": "424B filing — JPMORGAN CHASE & CO",
-      "url": "https://www.sec.gov/Archives/edgar/data/19617/000191870426030672/0001918704-26-030672-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -3059,18 +3083,6 @@
       "publishedAt": "2026-10-05T17:06:49-04:00",
       "headline": "8-K filing — CLEAN HARBORS INC",
       "url": "https://www.sec.gov/Archives/edgar/data/822818/000082281826000042/0000822818-26-000042-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "EQ",
-      "title": "Equillium, Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-10-05T17:06:37-04:00",
-      "headline": "8-K filing — Equillium, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1746466/000119312526414364/0001193125-26-414364-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -5666,8 +5678,114 @@
       ],
       "eventCount": 1
     },
+    "MS-PQ": {
+      "events": [
+        {
+          "symbol": "MS-PQ",
+          "title": "MORGAN STANLEY",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-06T12:10:58-04:00",
+          "headline": "424B filing — MORGAN STANLEY",
+          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226049760/0001839882-26-049760-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "MS-PQ",
+          "title": "MORGAN STANLEY",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-06T11:52:25-04:00",
+          "headline": "424B filing — MORGAN STANLEY",
+          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226049757/0001839882-26-049757-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "MS-PQ",
+          "title": "MORGAN STANLEY",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-06T11:46:26-04:00",
+          "headline": "424B filing — MORGAN STANLEY",
+          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226049756/0001839882-26-049756-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "MS-PQ",
+          "title": "MORGAN STANLEY",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-06T11:44:37-04:00",
+          "headline": "424B filing — MORGAN STANLEY",
+          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226049754/0001839882-26-049754-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "MS-PQ",
+          "title": "MORGAN STANLEY",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-06T11:42:23-04:00",
+          "headline": "424B filing — MORGAN STANLEY",
+          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226049753/0001839882-26-049753-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 5
+    },
+    "TDBCP": {
+      "events": [
+        {
+          "symbol": "TDBCP",
+          "title": "TORONTO DOMINION BANK",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-06T12:10:30-04:00",
+          "headline": "424B filing — TORONTO DOMINION BANK",
+          "url": "https://www.sec.gov/Archives/edgar/data/947263/000114036126038772/0001140361-26-038772-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "TDBCP",
+          "title": "TORONTO DOMINION BANK",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-06T11:23:19-04:00",
+          "headline": "424B filing — TORONTO DOMINION BANK",
+          "url": "https://www.sec.gov/Archives/edgar/data/947263/000114036126038746/0001140361-26-038746-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 2
+    },
     "RYLBF": {
       "events": [
+        {
+          "symbol": "RYLBF",
+          "title": "ROYAL BANK OF CANADA",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-06T12:09:43-04:00",
+          "headline": "424B filing — ROYAL BANK OF CANADA",
+          "url": "https://www.sec.gov/Archives/edgar/data/1000275/000095010326015245/0000950103-26-015245-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
         {
           "symbol": "RYLBF",
           "title": "ROYAL BANK OF CANADA",
@@ -5717,7 +5835,24 @@
           "discoveryScope": "MARKET_WIDE"
         }
       ],
-      "eventCount": 4
+      "eventCount": 5
+    },
+    "LUDG": {
+      "events": [
+        {
+          "symbol": "LUDG",
+          "title": "LUDWIG ENTERPRISES, INC.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-06T12:08:49-04:00",
+          "headline": "8-K filing — LUDWIG ENTERPRISES, INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1960262/000196026226000006/0001960262-26-000006-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
     },
     "JPM-PM": {
       "events": [
@@ -5818,7 +5953,7 @@
           "discoveryScope": "MARKET_WIDE"
         }
       ],
-      "eventCount": 20
+      "eventCount": 19
     },
     "BML-PJ": {
       "events": [
@@ -5881,21 +6016,9 @@
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "BML-PJ",
-          "title": "BANK OF AMERICA CORP /DE/",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-06T11:13:38-04:00",
-          "headline": "424B filing — BANK OF AMERICA CORP /DE/",
-          "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426030673/0001918704-26-030673-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
         }
       ],
-      "eventCount": 6
+      "eventCount": 5
     },
     "BNS": {
       "events": [
@@ -5964,59 +6087,6 @@
         }
       ],
       "eventCount": 1
-    },
-    "MS-PQ": {
-      "events": [
-        {
-          "symbol": "MS-PQ",
-          "title": "MORGAN STANLEY",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-06T11:52:25-04:00",
-          "headline": "424B filing — MORGAN STANLEY",
-          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226049757/0001839882-26-049757-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "MS-PQ",
-          "title": "MORGAN STANLEY",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-06T11:46:26-04:00",
-          "headline": "424B filing — MORGAN STANLEY",
-          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226049756/0001839882-26-049756-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "MS-PQ",
-          "title": "MORGAN STANLEY",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-06T11:44:37-04:00",
-          "headline": "424B filing — MORGAN STANLEY",
-          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226049754/0001839882-26-049754-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "MS-PQ",
-          "title": "MORGAN STANLEY",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-06T11:42:23-04:00",
-          "headline": "424B filing — MORGAN STANLEY",
-          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226049753/0001839882-26-049753-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 4
     },
     "JJETF": {
       "events": [
@@ -6176,23 +6246,6 @@
         }
       ],
       "eventCount": 14
-    },
-    "TDBCP": {
-      "events": [
-        {
-          "symbol": "TDBCP",
-          "title": "TORONTO DOMINION BANK",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-06T11:23:19-04:00",
-          "headline": "424B filing — TORONTO DOMINION BANK",
-          "url": "https://www.sec.gov/Archives/edgar/data/947263/000114036126038746/0001140361-26-038746-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
     },
     "ITP": {
       "events": [
@@ -8702,23 +8755,6 @@
           "publishedAt": "2026-10-05T17:06:49-04:00",
           "headline": "8-K filing — CLEAN HARBORS INC",
           "url": "https://www.sec.gov/Archives/edgar/data/822818/000082281826000042/0000822818-26-000042-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "EQ": {
-      "events": [
-        {
-          "symbol": "EQ",
-          "title": "Equillium, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-05T17:06:37-04:00",
-          "headline": "8-K filing — Equillium, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1746466/000119312526414364/0001193125-26-414364-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
