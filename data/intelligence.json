@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-11T18:56:33.439Z",
+  "generatedAt": "2026-10-11T20:31:33.428Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,17 +8,17 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-10T00:00:00.000Z",
-    "marketDataAgeMin": 2576.6,
-    "quoteCount": 799,
+    "marketDataAgeMin": 2671.6,
+    "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-11T18:56:33.893Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-11T15:06:05.567Z",
+    "upstreamFeedFetchedAt": "2026-10-11T20:31:33.720Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-11T19:30:52.544Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-10T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 230.5,
-    "upstreamObservationAgeAtFetchMin": 2576.6,
+    "upstreamUpdateAgeAtFetchMin": 60.7,
+    "upstreamObservationAgeAtFetchMin": 2671.6,
     "secMapping": true,
     "secMarketwideDiscovery": true,
-    "secMarketwideEventCount": 295,
+    "secMarketwideEventCount": 291,
     "newsDiscovery": true
   },
   "shortlist": [
@@ -63,20 +63,20 @@
       "observedAt": "2026-10-09T18:55:18-04:00"
     },
     {
+      "symbol": "AKTX",
+      "price": 8.77,
+      "changePct": 0,
+      "early": 89,
+      "ignition": 100,
+      "observedAt": "2026-10-09T16:00:00-04:00"
+    },
+    {
       "symbol": "NXTC",
       "price": 7.18,
       "changePct": 0,
       "early": 85,
       "ignition": 99,
       "observedAt": "2026-10-09T16:00:30-04:00"
-    },
-    {
-      "symbol": "OVID",
-      "price": 2.51,
-      "changePct": 2.0325203252032447,
-      "early": 83,
-      "ignition": 97,
-      "observedAt": "2026-10-09T16:04:45-04:00"
     },
     {
       "symbol": "HYFM",
@@ -255,12 +255,28 @@
       "observedAt": "2026-10-09T16:26:42-04:00"
     },
     {
+      "symbol": "AUC",
+      "price": 9.19,
+      "changePct": 0,
+      "early": 70,
+      "ignition": 76,
+      "observedAt": "2026-10-09T16:00:00-04:00"
+    },
+    {
       "symbol": "NTHI",
       "price": 2.78,
       "changePct": 0,
       "early": 69,
       "ignition": 75,
       "observedAt": "2026-10-09T16:00:00-04:00"
+    },
+    {
+      "symbol": "OVID",
+      "price": 2.51,
+      "changePct": 2.0325203252032447,
+      "early": 68,
+      "ignition": 76,
+      "observedAt": "2026-10-09T16:04:45-04:00"
     },
     {
       "symbol": "CURV",
@@ -295,6 +311,14 @@
       "observedAt": "2026-10-09T18:57:19-04:00"
     },
     {
+      "symbol": "FCUV",
+      "price": 4.17,
+      "changePct": 0,
+      "early": 68,
+      "ignition": 74,
+      "observedAt": "2026-10-09T16:00:00-04:00"
+    },
+    {
       "symbol": "POLA",
       "price": 1.1698,
       "changePct": 2.614035087719303,
@@ -317,30 +341,6 @@
       "early": 66,
       "ignition": 74,
       "observedAt": "2026-10-09T19:59:38-04:00"
-    },
-    {
-      "symbol": "SPRY",
-      "price": 4.33,
-      "changePct": 2.3640661938534193,
-      "early": 66,
-      "ignition": 74,
-      "observedAt": "2026-10-09T17:50:36-04:00"
-    },
-    {
-      "symbol": "BDL",
-      "price": 46.79,
-      "changePct": 0,
-      "early": 67,
-      "ignition": 73,
-      "observedAt": "2026-10-09T16:00:00-04:00"
-    },
-    {
-      "symbol": "TTRX",
-      "price": 12,
-      "changePct": 0,
-      "early": 67,
-      "ignition": 73,
-      "observedAt": "2026-10-09T16:00:00-04:00"
     }
   ],
   "companies": {
@@ -364,13 +364,13 @@
       "title": "Antelope Enterprise Holdings Ltd",
       "cik": "0001470683"
     },
+    "AKTX": {
+      "title": "Akari Therapeutics Plc",
+      "cik": "0001541157"
+    },
     "NXTC": {
       "title": "NextCure, Inc.",
       "cik": "0001661059"
-    },
-    "OVID": {
-      "title": "Ovid Therapeutics Inc.",
-      "cik": "0001636651"
     },
     "HYFM": {
       "title": "HYDROFARM HOLDINGS GROUP, INC.",
@@ -460,9 +460,17 @@
       "title": "Rain Enhancement Technologies Holdco, Inc.",
       "cik": "0002028293"
     },
+    "AUC": {
+      "title": "ATIF Holdings Ltd",
+      "cik": "0001755058"
+    },
     "NTHI": {
       "title": "NEONC TECHNOLOGIES HOLDINGS, INC.",
       "cik": "0001979414"
+    },
+    "OVID": {
+      "title": "Ovid Therapeutics Inc.",
+      "cik": "0001636651"
     },
     "CURV": {
       "title": "Torrid Holdings Inc.",
@@ -480,6 +488,10 @@
       "title": "Sadot Group Inc.",
       "cik": "0001701756"
     },
+    "FCUV": {
+      "title": "FOCUS UNIVERSAL INC.",
+      "cik": "0001590418"
+    },
     "POLA": {
       "title": "Polar Power, Inc.",
       "cik": "0001622345"
@@ -491,21 +503,9 @@
     "XRPN": {
       "title": "Armada Acquisition Corp. II",
       "cik": "0002044009"
-    },
-    "SPRY": {
-      "title": "ARS Pharmaceuticals, Inc.",
-      "cik": "0001671858"
-    },
-    "BDL": {
-      "title": "FLANIGANS ENTERPRISES INC",
-      "cik": "0000012040"
-    },
-    "TTRX": {
-      "title": "Turn Therapeutics Inc.",
-      "cik": "0002023016"
     }
   },
-  "eventCount": 350,
+  "eventCount": 344,
   "events": [
     {
       "symbol": "PFSA",
@@ -587,18 +587,6 @@
       "publishedAt": "2026-10-09T17:29:14-04:00",
       "headline": "8-K filing — Gentherm Inc",
       "url": "https://www.sec.gov/Archives/edgar/data/903129/000119312526419232/0001193125-26-419232-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "RTSN",
-      "title": "Retension Pharmaceuticals, Inc.",
-      "type": "SEC",
-      "form": "424B",
-      "publishedAt": "2026-10-09T17:29:03-04:00",
-      "headline": "424B filing — Retension Pharmaceuticals, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2002988/000121390026108587/0001213900-26-108587-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -796,7 +784,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "FLYU",
+      "symbol": "BERZ",
       "title": "BANK OF MONTREAL /CAN/",
       "type": "SEC",
       "form": "424B",
@@ -1060,7 +1048,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "WFC-PA",
+      "symbol": "WFC-PD",
       "title": "WELLS FARGO & COMPANY/MN",
       "type": "SEC",
       "form": "424B",
@@ -1211,18 +1199,6 @@
       "publishedAt": "2026-10-09T17:03:20-04:00",
       "headline": "8-K filing — Vivakor, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1450704/000182912626010995/0001829126-26-010995-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "TRXB",
-      "title": "TRex Bio, Inc.",
-      "type": "SEC",
-      "form": "424B",
-      "publishedAt": "2026-10-09T17:03:17-04:00",
-      "headline": "424B filing — TRex Bio, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2139097/000119312526419203/0001193125-26-419203-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -1504,7 +1480,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "WFC-PA",
+      "symbol": "WFC-PD",
       "title": "WELLS FARGO & COMPANY/MN",
       "type": "SEC",
       "form": "424B",
@@ -1540,7 +1516,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "WFC-PA",
+      "symbol": "WFC-PD",
       "title": "WELLS FARGO & COMPANY/MN",
       "type": "SEC",
       "form": "424B",
@@ -1576,7 +1552,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "WFC-PA",
+      "symbol": "WFC-PD",
       "title": "WELLS FARGO & COMPANY/MN",
       "type": "SEC",
       "form": "424B",
@@ -2464,7 +2440,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "MS-PI",
+      "symbol": "MS-PA",
       "title": "MORGAN STANLEY",
       "type": "SEC",
       "form": "424B",
@@ -2524,7 +2500,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "FLYU",
+      "symbol": "BERZ",
       "title": "BANK OF MONTREAL /CAN/",
       "type": "SEC",
       "form": "424B",
@@ -2572,7 +2548,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "MS-PI",
+      "symbol": "MS-PA",
       "title": "MORGAN STANLEY",
       "type": "SEC",
       "form": "424B",
@@ -3748,18 +3724,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "RTSN",
-      "title": "Retension Pharmaceuticals, Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-10-08T18:46:42-04:00",
-      "headline": "S-1 filing — Retension Pharmaceuticals, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2002988/000121390026108143/0001213900-26-108143-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
       "symbol": "NVNIW",
       "title": "Nvni Group Ltd",
       "type": "SEC",
@@ -4120,18 +4084,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "IAM",
-      "title": "Iambic Therapeutics, Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-10-08T07:09:26-04:00",
-      "headline": "S-1 filing — Iambic Therapeutics, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1997038/000119312526417416/0001193125-26-417416-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
       "symbol": "XWEL",
       "title": "XWELL, Inc.",
       "type": "SEC",
@@ -4151,18 +4103,6 @@
       "publishedAt": "2026-10-08T00:15:39.000Z",
       "headline": "8-K filing — reAlpha Tech Corp.",
       "url": "https://www.sec.gov/Archives/edgar/data/1859199/000121390026107580/ea0307896-8k_realpha.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "TTRX",
-      "title": "Turn Therapeutics Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-10-07T03:30:52.000Z",
-      "headline": "8-K filing — Turn Therapeutics Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2023016/000121390026107329/ea0307911-8k_turn.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4199,18 +4139,6 @@
       "publishedAt": "2026-10-07T00:15:09.000Z",
       "headline": "6-K filing — Pinnacle Food Group Ltd",
       "url": "https://www.sec.gov/Archives/edgar/data/2032755/000121390026107212/ea0307835-6k_pinnacle.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "SPRY",
-      "title": "ARS Pharmaceuticals, Inc.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-10-06T00:24:47.000Z",
-      "headline": "4 filing — ARS Pharmaceuticals, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1671858/000213529626000009/xslF345X06/form4-10052026_081042.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4324,13 +4252,25 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "SPRY",
-      "title": "ARS Pharmaceuticals, Inc.",
+      "symbol": "AKTX",
+      "title": "Akari Therapeutics Plc",
       "type": "SEC",
-      "form": "144",
-      "publishedAt": "2026-10-02T00:29:14.000Z",
-      "headline": "144 filing — ARS Pharmaceuticals, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1671858/000195004726009969/xsl144X01/primary_doc.xml",
+      "form": "4",
+      "publishedAt": "2026-10-01T20:50:22.000Z",
+      "headline": "4 filing — Akari Therapeutics Plc",
+      "url": "https://www.sec.gov/Archives/edgar/data/1541157/000149315226045366/xslF345X06/ownership.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "AKTX",
+      "title": "Akari Therapeutics Plc",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-10-01T20:45:31.000Z",
+      "headline": "8-K filing — Akari Therapeutics Plc",
+      "url": "https://www.sec.gov/Archives/edgar/data/1541157/000149315226045364/form8-k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4391,18 +4331,6 @@
       "publishedAt": "2026-10-01T10:30:22.000Z",
       "headline": "8-K filing — Sadot Group Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1701756/000173112226001304/e7982_8-k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "SPRY",
-      "title": "ARS Pharmaceuticals, Inc.",
-      "type": "SEC",
-      "form": "144",
-      "publishedAt": "2026-10-01T00:29:39.000Z",
-      "headline": "144 filing — ARS Pharmaceuticals, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1671858/000195004726009892/xsl144X01/primary_doc.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4805,6 +4733,35 @@
       ],
       "eventCount": 3
     },
+    "AKTX": {
+      "events": [
+        {
+          "symbol": "AKTX",
+          "title": "Akari Therapeutics Plc",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-10-01T20:50:22.000Z",
+          "headline": "4 filing — Akari Therapeutics Plc",
+          "url": "https://www.sec.gov/Archives/edgar/data/1541157/000149315226045366/xslF345X06/ownership.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "AKTX",
+          "title": "Akari Therapeutics Plc",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-01T20:45:31.000Z",
+          "headline": "8-K filing — Akari Therapeutics Plc",
+          "url": "https://www.sec.gov/Archives/edgar/data/1541157/000149315226045364/form8-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 2
+    },
     "NXTC": {
       "events": [
         {
@@ -4821,10 +4778,6 @@
         }
       ],
       "eventCount": 1
-    },
-    "OVID": {
-      "events": [],
-      "eventCount": 0
     },
     "HYFM": {
       "events": [
@@ -5253,6 +5206,10 @@
       ],
       "eventCount": 1
     },
+    "AUC": {
+      "events": [],
+      "eventCount": 0
+    },
     "NTHI": {
       "events": [
         {
@@ -5281,6 +5238,10 @@
         }
       ],
       "eventCount": 2
+    },
+    "OVID": {
+      "events": [],
+      "eventCount": 0
     },
     "CURV": {
       "events": [
@@ -5373,6 +5334,10 @@
         }
       ],
       "eventCount": 3
+    },
+    "FCUV": {
+      "events": [],
+      "eventCount": 0
     },
     "POLA": {
       "events": [
@@ -5533,68 +5498,6 @@
       ],
       "eventCount": 2
     },
-    "SPRY": {
-      "events": [
-        {
-          "symbol": "SPRY",
-          "title": "ARS Pharmaceuticals, Inc.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-10-06T00:24:47.000Z",
-          "headline": "4 filing — ARS Pharmaceuticals, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1671858/000213529626000009/xslF345X06/form4-10052026_081042.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "SPRY",
-          "title": "ARS Pharmaceuticals, Inc.",
-          "type": "SEC",
-          "form": "144",
-          "publishedAt": "2026-10-02T00:29:14.000Z",
-          "headline": "144 filing — ARS Pharmaceuticals, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1671858/000195004726009969/xsl144X01/primary_doc.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "SPRY",
-          "title": "ARS Pharmaceuticals, Inc.",
-          "type": "SEC",
-          "form": "144",
-          "publishedAt": "2026-10-01T00:29:39.000Z",
-          "headline": "144 filing — ARS Pharmaceuticals, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1671858/000195004726009892/xsl144X01/primary_doc.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 3
-    },
-    "BDL": {
-      "events": [],
-      "eventCount": 0
-    },
-    "TTRX": {
-      "events": [
-        {
-          "symbol": "TTRX",
-          "title": "Turn Therapeutics Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-07T03:30:52.000Z",
-          "headline": "8-K filing — Turn Therapeutics Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2023016/000121390026107329/ea0307911-8k_turn.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
     "AZO": {
       "events": [
         {
@@ -5645,35 +5548,6 @@
         }
       ],
       "eventCount": 1
-    },
-    "RTSN": {
-      "events": [
-        {
-          "symbol": "RTSN",
-          "title": "Retension Pharmaceuticals, Inc.",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-09T17:29:03-04:00",
-          "headline": "424B filing — Retension Pharmaceuticals, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2002988/000121390026108587/0001213900-26-108587-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "RTSN",
-          "title": "Retension Pharmaceuticals, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-10-08T18:46:42-04:00",
-          "headline": "S-1 filing — Retension Pharmaceuticals, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2002988/000121390026108143/0001213900-26-108143-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 2
     },
     "IPW": {
       "events": [
@@ -6014,10 +5888,10 @@
       ],
       "eventCount": 7
     },
-    "FLYU": {
+    "BERZ": {
       "events": [
         {
-          "symbol": "FLYU",
+          "symbol": "BERZ",
           "title": "BANK OF MONTREAL /CAN/",
           "type": "SEC",
           "form": "424B",
@@ -6029,7 +5903,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "FLYU",
+          "symbol": "BERZ",
           "title": "BANK OF MONTREAL /CAN/",
           "type": "SEC",
           "form": "424B",
@@ -6397,10 +6271,10 @@
       ],
       "eventCount": 2
     },
-    "WFC-PA": {
+    "WFC-PD": {
       "events": [
         {
-          "symbol": "WFC-PA",
+          "symbol": "WFC-PD",
           "title": "WELLS FARGO & COMPANY/MN",
           "type": "SEC",
           "form": "424B",
@@ -6412,7 +6286,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "WFC-PA",
+          "symbol": "WFC-PD",
           "title": "WELLS FARGO & COMPANY/MN",
           "type": "SEC",
           "form": "424B",
@@ -6424,7 +6298,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "WFC-PA",
+          "symbol": "WFC-PD",
           "title": "WELLS FARGO & COMPANY/MN",
           "type": "SEC",
           "form": "424B",
@@ -6436,7 +6310,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "WFC-PA",
+          "symbol": "WFC-PD",
           "title": "WELLS FARGO & COMPANY/MN",
           "type": "SEC",
           "form": "424B",
@@ -6661,23 +6535,6 @@
           "publishedAt": "2026-10-09T17:03:20-04:00",
           "headline": "8-K filing — Vivakor, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1450704/000182912626010995/0001829126-26-010995-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "TRXB": {
-      "events": [
-        {
-          "symbol": "TRXB",
-          "title": "TRex Bio, Inc.",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-09T17:03:17-04:00",
-          "headline": "424B filing — TRex Bio, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2139097/000119312526419203/0001193125-26-419203-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -7931,10 +7788,10 @@
       ],
       "eventCount": 1
     },
-    "MS-PI": {
+    "MS-PA": {
       "events": [
         {
-          "symbol": "MS-PI",
+          "symbol": "MS-PA",
           "title": "MORGAN STANLEY",
           "type": "SEC",
           "form": "424B",
@@ -7946,7 +7803,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "MS-PI",
+          "symbol": "MS-PA",
           "title": "MORGAN STANLEY",
           "type": "SEC",
           "form": "424B",
@@ -10014,23 +9871,6 @@
           "publishedAt": "2026-10-08T12:46:15-04:00",
           "headline": "S-1 filing — Essential Minerals Acquisition Corp",
           "url": "https://www.sec.gov/Archives/edgar/data/2143060/000118518526004657/0001185185-26-004657-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "IAM": {
-      "events": [
-        {
-          "symbol": "IAM",
-          "title": "Iambic Therapeutics, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-10-08T07:09:26-04:00",
-          "headline": "S-1 filing — Iambic Therapeutics, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1997038/000119312526417416/0001193125-26-417416-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
