@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-11T14:06:06.095Z",
+  "generatedAt": "2026-10-11T16:34:53.018Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-10T00:00:00.000Z",
-    "marketDataAgeMin": 2286.1,
-    "quoteCount": 800,
+    "marketDataAgeMin": 2434.9,
+    "quoteCount": 799,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-11T14:06:06.367Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-11T08:44:03.329Z",
+    "upstreamFeedFetchedAt": "2026-10-11T16:34:53.338Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-11T15:06:05.567Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-10T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 322.1,
-    "upstreamObservationAgeAtFetchMin": 2286.1,
+    "upstreamUpdateAgeAtFetchMin": 88.8,
+    "upstreamObservationAgeAtFetchMin": 2434.9,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 291,
@@ -263,20 +263,20 @@
       "observedAt": "2026-10-09T16:00:00-04:00"
     },
     {
-      "symbol": "SKK",
-      "price": 5.59,
-      "changePct": 2.568807339449535,
-      "early": 67,
-      "ignition": 75,
-      "observedAt": "2026-10-09T19:38:16-04:00"
-    },
-    {
       "symbol": "CURV",
       "price": 2.54,
       "changePct": 0,
       "early": 68,
       "ignition": 74,
       "observedAt": "2026-10-09T16:00:33-04:00"
+    },
+    {
+      "symbol": "SKK",
+      "price": 5.59,
+      "changePct": 2.568807339449535,
+      "early": 67,
+      "ignition": 75,
+      "observedAt": "2026-10-09T19:38:16-04:00"
     },
     {
       "symbol": "XWEL",
@@ -464,13 +464,13 @@
       "title": "NEONC TECHNOLOGIES HOLDINGS, INC.",
       "cik": "0001979414"
     },
-    "SKK": {
-      "title": "SKK Holdings Ltd",
-      "cik": "0001991261"
-    },
     "CURV": {
       "title": "Torrid Holdings Inc.",
       "cik": "0001792781"
+    },
+    "SKK": {
+      "title": "SKK Holdings Ltd",
+      "cik": "0001991261"
     },
     "XWEL": {
       "title": "XWELL, Inc.",
@@ -5234,23 +5234,6 @@
       ],
       "eventCount": 2
     },
-    "SKK": {
-      "events": [
-        {
-          "symbol": "SKK",
-          "title": "SKK Holdings Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-25T19:45:07.000Z",
-          "headline": "6-K filing — SKK Holdings Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1991261/000149315226044299/form6-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
     "CURV": {
       "events": [
         {
@@ -5261,6 +5244,23 @@
           "publishedAt": "2026-10-06T00:12:35.000Z",
           "headline": "4 filing — Torrid Holdings Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1792781/000162828026064930/xslF345X06/wk-form4_1791231153.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
+    "SKK": {
+      "events": [
+        {
+          "symbol": "SKK",
+          "title": "SKK Holdings Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-25T19:45:07.000Z",
+          "headline": "6-K filing — SKK Holdings Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1991261/000149315226044299/form6-k.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
