@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-14T00:56:00.555Z",
+  "generatedAt": "2026-10-14T04:24:17.072Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,17 +8,17 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-14T00:00:00.000Z",
-    "marketDataAgeMin": 56,
+    "marketDataAgeMin": 264.3,
     "quoteCount": 799,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-14T00:56:00.928Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-14T00:44:53.396Z",
+    "upstreamFeedFetchedAt": "2026-10-14T04:24:17.304Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-14T03:56:20.956Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-14T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 11.1,
-    "upstreamObservationAgeAtFetchMin": 56,
+    "upstreamUpdateAgeAtFetchMin": 27.9,
+    "upstreamObservationAgeAtFetchMin": 264.3,
     "secMapping": true,
-    "secMarketwideDiscovery": false,
-    "secMarketwideEventCount": 291,
+    "secMarketwideDiscovery": true,
+    "secMarketwideEventCount": 282,
     "newsDiscovery": true
   },
   "shortlist": [
@@ -255,20 +255,20 @@
       "observedAt": "2026-10-13T19:48:49-04:00"
     },
     {
-      "symbol": "IOTR",
-      "price": 2.0918,
-      "changePct": 12.462365591397848,
-      "early": 67,
-      "ignition": 67,
-      "observedAt": "2026-10-13T18:10:15-04:00"
-    },
-    {
       "symbol": "SMXT",
       "price": 5.12,
       "changePct": 5.7851239669421535,
       "early": 63,
       "ignition": 71,
       "observedAt": "2026-10-13T19:56:24-04:00"
+    },
+    {
+      "symbol": "IOTR",
+      "price": 2.0918,
+      "changePct": 12.462365591397848,
+      "early": 67,
+      "ignition": 67,
+      "observedAt": "2026-10-13T18:10:15-04:00"
     },
     {
       "symbol": "NXB",
@@ -295,14 +295,6 @@
       "observedAt": "2026-10-13T19:57:56-04:00"
     },
     {
-      "symbol": "LGHL",
-      "price": 2.9,
-      "changePct": -4.918032786885243,
-      "early": 67,
-      "ignition": 67,
-      "observedAt": "2026-10-13T19:49:00-04:00"
-    },
-    {
       "symbol": "EDN",
       "price": 20.67,
       "changePct": 0.9770395701026032,
@@ -311,20 +303,20 @@
       "observedAt": "2026-10-13T16:00:42-04:00"
     },
     {
-      "symbol": "WLDS",
-      "price": 1.42,
-      "changePct": 3.649635036496337,
-      "early": 67,
-      "ignition": 67,
-      "observedAt": "2026-10-13T16:00:00-04:00"
-    },
-    {
       "symbol": "FUNC",
       "price": 44.09,
       "changePct": -0.15851449275360777,
       "early": 60,
       "ignition": 74,
       "observedAt": "2026-10-13T16:01:29-04:00"
+    },
+    {
+      "symbol": "LGHL",
+      "price": 2.9,
+      "changePct": -4.918032786885243,
+      "early": 67,
+      "ignition": 67,
+      "observedAt": "2026-10-13T19:49:00-04:00"
     },
     {
       "symbol": "BKHA",
@@ -341,6 +333,14 @@
       "early": 63,
       "ignition": 69,
       "observedAt": "2026-10-13T16:00:00-04:00"
+    },
+    {
+      "symbol": "SBFM",
+      "price": 0.25,
+      "changePct": -17.218543046357613,
+      "early": 66,
+      "ignition": 66,
+      "observedAt": "2026-10-13T19:56:22-04:00"
     }
   ],
   "companies": {
@@ -460,13 +460,13 @@
       "title": "AMTD IDEA GROUP",
       "cik": "0001769731"
     },
-    "IOTR": {
-      "title": "iOThree Ltd",
-      "cik": "0001997637"
-    },
     "SMXT": {
       "title": "SolarMax Technology, Inc.",
       "cik": "0001519472"
+    },
+    "IOTR": {
+      "title": "iOThree Ltd",
+      "cik": "0001997637"
     },
     "NXB": {
       "title": "NextBoat Inc.",
@@ -480,21 +480,17 @@
       "title": "Zhibao Technology Inc.",
       "cik": "0001966750"
     },
-    "LGHL": {
-      "title": "Lion Group Holding Ltd",
-      "cik": "0001806524"
-    },
     "EDN": {
       "title": "EDENOR",
       "cik": "0001395213"
     },
-    "WLDS": {
-      "title": "Wearable Devices Ltd.",
-      "cik": "0001887673"
-    },
     "FUNC": {
       "title": "FIRST UNITED CORP/MD/",
       "cik": "0000763907"
+    },
+    "LGHL": {
+      "title": "Lion Group Holding Ltd",
+      "cik": "0001806524"
     },
     "BKHA": {
       "title": "Black Hawk Acquisition Corp",
@@ -503,10 +499,62 @@
     "ASBP": {
       "title": "Aspire-Lakewood Holdings, Inc.",
       "cik": "0001847345"
+    },
+    "SBFM": {
+      "title": "Sunshine Biopharma Inc.",
+      "cik": "0001402328"
     }
   },
-  "eventCount": 368,
+  "eventCount": 361,
   "events": [
+    {
+      "symbol": "SUJA",
+      "title": "SUJA LIFE, INC.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-10-14T00:33:20.000Z",
+      "headline": "4 filing — SUJA LIFE, INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1934114/000162828026065736/xslF345X06/wk-form4_1791923597.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "SUJA",
+      "title": "SUJA LIFE, INC.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-10-14T00:30:35.000Z",
+      "headline": "4 filing — SUJA LIFE, INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1934114/000162828026065726/xslF345X06/wk-form4_1791923430.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "SUJA",
+      "title": "SUJA LIFE, INC.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-10-14T00:28:00.000Z",
+      "headline": "4 filing — SUJA LIFE, INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1934114/000162828026065723/xslF345X06/wk-form4_1791923278.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "BKHA",
+      "title": "Black Hawk Acquisition Corp",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-10-14T00:16:09.000Z",
+      "headline": "8-K filing — Black Hawk Acquisition Corp",
+      "url": "https://www.sec.gov/Archives/edgar/data/2000775/000182912626011077/blackhawkacq_8k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
     {
       "symbol": "SDOT",
       "title": "Sadot Group Inc.",
@@ -1960,18 +2008,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "SUJA",
-      "title": "SUJA LIFE, INC.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-10-13T20:33:20.000Z",
-      "headline": "4 filing — SUJA LIFE, INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1934114/000162828026065736/xslF345X06/wk-form4_1791923597.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "MCFT",
       "title": "MasterCraft Boat Holdings, Inc.",
       "type": "SEC",
@@ -2128,18 +2164,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "SUJA",
-      "title": "SUJA LIFE, INC.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-10-13T20:30:35.000Z",
-      "headline": "4 filing — SUJA LIFE, INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1934114/000162828026065726/xslF345X06/wk-form4_1791923430.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "TARS",
       "title": "Tarsus Pharmaceuticals, Inc.",
       "type": "SEC",
@@ -2282,18 +2306,6 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "SUJA",
-      "title": "SUJA LIFE, INC.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-10-13T20:28:00.000Z",
-      "headline": "4 filing — SUJA LIFE, INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1934114/000162828026065723/xslF345X06/wk-form4_1791923278.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "RPM",
@@ -2510,18 +2522,6 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "BKHA",
-      "title": "Black Hawk Acquisition Corp",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-10-13T20:16:09.000Z",
-      "headline": "8-K filing — Black Hawk Acquisition Corp",
-      "url": "https://www.sec.gov/Archives/edgar/data/2000775/000182912626011077/blackhawkacq_8k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "BETRW",
@@ -3004,6 +3004,102 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "BAFN",
+      "title": "BayFirst Financial Corp.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-10-13T16:05:55.000Z",
+      "headline": "4 filing — BayFirst Financial Corp.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000135/xslF345X06/wk-form4_1791893151.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "BAFN",
+      "title": "BayFirst Financial Corp.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-10-13T16:05:48.000Z",
+      "headline": "4 filing — BayFirst Financial Corp.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000134/xslF345X06/wk-form4_1791893146.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "BAFN",
+      "title": "BayFirst Financial Corp.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-10-13T16:05:43.000Z",
+      "headline": "4 filing — BayFirst Financial Corp.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000133/xslF345X06/wk-form4_1791893140.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "BAFN",
+      "title": "BayFirst Financial Corp.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-10-13T16:05:37.000Z",
+      "headline": "4 filing — BayFirst Financial Corp.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000132/xslF345X06/wk-form4_1791893135.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "BAFN",
+      "title": "BayFirst Financial Corp.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-10-13T16:05:32.000Z",
+      "headline": "4 filing — BayFirst Financial Corp.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000131/xslF345X06/wk-form4_1791893129.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "BAFN",
+      "title": "BayFirst Financial Corp.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-10-13T16:05:26.000Z",
+      "headline": "4 filing — BayFirst Financial Corp.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000130/xslF345X06/wk-form4_1791893123.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "BAFN",
+      "title": "BayFirst Financial Corp.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-10-13T16:05:19.000Z",
+      "headline": "4 filing — BayFirst Financial Corp.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000129/xslF345X06/wk-form4_1791893115.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "BAFN",
+      "title": "BayFirst Financial Corp.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-10-13T16:05:10.000Z",
+      "headline": "4 filing — BayFirst Financial Corp.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000128/xslF345X06/wk-form4_1791893107.xml",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
       "symbol": "TROO",
       "title": "Troops, Inc. /Cayman Islands/",
       "type": "SEC",
@@ -3062,6 +3158,18 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "XTIA",
+      "title": "XTI Aerospace, Inc.",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-10-13T15:00:12.000Z",
+      "headline": "8-K filing — XTI Aerospace, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1529113/000121390026108698/ea0308411-8k_xtiaero.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "EQX",
@@ -3158,18 +3266,6 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "WLDS",
-      "title": "Wearable Devices Ltd.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-10-13T13:05:28.000Z",
-      "headline": "6-K filing — Wearable Devices Ltd.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1887673/000121390026108776/ea0308297-6k_wearable.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "LUD",
@@ -3350,102 +3446,6 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "BAFN",
-      "title": "BayFirst Financial Corp.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-10-13T12:05:55.000Z",
-      "headline": "4 filing — BayFirst Financial Corp.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000135/xslF345X06/wk-form4_1791893151.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "BAFN",
-      "title": "BayFirst Financial Corp.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-10-13T12:05:48.000Z",
-      "headline": "4 filing — BayFirst Financial Corp.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000134/xslF345X06/wk-form4_1791893146.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "BAFN",
-      "title": "BayFirst Financial Corp.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-10-13T12:05:43.000Z",
-      "headline": "4 filing — BayFirst Financial Corp.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000133/xslF345X06/wk-form4_1791893140.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "BAFN",
-      "title": "BayFirst Financial Corp.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-10-13T12:05:37.000Z",
-      "headline": "4 filing — BayFirst Financial Corp.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000132/xslF345X06/wk-form4_1791893135.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "BAFN",
-      "title": "BayFirst Financial Corp.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-10-13T12:05:32.000Z",
-      "headline": "4 filing — BayFirst Financial Corp.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000131/xslF345X06/wk-form4_1791893129.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "BAFN",
-      "title": "BayFirst Financial Corp.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-10-13T12:05:26.000Z",
-      "headline": "4 filing — BayFirst Financial Corp.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000130/xslF345X06/wk-form4_1791893123.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "BAFN",
-      "title": "BayFirst Financial Corp.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-10-13T12:05:19.000Z",
-      "headline": "4 filing — BayFirst Financial Corp.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000129/xslF345X06/wk-form4_1791893115.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "BAFN",
-      "title": "BayFirst Financial Corp.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-10-13T12:05:10.000Z",
-      "headline": "4 filing — BayFirst Financial Corp.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000128/xslF345X06/wk-form4_1791893107.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "IMRN",
@@ -3712,18 +3712,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "XTIA",
-      "title": "XTI Aerospace, Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-10-13T11:00:12.000Z",
-      "headline": "8-K filing — XTI Aerospace, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1529113/000121390026108698/ea0308411-8k_xtiaero.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "HSLV",
       "title": "Highlander Silver Corp.",
       "type": "SEC",
@@ -3842,6 +3830,30 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "SBFM",
+      "title": "Sunshine Biopharma Inc.",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-10-10T01:25:16.000Z",
+      "headline": "8-K filing — Sunshine Biopharma Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1402328/000168316826007758/sunshine_8k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "SBFM",
+      "title": "Sunshine Biopharma Inc.",
+      "type": "SEC",
+      "form": "424B4",
+      "publishedAt": "2026-10-10T01:24:52.000Z",
+      "headline": "424B4 filing — Sunshine Biopharma Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1402328/000168316826007757/sunshine_424b4.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "SMXT",
@@ -4168,18 +4180,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "RTSN",
-      "title": "Retension Pharmaceuticals, Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-10-08T18:46:42-04:00",
-      "headline": "S-1 filing — Retension Pharmaceuticals, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2002988/000121390026108143/0001213900-26-108143-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
       "symbol": "FUNC",
       "title": "FIRST UNITED CORP/MD/",
       "type": "SEC",
@@ -4204,54 +4204,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "ELEV",
-      "title": "Elevation Acquisition Group Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-10-08T18:15:55-04:00",
-      "headline": "S-1 filing — Elevation Acquisition Group Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2131124/000149315226046384/0001493152-26-046384-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "NXL",
-      "title": "Nexalin Technology, Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-10-08T17:01:26-04:00",
-      "headline": "S-1 filing — Nexalin Technology, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1527352/000182912626010913/0001829126-26-010913-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "RENX",
-      "title": "RenX Enterprises Corp.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-10-08T16:30:49-04:00",
-      "headline": "S-3 filing — RenX Enterprises Corp.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1959023/000121390026107991/0001213900-26-107991-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "AMRO",
-      "title": "Amaero Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-10-08T16:24:49-04:00",
-      "headline": "S-1 filing — Amaero Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2141616/000119312526417950/0001193125-26-417950-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
       "symbol": "ZBAO",
       "title": "Zhibao Technology Inc.",
       "type": "SEC",
@@ -4262,30 +4214,6 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "CSEA",
-      "title": "Calm Seas Acquisition Corp.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-10-08T13:07:48-04:00",
-      "headline": "S-1 filing — Calm Seas Acquisition Corp.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2154056/000119312526417752/0001193125-26-417752-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "EMAC",
-      "title": "Essential Minerals Acquisition Corp",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-10-08T12:46:15-04:00",
-      "headline": "S-1 filing — Essential Minerals Acquisition Corp",
-      "url": "https://www.sec.gov/Archives/edgar/data/2143060/000118518526004657/0001185185-26-004657-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
     },
     {
       "symbol": "EDIT",
@@ -4300,37 +4228,13 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "CRGY",
-      "title": "Crescent Energy Co",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-10-08T07:18:26-04:00",
-      "headline": "S-3 filing — Crescent Energy Co",
-      "url": "https://www.sec.gov/Archives/edgar/data/1866175/000162828026065388/0001628280-26-065388-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "IAM",
-      "title": "Iambic Therapeutics, Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-10-08T07:09:26-04:00",
-      "headline": "S-1 filing — Iambic Therapeutics, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1997038/000119312526417416/0001193125-26-417416-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "WLDS",
-      "title": "Wearable Devices Ltd.",
+      "symbol": "SBFM",
+      "title": "Sunshine Biopharma Inc.",
       "type": "SEC",
       "form": "EFFECT",
-      "publishedAt": "2026-10-08T08:15:21.000Z",
-      "headline": "EFFECT filing — Wearable Devices Ltd.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1887673/999999999526003178/xslEFFECTX01/primary_doc.xml",
+      "publishedAt": "2026-10-08T08:15:22.000Z",
+      "headline": "EFFECT filing — Sunshine Biopharma Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1402328/999999999526003179/xslEFFECTX01/primary_doc.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4403,6 +4307,18 @@
       "publishedAt": "2026-10-06T01:16:10.000Z",
       "headline": "6-K filing — Republic Power Group Ltd",
       "url": "https://www.sec.gov/Archives/edgar/data/1912884/000121390026106887/ea0307491-6k_republic.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "SBFM",
+      "title": "Sunshine Biopharma Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-10-03T00:49:30.000Z",
+      "headline": "S-1 filing — Sunshine Biopharma Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1402328/000168316826007581/sunshine_s1.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4624,6 +4540,18 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
+      "symbol": "LXEO",
+      "title": "Lexeo Therapeutics, Inc.",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-09-30T00:20:33.000Z",
+      "headline": "8-K filing — Lexeo Therapeutics, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1907108/000119312526407555/lxeo-20260929.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
       "symbol": "ASBP",
       "title": "Aspire-Lakewood Holdings, Inc.",
       "type": "SEC",
@@ -4631,18 +4559,6 @@
       "publishedAt": "2026-09-29T21:15:13.000Z",
       "headline": "8-K filing — Aspire-Lakewood Holdings, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1847345/000149315226044908/form8-k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "LXEO",
-      "title": "Lexeo Therapeutics, Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-09-29T20:20:33.000Z",
-      "headline": "8-K filing — Lexeo Therapeutics, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1907108/000119312526407555/lxeo-20260929.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4700,7 +4616,7 @@
       "title": "Lexeo Therapeutics, Inc.",
       "type": "SEC",
       "form": "4",
-      "publishedAt": "2026-09-28T21:15:12.000Z",
+      "publishedAt": "2026-09-29T01:15:12.000Z",
       "headline": "4 filing — Lexeo Therapeutics, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1907108/000208320626000009/xslF345X06/form4-09282026_050908.xml",
       "source": "SEC EDGAR",
@@ -4712,7 +4628,7 @@
       "title": "Lexeo Therapeutics, Inc.",
       "type": "SEC",
       "form": "4",
-      "publishedAt": "2026-09-28T21:15:10.000Z",
+      "publishedAt": "2026-09-29T01:15:10.000Z",
       "headline": "4 filing — Lexeo Therapeutics, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1907108/000210929926000009/xslF345X06/form4-09282026_050906.xml",
       "source": "SEC EDGAR",
@@ -4724,7 +4640,7 @@
       "title": "Lexeo Therapeutics, Inc.",
       "type": "SEC",
       "form": "4",
-      "publishedAt": "2026-09-28T21:15:08.000Z",
+      "publishedAt": "2026-09-29T01:15:08.000Z",
       "headline": "4 filing — Lexeo Therapeutics, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1907108/000202409626000015/xslF345X06/form4-09282026_050904.xml",
       "source": "SEC EDGAR",
@@ -4736,7 +4652,7 @@
       "title": "Lexeo Therapeutics, Inc.",
       "type": "SEC",
       "form": "4",
-      "publishedAt": "2026-09-28T21:15:06.000Z",
+      "publishedAt": "2026-09-29T01:15:06.000Z",
       "headline": "4 filing — Lexeo Therapeutics, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1907108/000199521826000017/xslF345X06/form4-09282026_050901.xml",
       "source": "SEC EDGAR",
@@ -5022,7 +4938,7 @@
           "title": "BayFirst Financial Corp.",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-10-13T12:05:55.000Z",
+          "publishedAt": "2026-10-13T16:05:55.000Z",
           "headline": "4 filing — BayFirst Financial Corp.",
           "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000135/xslF345X06/wk-form4_1791893151.xml",
           "source": "SEC EDGAR",
@@ -5034,7 +4950,7 @@
           "title": "BayFirst Financial Corp.",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-10-13T12:05:48.000Z",
+          "publishedAt": "2026-10-13T16:05:48.000Z",
           "headline": "4 filing — BayFirst Financial Corp.",
           "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000134/xslF345X06/wk-form4_1791893146.xml",
           "source": "SEC EDGAR",
@@ -5046,7 +4962,7 @@
           "title": "BayFirst Financial Corp.",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-10-13T12:05:43.000Z",
+          "publishedAt": "2026-10-13T16:05:43.000Z",
           "headline": "4 filing — BayFirst Financial Corp.",
           "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000133/xslF345X06/wk-form4_1791893140.xml",
           "source": "SEC EDGAR",
@@ -5058,7 +4974,7 @@
           "title": "BayFirst Financial Corp.",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-10-13T12:05:37.000Z",
+          "publishedAt": "2026-10-13T16:05:37.000Z",
           "headline": "4 filing — BayFirst Financial Corp.",
           "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000132/xslF345X06/wk-form4_1791893135.xml",
           "source": "SEC EDGAR",
@@ -5070,7 +4986,7 @@
           "title": "BayFirst Financial Corp.",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-10-13T12:05:32.000Z",
+          "publishedAt": "2026-10-13T16:05:32.000Z",
           "headline": "4 filing — BayFirst Financial Corp.",
           "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000131/xslF345X06/wk-form4_1791893129.xml",
           "source": "SEC EDGAR",
@@ -5082,7 +4998,7 @@
           "title": "BayFirst Financial Corp.",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-10-13T12:05:26.000Z",
+          "publishedAt": "2026-10-13T16:05:26.000Z",
           "headline": "4 filing — BayFirst Financial Corp.",
           "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000130/xslF345X06/wk-form4_1791893123.xml",
           "source": "SEC EDGAR",
@@ -5094,7 +5010,7 @@
           "title": "BayFirst Financial Corp.",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-10-13T12:05:19.000Z",
+          "publishedAt": "2026-10-13T16:05:19.000Z",
           "headline": "4 filing — BayFirst Financial Corp.",
           "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000129/xslF345X06/wk-form4_1791893115.xml",
           "source": "SEC EDGAR",
@@ -5106,7 +5022,7 @@
           "title": "BayFirst Financial Corp.",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-10-13T12:05:10.000Z",
+          "publishedAt": "2026-10-13T16:05:10.000Z",
           "headline": "4 filing — BayFirst Financial Corp.",
           "url": "https://www.sec.gov/Archives/edgar/data/1649739/000164973926000128/xslF345X06/wk-form4_1791893107.xml",
           "source": "SEC EDGAR",
@@ -5264,7 +5180,7 @@
           "title": "SUJA LIFE, INC.",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-10-13T20:33:20.000Z",
+          "publishedAt": "2026-10-14T00:33:20.000Z",
           "headline": "4 filing — SUJA LIFE, INC.",
           "url": "https://www.sec.gov/Archives/edgar/data/1934114/000162828026065736/xslF345X06/wk-form4_1791923597.xml",
           "source": "SEC EDGAR",
@@ -5276,7 +5192,7 @@
           "title": "SUJA LIFE, INC.",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-10-13T20:30:35.000Z",
+          "publishedAt": "2026-10-14T00:30:35.000Z",
           "headline": "4 filing — SUJA LIFE, INC.",
           "url": "https://www.sec.gov/Archives/edgar/data/1934114/000162828026065726/xslF345X06/wk-form4_1791923430.xml",
           "source": "SEC EDGAR",
@@ -5288,7 +5204,7 @@
           "title": "SUJA LIFE, INC.",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-10-13T20:28:00.000Z",
+          "publishedAt": "2026-10-14T00:28:00.000Z",
           "headline": "4 filing — SUJA LIFE, INC.",
           "url": "https://www.sec.gov/Archives/edgar/data/1934114/000162828026065723/xslF345X06/wk-form4_1791923278.xml",
           "source": "SEC EDGAR",
@@ -5305,7 +5221,7 @@
           "title": "Lexeo Therapeutics, Inc.",
           "type": "SEC",
           "form": "8-K",
-          "publishedAt": "2026-09-29T20:20:33.000Z",
+          "publishedAt": "2026-09-30T00:20:33.000Z",
           "headline": "8-K filing — Lexeo Therapeutics, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1907108/000119312526407555/lxeo-20260929.htm",
           "source": "SEC EDGAR",
@@ -5317,7 +5233,7 @@
           "title": "Lexeo Therapeutics, Inc.",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-09-28T21:15:12.000Z",
+          "publishedAt": "2026-09-29T01:15:12.000Z",
           "headline": "4 filing — Lexeo Therapeutics, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1907108/000208320626000009/xslF345X06/form4-09282026_050908.xml",
           "source": "SEC EDGAR",
@@ -5329,7 +5245,7 @@
           "title": "Lexeo Therapeutics, Inc.",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-09-28T21:15:10.000Z",
+          "publishedAt": "2026-09-29T01:15:10.000Z",
           "headline": "4 filing — Lexeo Therapeutics, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1907108/000210929926000009/xslF345X06/form4-09282026_050906.xml",
           "source": "SEC EDGAR",
@@ -5341,7 +5257,7 @@
           "title": "Lexeo Therapeutics, Inc.",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-09-28T21:15:08.000Z",
+          "publishedAt": "2026-09-29T01:15:08.000Z",
           "headline": "4 filing — Lexeo Therapeutics, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1907108/000202409626000015/xslF345X06/form4-09282026_050904.xml",
           "source": "SEC EDGAR",
@@ -5353,7 +5269,7 @@
           "title": "Lexeo Therapeutics, Inc.",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-09-28T21:15:06.000Z",
+          "publishedAt": "2026-09-29T01:15:06.000Z",
           "headline": "4 filing — Lexeo Therapeutics, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1907108/000199521826000017/xslF345X06/form4-09282026_050901.xml",
           "source": "SEC EDGAR",
@@ -5630,7 +5546,7 @@
           "title": "XTI Aerospace, Inc.",
           "type": "SEC",
           "form": "8-K",
-          "publishedAt": "2026-10-13T11:00:12.000Z",
+          "publishedAt": "2026-10-13T15:00:12.000Z",
           "headline": "8-K filing — XTI Aerospace, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1529113/000121390026108698/ea0308411-8k_xtiaero.htm",
           "source": "SEC EDGAR",
@@ -5694,10 +5610,6 @@
       ],
       "eventCount": 2
     },
-    "IOTR": {
-      "events": [],
-      "eventCount": 0
-    },
     "SMXT": {
       "events": [
         {
@@ -5714,6 +5626,10 @@
         }
       ],
       "eventCount": 1
+    },
+    "IOTR": {
+      "events": [],
+      "eventCount": 0
     },
     "NXB": {
       "events": [
@@ -5838,47 +5754,6 @@
       ],
       "eventCount": 3
     },
-    "LGHL": {
-      "events": [
-        {
-          "symbol": "LGHL",
-          "title": "Lion Group Holding Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-30T13:15:01.000Z",
-          "headline": "6-K filing — Lion Group Holding Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1806524/000121390026104925/ea0307175-6k_lion.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "LGHL",
-          "title": "Lion Group Holding Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-29T13:15:01.000Z",
-          "headline": "6-K filing — Lion Group Holding Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1806524/000121390026104356/ea0306667-6k_liongroup.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "LGHL",
-          "title": "Lion Group Holding Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-24T01:18:38.000Z",
-          "headline": "6-K filing — Lion Group Holding Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1806524/000121390026102774/ea0306185-6k_lion.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 3
-    },
     "EDN": {
       "events": [
         {
@@ -5895,35 +5770,6 @@
         }
       ],
       "eventCount": 1
-    },
-    "WLDS": {
-      "events": [
-        {
-          "symbol": "WLDS",
-          "title": "Wearable Devices Ltd.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-13T13:05:28.000Z",
-          "headline": "6-K filing — Wearable Devices Ltd.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1887673/000121390026108776/ea0308297-6k_wearable.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "WLDS",
-          "title": "Wearable Devices Ltd.",
-          "type": "SEC",
-          "form": "EFFECT",
-          "publishedAt": "2026-10-08T08:15:21.000Z",
-          "headline": "EFFECT filing — Wearable Devices Ltd.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1887673/999999999526003178/xslEFFECTX01/primary_doc.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
     },
     "FUNC": {
       "events": [
@@ -5990,6 +5836,47 @@
       ],
       "eventCount": 5
     },
+    "LGHL": {
+      "events": [
+        {
+          "symbol": "LGHL",
+          "title": "Lion Group Holding Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-30T13:15:01.000Z",
+          "headline": "6-K filing — Lion Group Holding Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1806524/000121390026104925/ea0307175-6k_lion.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "LGHL",
+          "title": "Lion Group Holding Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-29T13:15:01.000Z",
+          "headline": "6-K filing — Lion Group Holding Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1806524/000121390026104356/ea0306667-6k_liongroup.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "LGHL",
+          "title": "Lion Group Holding Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-09-24T01:18:38.000Z",
+          "headline": "6-K filing — Lion Group Holding Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1806524/000121390026102774/ea0306185-6k_lion.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 3
+    },
     "BKHA": {
       "events": [
         {
@@ -5997,7 +5884,7 @@
           "title": "Black Hawk Acquisition Corp",
           "type": "SEC",
           "form": "8-K",
-          "publishedAt": "2026-10-13T20:16:09.000Z",
+          "publishedAt": "2026-10-14T00:16:09.000Z",
           "headline": "8-K filing — Black Hawk Acquisition Corp",
           "url": "https://www.sec.gov/Archives/edgar/data/2000775/000182912626011077/blackhawkacq_8k.htm",
           "source": "SEC EDGAR",
@@ -6035,6 +5922,59 @@
         }
       ],
       "eventCount": 1
+    },
+    "SBFM": {
+      "events": [
+        {
+          "symbol": "SBFM",
+          "title": "Sunshine Biopharma Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-10T01:25:16.000Z",
+          "headline": "8-K filing — Sunshine Biopharma Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1402328/000168316826007758/sunshine_8k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "SBFM",
+          "title": "Sunshine Biopharma Inc.",
+          "type": "SEC",
+          "form": "424B4",
+          "publishedAt": "2026-10-10T01:24:52.000Z",
+          "headline": "424B4 filing — Sunshine Biopharma Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1402328/000168316826007757/sunshine_424b4.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "SBFM",
+          "title": "Sunshine Biopharma Inc.",
+          "type": "SEC",
+          "form": "EFFECT",
+          "publishedAt": "2026-10-08T08:15:22.000Z",
+          "headline": "EFFECT filing — Sunshine Biopharma Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1402328/999999999526003179/xslEFFECTX01/primary_doc.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "SBFM",
+          "title": "Sunshine Biopharma Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-10-03T00:49:30.000Z",
+          "headline": "S-1 filing — Sunshine Biopharma Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1402328/000168316826007581/sunshine_s1.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 4
     },
     "SDOT": {
       "events": [
@@ -8895,21 +8835,9 @@
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "RTSN",
-          "title": "Retension Pharmaceuticals, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-10-08T18:46:42-04:00",
-          "headline": "S-1 filing — Retension Pharmaceuticals, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2002988/000121390026108143/0001213900-26-108143-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
         }
       ],
-      "eventCount": 2
+      "eventCount": 1
     },
     "MLKN": {
       "events": [
@@ -10413,146 +10341,8 @@
         }
       ],
       "eventCount": 1
-    },
-    "ELEV": {
-      "events": [
-        {
-          "symbol": "ELEV",
-          "title": "Elevation Acquisition Group Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-10-08T18:15:55-04:00",
-          "headline": "S-1 filing — Elevation Acquisition Group Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2131124/000149315226046384/0001493152-26-046384-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "NXL": {
-      "events": [
-        {
-          "symbol": "NXL",
-          "title": "Nexalin Technology, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-10-08T17:01:26-04:00",
-          "headline": "S-1 filing — Nexalin Technology, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1527352/000182912626010913/0001829126-26-010913-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "RENX": {
-      "events": [
-        {
-          "symbol": "RENX",
-          "title": "RenX Enterprises Corp.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-10-08T16:30:49-04:00",
-          "headline": "S-3 filing — RenX Enterprises Corp.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1959023/000121390026107991/0001213900-26-107991-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "AMRO": {
-      "events": [
-        {
-          "symbol": "AMRO",
-          "title": "Amaero Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-10-08T16:24:49-04:00",
-          "headline": "S-1 filing — Amaero Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2141616/000119312526417950/0001193125-26-417950-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "CSEA": {
-      "events": [
-        {
-          "symbol": "CSEA",
-          "title": "Calm Seas Acquisition Corp.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-10-08T13:07:48-04:00",
-          "headline": "S-1 filing — Calm Seas Acquisition Corp.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2154056/000119312526417752/0001193125-26-417752-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "EMAC": {
-      "events": [
-        {
-          "symbol": "EMAC",
-          "title": "Essential Minerals Acquisition Corp",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-10-08T12:46:15-04:00",
-          "headline": "S-1 filing — Essential Minerals Acquisition Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/2143060/000118518526004657/0001185185-26-004657-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "CRGY": {
-      "events": [
-        {
-          "symbol": "CRGY",
-          "title": "Crescent Energy Co",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-10-08T07:18:26-04:00",
-          "headline": "S-3 filing — Crescent Energy Co",
-          "url": "https://www.sec.gov/Archives/edgar/data/1866175/000162828026065388/0001628280-26-065388-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "IAM": {
-      "events": [
-        {
-          "symbol": "IAM",
-          "title": "Iambic Therapeutics, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-10-08T07:09:26-04:00",
-          "headline": "S-1 filing — Iambic Therapeutics, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1997038/000119312526417416/0001193125-26-417416-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
     }
   },
-  "errors": [
-    "SEC_CURRENT_SC 13G:This operation was aborted"
-  ],
+  "errors": [],
   "policy": "Public-source intelligence. Market-wide SEC current-filing discovery is primary-source and independent of the price shortlist. `sourceStatus.live` means the loaded market universe contains fresh market data inside the active US extended-hours window; loaded-but-stale/session-final data is never labeled live. Shortlist ranking does not determine feed-level freshness. Upstream feed timestamps are retained only as operational provenance and do not override quote observation freshness or trading eligibility. SEC filings are primary-source events; GDELT is discovery-only and requires source-level verification before trade decisions."
 }
