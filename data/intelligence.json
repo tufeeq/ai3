@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-17T15:38:20.942Z",
+  "generatedAt": "2026-10-17T16:53:36.877Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-17T00:00:00.000Z",
-    "marketDataAgeMin": 938.4,
-    "quoteCount": 800,
+    "marketDataAgeMin": 1013.6,
+    "quoteCount": 784,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-17T15:38:21.238Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-17T15:30:25.023Z",
+    "upstreamFeedFetchedAt": "2026-10-17T16:53:37.260Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-17T16:33:08.838Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-17T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 7.9,
-    "upstreamObservationAgeAtFetchMin": 938.4,
+    "upstreamUpdateAgeAtFetchMin": 20.5,
+    "upstreamObservationAgeAtFetchMin": 1013.6,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 283,
@@ -39,17 +39,17 @@
       "observedAt": "2026-10-16T16:00:13-04:00"
     },
     {
-      "symbol": "PSIG",
-      "price": 4.45,
-      "changePct": 4.70588235294118,
+      "symbol": "TRBG",
+      "price": 3.41,
+      "changePct": 4.923076923076927,
       "early": 77,
       "ignition": 91,
       "observedAt": "2026-10-16T16:00:00-04:00"
     },
     {
-      "symbol": "TRBG",
-      "price": 3.41,
-      "changePct": 4.923076923076927,
+      "symbol": "PSIG",
+      "price": 4.45,
+      "changePct": 4.70588235294118,
       "early": 77,
       "ignition": 91,
       "observedAt": "2026-10-16T16:00:00-04:00"
@@ -215,14 +215,6 @@
       "observedAt": "2026-10-16T16:00:00-04:00"
     },
     {
-      "symbol": "AMTX",
-      "price": 1.48,
-      "changePct": 2.4221453287197177,
-      "early": 63,
-      "ignition": 71,
-      "observedAt": "2026-10-16T19:23:35-04:00"
-    },
-    {
       "symbol": "CEPL",
       "price": 2.99,
       "changePct": -8.282208588957042,
@@ -247,20 +239,20 @@
       "observedAt": "2026-10-16T19:47:08-04:00"
     },
     {
-      "symbol": "MITQ",
-      "price": 0.5712,
-      "changePct": 4.8265736832446295,
-      "early": 62,
-      "ignition": 70,
-      "observedAt": "2026-10-16T17:54:13-04:00"
-    },
-    {
       "symbol": "VTS",
       "price": 18.25,
       "changePct": 4.824813325674899,
       "early": 59,
       "ignition": 73,
       "observedAt": "2026-10-16T16:01:09-04:00"
+    },
+    {
+      "symbol": "MITQ",
+      "price": 0.5712,
+      "changePct": 4.8265736832446295,
+      "early": 62,
+      "ignition": 70,
+      "observedAt": "2026-10-16T17:54:13-04:00"
     },
     {
       "symbol": "BOLD",
@@ -341,6 +333,14 @@
       "early": 62,
       "ignition": 62,
       "observedAt": "2026-10-16T16:00:00-04:00"
+    },
+    {
+      "symbol": "BTE",
+      "price": 5.35,
+      "changePct": 3.6821705426356495,
+      "early": 58,
+      "ignition": 66,
+      "observedAt": "2026-10-16T19:43:50-04:00"
     }
   ],
   "companies": {
@@ -352,13 +352,13 @@
       "title": "CCH Holdings Ltd",
       "cik": "0002074123"
     },
-    "PSIG": {
-      "title": "PS International Group Ltd.",
-      "cik": "0001997201"
-    },
     "TRBG": {
       "title": "Turbogen Ltd.",
       "cik": "0002088375"
+    },
+    "PSIG": {
+      "title": "PS International Group Ltd.",
+      "cik": "0001997201"
     },
     "ARMP": {
       "title": "Armata Pharmaceuticals, Inc.",
@@ -440,10 +440,6 @@
       "title": "Star Holdings",
       "cik": "0001953366"
     },
-    "AMTX": {
-      "title": "AEMETIS, INC",
-      "cik": "0000738214"
-    },
     "CEPL": {
       "title": "Capstone Energy Plus, Inc.",
       "cik": "0001009759"
@@ -456,13 +452,13 @@
       "title": "Freight Technologies, Inc.",
       "cik": "0001687542"
     },
-    "MITQ": {
-      "title": "MOVING iMAGE TECHNOLOGIES INC.",
-      "cik": "0001770236"
-    },
     "VTS": {
       "title": "Vitesse Energy, Inc.",
       "cik": "0001944558"
+    },
+    "MITQ": {
+      "title": "MOVING iMAGE TECHNOLOGIES INC.",
+      "cik": "0001770236"
     },
     "BOLD": {
       "title": "Boundless Bio, Inc.",
@@ -503,6 +499,10 @@
     "PRPL": {
       "title": "Purple Innovation, Inc.",
       "cik": "0001643953"
+    },
+    "BTE": {
+      "title": "BAYTEX ENERGY CORP.",
+      "cik": "0001279495"
     }
   },
   "eventCount": 336,
@@ -4574,10 +4574,6 @@
       ],
       "eventCount": 2
     },
-    "PSIG": {
-      "events": [],
-      "eventCount": 0
-    },
     "TRBG": {
       "events": [
         {
@@ -4618,6 +4614,10 @@
         }
       ],
       "eventCount": 3
+    },
+    "PSIG": {
+      "events": [],
+      "eventCount": 0
     },
     "ARMP": {
       "events": [],
@@ -5048,10 +5048,6 @@
       ],
       "eventCount": 2
     },
-    "AMTX": {
-      "events": [],
-      "eventCount": 0
-    },
     "CEPL": {
       "events": [],
       "eventCount": 0
@@ -5090,23 +5086,6 @@
       ],
       "eventCount": 1
     },
-    "MITQ": {
-      "events": [
-        {
-          "symbol": "MITQ",
-          "title": "MOVING iMAGE TECHNOLOGIES INC.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-09-30T18:38:35.000Z",
-          "headline": "8-K filing — MOVING iMAGE TECHNOLOGIES INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1770236/000143774926031585/mitq20260603_8k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
     "VTS": {
       "events": [
         {
@@ -5117,6 +5096,23 @@
           "publishedAt": "2026-10-06T00:36:00.000Z",
           "headline": "8-K filing — Vitesse Energy, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1944558/000194455826000049/vitesse-20260930.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
+    "MITQ": {
+      "events": [
+        {
+          "symbol": "MITQ",
+          "title": "MOVING iMAGE TECHNOLOGIES INC.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-09-30T18:38:35.000Z",
+          "headline": "8-K filing — MOVING iMAGE TECHNOLOGIES INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1770236/000143774926031585/mitq20260603_8k.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -5385,6 +5381,10 @@
         }
       ],
       "eventCount": 1
+    },
+    "BTE": {
+      "events": [],
+      "eventCount": 0
     },
     "NRUC": {
       "events": [
