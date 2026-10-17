@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-17T20:19:16.120Z",
+  "generatedAt": "2026-10-17T21:23:57.072Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-17T00:00:00.000Z",
-    "marketDataAgeMin": 1219.3,
+    "marketDataAgeMin": 1284,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-17T20:19:16.374Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-17T19:46:37.940Z",
+    "upstreamFeedFetchedAt": "2026-10-17T21:23:57.438Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-17T21:05:32.784Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-17T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 32.6,
-    "upstreamObservationAgeAtFetchMin": 1219.3,
+    "upstreamUpdateAgeAtFetchMin": 18.4,
+    "upstreamObservationAgeAtFetchMin": 1284,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 283,
@@ -39,17 +39,17 @@
       "observedAt": "2026-10-16T16:00:13-04:00"
     },
     {
-      "symbol": "PSIG",
-      "price": 4.45,
-      "changePct": 4.70588235294118,
+      "symbol": "TRBG",
+      "price": 3.41,
+      "changePct": 4.923076923076927,
       "early": 77,
       "ignition": 91,
       "observedAt": "2026-10-16T16:00:00-04:00"
     },
     {
-      "symbol": "TRBG",
-      "price": 3.41,
-      "changePct": 4.923076923076927,
+      "symbol": "PSIG",
+      "price": 4.45,
+      "changePct": 4.70588235294118,
       "early": 77,
       "ignition": 91,
       "observedAt": "2026-10-16T16:00:00-04:00"
@@ -271,20 +271,20 @@
       "observedAt": "2026-10-16T19:21:45-04:00"
     },
     {
-      "symbol": "OCC",
-      "price": 12.91,
-      "changePct": -9.084507042253517,
-      "early": 58,
-      "ignition": 72,
-      "observedAt": "2026-10-16T16:00:00-04:00"
-    },
-    {
       "symbol": "RES",
       "price": 6.05,
       "changePct": 2.1959459459459443,
       "early": 58,
       "ignition": 72,
       "observedAt": "2026-10-16T16:01:08-04:00"
+    },
+    {
+      "symbol": "OCC",
+      "price": 12.91,
+      "changePct": -9.084507042253517,
+      "early": 58,
+      "ignition": 72,
+      "observedAt": "2026-10-16T16:00:00-04:00"
     },
     {
       "symbol": "TANH",
@@ -352,13 +352,13 @@
       "title": "CCH Holdings Ltd",
       "cik": "0002074123"
     },
-    "PSIG": {
-      "title": "PS International Group Ltd.",
-      "cik": "0001997201"
-    },
     "TRBG": {
       "title": "Turbogen Ltd.",
       "cik": "0002088375"
+    },
+    "PSIG": {
+      "title": "PS International Group Ltd.",
+      "cik": "0001997201"
     },
     "ARMP": {
       "title": "Armata Pharmaceuticals, Inc.",
@@ -468,13 +468,13 @@
       "title": "FMC CORP",
       "cik": "0000037785"
     },
-    "OCC": {
-      "title": "OPTICAL CABLE CORP",
-      "cik": "0001000230"
-    },
     "RES": {
       "title": "RPC INC",
       "cik": "0000742278"
+    },
+    "OCC": {
+      "title": "OPTICAL CABLE CORP",
+      "cik": "0001000230"
     },
     "TANH": {
       "title": "TANTECH HOLDINGS LTD",
@@ -2825,11 +2825,11 @@
     },
     {
       "symbol": "STWI",
-      "title": "StageWise Strategies Corp.",
+      "title": "TEG OVERSEAS, INC.",
       "type": "SEC",
       "form": "8-K",
       "publishedAt": "2026-10-16T16:05:42-04:00",
-      "headline": "8-K filing — StageWise Strategies Corp.",
+      "headline": "8-K filing — TEG OVERSEAS, INC.",
       "url": "https://www.sec.gov/Archives/edgar/data/1999261/000121390026110225/0001213900-26-110225-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
@@ -2920,7 +2920,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "T-PA",
+      "symbol": "T-PC",
       "title": "AT&T INC.",
       "type": "SEC",
       "form": "8-K",
@@ -4574,10 +4574,6 @@
       ],
       "eventCount": 2
     },
-    "PSIG": {
-      "events": [],
-      "eventCount": 0
-    },
     "TRBG": {
       "events": [
         {
@@ -4618,6 +4614,10 @@
         }
       ],
       "eventCount": 3
+    },
+    "PSIG": {
+      "events": [],
+      "eventCount": 0
     },
     "ARMP": {
       "events": [],
@@ -5225,11 +5225,11 @@
       ],
       "eventCount": 8
     },
-    "OCC": {
+    "RES": {
       "events": [],
       "eventCount": 0
     },
-    "RES": {
+    "OCC": {
       "events": [],
       "eventCount": 0
     },
@@ -8009,11 +8009,11 @@
       "events": [
         {
           "symbol": "STWI",
-          "title": "StageWise Strategies Corp.",
+          "title": "TEG OVERSEAS, INC.",
           "type": "SEC",
           "form": "8-K",
           "publishedAt": "2026-10-16T16:05:42-04:00",
-          "headline": "8-K filing — StageWise Strategies Corp.",
+          "headline": "8-K filing — TEG OVERSEAS, INC.",
           "url": "https://www.sec.gov/Archives/edgar/data/1999261/000121390026110225/0001213900-26-110225-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
@@ -8141,10 +8141,10 @@
       ],
       "eventCount": 1
     },
-    "T-PA": {
+    "T-PC": {
       "events": [
         {
-          "symbol": "T-PA",
+          "symbol": "T-PC",
           "title": "AT&T INC.",
           "type": "SEC",
           "form": "8-K",
