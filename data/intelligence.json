@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-17T12:12:58.047Z",
+  "generatedAt": "2026-10-17T13:53:15.780Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-17T00:00:00.000Z",
-    "marketDataAgeMin": 733,
+    "marketDataAgeMin": 833.3,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-17T12:12:58.375Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-17T12:08:04.690Z",
+    "upstreamFeedFetchedAt": "2026-10-17T13:53:16.267Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-17T13:18:38.209Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-17T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 4.9,
-    "upstreamObservationAgeAtFetchMin": 733,
+    "upstreamUpdateAgeAtFetchMin": 34.6,
+    "upstreamObservationAgeAtFetchMin": 833.3,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 283,
@@ -215,20 +215,20 @@
       "observedAt": "2026-10-16T16:00:00-04:00"
     },
     {
-      "symbol": "AMTX",
-      "price": 1.48,
-      "changePct": 2.4221453287197177,
-      "early": 63,
-      "ignition": 71,
-      "observedAt": "2026-10-16T19:23:35-04:00"
-    },
-    {
       "symbol": "CEPL",
       "price": 2.99,
       "changePct": -8.282208588957042,
       "early": 60,
       "ignition": 74,
       "observedAt": "2026-10-16T16:00:22-04:00"
+    },
+    {
+      "symbol": "AMTX",
+      "price": 1.48,
+      "changePct": 2.4221453287197177,
+      "early": 63,
+      "ignition": 71,
+      "observedAt": "2026-10-16T19:23:35-04:00"
     },
     {
       "symbol": "KGEI",
@@ -255,20 +255,20 @@
       "observedAt": "2026-10-16T17:54:13-04:00"
     },
     {
-      "symbol": "BOLD",
-      "price": 2.34,
-      "changePct": -0.42553191489362685,
-      "early": 59,
-      "ignition": 73,
-      "observedAt": "2026-10-16T16:00:00-04:00"
-    },
-    {
       "symbol": "VTS",
       "price": 18.25,
       "changePct": 4.824813325674899,
       "early": 59,
       "ignition": 73,
       "observedAt": "2026-10-16T16:01:09-04:00"
+    },
+    {
+      "symbol": "BOLD",
+      "price": 2.34,
+      "changePct": -0.42553191489362685,
+      "early": 59,
+      "ignition": 73,
+      "observedAt": "2026-10-16T16:00:00-04:00"
     },
     {
       "symbol": "FMC",
@@ -279,14 +279,6 @@
       "observedAt": "2026-10-16T19:21:45-04:00"
     },
     {
-      "symbol": "OCC",
-      "price": 12.91,
-      "changePct": -9.084507042253517,
-      "early": 58,
-      "ignition": 72,
-      "observedAt": "2026-10-16T16:00:00-04:00"
-    },
-    {
       "symbol": "RES",
       "price": 6.05,
       "changePct": 2.1959459459459443,
@@ -295,17 +287,25 @@
       "observedAt": "2026-10-16T16:01:08-04:00"
     },
     {
-      "symbol": "TANH",
-      "price": 13.62,
-      "changePct": 6.0747663551401825,
-      "early": 64,
-      "ignition": 64,
+      "symbol": "OCC",
+      "price": 12.91,
+      "changePct": -9.084507042253517,
+      "early": 58,
+      "ignition": 72,
       "observedAt": "2026-10-16T16:00:00-04:00"
     },
     {
       "symbol": "AGCC",
       "price": 16.01,
       "changePct": 6.096752816434736,
+      "early": 64,
+      "ignition": 64,
+      "observedAt": "2026-10-16T16:00:00-04:00"
+    },
+    {
+      "symbol": "TANH",
+      "price": 13.62,
+      "changePct": 6.0747663551401825,
       "early": 64,
       "ignition": 64,
       "observedAt": "2026-10-16T16:00:00-04:00"
@@ -440,13 +440,13 @@
       "title": "Star Holdings",
       "cik": "0001953366"
     },
-    "AMTX": {
-      "title": "AEMETIS, INC",
-      "cik": "0000738214"
-    },
     "CEPL": {
       "title": "Capstone Energy Plus, Inc.",
       "cik": "0001009759"
+    },
+    "AMTX": {
+      "title": "AEMETIS, INC",
+      "cik": "0000738214"
     },
     "KGEI": {
       "title": "Kolibri Global Energy Inc.",
@@ -460,33 +460,33 @@
       "title": "MOVING iMAGE TECHNOLOGIES INC.",
       "cik": "0001770236"
     },
-    "BOLD": {
-      "title": "Boundless Bio, Inc.",
-      "cik": "0001782303"
-    },
     "VTS": {
       "title": "Vitesse Energy, Inc.",
       "cik": "0001944558"
+    },
+    "BOLD": {
+      "title": "Boundless Bio, Inc.",
+      "cik": "0001782303"
     },
     "FMC": {
       "title": "FMC CORP",
       "cik": "0000037785"
     },
-    "OCC": {
-      "title": "OPTICAL CABLE CORP",
-      "cik": "0001000230"
-    },
     "RES": {
       "title": "RPC INC",
       "cik": "0000742278"
     },
-    "TANH": {
-      "title": "TANTECH HOLDINGS LTD",
-      "cik": "0001588084"
+    "OCC": {
+      "title": "OPTICAL CABLE CORP",
+      "cik": "0001000230"
     },
     "AGCC": {
       "title": "Agencia Comercial Spirits Ltd.",
       "cik": "0002060016"
+    },
+    "TANH": {
+      "title": "TANTECH HOLDINGS LTD",
+      "cik": "0001588084"
     },
     "NWGL": {
       "title": "CL Workshop Group Ltd",
@@ -5048,11 +5048,11 @@
       ],
       "eventCount": 2
     },
-    "AMTX": {
+    "CEPL": {
       "events": [],
       "eventCount": 0
     },
-    "CEPL": {
+    "AMTX": {
       "events": [],
       "eventCount": 0
     },
@@ -5107,10 +5107,6 @@
       ],
       "eventCount": 1
     },
-    "BOLD": {
-      "events": [],
-      "eventCount": 0
-    },
     "VTS": {
       "events": [
         {
@@ -5127,6 +5123,10 @@
         }
       ],
       "eventCount": 1
+    },
+    "BOLD": {
+      "events": [],
+      "eventCount": 0
     },
     "FMC": {
       "events": [
@@ -5229,30 +5229,13 @@
       ],
       "eventCount": 8
     },
-    "OCC": {
-      "events": [],
-      "eventCount": 0
-    },
     "RES": {
       "events": [],
       "eventCount": 0
     },
-    "TANH": {
-      "events": [
-        {
-          "symbol": "TANH",
-          "title": "TANTECH HOLDINGS LTD",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-02T20:45:42.000Z",
-          "headline": "6-K filing — TANTECH HOLDINGS LTD",
-          "url": "https://www.sec.gov/Archives/edgar/data/1588084/000121390026106447/ea0307568-6k_tantech.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
+    "OCC": {
+      "events": [],
+      "eventCount": 0
     },
     "AGCC": {
       "events": [
@@ -5294,6 +5277,23 @@
         }
       ],
       "eventCount": 3
+    },
+    "TANH": {
+      "events": [
+        {
+          "symbol": "TANH",
+          "title": "TANTECH HOLDINGS LTD",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-10-02T20:45:42.000Z",
+          "headline": "6-K filing — TANTECH HOLDINGS LTD",
+          "url": "https://www.sec.gov/Archives/edgar/data/1588084/000121390026106447/ea0307568-6k_tantech.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
     },
     "NWGL": {
       "events": [
