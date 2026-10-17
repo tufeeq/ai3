@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-17T21:23:57.072Z",
+  "generatedAt": "2026-10-17T22:33:37.253Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-17T00:00:00.000Z",
-    "marketDataAgeMin": 1284,
+    "marketDataAgeMin": 1353.6,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-17T21:23:57.438Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-17T21:05:32.784Z",
+    "upstreamFeedFetchedAt": "2026-10-17T22:33:37.748Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-17T21:47:53.836Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-17T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 18.4,
-    "upstreamObservationAgeAtFetchMin": 1284,
+    "upstreamUpdateAgeAtFetchMin": 45.7,
+    "upstreamObservationAgeAtFetchMin": 1353.6,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 283,
@@ -39,17 +39,17 @@
       "observedAt": "2026-10-16T16:00:13-04:00"
     },
     {
-      "symbol": "TRBG",
-      "price": 3.41,
-      "changePct": 4.923076923076927,
+      "symbol": "PSIG",
+      "price": 4.45,
+      "changePct": 4.70588235294118,
       "early": 77,
       "ignition": 91,
       "observedAt": "2026-10-16T16:00:00-04:00"
     },
     {
-      "symbol": "PSIG",
-      "price": 4.45,
-      "changePct": 4.70588235294118,
+      "symbol": "TRBG",
+      "price": 3.41,
+      "changePct": 4.923076923076927,
       "early": 77,
       "ignition": 91,
       "observedAt": "2026-10-16T16:00:00-04:00"
@@ -352,13 +352,13 @@
       "title": "CCH Holdings Ltd",
       "cik": "0002074123"
     },
-    "TRBG": {
-      "title": "Turbogen Ltd.",
-      "cik": "0002088375"
-    },
     "PSIG": {
       "title": "PS International Group Ltd.",
       "cik": "0001997201"
+    },
+    "TRBG": {
+      "title": "Turbogen Ltd.",
+      "cik": "0002088375"
     },
     "ARMP": {
       "title": "Armata Pharmaceuticals, Inc.",
@@ -4574,6 +4574,10 @@
       ],
       "eventCount": 2
     },
+    "PSIG": {
+      "events": [],
+      "eventCount": 0
+    },
     "TRBG": {
       "events": [
         {
@@ -4614,10 +4618,6 @@
         }
       ],
       "eventCount": 3
-    },
-    "PSIG": {
-      "events": [],
-      "eventCount": 0
     },
     "ARMP": {
       "events": [],
