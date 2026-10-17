@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-17T13:53:15.780Z",
+  "generatedAt": "2026-10-17T15:38:20.942Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-17T00:00:00.000Z",
-    "marketDataAgeMin": 833.3,
+    "marketDataAgeMin": 938.4,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-17T13:53:16.267Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-17T13:18:38.209Z",
+    "upstreamFeedFetchedAt": "2026-10-17T15:38:21.238Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-17T15:30:25.023Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-17T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 34.6,
-    "upstreamObservationAgeAtFetchMin": 833.3,
+    "upstreamUpdateAgeAtFetchMin": 7.9,
+    "upstreamObservationAgeAtFetchMin": 938.4,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 283,
@@ -39,17 +39,17 @@
       "observedAt": "2026-10-16T16:00:13-04:00"
     },
     {
-      "symbol": "TRBG",
-      "price": 3.41,
-      "changePct": 4.923076923076927,
+      "symbol": "PSIG",
+      "price": 4.45,
+      "changePct": 4.70588235294118,
       "early": 77,
       "ignition": 91,
       "observedAt": "2026-10-16T16:00:00-04:00"
     },
     {
-      "symbol": "PSIG",
-      "price": 4.45,
-      "changePct": 4.70588235294118,
+      "symbol": "TRBG",
+      "price": 3.41,
+      "changePct": 4.923076923076927,
       "early": 77,
       "ignition": 91,
       "observedAt": "2026-10-16T16:00:00-04:00"
@@ -215,20 +215,20 @@
       "observedAt": "2026-10-16T16:00:00-04:00"
     },
     {
-      "symbol": "CEPL",
-      "price": 2.99,
-      "changePct": -8.282208588957042,
-      "early": 60,
-      "ignition": 74,
-      "observedAt": "2026-10-16T16:00:22-04:00"
-    },
-    {
       "symbol": "AMTX",
       "price": 1.48,
       "changePct": 2.4221453287197177,
       "early": 63,
       "ignition": 71,
       "observedAt": "2026-10-16T19:23:35-04:00"
+    },
+    {
+      "symbol": "CEPL",
+      "price": 2.99,
+      "changePct": -8.282208588957042,
+      "early": 60,
+      "ignition": 74,
+      "observedAt": "2026-10-16T16:00:22-04:00"
     },
     {
       "symbol": "KGEI",
@@ -352,13 +352,13 @@
       "title": "CCH Holdings Ltd",
       "cik": "0002074123"
     },
-    "TRBG": {
-      "title": "Turbogen Ltd.",
-      "cik": "0002088375"
-    },
     "PSIG": {
       "title": "PS International Group Ltd.",
       "cik": "0001997201"
+    },
+    "TRBG": {
+      "title": "Turbogen Ltd.",
+      "cik": "0002088375"
     },
     "ARMP": {
       "title": "Armata Pharmaceuticals, Inc.",
@@ -440,13 +440,13 @@
       "title": "Star Holdings",
       "cik": "0001953366"
     },
-    "CEPL": {
-      "title": "Capstone Energy Plus, Inc.",
-      "cik": "0001009759"
-    },
     "AMTX": {
       "title": "AEMETIS, INC",
       "cik": "0000738214"
+    },
+    "CEPL": {
+      "title": "Capstone Energy Plus, Inc.",
+      "cik": "0001009759"
     },
     "KGEI": {
       "title": "Kolibri Global Energy Inc.",
@@ -4574,6 +4574,10 @@
       ],
       "eventCount": 2
     },
+    "PSIG": {
+      "events": [],
+      "eventCount": 0
+    },
     "TRBG": {
       "events": [
         {
@@ -4614,10 +4618,6 @@
         }
       ],
       "eventCount": 3
-    },
-    "PSIG": {
-      "events": [],
-      "eventCount": 0
     },
     "ARMP": {
       "events": [],
@@ -5048,11 +5048,11 @@
       ],
       "eventCount": 2
     },
-    "CEPL": {
+    "AMTX": {
       "events": [],
       "eventCount": 0
     },
-    "AMTX": {
+    "CEPL": {
       "events": [],
       "eventCount": 0
     },
