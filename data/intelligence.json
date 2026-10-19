@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-19T01:47:52.128Z",
+  "generatedAt": "2026-10-19T06:53:30.625Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-17T00:00:00.000Z",
-    "marketDataAgeMin": 2987.9,
+    "marketDataAgeMin": 3293.5,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-19T01:47:52.528Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-19T01:42:46.333Z",
+    "upstreamFeedFetchedAt": "2026-10-19T06:53:30.876Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-19T06:49:30.987Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-17T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 5.1,
-    "upstreamObservationAgeAtFetchMin": 2987.9,
+    "upstreamUpdateAgeAtFetchMin": 4,
+    "upstreamObservationAgeAtFetchMin": 3293.5,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 283,
@@ -271,20 +271,20 @@
       "observedAt": "2026-10-16T16:00:07-04:00"
     },
     {
-      "symbol": "CLYM",
-      "price": 9.82,
-      "changePct": -9.990834097158569,
-      "early": 62,
-      "ignition": 76,
-      "observedAt": "2026-10-16T16:01:15-04:00"
-    },
-    {
       "symbol": "HYPD",
       "price": 2.88,
       "changePct": -8.571428571428573,
       "early": 62,
       "ignition": 76,
       "observedAt": "2026-10-16T16:00:07-04:00"
+    },
+    {
+      "symbol": "CLYM",
+      "price": 9.82,
+      "changePct": -9.990834097158569,
+      "early": 62,
+      "ignition": 76,
+      "observedAt": "2026-10-16T16:01:15-04:00"
     },
     {
       "symbol": "COPR",
@@ -327,20 +327,20 @@
       "observedAt": "2026-10-16T16:00:38-04:00"
     },
     {
-      "symbol": "CRIS",
-      "price": 0.429,
-      "changePct": -15.551181102362207,
-      "early": 67,
-      "ignition": 67,
-      "observedAt": "2026-10-16T19:15:47-04:00"
-    },
-    {
       "symbol": "UPB",
       "price": 2.76,
       "changePct": -18.100890207715143,
       "early": 60,
       "ignition": 74,
       "observedAt": "2026-10-16T16:00:00-04:00"
+    },
+    {
+      "symbol": "CRIS",
+      "price": 0.429,
+      "changePct": -15.551181102362207,
+      "early": 67,
+      "ignition": 67,
+      "observedAt": "2026-10-16T19:15:47-04:00"
     }
   ],
   "companies": {
@@ -468,13 +468,13 @@
       "title": "Entrada Therapeutics, Inc.",
       "cik": "0001689375"
     },
-    "CLYM": {
-      "title": "Climb Bio, Inc.",
-      "cik": "0001768446"
-    },
     "HYPD": {
       "title": "HYPERION DEFI, INC.",
       "cik": "0001682639"
+    },
+    "CLYM": {
+      "title": "Climb Bio, Inc.",
+      "cik": "0001768446"
     },
     "COPR": {
       "title": "Idaho Copper Corp",
@@ -496,13 +496,13 @@
       "title": "MEXICAN ECONOMIC DEVELOPMENT INC",
       "cik": "0001061736"
     },
-    "CRIS": {
-      "title": "CURIS INC",
-      "cik": "0001108205"
-    },
     "UPB": {
       "title": "Upstream Bio, Inc.",
       "cik": "0002022626"
+    },
+    "CRIS": {
+      "title": "CURIS INC",
+      "cik": "0001108205"
     }
   },
   "eventCount": 324,
@@ -4982,23 +4982,6 @@
       ],
       "eventCount": 1
     },
-    "CLYM": {
-      "events": [
-        {
-          "symbol": "CLYM",
-          "title": "Climb Bio, Inc.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-09-30T20:55:47.000Z",
-          "headline": "4 filing — Climb Bio, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1768446/000123191926001416/xslF345X06/form4-09302026_080936.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
     "HYPD": {
       "events": [
         {
@@ -5027,6 +5010,23 @@
         }
       ],
       "eventCount": 2
+    },
+    "CLYM": {
+      "events": [
+        {
+          "symbol": "CLYM",
+          "title": "Climb Bio, Inc.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-09-30T20:55:47.000Z",
+          "headline": "4 filing — Climb Bio, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1768446/000123191926001416/xslF345X06/form4-09302026_080936.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
     },
     "COPR": {
       "events": [],
@@ -5085,11 +5085,11 @@
       "events": [],
       "eventCount": 0
     },
-    "CRIS": {
+    "UPB": {
       "events": [],
       "eventCount": 0
     },
-    "UPB": {
+    "CRIS": {
       "events": [],
       "eventCount": 0
     },
