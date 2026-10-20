@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-20T21:20:49.335Z",
+  "generatedAt": "2026-10-20T21:23:47.386Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,17 +8,17 @@
     "marketWindowOpen": true,
     "marketSession": "after-hours",
     "newestObservedAt": "2026-10-20T20:15:46.000Z",
-    "marketDataAgeMin": 65.1,
+    "marketDataAgeMin": 68,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-20T21:20:49.765Z",
+    "upstreamFeedFetchedAt": "2026-10-20T21:23:47.614Z",
     "upstreamUpdatedAtAtBuild": "2026-10-20T20:15:45.813Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-20T20:15:46.000Z",
-    "upstreamUpdateAgeAtFetchMin": 65.1,
-    "upstreamObservationAgeAtFetchMin": 65.1,
+    "upstreamUpdateAgeAtFetchMin": 68,
+    "upstreamObservationAgeAtFetchMin": 68,
     "secMapping": true,
     "secMarketwideDiscovery": true,
-    "secMarketwideEventCount": 264,
+    "secMarketwideEventCount": 265,
     "newsDiscovery": true
   },
   "shortlist": [
@@ -505,8 +505,104 @@
       "cik": "0001695295"
     }
   },
-  "eventCount": 335,
+  "eventCount": 336,
   "events": [
+    {
+      "symbol": "JJETF",
+      "title": "BARCLAYS BANK PLC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-10-20T17:23:18-04:00",
+      "headline": "424B filing — BARCLAYS BANK PLC",
+      "url": "https://www.sec.gov/Archives/edgar/data/312070/000095010326015924/0000950103-26-015924-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "JPM-PM",
+      "title": "JPMORGAN CHASE & CO",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-10-20T17:23:01-04:00",
+      "headline": "424B filing — JPMORGAN CHASE & CO",
+      "url": "https://www.sec.gov/Archives/edgar/data/19617/000121390026111085/0001213900-26-111085-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "GS-PD",
+      "title": "GOLDMAN SACHS GROUP INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-10-20T17:22:28-04:00",
+      "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526426863/0001193125-26-426863-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "DV",
+      "title": "DoubleVerify Holdings, Inc.",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-10-20T17:21:30-04:00",
+      "headline": "8-K filing — DoubleVerify Holdings, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819928/000110465926117471/0001104659-26-117471-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "JPM-PM",
+      "title": "JPMORGAN CHASE & CO",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-10-20T17:21:01-04:00",
+      "headline": "424B filing — JPMORGAN CHASE & CO",
+      "url": "https://www.sec.gov/Archives/edgar/data/19617/000121390026111082/0001213900-26-111082-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "GS-PD",
+      "title": "GOLDMAN SACHS GROUP INC",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-10-20T17:20:58-04:00",
+      "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526426860/0001193125-26-426860-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "GSUN",
+      "title": "Golden Sun Technology Group Ltd.",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-10-20T17:20:44-04:00",
+      "headline": "6-K filing — Golden Sun Technology Group Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1826376/000121390026111081/0001213900-26-111081-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "GTBP",
+      "title": "GT Biopharma, Inc.",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-10-20T17:20:37-04:00",
+      "headline": "424B filing — GT Biopharma, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/109657/000149315226047792/0001493152-26-047792-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
     {
       "symbol": "KOD",
       "title": "Kodiak Sciences Inc.",
@@ -1552,30 +1648,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "FLYU",
-      "title": "BANK OF MONTREAL /CAN/",
-      "type": "SEC",
-      "form": "424B",
-      "publishedAt": "2026-10-20T16:45:21-04:00",
-      "headline": "424B filing — BANK OF MONTREAL /CAN/",
-      "url": "https://www.sec.gov/Archives/edgar/data/927971/000121465926013086/0001214659-26-013086-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "GS-PD",
-      "title": "GOLDMAN SACHS GROUP INC",
-      "type": "SEC",
-      "form": "424B",
-      "publishedAt": "2026-10-20T16:44:56-04:00",
-      "headline": "424B filing — GOLDMAN SACHS GROUP INC",
-      "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526426792/0001193125-26-426792-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
       "symbol": "SMCIP",
       "title": "Super Micro Computer, Inc.",
       "type": "SEC",
@@ -1583,42 +1655,6 @@
       "publishedAt": "2026-10-20T16:44:26-04:00",
       "headline": "8-K filing — Super Micro Computer, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000025/0001375365-26-000025-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "DRK",
-      "title": "DarkHorse Technologies Inc.",
-      "type": "SEC",
-      "form": "424B",
-      "publishedAt": "2026-10-20T16:44:10-04:00",
-      "headline": "424B filing — DarkHorse Technologies Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1591956/000121390026111062/0001213900-26-111062-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "JPM-PM",
-      "title": "JPMORGAN CHASE & CO",
-      "type": "SEC",
-      "form": "424B",
-      "publishedAt": "2026-10-20T16:43:28-04:00",
-      "headline": "424B filing — JPMORGAN CHASE & CO",
-      "url": "https://www.sec.gov/Archives/edgar/data/19617/000191870426032153/0001918704-26-032153-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "GS-PD",
-      "title": "GOLDMAN SACHS GROUP INC",
-      "type": "SEC",
-      "form": "424B",
-      "publishedAt": "2026-10-20T16:41:40-04:00",
-      "headline": "424B filing — GOLDMAN SACHS GROUP INC",
-      "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526426781/0001193125-26-426781-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -2572,18 +2608,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "PCMC",
-      "title": "PUBLIC CO MANAGEMENT CORP",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-10-20T14:00:47-04:00",
-      "headline": "8-K filing — PUBLIC CO MANAGEMENT CORP",
-      "url": "https://www.sec.gov/Archives/edgar/data/1141964/000121465926013063/0001214659-26-013063-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
       "symbol": "BBVXF",
       "title": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A.",
       "type": "SEC",
@@ -3527,18 +3551,6 @@
       "publishedAt": "2026-10-19T16:00:38-04:00",
       "headline": "S-3 filing — CMS ENERGY CORP",
       "url": "https://www.sec.gov/Archives/edgar/data/811156/000110465926116867/0001104659-26-116867-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "THCH",
-      "title": "TH International Ltd",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-10-19T16:00:24-04:00",
-      "headline": "6-K filing — TH International Ltd",
-      "url": "https://www.sec.gov/Archives/edgar/data/1877333/000121390026110661/0001213900-26-110661-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -5599,25 +5611,20 @@
       ],
       "eventCount": 1
     },
-    "KOD": {
+    "JJETF": {
       "events": [
         {
-          "symbol": "KOD",
-          "title": "Kodiak Sciences Inc.",
+          "symbol": "JJETF",
+          "title": "BARCLAYS BANK PLC",
           "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-10-20T17:19:14-04:00",
-          "headline": "S-3 filing — Kodiak Sciences Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1468748/000119312526426854/0001193125-26-426854-index.htm",
+          "form": "424B",
+          "publishedAt": "2026-10-20T17:23:18-04:00",
+          "headline": "424B filing — BARCLAYS BANK PLC",
+          "url": "https://www.sec.gov/Archives/edgar/data/312070/000095010326015924/0000950103-26-015924-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "JJETF": {
-      "events": [
+        },
         {
           "symbol": "JJETF",
           "title": "BARCLAYS BANK PLC",
@@ -5701,21 +5708,243 @@
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
-        },
+        }
+      ],
+      "eventCount": 11
+    },
+    "JPM-PM": {
+      "events": [
         {
-          "symbol": "JJETF",
-          "title": "BARCLAYS BANK PLC",
+          "symbol": "JPM-PM",
+          "title": "JPMORGAN CHASE & CO",
           "type": "SEC",
           "form": "424B",
-          "publishedAt": "2026-10-20T16:51:00-04:00",
-          "headline": "424B filing — BARCLAYS BANK PLC",
-          "url": "https://www.sec.gov/Archives/edgar/data/312070/000191870426032161/0001918704-26-032161-index.htm",
+          "publishedAt": "2026-10-20T17:23:01-04:00",
+          "headline": "424B filing — JPMORGAN CHASE & CO",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000121390026111085/0001213900-26-111085-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "JPM-PM",
+          "title": "JPMORGAN CHASE & CO",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-20T17:21:01-04:00",
+          "headline": "424B filing — JPMORGAN CHASE & CO",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000121390026111082/0001213900-26-111082-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "JPM-PM",
+          "title": "JPMORGAN CHASE & CO",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-20T17:14:31-04:00",
+          "headline": "424B filing — JPMORGAN CHASE & CO",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000121390026111078/0001213900-26-111078-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "JPM-PM",
+          "title": "JPMORGAN CHASE & CO",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-20T16:15:28-04:00",
+          "headline": "8-K filing — JPMORGAN CHASE & CO",
+          "url": "https://www.sec.gov/Archives/edgar/data/19617/000119312526426704/0001193125-26-426704-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 4
+    },
+    "GS-PD": {
+      "events": [
+        {
+          "symbol": "GS-PD",
+          "title": "GOLDMAN SACHS GROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-20T17:22:28-04:00",
+          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526426863/0001193125-26-426863-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "GS-PD",
+          "title": "GOLDMAN SACHS GROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-20T17:20:58-04:00",
+          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526426860/0001193125-26-426860-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "GS-PD",
+          "title": "GOLDMAN SACHS GROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-20T17:12:44-04:00",
+          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526426847/0001193125-26-426847-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "GS-PD",
+          "title": "GOLDMAN SACHS GROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-20T17:11:39-04:00",
+          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526426846/0001193125-26-426846-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "GS-PD",
+          "title": "GOLDMAN SACHS GROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-20T17:06:56-04:00",
+          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526426835/0001193125-26-426835-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "GS-PD",
+          "title": "GOLDMAN SACHS GROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-20T16:58:55-04:00",
+          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526426816/0001193125-26-426816-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "GS-PD",
+          "title": "GOLDMAN SACHS GROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-20T16:58:48-04:00",
+          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526426815/0001193125-26-426815-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "GS-PD",
+          "title": "GOLDMAN SACHS GROUP INC",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-20T16:53:27-04:00",
+          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526426807/0001193125-26-426807-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
         }
       ],
       "eventCount": 10
+    },
+    "DV": {
+      "events": [
+        {
+          "symbol": "DV",
+          "title": "DoubleVerify Holdings, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-20T17:21:30-04:00",
+          "headline": "8-K filing — DoubleVerify Holdings, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819928/000110465926117471/0001104659-26-117471-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "GSUN": {
+      "events": [
+        {
+          "symbol": "GSUN",
+          "title": "Golden Sun Technology Group Ltd.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-10-20T17:20:44-04:00",
+          "headline": "6-K filing — Golden Sun Technology Group Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1826376/000121390026111081/0001213900-26-111081-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "GSUN",
+          "title": "Golden Sun Technology Group Ltd.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-10-20T16:01:13-04:00",
+          "headline": "6-K filing — Golden Sun Technology Group Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1826376/000121390026111018/0001213900-26-111018-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 2
+    },
+    "GTBP": {
+      "events": [
+        {
+          "symbol": "GTBP",
+          "title": "GT Biopharma, Inc.",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-20T17:20:37-04:00",
+          "headline": "424B filing — GT Biopharma, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/109657/000149315226047792/0001493152-26-047792-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "KOD": {
+      "events": [
+        {
+          "symbol": "KOD",
+          "title": "Kodiak Sciences Inc.",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-10-20T17:19:14-04:00",
+          "headline": "S-3 filing — Kodiak Sciences Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1468748/000119312526426854/0001193125-26-426854-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
     },
     "C-PR": {
       "events": [
@@ -5793,47 +6022,6 @@
         }
       ],
       "eventCount": 6
-    },
-    "JPM-PM": {
-      "events": [
-        {
-          "symbol": "JPM-PM",
-          "title": "JPMORGAN CHASE & CO",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-20T17:14:31-04:00",
-          "headline": "424B filing — JPMORGAN CHASE & CO",
-          "url": "https://www.sec.gov/Archives/edgar/data/19617/000121390026111078/0001213900-26-111078-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "JPM-PM",
-          "title": "JPMORGAN CHASE & CO",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-20T16:43:28-04:00",
-          "headline": "424B filing — JPMORGAN CHASE & CO",
-          "url": "https://www.sec.gov/Archives/edgar/data/19617/000191870426032153/0001918704-26-032153-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "JPM-PM",
-          "title": "JPMORGAN CHASE & CO",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-20T16:15:28-04:00",
-          "headline": "8-K filing — JPMORGAN CHASE & CO",
-          "url": "https://www.sec.gov/Archives/edgar/data/19617/000119312526426704/0001193125-26-426704-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 3
     },
     "BAC-PS": {
       "events": [
@@ -5952,107 +6140,6 @@
         }
       ],
       "eventCount": 1
-    },
-    "GS-PD": {
-      "events": [
-        {
-          "symbol": "GS-PD",
-          "title": "GOLDMAN SACHS GROUP INC",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-20T17:12:44-04:00",
-          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
-          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526426847/0001193125-26-426847-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "GS-PD",
-          "title": "GOLDMAN SACHS GROUP INC",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-20T17:11:39-04:00",
-          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
-          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526426846/0001193125-26-426846-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "GS-PD",
-          "title": "GOLDMAN SACHS GROUP INC",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-20T17:06:56-04:00",
-          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
-          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526426835/0001193125-26-426835-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "GS-PD",
-          "title": "GOLDMAN SACHS GROUP INC",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-20T16:58:55-04:00",
-          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
-          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526426816/0001193125-26-426816-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "GS-PD",
-          "title": "GOLDMAN SACHS GROUP INC",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-20T16:58:48-04:00",
-          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
-          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526426815/0001193125-26-426815-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "GS-PD",
-          "title": "GOLDMAN SACHS GROUP INC",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-20T16:53:27-04:00",
-          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
-          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526426807/0001193125-26-426807-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "GS-PD",
-          "title": "GOLDMAN SACHS GROUP INC",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-20T16:48:54-04:00",
-          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
-          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526426802/0001193125-26-426802-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "GS-PD",
-          "title": "GOLDMAN SACHS GROUP INC",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-20T16:46:53-04:00",
-          "headline": "424B filing — GOLDMAN SACHS GROUP INC",
-          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526426797/0001193125-26-426797-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 10
     },
     "HII": {
       "events": [
@@ -6533,21 +6620,9 @@
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "FLYU",
-          "title": "BANK OF MONTREAL /CAN/",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-20T16:45:21-04:00",
-          "headline": "424B filing — BANK OF MONTREAL /CAN/",
-          "url": "https://www.sec.gov/Archives/edgar/data/927971/000121465926013086/0001214659-26-013086-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
         }
       ],
-      "eventCount": 3
+      "eventCount": 2
     },
     "IKT": {
       "events": [
@@ -6731,23 +6806,6 @@
           "publishedAt": "2026-10-20T16:44:26-04:00",
           "headline": "8-K filing — Super Micro Computer, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000025/0001375365-26-000025-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "DRK": {
-      "events": [
-        {
-          "symbol": "DRK",
-          "title": "DarkHorse Technologies Inc.",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-20T16:44:10-04:00",
-          "headline": "424B filing — DarkHorse Technologies Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1591956/000121390026111062/0001213900-26-111062-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -7871,23 +7929,6 @@
       ],
       "eventCount": 1
     },
-    "GSUN": {
-      "events": [
-        {
-          "symbol": "GSUN",
-          "title": "Golden Sun Technology Group Ltd.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-20T16:01:13-04:00",
-          "headline": "6-K filing — Golden Sun Technology Group Ltd.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1826376/000121390026111018/0001213900-26-111018-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
     "MTR": {
       "events": [
         {
@@ -8051,23 +8092,6 @@
           "publishedAt": "2026-10-20T15:00:15-04:00",
           "headline": "8-K filing — Gyrodyne, LLC",
           "url": "https://www.sec.gov/Archives/edgar/data/1589061/000143774926033007/0001437749-26-033007-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "PCMC": {
-      "events": [
-        {
-          "symbol": "PCMC",
-          "title": "PUBLIC CO MANAGEMENT CORP",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-20T14:00:47-04:00",
-          "headline": "8-K filing — PUBLIC CO MANAGEMENT CORP",
-          "url": "https://www.sec.gov/Archives/edgar/data/1141964/000121465926013063/0001214659-26-013063-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -9238,23 +9262,6 @@
           "publishedAt": "2026-10-19T16:00:38-04:00",
           "headline": "S-3 filing — CMS ENERGY CORP",
           "url": "https://www.sec.gov/Archives/edgar/data/811156/000110465926116867/0001104659-26-116867-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "THCH": {
-      "events": [
-        {
-          "symbol": "THCH",
-          "title": "TH International Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-19T16:00:24-04:00",
-          "headline": "6-K filing — TH International Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1877333/000121390026110661/0001213900-26-110661-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
