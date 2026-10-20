@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-20T02:10:20.822Z",
+  "generatedAt": "2026-10-20T07:35:59.602Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,16 +8,16 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-20T00:00:00.000Z",
-    "marketDataAgeMin": 130.4,
+    "marketDataAgeMin": 456,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-20T02:10:21.172Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-20T01:47:22.903Z",
+    "upstreamFeedFetchedAt": "2026-10-20T07:35:59.977Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-20T06:41:50.917Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-20T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 23,
-    "upstreamObservationAgeAtFetchMin": 130.4,
+    "upstreamUpdateAgeAtFetchMin": 54.2,
+    "upstreamObservationAgeAtFetchMin": 456,
     "secMapping": true,
-    "secMarketwideDiscovery": true,
+    "secMarketwideDiscovery": false,
     "secMarketwideEventCount": 273,
     "newsDiscovery": true
   },
@@ -34,8 +34,8 @@
       "symbol": "RENT",
       "price": 1.86,
       "changePct": 5.681818181818187,
-      "early": 84,
-      "ignition": 98,
+      "early": 83,
+      "ignition": 97,
       "observedAt": "2026-10-19T16:00:00-04:00"
     },
     {
@@ -149,14 +149,6 @@
       "early": 70,
       "ignition": 84,
       "observedAt": "2026-10-19T16:00:46-04:00"
-    },
-    {
-      "symbol": "KOF",
-      "price": 120.6296,
-      "changePct": 1.4120218579234918,
-      "early": 70,
-      "ignition": 84,
-      "observedAt": "2026-10-19T16:03:15-04:00"
     },
     {
       "symbol": "NEXR",
@@ -341,6 +333,14 @@
       "early": 66,
       "ignition": 74,
       "observedAt": "2026-10-19T16:00:00-04:00"
+    },
+    {
+      "symbol": "ENTA",
+      "price": 11.41,
+      "changePct": 2.792792792792797,
+      "early": 67,
+      "ignition": 73,
+      "observedAt": "2026-10-19T16:00:12-04:00"
     }
   ],
   "companies": {
@@ -407,10 +407,6 @@
     "BUR": {
       "title": "Burford Capital Ltd",
       "cik": "0001714174"
-    },
-    "KOF": {
-      "title": "COCA COLA FEMSA SAB DE CV",
-      "cik": "0000910631"
     },
     "NEXR": {
       "title": "Nexera Technologies Ltd",
@@ -503,10 +499,38 @@
     "ADSE": {
       "title": "Ads-Tec Energy Public Ltd Co",
       "cik": "0001879248"
+    },
+    "ENTA": {
+      "title": "ENANTA PHARMACEUTICALS INC",
+      "cik": "0001177648"
     }
   },
-  "eventCount": 336,
+  "eventCount": 338,
   "events": [
+    {
+      "symbol": "CRIS",
+      "title": "CURIS INC",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-10-20T00:30:24.000Z",
+      "headline": "8-K filing — CURIS INC",
+      "url": "https://www.sec.gov/Archives/edgar/data/1108205/000110465926116910/tm2627615d1_8k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "SCNX",
+      "title": "Scienture Holdings, Inc.",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-10-20T00:05:22.000Z",
+      "headline": "8-K filing — Scienture Holdings, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1382574/000149315226047579/form8-k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
     {
       "symbol": "JJETF",
       "title": "BARCLAYS BANK PLC",
@@ -3296,7 +3320,7 @@
       "title": "BranchOut Food Inc.",
       "type": "SEC",
       "form": "EFFECT",
-      "publishedAt": "2026-10-19T04:15:12.000Z",
+      "publishedAt": "2026-10-19T08:15:12.000Z",
       "headline": "EFFECT filing — BranchOut Food Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1962481/999999999526003281/xslEFFECTX01/primary_doc.xml",
       "source": "SEC EDGAR",
@@ -3308,7 +3332,7 @@
       "title": "CYABRA, INC.",
       "type": "SEC",
       "form": "EFFECT",
-      "publishedAt": "2026-10-19T04:15:09.000Z",
+      "publishedAt": "2026-10-19T08:15:09.000Z",
       "headline": "EFFECT filing — CYABRA, INC.",
       "url": "https://www.sec.gov/Archives/edgar/data/2032341/999999999526003279/xslEFFECTX01/primary_doc.xml",
       "source": "SEC EDGAR",
@@ -4817,7 +4841,7 @@
           "title": "BranchOut Food Inc.",
           "type": "SEC",
           "form": "EFFECT",
-          "publishedAt": "2026-10-19T04:15:12.000Z",
+          "publishedAt": "2026-10-19T08:15:12.000Z",
           "headline": "EFFECT filing — BranchOut Food Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1962481/999999999526003281/xslEFFECTX01/primary_doc.xml",
           "source": "SEC EDGAR",
@@ -4850,6 +4874,18 @@
           "title": "Scienture Holdings, Inc.",
           "type": "SEC",
           "form": "8-K",
+          "publishedAt": "2026-10-20T00:05:22.000Z",
+          "headline": "8-K filing — Scienture Holdings, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1382574/000149315226047579/form8-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "SCNX",
+          "title": "Scienture Holdings, Inc.",
+          "type": "SEC",
+          "form": "8-K",
           "publishedAt": "2026-10-19T16:05:22-04:00",
           "headline": "8-K filing — Scienture Holdings, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1382574/000149315226047579/0001493152-26-047579-index.htm",
@@ -4870,7 +4906,7 @@
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 2
+      "eventCount": 3
     },
     "ESLA": {
       "events": [],
@@ -4934,10 +4970,6 @@
       "eventCount": 0
     },
     "BUR": {
-      "events": [],
-      "eventCount": 0
-    },
-    "KOF": {
       "events": [],
       "eventCount": 0
     },
@@ -5167,7 +5199,7 @@
           "title": "CYABRA, INC.",
           "type": "SEC",
           "form": "EFFECT",
-          "publishedAt": "2026-10-19T04:15:09.000Z",
+          "publishedAt": "2026-10-19T08:15:09.000Z",
           "headline": "EFFECT filing — CYABRA, INC.",
           "url": "https://www.sec.gov/Archives/edgar/data/2032341/999999999526003279/xslEFFECTX01/primary_doc.xml",
           "source": "SEC EDGAR",
@@ -5196,6 +5228,18 @@
           "title": "CURIS INC",
           "type": "SEC",
           "form": "8-K",
+          "publishedAt": "2026-10-20T00:30:24.000Z",
+          "headline": "8-K filing — CURIS INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/1108205/000110465926116910/tm2627615d1_8k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "CRIS",
+          "title": "CURIS INC",
+          "type": "SEC",
+          "form": "8-K",
           "publishedAt": "2026-10-19T16:30:24-04:00",
           "headline": "8-K filing — CURIS INC",
           "url": "https://www.sec.gov/Archives/edgar/data/1108205/000110465926116910/0001104659-26-116910-index.htm",
@@ -5204,7 +5248,7 @@
           "discoveryScope": "MARKET_WIDE"
         }
       ],
-      "eventCount": 1
+      "eventCount": 2
     },
     "SVRE": {
       "events": [
@@ -5506,6 +5550,10 @@
         }
       ],
       "eventCount": 2
+    },
+    "ENTA": {
+      "events": [],
+      "eventCount": 0
     },
     "JJETF": {
       "events": [
@@ -9701,6 +9749,8 @@
       "eventCount": 1
     }
   },
-  "errors": [],
+  "errors": [
+    "SEC_CURRENT_SC 13D:This operation was aborted"
+  ],
   "policy": "Public-source intelligence. Market-wide SEC current-filing discovery is primary-source and independent of the price shortlist. `sourceStatus.live` means the loaded market universe contains fresh market data inside the active US extended-hours window; loaded-but-stale/session-final data is never labeled live. Shortlist ranking does not determine feed-level freshness. Upstream feed timestamps are retained only as operational provenance and do not override quote observation freshness or trading eligibility. SEC filings are primary-source events; GDELT is discovery-only and requires source-level verification before trade decisions."
 }
