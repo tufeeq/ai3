@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-20T13:01:41.943Z",
+  "generatedAt": "2026-10-20T13:04:40.866Z",
   "sourceStatus": {
     "live": true,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": true,
     "marketSession": "pre-market",
     "newestObservedAt": "2026-10-20T13:00:16.000Z",
-    "marketDataAgeMin": 1.4,
+    "marketDataAgeMin": 4.4,
     "quoteCount": 555,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-20T13:01:42.225Z",
+    "upstreamFeedFetchedAt": "2026-10-20T13:04:41.388Z",
     "upstreamUpdatedAtAtBuild": "2026-10-20T13:00:15.581Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-20T13:00:16.000Z",
-    "upstreamUpdateAgeAtFetchMin": 1.4,
-    "upstreamObservationAgeAtFetchMin": 1.4,
+    "upstreamUpdateAgeAtFetchMin": 4.4,
+    "upstreamObservationAgeAtFetchMin": 4.4,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 281,
@@ -507,6 +507,42 @@
   },
   "eventCount": 355,
   "events": [
+    {
+      "symbol": "INLF",
+      "title": "INLIF Ltd",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-10-20T09:04:08-04:00",
+      "headline": "424B filing — INLIF Ltd",
+      "url": "https://www.sec.gov/Archives/edgar/data/1991592/000121390026110849/0001213900-26-110849-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "TTD",
+      "title": "Trade Desk, Inc.",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-10-20T09:03:57-04:00",
+      "headline": "8-K filing — Trade Desk, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1671933/000167193326000108/0001671933-26-000108-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "ASRV",
+      "title": "AMERISERV FINANCIAL INC /PA/",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-10-20T09:01:42-04:00",
+      "headline": "8-K filing — AMERISERV FINANCIAL INC /PA/",
+      "url": "https://www.sec.gov/Archives/edgar/data/707605/000110465926117201/0001104659-26-117201-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
     {
       "symbol": "DCBG",
       "title": "Dime Commercial Bancshares, Inc. /NY/",
@@ -3028,18 +3064,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "C-PR",
-      "title": "CITIGROUP INC",
-      "type": "SEC",
-      "form": "424B",
-      "publishedAt": "2026-10-19T17:11:00-04:00",
-      "headline": "424B filing — CITIGROUP INC",
-      "url": "https://www.sec.gov/Archives/edgar/data/831001/000095010326015809/0000950103-26-015809-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
       "symbol": "LRHC",
       "title": "La Rosa Holdings Corp.",
       "type": "SEC",
@@ -3119,30 +3143,6 @@
       "publishedAt": "2026-10-19T17:00:13-04:00",
       "headline": "8-K filing — Stardust Power Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1831979/000149315226047607/0001493152-26-047607-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "GTY",
-      "title": "GETTY REALTY CORP /MD/",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-10-19T17:00:13-04:00",
-      "headline": "8-K filing — GETTY REALTY CORP /MD/",
-      "url": "https://www.sec.gov/Archives/edgar/data/1052752/000119312526425357/0001193125-26-425357-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "TCXB",
-      "title": "TCGX Acquisition Corp. II",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-10-19T16:58:51-04:00",
-      "headline": "8-K filing — TCGX Acquisition Corp. II",
-      "url": "https://www.sec.gov/Archives/edgar/data/2149916/000119312526425355/0001193125-26-425355-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -5853,6 +5853,57 @@
       "events": [],
       "eventCount": 0
     },
+    "INLF": {
+      "events": [
+        {
+          "symbol": "INLF",
+          "title": "INLIF Ltd",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-20T09:04:08-04:00",
+          "headline": "424B filing — INLIF Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1991592/000121390026110849/0001213900-26-110849-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "TTD": {
+      "events": [
+        {
+          "symbol": "TTD",
+          "title": "Trade Desk, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-20T09:03:57-04:00",
+          "headline": "8-K filing — Trade Desk, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1671933/000167193326000108/0001671933-26-000108-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "ASRV": {
+      "events": [
+        {
+          "symbol": "ASRV",
+          "title": "AMERISERV FINANCIAL INC /PA/",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-20T09:01:42-04:00",
+          "headline": "8-K filing — AMERISERV FINANCIAL INC /PA/",
+          "url": "https://www.sec.gov/Archives/edgar/data/707605/000110465926117201/0001104659-26-117201-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "DCBG": {
       "events": [
         {
@@ -8466,21 +8517,9 @@
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "C-PR",
-          "title": "CITIGROUP INC",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-19T17:11:00-04:00",
-          "headline": "424B filing — CITIGROUP INC",
-          "url": "https://www.sec.gov/Archives/edgar/data/831001/000095010326015809/0000950103-26-015809-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
         }
       ],
-      "eventCount": 3
+      "eventCount": 2
     },
     "IRON": {
       "events": [
@@ -8941,40 +8980,6 @@
           "publishedAt": "2026-10-19T17:00:13-04:00",
           "headline": "8-K filing — Stardust Power Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1831979/000149315226047607/0001493152-26-047607-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "GTY": {
-      "events": [
-        {
-          "symbol": "GTY",
-          "title": "GETTY REALTY CORP /MD/",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-19T17:00:13-04:00",
-          "headline": "8-K filing — GETTY REALTY CORP /MD/",
-          "url": "https://www.sec.gov/Archives/edgar/data/1052752/000119312526425357/0001193125-26-425357-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "TCXB": {
-      "events": [
-        {
-          "symbol": "TCXB",
-          "title": "TCGX Acquisition Corp. II",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-19T16:58:51-04:00",
-          "headline": "8-K filing — TCGX Acquisition Corp. II",
-          "url": "https://www.sec.gov/Archives/edgar/data/2149916/000119312526425355/0001193125-26-425355-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
