@@ -1,21 +1,21 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-20T23:57:55.865Z",
+  "generatedAt": "2026-10-21T00:03:02.811Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
     "marketDataFresh": false,
-    "marketWindowOpen": true,
-    "marketSession": "after-hours",
+    "marketWindowOpen": false,
+    "marketSession": "closed",
     "newestObservedAt": "2026-10-20T23:13:52.000Z",
-    "marketDataAgeMin": 44.1,
+    "marketDataAgeMin": 49.2,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-20T23:57:56.323Z",
+    "upstreamFeedFetchedAt": "2026-10-21T00:03:03.270Z",
     "upstreamUpdatedAtAtBuild": "2026-10-20T23:13:52.682Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-20T23:13:52.000Z",
-    "upstreamUpdateAgeAtFetchMin": 44.1,
-    "upstreamObservationAgeAtFetchMin": 44.1,
+    "upstreamUpdateAgeAtFetchMin": 49.2,
+    "upstreamObservationAgeAtFetchMin": 49.2,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 270,
@@ -505,7 +505,7 @@
       "cik": "0001434316"
     }
   },
-  "eventCount": 347,
+  "eventCount": 344,
   "events": [
     {
       "symbol": "ASBPW",
@@ -4634,42 +4634,6 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "LTRN",
-      "title": "Lantern Pharma Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-10-01T00:05:16.000Z",
-      "headline": "8-K filing — Lantern Pharma Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1763950/000149315226045100/form8-k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "CCHH",
-      "title": "CCH Holdings Ltd",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-09-30T22:22:01.000Z",
-      "headline": "6-K filing — CCH Holdings Ltd",
-      "url": "https://www.sec.gov/Archives/edgar/data/2074123/000121390026105141/ea0306973-6k_cch.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "LTRN",
-      "title": "Lantern Pharma Inc.",
-      "type": "SEC",
-      "form": "424B5",
-      "publishedAt": "2026-09-30T17:29:50.000Z",
-      "headline": "424B5 filing — Lantern Pharma Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1763950/000149315226045049/form424b5.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
     }
   ],
   "bySymbol": {
@@ -4940,21 +4904,8 @@
       "eventCount": 3
     },
     "CCHH": {
-      "events": [
-        {
-          "symbol": "CCHH",
-          "title": "CCH Holdings Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-09-30T22:22:01.000Z",
-          "headline": "6-K filing — CCH Holdings Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/2074123/000121390026105141/ea0306973-6k_cch.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
+      "events": [],
+      "eventCount": 0
     },
     "RKTO": {
       "events": [],
@@ -5113,33 +5064,9 @@
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "LTRN",
-          "title": "Lantern Pharma Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-01T00:05:16.000Z",
-          "headline": "8-K filing — Lantern Pharma Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1763950/000149315226045100/form8-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "LTRN",
-          "title": "Lantern Pharma Inc.",
-          "type": "SEC",
-          "form": "424B5",
-          "publishedAt": "2026-09-30T17:29:50.000Z",
-          "headline": "424B5 filing — Lantern Pharma Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1763950/000149315226045049/form424b5.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 3
+      "eventCount": 1
     },
     "FCRS": {
       "events": [],
