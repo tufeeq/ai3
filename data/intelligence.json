@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-25T21:49:39.857Z",
+  "generatedAt": "2026-10-25T22:24:35.734Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-24T00:00:00.000Z",
-    "marketDataAgeMin": 2749.7,
+    "marketDataAgeMin": 2784.6,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-25T21:49:40.180Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-25T21:48:24.699Z",
+    "upstreamFeedFetchedAt": "2026-10-25T22:24:36.017Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-25T22:10:29.857Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-24T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 1.3,
-    "upstreamObservationAgeAtFetchMin": 2749.7,
+    "upstreamUpdateAgeAtFetchMin": 14.1,
+    "upstreamObservationAgeAtFetchMin": 2784.6,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 297,
@@ -151,20 +151,20 @@
       "observedAt": "2026-10-23T16:00:10-04:00"
     },
     {
-      "symbol": "CLB",
-      "price": 9.91,
-      "changePct": 5.4255319148936145,
-      "early": 71,
-      "ignition": 85,
-      "observedAt": "2026-10-23T16:01:11-04:00"
-    },
-    {
       "symbol": "JAKK",
       "price": 30.52,
       "changePct": 3.3175355450236985,
       "early": 71,
       "ignition": 85,
       "observedAt": "2026-10-23T16:00:10-04:00"
+    },
+    {
+      "symbol": "CLB",
+      "price": 9.91,
+      "changePct": 5.4255319148936145,
+      "early": 71,
+      "ignition": 85,
+      "observedAt": "2026-10-23T16:01:11-04:00"
     },
     {
       "symbol": "KFRC",
@@ -231,14 +231,6 @@
       "observedAt": "2026-10-23T19:49:58-04:00"
     },
     {
-      "symbol": "OPTU",
-      "price": 0.6596,
-      "changePct": 9.896701099633457,
-      "early": 69,
-      "ignition": 83,
-      "observedAt": "2026-10-23T16:00:00-04:00"
-    },
-    {
       "symbol": "OPNW",
       "price": 1.659,
       "changePct": -8.342541436464089,
@@ -247,12 +239,12 @@
       "observedAt": "2026-10-23T19:53:33-04:00"
     },
     {
-      "symbol": "RGP",
-      "price": 2.69,
-      "changePct": 5.490196078431378,
+      "symbol": "OPTU",
+      "price": 0.6596,
+      "changePct": 9.896701099633457,
       "early": 69,
       "ignition": 83,
-      "observedAt": "2026-10-23T16:00:23-04:00"
+      "observedAt": "2026-10-23T16:00:00-04:00"
     },
     {
       "symbol": "ARDC",
@@ -269,6 +261,14 @@
       "early": 69,
       "ignition": 83,
       "observedAt": "2026-10-23T16:00:49-04:00"
+    },
+    {
+      "symbol": "RGP",
+      "price": 2.69,
+      "changePct": 5.490196078431378,
+      "early": 69,
+      "ignition": 83,
+      "observedAt": "2026-10-23T16:00:23-04:00"
     },
     {
       "symbol": "SHPH",
@@ -408,13 +408,13 @@
       "title": "CapsoVision, Inc",
       "cik": "0001378325"
     },
-    "CLB": {
-      "title": "Core Laboratories Inc. /DE/",
-      "cik": "0001958086"
-    },
     "JAKK": {
       "title": "JAKKS PACIFIC INC",
       "cik": "0001009829"
+    },
+    "CLB": {
+      "title": "Core Laboratories Inc. /DE/",
+      "cik": "0001958086"
     },
     "KFRC": {
       "title": "KFORCE INC",
@@ -448,17 +448,13 @@
       "title": "Top Wealth Group Holding Ltd",
       "cik": "0001978057"
     },
-    "OPTU": {
-      "title": "Optimum Communications, Inc.",
-      "cik": "0001702780"
-    },
     "OPNW": {
       "title": "OpenWorld, Inc.",
       "cik": "0001104038"
     },
-    "RGP": {
-      "title": "RESOURCES CONNECTION, INC.",
-      "cik": "0001084765"
+    "OPTU": {
+      "title": "Optimum Communications, Inc.",
+      "cik": "0001702780"
     },
     "ARDC": {
       "title": "Ares Dynamic Credit Allocation Fund, Inc.",
@@ -467,6 +463,10 @@
     "SMC": {
       "title": "Summit Midstream Corp",
       "cik": "0002024218"
+    },
+    "RGP": {
+      "title": "RESOURCES CONNECTION, INC.",
+      "cik": "0001084765"
     },
     "SHPH": {
       "title": "Shuttle Pharmaceuticals Holdings, Inc.",
@@ -5213,6 +5213,23 @@
       "events": [],
       "eventCount": 0
     },
+    "JAKK": {
+      "events": [
+        {
+          "symbol": "JAKK",
+          "title": "JAKKS PACIFIC INC",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-23T11:01:19.000Z",
+          "headline": "8-K filing — JAKKS PACIFIC INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/1009829/000143774926033328/jakk20261021_8k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
     "CLB": {
       "events": [
         {
@@ -5241,23 +5258,6 @@
         }
       ],
       "eventCount": 2
-    },
-    "JAKK": {
-      "events": [
-        {
-          "symbol": "JAKK",
-          "title": "JAKKS PACIFIC INC",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-23T11:01:19.000Z",
-          "headline": "8-K filing — JAKKS PACIFIC INC",
-          "url": "https://www.sec.gov/Archives/edgar/data/1009829/000143774926033328/jakk20261021_8k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
     },
     "KFRC": {
       "events": [],
@@ -5476,10 +5476,6 @@
       ],
       "eventCount": 2
     },
-    "OPTU": {
-      "events": [],
-      "eventCount": 0
-    },
     "OPNW": {
       "events": [
         {
@@ -5568,6 +5564,18 @@
         }
       ],
       "eventCount": 7
+    },
+    "OPTU": {
+      "events": [],
+      "eventCount": 0
+    },
+    "ARDC": {
+      "events": [],
+      "eventCount": 0
+    },
+    "SMC": {
+      "events": [],
+      "eventCount": 0
     },
     "RGP": {
       "events": [
@@ -5669,14 +5677,6 @@
         }
       ],
       "eventCount": 8
-    },
-    "ARDC": {
-      "events": [],
-      "eventCount": 0
-    },
-    "SMC": {
-      "events": [],
-      "eventCount": 0
     },
     "SHPH": {
       "events": [
