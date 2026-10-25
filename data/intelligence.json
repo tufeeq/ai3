@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-25T19:58:25.920Z",
+  "generatedAt": "2026-10-25T21:49:39.857Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-24T00:00:00.000Z",
-    "marketDataAgeMin": 2638.4,
+    "marketDataAgeMin": 2749.7,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-25T19:58:26.220Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-25T19:52:33.489Z",
+    "upstreamFeedFetchedAt": "2026-10-25T21:49:40.180Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-25T21:48:24.699Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-24T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 5.9,
-    "upstreamObservationAgeAtFetchMin": 2638.4,
+    "upstreamUpdateAgeAtFetchMin": 1.3,
+    "upstreamObservationAgeAtFetchMin": 2749.7,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 297,
@@ -29,14 +29,6 @@
       "early": 90,
       "ignition": 90,
       "observedAt": "2026-10-23T18:28:47-04:00"
-    },
-    {
-      "symbol": "TIL",
-      "price": 5.84,
-      "changePct": 2.4561403508771873,
-      "early": 81,
-      "ignition": 95,
-      "observedAt": "2026-10-23T16:00:00-04:00"
     },
     {
       "symbol": "VINP",
@@ -63,11 +55,11 @@
       "observedAt": "2026-10-23T16:00:00-04:00"
     },
     {
-      "symbol": "ATGL",
-      "price": 9.41,
-      "changePct": -0.9473684210526301,
-      "early": 83,
-      "ignition": 89,
+      "symbol": "TIL",
+      "price": 5.84,
+      "changePct": 2.4561403508771873,
+      "early": 78,
+      "ignition": 92,
       "observedAt": "2026-10-23T16:00:00-04:00"
     },
     {
@@ -103,44 +95,12 @@
       "observedAt": "2026-10-23T18:52:30-04:00"
     },
     {
-      "symbol": "NTRP",
-      "price": 1.39,
-      "changePct": 7.751937984496113,
-      "early": 74,
-      "ignition": 88,
-      "observedAt": "2026-10-23T16:00:00-04:00"
-    },
-    {
       "symbol": "QCLS",
       "price": 0.4812,
       "changePct": -9.190413285525574,
       "early": 78,
       "ignition": 84,
       "observedAt": "2026-10-23T16:01:11-04:00"
-    },
-    {
-      "symbol": "NYXH",
-      "price": 0.8344,
-      "changePct": 1.5085158150851676,
-      "early": 74,
-      "ignition": 88,
-      "observedAt": "2026-10-23T16:00:00-04:00"
-    },
-    {
-      "symbol": "ACR",
-      "price": 11.69,
-      "changePct": 7.051282051282047,
-      "early": 73,
-      "ignition": 87,
-      "observedAt": "2026-10-23T16:00:36-04:00"
-    },
-    {
-      "symbol": "NMRA",
-      "price": 0.4101,
-      "changePct": 1.0845452304658652,
-      "early": 80,
-      "ignition": 80,
-      "observedAt": "2026-10-23T19:52:44-04:00"
     },
     {
       "symbol": "NN",
@@ -165,30 +125,6 @@
       "early": 72,
       "ignition": 86,
       "observedAt": "2026-10-23T16:00:41-04:00"
-    },
-    {
-      "symbol": "SGU",
-      "price": 13.21,
-      "changePct": 1.7719568567026227,
-      "early": 72,
-      "ignition": 86,
-      "observedAt": "2026-10-23T16:04:08-04:00"
-    },
-    {
-      "symbol": "ANIX",
-      "price": 2.99,
-      "changePct": 7.553956834532389,
-      "early": 71,
-      "ignition": 85,
-      "observedAt": "2026-10-23T16:01:47-04:00"
-    },
-    {
-      "symbol": "FGBI",
-      "price": 8.94,
-      "changePct": 5.924170616113744,
-      "early": 71,
-      "ignition": 85,
-      "observedAt": "2026-10-23T16:00:00-04:00"
     },
     {
       "symbol": "VLN",
@@ -239,11 +175,35 @@
       "observedAt": "2026-10-23T16:00:13-04:00"
     },
     {
+      "symbol": "ACR",
+      "price": 11.69,
+      "changePct": 7.051282051282047,
+      "early": 70,
+      "ignition": 84,
+      "observedAt": "2026-10-23T16:00:36-04:00"
+    },
+    {
       "symbol": "MTEK",
       "price": 0.4241,
       "changePct": 8.715713919507811,
       "early": 74,
       "ignition": 80,
+      "observedAt": "2026-10-23T16:00:00-04:00"
+    },
+    {
+      "symbol": "NYXH",
+      "price": 0.8344,
+      "changePct": 1.5085158150851676,
+      "early": 74,
+      "ignition": 80,
+      "observedAt": "2026-10-23T16:00:00-04:00"
+    },
+    {
+      "symbol": "NTWK",
+      "price": 7.86,
+      "changePct": 1.4193548387096815,
+      "early": 70,
+      "ignition": 84,
       "observedAt": "2026-10-23T16:00:00-04:00"
     },
     {
@@ -253,14 +213,6 @@
       "early": 70,
       "ignition": 84,
       "observedAt": "2026-10-23T16:00:56-04:00"
-    },
-    {
-      "symbol": "NTWK",
-      "price": 7.86,
-      "changePct": 1.4193548387096815,
-      "early": 70,
-      "ignition": 84,
-      "observedAt": "2026-10-23T16:00:00-04:00"
     },
     {
       "symbol": "FET",
@@ -295,12 +247,12 @@
       "observedAt": "2026-10-23T19:53:33-04:00"
     },
     {
-      "symbol": "SMC",
-      "price": 31.21,
-      "changePct": 2.664473684210534,
+      "symbol": "RGP",
+      "price": 2.69,
+      "changePct": 5.490196078431378,
       "early": 69,
       "ignition": 83,
-      "observedAt": "2026-10-23T16:00:49-04:00"
+      "observedAt": "2026-10-23T16:00:23-04:00"
     },
     {
       "symbol": "ARDC",
@@ -311,12 +263,12 @@
       "observedAt": "2026-10-23T16:00:00-04:00"
     },
     {
-      "symbol": "RGP",
-      "price": 2.69,
-      "changePct": 5.490196078431378,
+      "symbol": "SMC",
+      "price": 31.21,
+      "changePct": 2.664473684210534,
       "early": 69,
       "ignition": 83,
-      "observedAt": "2026-10-23T16:00:23-04:00"
+      "observedAt": "2026-10-23T16:00:49-04:00"
     },
     {
       "symbol": "SHPH",
@@ -327,30 +279,74 @@
       "observedAt": "2026-10-23T18:57:32-04:00"
     },
     {
-      "symbol": "GMTL",
-      "price": 5.3,
-      "changePct": 10.416666666666668,
-      "early": 72,
-      "ignition": 78,
-      "observedAt": "2026-10-23T16:00:56-04:00"
-    },
-    {
       "symbol": "INTT",
       "price": 13.75,
       "changePct": 6.67183863460046,
       "early": 68,
       "ignition": 82,
       "observedAt": "2026-10-23T16:00:00-04:00"
+    },
+    {
+      "symbol": "REPX",
+      "price": 54.18,
+      "changePct": 6.027397260273969,
+      "early": 68,
+      "ignition": 82,
+      "observedAt": "2026-10-23T16:00:08-04:00"
+    },
+    {
+      "symbol": "GRFS",
+      "price": 7.56,
+      "changePct": 1.4765100671140863,
+      "early": 68,
+      "ignition": 82,
+      "observedAt": "2026-10-23T16:01:30-04:00"
+    },
+    {
+      "symbol": "ACDC",
+      "price": 4.07,
+      "changePct": 5.440414507772032,
+      "early": 68,
+      "ignition": 82,
+      "observedAt": "2026-10-23T16:00:12-04:00"
+    },
+    {
+      "symbol": "TGEN",
+      "price": 2.14,
+      "changePct": 3.381642512077309,
+      "early": 75,
+      "ignition": 75,
+      "observedAt": "2026-10-23T19:45:06-04:00"
+    },
+    {
+      "symbol": "TRAW",
+      "price": 0.368,
+      "changePct": 0.3545132260703484,
+      "early": 75,
+      "ignition": 75,
+      "observedAt": "2026-10-23T18:48:33-04:00"
+    },
+    {
+      "symbol": "DAKT",
+      "price": 21.4419,
+      "changePct": 10.184480986639258,
+      "early": 74,
+      "ignition": 74,
+      "observedAt": "2026-10-23T19:13:21-04:00"
+    },
+    {
+      "symbol": "AXG",
+      "price": 0.055,
+      "changePct": -27.1523178807947,
+      "early": 74,
+      "ignition": 74,
+      "observedAt": "2026-10-23T19:59:39-04:00"
     }
   ],
   "companies": {
     "BRAI": {
       "title": "Braiin Ltd",
       "cik": "0002076975"
-    },
-    "TIL": {
-      "title": "Instil Bio, Inc.",
-      "cik": "0001789769"
     },
     "VINP": {
       "title": "Vinci Compass Investments Ltd.",
@@ -364,9 +360,9 @@
       "title": "Gamehaus Holdings Inc.",
       "cik": "0002000530"
     },
-    "ATGL": {
-      "title": "Alpha Technology Group Ltd",
-      "cik": "0001967621"
+    "TIL": {
+      "title": "Instil Bio, Inc.",
+      "cik": "0001789769"
     },
     "INEO": {
       "title": "INNEOVA Holdings Ltd",
@@ -384,25 +380,9 @@
       "title": "COMPANHIA DE SANEAMENTO BASICO DO ESTADO DE SAO PAULO-SABESP",
       "cik": "0001170858"
     },
-    "NTRP": {
-      "title": "NextTrip, Inc.",
-      "cik": "0000788611"
-    },
     "QCLS": {
       "title": "Q/C TECHNOLOGIES, INC.",
       "cik": "0001321834"
-    },
-    "NYXH": {
-      "title": "Nyxoah SA",
-      "cik": "0001857190"
-    },
-    "ACR": {
-      "title": "ACRES Commercial Realty Corp.",
-      "cik": "0001332551"
-    },
-    "NMRA": {
-      "title": "Neumora Therapeutics, Inc.",
-      "cik": "0001885522"
     },
     "NN": {
       "title": "NEXTNAV INC.",
@@ -415,18 +395,6 @@
     "SUPV": {
       "title": "Grupo Supervielle S.A.",
       "cik": "0001517399"
-    },
-    "SGU": {
-      "title": "STAR GROUP, L.P.",
-      "cik": "0001002590"
-    },
-    "ANIX": {
-      "title": "Anixa Biosciences Inc",
-      "cik": "0000715446"
-    },
-    "FGBI": {
-      "title": "First Guaranty Bancshares, Inc.",
-      "cik": "0001408534"
     },
     "VLN": {
       "title": "Valens Semiconductor Ltd.",
@@ -452,17 +420,25 @@
       "title": "KFORCE INC",
       "cik": "0000930420"
     },
+    "ACR": {
+      "title": "ACRES Commercial Realty Corp.",
+      "cik": "0001332551"
+    },
     "MTEK": {
       "title": "Maris Tech Ltd.",
       "cik": "0001872964"
     },
-    "BBAR": {
-      "title": "Banco BBVA Argentina S.A.",
-      "cik": "0000913059"
+    "NYXH": {
+      "title": "Nyxoah SA",
+      "cik": "0001857190"
     },
     "NTWK": {
       "title": "NETSOL TECHNOLOGIES INC",
       "cik": "0001039280"
+    },
+    "BBAR": {
+      "title": "Banco BBVA Argentina S.A.",
+      "cik": "0000913059"
     },
     "FET": {
       "title": "FORUM ENERGY TECHNOLOGIES, INC.",
@@ -480,32 +456,56 @@
       "title": "OpenWorld, Inc.",
       "cik": "0001104038"
     },
-    "SMC": {
-      "title": "Summit Midstream Corp",
-      "cik": "0002024218"
+    "RGP": {
+      "title": "RESOURCES CONNECTION, INC.",
+      "cik": "0001084765"
     },
     "ARDC": {
       "title": "Ares Dynamic Credit Allocation Fund, Inc.",
       "cik": "0001515324"
     },
-    "RGP": {
-      "title": "RESOURCES CONNECTION, INC.",
-      "cik": "0001084765"
+    "SMC": {
+      "title": "Summit Midstream Corp",
+      "cik": "0002024218"
     },
     "SHPH": {
       "title": "Shuttle Pharmaceuticals Holdings, Inc.",
       "cik": "0001757499"
     },
-    "GMTL": {
-      "title": "Guardian Metal Resources PLC",
-      "cik": "0002039972"
-    },
     "INTT": {
       "title": "INTEST CORP",
       "cik": "0001036262"
+    },
+    "REPX": {
+      "title": "Riley Exploration Permian, Inc.",
+      "cik": "0001001614"
+    },
+    "GRFS": {
+      "title": "Grifols SA",
+      "cik": "0001438569"
+    },
+    "ACDC": {
+      "title": "ProFrac Holding Corp.",
+      "cik": "0001881487"
+    },
+    "TGEN": {
+      "title": "TECOGEN INC.",
+      "cik": "0001537435"
+    },
+    "TRAW": {
+      "title": "Traws Pharma, Inc.",
+      "cik": "0001130598"
+    },
+    "DAKT": {
+      "title": "DAKTRONICS INC /SD/",
+      "cik": "0000915779"
+    },
+    "AXG": {
+      "title": "Solowin Holdings, Ltd.",
+      "cik": "0001959224"
     }
   },
-  "eventCount": 366,
+  "eventCount": 363,
   "events": [
     {
       "symbol": "VINP",
@@ -616,7 +616,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "APXCF",
+      "symbol": "APXC",
       "title": "APEX CRITICAL METALS CORP.",
       "type": "SEC",
       "form": "6-K",
@@ -916,7 +916,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "APXCF",
+      "symbol": "APXC",
       "title": "APEX CRITICAL METALS CORP.",
       "type": "SEC",
       "form": "6-K",
@@ -1684,7 +1684,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "FLYU",
+      "symbol": "BERZ",
       "title": "BANK OF MONTREAL /CAN/",
       "type": "SEC",
       "form": "424B",
@@ -1708,7 +1708,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "FLYU",
+      "symbol": "BERZ",
       "title": "BANK OF MONTREAL /CAN/",
       "type": "SEC",
       "form": "424B",
@@ -1732,7 +1732,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "FLYU",
+      "symbol": "BERZ",
       "title": "BANK OF MONTREAL /CAN/",
       "type": "SEC",
       "form": "424B",
@@ -1744,7 +1744,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "FLYU",
+      "symbol": "BERZ",
       "title": "BANK OF MONTREAL /CAN/",
       "type": "SEC",
       "form": "424B",
@@ -1768,7 +1768,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "FLYU",
+      "symbol": "BERZ",
       "title": "BANK OF MONTREAL /CAN/",
       "type": "SEC",
       "form": "424B",
@@ -1876,7 +1876,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "FLYU",
+      "symbol": "BERZ",
       "title": "BANK OF MONTREAL /CAN/",
       "type": "SEC",
       "form": "424B",
@@ -2116,7 +2116,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "FLYU",
+      "symbol": "BERZ",
       "title": "BANK OF MONTREAL /CAN/",
       "type": "SEC",
       "form": "424B",
@@ -2260,7 +2260,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "FLYU",
+      "symbol": "BERZ",
       "title": "BANK OF MONTREAL /CAN/",
       "type": "SEC",
       "form": "424B",
@@ -3424,7 +3424,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "APXCF",
+      "symbol": "APXC",
       "title": "APEX CRITICAL METALS CORP.",
       "type": "SEC",
       "form": "6-K",
@@ -3976,7 +3976,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "APXCF",
+      "symbol": "APXC",
       "title": "APEX CRITICAL METALS CORP.",
       "type": "SEC",
       "form": "6-K",
@@ -3988,7 +3988,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "APXCF",
+      "symbol": "APXC",
       "title": "APEX CRITICAL METALS CORP.",
       "type": "SEC",
       "form": "6-K",
@@ -4060,13 +4060,25 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "ANIX",
-      "title": "Anixa Biosciences Inc",
+      "symbol": "AXG",
+      "title": "Solowin Holdings, Ltd.",
       "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-10-22T21:44:15.000Z",
-      "headline": "4 filing — Anixa Biosciences Inc",
-      "url": "https://www.sec.gov/Archives/edgar/data/715446/000149315226048144/xslF345X06/ownership.xml",
+      "form": "424B5",
+      "publishedAt": "2026-10-22T21:31:07.000Z",
+      "headline": "424B5 filing — Solowin Holdings, Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1959224/000121390026111765/ea0306901-424b5_solowin.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "AXG",
+      "title": "Solowin Holdings, Ltd.",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-10-22T21:26:49.000Z",
+      "headline": "6-K filing — Solowin Holdings, Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1959224/000121390026111760/ea0306964-6k_solowin.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4204,18 +4216,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "NTRP",
-      "title": "NextTrip, Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-10-21T12:31:24.000Z",
-      "headline": "8-K filing — NextTrip, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/788611/000149315226047852/form8-k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "VLN",
       "title": "Valens Semiconductor Ltd.",
       "type": "SEC",
@@ -4223,30 +4223,6 @@
       "publishedAt": "2026-10-21T11:34:59.000Z",
       "headline": "4 filing — Valens Semiconductor Ltd.",
       "url": "https://www.sec.gov/Archives/edgar/data/1863006/000197640826000898/xslF345X06/primary_doc.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "GMTL",
-      "title": "Guardian Metal Resources PLC",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-10-21T10:08:26.000Z",
-      "headline": "6-K filing — Guardian Metal Resources PLC",
-      "url": "https://www.sec.gov/Archives/edgar/data/2039972/000165495426009060/a7683z.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "GMTL",
-      "title": "Guardian Metal Resources PLC",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-10-21T10:01:54.000Z",
-      "headline": "6-K filing — Guardian Metal Resources PLC",
-      "url": "https://www.sec.gov/Archives/edgar/data/2039972/000165495426009058/a7679z.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4312,6 +4288,18 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
+      "symbol": "AXG",
+      "title": "Solowin Holdings, Ltd.",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-10-19T20:50:14.000Z",
+      "headline": "6-K filing — Solowin Holdings, Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1959224/000121390026110714/ea0308490-6k_solowin.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
       "symbol": "VLN",
       "title": "Valens Semiconductor Ltd.",
       "type": "SEC",
@@ -4372,30 +4360,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "NTRP",
-      "title": "NextTrip, Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-10-15T20:07:35.000Z",
-      "headline": "8-K filing — NextTrip, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/788611/000149315226047229/form8-k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "SGU",
-      "title": "STAR GROUP, L.P.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-10-15T17:00:00.000Z",
-      "headline": "8-K filing — STAR GROUP, L.P.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1002590/000117184326006659/f8k_101526.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "NTWK",
       "title": "NETSOL TECHNOLOGIES INC",
       "type": "SEC",
@@ -4444,18 +4408,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "NTRP",
-      "title": "NextTrip, Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-10-14T21:00:48.000Z",
-      "headline": "8-K filing — NextTrip, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/788611/000143774926032631/ntrp20261014_8k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "INEO",
       "title": "INNEOVA Holdings Ltd",
       "type": "SEC",
@@ -4463,6 +4415,30 @@
       "publishedAt": "2026-10-14T20:30:34.000Z",
       "headline": "6-K filing — INNEOVA Holdings Ltd",
       "url": "https://www.sec.gov/Archives/edgar/data/1933951/000149315226047032/form6-k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "TGEN",
+      "title": "TECOGEN INC.",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-10-14T16:02:27.000Z",
+      "headline": "8-K filing — TECOGEN INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1537435/000153743526000092/tgen-20261014.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "DAKT",
+      "title": "DAKTRONICS INC /SD/",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-10-14T14:31:59.000Z",
+      "headline": "8-K filing — DAKTRONICS INC /SD/",
+      "url": "https://www.sec.gov/Archives/edgar/data/915779/000162828026065837/dakt-20261012.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4487,18 +4463,6 @@
       "publishedAt": "2026-10-14T12:56:46.000Z",
       "headline": "144 filing — Valens Semiconductor Ltd.",
       "url": "https://www.sec.gov/Archives/edgar/data/1863006/000197640826000888/xsl144X01/primary_doc.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "NTRP",
-      "title": "NextTrip, Inc.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-10-14T00:00:15.000Z",
-      "headline": "4 filing — NextTrip, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/788611/000143774926032592/xslF345X06/rdgdoc.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4588,18 +4552,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "NTRP",
-      "title": "NextTrip, Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-10-08T12:01:18.000Z",
-      "headline": "8-K filing — NextTrip, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/788611/000149315226046261/form8-k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "BBAR",
       "title": "Banco BBVA Argentina S.A.",
       "type": "SEC",
@@ -4607,6 +4559,18 @@
       "publishedAt": "2026-10-07T20:06:22.000Z",
       "headline": "6-K filing — Banco BBVA Argentina S.A.",
       "url": "https://www.sec.gov/Archives/edgar/data/913059/000129281426004862/bbar20261007_6k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "REPX",
+      "title": "Riley Exploration Permian, Inc.",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-10-07T20:05:41.000Z",
+      "headline": "8-K filing — Riley Exploration Permian, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1001614/000100161426000053/repx-20261005.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4905,10 +4869,6 @@
       "events": [],
       "eventCount": 0
     },
-    "TIL": {
-      "events": [],
-      "eventCount": 0
-    },
     "VINP": {
       "events": [
         {
@@ -5055,7 +5015,7 @@
       "events": [],
       "eventCount": 0
     },
-    "ATGL": {
+    "TIL": {
       "events": [],
       "eventCount": 0
     },
@@ -5126,97 +5086,7 @@
       ],
       "eventCount": 2
     },
-    "NTRP": {
-      "events": [
-        {
-          "symbol": "NTRP",
-          "title": "NextTrip, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-21T12:31:24.000Z",
-          "headline": "8-K filing — NextTrip, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/788611/000149315226047852/form8-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "NTRP",
-          "title": "NextTrip, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-15T20:07:35.000Z",
-          "headline": "8-K filing — NextTrip, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/788611/000149315226047229/form8-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "NTRP",
-          "title": "NextTrip, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-14T21:00:48.000Z",
-          "headline": "8-K filing — NextTrip, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/788611/000143774926032631/ntrp20261014_8k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "NTRP",
-          "title": "NextTrip, Inc.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-10-14T00:00:15.000Z",
-          "headline": "4 filing — NextTrip, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/788611/000143774926032592/xslF345X06/rdgdoc.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "NTRP",
-          "title": "NextTrip, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-08T12:01:18.000Z",
-          "headline": "8-K filing — NextTrip, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/788611/000149315226046261/form8-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 5
-    },
     "QCLS": {
-      "events": [],
-      "eventCount": 0
-    },
-    "NYXH": {
-      "events": [
-        {
-          "symbol": "NYXH",
-          "title": "Nyxoah SA",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-20T20:15:05.000Z",
-          "headline": "6-K filing — Nyxoah SA",
-          "url": "https://www.sec.gov/Archives/edgar/data/1857190/000110465926117415/tm2627823d1_6k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
-    "ACR": {
-      "events": [],
-      "eventCount": 0
-    },
-    "NMRA": {
       "events": [],
       "eventCount": 0
     },
@@ -5244,44 +5114,6 @@
         }
       ],
       "eventCount": 1
-    },
-    "SGU": {
-      "events": [
-        {
-          "symbol": "SGU",
-          "title": "STAR GROUP, L.P.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-15T17:00:00.000Z",
-          "headline": "8-K filing — STAR GROUP, L.P.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1002590/000117184326006659/f8k_101526.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
-    "ANIX": {
-      "events": [
-        {
-          "symbol": "ANIX",
-          "title": "Anixa Biosciences Inc",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-10-22T21:44:15.000Z",
-          "headline": "4 filing — Anixa Biosciences Inc",
-          "url": "https://www.sec.gov/Archives/edgar/data/715446/000149315226048144/xslF345X06/ownership.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
-    "FGBI": {
-      "events": [],
-      "eventCount": 0
     },
     "VLN": {
       "events": [
@@ -5431,6 +5263,10 @@
       "events": [],
       "eventCount": 0
     },
+    "ACR": {
+      "events": [],
+      "eventCount": 0
+    },
     "MTEK": {
       "events": [
         {
@@ -5484,16 +5320,16 @@
       ],
       "eventCount": 4
     },
-    "BBAR": {
+    "NYXH": {
       "events": [
         {
-          "symbol": "BBAR",
-          "title": "Banco BBVA Argentina S.A.",
+          "symbol": "NYXH",
+          "title": "Nyxoah SA",
           "type": "SEC",
           "form": "6-K",
-          "publishedAt": "2026-10-07T20:06:22.000Z",
-          "headline": "6-K filing — Banco BBVA Argentina S.A.",
-          "url": "https://www.sec.gov/Archives/edgar/data/913059/000129281426004862/bbar20261007_6k.htm",
+          "publishedAt": "2026-10-20T20:15:05.000Z",
+          "headline": "6-K filing — Nyxoah SA",
+          "url": "https://www.sec.gov/Archives/edgar/data/1857190/000110465926117415/tm2627823d1_6k.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -5589,6 +5425,23 @@
         }
       ],
       "eventCount": 7
+    },
+    "BBAR": {
+      "events": [
+        {
+          "symbol": "BBAR",
+          "title": "Banco BBVA Argentina S.A.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-10-07T20:06:22.000Z",
+          "headline": "6-K filing — Banco BBVA Argentina S.A.",
+          "url": "https://www.sec.gov/Archives/edgar/data/913059/000129281426004862/bbar20261007_6k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
     },
     "FET": {
       "events": [],
@@ -5716,14 +5569,6 @@
       ],
       "eventCount": 7
     },
-    "SMC": {
-      "events": [],
-      "eventCount": 0
-    },
-    "ARDC": {
-      "events": [],
-      "eventCount": 0
-    },
     "RGP": {
       "events": [
         {
@@ -5825,6 +5670,14 @@
       ],
       "eventCount": 8
     },
+    "ARDC": {
+      "events": [],
+      "eventCount": 0
+    },
+    "SMC": {
+      "events": [],
+      "eventCount": 0
+    },
     "SHPH": {
       "events": [
         {
@@ -5841,35 +5694,6 @@
         }
       ],
       "eventCount": 1
-    },
-    "GMTL": {
-      "events": [
-        {
-          "symbol": "GMTL",
-          "title": "Guardian Metal Resources PLC",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-21T10:08:26.000Z",
-          "headline": "6-K filing — Guardian Metal Resources PLC",
-          "url": "https://www.sec.gov/Archives/edgar/data/2039972/000165495426009060/a7683z.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "GMTL",
-          "title": "Guardian Metal Resources PLC",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-21T10:01:54.000Z",
-          "headline": "6-K filing — Guardian Metal Resources PLC",
-          "url": "https://www.sec.gov/Archives/edgar/data/2039972/000165495426009058/a7679z.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
     },
     "INTT": {
       "events": [
@@ -5905,6 +5729,123 @@
           "publishedAt": "2026-10-05T12:39:21.000Z",
           "headline": "8-K filing — INTEST CORP",
           "url": "https://www.sec.gov/Archives/edgar/data/1036262/000103626226000057/intt-20261005.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 3
+    },
+    "REPX": {
+      "events": [
+        {
+          "symbol": "REPX",
+          "title": "Riley Exploration Permian, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-07T20:05:41.000Z",
+          "headline": "8-K filing — Riley Exploration Permian, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1001614/000100161426000053/repx-20261005.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
+    "GRFS": {
+      "events": [],
+      "eventCount": 0
+    },
+    "ACDC": {
+      "events": [],
+      "eventCount": 0
+    },
+    "TGEN": {
+      "events": [
+        {
+          "symbol": "TGEN",
+          "title": "TECOGEN INC.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-14T16:02:27.000Z",
+          "headline": "8-K filing — TECOGEN INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1537435/000153743526000092/tgen-20261014.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
+    "TRAW": {
+      "events": [
+        {
+          "symbol": "TRAW",
+          "title": "Traws Pharma, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-23T17:18:22-04:00",
+          "headline": "8-K filing — Traws Pharma, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1130598/000110465926118519/0001104659-26-118519-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "DAKT": {
+      "events": [
+        {
+          "symbol": "DAKT",
+          "title": "DAKTRONICS INC /SD/",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-14T14:31:59.000Z",
+          "headline": "8-K filing — DAKTRONICS INC /SD/",
+          "url": "https://www.sec.gov/Archives/edgar/data/915779/000162828026065837/dakt-20261012.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
+    "AXG": {
+      "events": [
+        {
+          "symbol": "AXG",
+          "title": "Solowin Holdings, Ltd.",
+          "type": "SEC",
+          "form": "424B5",
+          "publishedAt": "2026-10-22T21:31:07.000Z",
+          "headline": "424B5 filing — Solowin Holdings, Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1959224/000121390026111765/ea0306901-424b5_solowin.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "AXG",
+          "title": "Solowin Holdings, Ltd.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-10-22T21:26:49.000Z",
+          "headline": "6-K filing — Solowin Holdings, Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1959224/000121390026111760/ea0306964-6k_solowin.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "AXG",
+          "title": "Solowin Holdings, Ltd.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-10-19T20:50:14.000Z",
+          "headline": "6-K filing — Solowin Holdings, Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1959224/000121390026110714/ea0308490-6k_solowin.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -6194,10 +6135,10 @@
       ],
       "eventCount": 9
     },
-    "APXCF": {
+    "APXC": {
       "events": [
         {
-          "symbol": "APXCF",
+          "symbol": "APXC",
           "title": "APEX CRITICAL METALS CORP.",
           "type": "SEC",
           "form": "6-K",
@@ -6209,7 +6150,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "APXCF",
+          "symbol": "APXC",
           "title": "APEX CRITICAL METALS CORP.",
           "type": "SEC",
           "form": "6-K",
@@ -6221,7 +6162,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "APXCF",
+          "symbol": "APXC",
           "title": "APEX CRITICAL METALS CORP.",
           "type": "SEC",
           "form": "6-K",
@@ -6233,7 +6174,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "APXCF",
+          "symbol": "APXC",
           "title": "APEX CRITICAL METALS CORP.",
           "type": "SEC",
           "form": "6-K",
@@ -6245,7 +6186,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "APXCF",
+          "symbol": "APXC",
           "title": "APEX CRITICAL METALS CORP.",
           "type": "SEC",
           "form": "6-K",
@@ -6526,23 +6467,6 @@
           "publishedAt": "2026-10-23T17:19:50-04:00",
           "headline": "8-K filing — Canopy Growth Corp",
           "url": "https://www.sec.gov/Archives/edgar/data/1737927/000110465926118521/0001104659-26-118521-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "TRAW": {
-      "events": [
-        {
-          "symbol": "TRAW",
-          "title": "Traws Pharma, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-23T17:18:22-04:00",
-          "headline": "8-K filing — Traws Pharma, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1130598/000110465926118519/0001104659-26-118519-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -7476,10 +7400,10 @@
       ],
       "eventCount": 1
     },
-    "FLYU": {
+    "BERZ": {
       "events": [
         {
-          "symbol": "FLYU",
+          "symbol": "BERZ",
           "title": "BANK OF MONTREAL /CAN/",
           "type": "SEC",
           "form": "424B",
@@ -7491,7 +7415,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "FLYU",
+          "symbol": "BERZ",
           "title": "BANK OF MONTREAL /CAN/",
           "type": "SEC",
           "form": "424B",
@@ -7503,7 +7427,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "FLYU",
+          "symbol": "BERZ",
           "title": "BANK OF MONTREAL /CAN/",
           "type": "SEC",
           "form": "424B",
@@ -7515,7 +7439,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "FLYU",
+          "symbol": "BERZ",
           "title": "BANK OF MONTREAL /CAN/",
           "type": "SEC",
           "form": "424B",
@@ -7527,7 +7451,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "FLYU",
+          "symbol": "BERZ",
           "title": "BANK OF MONTREAL /CAN/",
           "type": "SEC",
           "form": "424B",
@@ -7539,7 +7463,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "FLYU",
+          "symbol": "BERZ",
           "title": "BANK OF MONTREAL /CAN/",
           "type": "SEC",
           "form": "424B",
@@ -7551,7 +7475,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "FLYU",
+          "symbol": "BERZ",
           "title": "BANK OF MONTREAL /CAN/",
           "type": "SEC",
           "form": "424B",
@@ -7563,7 +7487,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "FLYU",
+          "symbol": "BERZ",
           "title": "BANK OF MONTREAL /CAN/",
           "type": "SEC",
           "form": "424B",
