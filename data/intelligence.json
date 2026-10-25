@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-25T16:42:16.516Z",
+  "generatedAt": "2026-10-25T17:40:00.505Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-24T00:00:00.000Z",
-    "marketDataAgeMin": 2442.3,
+    "marketDataAgeMin": 2500,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-25T16:42:17.038Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-25T16:34:11.140Z",
+    "upstreamFeedFetchedAt": "2026-10-25T17:40:01.151Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-25T17:24:30.483Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-24T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 8.1,
-    "upstreamObservationAgeAtFetchMin": 2442.3,
+    "upstreamUpdateAgeAtFetchMin": 15.5,
+    "upstreamObservationAgeAtFetchMin": 2500,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 297,
@@ -55,19 +55,19 @@
       "observedAt": "2026-10-23T16:00:00-04:00"
     },
     {
-      "symbol": "GMHS",
-      "price": 0.6351,
-      "changePct": 6.901195085002532,
-      "early": 86,
-      "ignition": 86,
-      "observedAt": "2026-10-23T16:00:00-04:00"
-    },
-    {
       "symbol": "ATGL",
       "price": 9.41,
       "changePct": -0.9473684210526301,
       "early": 83,
       "ignition": 89,
+      "observedAt": "2026-10-23T16:00:00-04:00"
+    },
+    {
+      "symbol": "GMHS",
+      "price": 0.6351,
+      "changePct": 6.901195085002532,
+      "early": 86,
+      "ignition": 86,
       "observedAt": "2026-10-23T16:00:00-04:00"
     },
     {
@@ -151,14 +151,6 @@
       "observedAt": "2026-10-23T16:00:41-04:00"
     },
     {
-      "symbol": "SGU",
-      "price": 13.21,
-      "changePct": 1.7719568567026227,
-      "early": 72,
-      "ignition": 86,
-      "observedAt": "2026-10-23T16:04:08-04:00"
-    },
-    {
       "symbol": "VLN",
       "price": 1.56,
       "changePct": 6.122448979591842,
@@ -239,20 +231,20 @@
       "observedAt": "2026-10-23T19:49:58-04:00"
     },
     {
-      "symbol": "OPNW",
-      "price": 1.659,
-      "changePct": -8.342541436464089,
-      "early": 76,
-      "ignition": 76,
-      "observedAt": "2026-10-23T19:53:33-04:00"
-    },
-    {
       "symbol": "OPTU",
       "price": 0.6596,
       "changePct": 9.896701099633457,
       "early": 69,
       "ignition": 83,
       "observedAt": "2026-10-23T16:00:00-04:00"
+    },
+    {
+      "symbol": "OPNW",
+      "price": 1.659,
+      "changePct": -8.342541436464089,
+      "early": 76,
+      "ignition": 76,
+      "observedAt": "2026-10-23T19:53:33-04:00"
     },
     {
       "symbol": "RGP",
@@ -341,6 +333,14 @@
       "early": 75,
       "ignition": 75,
       "observedAt": "2026-10-23T18:48:33-04:00"
+    },
+    {
+      "symbol": "DAKT",
+      "price": 21.4419,
+      "changePct": 10.184480986639258,
+      "early": 74,
+      "ignition": 74,
+      "observedAt": "2026-10-23T19:13:21-04:00"
     }
   ],
   "companies": {
@@ -360,13 +360,13 @@
       "title": "CONSUMER PORTFOLIO SERVICES, INC.",
       "cik": "0000889609"
     },
-    "GMHS": {
-      "title": "Gamehaus Holdings Inc.",
-      "cik": "0002000530"
-    },
     "ATGL": {
       "title": "Alpha Technology Group Ltd",
       "cik": "0001967621"
+    },
+    "GMHS": {
+      "title": "Gamehaus Holdings Inc.",
+      "cik": "0002000530"
     },
     "INEO": {
       "title": "INNEOVA Holdings Ltd",
@@ -408,10 +408,6 @@
       "title": "Grupo Supervielle S.A.",
       "cik": "0001517399"
     },
-    "SGU": {
-      "title": "STAR GROUP, L.P.",
-      "cik": "0001002590"
-    },
     "VLN": {
       "title": "Valens Semiconductor Ltd.",
       "cik": "0001863006"
@@ -452,13 +448,13 @@
       "title": "Top Wealth Group Holding Ltd",
       "cik": "0001978057"
     },
-    "OPNW": {
-      "title": "OpenWorld, Inc.",
-      "cik": "0001104038"
-    },
     "OPTU": {
       "title": "Optimum Communications, Inc.",
       "cik": "0001702780"
+    },
+    "OPNW": {
+      "title": "OpenWorld, Inc.",
+      "cik": "0001104038"
     },
     "RGP": {
       "title": "RESOURCES CONNECTION, INC.",
@@ -503,6 +499,10 @@
     "TRAW": {
       "title": "Traws Pharma, Inc.",
       "cik": "0001130598"
+    },
+    "DAKT": {
+      "title": "DAKTRONICS INC /SD/",
+      "cik": "0000915779"
     }
   },
   "eventCount": 366,
@@ -4360,18 +4360,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "SGU",
-      "title": "STAR GROUP, L.P.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-10-15T17:00:00.000Z",
-      "headline": "8-K filing — STAR GROUP, L.P.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1002590/000117184326006659/f8k_101526.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "NTWK",
       "title": "NETSOL TECHNOLOGIES INC",
       "type": "SEC",
@@ -4451,6 +4439,18 @@
       "publishedAt": "2026-10-14T16:02:27.000Z",
       "headline": "8-K filing — TECOGEN INC.",
       "url": "https://www.sec.gov/Archives/edgar/data/1537435/000153743526000092/tgen-20261014.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "DAKT",
+      "title": "DAKTRONICS INC /SD/",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-10-14T14:31:59.000Z",
+      "headline": "8-K filing — DAKTRONICS INC /SD/",
+      "url": "https://www.sec.gov/Archives/edgar/data/915779/000162828026065837/dakt-20261012.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -5051,11 +5051,11 @@
       ],
       "eventCount": 3
     },
-    "GMHS": {
+    "ATGL": {
       "events": [],
       "eventCount": 0
     },
-    "ATGL": {
+    "GMHS": {
       "events": [],
       "eventCount": 0
     },
@@ -5217,23 +5217,6 @@
           "publishedAt": "2026-10-06T20:01:15.000Z",
           "headline": "4 filing — Grupo Supervielle S.A.",
           "url": "https://www.sec.gov/Archives/edgar/data/1517399/000110465926114036/xslF345X06/tm2627114-1_4seq1.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
-    "SGU": {
-      "events": [
-        {
-          "symbol": "SGU",
-          "title": "STAR GROUP, L.P.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-15T17:00:00.000Z",
-          "headline": "8-K filing — STAR GROUP, L.P.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1002590/000117184326006659/f8k_101526.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -5564,6 +5547,10 @@
       ],
       "eventCount": 2
     },
+    "OPTU": {
+      "events": [],
+      "eventCount": 0
+    },
     "OPNW": {
       "events": [
         {
@@ -5652,10 +5639,6 @@
         }
       ],
       "eventCount": 7
-    },
-    "OPTU": {
-      "events": [],
-      "eventCount": 0
     },
     "RGP": {
       "events": [
@@ -5921,6 +5904,23 @@
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "DAKT": {
+      "events": [
+        {
+          "symbol": "DAKT",
+          "title": "DAKTRONICS INC /SD/",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-14T14:31:59.000Z",
+          "headline": "8-K filing — DAKTRONICS INC /SD/",
+          "url": "https://www.sec.gov/Archives/edgar/data/915779/000162828026065837/dakt-20261012.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
       "eventCount": 1
