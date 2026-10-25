@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-25T09:49:53.039Z",
+  "generatedAt": "2026-10-25T12:23:41.410Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-24T00:00:00.000Z",
-    "marketDataAgeMin": 2029.9,
+    "marketDataAgeMin": 2183.7,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-25T09:49:53.535Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-25T09:28:43.261Z",
+    "upstreamFeedFetchedAt": "2026-10-25T12:23:41.725Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-25T12:20:12.355Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-24T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 21.2,
-    "upstreamObservationAgeAtFetchMin": 2029.9,
+    "upstreamUpdateAgeAtFetchMin": 3.5,
+    "upstreamObservationAgeAtFetchMin": 2183.7,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 297,
@@ -207,20 +207,20 @@
       "observedAt": "2026-10-23T16:00:00-04:00"
     },
     {
-      "symbol": "NTWK",
-      "price": 7.86,
-      "changePct": 1.4193548387096815,
-      "early": 70,
-      "ignition": 84,
-      "observedAt": "2026-10-23T16:00:00-04:00"
-    },
-    {
       "symbol": "BBAR",
       "price": 13.17,
       "changePct": 5.359999999999999,
       "early": 70,
       "ignition": 84,
       "observedAt": "2026-10-23T16:00:56-04:00"
+    },
+    {
+      "symbol": "NTWK",
+      "price": 7.86,
+      "changePct": 1.4193548387096815,
+      "early": 70,
+      "ignition": 84,
+      "observedAt": "2026-10-23T16:00:00-04:00"
     },
     {
       "symbol": "FET",
@@ -255,14 +255,6 @@
       "observedAt": "2026-10-23T19:53:33-04:00"
     },
     {
-      "symbol": "ARDC",
-      "price": 11.44,
-      "changePct": 2.6929982046678536,
-      "early": 69,
-      "ignition": 83,
-      "observedAt": "2026-10-23T16:00:00-04:00"
-    },
-    {
       "symbol": "SMC",
       "price": 31.21,
       "changePct": 2.664473684210534,
@@ -277,6 +269,14 @@
       "early": 69,
       "ignition": 83,
       "observedAt": "2026-10-23T16:00:23-04:00"
+    },
+    {
+      "symbol": "ARDC",
+      "price": 11.44,
+      "changePct": 2.6929982046678536,
+      "early": 69,
+      "ignition": 83,
+      "observedAt": "2026-10-23T16:00:00-04:00"
     },
     {
       "symbol": "SHPH",
@@ -436,13 +436,13 @@
       "title": "Maris Tech Ltd.",
       "cik": "0001872964"
     },
-    "NTWK": {
-      "title": "NETSOL TECHNOLOGIES INC",
-      "cik": "0001039280"
-    },
     "BBAR": {
       "title": "Banco BBVA Argentina S.A.",
       "cik": "0000913059"
+    },
+    "NTWK": {
+      "title": "NETSOL TECHNOLOGIES INC",
+      "cik": "0001039280"
     },
     "FET": {
       "title": "FORUM ENERGY TECHNOLOGIES, INC.",
@@ -460,10 +460,6 @@
       "title": "OpenWorld, Inc.",
       "cik": "0001104038"
     },
-    "ARDC": {
-      "title": "Ares Dynamic Credit Allocation Fund, Inc.",
-      "cik": "0001515324"
-    },
     "SMC": {
       "title": "Summit Midstream Corp",
       "cik": "0002024218"
@@ -471,6 +467,10 @@
     "RGP": {
       "title": "RESOURCES CONNECTION, INC.",
       "cik": "0001084765"
+    },
+    "ARDC": {
+      "title": "Ares Dynamic Credit Allocation Fund, Inc.",
+      "cik": "0001515324"
     },
     "SHPH": {
       "title": "Shuttle Pharmaceuticals Holdings, Inc.",
@@ -616,7 +616,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "APXCF",
+      "symbol": "APXC",
       "title": "APEX CRITICAL METALS CORP.",
       "type": "SEC",
       "form": "6-K",
@@ -916,7 +916,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "APXCF",
+      "symbol": "APXC",
       "title": "APEX CRITICAL METALS CORP.",
       "type": "SEC",
       "form": "6-K",
@@ -1684,7 +1684,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "FLYU",
+      "symbol": "BERZ",
       "title": "BANK OF MONTREAL /CAN/",
       "type": "SEC",
       "form": "424B",
@@ -1708,7 +1708,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "FLYU",
+      "symbol": "BERZ",
       "title": "BANK OF MONTREAL /CAN/",
       "type": "SEC",
       "form": "424B",
@@ -1732,7 +1732,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "FLYU",
+      "symbol": "BERZ",
       "title": "BANK OF MONTREAL /CAN/",
       "type": "SEC",
       "form": "424B",
@@ -1744,7 +1744,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "FLYU",
+      "symbol": "BERZ",
       "title": "BANK OF MONTREAL /CAN/",
       "type": "SEC",
       "form": "424B",
@@ -1768,7 +1768,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "FLYU",
+      "symbol": "BERZ",
       "title": "BANK OF MONTREAL /CAN/",
       "type": "SEC",
       "form": "424B",
@@ -1876,7 +1876,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "FLYU",
+      "symbol": "BERZ",
       "title": "BANK OF MONTREAL /CAN/",
       "type": "SEC",
       "form": "424B",
@@ -2116,7 +2116,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "FLYU",
+      "symbol": "BERZ",
       "title": "BANK OF MONTREAL /CAN/",
       "type": "SEC",
       "form": "424B",
@@ -2260,7 +2260,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "FLYU",
+      "symbol": "BERZ",
       "title": "BANK OF MONTREAL /CAN/",
       "type": "SEC",
       "form": "424B",
@@ -3424,7 +3424,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "APXCF",
+      "symbol": "APXC",
       "title": "APEX CRITICAL METALS CORP.",
       "type": "SEC",
       "form": "6-K",
@@ -3964,7 +3964,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "APXCF",
+      "symbol": "APXC",
       "title": "APEX CRITICAL METALS CORP.",
       "type": "SEC",
       "form": "6-K",
@@ -3976,7 +3976,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "APXCF",
+      "symbol": "APXC",
       "title": "APEX CRITICAL METALS CORP.",
       "type": "SEC",
       "form": "6-K",
@@ -5425,6 +5425,23 @@
       ],
       "eventCount": 4
     },
+    "BBAR": {
+      "events": [
+        {
+          "symbol": "BBAR",
+          "title": "Banco BBVA Argentina S.A.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-10-07T20:06:22.000Z",
+          "headline": "6-K filing — Banco BBVA Argentina S.A.",
+          "url": "https://www.sec.gov/Archives/edgar/data/913059/000129281426004862/bbar20261007_6k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
     "NTWK": {
       "events": [
         {
@@ -5513,23 +5530,6 @@
         }
       ],
       "eventCount": 7
-    },
-    "BBAR": {
-      "events": [
-        {
-          "symbol": "BBAR",
-          "title": "Banco BBVA Argentina S.A.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-07T20:06:22.000Z",
-          "headline": "6-K filing — Banco BBVA Argentina S.A.",
-          "url": "https://www.sec.gov/Archives/edgar/data/913059/000129281426004862/bbar20261007_6k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
     },
     "FET": {
       "events": [],
@@ -5657,10 +5657,6 @@
       ],
       "eventCount": 7
     },
-    "ARDC": {
-      "events": [],
-      "eventCount": 0
-    },
     "SMC": {
       "events": [],
       "eventCount": 0
@@ -5765,6 +5761,10 @@
         }
       ],
       "eventCount": 8
+    },
+    "ARDC": {
+      "events": [],
+      "eventCount": 0
     },
     "SHPH": {
       "events": [
@@ -6207,10 +6207,10 @@
       ],
       "eventCount": 9
     },
-    "APXCF": {
+    "APXC": {
       "events": [
         {
-          "symbol": "APXCF",
+          "symbol": "APXC",
           "title": "APEX CRITICAL METALS CORP.",
           "type": "SEC",
           "form": "6-K",
@@ -6222,7 +6222,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "APXCF",
+          "symbol": "APXC",
           "title": "APEX CRITICAL METALS CORP.",
           "type": "SEC",
           "form": "6-K",
@@ -6234,7 +6234,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "APXCF",
+          "symbol": "APXC",
           "title": "APEX CRITICAL METALS CORP.",
           "type": "SEC",
           "form": "6-K",
@@ -6246,7 +6246,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "APXCF",
+          "symbol": "APXC",
           "title": "APEX CRITICAL METALS CORP.",
           "type": "SEC",
           "form": "6-K",
@@ -6258,7 +6258,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "APXCF",
+          "symbol": "APXC",
           "title": "APEX CRITICAL METALS CORP.",
           "type": "SEC",
           "form": "6-K",
@@ -7472,10 +7472,10 @@
       ],
       "eventCount": 1
     },
-    "FLYU": {
+    "BERZ": {
       "events": [
         {
-          "symbol": "FLYU",
+          "symbol": "BERZ",
           "title": "BANK OF MONTREAL /CAN/",
           "type": "SEC",
           "form": "424B",
@@ -7487,7 +7487,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "FLYU",
+          "symbol": "BERZ",
           "title": "BANK OF MONTREAL /CAN/",
           "type": "SEC",
           "form": "424B",
@@ -7499,7 +7499,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "FLYU",
+          "symbol": "BERZ",
           "title": "BANK OF MONTREAL /CAN/",
           "type": "SEC",
           "form": "424B",
@@ -7511,7 +7511,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "FLYU",
+          "symbol": "BERZ",
           "title": "BANK OF MONTREAL /CAN/",
           "type": "SEC",
           "form": "424B",
@@ -7523,7 +7523,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "FLYU",
+          "symbol": "BERZ",
           "title": "BANK OF MONTREAL /CAN/",
           "type": "SEC",
           "form": "424B",
@@ -7535,7 +7535,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "FLYU",
+          "symbol": "BERZ",
           "title": "BANK OF MONTREAL /CAN/",
           "type": "SEC",
           "form": "424B",
@@ -7547,7 +7547,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "FLYU",
+          "symbol": "BERZ",
           "title": "BANK OF MONTREAL /CAN/",
           "type": "SEC",
           "form": "424B",
@@ -7559,7 +7559,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "FLYU",
+          "symbol": "BERZ",
           "title": "BANK OF MONTREAL /CAN/",
           "type": "SEC",
           "form": "424B",
