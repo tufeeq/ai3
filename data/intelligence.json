@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-25T14:10:00.773Z",
+  "generatedAt": "2026-10-25T16:42:16.516Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-24T00:00:00.000Z",
-    "marketDataAgeMin": 2290,
+    "marketDataAgeMin": 2442.3,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-25T14:10:00.997Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-25T13:54:28.375Z",
+    "upstreamFeedFetchedAt": "2026-10-25T16:42:17.038Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-25T16:34:11.140Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-24T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 15.5,
-    "upstreamObservationAgeAtFetchMin": 2290,
+    "upstreamUpdateAgeAtFetchMin": 8.1,
+    "upstreamObservationAgeAtFetchMin": 2442.3,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 297,
@@ -255,12 +255,12 @@
       "observedAt": "2026-10-23T16:00:00-04:00"
     },
     {
-      "symbol": "ARDC",
-      "price": 11.44,
-      "changePct": 2.6929982046678536,
+      "symbol": "RGP",
+      "price": 2.69,
+      "changePct": 5.490196078431378,
       "early": 69,
       "ignition": 83,
-      "observedAt": "2026-10-23T16:00:00-04:00"
+      "observedAt": "2026-10-23T16:00:23-04:00"
     },
     {
       "symbol": "SMC",
@@ -271,12 +271,12 @@
       "observedAt": "2026-10-23T16:00:49-04:00"
     },
     {
-      "symbol": "RGP",
-      "price": 2.69,
-      "changePct": 5.490196078431378,
+      "symbol": "ARDC",
+      "price": 11.44,
+      "changePct": 2.6929982046678536,
       "early": 69,
       "ignition": 83,
-      "observedAt": "2026-10-23T16:00:23-04:00"
+      "observedAt": "2026-10-23T16:00:00-04:00"
     },
     {
       "symbol": "SHPH",
@@ -295,20 +295,20 @@
       "observedAt": "2026-10-23T16:00:56-04:00"
     },
     {
-      "symbol": "CD",
-      "price": 8.76,
-      "changePct": 6.764168190127967,
-      "early": 68,
-      "ignition": 82,
-      "observedAt": "2026-10-23T16:01:33-04:00"
-    },
-    {
       "symbol": "INTT",
       "price": 13.75,
       "changePct": 6.67183863460046,
       "early": 68,
       "ignition": 82,
       "observedAt": "2026-10-23T16:00:00-04:00"
+    },
+    {
+      "symbol": "CD",
+      "price": 8.76,
+      "changePct": 6.764168190127967,
+      "early": 68,
+      "ignition": 82,
+      "observedAt": "2026-10-23T16:01:33-04:00"
     },
     {
       "symbol": "REPX",
@@ -460,17 +460,17 @@
       "title": "Optimum Communications, Inc.",
       "cik": "0001702780"
     },
-    "ARDC": {
-      "title": "Ares Dynamic Credit Allocation Fund, Inc.",
-      "cik": "0001515324"
+    "RGP": {
+      "title": "RESOURCES CONNECTION, INC.",
+      "cik": "0001084765"
     },
     "SMC": {
       "title": "Summit Midstream Corp",
       "cik": "0002024218"
     },
-    "RGP": {
-      "title": "RESOURCES CONNECTION, INC.",
-      "cik": "0001084765"
+    "ARDC": {
+      "title": "Ares Dynamic Credit Allocation Fund, Inc.",
+      "cik": "0001515324"
     },
     "SHPH": {
       "title": "Shuttle Pharmaceuticals Holdings, Inc.",
@@ -480,13 +480,13 @@
       "title": "Guardian Metal Resources PLC",
       "cik": "0002039972"
     },
-    "CD": {
-      "title": "Chaince Digital Holdings Inc.",
-      "cik": "0001527762"
-    },
     "INTT": {
       "title": "INTEST CORP",
       "cik": "0001036262"
+    },
+    "CD": {
+      "title": "Chaince Digital Holdings Inc.",
+      "cik": "0001527762"
     },
     "REPX": {
       "title": "Riley Exploration Permian, Inc.",
@@ -5657,14 +5657,6 @@
       "events": [],
       "eventCount": 0
     },
-    "ARDC": {
-      "events": [],
-      "eventCount": 0
-    },
-    "SMC": {
-      "events": [],
-      "eventCount": 0
-    },
     "RGP": {
       "events": [
         {
@@ -5766,6 +5758,14 @@
       ],
       "eventCount": 8
     },
+    "SMC": {
+      "events": [],
+      "eventCount": 0
+    },
+    "ARDC": {
+      "events": [],
+      "eventCount": 0
+    },
     "SHPH": {
       "events": [
         {
@@ -5812,23 +5812,6 @@
       ],
       "eventCount": 2
     },
-    "CD": {
-      "events": [
-        {
-          "symbol": "CD",
-          "title": "Chaince Digital Holdings Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-06T18:05:49.000Z",
-          "headline": "8-K filing — Chaince Digital Holdings Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1527762/000149315226045910/form8-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
     "INTT": {
       "events": [
         {
@@ -5869,6 +5852,23 @@
         }
       ],
       "eventCount": 3
+    },
+    "CD": {
+      "events": [
+        {
+          "symbol": "CD",
+          "title": "Chaince Digital Holdings Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-06T18:05:49.000Z",
+          "headline": "8-K filing — Chaince Digital Holdings Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1527762/000149315226045910/form8-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
     },
     "REPX": {
       "events": [
