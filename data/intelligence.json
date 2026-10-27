@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-27T01:17:05.030Z",
+  "generatedAt": "2026-10-27T02:20:06.461Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,17 +8,17 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-27T00:00:00.000Z",
-    "marketDataAgeMin": 77.1,
+    "marketDataAgeMin": 140.1,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-27T01:17:05.271Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-27T00:55:21.284Z",
+    "upstreamFeedFetchedAt": "2026-10-27T02:20:06.942Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-27T02:11:26.302Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-27T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 21.7,
-    "upstreamObservationAgeAtFetchMin": 77.1,
+    "upstreamUpdateAgeAtFetchMin": 8.7,
+    "upstreamObservationAgeAtFetchMin": 140.1,
     "secMapping": true,
     "secMarketwideDiscovery": true,
-    "secMarketwideEventCount": 290,
+    "secMarketwideEventCount": 282,
     "newsDiscovery": true
   },
   "shortlist": [
@@ -255,20 +255,20 @@
       "observedAt": "2026-10-26T16:00:28-04:00"
     },
     {
-      "symbol": "SGP",
-      "price": 29.91,
-      "changePct": 5.021067415730336,
-      "early": 64,
-      "ignition": 78,
-      "observedAt": "2026-10-26T16:01:25-04:00"
-    },
-    {
       "symbol": "FUSE",
       "price": 0.3395,
       "changePct": 6.626884422110554,
       "early": 64,
       "ignition": 78,
       "observedAt": "2026-10-26T16:00:00-04:00"
+    },
+    {
+      "symbol": "SGP",
+      "price": 29.91,
+      "changePct": 5.021067415730336,
+      "early": 64,
+      "ignition": 78,
+      "observedAt": "2026-10-26T16:01:25-04:00"
     },
     {
       "symbol": "EVCM",
@@ -327,20 +327,20 @@
       "observedAt": "2026-10-26T16:00:00-04:00"
     },
     {
-      "symbol": "PW",
-      "price": 6.809999942779541,
-      "changePct": 7.2440935870793925,
-      "early": 61,
-      "ignition": 75,
-      "observedAt": "2026-10-26T15:54:00-04:00"
-    },
-    {
       "symbol": "BWMX",
       "price": 16.75,
       "changePct": 7.440667094291213,
       "early": 61,
       "ignition": 75,
       "observedAt": "2026-10-26T16:00:48-04:00"
+    },
+    {
+      "symbol": "PW",
+      "price": 6.809999942779541,
+      "changePct": 7.2440935870793925,
+      "early": 61,
+      "ignition": 75,
+      "observedAt": "2026-10-26T15:54:00-04:00"
     }
   ],
   "companies": {
@@ -460,13 +460,13 @@
       "title": "Prenetics Global Ltd",
       "cik": "0001876431"
     },
-    "SGP": {
-      "title": "SpyGlass Pharma, Inc.",
-      "cik": "0001778922"
-    },
     "FUSE": {
       "title": "Fusemachines Inc.",
       "cik": "0002033383"
+    },
+    "SGP": {
+      "title": "SpyGlass Pharma, Inc.",
+      "cik": "0001778922"
     },
     "EVCM": {
       "title": "EverCommerce Inc.",
@@ -496,16 +496,16 @@
       "title": "New Concept Energy, Inc.",
       "cik": "0000105744"
     },
-    "PW": {
-      "title": "Power REIT",
-      "cik": "0001532619"
-    },
     "BWMX": {
       "title": "BETTERWARE DE MEXICO, S.A.P.I. DE C.V",
       "cik": "0001788257"
+    },
+    "PW": {
+      "title": "Power REIT",
+      "cik": "0001532619"
     }
   },
-  "eventCount": 338,
+  "eventCount": 330,
   "events": [
     {
       "symbol": "BNS",
@@ -3976,42 +3976,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "DFNSW",
-      "title": "T3 Defense Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-10-22T20:40:48-04:00",
-      "headline": "S-1 filing — T3 Defense Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1787518/000118518526004932/0001185185-26-004932-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "BOXL",
-      "title": "Boxlight Corp",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-10-22T20:37:39-04:00",
-      "headline": "S-1 filing — Boxlight Corp",
-      "url": "https://www.sec.gov/Archives/edgar/data/1624512/000121390026111803/0001213900-26-111803-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "LYCA",
-      "title": "Lycia Therapeutics, Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-10-22T18:24:18-04:00",
-      "headline": "S-1 filing — Lycia Therapeutics, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1806540/000162828026066940/0001628280-26-066940-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
       "symbol": "BWMX",
       "title": "BETTERWARE DE MEXICO, S.A.P.I. DE C.V",
       "type": "SEC",
@@ -4024,30 +3988,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "JAGX",
-      "title": "Jaguar Health, Inc.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-10-22T17:08:37-04:00",
-      "headline": "S-3 filing — Jaguar Health, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1585608/000119312526429100/0001193125-26-429100-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "PHXE-P",
-      "title": "Phoenix Energy One, LLC",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-10-22T16:49:51-04:00",
-      "headline": "S-1 filing — Phoenix Energy One, LLC",
-      "url": "https://www.sec.gov/Archives/edgar/data/1818643/000119312526429061/0001193125-26-429061-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
       "symbol": "KRSA",
       "title": "Korsana Biosciences, Inc.",
       "type": "SEC",
@@ -4058,42 +3998,6 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "AMCI",
-      "title": "AMC Robotics Corp",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-10-22T13:22:27-04:00",
-      "headline": "S-1 filing — AMC Robotics Corp",
-      "url": "https://www.sec.gov/Archives/edgar/data/1937891/000149315226047958/0001493152-26-047958-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "PMI",
-      "title": "Picard Medical, Inc.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-10-22T13:11:49-04:00",
-      "headline": "S-3 filing — Picard Medical, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2030617/000143774926033230/0001437749-26-033230-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "AIRE",
-      "title": "reAlpha Tech Corp.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-10-22T09:29:46-04:00",
-      "headline": "S-1 filing — reAlpha Tech Corp.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1859199/000121390026111519/0001213900-26-111519-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
     },
     {
       "symbol": "VBIO",
@@ -5178,23 +5082,6 @@
       ],
       "eventCount": 1
     },
-    "SGP": {
-      "events": [
-        {
-          "symbol": "SGP",
-          "title": "SpyGlass Pharma, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-19T20:10:28.000Z",
-          "headline": "8-K filing — SpyGlass Pharma, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1778922/000177892226000052/sgp-20261019.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
     "FUSE": {
       "events": [
         {
@@ -5223,6 +5110,23 @@
         }
       ],
       "eventCount": 2
+    },
+    "SGP": {
+      "events": [
+        {
+          "symbol": "SGP",
+          "title": "SpyGlass Pharma, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-19T20:10:28.000Z",
+          "headline": "8-K filing — SpyGlass Pharma, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1778922/000177892226000052/sgp-20261019.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
     },
     "EVCM": {
       "events": [],
@@ -5325,10 +5229,6 @@
       "events": [],
       "eventCount": 0
     },
-    "PW": {
-      "events": [],
-      "eventCount": 0
-    },
     "BWMX": {
       "events": [
         {
@@ -5345,6 +5245,10 @@
         }
       ],
       "eventCount": 1
+    },
+    "PW": {
+      "events": [],
+      "eventCount": 0
     },
     "BNS": {
       "events": [
@@ -6537,21 +6441,9 @@
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "LYCA",
-          "title": "Lycia Therapeutics, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-10-22T18:24:18-04:00",
-          "headline": "S-1 filing — Lycia Therapeutics, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1806540/000162828026066940/0001628280-26-066940-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
         }
       ],
-      "eventCount": 2
+      "eventCount": 1
     },
     "TDBCP": {
       "events": [
@@ -9526,125 +9418,6 @@
           "publishedAt": "2026-10-23T06:57:47-04:00",
           "headline": "S-3 filing — S&P Global Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/64040/000110465926118287/0001104659-26-118287-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "DFNSW": {
-      "events": [
-        {
-          "symbol": "DFNSW",
-          "title": "T3 Defense Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-10-22T20:40:48-04:00",
-          "headline": "S-1 filing — T3 Defense Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1787518/000118518526004932/0001185185-26-004932-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "BOXL": {
-      "events": [
-        {
-          "symbol": "BOXL",
-          "title": "Boxlight Corp",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-10-22T20:37:39-04:00",
-          "headline": "S-1 filing — Boxlight Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/1624512/000121390026111803/0001213900-26-111803-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "JAGX": {
-      "events": [
-        {
-          "symbol": "JAGX",
-          "title": "Jaguar Health, Inc.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-10-22T17:08:37-04:00",
-          "headline": "S-3 filing — Jaguar Health, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1585608/000119312526429100/0001193125-26-429100-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "PHXE-P": {
-      "events": [
-        {
-          "symbol": "PHXE-P",
-          "title": "Phoenix Energy One, LLC",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-10-22T16:49:51-04:00",
-          "headline": "S-1 filing — Phoenix Energy One, LLC",
-          "url": "https://www.sec.gov/Archives/edgar/data/1818643/000119312526429061/0001193125-26-429061-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "AMCI": {
-      "events": [
-        {
-          "symbol": "AMCI",
-          "title": "AMC Robotics Corp",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-10-22T13:22:27-04:00",
-          "headline": "S-1 filing — AMC Robotics Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/1937891/000149315226047958/0001493152-26-047958-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "PMI": {
-      "events": [
-        {
-          "symbol": "PMI",
-          "title": "Picard Medical, Inc.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-10-22T13:11:49-04:00",
-          "headline": "S-3 filing — Picard Medical, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2030617/000143774926033230/0001437749-26-033230-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "AIRE": {
-      "events": [
-        {
-          "symbol": "AIRE",
-          "title": "reAlpha Tech Corp.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-10-22T09:29:46-04:00",
-          "headline": "S-1 filing — reAlpha Tech Corp.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1859199/000121390026111519/0001213900-26-111519-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
