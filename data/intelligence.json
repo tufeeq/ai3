@@ -1,21 +1,21 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-28T07:29:21.203Z",
+  "generatedAt": "2026-10-28T08:34:07.941Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
     "marketDataFresh": false,
-    "marketWindowOpen": false,
-    "marketSession": "closed",
+    "marketWindowOpen": true,
+    "marketSession": "pre-market",
     "newestObservedAt": "2026-10-28T00:00:00.000Z",
-    "marketDataAgeMin": 449.4,
+    "marketDataAgeMin": 514.1,
     "quoteCount": 799,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-28T07:29:21.488Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-28T06:53:40.729Z",
+    "upstreamFeedFetchedAt": "2026-10-28T08:34:08.185Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-28T07:33:29.929Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-28T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 35.7,
-    "upstreamObservationAgeAtFetchMin": 449.4,
+    "upstreamUpdateAgeAtFetchMin": 60.6,
+    "upstreamObservationAgeAtFetchMin": 514.1,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 263,
@@ -191,20 +191,20 @@
       "observedAt": "2026-10-27T16:00:26-04:00"
     },
     {
-      "symbol": "QUIK",
-      "price": 9.43,
-      "changePct": 7.771428571428568,
-      "early": 69,
-      "ignition": 83,
-      "observedAt": "2026-10-27T16:00:00-04:00"
-    },
-    {
       "symbol": "KIDZ",
       "price": 1.54,
       "changePct": -0.6451612903225812,
       "early": 76,
       "ignition": 76,
       "observedAt": "2026-10-27T16:46:19-04:00"
+    },
+    {
+      "symbol": "QUIK",
+      "price": 9.43,
+      "changePct": 7.771428571428568,
+      "early": 69,
+      "ignition": 83,
+      "observedAt": "2026-10-27T16:00:00-04:00"
     },
     {
       "symbol": "BOF",
@@ -428,13 +428,13 @@
       "title": "Controladora Vuela Compania de Aviacion, S.A.B. de C.V.",
       "cik": "0001520504"
     },
-    "QUIK": {
-      "title": "QUICKLOGIC Corp",
-      "cik": "0000882508"
-    },
     "KIDZ": {
       "title": "KIDZ AI Inc.",
       "cik": "0002022308"
+    },
+    "QUIK": {
+      "title": "QUICKLOGIC Corp",
+      "cik": "0000882508"
     },
     "BOF": {
       "title": "BranchOut Food Inc.",
@@ -4575,11 +4575,11 @@
       ],
       "eventCount": 1
     },
-    "QUIK": {
+    "KIDZ": {
       "events": [],
       "eventCount": 0
     },
-    "KIDZ": {
+    "QUIK": {
       "events": [],
       "eventCount": 0
     },
