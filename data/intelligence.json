@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-30T19:36:47.745Z",
+  "generatedAt": "2026-10-30T19:39:57.661Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": true,
     "marketSession": "regular",
     "newestObservedAt": "2026-10-30T18:43:28.000Z",
-    "marketDataAgeMin": 53.3,
+    "marketDataAgeMin": 56.5,
     "quoteCount": 799,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-30T19:36:48.075Z",
+    "upstreamFeedFetchedAt": "2026-10-30T19:39:58.029Z",
     "upstreamUpdatedAtAtBuild": "2026-10-30T18:43:27.301Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-30T18:43:28.000Z",
-    "upstreamUpdateAgeAtFetchMin": 53.3,
-    "upstreamObservationAgeAtFetchMin": 53.3,
+    "upstreamUpdateAgeAtFetchMin": 56.5,
+    "upstreamObservationAgeAtFetchMin": 56.5,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 266,
@@ -507,6 +507,42 @@
   },
   "eventCount": 342,
   "events": [
+    {
+      "symbol": "BERZ",
+      "title": "BANK OF MONTREAL /CAN/",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-10-30T15:38:21-04:00",
+      "headline": "424B filing — BANK OF MONTREAL /CAN/",
+      "url": "https://www.sec.gov/Archives/edgar/data/927971/000121465926013522/0001214659-26-013522-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "BML-PJ",
+      "title": "BANK OF AMERICA CORP /DE/",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-10-30T15:38:08-04:00",
+      "headline": "424B filing — BANK OF AMERICA CORP /DE/",
+      "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426033563/0001918704-26-033563-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "MS-PA",
+      "title": "MORGAN STANLEY",
+      "type": "SEC",
+      "form": "424B",
+      "publishedAt": "2026-10-30T15:37:26-04:00",
+      "headline": "424B filing — MORGAN STANLEY",
+      "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226053799/0001839882-26-053799-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
     {
       "symbol": "BEPJ",
       "title": "Brookfield Renewable Partners L.P.",
@@ -1283,42 +1319,6 @@
       "publishedAt": "2026-10-30T14:35:03-04:00",
       "headline": "424B filing — JPMORGAN CHASE & CO",
       "url": "https://www.sec.gov/Archives/edgar/data/19617/000121390026114311/0001213900-26-114311-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "JJETF",
-      "title": "BARCLAYS BANK PLC",
-      "type": "SEC",
-      "form": "424B",
-      "publishedAt": "2026-10-30T14:34:28-04:00",
-      "headline": "424B filing — BARCLAYS BANK PLC",
-      "url": "https://www.sec.gov/Archives/edgar/data/312070/000095010326016522/0000950103-26-016522-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "JPM-PM",
-      "title": "JPMORGAN CHASE & CO",
-      "type": "SEC",
-      "form": "424B",
-      "publishedAt": "2026-10-30T14:33:23-04:00",
-      "headline": "424B filing — JPMORGAN CHASE & CO",
-      "url": "https://www.sec.gov/Archives/edgar/data/19617/000191870426033545/0001918704-26-033545-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "JPM-PM",
-      "title": "JPMORGAN CHASE & CO",
-      "type": "SEC",
-      "form": "424B",
-      "publishedAt": "2026-10-30T14:32:57-04:00",
-      "headline": "424B filing — JPMORGAN CHASE & CO",
-      "url": "https://www.sec.gov/Archives/edgar/data/19617/000121390026114308/0001213900-26-114308-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -5752,6 +5752,225 @@
       "events": [],
       "eventCount": 0
     },
+    "BERZ": {
+      "events": [
+        {
+          "symbol": "BERZ",
+          "title": "BANK OF MONTREAL /CAN/",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-30T15:38:21-04:00",
+          "headline": "424B filing — BANK OF MONTREAL /CAN/",
+          "url": "https://www.sec.gov/Archives/edgar/data/927971/000121465926013522/0001214659-26-013522-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "BML-PJ": {
+      "events": [
+        {
+          "symbol": "BML-PJ",
+          "title": "BANK OF AMERICA CORP /DE/",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-30T15:38:08-04:00",
+          "headline": "424B filing — BANK OF AMERICA CORP /DE/",
+          "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426033563/0001918704-26-033563-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "BML-PJ",
+          "title": "BANK OF AMERICA CORP /DE/",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-30T15:30:46-04:00",
+          "headline": "424B filing — BANK OF AMERICA CORP /DE/",
+          "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426033562/0001918704-26-033562-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "BML-PJ",
+          "title": "BANK OF AMERICA CORP /DE/",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-30T15:27:42-04:00",
+          "headline": "424B filing — BANK OF AMERICA CORP /DE/",
+          "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426033559/0001918704-26-033559-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "BML-PJ",
+          "title": "BANK OF AMERICA CORP /DE/",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-30T15:24:21-04:00",
+          "headline": "424B filing — BANK OF AMERICA CORP /DE/",
+          "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426033558/0001918704-26-033558-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "BML-PJ",
+          "title": "BANK OF AMERICA CORP /DE/",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-30T15:14:18-04:00",
+          "headline": "424B filing — BANK OF AMERICA CORP /DE/",
+          "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426033554/0001918704-26-033554-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "BML-PJ",
+          "title": "BANK OF AMERICA CORP /DE/",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-30T14:43:19-04:00",
+          "headline": "424B filing — BANK OF AMERICA CORP /DE/",
+          "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426033549/0001918704-26-033549-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "BML-PJ",
+          "title": "BANK OF AMERICA CORP /DE/",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-30T14:42:07-04:00",
+          "headline": "424B filing — BANK OF AMERICA CORP /DE/",
+          "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426033548/0001918704-26-033548-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "BML-PJ",
+          "title": "BANK OF AMERICA CORP /DE/",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-30T14:42:03-04:00",
+          "headline": "424B filing — BANK OF AMERICA CORP /DE/",
+          "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426033547/0001918704-26-033547-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 9
+    },
+    "MS-PA": {
+      "events": [
+        {
+          "symbol": "MS-PA",
+          "title": "MORGAN STANLEY",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-30T15:37:26-04:00",
+          "headline": "424B filing — MORGAN STANLEY",
+          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226053799/0001839882-26-053799-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "MS-PA",
+          "title": "MORGAN STANLEY",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-30T15:17:40-04:00",
+          "headline": "424B filing — MORGAN STANLEY",
+          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226053785/0001839882-26-053785-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "MS-PA",
+          "title": "MORGAN STANLEY",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-30T15:16:44-04:00",
+          "headline": "424B filing — MORGAN STANLEY",
+          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226053783/0001839882-26-053783-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "MS-PA",
+          "title": "MORGAN STANLEY",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-30T15:04:46-04:00",
+          "headline": "424B filing — MORGAN STANLEY",
+          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226053773/0001839882-26-053773-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "MS-PA",
+          "title": "MORGAN STANLEY",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-30T15:02:38-04:00",
+          "headline": "424B filing — MORGAN STANLEY",
+          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226053772/0001839882-26-053772-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "MS-PA",
+          "title": "MORGAN STANLEY",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-30T15:01:37-04:00",
+          "headline": "424B filing — MORGAN STANLEY",
+          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226053771/0001839882-26-053771-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "MS-PA",
+          "title": "MORGAN STANLEY",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-30T14:45:05-04:00",
+          "headline": "424B filing — MORGAN STANLEY",
+          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226053769/0001839882-26-053769-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "MS-PA",
+          "title": "MORGAN STANLEY",
+          "type": "SEC",
+          "form": "424B",
+          "publishedAt": "2026-10-30T14:44:29-04:00",
+          "headline": "424B filing — MORGAN STANLEY",
+          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226053768/0001839882-26-053768-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 13
+    },
     "BEPJ": {
       "events": [
         {
@@ -5904,107 +6123,6 @@
       ],
       "eventCount": 1
     },
-    "BML-PJ": {
-      "events": [
-        {
-          "symbol": "BML-PJ",
-          "title": "BANK OF AMERICA CORP /DE/",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-30T15:30:46-04:00",
-          "headline": "424B filing — BANK OF AMERICA CORP /DE/",
-          "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426033562/0001918704-26-033562-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "BML-PJ",
-          "title": "BANK OF AMERICA CORP /DE/",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-30T15:27:42-04:00",
-          "headline": "424B filing — BANK OF AMERICA CORP /DE/",
-          "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426033559/0001918704-26-033559-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "BML-PJ",
-          "title": "BANK OF AMERICA CORP /DE/",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-30T15:24:21-04:00",
-          "headline": "424B filing — BANK OF AMERICA CORP /DE/",
-          "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426033558/0001918704-26-033558-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "BML-PJ",
-          "title": "BANK OF AMERICA CORP /DE/",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-30T15:14:18-04:00",
-          "headline": "424B filing — BANK OF AMERICA CORP /DE/",
-          "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426033554/0001918704-26-033554-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "BML-PJ",
-          "title": "BANK OF AMERICA CORP /DE/",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-30T14:43:19-04:00",
-          "headline": "424B filing — BANK OF AMERICA CORP /DE/",
-          "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426033549/0001918704-26-033549-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "BML-PJ",
-          "title": "BANK OF AMERICA CORP /DE/",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-30T14:42:07-04:00",
-          "headline": "424B filing — BANK OF AMERICA CORP /DE/",
-          "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426033548/0001918704-26-033548-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "BML-PJ",
-          "title": "BANK OF AMERICA CORP /DE/",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-30T14:42:03-04:00",
-          "headline": "424B filing — BANK OF AMERICA CORP /DE/",
-          "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426033547/0001918704-26-033547-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "BML-PJ",
-          "title": "BANK OF AMERICA CORP /DE/",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-30T14:38:04-04:00",
-          "headline": "424B filing — BANK OF AMERICA CORP /DE/",
-          "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426033546/0001918704-26-033546-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 8
-    },
     "JJETF": {
       "events": [
         {
@@ -6104,7 +6222,7 @@
           "discoveryScope": "MARKET_WIDE"
         }
       ],
-      "eventCount": 14
+      "eventCount": 13
     },
     "LEDRU": {
       "events": [
@@ -6222,108 +6340,7 @@
           "discoveryScope": "MARKET_WIDE"
         }
       ],
-      "eventCount": 10
-    },
-    "MS-PA": {
-      "events": [
-        {
-          "symbol": "MS-PA",
-          "title": "MORGAN STANLEY",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-30T15:17:40-04:00",
-          "headline": "424B filing — MORGAN STANLEY",
-          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226053785/0001839882-26-053785-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "MS-PA",
-          "title": "MORGAN STANLEY",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-30T15:16:44-04:00",
-          "headline": "424B filing — MORGAN STANLEY",
-          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226053783/0001839882-26-053783-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "MS-PA",
-          "title": "MORGAN STANLEY",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-30T15:04:46-04:00",
-          "headline": "424B filing — MORGAN STANLEY",
-          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226053773/0001839882-26-053773-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "MS-PA",
-          "title": "MORGAN STANLEY",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-30T15:02:38-04:00",
-          "headline": "424B filing — MORGAN STANLEY",
-          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226053772/0001839882-26-053772-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "MS-PA",
-          "title": "MORGAN STANLEY",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-30T15:01:37-04:00",
-          "headline": "424B filing — MORGAN STANLEY",
-          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226053771/0001839882-26-053771-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "MS-PA",
-          "title": "MORGAN STANLEY",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-30T14:45:05-04:00",
-          "headline": "424B filing — MORGAN STANLEY",
-          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226053769/0001839882-26-053769-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "MS-PA",
-          "title": "MORGAN STANLEY",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-30T14:44:29-04:00",
-          "headline": "424B filing — MORGAN STANLEY",
-          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226053768/0001839882-26-053768-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "MS-PA",
-          "title": "MORGAN STANLEY",
-          "type": "SEC",
-          "form": "424B",
-          "publishedAt": "2026-10-30T14:43:55-04:00",
-          "headline": "424B filing — MORGAN STANLEY",
-          "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988226053767/0001839882-26-053767-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 12
+      "eventCount": 8
     },
     "VLOSW": {
       "events": [
