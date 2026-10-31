@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-31T02:30:03.315Z",
+  "generatedAt": "2026-10-31T08:42:15.697Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,28 +8,20 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-31T00:00:00.000Z",
-    "marketDataAgeMin": 150.1,
+    "marketDataAgeMin": 522.3,
     "quoteCount": 799,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-10-31T02:30:03.558Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-31T01:55:03.684Z",
+    "upstreamFeedFetchedAt": "2026-10-31T08:42:15.954Z",
+    "upstreamUpdatedAtAtBuild": "2026-10-31T07:54:59.705Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-31T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 35,
-    "upstreamObservationAgeAtFetchMin": 150.1,
+    "upstreamUpdateAgeAtFetchMin": 47.3,
+    "upstreamObservationAgeAtFetchMin": 522.3,
     "secMapping": true,
     "secMarketwideDiscovery": true,
-    "secMarketwideEventCount": 280,
+    "secMarketwideEventCount": 282,
     "newsDiscovery": true
   },
   "shortlist": [
-    {
-      "symbol": "NORD",
-      "price": 4.9120001792907715,
-      "changePct": 3.4105300903320312,
-      "early": 100,
-      "ignition": 100,
-      "observedAt": "2026-10-30T15:59:00-04:00"
-    },
     {
       "symbol": "OBAI",
       "price": 2.23,
@@ -37,6 +29,14 @@
       "early": 96,
       "ignition": 100,
       "observedAt": "2026-10-30T16:00:59-04:00"
+    },
+    {
+      "symbol": "NORD",
+      "price": 4.9120001792907715,
+      "changePct": 3.4105300903320312,
+      "early": 97,
+      "ignition": 97,
+      "observedAt": "2026-10-30T15:59:00-04:00"
     },
     {
       "symbol": "TCX",
@@ -175,12 +175,28 @@
       "observedAt": "2026-10-30T16:00:00-04:00"
     },
     {
+      "symbol": "RUBI",
+      "price": 2.15,
+      "changePct": -22.171945701357473,
+      "early": 73,
+      "ignition": 73,
+      "observedAt": "2026-10-30T19:57:44-04:00"
+    },
+    {
       "symbol": "USIO",
       "price": 2.92,
       "changePct": -10.153846153846157,
       "early": 66,
       "ignition": 80,
       "observedAt": "2026-10-30T16:00:00-04:00"
+    },
+    {
+      "symbol": "NUWE",
+      "price": 5.65,
+      "changePct": -2.249134948096884,
+      "early": 73,
+      "ignition": 73,
+      "observedAt": "2026-10-30T19:58:13-04:00"
     },
     {
       "symbol": "UP",
@@ -191,12 +207,12 @@
       "observedAt": "2026-10-30T16:01:07-04:00"
     },
     {
-      "symbol": "NUWE",
-      "price": 5.65,
-      "changePct": -2.249134948096884,
+      "symbol": "AGPU",
+      "price": 8.5,
+      "changePct": -3.078677309007977,
       "early": 72,
       "ignition": 72,
-      "observedAt": "2026-10-30T19:58:13-04:00"
+      "observedAt": "2026-10-30T16:03:12-04:00"
     },
     {
       "symbol": "ELDN",
@@ -205,14 +221,6 @@
       "early": 72,
       "ignition": 72,
       "observedAt": "2026-10-30T19:57:55-04:00"
-    },
-    {
-      "symbol": "AGPU",
-      "price": 8.5,
-      "changePct": -3.078677309007977,
-      "early": 72,
-      "ignition": 72,
-      "observedAt": "2026-10-30T16:03:12-04:00"
     },
     {
       "symbol": "EDIT",
@@ -229,6 +237,22 @@
       "early": 71,
       "ignition": 71,
       "observedAt": "2026-10-30T16:00:00-04:00"
+    },
+    {
+      "symbol": "WKHS",
+      "price": 2.69,
+      "changePct": 5.490196078431378,
+      "early": 71,
+      "ignition": 71,
+      "observedAt": "2026-10-30T19:59:31-04:00"
+    },
+    {
+      "symbol": "SRTM",
+      "price": 0.18,
+      "changePct": -8.30361691288844,
+      "early": 71,
+      "ignition": 71,
+      "observedAt": "2026-10-30T19:59:28-04:00"
     },
     {
       "symbol": "PAL",
@@ -303,14 +327,6 @@
       "observedAt": "2026-10-30T19:59:15-04:00"
     },
     {
-      "symbol": "DFNS",
-      "price": 3.7,
-      "changePct": 1.0928961748633887,
-      "early": 69,
-      "ignition": 69,
-      "observedAt": "2026-10-30T19:05:07-04:00"
-    },
-    {
       "symbol": "DDI",
       "price": 13.48,
       "changePct": -0.5166051660516626,
@@ -319,38 +335,22 @@
       "observedAt": "2026-10-30T16:00:00-04:00"
     },
     {
-      "symbol": "ZH",
-      "price": 2.92,
-      "changePct": -7.594936708860765,
-      "early": 62,
-      "ignition": 76,
-      "observedAt": "2026-10-30T16:00:58-04:00"
-    },
-    {
-      "symbol": "MIAX",
-      "price": 33.63,
-      "changePct": 6.965648854961835,
-      "early": 61,
-      "ignition": 75,
-      "observedAt": "2026-10-30T16:00:52-04:00"
-    },
-    {
-      "symbol": "MWYN",
-      "price": 1.9071,
-      "changePct": 8.357954545454547,
-      "early": 68,
-      "ignition": 68,
-      "observedAt": "2026-10-30T18:53:59-04:00"
+      "symbol": "DFNS",
+      "price": 3.7,
+      "changePct": 1.0928961748633887,
+      "early": 69,
+      "ignition": 69,
+      "observedAt": "2026-10-30T19:05:07-04:00"
     }
   ],
   "companies": {
-    "NORD": {
-      "title": "Nordicus Partners Corp",
-      "cik": "0001011060"
-    },
     "OBAI": {
       "title": "Our Bond, Inc.",
       "cik": "0001756064"
+    },
+    "NORD": {
+      "title": "Nordicus Partners Corp",
+      "cik": "0001011060"
     },
     "TCX": {
       "title": "TUCOWS INC /PA/",
@@ -420,25 +420,29 @@
       "title": "Silvercrest Asset Management Group Inc.",
       "cik": "0001549966"
     },
+    "RUBI": {
+      "title": "Rubico Inc.",
+      "cik": "0001943421"
+    },
     "USIO": {
       "title": "Usio, Inc.",
       "cik": "0001088034"
-    },
-    "UP": {
-      "title": "Wheels Up Experience Inc.",
-      "cik": "0001819516"
     },
     "NUWE": {
       "title": "Nuwellis, Inc.",
       "cik": "0001506492"
     },
-    "ELDN": {
-      "title": "Eledon Pharmaceuticals, Inc.",
-      "cik": "0001404281"
+    "UP": {
+      "title": "Wheels Up Experience Inc.",
+      "cik": "0001819516"
     },
     "AGPU": {
       "title": "Axe Compute Inc.",
       "cik": "0001446159"
+    },
+    "ELDN": {
+      "title": "Eledon Pharmaceuticals, Inc.",
+      "cik": "0001404281"
     },
     "EDIT": {
       "title": "Editas Medicine, Inc.",
@@ -447,6 +451,14 @@
     "CDLX": {
       "title": "Cardlytics, Inc.",
       "cik": "0001666071"
+    },
+    "WKHS": {
+      "title": "Workhorse Group Inc.",
+      "cik": "0001425287"
+    },
+    "SRTM": {
+      "title": "Stratum Holdings Corp.",
+      "cik": "0001879403"
     },
     "PAL": {
       "title": "Proficient Auto Logistics, Inc",
@@ -484,28 +496,16 @@
       "title": "ECARX Holdings Inc.",
       "cik": "0001861974"
     },
-    "DFNS": {
-      "title": "T3 Defense Inc.",
-      "cik": "0001787518"
-    },
     "DDI": {
       "title": "DoubleDown Interactive Co., Ltd.",
       "cik": "0001799567"
     },
-    "ZH": {
-      "title": "Zhihu Inc.",
-      "cik": "0001835724"
-    },
-    "MIAX": {
-      "title": "MIAMI INTERNATIONAL HOLDINGS, INC.",
-      "cik": "0001438472"
-    },
-    "MWYN": {
-      "title": "Marwynn Holdings, Inc.",
-      "cik": "0002030522"
+    "DFNS": {
+      "title": "T3 Defense Inc.",
+      "cik": "0001787518"
     }
   },
-  "eventCount": 342,
+  "eventCount": 346,
   "events": [
     {
       "symbol": "MOBXW",
@@ -664,7 +664,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "WFC-PZ",
+      "symbol": "WFC-PD",
       "title": "WELLS FARGO & COMPANY/MN",
       "type": "SEC",
       "form": "424B",
@@ -1036,7 +1036,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BAC-PS",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1060,7 +1060,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BAC-PS",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1144,7 +1144,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BAC-PS",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1156,7 +1156,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "MS-PA",
+      "symbol": "MS-PP",
       "title": "MORGAN STANLEY",
       "type": "SEC",
       "form": "424B",
@@ -1180,7 +1180,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BAC-PS",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1228,7 +1228,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BAC-PS",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1288,7 +1288,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "AQNB",
+      "symbol": "AGQPF",
       "title": "ALGONQUIN POWER & UTILITIES CORP.",
       "type": "SEC",
       "form": "6-K",
@@ -1480,7 +1480,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "WFC-PZ",
+      "symbol": "WFC-PD",
       "title": "WELLS FARGO & COMPANY/MN",
       "type": "SEC",
       "form": "424B",
@@ -1516,7 +1516,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BAC-PS",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1612,7 +1612,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BAC-PS",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1648,7 +1648,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BAC-PS",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1696,7 +1696,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BAC-PS",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1708,7 +1708,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BAC-PS",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1720,7 +1720,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BAC-PS",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1744,7 +1744,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BAC-PS",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1756,7 +1756,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BERZ",
+      "symbol": "FLYU",
       "title": "BANK OF MONTREAL /CAN/",
       "type": "SEC",
       "form": "424B",
@@ -1768,7 +1768,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BAC-PS",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1780,7 +1780,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BAC-PS",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1852,7 +1852,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BAC-PS",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1864,7 +1864,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BAC-PS",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1924,7 +1924,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BAC-PS",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -2044,7 +2044,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "PSA-PF",
+      "symbol": "PSA-PL",
       "title": "Public Storage",
       "type": "SEC",
       "form": "8-K",
@@ -2285,11 +2285,11 @@
     },
     {
       "symbol": "USB-PS",
-      "title": "US BANCORP DE",
+      "title": "US BANCORP \\DE\\",
       "type": "SEC",
       "form": "8-K",
       "publishedAt": "2026-10-30T16:27:01-04:00",
-      "headline": "8-K filing — US BANCORP DE",
+      "headline": "8-K filing — US BANCORP \\DE\\",
       "url": "https://www.sec.gov/Archives/edgar/data/36104/000119312526441737/0001193125-26-441737-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
@@ -2789,11 +2789,11 @@
     },
     {
       "symbol": "LRHC",
-      "title": "La Rosa Holdings Corp.",
+      "title": "Stratum Holdings Corp.",
       "type": "SEC",
       "form": "S-1",
       "publishedAt": "2026-10-30T16:05:43-04:00",
-      "headline": "S-1 filing — La Rosa Holdings Corp.",
+      "headline": "S-1 filing — Stratum Holdings Corp.",
       "url": "https://www.sec.gov/Archives/edgar/data/1879403/000121390026114379/0001213900-26-114379-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
@@ -3209,11 +3209,11 @@
     },
     {
       "symbol": "SLMT",
-      "title": "Brera Holdings PLC",
+      "title": "Solmate Infrastructure PLC",
       "type": "SEC",
       "form": "6-K",
       "publishedAt": "2026-10-30T11:39:57-04:00",
-      "headline": "6-K filing — Brera Holdings PLC",
+      "headline": "6-K filing — Solmate Infrastructure PLC",
       "url": "https://www.sec.gov/Archives/edgar/data/1939965/000121390026114206/0001213900-26-114206-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
@@ -3808,16 +3808,40 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
+      "symbol": "BBTX",
+      "title": "Bambusa Therapeutics, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-10-29T17:19:17-04:00",
+      "headline": "S-1 filing — Bambusa Therapeutics, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2044950/000162828026068311/0001628280-26-068311-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "LRHC",
-      "title": "La Rosa Holdings Corp.",
+      "title": "Stratum Holdings Corp.",
       "type": "SEC",
       "form": "S-1",
       "publishedAt": "2026-10-29T17:17:52-04:00",
-      "headline": "S-1 filing — La Rosa Holdings Corp.",
+      "headline": "S-1 filing — Stratum Holdings Corp.",
       "url": "https://www.sec.gov/Archives/edgar/data/1879403/000121390026113906/0001213900-26-113906-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "SRTM",
+      "title": "Stratum Holdings Corp.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-10-29T21:17:52.000Z",
+      "headline": "S-1 filing — Stratum Holdings Corp.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1879403/000121390026113906/ea0309825-s1_stratum.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "ATR",
@@ -3904,13 +3928,13 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "MIAX",
-      "title": "MIAMI INTERNATIONAL HOLDINGS, INC.",
+      "symbol": "WKHS",
+      "title": "Workhorse Group Inc.",
       "type": "SEC",
       "form": "8-K",
-      "publishedAt": "2026-10-29T20:15:36.000Z",
-      "headline": "8-K filing — MIAMI INTERNATIONAL HOLDINGS, INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1438472/000143847226000044/miax-20261029.htm",
+      "publishedAt": "2026-10-29T20:16:14.000Z",
+      "headline": "8-K filing — Workhorse Group Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1425287/000162828026068250/wkhs-20261028.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -3976,6 +4000,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "NAVI",
+      "title": "Navient Holdings, Inc.",
+      "type": "SEC",
+      "form": "S-3",
+      "publishedAt": "2026-10-29T08:39:53-04:00",
+      "headline": "S-3 filing — Navient Holdings, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2152623/000119312526437084/0001193125-26-437084-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "LXEO",
       "title": "Lexeo Therapeutics, Inc.",
       "type": "SEC",
@@ -4019,6 +4055,30 @@
       "publishedAt": "2026-10-29T10:05:05.000Z",
       "headline": "6-K filing — Magnum Ice Cream Co N.V.",
       "url": "https://www.sec.gov/Archives/edgar/data/2071668/000117184326006949/f6k_102926.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "RUBI",
+      "title": "Rubico Inc.",
+      "type": "SEC",
+      "form": "424B3",
+      "publishedAt": "2026-10-28T20:17:15.000Z",
+      "headline": "424B3 filing — Rubico Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1943421/000117184326006913/f424b3_102726.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "RUBI",
+      "title": "Rubico Inc.",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-10-28T20:15:06.000Z",
+      "headline": "6-K filing — Rubico Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1943421/000117184326006911/f6k_102726.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4096,37 +4156,13 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "MIAX",
-      "title": "MIAMI INTERNATIONAL HOLDINGS, INC.",
+      "symbol": "SRTM",
+      "title": "Stratum Holdings Corp.",
       "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-10-26T20:06:22.000Z",
-      "headline": "4 filing — MIAMI INTERNATIONAL HOLDINGS, INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1438472/000208087826000018/xslF345X06/wk-form4_1793045180.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "MIAX",
-      "title": "MIAMI INTERNATIONAL HOLDINGS, INC.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-10-26T20:05:01.000Z",
-      "headline": "4 filing — MIAMI INTERNATIONAL HOLDINGS, INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1438472/000207944526000019/xslF345X06/wk-form4_1793045099.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "ZH",
-      "title": "Zhihu Inc.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-10-26T10:01:56.000Z",
-      "headline": "6-K filing — Zhihu Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926118558/tm2628255d1_6k.htm",
+      "form": "8-K",
+      "publishedAt": "2026-10-26T10:03:21.000Z",
+      "headline": "8-K filing — Stratum Holdings Corp.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1879403/000121390026112229/ea0309604-8k_stratum.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4312,18 +4348,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "ZH",
-      "title": "Zhihu Inc.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-10-21T20:13:44.000Z",
-      "headline": "6-K filing — Zhihu Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926117840/tm2628073d1_6k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "OBAI",
       "title": "Our Bond, Inc.",
       "type": "SEC",
@@ -4331,6 +4355,30 @@
       "publishedAt": "2026-10-21T20:06:59.000Z",
       "headline": "S-1 filing — Our Bond, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1756064/000149315226047889/forms-1.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "RUBI",
+      "title": "Rubico Inc.",
+      "type": "SEC",
+      "form": "424B3",
+      "publishedAt": "2026-10-21T15:00:34.000Z",
+      "headline": "424B3 filing — Rubico Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1943421/000117184326006729/f424b3_102026.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "RUBI",
+      "title": "Rubico Inc.",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-10-21T14:59:25.000Z",
+      "headline": "6-K filing — Rubico Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1943421/000117184326006728/f6k_102026.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4372,18 +4420,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "MWYN",
-      "title": "Marwynn Holdings, Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-10-20T20:05:20.000Z",
-      "headline": "8-K filing — Marwynn Holdings, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2030522/000121390026111022/ea0309095-8k_marwynn.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "OBAI",
       "title": "Our Bond, Inc.",
       "type": "SEC",
@@ -4391,18 +4427,6 @@
       "publishedAt": "2026-10-20T11:58:04.000Z",
       "headline": "8-K filing — Our Bond, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1756064/000149315226047695/form8-k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "ZH",
-      "title": "Zhihu Inc.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-10-20T11:12:16.000Z",
-      "headline": "6-K filing — Zhihu Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926117133/tm2627801d2_6k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4420,13 +4444,13 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "ZH",
-      "title": "Zhihu Inc.",
+      "symbol": "SRTM",
+      "title": "Stratum Holdings Corp.",
       "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-10-20T10:01:45.000Z",
-      "headline": "6-K filing — Zhihu Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926117032/tm2627801d1_6k.htm",
+      "form": "8-K",
+      "publishedAt": "2026-10-19T21:10:56.000Z",
+      "headline": "8-K filing — Stratum Holdings Corp.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1879403/000121390026110734/ea0309022-8k_stratum.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4439,6 +4463,30 @@
       "publishedAt": "2026-10-19T20:46:42.000Z",
       "headline": "8-K filing — Usio, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1088034/000143774926032944/usio20261019_8k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "RUBI",
+      "title": "Rubico Inc.",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-10-19T18:13:53.000Z",
+      "headline": "6-K filing — Rubico Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1943421/000117184326006688/f6k_101826.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "RUBI",
+      "title": "Rubico Inc.",
+      "type": "SEC",
+      "form": "424B5",
+      "publishedAt": "2026-10-19T18:11:39.000Z",
+      "headline": "424B5 filing — Rubico Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1943421/000117184326006687/f424b5_101726.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4463,18 +4511,6 @@
       "publishedAt": "2026-10-16T20:30:14.000Z",
       "headline": "8-K filing — Envoy Medical, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1840877/000121390026110266/ea0308812-8k_envoy.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "ZH",
-      "title": "Zhihu Inc.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-10-16T13:22:33.000Z",
-      "headline": "6-K filing — Zhihu Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926116456/tm2627738d1_6k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4511,6 +4547,30 @@
       "publishedAt": "2026-10-15T22:50:36.000Z",
       "headline": "424B3 filing — ODYSSEY MARINE EXPLORATION INC",
       "url": "https://www.sec.gov/Archives/edgar/data/798528/000119312526423117/d104064d424b3.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "RUBI",
+      "title": "Rubico Inc.",
+      "type": "SEC",
+      "form": "424B3",
+      "publishedAt": "2026-10-15T20:33:14.000Z",
+      "headline": "424B3 filing — Rubico Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1943421/000117184326006671/f424b3_101526.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "RUBI",
+      "title": "Rubico Inc.",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-10-15T20:30:04.000Z",
+      "headline": "6-K filing — Rubico Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1943421/000117184326006669/f6k_101526.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4598,50 +4658,9 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "ZH",
-      "title": "Zhihu Inc.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-10-13T10:04:47.000Z",
-      "headline": "6-K filing — Zhihu Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926115167/tm2627431d1_6k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
     }
   ],
   "bySymbol": {
-    "NORD": {
-      "events": [
-        {
-          "symbol": "NORD",
-          "title": "Nordicus Partners Corp",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-21T20:30:18.000Z",
-          "headline": "8-K filing — Nordicus Partners Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/1011060/000149315226047909/form8-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "NORD",
-          "title": "Nordicus Partners Corp",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-14T13:00:09.000Z",
-          "headline": "8-K filing — Nordicus Partners Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/1011060/000149315226046939/form8-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
-    },
     "OBAI": {
       "events": [
         {
@@ -4694,6 +4713,35 @@
         }
       ],
       "eventCount": 4
+    },
+    "NORD": {
+      "events": [
+        {
+          "symbol": "NORD",
+          "title": "Nordicus Partners Corp",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-21T20:30:18.000Z",
+          "headline": "8-K filing — Nordicus Partners Corp",
+          "url": "https://www.sec.gov/Archives/edgar/data/1011060/000149315226047909/form8-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "NORD",
+          "title": "Nordicus Partners Corp",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-14T13:00:09.000Z",
+          "headline": "8-K filing — Nordicus Partners Corp",
+          "url": "https://www.sec.gov/Archives/edgar/data/1011060/000149315226046939/form8-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 2
     },
     "TCX": {
       "events": [
@@ -5112,6 +5160,107 @@
       ],
       "eventCount": 4
     },
+    "RUBI": {
+      "events": [
+        {
+          "symbol": "RUBI",
+          "title": "Rubico Inc.",
+          "type": "SEC",
+          "form": "424B3",
+          "publishedAt": "2026-10-28T20:17:15.000Z",
+          "headline": "424B3 filing — Rubico Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1943421/000117184326006913/f424b3_102726.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "RUBI",
+          "title": "Rubico Inc.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-10-28T20:15:06.000Z",
+          "headline": "6-K filing — Rubico Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1943421/000117184326006911/f6k_102726.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "RUBI",
+          "title": "Rubico Inc.",
+          "type": "SEC",
+          "form": "424B3",
+          "publishedAt": "2026-10-21T15:00:34.000Z",
+          "headline": "424B3 filing — Rubico Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1943421/000117184326006729/f424b3_102026.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "RUBI",
+          "title": "Rubico Inc.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-10-21T14:59:25.000Z",
+          "headline": "6-K filing — Rubico Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1943421/000117184326006728/f6k_102026.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "RUBI",
+          "title": "Rubico Inc.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-10-19T18:13:53.000Z",
+          "headline": "6-K filing — Rubico Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1943421/000117184326006688/f6k_101826.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "RUBI",
+          "title": "Rubico Inc.",
+          "type": "SEC",
+          "form": "424B5",
+          "publishedAt": "2026-10-19T18:11:39.000Z",
+          "headline": "424B5 filing — Rubico Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1943421/000117184326006687/f424b5_101726.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "RUBI",
+          "title": "Rubico Inc.",
+          "type": "SEC",
+          "form": "424B3",
+          "publishedAt": "2026-10-15T20:33:14.000Z",
+          "headline": "424B3 filing — Rubico Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1943421/000117184326006671/f424b3_101526.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "RUBI",
+          "title": "Rubico Inc.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-10-15T20:30:04.000Z",
+          "headline": "6-K filing — Rubico Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1943421/000117184326006669/f6k_101526.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 8
+    },
     "USIO": {
       "events": [
         {
@@ -5128,10 +5277,6 @@
         }
       ],
       "eventCount": 1
-    },
-    "UP": {
-      "events": [],
-      "eventCount": 0
     },
     "NUWE": {
       "events": [
@@ -5150,11 +5295,15 @@
       ],
       "eventCount": 1
     },
-    "ELDN": {
+    "UP": {
       "events": [],
       "eventCount": 0
     },
     "AGPU": {
+      "events": [],
+      "eventCount": 0
+    },
+    "ELDN": {
       "events": [],
       "eventCount": 0
     },
@@ -5165,6 +5314,64 @@
     "CDLX": {
       "events": [],
       "eventCount": 0
+    },
+    "WKHS": {
+      "events": [
+        {
+          "symbol": "WKHS",
+          "title": "Workhorse Group Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-29T20:16:14.000Z",
+          "headline": "8-K filing — Workhorse Group Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1425287/000162828026068250/wkhs-20261028.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
+    "SRTM": {
+      "events": [
+        {
+          "symbol": "SRTM",
+          "title": "Stratum Holdings Corp.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-10-29T21:17:52.000Z",
+          "headline": "S-1 filing — Stratum Holdings Corp.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1879403/000121390026113906/ea0309825-s1_stratum.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "SRTM",
+          "title": "Stratum Holdings Corp.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-26T10:03:21.000Z",
+          "headline": "8-K filing — Stratum Holdings Corp.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1879403/000121390026112229/ea0309604-8k_stratum.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "SRTM",
+          "title": "Stratum Holdings Corp.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-19T21:10:56.000Z",
+          "headline": "8-K filing — Stratum Holdings Corp.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1879403/000121390026110734/ea0309022-8k_stratum.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 3
     },
     "PAL": {
       "events": [
@@ -5329,6 +5536,23 @@
       ],
       "eventCount": 2
     },
+    "DDI": {
+      "events": [
+        {
+          "symbol": "DDI",
+          "title": "DoubleDown Interactive Co., Ltd.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-10-28T11:00:03.000Z",
+          "headline": "6-K filing — DoubleDown Interactive Co., Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1799567/000119312526435064/d177181d6k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
     "DFNS": {
       "events": [
         {
@@ -5417,158 +5641,6 @@
         }
       ],
       "eventCount": 7
-    },
-    "DDI": {
-      "events": [
-        {
-          "symbol": "DDI",
-          "title": "DoubleDown Interactive Co., Ltd.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-28T11:00:03.000Z",
-          "headline": "6-K filing — DoubleDown Interactive Co., Ltd.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1799567/000119312526435064/d177181d6k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
-    "ZH": {
-      "events": [
-        {
-          "symbol": "ZH",
-          "title": "Zhihu Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-26T10:01:56.000Z",
-          "headline": "6-K filing — Zhihu Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926118558/tm2628255d1_6k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "ZH",
-          "title": "Zhihu Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-21T20:13:44.000Z",
-          "headline": "6-K filing — Zhihu Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926117840/tm2628073d1_6k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "ZH",
-          "title": "Zhihu Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-20T11:12:16.000Z",
-          "headline": "6-K filing — Zhihu Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926117133/tm2627801d2_6k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "ZH",
-          "title": "Zhihu Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-20T10:01:45.000Z",
-          "headline": "6-K filing — Zhihu Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926117032/tm2627801d1_6k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "ZH",
-          "title": "Zhihu Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-16T13:22:33.000Z",
-          "headline": "6-K filing — Zhihu Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926116456/tm2627738d1_6k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "ZH",
-          "title": "Zhihu Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-13T10:04:47.000Z",
-          "headline": "6-K filing — Zhihu Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926115167/tm2627431d1_6k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 6
-    },
-    "MIAX": {
-      "events": [
-        {
-          "symbol": "MIAX",
-          "title": "MIAMI INTERNATIONAL HOLDINGS, INC.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-29T20:15:36.000Z",
-          "headline": "8-K filing — MIAMI INTERNATIONAL HOLDINGS, INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1438472/000143847226000044/miax-20261029.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "MIAX",
-          "title": "MIAMI INTERNATIONAL HOLDINGS, INC.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-10-26T20:06:22.000Z",
-          "headline": "4 filing — MIAMI INTERNATIONAL HOLDINGS, INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1438472/000208087826000018/xslF345X06/wk-form4_1793045180.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "MIAX",
-          "title": "MIAMI INTERNATIONAL HOLDINGS, INC.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-10-26T20:05:01.000Z",
-          "headline": "4 filing — MIAMI INTERNATIONAL HOLDINGS, INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1438472/000207944526000019/xslF345X06/wk-form4_1793045099.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 3
-    },
-    "MWYN": {
-      "events": [
-        {
-          "symbol": "MWYN",
-          "title": "Marwynn Holdings, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-20T20:05:20.000Z",
-          "headline": "8-K filing — Marwynn Holdings, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2030522/000121390026111022/ea0309095-8k_marwynn.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
     },
     "MOBXW": {
       "events": [
@@ -5949,10 +6021,10 @@
       ],
       "eventCount": 2
     },
-    "WFC-PZ": {
+    "WFC-PD": {
       "events": [
         {
-          "symbol": "WFC-PZ",
+          "symbol": "WFC-PD",
           "title": "WELLS FARGO & COMPANY/MN",
           "type": "SEC",
           "form": "424B",
@@ -5964,7 +6036,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "WFC-PZ",
+          "symbol": "WFC-PD",
           "title": "WELLS FARGO & COMPANY/MN",
           "type": "SEC",
           "form": "424B",
@@ -6467,10 +6539,10 @@
       ],
       "eventCount": 4
     },
-    "BML-PJ": {
+    "BAC-PS": {
       "events": [
         {
-          "symbol": "BML-PJ",
+          "symbol": "BAC-PS",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -6482,7 +6554,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BML-PJ",
+          "symbol": "BAC-PS",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -6494,7 +6566,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BML-PJ",
+          "symbol": "BAC-PS",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -6506,7 +6578,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BML-PJ",
+          "symbol": "BAC-PS",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -6518,7 +6590,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BML-PJ",
+          "symbol": "BAC-PS",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -6530,7 +6602,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BML-PJ",
+          "symbol": "BAC-PS",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -6542,7 +6614,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BML-PJ",
+          "symbol": "BAC-PS",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -6554,7 +6626,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BML-PJ",
+          "symbol": "BAC-PS",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -6694,10 +6766,10 @@
       ],
       "eventCount": 2
     },
-    "MS-PA": {
+    "MS-PP": {
       "events": [
         {
-          "symbol": "MS-PA",
+          "symbol": "MS-PP",
           "title": "MORGAN STANLEY",
           "type": "SEC",
           "form": "424B",
@@ -6825,10 +6897,10 @@
       ],
       "eventCount": 1
     },
-    "AQNB": {
+    "AGQPF": {
       "events": [
         {
-          "symbol": "AQNB",
+          "symbol": "AGQPF",
           "title": "ALGONQUIN POWER & UTILITIES CORP.",
           "type": "SEC",
           "form": "6-K",
@@ -7172,10 +7244,10 @@
       ],
       "eventCount": 1
     },
-    "BERZ": {
+    "FLYU": {
       "events": [
         {
-          "symbol": "BERZ",
+          "symbol": "FLYU",
           "title": "BANK OF MONTREAL /CAN/",
           "type": "SEC",
           "form": "424B",
@@ -7439,10 +7511,10 @@
       ],
       "eventCount": 1
     },
-    "PSA-PF": {
+    "PSA-PL": {
       "events": [
         {
-          "symbol": "PSA-PF",
+          "symbol": "PSA-PL",
           "title": "Public Storage",
           "type": "SEC",
           "form": "8-K",
@@ -7766,11 +7838,11 @@
       "events": [
         {
           "symbol": "USB-PS",
-          "title": "US BANCORP DE",
+          "title": "US BANCORP \\DE\\",
           "type": "SEC",
           "form": "8-K",
           "publishedAt": "2026-10-30T16:27:01-04:00",
-          "headline": "8-K filing — US BANCORP DE",
+          "headline": "8-K filing — US BANCORP \\DE\\",
           "url": "https://www.sec.gov/Archives/edgar/data/36104/000119312526441737/0001193125-26-441737-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
@@ -8470,11 +8542,11 @@
       "events": [
         {
           "symbol": "LRHC",
-          "title": "La Rosa Holdings Corp.",
+          "title": "Stratum Holdings Corp.",
           "type": "SEC",
           "form": "S-1",
           "publishedAt": "2026-10-30T16:05:43-04:00",
-          "headline": "S-1 filing — La Rosa Holdings Corp.",
+          "headline": "S-1 filing — Stratum Holdings Corp.",
           "url": "https://www.sec.gov/Archives/edgar/data/1879403/000121390026114379/0001213900-26-114379-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
@@ -8482,11 +8554,11 @@
         },
         {
           "symbol": "LRHC",
-          "title": "La Rosa Holdings Corp.",
+          "title": "Stratum Holdings Corp.",
           "type": "SEC",
           "form": "S-1",
           "publishedAt": "2026-10-29T17:17:52-04:00",
-          "headline": "S-1 filing — La Rosa Holdings Corp.",
+          "headline": "S-1 filing — Stratum Holdings Corp.",
           "url": "https://www.sec.gov/Archives/edgar/data/1879403/000121390026113906/0001213900-26-113906-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
@@ -9049,11 +9121,11 @@
       "events": [
         {
           "symbol": "SLMT",
-          "title": "Brera Holdings PLC",
+          "title": "Solmate Infrastructure PLC",
           "type": "SEC",
           "form": "6-K",
           "publishedAt": "2026-10-30T11:39:57-04:00",
-          "headline": "6-K filing — Brera Holdings PLC",
+          "headline": "6-K filing — Solmate Infrastructure PLC",
           "url": "https://www.sec.gov/Archives/edgar/data/1939965/000121390026114206/0001213900-26-114206-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
@@ -9722,6 +9794,23 @@
       ],
       "eventCount": 1
     },
+    "BBTX": {
+      "events": [
+        {
+          "symbol": "BBTX",
+          "title": "Bambusa Therapeutics, Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-10-29T17:19:17-04:00",
+          "headline": "S-1 filing — Bambusa Therapeutics, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2044950/000162828026068311/0001628280-26-068311-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "PROK": {
       "events": [
         {
@@ -9800,6 +9889,23 @@
           "publishedAt": "2026-10-29T09:03:37-04:00",
           "headline": "S-1 filing — Ocean Power Technologies, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1378140/000149315226049198/0001493152-26-049198-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "NAVI": {
+      "events": [
+        {
+          "symbol": "NAVI",
+          "title": "Navient Holdings, Inc.",
+          "type": "SEC",
+          "form": "S-3",
+          "publishedAt": "2026-10-29T08:39:53-04:00",
+          "headline": "S-3 filing — Navient Holdings, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2152623/000119312526437084/0001193125-26-437084-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
