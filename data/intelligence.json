@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-01T07:56:54.740Z",
+  "generatedAt": "2026-11-01T14:06:10.606Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-31T00:00:00.000Z",
-    "marketDataAgeMin": 1916.9,
+    "marketDataAgeMin": 2286.2,
     "quoteCount": 799,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-11-01T07:56:54.949Z",
-    "upstreamUpdatedAtAtBuild": "2026-11-01T06:52:56.260Z",
+    "upstreamFeedFetchedAt": "2026-11-01T14:06:10.876Z",
+    "upstreamUpdatedAtAtBuild": "2026-11-01T13:59:55.305Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-31T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 64,
-    "upstreamObservationAgeAtFetchMin": 1916.9,
+    "upstreamUpdateAgeAtFetchMin": 6.3,
+    "upstreamObservationAgeAtFetchMin": 2286.2,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 282,
@@ -29,6 +29,14 @@
       "early": 96,
       "ignition": 100,
       "observedAt": "2026-10-30T16:00:59-04:00"
+    },
+    {
+      "symbol": "NORD",
+      "price": 4.9120001792907715,
+      "changePct": 3.4105300903320312,
+      "early": 97,
+      "ignition": 97,
+      "observedAt": "2026-10-30T15:59:00-04:00"
     },
     {
       "symbol": "TCX",
@@ -223,20 +231,20 @@
       "observedAt": "2026-10-30T17:35:03-04:00"
     },
     {
-      "symbol": "CDLX",
-      "price": 1.78,
-      "changePct": 8.536585365853666,
-      "early": 71,
-      "ignition": 71,
-      "observedAt": "2026-10-30T16:00:00-04:00"
-    },
-    {
       "symbol": "WKHS",
       "price": 2.69,
       "changePct": 5.490196078431378,
       "early": 71,
       "ignition": 71,
       "observedAt": "2026-10-30T19:59:31-04:00"
+    },
+    {
+      "symbol": "CDLX",
+      "price": 1.78,
+      "changePct": 8.536585365853666,
+      "early": 71,
+      "ignition": 71,
+      "observedAt": "2026-10-30T16:00:00-04:00"
     },
     {
       "symbol": "SRTM",
@@ -327,14 +335,6 @@
       "observedAt": "2026-10-30T19:05:07-04:00"
     },
     {
-      "symbol": "ZH",
-      "price": 2.92,
-      "changePct": -7.594936708860765,
-      "early": 62,
-      "ignition": 76,
-      "observedAt": "2026-10-30T16:00:58-04:00"
-    },
-    {
       "symbol": "DDI",
       "price": 13.48,
       "changePct": -0.5166051660516626,
@@ -347,6 +347,10 @@
     "OBAI": {
       "title": "Our Bond, Inc.",
       "cik": "0001756064"
+    },
+    "NORD": {
+      "title": "Nordicus Partners Corp",
+      "cik": "0001011060"
     },
     "TCX": {
       "title": "TUCOWS INC /PA/",
@@ -444,13 +448,13 @@
       "title": "Editas Medicine, Inc.",
       "cik": "0001650664"
     },
-    "CDLX": {
-      "title": "Cardlytics, Inc.",
-      "cik": "0001666071"
-    },
     "WKHS": {
       "title": "Workhorse Group Inc.",
       "cik": "0001425287"
+    },
+    "CDLX": {
+      "title": "Cardlytics, Inc.",
+      "cik": "0001666071"
     },
     "SRTM": {
       "title": "Stratum Holdings Corp.",
@@ -496,16 +500,12 @@
       "title": "T3 Defense Inc.",
       "cik": "0001787518"
     },
-    "ZH": {
-      "title": "Zhihu Inc.",
-      "cik": "0001835724"
-    },
     "DDI": {
       "title": "DoubleDown Interactive Co., Ltd.",
       "cik": "0001799567"
     }
   },
-  "eventCount": 350,
+  "eventCount": 346,
   "events": [
     {
       "symbol": "MOBXW",
@@ -4168,18 +4168,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "ZH",
-      "title": "Zhihu Inc.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-10-26T10:01:56.000Z",
-      "headline": "6-K filing — Zhihu Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926118558/tm2628255d1_6k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "OBAI",
       "title": "Our Bond, Inc.",
       "type": "SEC",
@@ -4348,13 +4336,13 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "ZH",
-      "title": "Zhihu Inc.",
+      "symbol": "NORD",
+      "title": "Nordicus Partners Corp",
       "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-10-21T20:13:44.000Z",
-      "headline": "6-K filing — Zhihu Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926117840/tm2628073d1_6k.htm",
+      "form": "8-K",
+      "publishedAt": "2026-10-21T20:30:18.000Z",
+      "headline": "8-K filing — Nordicus Partners Corp",
+      "url": "https://www.sec.gov/Archives/edgar/data/1011060/000149315226047909/form8-k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4444,18 +4432,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "ZH",
-      "title": "Zhihu Inc.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-10-20T11:12:16.000Z",
-      "headline": "6-K filing — Zhihu Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926117133/tm2627801d2_6k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "QNRX",
       "title": "Quoin Pharmaceuticals Ltd.",
       "type": "SEC",
@@ -4463,18 +4439,6 @@
       "publishedAt": "2026-10-20T10:35:29.000Z",
       "headline": "8-K filing — Quoin Pharmaceuticals Ltd.",
       "url": "https://www.sec.gov/Archives/edgar/data/1671502/000110465926117080/tm2627720d1_8k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "ZH",
-      "title": "Zhihu Inc.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-10-20T10:01:45.000Z",
-      "headline": "6-K filing — Zhihu Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926117032/tm2627801d1_6k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4547,18 +4511,6 @@
       "publishedAt": "2026-10-16T20:30:14.000Z",
       "headline": "8-K filing — Envoy Medical, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1840877/000121390026110266/ea0308812-8k_envoy.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "ZH",
-      "title": "Zhihu Inc.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-10-16T13:22:33.000Z",
-      "headline": "6-K filing — Zhihu Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926116456/tm2627738d1_6k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4648,6 +4600,18 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
+      "symbol": "NORD",
+      "title": "Nordicus Partners Corp",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-10-14T13:00:09.000Z",
+      "headline": "8-K filing — Nordicus Partners Corp",
+      "url": "https://www.sec.gov/Archives/edgar/data/1011060/000149315226046939/form8-k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
       "symbol": "AMBR",
       "title": "Amber International Holding Ltd",
       "type": "SEC",
@@ -4691,18 +4655,6 @@
       "publishedAt": "2026-10-13T12:46:17.000Z",
       "headline": "6-K filing — IceCure Medical Ltd.",
       "url": "https://www.sec.gov/Archives/edgar/data/1584371/000121390026108763/ea0308439-6k_icecure.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "ZH",
-      "title": "Zhihu Inc.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-10-13T10:04:47.000Z",
-      "headline": "6-K filing — Zhihu Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926115167/tm2627431d1_6k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4761,6 +4713,35 @@
         }
       ],
       "eventCount": 4
+    },
+    "NORD": {
+      "events": [
+        {
+          "symbol": "NORD",
+          "title": "Nordicus Partners Corp",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-21T20:30:18.000Z",
+          "headline": "8-K filing — Nordicus Partners Corp",
+          "url": "https://www.sec.gov/Archives/edgar/data/1011060/000149315226047909/form8-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "NORD",
+          "title": "Nordicus Partners Corp",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-14T13:00:09.000Z",
+          "headline": "8-K filing — Nordicus Partners Corp",
+          "url": "https://www.sec.gov/Archives/edgar/data/1011060/000149315226046939/form8-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 2
     },
     "TCX": {
       "events": [
@@ -5330,10 +5311,6 @@
       "events": [],
       "eventCount": 0
     },
-    "CDLX": {
-      "events": [],
-      "eventCount": 0
-    },
     "WKHS": {
       "events": [
         {
@@ -5350,6 +5327,10 @@
         }
       ],
       "eventCount": 1
+    },
+    "CDLX": {
+      "events": [],
+      "eventCount": 0
     },
     "SRTM": {
       "events": [
@@ -5643,83 +5624,6 @@
         }
       ],
       "eventCount": 7
-    },
-    "ZH": {
-      "events": [
-        {
-          "symbol": "ZH",
-          "title": "Zhihu Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-26T10:01:56.000Z",
-          "headline": "6-K filing — Zhihu Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926118558/tm2628255d1_6k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "ZH",
-          "title": "Zhihu Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-21T20:13:44.000Z",
-          "headline": "6-K filing — Zhihu Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926117840/tm2628073d1_6k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "ZH",
-          "title": "Zhihu Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-20T11:12:16.000Z",
-          "headline": "6-K filing — Zhihu Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926117133/tm2627801d2_6k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "ZH",
-          "title": "Zhihu Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-20T10:01:45.000Z",
-          "headline": "6-K filing — Zhihu Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926117032/tm2627801d1_6k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "ZH",
-          "title": "Zhihu Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-16T13:22:33.000Z",
-          "headline": "6-K filing — Zhihu Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926116456/tm2627738d1_6k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "ZH",
-          "title": "Zhihu Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-13T10:04:47.000Z",
-          "headline": "6-K filing — Zhihu Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1835724/000110465926115167/tm2627431d1_6k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 6
     },
     "DDI": {
       "events": [
