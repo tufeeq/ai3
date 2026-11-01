@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-01T22:37:41.955Z",
+  "generatedAt": "2026-11-01T22:58:37.893Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,16 +8,16 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-31T00:00:00.000Z",
-    "marketDataAgeMin": 2797.7,
+    "marketDataAgeMin": 2818.6,
     "quoteCount": 799,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-11-01T22:37:42.893Z",
+    "upstreamFeedFetchedAt": "2026-11-01T22:58:38.210Z",
     "upstreamUpdatedAtAtBuild": "2026-11-01T22:35:29.400Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-31T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 2.2,
-    "upstreamObservationAgeAtFetchMin": 2797.7,
+    "upstreamUpdateAgeAtFetchMin": 23.1,
+    "upstreamObservationAgeAtFetchMin": 2818.6,
     "secMapping": true,
-    "secMarketwideDiscovery": true,
+    "secMarketwideDiscovery": false,
     "secMarketwideEventCount": 282,
     "newsDiscovery": true
   },
@@ -9991,6 +9991,8 @@
       "eventCount": 1
     }
   },
-  "errors": [],
+  "errors": [
+    "SEC_CURRENT_SC 13D:This operation was aborted"
+  ],
   "policy": "Public-source intelligence. Market-wide SEC current-filing discovery is primary-source and independent of the price shortlist. `sourceStatus.live` means the loaded market universe contains fresh market data inside the active US extended-hours window; loaded-but-stale/session-final data is never labeled live. Shortlist ranking does not determine feed-level freshness. Upstream feed timestamps are retained only as operational provenance and do not override quote observation freshness or trading eligibility. SEC filings are primary-source events; GDELT is discovery-only and requires source-level verification before trade decisions."
 }
