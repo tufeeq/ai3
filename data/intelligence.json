@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-01T01:24:44.905Z",
+  "generatedAt": "2026-11-01T06:53:11.266Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-10-31T00:00:00.000Z",
-    "marketDataAgeMin": 1524.8,
+    "marketDataAgeMin": 1853.2,
     "quoteCount": 799,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-11-01T01:24:45.132Z",
-    "upstreamUpdatedAtAtBuild": "2026-10-31T23:55:41.994Z",
+    "upstreamFeedFetchedAt": "2026-11-01T06:53:11.552Z",
+    "upstreamUpdatedAtAtBuild": "2026-11-01T06:52:56.260Z",
     "upstreamNewestObservedAtAtBuild": "2026-10-31T00:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 89.1,
-    "upstreamObservationAgeAtFetchMin": 1524.8,
+    "upstreamUpdateAgeAtFetchMin": 0.3,
+    "upstreamObservationAgeAtFetchMin": 1853.2,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 282,
@@ -29,14 +29,6 @@
       "early": 96,
       "ignition": 100,
       "observedAt": "2026-10-30T16:00:59-04:00"
-    },
-    {
-      "symbol": "NORD",
-      "price": 4.9120001792907715,
-      "changePct": 3.4105300903320312,
-      "early": 97,
-      "ignition": 97,
-      "observedAt": "2026-10-30T15:59:00-04:00"
     },
     {
       "symbol": "TCX",
@@ -207,6 +199,14 @@
       "observedAt": "2026-10-30T16:01:07-04:00"
     },
     {
+      "symbol": "ELDN",
+      "price": 2.9273,
+      "changePct": -3.7072368421052717,
+      "early": 72,
+      "ignition": 72,
+      "observedAt": "2026-10-30T19:57:55-04:00"
+    },
+    {
       "symbol": "AGPU",
       "price": 8.5,
       "changePct": -3.078677309007977,
@@ -223,12 +223,12 @@
       "observedAt": "2026-10-30T17:35:03-04:00"
     },
     {
-      "symbol": "ELDN",
-      "price": 2.9273,
-      "changePct": -3.7072368421052717,
-      "early": 72,
-      "ignition": 72,
-      "observedAt": "2026-10-30T19:57:55-04:00"
+      "symbol": "CDLX",
+      "price": 1.78,
+      "changePct": 8.536585365853666,
+      "early": 71,
+      "ignition": 71,
+      "observedAt": "2026-10-30T16:00:00-04:00"
     },
     {
       "symbol": "WKHS",
@@ -237,14 +237,6 @@
       "early": 71,
       "ignition": 71,
       "observedAt": "2026-10-30T19:59:31-04:00"
-    },
-    {
-      "symbol": "CDLX",
-      "price": 1.78,
-      "changePct": 8.536585365853666,
-      "early": 71,
-      "ignition": 71,
-      "observedAt": "2026-10-30T16:00:00-04:00"
     },
     {
       "symbol": "SRTM",
@@ -341,16 +333,20 @@
       "early": 62,
       "ignition": 76,
       "observedAt": "2026-10-30T16:00:58-04:00"
+    },
+    {
+      "symbol": "DDI",
+      "price": 13.48,
+      "changePct": -0.5166051660516626,
+      "early": 62,
+      "ignition": 76,
+      "observedAt": "2026-10-30T16:00:00-04:00"
     }
   ],
   "companies": {
     "OBAI": {
       "title": "Our Bond, Inc.",
       "cik": "0001756064"
-    },
-    "NORD": {
-      "title": "Nordicus Partners Corp",
-      "cik": "0001011060"
     },
     "TCX": {
       "title": "TUCOWS INC /PA/",
@@ -436,6 +432,10 @@
       "title": "Wheels Up Experience Inc.",
       "cik": "0001819516"
     },
+    "ELDN": {
+      "title": "Eledon Pharmaceuticals, Inc.",
+      "cik": "0001404281"
+    },
     "AGPU": {
       "title": "Axe Compute Inc.",
       "cik": "0001446159"
@@ -444,17 +444,13 @@
       "title": "Editas Medicine, Inc.",
       "cik": "0001650664"
     },
-    "ELDN": {
-      "title": "Eledon Pharmaceuticals, Inc.",
-      "cik": "0001404281"
+    "CDLX": {
+      "title": "Cardlytics, Inc.",
+      "cik": "0001666071"
     },
     "WKHS": {
       "title": "Workhorse Group Inc.",
       "cik": "0001425287"
-    },
-    "CDLX": {
-      "title": "Cardlytics, Inc.",
-      "cik": "0001666071"
     },
     "SRTM": {
       "title": "Stratum Holdings Corp.",
@@ -503,9 +499,13 @@
     "ZH": {
       "title": "Zhihu Inc.",
       "cik": "0001835724"
+    },
+    "DDI": {
+      "title": "DoubleDown Interactive Co., Ltd.",
+      "cik": "0001799567"
     }
   },
-  "eventCount": 351,
+  "eventCount": 350,
   "events": [
     {
       "symbol": "MOBXW",
@@ -4084,6 +4084,18 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
+      "symbol": "DDI",
+      "title": "DoubleDown Interactive Co., Ltd.",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-10-28T11:00:03.000Z",
+      "headline": "6-K filing — DoubleDown Interactive Co., Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1799567/000119312526435064/d177181d6k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
       "symbol": "AMBR",
       "title": "Amber International Holding Ltd",
       "type": "SEC",
@@ -4331,18 +4343,6 @@
       "publishedAt": "2026-10-22T11:31:35.000Z",
       "headline": "8-K filing — TUCOWS INC /PA/",
       "url": "https://www.sec.gov/Archives/edgar/data/909494/000090949426000006/tcx-20261021.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "NORD",
-      "title": "Nordicus Partners Corp",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-10-21T20:30:18.000Z",
-      "headline": "8-K filing — Nordicus Partners Corp",
-      "url": "https://www.sec.gov/Archives/edgar/data/1011060/000149315226047909/form8-k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4648,18 +4648,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "NORD",
-      "title": "Nordicus Partners Corp",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-10-14T13:00:09.000Z",
-      "headline": "8-K filing — Nordicus Partners Corp",
-      "url": "https://www.sec.gov/Archives/edgar/data/1011060/000149315226046939/form8-k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "AMBR",
       "title": "Amber International Holding Ltd",
       "type": "SEC",
@@ -4773,35 +4761,6 @@
         }
       ],
       "eventCount": 4
-    },
-    "NORD": {
-      "events": [
-        {
-          "symbol": "NORD",
-          "title": "Nordicus Partners Corp",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-21T20:30:18.000Z",
-          "headline": "8-K filing — Nordicus Partners Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/1011060/000149315226047909/form8-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "NORD",
-          "title": "Nordicus Partners Corp",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-14T13:00:09.000Z",
-          "headline": "8-K filing — Nordicus Partners Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/1011060/000149315226046939/form8-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
     },
     "TCX": {
       "events": [
@@ -5359,6 +5318,10 @@
       "events": [],
       "eventCount": 0
     },
+    "ELDN": {
+      "events": [],
+      "eventCount": 0
+    },
     "AGPU": {
       "events": [],
       "eventCount": 0
@@ -5367,7 +5330,7 @@
       "events": [],
       "eventCount": 0
     },
-    "ELDN": {
+    "CDLX": {
       "events": [],
       "eventCount": 0
     },
@@ -5387,10 +5350,6 @@
         }
       ],
       "eventCount": 1
-    },
-    "CDLX": {
-      "events": [],
-      "eventCount": 0
     },
     "SRTM": {
       "events": [
@@ -5761,6 +5720,23 @@
         }
       ],
       "eventCount": 6
+    },
+    "DDI": {
+      "events": [
+        {
+          "symbol": "DDI",
+          "title": "DoubleDown Interactive Co., Ltd.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-10-28T11:00:03.000Z",
+          "headline": "6-K filing — DoubleDown Interactive Co., Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1799567/000119312526435064/d177181d6k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
     },
     "MOBXW": {
       "events": [
