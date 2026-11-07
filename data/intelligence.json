@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-07T18:12:12.007Z",
+  "generatedAt": "2026-11-07T19:26:42.264Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-11-07T01:00:00.000Z",
-    "marketDataAgeMin": 1032.2,
+    "marketDataAgeMin": 1106.7,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-11-07T18:12:12.268Z",
-    "upstreamUpdatedAtAtBuild": "2026-11-07T15:46:56.745Z",
+    "upstreamFeedFetchedAt": "2026-11-07T19:26:42.591Z",
+    "upstreamUpdatedAtAtBuild": "2026-11-07T19:24:56.155Z",
     "upstreamNewestObservedAtAtBuild": "2026-11-07T01:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 145.3,
-    "upstreamObservationAgeAtFetchMin": 1032.2,
+    "upstreamUpdateAgeAtFetchMin": 1.8,
+    "upstreamObservationAgeAtFetchMin": 1106.7,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 298,
@@ -231,20 +231,20 @@
       "observedAt": "2026-11-06T19:59:27-05:00"
     },
     {
-      "symbol": "ZVRA",
-      "price": 11.59,
-      "changePct": 10.066476733143405,
-      "early": 69,
-      "ignition": 75,
-      "observedAt": "2026-11-06T16:01:03-05:00"
-    },
-    {
       "symbol": "OSS",
       "price": 4.4944,
       "changePct": 14.653061224489791,
       "early": 72,
       "ignition": 72,
       "observedAt": "2026-11-06T18:14:00-05:00"
+    },
+    {
+      "symbol": "ZVRA",
+      "price": 11.59,
+      "changePct": 10.066476733143405,
+      "early": 69,
+      "ignition": 75,
+      "observedAt": "2026-11-06T16:01:03-05:00"
     },
     {
       "symbol": "SAFX",
@@ -448,13 +448,13 @@
       "title": "MERCER INTERNATIONAL INC.",
       "cik": "0001333274"
     },
-    "ZVRA": {
-      "title": "ZEVRA THERAPEUTICS, INC.",
-      "cik": "0001434647"
-    },
     "OSS": {
       "title": "ONE STOP SYSTEMS, INC.",
       "cik": "0001394056"
+    },
+    "ZVRA": {
+      "title": "ZEVRA THERAPEUTICS, INC.",
+      "cik": "0001434647"
     },
     "SAFX": {
       "title": "XCF Global, Inc.",
@@ -5693,23 +5693,6 @@
       ],
       "eventCount": 2
     },
-    "ZVRA": {
-      "events": [
-        {
-          "symbol": "ZVRA",
-          "title": "ZEVRA THERAPEUTICS, INC.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-11-03T21:08:15.000Z",
-          "headline": "8-K filing — ZEVRA THERAPEUTICS, INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1434647/000143464726000085/zvra-20261103.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
     "OSS": {
       "events": [
         {
@@ -5750,6 +5733,23 @@
         }
       ],
       "eventCount": 3
+    },
+    "ZVRA": {
+      "events": [
+        {
+          "symbol": "ZVRA",
+          "title": "ZEVRA THERAPEUTICS, INC.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-11-03T21:08:15.000Z",
+          "headline": "8-K filing — ZEVRA THERAPEUTICS, INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1434647/000143464726000085/zvra-20261103.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
     },
     "SAFX": {
       "events": [
