@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-07T06:26:27.050Z",
+  "generatedAt": "2026-11-07T08:48:27.725Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-11-07T01:00:00.000Z",
-    "marketDataAgeMin": 326.5,
+    "marketDataAgeMin": 468.5,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-11-07T06:26:27.317Z",
-    "upstreamUpdatedAtAtBuild": "2026-11-07T02:37:09.801Z",
+    "upstreamFeedFetchedAt": "2026-11-07T08:48:28.024Z",
+    "upstreamUpdatedAtAtBuild": "2026-11-07T08:35:16.882Z",
     "upstreamNewestObservedAtAtBuild": "2026-11-07T01:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 229.3,
-    "upstreamObservationAgeAtFetchMin": 326.5,
+    "upstreamUpdateAgeAtFetchMin": 13.2,
+    "upstreamObservationAgeAtFetchMin": 468.5,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 298,
@@ -327,20 +327,20 @@
       "observedAt": "2026-11-06T16:00:00-05:00"
     },
     {
-      "symbol": "DPU",
-      "price": 1.3,
-      "changePct": -13.33333333333333,
-      "early": 68,
-      "ignition": 68,
-      "observedAt": "2026-11-06T16:34:50-05:00"
-    },
-    {
       "symbol": "OMH",
       "price": 15.4997,
       "changePct": 16.10262172284645,
       "early": 68,
       "ignition": 68,
       "observedAt": "2026-11-06T19:59:57-05:00"
+    },
+    {
+      "symbol": "DPU",
+      "price": 1.3,
+      "changePct": -13.33333333333333,
+      "early": 68,
+      "ignition": 68,
+      "observedAt": "2026-11-06T16:34:50-05:00"
     }
   ],
   "companies": {
@@ -496,13 +496,13 @@
       "title": "AZUL SA",
       "cik": "0001432364"
     },
-    "DPU": {
-      "title": "Nexpu Ltd.",
-      "cik": "0001938865"
-    },
     "OMH": {
       "title": "Ohmyhome Ltd",
       "cik": "0001944902"
+    },
+    "DPU": {
+      "title": "Nexpu Ltd.",
+      "cik": "0001938865"
     }
   },
   "eventCount": 380,
@@ -6221,6 +6221,23 @@
       ],
       "eventCount": 3
     },
+    "OMH": {
+      "events": [
+        {
+          "symbol": "OMH",
+          "title": "Ohmyhome Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-10-26T12:00:01.000Z",
+          "headline": "6-K filing — Ohmyhome Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1944902/000121390026112280/ea0309627-6k_ohmyhome.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
     "DPU": {
       "events": [
         {
@@ -6249,23 +6266,6 @@
         }
       ],
       "eventCount": 2
-    },
-    "OMH": {
-      "events": [
-        {
-          "symbol": "OMH",
-          "title": "Ohmyhome Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-26T12:00:01.000Z",
-          "headline": "6-K filing — Ohmyhome Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1944902/000121390026112280/ea0309627-6k_ohmyhome.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
     },
     "RYLBF": {
       "events": [
