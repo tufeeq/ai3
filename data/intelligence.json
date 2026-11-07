@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-07T08:48:27.725Z",
+  "generatedAt": "2026-11-07T13:26:33.010Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-11-07T01:00:00.000Z",
-    "marketDataAgeMin": 468.5,
+    "marketDataAgeMin": 746.6,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-11-07T08:48:28.024Z",
-    "upstreamUpdatedAtAtBuild": "2026-11-07T08:35:16.882Z",
+    "upstreamFeedFetchedAt": "2026-11-07T13:26:33.293Z",
+    "upstreamUpdatedAtAtBuild": "2026-11-07T09:15:35.680Z",
     "upstreamNewestObservedAtAtBuild": "2026-11-07T01:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 13.2,
-    "upstreamObservationAgeAtFetchMin": 468.5,
+    "upstreamUpdateAgeAtFetchMin": 251,
+    "upstreamObservationAgeAtFetchMin": 746.6,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 298,
@@ -95,20 +95,20 @@
       "observedAt": "2026-11-06T17:30:27-05:00"
     },
     {
-      "symbol": "MLP",
-      "price": 15.26,
-      "changePct": 5.605536332179935,
-      "early": 72,
-      "ignition": 86,
-      "observedAt": "2026-11-06T16:00:00-05:00"
-    },
-    {
       "symbol": "INSE",
       "price": 3.7,
       "changePct": 5.71428571428572,
       "early": 72,
       "ignition": 86,
       "observedAt": "2026-11-06T16:01:30-05:00"
+    },
+    {
+      "symbol": "MLP",
+      "price": 15.26,
+      "changePct": 5.605536332179935,
+      "early": 72,
+      "ignition": 86,
+      "observedAt": "2026-11-06T16:00:00-05:00"
     },
     {
       "symbol": "UIS",
@@ -380,13 +380,13 @@
       "title": "Abits Group Inc",
       "cik": "0001864055"
     },
-    "MLP": {
-      "title": "MAUI LAND & PINEAPPLE CO INC",
-      "cik": "0000063330"
-    },
     "INSE": {
       "title": "Inspired Entertainment, Inc.",
       "cik": "0001615063"
+    },
+    "MLP": {
+      "title": "MAUI LAND & PINEAPPLE CO INC",
+      "cik": "0000063330"
     },
     "UIS": {
       "title": "UNISYS CORP",
@@ -5169,10 +5169,6 @@
       ],
       "eventCount": 2
     },
-    "MLP": {
-      "events": [],
-      "eventCount": 0
-    },
     "INSE": {
       "events": [
         {
@@ -5189,6 +5185,10 @@
         }
       ],
       "eventCount": 1
+    },
+    "MLP": {
+      "events": [],
+      "eventCount": 0
     },
     "UIS": {
       "events": [
