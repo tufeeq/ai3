@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-08T09:00:38.476Z",
+  "generatedAt": "2026-11-08T14:27:16.244Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-11-07T01:00:00.000Z",
-    "marketDataAgeMin": 1920.7,
+    "marketDataAgeMin": 2247.3,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-11-08T09:00:38.982Z",
-    "upstreamUpdatedAtAtBuild": "2026-11-08T08:11:29.716Z",
+    "upstreamFeedFetchedAt": "2026-11-08T14:27:16.664Z",
+    "upstreamUpdatedAtAtBuild": "2026-11-08T09:23:12.944Z",
     "upstreamNewestObservedAtAtBuild": "2026-11-07T01:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 49.2,
-    "upstreamObservationAgeAtFetchMin": 1920.6,
+    "upstreamUpdateAgeAtFetchMin": 304.1,
+    "upstreamObservationAgeAtFetchMin": 2247.3,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 298,
@@ -95,20 +95,20 @@
       "observedAt": "2026-11-06T17:30:27-05:00"
     },
     {
-      "symbol": "INSE",
-      "price": 3.7,
-      "changePct": 5.71428571428572,
-      "early": 72,
-      "ignition": 86,
-      "observedAt": "2026-11-06T16:01:30-05:00"
-    },
-    {
       "symbol": "MLP",
       "price": 15.26,
       "changePct": 5.605536332179935,
       "early": 72,
       "ignition": 86,
       "observedAt": "2026-11-06T16:00:00-05:00"
+    },
+    {
+      "symbol": "INSE",
+      "price": 3.7,
+      "changePct": 5.71428571428572,
+      "early": 72,
+      "ignition": 86,
+      "observedAt": "2026-11-06T16:01:30-05:00"
     },
     {
       "symbol": "UIS",
@@ -380,13 +380,13 @@
       "title": "Abits Group Inc",
       "cik": "0001864055"
     },
-    "INSE": {
-      "title": "Inspired Entertainment, Inc.",
-      "cik": "0001615063"
-    },
     "MLP": {
       "title": "MAUI LAND & PINEAPPLE CO INC",
       "cik": "0000063330"
+    },
+    "INSE": {
+      "title": "Inspired Entertainment, Inc.",
+      "cik": "0001615063"
     },
     "UIS": {
       "title": "UNISYS CORP",
@@ -5169,6 +5169,10 @@
       ],
       "eventCount": 2
     },
+    "MLP": {
+      "events": [],
+      "eventCount": 0
+    },
     "INSE": {
       "events": [
         {
@@ -5185,10 +5189,6 @@
         }
       ],
       "eventCount": 1
-    },
-    "MLP": {
-      "events": [],
-      "eventCount": 0
     },
     "UIS": {
       "events": [
