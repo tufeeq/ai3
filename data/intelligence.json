@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-08T02:06:28.887Z",
+  "generatedAt": "2026-11-08T07:24:00.156Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-11-07T01:00:00.000Z",
-    "marketDataAgeMin": 1506.5,
+    "marketDataAgeMin": 1824,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-11-08T02:06:29.775Z",
-    "upstreamUpdatedAtAtBuild": "2026-11-08T01:57:26.419Z",
+    "upstreamFeedFetchedAt": "2026-11-08T07:24:00.770Z",
+    "upstreamUpdatedAtAtBuild": "2026-11-08T02:25:30.360Z",
     "upstreamNewestObservedAtAtBuild": "2026-11-07T01:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 9.1,
-    "upstreamObservationAgeAtFetchMin": 1506.5,
+    "upstreamUpdateAgeAtFetchMin": 298.5,
+    "upstreamObservationAgeAtFetchMin": 1824,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 298,
@@ -95,20 +95,20 @@
       "observedAt": "2026-11-06T17:30:27-05:00"
     },
     {
-      "symbol": "MLP",
-      "price": 15.26,
-      "changePct": 5.605536332179935,
-      "early": 72,
-      "ignition": 86,
-      "observedAt": "2026-11-06T16:00:00-05:00"
-    },
-    {
       "symbol": "INSE",
       "price": 3.7,
       "changePct": 5.71428571428572,
       "early": 72,
       "ignition": 86,
       "observedAt": "2026-11-06T16:01:30-05:00"
+    },
+    {
+      "symbol": "MLP",
+      "price": 15.26,
+      "changePct": 5.605536332179935,
+      "early": 72,
+      "ignition": 86,
+      "observedAt": "2026-11-06T16:00:00-05:00"
     },
     {
       "symbol": "UIS",
@@ -127,20 +127,20 @@
       "observedAt": "2026-11-06T16:00:00-05:00"
     },
     {
-      "symbol": "WXM",
-      "price": 2.1,
-      "changePct": 12.903225806451612,
-      "early": 76,
-      "ignition": 76,
-      "observedAt": "2026-11-06T18:49:04-05:00"
-    },
-    {
       "symbol": "OKUR",
       "price": 2.865,
       "changePct": 13.465346534653477,
       "early": 73,
       "ignition": 79,
       "observedAt": "2026-11-06T16:00:00-05:00"
+    },
+    {
+      "symbol": "WXM",
+      "price": 2.1,
+      "changePct": 12.903225806451612,
+      "early": 76,
+      "ignition": 76,
+      "observedAt": "2026-11-06T18:49:04-05:00"
     },
     {
       "symbol": "SBS",
@@ -231,20 +231,20 @@
       "observedAt": "2026-11-06T19:59:27-05:00"
     },
     {
-      "symbol": "ZVRA",
-      "price": 11.59,
-      "changePct": 10.066476733143405,
-      "early": 69,
-      "ignition": 75,
-      "observedAt": "2026-11-06T16:01:03-05:00"
-    },
-    {
       "symbol": "OSS",
       "price": 4.4944,
       "changePct": 14.653061224489791,
       "early": 72,
       "ignition": 72,
       "observedAt": "2026-11-06T18:14:00-05:00"
+    },
+    {
+      "symbol": "ZVRA",
+      "price": 11.59,
+      "changePct": 10.066476733143405,
+      "early": 69,
+      "ignition": 75,
+      "observedAt": "2026-11-06T16:01:03-05:00"
     },
     {
       "symbol": "SAFX",
@@ -327,20 +327,20 @@
       "observedAt": "2026-11-06T16:00:00-05:00"
     },
     {
-      "symbol": "DPU",
-      "price": 1.3,
-      "changePct": -13.33333333333333,
-      "early": 68,
-      "ignition": 68,
-      "observedAt": "2026-11-06T16:34:50-05:00"
-    },
-    {
       "symbol": "OMH",
       "price": 15.4997,
       "changePct": 16.10262172284645,
       "early": 68,
       "ignition": 68,
       "observedAt": "2026-11-06T19:59:57-05:00"
+    },
+    {
+      "symbol": "DPU",
+      "price": 1.3,
+      "changePct": -13.33333333333333,
+      "early": 68,
+      "ignition": 68,
+      "observedAt": "2026-11-06T16:34:50-05:00"
     }
   ],
   "companies": {
@@ -380,13 +380,13 @@
       "title": "Abits Group Inc",
       "cik": "0001864055"
     },
-    "MLP": {
-      "title": "MAUI LAND & PINEAPPLE CO INC",
-      "cik": "0000063330"
-    },
     "INSE": {
       "title": "Inspired Entertainment, Inc.",
       "cik": "0001615063"
+    },
+    "MLP": {
+      "title": "MAUI LAND & PINEAPPLE CO INC",
+      "cik": "0000063330"
     },
     "UIS": {
       "title": "UNISYS CORP",
@@ -396,13 +396,13 @@
       "title": "BGSF, INC.",
       "cik": "0001474903"
     },
-    "WXM": {
-      "title": "WF International Ltd.",
-      "cik": "0001979610"
-    },
     "OKUR": {
       "title": "OnKure Therapeutics, Inc.",
       "cik": "0001637715"
+    },
+    "WXM": {
+      "title": "WF International Ltd.",
+      "cik": "0001979610"
     },
     "SBS": {
       "title": "COMPANHIA DE SANEAMENTO BASICO DO ESTADO DE SAO PAULO-SABESP",
@@ -448,13 +448,13 @@
       "title": "MERCER INTERNATIONAL INC.",
       "cik": "0001333274"
     },
-    "ZVRA": {
-      "title": "ZEVRA THERAPEUTICS, INC.",
-      "cik": "0001434647"
-    },
     "OSS": {
       "title": "ONE STOP SYSTEMS, INC.",
       "cik": "0001394056"
+    },
+    "ZVRA": {
+      "title": "ZEVRA THERAPEUTICS, INC.",
+      "cik": "0001434647"
     },
     "SAFX": {
       "title": "XCF Global, Inc.",
@@ -496,13 +496,13 @@
       "title": "AZUL SA",
       "cik": "0001432364"
     },
-    "DPU": {
-      "title": "Nexpu Ltd.",
-      "cik": "0001938865"
-    },
     "OMH": {
       "title": "Ohmyhome Ltd",
       "cik": "0001944902"
+    },
+    "DPU": {
+      "title": "Nexpu Ltd.",
+      "cik": "0001938865"
     }
   },
   "eventCount": 380,
@@ -5169,10 +5169,6 @@
       ],
       "eventCount": 2
     },
-    "MLP": {
-      "events": [],
-      "eventCount": 0
-    },
     "INSE": {
       "events": [
         {
@@ -5189,6 +5185,10 @@
         }
       ],
       "eventCount": 1
+    },
+    "MLP": {
+      "events": [],
+      "eventCount": 0
     },
     "UIS": {
       "events": [
@@ -5284,10 +5284,6 @@
       ],
       "eventCount": 6
     },
-    "WXM": {
-      "events": [],
-      "eventCount": 0
-    },
     "OKUR": {
       "events": [
         {
@@ -5304,6 +5300,10 @@
         }
       ],
       "eventCount": 1
+    },
+    "WXM": {
+      "events": [],
+      "eventCount": 0
     },
     "SBS": {
       "events": [
@@ -5693,23 +5693,6 @@
       ],
       "eventCount": 2
     },
-    "ZVRA": {
-      "events": [
-        {
-          "symbol": "ZVRA",
-          "title": "ZEVRA THERAPEUTICS, INC.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-11-03T21:08:15.000Z",
-          "headline": "8-K filing — ZEVRA THERAPEUTICS, INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1434647/000143464726000085/zvra-20261103.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
     "OSS": {
       "events": [
         {
@@ -5750,6 +5733,23 @@
         }
       ],
       "eventCount": 3
+    },
+    "ZVRA": {
+      "events": [
+        {
+          "symbol": "ZVRA",
+          "title": "ZEVRA THERAPEUTICS, INC.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-11-03T21:08:15.000Z",
+          "headline": "8-K filing — ZEVRA THERAPEUTICS, INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1434647/000143464726000085/zvra-20261103.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
     },
     "SAFX": {
       "events": [
@@ -6221,6 +6221,23 @@
       ],
       "eventCount": 3
     },
+    "OMH": {
+      "events": [
+        {
+          "symbol": "OMH",
+          "title": "Ohmyhome Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-10-26T12:00:01.000Z",
+          "headline": "6-K filing — Ohmyhome Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1944902/000121390026112280/ea0309627-6k_ohmyhome.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
     "DPU": {
       "events": [
         {
@@ -6249,23 +6266,6 @@
         }
       ],
       "eventCount": 2
-    },
-    "OMH": {
-      "events": [
-        {
-          "symbol": "OMH",
-          "title": "Ohmyhome Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-26T12:00:01.000Z",
-          "headline": "6-K filing — Ohmyhome Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1944902/000121390026112280/ea0309627-6k_ohmyhome.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
     },
     "RYLBF": {
       "events": [
