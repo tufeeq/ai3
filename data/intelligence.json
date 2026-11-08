@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-08T14:27:16.244Z",
+  "generatedAt": "2026-11-08T15:50:08.849Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-11-07T01:00:00.000Z",
-    "marketDataAgeMin": 2247.3,
+    "marketDataAgeMin": 2330.2,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-11-08T14:27:16.664Z",
-    "upstreamUpdatedAtAtBuild": "2026-11-08T09:23:12.944Z",
+    "upstreamFeedFetchedAt": "2026-11-08T15:50:09.197Z",
+    "upstreamUpdatedAtAtBuild": "2026-11-08T15:09:02.625Z",
     "upstreamNewestObservedAtAtBuild": "2026-11-07T01:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 304.1,
-    "upstreamObservationAgeAtFetchMin": 2247.3,
+    "upstreamUpdateAgeAtFetchMin": 41.1,
+    "upstreamObservationAgeAtFetchMin": 2330.2,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 298,
@@ -95,20 +95,20 @@
       "observedAt": "2026-11-06T17:30:27-05:00"
     },
     {
-      "symbol": "MLP",
-      "price": 15.26,
-      "changePct": 5.605536332179935,
-      "early": 72,
-      "ignition": 86,
-      "observedAt": "2026-11-06T16:00:00-05:00"
-    },
-    {
       "symbol": "INSE",
       "price": 3.7,
       "changePct": 5.71428571428572,
       "early": 72,
       "ignition": 86,
       "observedAt": "2026-11-06T16:01:30-05:00"
+    },
+    {
+      "symbol": "MLP",
+      "price": 15.26,
+      "changePct": 5.605536332179935,
+      "early": 72,
+      "ignition": 86,
+      "observedAt": "2026-11-06T16:00:00-05:00"
     },
     {
       "symbol": "UIS",
@@ -303,17 +303,17 @@
       "observedAt": "2026-11-06T16:00:00-05:00"
     },
     {
-      "symbol": "CBFV",
-      "price": 40.7,
-      "changePct": 0,
+      "symbol": "HQ",
+      "price": 11.44,
+      "changePct": 8.952380952380947,
       "early": 63,
       "ignition": 77,
       "observedAt": "2026-11-06T16:00:00-05:00"
     },
     {
-      "symbol": "HQ",
-      "price": 11.44,
-      "changePct": 8.952380952380947,
+      "symbol": "CBFV",
+      "price": 40.7,
+      "changePct": 0,
       "early": 63,
       "ignition": 77,
       "observedAt": "2026-11-06T16:00:00-05:00"
@@ -380,13 +380,13 @@
       "title": "Abits Group Inc",
       "cik": "0001864055"
     },
-    "MLP": {
-      "title": "MAUI LAND & PINEAPPLE CO INC",
-      "cik": "0000063330"
-    },
     "INSE": {
       "title": "Inspired Entertainment, Inc.",
       "cik": "0001615063"
+    },
+    "MLP": {
+      "title": "MAUI LAND & PINEAPPLE CO INC",
+      "cik": "0000063330"
     },
     "UIS": {
       "title": "UNISYS CORP",
@@ -484,13 +484,13 @@
       "title": "Picard Medical, Inc.",
       "cik": "0002030617"
     },
-    "CBFV": {
-      "title": "CB Financial Services, Inc.",
-      "cik": "0001605301"
-    },
     "HQ": {
       "title": "Horizon Quantum Holdings Ltd.",
       "cik": "0002088256"
+    },
+    "CBFV": {
+      "title": "CB Financial Services, Inc.",
+      "cik": "0001605301"
     },
     "AZUL": {
       "title": "AZUL SA",
@@ -5169,10 +5169,6 @@
       ],
       "eventCount": 2
     },
-    "MLP": {
-      "events": [],
-      "eventCount": 0
-    },
     "INSE": {
       "events": [
         {
@@ -5189,6 +5185,10 @@
         }
       ],
       "eventCount": 1
+    },
+    "MLP": {
+      "events": [],
+      "eventCount": 0
     },
     "UIS": {
       "events": [
@@ -6074,6 +6074,47 @@
       ],
       "eventCount": 4
     },
+    "HQ": {
+      "events": [
+        {
+          "symbol": "HQ",
+          "title": "Horizon Quantum Holdings Ltd.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-11-05T23:26:20.000Z",
+          "headline": "4 filing — Horizon Quantum Holdings Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2088256/000121390026116496/xslF345X06/ownership.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "HQ",
+          "title": "Horizon Quantum Holdings Ltd.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-11-05T12:05:08.000Z",
+          "headline": "6-K filing — Horizon Quantum Holdings Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2088256/000121390026116109/ea0309959-6k_horizon.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "HQ",
+          "title": "Horizon Quantum Holdings Ltd.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-10-21T20:05:06.000Z",
+          "headline": "4 filing — Horizon Quantum Holdings Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2088256/000121390026111341/xslF345X06/ownership.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 3
+    },
     "CBFV": {
       "events": [
         {
@@ -6138,47 +6179,6 @@
         }
       ],
       "eventCount": 5
-    },
-    "HQ": {
-      "events": [
-        {
-          "symbol": "HQ",
-          "title": "Horizon Quantum Holdings Ltd.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-11-05T23:26:20.000Z",
-          "headline": "4 filing — Horizon Quantum Holdings Ltd.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2088256/000121390026116496/xslF345X06/ownership.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "HQ",
-          "title": "Horizon Quantum Holdings Ltd.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-11-05T12:05:08.000Z",
-          "headline": "6-K filing — Horizon Quantum Holdings Ltd.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2088256/000121390026116109/ea0309959-6k_horizon.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "HQ",
-          "title": "Horizon Quantum Holdings Ltd.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-10-21T20:05:06.000Z",
-          "headline": "4 filing — Horizon Quantum Holdings Ltd.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2088256/000121390026111341/xslF345X06/ownership.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 3
     },
     "AZUL": {
       "events": [
