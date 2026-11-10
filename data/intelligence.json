@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-10T03:38:20.817Z",
+  "generatedAt": "2026-11-10T10:29:11.143Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
     "marketDataFresh": false,
-    "marketWindowOpen": false,
-    "marketSession": "closed",
+    "marketWindowOpen": true,
+    "marketSession": "pre-market",
     "newestObservedAt": "2026-11-10T00:59:59.000Z",
-    "marketDataAgeMin": 158.4,
+    "marketDataAgeMin": 569.2,
     "quoteCount": 800,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-11-10T03:38:21.228Z",
-    "upstreamUpdatedAtAtBuild": "2026-11-10T03:00:09.723Z",
+    "upstreamFeedFetchedAt": "2026-11-10T10:29:11.503Z",
+    "upstreamUpdatedAtAtBuild": "2026-11-10T07:26:39.248Z",
     "upstreamNewestObservedAtAtBuild": "2026-11-10T00:59:59.000Z",
-    "upstreamUpdateAgeAtFetchMin": 38.2,
-    "upstreamObservationAgeAtFetchMin": 158.4,
+    "upstreamUpdateAgeAtFetchMin": 182.5,
+    "upstreamObservationAgeAtFetchMin": 569.2,
     "secMapping": true,
     "secMarketwideDiscovery": true,
-    "secMarketwideEventCount": 289,
+    "secMarketwideEventCount": 290,
     "newsDiscovery": true
   },
   "shortlist": [
@@ -159,20 +159,20 @@
       "observedAt": "2026-11-09T18:48:09-05:00"
     },
     {
-      "symbol": "CLYM",
-      "price": 11.45,
-      "changePct": 3.9963669391462266,
-      "early": 75,
-      "ignition": 83,
-      "observedAt": "2026-11-09T19:57:18-05:00"
-    },
-    {
       "symbol": "GMRS",
       "price": 12.01,
       "changePct": 6.566104702750668,
       "early": 75,
       "ignition": 83,
       "observedAt": "2026-11-09T18:27:09-05:00"
+    },
+    {
+      "symbol": "CLYM",
+      "price": 11.45,
+      "changePct": 3.9963669391462266,
+      "early": 75,
+      "ignition": 83,
+      "observedAt": "2026-11-09T19:57:18-05:00"
     },
     {
       "symbol": "UG",
@@ -215,6 +215,14 @@
       "observedAt": "2026-11-09T19:25:26-05:00"
     },
     {
+      "symbol": "AIFC",
+      "price": 0.199271,
+      "changePct": 3.517402597402597,
+      "early": 72,
+      "ignition": 80,
+      "observedAt": "2026-11-09T19:03:49-05:00"
+    },
+    {
       "symbol": "EPSM",
       "price": 0.7902,
       "changePct": 0.025316455696199742,
@@ -229,14 +237,6 @@
       "early": 72,
       "ignition": 80,
       "observedAt": "2026-11-09T17:41:17-05:00"
-    },
-    {
-      "symbol": "AIFC",
-      "price": 0.199271,
-      "changePct": 3.517402597402597,
-      "early": 72,
-      "ignition": 80,
-      "observedAt": "2026-11-09T19:03:49-05:00"
     },
     {
       "symbol": "OFAL",
@@ -279,14 +279,6 @@
       "observedAt": "2026-11-09T16:02:58-05:00"
     },
     {
-      "symbol": "CRVS",
-      "price": 11.6535,
-      "changePct": 2.6740088105726842,
-      "early": 68,
-      "ignition": 76,
-      "observedAt": "2026-11-09T19:59:52-05:00"
-    },
-    {
       "symbol": "PEBK",
       "price": 44,
       "changePct": 2.76772159289969,
@@ -319,14 +311,6 @@
       "observedAt": "2026-11-09T16:00:03-05:00"
     },
     {
-      "symbol": "LAB",
-      "price": 0.719,
-      "changePct": 3.6023054755043264,
-      "early": 66,
-      "ignition": 74,
-      "observedAt": "2026-11-09T16:07:14-05:00"
-    },
-    {
       "symbol": "TRAW",
       "price": 0.252979,
       "changePct": 5.407916666666675,
@@ -335,12 +319,28 @@
       "observedAt": "2026-11-09T16:56:06-05:00"
     },
     {
+      "symbol": "LAB",
+      "price": 0.719,
+      "changePct": 3.6023054755043264,
+      "early": 66,
+      "ignition": 74,
+      "observedAt": "2026-11-09T16:07:14-05:00"
+    },
+    {
       "symbol": "IMC",
       "price": 10.3239,
       "changePct": 2.216831683168321,
       "early": 65,
       "ignition": 73,
       "observedAt": "2026-11-09T19:11:16-05:00"
+    },
+    {
+      "symbol": "ELPW",
+      "price": 1.1687,
+      "changePct": -0.9576271186440565,
+      "early": 65,
+      "ignition": 73,
+      "observedAt": "2026-11-09T19:53:20-05:00"
     }
   ],
   "companies": {
@@ -412,13 +412,13 @@
       "title": "MetaVia Inc.",
       "cik": "0001638287"
     },
-    "CLYM": {
-      "title": "Climb Bio, Inc.",
-      "cik": "0001768446"
-    },
     "GMRS": {
       "title": "GMR Solutions Inc.",
       "cik": "0001898718"
+    },
+    "CLYM": {
+      "title": "Climb Bio, Inc.",
+      "cik": "0001768446"
     },
     "UG": {
       "title": "UNITED GUARDIAN INC",
@@ -440,6 +440,10 @@
       "title": "Yueda Digital Holding",
       "cik": "0001413745"
     },
+    "AIFC": {
+      "title": "AI Financial Corp",
+      "cik": "0000862861"
+    },
     "EPSM": {
       "title": "Epsium Enterprise Ltd",
       "cik": "0001883437"
@@ -447,10 +451,6 @@
     "SGRX": {
       "title": "SANGRIX INC.",
       "cik": "0001735556"
-    },
-    "AIFC": {
-      "title": "AI Financial Corp",
-      "cik": "0000862861"
     },
     "OFAL": {
       "title": "OFA Group",
@@ -472,10 +472,6 @@
       "title": "GEN Restaurant Group, Inc.",
       "cik": "0001891856"
     },
-    "CRVS": {
-      "title": "Corvus Pharmaceuticals, Inc.",
-      "cik": "0001626971"
-    },
     "PEBK": {
       "title": "PEOPLES BANCORP OF NORTH CAROLINA INC",
       "cik": "0001093672"
@@ -492,20 +488,24 @@
       "title": "Ideal Power Inc.",
       "cik": "0001507957"
     },
-    "LAB": {
-      "title": "STANDARD BIOTOOLS INC.",
-      "cik": "0001162194"
-    },
     "TRAW": {
       "title": "Traws Pharma, Inc.",
       "cik": "0001130598"
     },
+    "LAB": {
+      "title": "STANDARD BIOTOOLS INC.",
+      "cik": "0001162194"
+    },
     "IMC": {
       "title": "IMC Rare Earths Ltd",
       "cik": "0002098395"
+    },
+    "ELPW": {
+      "title": "Elong Power Holding Ltd.",
+      "cik": "0002015691"
     }
   },
-  "eventCount": 345,
+  "eventCount": 353,
   "events": [
     {
       "symbol": "STI",
@@ -676,7 +676,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BAC-PS",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1036,7 +1036,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BAC-PS",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1072,7 +1072,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BML-PJ",
+      "symbol": "BAC-PS",
       "title": "BANK OF AMERICA CORP /DE/",
       "type": "SEC",
       "form": "424B",
@@ -1828,7 +1828,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "MS-PP",
+      "symbol": "MS-PI",
       "title": "MORGAN STANLEY",
       "type": "SEC",
       "form": "424B",
@@ -2680,7 +2680,7 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "PSA-PF",
+      "symbol": "PSA-PL",
       "title": "Public Storage",
       "type": "SEC",
       "form": "8-K",
@@ -3928,6 +3928,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "APCD",
+      "title": "AParadise III Acquisition Corp.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-11-06T16:31:49-05:00",
+      "headline": "S-1 filing — AParadise III Acquisition Corp.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2114402/000121390026116922/0001213900-26-116922-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "PEG",
       "title": "PUBLIC SERVICE ENTERPRISE GROUP INC",
       "type": "SEC",
@@ -4022,6 +4034,66 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "ELPW",
+      "title": "Elong Power Holding Ltd.",
+      "type": "SEC",
+      "form": "424B3",
+      "publishedAt": "2026-11-06T16:20:09.000Z",
+      "headline": "424B3 filing — Elong Power Holding Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2015691/000149315226050384/form424b3.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "ELPW",
+      "title": "Elong Power Holding Ltd.",
+      "type": "SEC",
+      "form": "424B3",
+      "publishedAt": "2026-11-06T16:15:19.000Z",
+      "headline": "424B3 filing — Elong Power Holding Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2015691/000149315226050383/form424b3.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "ELPW",
+      "title": "Elong Power Holding Ltd.",
+      "type": "SEC",
+      "form": "424B3",
+      "publishedAt": "2026-11-06T16:10:14.000Z",
+      "headline": "424B3 filing — Elong Power Holding Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2015691/000149315226050382/form424b3.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "ELPW",
+      "title": "Elong Power Holding Ltd.",
+      "type": "SEC",
+      "form": "424B3",
+      "publishedAt": "2026-11-06T16:05:12.000Z",
+      "headline": "424B3 filing — Elong Power Holding Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2015691/000149315226050381/form424b3.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "ELPW",
+      "title": "Elong Power Holding Ltd.",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-11-06T16:00:25.000Z",
+      "headline": "6-K filing — Elong Power Holding Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2015691/000149315226050379/form6-k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
       "symbol": "SDA",
@@ -4120,18 +4192,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "CRVS",
-      "title": "Corvus Pharmaceuticals, Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-11-05T21:02:16.000Z",
-      "headline": "8-K filing — Corvus Pharmaceuticals, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1626971/000117184326007175/f8k_110526.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "MTVA",
       "title": "MetaVia Inc.",
       "type": "SEC",
@@ -4175,6 +4235,18 @@
       "publishedAt": "2026-11-05T12:09:45.000Z",
       "headline": "8-K filing — Climb Bio, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1768446/000119312526448556/clym-20261105.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "ELPW",
+      "title": "Elong Power Holding Ltd.",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-11-05T11:01:46.000Z",
+      "headline": "6-K filing — Elong Power Holding Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2015691/000149315226050029/form6-k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4336,6 +4408,18 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
+      "symbol": "ELPW",
+      "title": "Elong Power Holding Ltd.",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-10-30T20:30:26.000Z",
+      "headline": "6-K filing — Elong Power Holding Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2015691/000149315226049441/form6-k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
       "symbol": "SGRX",
       "title": "SANGRIX INC.",
       "type": "SEC",
@@ -4475,6 +4559,18 @@
       "publishedAt": "2026-10-28T13:01:15.000Z",
       "headline": "8-K filing — MetaVia Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1638287/000110465926119401/mtva-20261028x8k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "ELPW",
+      "title": "Elong Power Holding Ltd.",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-10-28T10:09:59.000Z",
+      "headline": "6-K filing — Elong Power Holding Ltd.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2015691/000149315226048796/form6-k.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4992,6 +5088,23 @@
       ],
       "eventCount": 2
     },
+    "GMRS": {
+      "events": [
+        {
+          "symbol": "GMRS",
+          "title": "GMR Solutions Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-11-09T16:52:15-05:00",
+          "headline": "8-K filing — GMR Solutions Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1898718/000110465926124559/0001104659-26-124559-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "CLYM": {
       "events": [
         {
@@ -5032,23 +5145,6 @@
         }
       ],
       "eventCount": 3
-    },
-    "GMRS": {
-      "events": [
-        {
-          "symbol": "GMRS",
-          "title": "GMR Solutions Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-11-09T16:52:15-05:00",
-          "headline": "8-K filing — GMR Solutions Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1898718/000110465926124559/0001104659-26-124559-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
     },
     "UG": {
       "events": [
@@ -5133,6 +5229,10 @@
       "events": [],
       "eventCount": 0
     },
+    "AIFC": {
+      "events": [],
+      "eventCount": 0
+    },
     "EPSM": {
       "events": [],
       "eventCount": 0
@@ -5189,10 +5289,6 @@
         }
       ],
       "eventCount": 4
-    },
-    "AIFC": {
-      "events": [],
-      "eventCount": 0
     },
     "OFAL": {
       "events": [
@@ -5302,23 +5398,6 @@
       "events": [],
       "eventCount": 0
     },
-    "CRVS": {
-      "events": [
-        {
-          "symbol": "CRVS",
-          "title": "Corvus Pharmaceuticals, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-11-05T21:02:16.000Z",
-          "headline": "8-K filing — Corvus Pharmaceuticals, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1626971/000117184326007175/f8k_110526.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
     "PEBK": {
       "events": [
         {
@@ -5422,6 +5501,35 @@
       ],
       "eventCount": 1
     },
+    "TRAW": {
+      "events": [
+        {
+          "symbol": "TRAW",
+          "title": "Traws Pharma, Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-10-26T20:47:38.000Z",
+          "headline": "S-1 filing — Traws Pharma, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1130598/000110465926118813/tm2628029d1_s1.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "TRAW",
+          "title": "Traws Pharma, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-10-23T21:18:22.000Z",
+          "headline": "8-K filing — Traws Pharma, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1130598/000110465926118519/tm2626240d4_8k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 2
+    },
     "LAB": {
       "events": [
         {
@@ -5487,35 +5595,6 @@
       ],
       "eventCount": 5
     },
-    "TRAW": {
-      "events": [
-        {
-          "symbol": "TRAW",
-          "title": "Traws Pharma, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-10-26T20:47:38.000Z",
-          "headline": "S-1 filing — Traws Pharma, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1130598/000110465926118813/tm2628029d1_s1.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "TRAW",
-          "title": "Traws Pharma, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-23T21:18:22.000Z",
-          "headline": "8-K filing — Traws Pharma, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1130598/000110465926118519/tm2626240d4_8k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
-    },
     "IMC": {
       "events": [
         {
@@ -5544,6 +5623,107 @@
         }
       ],
       "eventCount": 2
+    },
+    "ELPW": {
+      "events": [
+        {
+          "symbol": "ELPW",
+          "title": "Elong Power Holding Ltd.",
+          "type": "SEC",
+          "form": "424B3",
+          "publishedAt": "2026-11-06T16:20:09.000Z",
+          "headline": "424B3 filing — Elong Power Holding Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2015691/000149315226050384/form424b3.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "ELPW",
+          "title": "Elong Power Holding Ltd.",
+          "type": "SEC",
+          "form": "424B3",
+          "publishedAt": "2026-11-06T16:15:19.000Z",
+          "headline": "424B3 filing — Elong Power Holding Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2015691/000149315226050383/form424b3.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "ELPW",
+          "title": "Elong Power Holding Ltd.",
+          "type": "SEC",
+          "form": "424B3",
+          "publishedAt": "2026-11-06T16:10:14.000Z",
+          "headline": "424B3 filing — Elong Power Holding Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2015691/000149315226050382/form424b3.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "ELPW",
+          "title": "Elong Power Holding Ltd.",
+          "type": "SEC",
+          "form": "424B3",
+          "publishedAt": "2026-11-06T16:05:12.000Z",
+          "headline": "424B3 filing — Elong Power Holding Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2015691/000149315226050381/form424b3.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "ELPW",
+          "title": "Elong Power Holding Ltd.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-11-06T16:00:25.000Z",
+          "headline": "6-K filing — Elong Power Holding Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2015691/000149315226050379/form6-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "ELPW",
+          "title": "Elong Power Holding Ltd.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-11-05T11:01:46.000Z",
+          "headline": "6-K filing — Elong Power Holding Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2015691/000149315226050029/form6-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "ELPW",
+          "title": "Elong Power Holding Ltd.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-10-30T20:30:26.000Z",
+          "headline": "6-K filing — Elong Power Holding Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2015691/000149315226049441/form6-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "ELPW",
+          "title": "Elong Power Holding Ltd.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-10-28T10:09:59.000Z",
+          "headline": "6-K filing — Elong Power Holding Ltd.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2015691/000149315226048796/form6-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 8
     },
     "STI": {
       "events": [
@@ -5888,10 +6068,10 @@
       ],
       "eventCount": 1
     },
-    "BML-PJ": {
+    "BAC-PS": {
       "events": [
         {
-          "symbol": "BML-PJ",
+          "symbol": "BAC-PS",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -5903,7 +6083,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BML-PJ",
+          "symbol": "BAC-PS",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -5915,7 +6095,7 @@
           "discoveryScope": "MARKET_WIDE"
         },
         {
-          "symbol": "BML-PJ",
+          "symbol": "BAC-PS",
           "title": "BANK OF AMERICA CORP /DE/",
           "type": "SEC",
           "form": "424B",
@@ -7260,10 +7440,10 @@
       ],
       "eventCount": 1
     },
-    "MS-PP": {
+    "MS-PI": {
       "events": [
         {
-          "symbol": "MS-PP",
+          "symbol": "MS-PI",
           "title": "MORGAN STANLEY",
           "type": "SEC",
           "form": "424B",
@@ -8070,10 +8250,10 @@
       ],
       "eventCount": 1
     },
-    "PSA-PF": {
+    "PSA-PL": {
       "events": [
         {
-          "symbol": "PSA-PF",
+          "symbol": "PSA-PL",
           "title": "Public Storage",
           "type": "SEC",
           "form": "8-K",
@@ -9704,6 +9884,23 @@
           "publishedAt": "2026-11-06T16:45:32-05:00",
           "headline": "S-3 filing — Lemonade, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1691421/000169142126000077/0001691421-26-000077-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "APCD": {
+      "events": [
+        {
+          "symbol": "APCD",
+          "title": "AParadise III Acquisition Corp.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-11-06T16:31:49-05:00",
+          "headline": "S-1 filing — AParadise III Acquisition Corp.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2114402/000121390026116922/0001213900-26-116922-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
