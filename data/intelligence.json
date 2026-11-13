@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-13T02:58:40.576Z",
+  "generatedAt": "2026-11-13T10:39:28.115Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
     "marketDataFresh": false,
-    "marketWindowOpen": false,
-    "marketSession": "closed",
+    "marketWindowOpen": true,
+    "marketSession": "pre-market",
     "newestObservedAt": "2026-11-13T00:59:59.000Z",
-    "marketDataAgeMin": 118.7,
+    "marketDataAgeMin": 579.5,
     "quoteCount": 768,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-11-13T02:58:40.928Z",
-    "upstreamUpdatedAtAtBuild": "2026-11-13T01:17:40.786Z",
+    "upstreamFeedFetchedAt": "2026-11-13T10:39:28.741Z",
+    "upstreamUpdatedAtAtBuild": "2026-11-13T08:05:19.076Z",
     "upstreamNewestObservedAtAtBuild": "2026-11-13T00:59:59.000Z",
-    "upstreamUpdateAgeAtFetchMin": 101,
-    "upstreamObservationAgeAtFetchMin": 118.7,
+    "upstreamUpdateAgeAtFetchMin": 154.2,
+    "upstreamObservationAgeAtFetchMin": 579.5,
     "secMapping": true,
     "secMarketwideDiscovery": true,
-    "secMarketwideEventCount": 324,
+    "secMarketwideEventCount": 310,
     "newsDiscovery": true
   },
   "shortlist": [
@@ -151,14 +151,6 @@
       "observedAt": "2026-11-12T18:01:58-05:00"
     },
     {
-      "symbol": "BBLG",
-      "price": 0.399,
-      "changePct": 14.000000000000012,
-      "early": 77,
-      "ignition": 77,
-      "observedAt": "2026-11-12T19:44:21-05:00"
-    },
-    {
       "symbol": "UFI",
       "price": 6.74,
       "changePct": 1.3533834586466142,
@@ -173,6 +165,14 @@
       "early": 70,
       "ignition": 84,
       "observedAt": "2026-11-12T16:00:00-05:00"
+    },
+    {
+      "symbol": "BBLG",
+      "price": 0.399,
+      "changePct": 14.000000000000012,
+      "early": 77,
+      "ignition": 77,
+      "observedAt": "2026-11-12T19:44:21-05:00"
     },
     {
       "symbol": "TAOX",
@@ -191,20 +191,20 @@
       "observedAt": "2026-11-12T19:41:58-05:00"
     },
     {
-      "symbol": "STAK",
-      "price": 1.63,
-      "changePct": -13.297872340425531,
-      "early": 76,
-      "ignition": 76,
-      "observedAt": "2026-11-12T19:57:00-05:00"
-    },
-    {
       "symbol": "SNES",
       "price": 0.92,
       "changePct": 3.0696840690118856,
       "early": 76,
       "ignition": 76,
       "observedAt": "2026-11-12T16:20:07-05:00"
+    },
+    {
+      "symbol": "STAK",
+      "price": 1.63,
+      "changePct": -13.297872340425531,
+      "early": 76,
+      "ignition": 76,
+      "observedAt": "2026-11-12T19:57:00-05:00"
     },
     {
       "symbol": "SFWL",
@@ -279,28 +279,12 @@
       "observedAt": "2026-11-12T19:41:30-05:00"
     },
     {
-      "symbol": "ATTT",
-      "price": 2.1894,
-      "changePct": -0.48181818181818925,
-      "early": 71,
-      "ignition": 71,
-      "observedAt": "2026-11-12T16:00:00-05:00"
-    },
-    {
       "symbol": "USGO",
       "price": 4.81,
       "changePct": -2.4340770791075075,
       "early": 64,
       "ignition": 78,
       "observedAt": "2026-11-12T16:00:12-05:00"
-    },
-    {
-      "symbol": "PXS",
-      "price": 5.85,
-      "changePct": 2.6315789473684115,
-      "early": 71,
-      "ignition": 71,
-      "observedAt": "2026-11-12T18:51:21-05:00"
     },
     {
       "symbol": "RRGB",
@@ -311,6 +295,22 @@
       "observedAt": "2026-11-12T16:00:11-05:00"
     },
     {
+      "symbol": "PXS",
+      "price": 5.85,
+      "changePct": 2.6315789473684115,
+      "early": 71,
+      "ignition": 71,
+      "observedAt": "2026-11-12T18:51:21-05:00"
+    },
+    {
+      "symbol": "ATTT",
+      "price": 2.1894,
+      "changePct": -0.48181818181818925,
+      "early": 71,
+      "ignition": 71,
+      "observedAt": "2026-11-12T16:00:00-05:00"
+    },
+    {
       "symbol": "SCNI",
       "price": 0.4649,
       "changePct": -8.66404715127702,
@@ -319,20 +319,20 @@
       "observedAt": "2026-11-12T18:06:23-05:00"
     },
     {
-      "symbol": "PPBT",
-      "price": 1.56,
-      "changePct": 7.586206896551731,
-      "early": 70,
-      "ignition": 70,
-      "observedAt": "2026-11-12T16:00:00-05:00"
-    },
-    {
       "symbol": "GRAN",
       "price": 1.21,
       "changePct": 9.009009009008997,
       "early": 70,
       "ignition": 70,
       "observedAt": "2026-11-12T16:34:42-05:00"
+    },
+    {
+      "symbol": "PPBT",
+      "price": 1.56,
+      "changePct": 7.586206896551731,
+      "early": 70,
+      "ignition": 70,
+      "observedAt": "2026-11-12T16:00:00-05:00"
     },
     {
       "symbol": "WYFI",
@@ -408,10 +408,6 @@
       "title": "AVAX ONE TECHNOLOGY LTD.",
       "cik": "0001826397"
     },
-    "BBLG": {
-      "title": "Bone Biologics Corp",
-      "cik": "0001419554"
-    },
     "UFI": {
       "title": "UNIFI INC",
       "cik": "0000100726"
@@ -419,6 +415,10 @@
     "GRDX": {
       "title": "GridAI Technologies Corp.",
       "cik": "0001604191"
+    },
+    "BBLG": {
+      "title": "Bone Biologics Corp",
+      "cik": "0001419554"
     },
     "TAOX": {
       "title": "TAO Synergies Inc.",
@@ -428,13 +428,13 @@
       "title": "Co-Diagnostics, Inc.",
       "cik": "0001692415"
     },
-    "STAK": {
-      "title": "STAK Inc.",
-      "cik": "0002002453"
-    },
     "SNES": {
       "title": "SenesTech, Inc.",
       "cik": "0001680378"
+    },
+    "STAK": {
+      "title": "STAK Inc.",
+      "cik": "0002002453"
     },
     "SFWL": {
       "title": "SHENGFENG DEVELOPMENT Ltd",
@@ -472,40 +472,40 @@
       "title": "Tempest Therapeutics, Inc.",
       "cik": "0001544227"
     },
-    "ATTT": {
-      "title": "Atlas Trinity Tech Co., Ltd.",
-      "cik": "0001948443"
-    },
     "USGO": {
       "title": "U.S. GoldMining Inc.",
       "cik": "0001947244"
-    },
-    "PXS": {
-      "title": "Pyxis Tankers Inc.",
-      "cik": "0001640043"
     },
     "RRGB": {
       "title": "RED ROBIN GOURMET BURGERS INC",
       "cik": "0001171759"
     },
+    "PXS": {
+      "title": "Pyxis Tankers Inc.",
+      "cik": "0001640043"
+    },
+    "ATTT": {
+      "title": "Atlas Trinity Tech Co., Ltd.",
+      "cik": "0001948443"
+    },
     "SCNI": {
       "title": "Scinai Immunotherapeutics Ltd.",
       "cik": "0001611747"
     },
-    "PPBT": {
-      "title": "PURPLE BIOTECH LTD.",
-      "cik": "0001614744"
-    },
     "GRAN": {
       "title": "Grande Group Ltd/HK",
       "cik": "0002027722"
+    },
+    "PPBT": {
+      "title": "PURPLE BIOTECH LTD.",
+      "cik": "0001614744"
     },
     "WYFI": {
       "title": "WhiteFiber, Inc.",
       "cik": "0002042022"
     }
   },
-  "eventCount": 397,
+  "eventCount": 383,
   "events": [
     {
       "symbol": "MVIS",
@@ -4444,42 +4444,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "TMQ",
-      "title": "Trilogy Metals Inc.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-11-09T21:31:15-05:00",
-      "headline": "S-3 filing — Trilogy Metals Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1543418/000110465926124701/0001104659-26-124701-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "ADCT",
-      "title": "ADC Therapeutics SA",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-11-09T18:39:44-05:00",
-      "headline": "S-3 filing — ADC Therapeutics SA",
-      "url": "https://www.sec.gov/Archives/edgar/data/1771910/000095010326017177/0000950103-26-017177-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "FORM",
-      "title": "FORMFACTOR INC",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-11-09T17:29:36-05:00",
-      "headline": "S-3 filing — FORMFACTOR INC",
-      "url": "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000047/0001039399-26-000047-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
       "symbol": "USGO",
       "title": "U.S. GoldMining Inc.",
       "type": "SEC",
@@ -4490,54 +4454,6 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "HYPR",
-      "title": "Hyperfine, Inc.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-11-09T17:15:41-05:00",
-      "headline": "S-3 filing — Hyperfine, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1833769/000119312526453850/0001193125-26-453850-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "EMR",
-      "title": "EMERSON ELECTRIC CO",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-11-09T17:11:55-05:00",
-      "headline": "S-3 filing — EMERSON ELECTRIC CO",
-      "url": "https://www.sec.gov/Archives/edgar/data/32604/000114036126042816/0001140361-26-042816-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "IMNM",
-      "title": "Immunome Inc.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-11-09T17:00:29-05:00",
-      "headline": "S-3 filing — Immunome Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1472012/000119312526453803/0001193125-26-453803-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "IMNM",
-      "title": "Immunome Inc.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-11-09T16:56:32-05:00",
-      "headline": "S-3 filing — Immunome Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1472012/000119312526453780/0001193125-26-453780-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
     },
     {
       "symbol": "TMCR",
@@ -4588,18 +4504,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "FUSEW",
-      "title": "Fusemachines Inc.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-11-09T13:23:28-05:00",
-      "headline": "S-3 filing — Fusemachines Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2033383/000149315226050531/0001493152-26-050531-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
       "symbol": "USGO",
       "title": "U.S. GoldMining Inc.",
       "type": "SEC",
@@ -4610,78 +4514,6 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "NVST",
-      "title": "Envista Holdings Corp",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-11-09T08:53:09-05:00",
-      "headline": "S-3 filing — Envista Holdings Corp",
-      "url": "https://www.sec.gov/Archives/edgar/data/1757073/000121390026117263/0001213900-26-117263-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "TTRX",
-      "title": "Turn Therapeutics Inc.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-11-09T08:05:31-05:00",
-      "headline": "S-3 filing — Turn Therapeutics Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2023016/000121390026117232/0001213900-26-117232-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "TTRX",
-      "title": "Turn Therapeutics Inc.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-11-09T08:00:55-05:00",
-      "headline": "S-3 filing — Turn Therapeutics Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2023016/000121390026117224/0001213900-26-117224-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "IMVT",
-      "title": "Immunovant, Inc.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-11-09T07:46:33-05:00",
-      "headline": "S-3 filing — Immunovant, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1764013/000176401326000124/0001764013-26-000124-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "CNTM",
-      "title": "ConnectM Technology Solutions, Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-11-09T06:05:58-05:00",
-      "headline": "S-1 filing — ConnectM Technology Solutions, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1895249/000110465926124071/0001104659-26-124071-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "RZRA",
-      "title": "Rezera Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-11-09T06:05:57-05:00",
-      "headline": "S-1 filing — Rezera Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2141583/000110465926124074/0001104659-26-124074-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
     },
     {
       "symbol": "SCNI",
@@ -5623,10 +5455,6 @@
       ],
       "eventCount": 1
     },
-    "BBLG": {
-      "events": [],
-      "eventCount": 0
-    },
     "UFI": {
       "events": [
         {
@@ -5829,6 +5657,10 @@
       ],
       "eventCount": 8
     },
+    "BBLG": {
+      "events": [],
+      "eventCount": 0
+    },
     "TAOX": {
       "events": [
         {
@@ -5875,35 +5707,6 @@
       ],
       "eventCount": 2
     },
-    "STAK": {
-      "events": [
-        {
-          "symbol": "STAK",
-          "title": "STAK Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-11-05T21:10:26.000Z",
-          "headline": "6-K filing — STAK Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2002453/000149315226050238/form6-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "STAK",
-          "title": "STAK Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-11-03T13:17:14.000Z",
-          "headline": "6-K filing — STAK Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2002453/000149315226049712/form6-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
-    },
     "SNES": {
       "events": [
         {
@@ -5926,6 +5729,35 @@
           "publishedAt": "2026-10-31T01:10:44.000Z",
           "headline": "4 filing — SenesTech, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1680378/000173112226001386/xslF345X06/ownership.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 2
+    },
+    "STAK": {
+      "events": [
+        {
+          "symbol": "STAK",
+          "title": "STAK Inc.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-11-05T21:10:26.000Z",
+          "headline": "6-K filing — STAK Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2002453/000149315226050238/form6-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "STAK",
+          "title": "STAK Inc.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-11-03T13:17:14.000Z",
+          "headline": "6-K filing — STAK Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2002453/000149315226049712/form6-k.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -6118,10 +5950,6 @@
       ],
       "eventCount": 5
     },
-    "ATTT": {
-      "events": [],
-      "eventCount": 0
-    },
     "USGO": {
       "events": [
         {
@@ -6199,10 +6027,6 @@
       ],
       "eventCount": 6
     },
-    "PXS": {
-      "events": [],
-      "eventCount": 0
-    },
     "RRGB": {
       "events": [
         {
@@ -6231,6 +6055,14 @@
         }
       ],
       "eventCount": 2
+    },
+    "PXS": {
+      "events": [],
+      "eventCount": 0
+    },
+    "ATTT": {
+      "events": [],
+      "eventCount": 0
     },
     "SCNI": {
       "events": [
@@ -6273,23 +6105,6 @@
       ],
       "eventCount": 3
     },
-    "PPBT": {
-      "events": [
-        {
-          "symbol": "PPBT",
-          "title": "PURPLE BIOTECH LTD.",
-          "type": "SEC",
-          "form": "EFFECT",
-          "publishedAt": "2026-11-12T05:15:06.000Z",
-          "headline": "EFFECT filing — PURPLE BIOTECH LTD.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1614744/999999999526003492/xslEFFECTX01/primary_doc.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
     "GRAN": {
       "events": [
         {
@@ -6300,6 +6115,23 @@
           "publishedAt": "2026-10-30T20:15:09.000Z",
           "headline": "6-K filing — Grande Group Ltd/HK",
           "url": "https://www.sec.gov/Archives/edgar/data/2027722/000121390026114399/ea0306972-6k_grande.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
+    "PPBT": {
+      "events": [
+        {
+          "symbol": "PPBT",
+          "title": "PURPLE BIOTECH LTD.",
+          "type": "SEC",
+          "form": "EFFECT",
+          "publishedAt": "2026-11-12T05:15:06.000Z",
+          "headline": "EFFECT filing — PURPLE BIOTECH LTD.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1614744/999999999526003492/xslEFFECTX01/primary_doc.xml",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -9133,21 +8965,9 @@
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "EMR",
-          "title": "EMERSON ELECTRIC CO",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-11-09T17:11:55-05:00",
-          "headline": "S-3 filing — EMERSON ELECTRIC CO",
-          "url": "https://www.sec.gov/Archives/edgar/data/32604/000114036126042816/0001140361-26-042816-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
         }
       ],
-      "eventCount": 2
+      "eventCount": 1
     },
     "XOS": {
       "events": [
@@ -9433,21 +9253,9 @@
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "NVST",
-          "title": "Envista Holdings Corp",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-11-09T08:53:09-05:00",
-          "headline": "S-3 filing — Envista Holdings Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/1757073/000121390026117263/0001213900-26-117263-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
         }
       ],
-      "eventCount": 2
+      "eventCount": 1
     },
     "OBX": {
       "events": [
@@ -9656,21 +9464,9 @@
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "FORM",
-          "title": "FORMFACTOR INC",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-11-09T17:29:36-05:00",
-          "headline": "S-3 filing — FORMFACTOR INC",
-          "url": "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000047/0001039399-26-000047-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
         }
       ],
-      "eventCount": 2
+      "eventCount": 1
     },
     "DLO": {
       "events": [
@@ -10990,183 +10786,6 @@
           "publishedAt": "2026-11-10T06:29:24-05:00",
           "headline": "S-1 filing — Anthropic, PBC",
           "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/0001628280-26-072484-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "TMQ": {
-      "events": [
-        {
-          "symbol": "TMQ",
-          "title": "Trilogy Metals Inc.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-11-09T21:31:15-05:00",
-          "headline": "S-3 filing — Trilogy Metals Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1543418/000110465926124701/0001104659-26-124701-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "ADCT": {
-      "events": [
-        {
-          "symbol": "ADCT",
-          "title": "ADC Therapeutics SA",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-11-09T18:39:44-05:00",
-          "headline": "S-3 filing — ADC Therapeutics SA",
-          "url": "https://www.sec.gov/Archives/edgar/data/1771910/000095010326017177/0000950103-26-017177-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "HYPR": {
-      "events": [
-        {
-          "symbol": "HYPR",
-          "title": "Hyperfine, Inc.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-11-09T17:15:41-05:00",
-          "headline": "S-3 filing — Hyperfine, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1833769/000119312526453850/0001193125-26-453850-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "IMNM": {
-      "events": [
-        {
-          "symbol": "IMNM",
-          "title": "Immunome Inc.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-11-09T17:00:29-05:00",
-          "headline": "S-3 filing — Immunome Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1472012/000119312526453803/0001193125-26-453803-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "IMNM",
-          "title": "Immunome Inc.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-11-09T16:56:32-05:00",
-          "headline": "S-3 filing — Immunome Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1472012/000119312526453780/0001193125-26-453780-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 2
-    },
-    "FUSEW": {
-      "events": [
-        {
-          "symbol": "FUSEW",
-          "title": "Fusemachines Inc.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-11-09T13:23:28-05:00",
-          "headline": "S-3 filing — Fusemachines Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2033383/000149315226050531/0001493152-26-050531-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "TTRX": {
-      "events": [
-        {
-          "symbol": "TTRX",
-          "title": "Turn Therapeutics Inc.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-11-09T08:05:31-05:00",
-          "headline": "S-3 filing — Turn Therapeutics Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2023016/000121390026117232/0001213900-26-117232-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "TTRX",
-          "title": "Turn Therapeutics Inc.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-11-09T08:00:55-05:00",
-          "headline": "S-3 filing — Turn Therapeutics Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2023016/000121390026117224/0001213900-26-117224-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 2
-    },
-    "IMVT": {
-      "events": [
-        {
-          "symbol": "IMVT",
-          "title": "Immunovant, Inc.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-11-09T07:46:33-05:00",
-          "headline": "S-3 filing — Immunovant, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1764013/000176401326000124/0001764013-26-000124-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "CNTM": {
-      "events": [
-        {
-          "symbol": "CNTM",
-          "title": "ConnectM Technology Solutions, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-11-09T06:05:58-05:00",
-          "headline": "S-1 filing — ConnectM Technology Solutions, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1895249/000110465926124071/0001104659-26-124071-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "RZRA": {
-      "events": [
-        {
-          "symbol": "RZRA",
-          "title": "Rezera Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-11-09T06:05:57-05:00",
-          "headline": "S-1 filing — Rezera Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2141583/000110465926124074/0001104659-26-124074-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
