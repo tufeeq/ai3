@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-14T16:55:45.317Z",
+  "generatedAt": "2026-11-14T20:57:16.735Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-11-14T01:00:00.000Z",
-    "marketDataAgeMin": 955.8,
+    "marketDataAgeMin": 1197.3,
     "quoteCount": 755,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-11-14T16:55:45.625Z",
-    "upstreamUpdatedAtAtBuild": "2026-11-14T15:15:11.730Z",
+    "upstreamFeedFetchedAt": "2026-11-14T20:57:17.521Z",
+    "upstreamUpdatedAtAtBuild": "2026-11-14T20:00:04.645Z",
     "upstreamNewestObservedAtAtBuild": "2026-11-14T01:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 100.6,
-    "upstreamObservationAgeAtFetchMin": 955.8,
+    "upstreamUpdateAgeAtFetchMin": 57.2,
+    "upstreamObservationAgeAtFetchMin": 1197.3,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 302,
@@ -95,20 +95,20 @@
       "observedAt": "2026-11-13T19:14:21-05:00"
     },
     {
-      "symbol": "DLTH",
-      "price": 3.96,
-      "changePct": 1.5384615384615399,
-      "early": 71,
-      "ignition": 85,
-      "observedAt": "2026-11-13T16:00:00-05:00"
-    },
-    {
       "symbol": "TASK",
       "price": 9.21,
       "changePct": 2.333333333333343,
       "early": 71,
       "ignition": 85,
       "observedAt": "2026-11-13T16:00:24-05:00"
+    },
+    {
+      "symbol": "DLTH",
+      "price": 3.96,
+      "changePct": 1.5384615384615399,
+      "early": 71,
+      "ignition": 85,
+      "observedAt": "2026-11-13T16:00:00-05:00"
     },
     {
       "symbol": "LNSR",
@@ -319,14 +319,6 @@
       "observedAt": "2026-11-13T19:05:58-05:00"
     },
     {
-      "symbol": "MPLT",
-      "price": 7.25,
-      "changePct": 2.545968882602542,
-      "early": 61,
-      "ignition": 75,
-      "observedAt": "2026-11-13T16:00:38-05:00"
-    },
-    {
       "symbol": "TKNO",
       "price": 8.21,
       "changePct": -1.0247136829415198,
@@ -335,12 +327,20 @@
       "observedAt": "2026-11-13T16:00:24-05:00"
     },
     {
-      "symbol": "EGHT",
-      "price": 2.31,
-      "changePct": -0.858369098712447,
+      "symbol": "KVHI",
+      "price": 7.36,
+      "changePct": -0.1356852103120731,
       "early": 61,
       "ignition": 75,
-      "observedAt": "2026-11-13T16:00:15-05:00"
+      "observedAt": "2026-11-13T16:00:00-05:00"
+    },
+    {
+      "symbol": "MPLT",
+      "price": 7.25,
+      "changePct": 2.545968882602542,
+      "early": 61,
+      "ignition": 75,
+      "observedAt": "2026-11-13T16:00:38-05:00"
     }
   ],
   "companies": {
@@ -380,13 +380,13 @@
       "title": "CaliberCos Inc.",
       "cik": "0001627282"
     },
-    "DLTH": {
-      "title": "DULUTH HOLDINGS INC.",
-      "cik": "0001649744"
-    },
     "TASK": {
       "title": "TaskUs, Inc.",
       "cik": "0001829864"
+    },
+    "DLTH": {
+      "title": "DULUTH HOLDINGS INC.",
+      "cik": "0001649744"
     },
     "LNSR": {
       "title": "LENSAR, Inc.",
@@ -492,20 +492,20 @@
       "title": "Phio Pharmaceuticals Corp.",
       "cik": "0001533040"
     },
-    "MPLT": {
-      "title": "MapLight Therapeutics, Inc.",
-      "cik": "0001770069"
-    },
     "TKNO": {
       "title": "Alpha Teknova, Inc.",
       "cik": "0001850902"
     },
-    "EGHT": {
-      "title": "8X8 INC /DE/",
-      "cik": "0001023731"
+    "KVHI": {
+      "title": "KVH INDUSTRIES INC DE",
+      "cik": "0001007587"
+    },
+    "MPLT": {
+      "title": "MapLight Therapeutics, Inc.",
+      "cik": "0001770069"
     }
   },
-  "eventCount": 369,
+  "eventCount": 367,
   "events": [
     {
       "symbol": "KLTR",
@@ -4444,18 +4444,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "EGHT",
-      "title": "8X8 INC /DE/",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-11-09T22:05:41.000Z",
-      "headline": "4 filing — 8X8 INC /DE/",
-      "url": "https://www.sec.gov/Archives/edgar/data/1023731/000102373126000176/xslF345X06/wk-form4_1794261939.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "KLTR",
       "title": "KALTURA INC",
       "type": "SEC",
@@ -4588,18 +4576,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "EGHT",
-      "title": "8X8 INC /DE/",
-      "type": "SEC",
-      "form": "144",
-      "publishedAt": "2026-11-05T21:27:57.000Z",
-      "headline": "144 filing — 8X8 INC /DE/",
-      "url": "https://www.sec.gov/Archives/edgar/data/1023731/000195004726010737/xsl144X01/primary_doc.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "PHIO",
       "title": "Phio Pharmaceuticals Corp.",
       "type": "SEC",
@@ -4607,6 +4583,18 @@
       "publishedAt": "2026-11-05T21:12:23.000Z",
       "headline": "8-K filing — Phio Pharmaceuticals Corp.",
       "url": "https://www.sec.gov/Archives/edgar/data/1533040/000143774926035277/phio20261028_8k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "KVHI",
+      "title": "KVH INDUSTRIES INC DE",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-11-05T13:48:26.000Z",
+      "headline": "8-K filing — KVH INDUSTRIES INC DE",
+      "url": "https://www.sec.gov/Archives/edgar/data/1007587/000100758726000029/kvhi-20261105.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4655,18 +4643,6 @@
       "publishedAt": "2026-11-04T21:14:56.000Z",
       "headline": "8-K filing — TaskUs, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1829864/000182986426000154/task-20261104.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "EGHT",
-      "title": "8X8 INC /DE/",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-11-04T21:13:08.000Z",
-      "headline": "8-K filing — 8X8 INC /DE/",
-      "url": "https://www.sec.gov/Archives/edgar/data/1023731/000102373126000166/eght-20261104.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -5061,35 +5037,6 @@
       ],
       "eventCount": 3
     },
-    "DLTH": {
-      "events": [
-        {
-          "symbol": "DLTH",
-          "title": "DULUTH HOLDINGS INC.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-11-03T21:53:41.000Z",
-          "headline": "4 filing — DULUTH HOLDINGS INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1649744/000089271226000377/xslF345X06/form4.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "DLTH",
-          "title": "DULUTH HOLDINGS INC.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-11-03T21:52:47.000Z",
-          "headline": "4 filing — DULUTH HOLDINGS INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1649744/000089271226000376/xslF345X06/form4.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
-    },
     "TASK": {
       "events": [
         {
@@ -5112,6 +5059,35 @@
           "publishedAt": "2026-11-04T21:14:56.000Z",
           "headline": "8-K filing — TaskUs, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1829864/000182986426000154/task-20261104.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 2
+    },
+    "DLTH": {
+      "events": [
+        {
+          "symbol": "DLTH",
+          "title": "DULUTH HOLDINGS INC.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-11-03T21:53:41.000Z",
+          "headline": "4 filing — DULUTH HOLDINGS INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1649744/000089271226000377/xslF345X06/form4.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "DLTH",
+          "title": "DULUTH HOLDINGS INC.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-11-03T21:52:47.000Z",
+          "headline": "4 filing — DULUTH HOLDINGS INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1649744/000089271226000376/xslF345X06/form4.xml",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -5894,10 +5870,6 @@
       ],
       "eventCount": 4
     },
-    "MPLT": {
-      "events": [],
-      "eventCount": 0
-    },
     "TKNO": {
       "events": [
         {
@@ -5915,46 +5887,26 @@
       ],
       "eventCount": 1
     },
-    "EGHT": {
+    "KVHI": {
       "events": [
         {
-          "symbol": "EGHT",
-          "title": "8X8 INC /DE/",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-11-09T22:05:41.000Z",
-          "headline": "4 filing — 8X8 INC /DE/",
-          "url": "https://www.sec.gov/Archives/edgar/data/1023731/000102373126000176/xslF345X06/wk-form4_1794261939.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "EGHT",
-          "title": "8X8 INC /DE/",
-          "type": "SEC",
-          "form": "144",
-          "publishedAt": "2026-11-05T21:27:57.000Z",
-          "headline": "144 filing — 8X8 INC /DE/",
-          "url": "https://www.sec.gov/Archives/edgar/data/1023731/000195004726010737/xsl144X01/primary_doc.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "EGHT",
-          "title": "8X8 INC /DE/",
+          "symbol": "KVHI",
+          "title": "KVH INDUSTRIES INC DE",
           "type": "SEC",
           "form": "8-K",
-          "publishedAt": "2026-11-04T21:13:08.000Z",
-          "headline": "8-K filing — 8X8 INC /DE/",
-          "url": "https://www.sec.gov/Archives/edgar/data/1023731/000102373126000166/eght-20261104.htm",
+          "publishedAt": "2026-11-05T13:48:26.000Z",
+          "headline": "8-K filing — KVH INDUSTRIES INC DE",
+          "url": "https://www.sec.gov/Archives/edgar/data/1007587/000100758726000029/kvhi-20261105.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 3
+      "eventCount": 1
+    },
+    "MPLT": {
+      "events": [],
+      "eventCount": 0
     },
     "NAKAW": {
       "events": [
