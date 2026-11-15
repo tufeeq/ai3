@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-15T20:30:31.473Z",
+  "generatedAt": "2026-11-15T23:48:58.631Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,17 +8,17 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-11-14T01:00:00.000Z",
-    "marketDataAgeMin": 2610.5,
-    "quoteCount": 755,
+    "marketDataAgeMin": 2809,
+    "quoteCount": 754,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-11-15T20:30:31.695Z",
-    "upstreamUpdatedAtAtBuild": "2026-11-15T17:30:16.470Z",
+    "upstreamFeedFetchedAt": "2026-11-15T23:48:59.088Z",
+    "upstreamUpdatedAtAtBuild": "2026-11-15T22:03:58.887Z",
     "upstreamNewestObservedAtAtBuild": "2026-11-14T01:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 180.3,
-    "upstreamObservationAgeAtFetchMin": 2610.5,
+    "upstreamUpdateAgeAtFetchMin": 105,
+    "upstreamObservationAgeAtFetchMin": 2809,
     "secMapping": true,
-    "secMarketwideDiscovery": false,
-    "secMarketwideEventCount": 296,
+    "secMarketwideDiscovery": true,
+    "secMarketwideEventCount": 302,
     "newsDiscovery": true
   },
   "shortlist": [
@@ -119,6 +119,14 @@
       "observedAt": "2026-11-13T16:00:27-05:00"
     },
     {
+      "symbol": "LZMH",
+      "price": 1.06,
+      "changePct": 16.547553600879613,
+      "early": 77,
+      "ignition": 77,
+      "observedAt": "2026-11-13T16:00:00-05:00"
+    },
+    {
       "symbol": "SWVL",
       "price": 4.84,
       "changePct": 2.760084925690019,
@@ -165,14 +173,6 @@
       "early": 71,
       "ignition": 77,
       "observedAt": "2026-11-13T16:00:12-05:00"
-    },
-    {
-      "symbol": "LZMH",
-      "price": 1.06,
-      "changePct": 16.547553600879613,
-      "early": 74,
-      "ignition": 74,
-      "observedAt": "2026-11-13T16:00:00-05:00"
     },
     {
       "symbol": "DTSS",
@@ -247,6 +247,14 @@
       "observedAt": "2026-11-13T16:01:47-05:00"
     },
     {
+      "symbol": "AVX",
+      "price": 3.93,
+      "changePct": -6.205250596658716,
+      "early": 68,
+      "ignition": 74,
+      "observedAt": "2026-11-13T16:03:52-05:00"
+    },
+    {
       "symbol": "MGRX",
       "price": 0.1648,
       "changePct": -10.918918918918918,
@@ -303,6 +311,22 @@
       "observedAt": "2026-11-13T16:00:00-05:00"
     },
     {
+      "symbol": "EXYN",
+      "price": 1.955,
+      "changePct": -3.2178217821782154,
+      "early": 62,
+      "ignition": 76,
+      "observedAt": "2026-11-13T16:00:00-05:00"
+    },
+    {
+      "symbol": "ZYBT",
+      "price": 1.5,
+      "changePct": 0,
+      "early": 66,
+      "ignition": 72,
+      "observedAt": "2026-11-13T16:00:00-05:00"
+    },
+    {
       "symbol": "ZEO",
       "price": 0.27,
       "changePct": 6.0070671378092015,
@@ -311,35 +335,11 @@
       "observedAt": "2026-11-13T17:12:47-05:00"
     },
     {
-      "symbol": "PHIO",
-      "price": 0.81,
-      "changePct": -0.2217294900221622,
-      "early": 69,
-      "ignition": 69,
-      "observedAt": "2026-11-13T19:05:58-05:00"
-    },
-    {
-      "symbol": "TKNO",
-      "price": 8.21,
-      "changePct": -1.0247136829415198,
-      "early": 61,
-      "ignition": 75,
-      "observedAt": "2026-11-13T16:00:24-05:00"
-    },
-    {
-      "symbol": "MPLT",
-      "price": 7.25,
-      "changePct": 2.545968882602542,
-      "early": 61,
-      "ignition": 75,
-      "observedAt": "2026-11-13T16:00:38-05:00"
-    },
-    {
-      "symbol": "KVHI",
-      "price": 7.36,
-      "changePct": -0.1356852103120731,
-      "early": 61,
-      "ignition": 75,
+      "symbol": "ESLA",
+      "price": 0.514,
+      "changePct": -0.944305261129315,
+      "early": 65,
+      "ignition": 71,
       "observedAt": "2026-11-13T16:00:00-05:00"
     }
   ],
@@ -392,6 +392,10 @@
       "title": "LENSAR, Inc.",
       "cik": "0001320350"
     },
+    "LZMH": {
+      "title": "LZ Technology Holdings Ltd",
+      "cik": "0001967397"
+    },
     "SWVL": {
       "title": "Swvl Holdings Corp",
       "cik": "0001875609"
@@ -415,10 +419,6 @@
     "IPWR": {
       "title": "Ideal Power Inc.",
       "cik": "0001507957"
-    },
-    "LZMH": {
-      "title": "LZ Technology Holdings Ltd",
-      "cik": "0001967397"
     },
     "DTSS": {
       "title": "Datasea Intelligent Technology Ltd.",
@@ -456,6 +456,10 @@
       "title": "KALTURA INC",
       "cik": "0001432133"
     },
+    "AVX": {
+      "title": "AVAX ONE TECHNOLOGY LTD.",
+      "cik": "0001826397"
+    },
     "MGRX": {
       "title": "MANGOCEUTICALS, INC.",
       "cik": "0001938046"
@@ -484,28 +488,24 @@
       "title": "Cartesian Therapeutics, Inc.",
       "cik": "0001453687"
     },
+    "EXYN": {
+      "title": "Exyn Technologies, Inc.",
+      "cik": "0001960355"
+    },
+    "ZYBT": {
+      "title": "Zhengye Biotechnology Holding Ltd",
+      "cik": "0001975641"
+    },
     "ZEO": {
       "title": "Zeo Energy Corp.",
       "cik": "0001865506"
     },
-    "PHIO": {
-      "title": "Phio Pharmaceuticals Corp.",
-      "cik": "0001533040"
-    },
-    "TKNO": {
-      "title": "Alpha Teknova, Inc.",
-      "cik": "0001850902"
-    },
-    "MPLT": {
-      "title": "MapLight Therapeutics, Inc.",
-      "cik": "0001770069"
-    },
-    "KVHI": {
-      "title": "KVH INDUSTRIES INC DE",
-      "cik": "0001007587"
+    "ESLA": {
+      "title": "Estrella Immunopharma, Inc.",
+      "cik": "0001844417"
     }
   },
-  "eventCount": 361,
+  "eventCount": 366,
   "events": [
     {
       "symbol": "KLTR",
@@ -647,6 +647,18 @@
       "publishedAt": "2026-11-13T17:25:32-05:00",
       "headline": "8-K filing — CareTrust REIT, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1590717/000114036126043831/0001140361-26-043831-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "SHFSW",
+      "title": "SHF Holdings, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-11-13T17:25:22-05:00",
+      "headline": "S-1 filing — SHF Holdings, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1854963/000149315226051855/0001493152-26-051855-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -2968,6 +2980,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "WWR",
+      "title": "WESTWATER RESOURCES, INC.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-11-13T16:15:33-05:00",
+      "headline": "S-1 filing — WESTWATER RESOURCES, INC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/839470/000110465926127070/0001104659-26-127070-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "NMM",
       "title": "Navios Maritime Partners L.P.",
       "type": "SEC",
@@ -3239,6 +3263,18 @@
       "publishedAt": "2026-11-13T14:29:17-05:00",
       "headline": "6-K filing — Gold X2 Mining Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1961592/000110465926126904/0001104659-26-126904-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
+      "symbol": "WELA",
+      "title": "Wella Co",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-11-13T13:57:38-05:00",
+      "headline": "S-1 filing — Wella Co",
+      "url": "https://www.sec.gov/Archives/edgar/data/2125056/000162828026073693/0001628280-26-073693-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -4036,6 +4072,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "KITTW",
+      "title": "Nauticus Robotics, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-11-12T16:45:28-05:00",
+      "headline": "S-1 filing — Nauticus Robotics, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849820/000121390026118997/0001213900-26-118997-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "XOS",
       "title": "Xos, Inc.",
       "type": "SEC",
@@ -4120,6 +4168,30 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "ZYBT",
+      "title": "Zhengye Biotechnology Holding Ltd",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-11-12T21:10:36.000Z",
+      "headline": "6-K filing — Zhengye Biotechnology Holding Ltd",
+      "url": "https://www.sec.gov/Archives/edgar/data/1975641/000121390026118931/ea0310428-6k_zhengye.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "EXYN",
+      "title": "Exyn Technologies, Inc.",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-11-12T21:10:17.000Z",
+      "headline": "8-K filing — Exyn Technologies, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1960355/000110465926126235/tm2629654d1_8k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
       "symbol": "FORM",
       "title": "FORMFACTOR INC",
       "type": "SEC",
@@ -4144,6 +4216,18 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
+      "symbol": "HRIA",
+      "title": "Harbour Island Acquisition Corp. I",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-11-12T15:59:47-05:00",
+      "headline": "S-1 filing — Harbour Island Acquisition Corp. I",
+      "url": "https://www.sec.gov/Archives/edgar/data/2131072/000121390026118889/0001213900-26-118889-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
+    },
+    {
       "symbol": "NXTT",
       "title": "Next Technology Holding Inc.",
       "type": "SEC",
@@ -4154,6 +4238,18 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "FFLY",
+      "title": "FireFly Robotics, Inc.",
+      "type": "SEC",
+      "form": "S-1",
+      "publishedAt": "2026-11-12T10:48:34-05:00",
+      "headline": "S-1 filing — FireFly Robotics, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1660851/000149315226051283/0001493152-26-051283-index.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "MARKET_WIDE"
     },
     {
       "symbol": "DTSS",
@@ -4175,18 +4271,6 @@
       "publishedAt": "2026-11-12T15:16:42.000Z",
       "headline": "4 filing — Datasea Intelligent Technology Ltd.",
       "url": "https://www.sec.gov/Archives/edgar/data/2110423/000121390026118609/xslF345X06/ownership.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "PHIO",
-      "title": "Phio Pharmaceuticals Corp.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-11-12T14:52:24.000Z",
-      "headline": "4 filing — Phio Pharmaceuticals Corp.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1533040/000168316826008544/xslF345X06/ownership.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4276,6 +4360,18 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
+      "symbol": "AVX",
+      "title": "AVAX ONE TECHNOLOGY LTD.",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-11-10T21:40:12.000Z",
+      "headline": "8-K filing — AVAX ONE TECHNOLOGY LTD.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1826397/000149315226050999/form8-k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
       "symbol": "PMI",
       "title": "Picard Medical, Inc.",
       "type": "SEC",
@@ -4295,30 +4391,6 @@
       "publishedAt": "2026-11-10T21:06:14.000Z",
       "headline": "8-K filing — QumulusAI, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/2084026/000208402626000009/qmls-20261110.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "PHIO",
-      "title": "Phio Pharmaceuticals Corp.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-11-10T16:18:44.000Z",
-      "headline": "4 filing — Phio Pharmaceuticals Corp.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1533040/000168316826008471/xslF345X06/ownership.xml",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "PHIO",
-      "title": "Phio Pharmaceuticals Corp.",
-      "type": "SEC",
-      "form": "4",
-      "publishedAt": "2026-11-10T16:17:16.000Z",
-      "headline": "4 filing — Phio Pharmaceuticals Corp.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1533040/000168316826008469/xslF345X06/ownership.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4504,30 +4576,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "PHIO",
-      "title": "Phio Pharmaceuticals Corp.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-11-05T21:12:23.000Z",
-      "headline": "8-K filing — Phio Pharmaceuticals Corp.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1533040/000143774926035277/phio20261028_8k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "KVHI",
-      "title": "KVH INDUSTRIES INC DE",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-11-05T13:48:26.000Z",
-      "headline": "8-K filing — KVH INDUSTRIES INC DE",
-      "url": "https://www.sec.gov/Archives/edgar/data/1007587/000100758726000029/kvhi-20261105.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "SCYX",
       "title": "SCYNEXIS INC",
       "type": "SEC",
@@ -4576,18 +4624,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "TKNO",
-      "title": "Alpha Teknova, Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-11-04T21:11:42.000Z",
-      "headline": "8-K filing — Alpha Teknova, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1850902/000185090226000015/tkno-20261104.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "CWD",
       "title": "CaliberCos Inc.",
       "type": "SEC",
@@ -4595,6 +4631,18 @@
       "publishedAt": "2026-11-04T18:28:36.000Z",
       "headline": "8-K filing — CaliberCos Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1627282/000162728226000078/cwd-20261104.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "ESLA",
+      "title": "Estrella Immunopharma, Inc.",
+      "type": "SEC",
+      "form": "4",
+      "publishedAt": "2026-11-04T12:23:31.000Z",
+      "headline": "4 filing — Estrella Immunopharma, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1844417/000216315326000002/xslF345X06/primary_doc.xml",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4775,6 +4823,18 @@
       "publishedAt": "2026-10-30T17:13:12.000Z",
       "headline": "8-K filing — CaliberCos Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1627282/000162728226000076/cwd-20261030.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "ESLA",
+      "title": "Estrella Immunopharma, Inc.",
+      "type": "SEC",
+      "form": "8-K",
+      "publishedAt": "2026-10-29T21:28:13.000Z",
+      "headline": "8-K filing — Estrella Immunopharma, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1844417/000121390026113912/ea0310209-8k_estrella.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -5052,6 +5112,10 @@
       ],
       "eventCount": 2
     },
+    "LZMH": {
+      "events": [],
+      "eventCount": 0
+    },
     "SWVL": {
       "events": [],
       "eventCount": 0
@@ -5176,10 +5240,6 @@
         }
       ],
       "eventCount": 2
-    },
-    "LZMH": {
-      "events": [],
-      "eventCount": 0
     },
     "DTSS": {
       "events": [
@@ -5465,6 +5525,23 @@
       ],
       "eventCount": 4
     },
+    "AVX": {
+      "events": [
+        {
+          "symbol": "AVX",
+          "title": "AVAX ONE TECHNOLOGY LTD.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-11-10T21:40:12.000Z",
+          "headline": "8-K filing — AVAX ONE TECHNOLOGY LTD.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1826397/000149315226050999/form8-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
     "MGRX": {
       "events": [
         {
@@ -5728,6 +5805,40 @@
       ],
       "eventCount": 1
     },
+    "EXYN": {
+      "events": [
+        {
+          "symbol": "EXYN",
+          "title": "Exyn Technologies, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-11-12T21:10:17.000Z",
+          "headline": "8-K filing — Exyn Technologies, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1960355/000110465926126235/tm2629654d1_8k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
+    "ZYBT": {
+      "events": [
+        {
+          "symbol": "ZYBT",
+          "title": "Zhengye Biotechnology Holding Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-11-12T21:10:36.000Z",
+          "headline": "6-K filing — Zhengye Biotechnology Holding Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1975641/000121390026118931/ea0310428-6k_zhengye.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
     "ZEO": {
       "events": [
         {
@@ -5745,96 +5856,34 @@
       ],
       "eventCount": 1
     },
-    "PHIO": {
+    "ESLA": {
       "events": [
         {
-          "symbol": "PHIO",
-          "title": "Phio Pharmaceuticals Corp.",
+          "symbol": "ESLA",
+          "title": "Estrella Immunopharma, Inc.",
           "type": "SEC",
           "form": "4",
-          "publishedAt": "2026-11-12T14:52:24.000Z",
-          "headline": "4 filing — Phio Pharmaceuticals Corp.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1533040/000168316826008544/xslF345X06/ownership.xml",
+          "publishedAt": "2026-11-04T12:23:31.000Z",
+          "headline": "4 filing — Estrella Immunopharma, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1844417/000216315326000002/xslF345X06/primary_doc.xml",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         },
         {
-          "symbol": "PHIO",
-          "title": "Phio Pharmaceuticals Corp.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-11-10T16:18:44.000Z",
-          "headline": "4 filing — Phio Pharmaceuticals Corp.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1533040/000168316826008471/xslF345X06/ownership.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "PHIO",
-          "title": "Phio Pharmaceuticals Corp.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-11-10T16:17:16.000Z",
-          "headline": "4 filing — Phio Pharmaceuticals Corp.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1533040/000168316826008469/xslF345X06/ownership.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "PHIO",
-          "title": "Phio Pharmaceuticals Corp.",
+          "symbol": "ESLA",
+          "title": "Estrella Immunopharma, Inc.",
           "type": "SEC",
           "form": "8-K",
-          "publishedAt": "2026-11-05T21:12:23.000Z",
-          "headline": "8-K filing — Phio Pharmaceuticals Corp.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1533040/000143774926035277/phio20261028_8k.htm",
+          "publishedAt": "2026-10-29T21:28:13.000Z",
+          "headline": "8-K filing — Estrella Immunopharma, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1844417/000121390026113912/ea0310209-8k_estrella.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 4
-    },
-    "TKNO": {
-      "events": [
-        {
-          "symbol": "TKNO",
-          "title": "Alpha Teknova, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-11-04T21:11:42.000Z",
-          "headline": "8-K filing — Alpha Teknova, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1850902/000185090226000015/tkno-20261104.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
-    "MPLT": {
-      "events": [],
-      "eventCount": 0
-    },
-    "KVHI": {
-      "events": [
-        {
-          "symbol": "KVHI",
-          "title": "KVH INDUSTRIES INC DE",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-11-05T13:48:26.000Z",
-          "headline": "8-K filing — KVH INDUSTRIES INC DE",
-          "url": "https://www.sec.gov/Archives/edgar/data/1007587/000100758726000029/kvhi-20261105.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
+      "eventCount": 2
     },
     "NAKAW": {
       "events": [
@@ -6184,6 +6233,23 @@
           "publishedAt": "2026-11-13T17:25:32-05:00",
           "headline": "8-K filing — CareTrust REIT, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1590717/000114036126043831/0001140361-26-043831-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "SHFSW": {
+      "events": [
+        {
+          "symbol": "SHFSW",
+          "title": "SHF Holdings, Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-11-13T17:25:22-05:00",
+          "headline": "S-1 filing — SHF Holdings, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1854963/000149315226051855/0001493152-26-051855-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -8818,6 +8884,23 @@
       ],
       "eventCount": 4
     },
+    "WWR": {
+      "events": [
+        {
+          "symbol": "WWR",
+          "title": "WESTWATER RESOURCES, INC.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-11-13T16:15:33-05:00",
+          "headline": "S-1 filing — WESTWATER RESOURCES, INC.",
+          "url": "https://www.sec.gov/Archives/edgar/data/839470/000110465926127070/0001104659-26-127070-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "NMM": {
       "events": [
         {
@@ -9117,6 +9200,23 @@
           "publishedAt": "2026-11-13T14:29:17-05:00",
           "headline": "6-K filing — Gold X2 Mining Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1961592/000110465926126904/0001104659-26-126904-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "WELA": {
+      "events": [
+        {
+          "symbol": "WELA",
+          "title": "Wella Co",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-11-13T13:57:38-05:00",
+          "headline": "S-1 filing — Wella Co",
+          "url": "https://www.sec.gov/Archives/edgar/data/2125056/000162828026073693/0001628280-26-073693-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -10126,6 +10226,23 @@
       ],
       "eventCount": 1
     },
+    "KITTW": {
+      "events": [
+        {
+          "symbol": "KITTW",
+          "title": "Nauticus Robotics, Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-11-12T16:45:28-05:00",
+          "headline": "S-1 filing — Nauticus Robotics, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1849820/000121390026118997/0001213900-26-118997-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
     "PLUR": {
       "events": [
         {
@@ -10170,6 +10287,40 @@
           "publishedAt": "2026-11-12T16:02:51-05:00",
           "headline": "S-3 filing — Vir Biotechnology, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1706431/000119312526458278/0001193125-26-458278-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "HRIA": {
+      "events": [
+        {
+          "symbol": "HRIA",
+          "title": "Harbour Island Acquisition Corp. I",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-11-12T15:59:47-05:00",
+          "headline": "S-1 filing — Harbour Island Acquisition Corp. I",
+          "url": "https://www.sec.gov/Archives/edgar/data/2131072/000121390026118889/0001213900-26-118889-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        }
+      ],
+      "eventCount": 1
+    },
+    "FFLY": {
+      "events": [
+        {
+          "symbol": "FFLY",
+          "title": "FireFly Robotics, Inc.",
+          "type": "SEC",
+          "form": "S-1",
+          "publishedAt": "2026-11-12T10:48:34-05:00",
+          "headline": "S-1 filing — FireFly Robotics, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1660851/000149315226051283/0001493152-26-051283-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -10241,10 +10392,6 @@
       "eventCount": 2
     }
   },
-  "errors": [
-    "SEC_CURRENT_S-1:This operation was aborted",
-    "SEC_CURRENT_SC 13D:This operation was aborted",
-    "SEC_CURRENT_SC 13G:This operation was aborted"
-  ],
+  "errors": [],
   "policy": "Public-source intelligence. Market-wide SEC current-filing discovery is primary-source and independent of the price shortlist. `sourceStatus.live` means the loaded market universe contains fresh market data inside the active US extended-hours window; loaded-but-stale/session-final data is never labeled live. Shortlist ranking does not determine feed-level freshness. Upstream feed timestamps are retained only as operational provenance and do not override quote observation freshness or trading eligibility. SEC filings are primary-source events; GDELT is discovery-only and requires source-level verification before trade decisions."
 }
