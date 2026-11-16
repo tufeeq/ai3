@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-15T23:48:58.631Z",
+  "generatedAt": "2026-11-16T00:18:37.683Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-11-14T01:00:00.000Z",
-    "marketDataAgeMin": 2809,
+    "marketDataAgeMin": 2838.6,
     "quoteCount": 754,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-11-15T23:48:59.088Z",
+    "upstreamFeedFetchedAt": "2026-11-16T00:18:38.026Z",
     "upstreamUpdatedAtAtBuild": "2026-11-15T22:03:58.887Z",
     "upstreamNewestObservedAtAtBuild": "2026-11-14T01:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 105,
-    "upstreamObservationAgeAtFetchMin": 2809,
+    "upstreamUpdateAgeAtFetchMin": 134.7,
+    "upstreamObservationAgeAtFetchMin": 2838.6,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 302,
@@ -505,7 +505,7 @@
       "cik": "0001844417"
     }
   },
-  "eventCount": 366,
+  "eventCount": 362,
   "events": [
     {
       "symbol": "KLTR",
@@ -4850,54 +4850,6 @@
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "ZEO",
-      "title": "Zeo Energy Corp.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-10-26T20:57:20.000Z",
-      "headline": "8-K filing — Zeo Energy Corp.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1865506/000121390026112522/ea0309691-8k_zeo.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "MYSZ",
-      "title": "My Size, Inc.",
-      "type": "SEC",
-      "form": "S-3",
-      "publishedAt": "2026-10-26T20:20:34.000Z",
-      "headline": "S-3 filing — My Size, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1211805/000149315226048526/forms-3.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "MYSZ",
-      "title": "My Size, Inc.",
-      "type": "SEC",
-      "form": "8-K",
-      "publishedAt": "2026-10-26T20:15:17.000Z",
-      "headline": "8-K filing — My Size, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1211805/000149315226048519/form8-k.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "SPRC",
-      "title": "SciSparc Ltd.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-10-26T20:01:04.000Z",
-      "headline": "6-K filing — SciSparc Ltd.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1611746/000121390026112470/ea0309686-6k_scisparc.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
     }
   ],
   "bySymbol": {
@@ -5184,33 +5136,9 @@
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "MYSZ",
-          "title": "My Size, Inc.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-10-26T20:20:34.000Z",
-          "headline": "S-3 filing — My Size, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1211805/000149315226048526/forms-3.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "MYSZ",
-          "title": "My Size, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-26T20:15:17.000Z",
-          "headline": "8-K filing — My Size, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1211805/000149315226048519/form8-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 3
+      "eventCount": 1
     },
     "IPWR": {
       "events": [
@@ -5353,21 +5281,9 @@
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "SPRC",
-          "title": "SciSparc Ltd.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-10-26T20:01:04.000Z",
-          "headline": "6-K filing — SciSparc Ltd.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1611746/000121390026112470/ea0309686-6k_scisparc.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
-      "eventCount": 2
+      "eventCount": 1
     },
     "STFS": {
       "events": [],
@@ -5840,21 +5756,8 @@
       "eventCount": 1
     },
     "ZEO": {
-      "events": [
-        {
-          "symbol": "ZEO",
-          "title": "Zeo Energy Corp.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-10-26T20:57:20.000Z",
-          "headline": "8-K filing — Zeo Energy Corp.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1865506/000121390026112522/ea0309691-8k_zeo.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
+      "events": [],
+      "eventCount": 0
     },
     "ESLA": {
       "events": [
