@@ -1,21 +1,21 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-19T04:32:22.769Z",
+  "generatedAt": "2026-11-19T09:13:01.305Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
     "marketDataFresh": false,
-    "marketWindowOpen": false,
-    "marketSession": "closed",
+    "marketWindowOpen": true,
+    "marketSession": "pre-market",
     "newestObservedAt": "2026-11-19T01:00:00.000Z",
-    "marketDataAgeMin": 212.4,
+    "marketDataAgeMin": 493,
     "quoteCount": 733,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-11-19T04:32:23.119Z",
-    "upstreamUpdatedAtAtBuild": "2026-11-19T02:07:21.310Z",
+    "upstreamFeedFetchedAt": "2026-11-19T09:13:01.568Z",
+    "upstreamUpdatedAtAtBuild": "2026-11-19T08:04:25.956Z",
     "upstreamNewestObservedAtAtBuild": "2026-11-19T01:00:00.000Z",
-    "upstreamUpdateAgeAtFetchMin": 145,
-    "upstreamObservationAgeAtFetchMin": 212.4,
+    "upstreamUpdateAgeAtFetchMin": 68.6,
+    "upstreamObservationAgeAtFetchMin": 493,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 264,
@@ -151,11 +151,11 @@
       "observedAt": "2026-11-18T16:45:55-05:00"
     },
     {
-      "symbol": "ESYN",
-      "price": 1.25,
-      "changePct": 6.8376068376068435,
-      "early": 79,
-      "ignition": 79,
+      "symbol": "RFIL",
+      "price": 7.05,
+      "changePct": 4.212860310421288,
+      "early": 72,
+      "ignition": 86,
       "observedAt": "2026-11-18T16:00:00-05:00"
     },
     {
@@ -167,11 +167,19 @@
       "observedAt": "2026-11-18T16:00:23-05:00"
     },
     {
-      "symbol": "RFIL",
-      "price": 7.05,
-      "changePct": 4.212860310421288,
+      "symbol": "EMPD",
+      "price": 1.99,
+      "changePct": 1.0152284263959401,
       "early": 72,
       "ignition": 86,
+      "observedAt": "2026-11-18T16:00:11-05:00"
+    },
+    {
+      "symbol": "ESYN",
+      "price": 1.25,
+      "changePct": 6.8376068376068435,
+      "early": 79,
+      "ignition": 79,
       "observedAt": "2026-11-18T16:00:00-05:00"
     },
     {
@@ -183,28 +191,12 @@
       "observedAt": "2026-11-18T16:00:00-05:00"
     },
     {
-      "symbol": "EMPD",
-      "price": 1.99,
-      "changePct": 1.0152284263959401,
-      "early": 72,
-      "ignition": 86,
-      "observedAt": "2026-11-18T16:00:11-05:00"
-    },
-    {
       "symbol": "SEVN",
       "price": 6.58,
       "changePct": 1.0752688172043054,
       "early": 71,
       "ignition": 85,
       "observedAt": "2026-11-18T16:01:44-05:00"
-    },
-    {
-      "symbol": "CLIK",
-      "price": 0.7089,
-      "changePct": 2.0440477904131265,
-      "early": 71,
-      "ignition": 85,
-      "observedAt": "2026-11-18T16:00:00-05:00"
     },
     {
       "symbol": "MRKR",
@@ -223,6 +215,14 @@
       "observedAt": "2026-11-18T16:01:20-05:00"
     },
     {
+      "symbol": "CLIK",
+      "price": 0.7089,
+      "changePct": 2.0440477904131265,
+      "early": 71,
+      "ignition": 85,
+      "observedAt": "2026-11-18T16:00:00-05:00"
+    },
+    {
       "symbol": "DPU",
       "price": 0.86,
       "changePct": 4.9676553155132375,
@@ -239,20 +239,20 @@
       "observedAt": "2026-11-18T19:50:57-05:00"
     },
     {
-      "symbol": "TAOP",
-      "price": 0.2585,
-      "changePct": 6.291118421052635,
-      "early": 77,
-      "ignition": 77,
-      "observedAt": "2026-11-18T16:00:00-05:00"
-    },
-    {
       "symbol": "CTNT",
       "price": 1.699,
       "changePct": -6.132596685082873,
       "early": 77,
       "ignition": 77,
       "observedAt": "2026-11-18T19:12:39-05:00"
+    },
+    {
+      "symbol": "TAOP",
+      "price": 0.2585,
+      "changePct": 6.291118421052635,
+      "early": 77,
+      "ignition": 77,
+      "observedAt": "2026-11-18T16:00:00-05:00"
     },
     {
       "symbol": "HUIZ",
@@ -263,20 +263,20 @@
       "observedAt": "2026-11-18T16:00:00-05:00"
     },
     {
-      "symbol": "DKI",
-      "price": 1.2,
-      "changePct": 3.448275862068969,
-      "early": 75,
-      "ignition": 75,
-      "observedAt": "2026-11-18T19:41:10-05:00"
-    },
-    {
       "symbol": "ACOG",
       "price": 8.6,
       "changePct": 8.585858585858583,
       "early": 72,
       "ignition": 78,
       "observedAt": "2026-11-18T16:00:00-05:00"
+    },
+    {
+      "symbol": "DKI",
+      "price": 1.2,
+      "changePct": 3.448275862068969,
+      "early": 75,
+      "ignition": 75,
+      "observedAt": "2026-11-18T19:41:10-05:00"
     },
     {
       "symbol": "MCRP",
@@ -408,33 +408,29 @@
       "title": "Datasea Intelligent Technology Ltd.",
       "cik": "0002110423"
     },
-    "ESYN": {
-      "title": "EnerSyn Global Inc.",
-      "cik": "0001897245"
+    "RFIL": {
+      "title": "R F INDUSTRIES LTD",
+      "cik": "0000740664"
     },
     "XGN": {
       "title": "EXAGEN INC.",
       "cik": "0001274737"
     },
-    "RFIL": {
-      "title": "R F INDUSTRIES LTD",
-      "cik": "0000740664"
+    "EMPD": {
+      "title": "Empery Digital Inc.",
+      "cik": "0001829794"
+    },
+    "ESYN": {
+      "title": "EnerSyn Global Inc.",
+      "cik": "0001897245"
     },
     "GIXI": {
       "title": "Gix Internet Ltd.",
       "cik": "0001782265"
     },
-    "EMPD": {
-      "title": "Empery Digital Inc.",
-      "cik": "0001829794"
-    },
     "SEVN": {
       "title": "Seven Hills Realty Trust",
       "cik": "0001452477"
-    },
-    "CLIK": {
-      "title": "Click Holdings Ltd.",
-      "cik": "0002020027"
     },
     "MRKR": {
       "title": "Marker Therapeutics, Inc.",
@@ -444,6 +440,10 @@
       "title": "Alpha Teknova, Inc.",
       "cik": "0001850902"
     },
+    "CLIK": {
+      "title": "Click Holdings Ltd.",
+      "cik": "0002020027"
+    },
     "DPU": {
       "title": "Nexpu Ltd.",
       "cik": "0001938865"
@@ -452,25 +452,25 @@
       "title": "Edible Garden AG Inc",
       "cik": "0001809750"
     },
-    "TAOP": {
-      "title": "Taoping Inc.",
-      "cik": "0001552670"
-    },
     "CTNT": {
       "title": "CHEETAH NET SUPPLY CHAIN SERVICE INC.",
       "cik": "0001951667"
+    },
+    "TAOP": {
+      "title": "Taoping Inc.",
+      "cik": "0001552670"
     },
     "HUIZ": {
       "title": "Huize Holding Ltd",
       "cik": "0001778982"
     },
-    "DKI": {
-      "title": "DarkIris Inc.",
-      "cik": "0002058584"
-    },
     "ACOG": {
       "title": "Alpha Cognition Inc.",
       "cik": "0001655923"
+    },
+    "DKI": {
+      "title": "DarkIris Inc.",
+      "cik": "0002058584"
     },
     "MCRP": {
       "title": "Micropolis AI Robotics",
@@ -5240,7 +5240,7 @@
       ],
       "eventCount": 2
     },
-    "ESYN": {
+    "RFIL": {
       "events": [],
       "eventCount": 0
     },
@@ -5345,7 +5345,72 @@
       ],
       "eventCount": 8
     },
-    "RFIL": {
+    "EMPD": {
+      "events": [
+        {
+          "symbol": "EMPD",
+          "title": "Empery Digital Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-11-16T13:30:42.000Z",
+          "headline": "8-K filing — Empery Digital Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1829794/000168316826008765/empery_8k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "EMPD",
+          "title": "Empery Digital Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-11-09T13:30:14.000Z",
+          "headline": "8-K filing — Empery Digital Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1829794/000168316826008412/empery_8k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "EMPD",
+          "title": "Empery Digital Inc.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-11-06T22:21:07.000Z",
+          "headline": "4 filing — Empery Digital Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1829794/000199937126024844/xslF345X06/brown-form4.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "EMPD",
+          "title": "Empery Digital Inc.",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-11-03T22:19:37.000Z",
+          "headline": "4 filing — Empery Digital Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1829794/000199937126024336/xslF345X06/brown-form4.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "EMPD",
+          "title": "Empery Digital Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-11-02T13:35:13.000Z",
+          "headline": "8-K filing — Empery Digital Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1829794/000168316826008228/empery_8k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 5
+    },
+    "ESYN": {
       "events": [],
       "eventCount": 0
     },
@@ -5438,71 +5503,6 @@
       ],
       "eventCount": 7
     },
-    "EMPD": {
-      "events": [
-        {
-          "symbol": "EMPD",
-          "title": "Empery Digital Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-11-16T13:30:42.000Z",
-          "headline": "8-K filing — Empery Digital Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1829794/000168316826008765/empery_8k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "EMPD",
-          "title": "Empery Digital Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-11-09T13:30:14.000Z",
-          "headline": "8-K filing — Empery Digital Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1829794/000168316826008412/empery_8k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "EMPD",
-          "title": "Empery Digital Inc.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-11-06T22:21:07.000Z",
-          "headline": "4 filing — Empery Digital Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1829794/000199937126024844/xslF345X06/brown-form4.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "EMPD",
-          "title": "Empery Digital Inc.",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-11-03T22:19:37.000Z",
-          "headline": "4 filing — Empery Digital Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1829794/000199937126024336/xslF345X06/brown-form4.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "EMPD",
-          "title": "Empery Digital Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-11-02T13:35:13.000Z",
-          "headline": "8-K filing — Empery Digital Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1829794/000168316826008228/empery_8k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 5
-    },
     "SEVN": {
       "events": [
         {
@@ -5532,6 +5532,27 @@
       ],
       "eventCount": 2
     },
+    "MRKR": {
+      "events": [],
+      "eventCount": 0
+    },
+    "TKNO": {
+      "events": [
+        {
+          "symbol": "TKNO",
+          "title": "Alpha Teknova, Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-11-04T21:11:42.000Z",
+          "headline": "8-K filing — Alpha Teknova, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1850902/000185090226000015/tkno-20261104.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
     "CLIK": {
       "events": [
         {
@@ -5560,27 +5581,6 @@
         }
       ],
       "eventCount": 2
-    },
-    "MRKR": {
-      "events": [],
-      "eventCount": 0
-    },
-    "TKNO": {
-      "events": [
-        {
-          "symbol": "TKNO",
-          "title": "Alpha Teknova, Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-11-04T21:11:42.000Z",
-          "headline": "8-K filing — Alpha Teknova, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1850902/000185090226000015/tkno-20261104.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
     },
     "DPU": {
       "events": [
@@ -5664,10 +5664,6 @@
       ],
       "eventCount": 4
     },
-    "TAOP": {
-      "events": [],
-      "eventCount": 0
-    },
     "CTNT": {
       "events": [
         {
@@ -5685,6 +5681,10 @@
       ],
       "eventCount": 1
     },
+    "TAOP": {
+      "events": [],
+      "eventCount": 0
+    },
     "HUIZ": {
       "events": [
         {
@@ -5695,23 +5695,6 @@
           "publishedAt": "2026-11-17T11:08:26.000Z",
           "headline": "6-K filing — Huize Holding Ltd",
           "url": "https://www.sec.gov/Archives/edgar/data/1778982/000119312526464700/d123130d6k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
-    "DKI": {
-      "events": [
-        {
-          "symbol": "DKI",
-          "title": "DarkIris Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-11-03T13:18:43.000Z",
-          "headline": "6-K filing — DarkIris Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2058584/000149315226049713/form6-k.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -5747,6 +5730,23 @@
         }
       ],
       "eventCount": 2
+    },
+    "DKI": {
+      "events": [
+        {
+          "symbol": "DKI",
+          "title": "DarkIris Inc.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-11-03T13:18:43.000Z",
+          "headline": "6-K filing — DarkIris Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2058584/000149315226049713/form6-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
     },
     "MCRP": {
       "events": [],
