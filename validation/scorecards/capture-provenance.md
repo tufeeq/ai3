@@ -1,6 +1,6 @@
 # TAGX3 Validation Capture Provenance
 
-Snapshots: **1198** · eligible: **1197** · active-market eligible: **545**
+Snapshots: **1199** · eligible: **1198** · active-market eligible: **546**
 Trigger provenance: **94.6%** · run-id provenance: **94.6%**
 
 | Trigger | All | Eligible | Active market |
@@ -8,7 +8,7 @@ Trigger provenance: **94.6%** · run-id provenance: **94.6%**
 | MISSING | 65 | 64 | 30 |
 | push | 3 | 3 | 1 |
 | schedule | 272 | 272 | 160 |
-| workflow_run | 858 | 858 | 354 |
+| workflow_run | 859 | 859 | 355 |
 
 > Diagnostic only. Capture provenance does not alter ranking, Sharia classification, freshness eligibility, lifecycle, or trading thresholds.
 
