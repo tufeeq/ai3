@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-21T18:14:21.124Z",
+  "generatedAt": "2026-11-21T21:40:16.398Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-11-21T00:59:59.000Z",
-    "marketDataAgeMin": 1034.4,
+    "marketDataAgeMin": 1240.3,
     "quoteCount": 738,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-11-21T18:14:21.610Z",
-    "upstreamUpdatedAtAtBuild": "2026-11-21T17:41:32.590Z",
+    "upstreamFeedFetchedAt": "2026-11-21T21:40:16.755Z",
+    "upstreamUpdatedAtAtBuild": "2026-11-21T21:01:51.631Z",
     "upstreamNewestObservedAtAtBuild": "2026-11-21T00:59:59.000Z",
-    "upstreamUpdateAgeAtFetchMin": 32.8,
-    "upstreamObservationAgeAtFetchMin": 1034.4,
+    "upstreamUpdateAgeAtFetchMin": 38.4,
+    "upstreamObservationAgeAtFetchMin": 1240.3,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 275,
@@ -287,20 +287,20 @@
       "observedAt": "2026-11-20T18:21:43-05:00"
     },
     {
-      "symbol": "IPDN",
-      "price": 0.6579,
-      "changePct": 1.4182210574996124,
-      "early": 75,
-      "ignition": 75,
-      "observedAt": "2026-11-20T19:42:17-05:00"
-    },
-    {
       "symbol": "AMOD",
       "price": 0.67,
       "changePct": -8.46994535519125,
       "early": 75,
       "ignition": 75,
       "observedAt": "2026-11-20T17:27:29-05:00"
+    },
+    {
+      "symbol": "IPDN",
+      "price": 0.6579,
+      "changePct": 1.4182210574996124,
+      "early": 75,
+      "ignition": 75,
+      "observedAt": "2026-11-20T19:42:17-05:00"
     },
     {
       "symbol": "DAVI",
@@ -476,13 +476,13 @@
       "title": "Silvaco Group, Inc.",
       "cik": "0001943289"
     },
-    "IPDN": {
-      "title": "Professional Diversity Network, Inc.",
-      "cik": "0001546296"
-    },
     "AMOD": {
       "title": "ALPHA MODUS HOLDINGS, INC.",
       "cik": "0001862463"
+    },
+    "IPDN": {
+      "title": "Professional Diversity Network, Inc.",
+      "cik": "0001546296"
     },
     "DAVI": {
       "title": "DAVION HEALTHCARE PLC",
@@ -5851,6 +5851,10 @@
       ],
       "eventCount": 8
     },
+    "AMOD": {
+      "events": [],
+      "eventCount": 0
+    },
     "IPDN": {
       "events": [
         {
@@ -5867,10 +5871,6 @@
         }
       ],
       "eventCount": 1
-    },
-    "AMOD": {
-      "events": [],
-      "eventCount": 0
     },
     "DAVI": {
       "events": [
