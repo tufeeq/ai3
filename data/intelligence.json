@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-21T11:36:34.108Z",
+  "generatedAt": "2026-11-21T16:10:21.316Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-11-21T00:59:59.000Z",
-    "marketDataAgeMin": 636.6,
+    "marketDataAgeMin": 910.4,
     "quoteCount": 738,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-11-21T11:36:34.440Z",
-    "upstreamUpdatedAtAtBuild": "2026-11-21T10:17:32.800Z",
+    "upstreamFeedFetchedAt": "2026-11-21T16:10:21.525Z",
+    "upstreamUpdatedAtAtBuild": "2026-11-21T15:30:25.581Z",
     "upstreamNewestObservedAtAtBuild": "2026-11-21T00:59:59.000Z",
-    "upstreamUpdateAgeAtFetchMin": 79,
-    "upstreamObservationAgeAtFetchMin": 636.6,
+    "upstreamUpdateAgeAtFetchMin": 39.9,
+    "upstreamObservationAgeAtFetchMin": 910.4,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 275,
@@ -47,20 +47,20 @@
       "observedAt": "2026-11-20T19:47:21-05:00"
     },
     {
-      "symbol": "PETZ",
-      "price": 1.17,
-      "changePct": 5.40540540540539,
-      "early": 90,
-      "ignition": 90,
-      "observedAt": "2026-11-20T16:54:14-05:00"
-    },
-    {
       "symbol": "INUV",
       "price": 0.2767,
       "changePct": 4.297022238974754,
       "early": 90,
       "ignition": 90,
       "observedAt": "2026-11-20T19:01:45-05:00"
+    },
+    {
+      "symbol": "PETZ",
+      "price": 1.17,
+      "changePct": 5.40540540540539,
+      "early": 90,
+      "ignition": 90,
+      "observedAt": "2026-11-20T16:54:14-05:00"
     },
     {
       "symbol": "MSN",
@@ -287,20 +287,20 @@
       "observedAt": "2026-11-20T18:21:43-05:00"
     },
     {
-      "symbol": "AMOD",
-      "price": 0.67,
-      "changePct": -8.46994535519125,
-      "early": 75,
-      "ignition": 75,
-      "observedAt": "2026-11-20T17:27:29-05:00"
-    },
-    {
       "symbol": "IPDN",
       "price": 0.6579,
       "changePct": 1.4182210574996124,
       "early": 75,
       "ignition": 75,
       "observedAt": "2026-11-20T19:42:17-05:00"
+    },
+    {
+      "symbol": "AMOD",
+      "price": 0.67,
+      "changePct": -8.46994535519125,
+      "early": 75,
+      "ignition": 75,
+      "observedAt": "2026-11-20T17:27:29-05:00"
     },
     {
       "symbol": "DAVI",
@@ -356,13 +356,13 @@
       "title": "Ensysce Biosciences, Inc.",
       "cik": "0001716947"
     },
-    "PETZ": {
-      "title": "TDH Holdings, Inc.",
-      "cik": "0001684425"
-    },
     "INUV": {
       "title": "Inuvo, Inc.",
       "cik": "0000829323"
+    },
+    "PETZ": {
+      "title": "TDH Holdings, Inc.",
+      "cik": "0001684425"
     },
     "MSN": {
       "title": "EMERSON RADIO CORP",
@@ -476,13 +476,13 @@
       "title": "Silvaco Group, Inc.",
       "cik": "0001943289"
     },
-    "AMOD": {
-      "title": "ALPHA MODUS HOLDINGS, INC.",
-      "cik": "0001862463"
-    },
     "IPDN": {
       "title": "Professional Diversity Network, Inc.",
       "cik": "0001546296"
+    },
+    "AMOD": {
+      "title": "ALPHA MODUS HOLDINGS, INC.",
+      "cik": "0001862463"
     },
     "DAVI": {
       "title": "DAVION HEALTHCARE PLC",
@@ -4854,35 +4854,6 @@
       ],
       "eventCount": 2
     },
-    "PETZ": {
-      "events": [
-        {
-          "symbol": "PETZ",
-          "title": "TDH Holdings, Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-11-20T07:53:47-05:00",
-          "headline": "6-K filing — TDH Holdings, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1684425/000121390026122412/0001213900-26-122412-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "PETZ",
-          "title": "TDH Holdings, Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-11-10T21:05:09.000Z",
-          "headline": "6-K filing — TDH Holdings, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1684425/000121390026118005/ea0311516-6k_tdh.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
-    },
     "INUV": {
       "events": [
         {
@@ -4905,6 +4876,35 @@
           "publishedAt": "2026-11-02T21:49:23.000Z",
           "headline": "8-K filing — Inuvo, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/829323/000165495426009387/inuvo_8k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 2
+    },
+    "PETZ": {
+      "events": [
+        {
+          "symbol": "PETZ",
+          "title": "TDH Holdings, Inc.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-11-20T07:53:47-05:00",
+          "headline": "6-K filing — TDH Holdings, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1684425/000121390026122412/0001213900-26-122412-index.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "MARKET_WIDE"
+        },
+        {
+          "symbol": "PETZ",
+          "title": "TDH Holdings, Inc.",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-11-10T21:05:09.000Z",
+          "headline": "6-K filing — TDH Holdings, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1684425/000121390026118005/ea0311516-6k_tdh.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -5851,10 +5851,6 @@
       ],
       "eventCount": 8
     },
-    "AMOD": {
-      "events": [],
-      "eventCount": 0
-    },
     "IPDN": {
       "events": [
         {
@@ -5871,6 +5867,10 @@
         }
       ],
       "eventCount": 1
+    },
+    "AMOD": {
+      "events": [],
+      "eventCount": 0
     },
     "DAVI": {
       "events": [
