@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-22T08:52:41.699Z",
+  "generatedAt": "2026-11-22T11:26:42.882Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-11-21T00:59:59.000Z",
-    "marketDataAgeMin": 1912.7,
+    "marketDataAgeMin": 2066.7,
     "quoteCount": 738,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-11-22T08:52:42.686Z",
-    "upstreamUpdatedAtAtBuild": "2026-11-22T07:49:07.998Z",
+    "upstreamFeedFetchedAt": "2026-11-22T11:26:43.101Z",
+    "upstreamUpdatedAtAtBuild": "2026-11-22T10:17:21.084Z",
     "upstreamNewestObservedAtAtBuild": "2026-11-21T00:59:59.000Z",
-    "upstreamUpdateAgeAtFetchMin": 63.6,
-    "upstreamObservationAgeAtFetchMin": 1912.7,
+    "upstreamUpdateAgeAtFetchMin": 69.4,
+    "upstreamObservationAgeAtFetchMin": 2066.7,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 275,
@@ -119,17 +119,17 @@
       "observedAt": "2026-11-20T16:00:00-05:00"
     },
     {
-      "symbol": "GOAI",
-      "price": 0.5242,
-      "changePct": 1.9645983271737013,
+      "symbol": "GRAN",
+      "price": 1.34,
+      "changePct": 4.280155642023359,
       "early": 83,
       "ignition": 83,
       "observedAt": "2026-11-20T16:00:00-05:00"
     },
     {
-      "symbol": "GRAN",
-      "price": 1.34,
-      "changePct": 4.280155642023359,
+      "symbol": "GOAI",
+      "price": 0.5242,
+      "changePct": 1.9645983271737013,
       "early": 83,
       "ignition": 83,
       "observedAt": "2026-11-20T16:00:00-05:00"
@@ -392,13 +392,13 @@
       "title": "HCW Biologics Inc.",
       "cik": "0001828673"
     },
-    "GOAI": {
-      "title": "Eva Live Inc",
-      "cik": "0001983736"
-    },
     "GRAN": {
       "title": "Grande Group Ltd/HK",
       "cik": "0002027722"
+    },
+    "GOAI": {
+      "title": "Eva Live Inc",
+      "cik": "0001983736"
     },
     "TSQ": {
       "title": "Townsquare Media, Inc.",
@@ -5112,23 +5112,6 @@
       ],
       "eventCount": 3
     },
-    "GOAI": {
-      "events": [
-        {
-          "symbol": "GOAI",
-          "title": "Eva Live Inc",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-11-05T23:00:20.000Z",
-          "headline": "8-K filing — Eva Live Inc",
-          "url": "https://www.sec.gov/Archives/edgar/data/1983736/000149315226050298/form8-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
     "GRAN": {
       "events": [
         {
@@ -5139,6 +5122,23 @@
           "publishedAt": "2026-11-16T15:39:30.000Z",
           "headline": "6-K filing — Grande Group Ltd/HK",
           "url": "https://www.sec.gov/Archives/edgar/data/2027722/000121390026120321/ea0311057-6k_grande.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
+    "GOAI": {
+      "events": [
+        {
+          "symbol": "GOAI",
+          "title": "Eva Live Inc",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-11-05T23:00:20.000Z",
+          "headline": "8-K filing — Eva Live Inc",
+          "url": "https://www.sec.gov/Archives/edgar/data/1983736/000149315226050298/form8-k.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
