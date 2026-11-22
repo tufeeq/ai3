@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-22T11:26:42.882Z",
+  "generatedAt": "2026-11-22T16:57:51.399Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-11-21T00:59:59.000Z",
-    "marketDataAgeMin": 2066.7,
+    "marketDataAgeMin": 2397.9,
     "quoteCount": 738,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-11-22T11:26:43.101Z",
-    "upstreamUpdatedAtAtBuild": "2026-11-22T10:17:21.084Z",
+    "upstreamFeedFetchedAt": "2026-11-22T16:57:51.756Z",
+    "upstreamUpdatedAtAtBuild": "2026-11-22T15:44:04.289Z",
     "upstreamNewestObservedAtAtBuild": "2026-11-21T00:59:59.000Z",
-    "upstreamUpdateAgeAtFetchMin": 69.4,
-    "upstreamObservationAgeAtFetchMin": 2066.7,
+    "upstreamUpdateAgeAtFetchMin": 73.8,
+    "upstreamObservationAgeAtFetchMin": 2397.9,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 275,
@@ -287,20 +287,20 @@
       "observedAt": "2026-11-20T18:21:43-05:00"
     },
     {
-      "symbol": "AMOD",
-      "price": 0.67,
-      "changePct": -8.46994535519125,
-      "early": 75,
-      "ignition": 75,
-      "observedAt": "2026-11-20T17:27:29-05:00"
-    },
-    {
       "symbol": "IPDN",
       "price": 0.6579,
       "changePct": 1.4182210574996124,
       "early": 75,
       "ignition": 75,
       "observedAt": "2026-11-20T19:42:17-05:00"
+    },
+    {
+      "symbol": "AMOD",
+      "price": 0.67,
+      "changePct": -8.46994535519125,
+      "early": 75,
+      "ignition": 75,
+      "observedAt": "2026-11-20T17:27:29-05:00"
     },
     {
       "symbol": "DAVI",
@@ -476,13 +476,13 @@
       "title": "Silvaco Group, Inc.",
       "cik": "0001943289"
     },
-    "AMOD": {
-      "title": "ALPHA MODUS HOLDINGS, INC.",
-      "cik": "0001862463"
-    },
     "IPDN": {
       "title": "Professional Diversity Network, Inc.",
       "cik": "0001546296"
+    },
+    "AMOD": {
+      "title": "ALPHA MODUS HOLDINGS, INC.",
+      "cik": "0001862463"
     },
     "DAVI": {
       "title": "DAVION HEALTHCARE PLC",
@@ -5851,10 +5851,6 @@
       ],
       "eventCount": 8
     },
-    "AMOD": {
-      "events": [],
-      "eventCount": 0
-    },
     "IPDN": {
       "events": [
         {
@@ -5871,6 +5867,10 @@
         }
       ],
       "eventCount": 1
+    },
+    "AMOD": {
+      "events": [],
+      "eventCount": 0
     },
     "DAVI": {
       "events": [
