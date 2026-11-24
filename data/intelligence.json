@@ -1,21 +1,21 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-24T03:58:39.643Z",
+  "generatedAt": "2026-11-24T09:02:40.855Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
     "marketDataFresh": false,
-    "marketWindowOpen": false,
-    "marketSession": "closed",
+    "marketWindowOpen": true,
+    "marketSession": "pre-market",
     "newestObservedAt": "2026-11-24T00:59:59.000Z",
-    "marketDataAgeMin": 178.7,
+    "marketDataAgeMin": 482.7,
     "quoteCount": 735,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-11-24T03:58:40.048Z",
-    "upstreamUpdatedAtAtBuild": "2026-11-24T03:07:14.789Z",
+    "upstreamFeedFetchedAt": "2026-11-24T09:02:41.179Z",
+    "upstreamUpdatedAtAtBuild": "2026-11-24T05:35:34.997Z",
     "upstreamNewestObservedAtAtBuild": "2026-11-24T00:59:59.000Z",
-    "upstreamUpdateAgeAtFetchMin": 51.4,
-    "upstreamObservationAgeAtFetchMin": 178.7,
+    "upstreamUpdateAgeAtFetchMin": 207.1,
+    "upstreamObservationAgeAtFetchMin": 482.7,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 288,
@@ -191,20 +191,20 @@
       "observedAt": "2026-11-23T19:19:17-05:00"
     },
     {
-      "symbol": "FLD",
-      "price": 0.36,
-      "changePct": 16.46716273050793,
-      "early": 78,
-      "ignition": 78,
-      "observedAt": "2026-11-23T16:20:59-05:00"
-    },
-    {
       "symbol": "GAIA",
       "price": 1.26,
       "changePct": 3.2786885245901667,
       "early": 71,
       "ignition": 85,
       "observedAt": "2026-11-23T16:00:00-05:00"
+    },
+    {
+      "symbol": "FLD",
+      "price": 0.36,
+      "changePct": 16.46716273050793,
+      "early": 78,
+      "ignition": 78,
+      "observedAt": "2026-11-23T16:20:59-05:00"
     },
     {
       "symbol": "FCHL",
@@ -263,20 +263,20 @@
       "observedAt": "2026-11-23T16:01:02-05:00"
     },
     {
-      "symbol": "TPET",
-      "price": 1.74,
-      "changePct": -0.571428571428572,
-      "early": 75,
-      "ignition": 75,
-      "observedAt": "2026-11-23T19:52:04-05:00"
-    },
-    {
       "symbol": "ESLA",
       "price": 0.302,
       "changePct": -5.919003115264802,
       "early": 75,
       "ignition": 75,
       "observedAt": "2026-11-23T18:19:53-05:00"
+    },
+    {
+      "symbol": "TPET",
+      "price": 1.74,
+      "changePct": -0.571428571428572,
+      "early": 75,
+      "ignition": 75,
+      "observedAt": "2026-11-23T19:52:04-05:00"
     },
     {
       "symbol": "LCUT",
@@ -311,17 +311,17 @@
       "observedAt": "2026-11-23T18:25:19-05:00"
     },
     {
-      "symbol": "CCIF",
-      "price": 1.44,
-      "changePct": 2.1276595744680873,
+      "symbol": "AENT",
+      "price": 4.755,
+      "changePct": 2.2580645161290223,
       "early": 67,
       "ignition": 81,
       "observedAt": "2026-11-23T16:00:00-05:00"
     },
     {
-      "symbol": "AENT",
-      "price": 4.755,
-      "changePct": 2.2580645161290223,
+      "symbol": "CCIF",
+      "price": 1.44,
+      "changePct": 2.1276595744680873,
       "early": 67,
       "ignition": 81,
       "observedAt": "2026-11-23T16:00:00-05:00"
@@ -428,13 +428,13 @@
       "title": "Tianci International, Inc.",
       "cik": "0001557798"
     },
-    "FLD": {
-      "title": "Fold Holdings, Inc.",
-      "cik": "0001889123"
-    },
     "GAIA": {
       "title": "GAIA, INC",
       "cik": "0001089872"
+    },
+    "FLD": {
+      "title": "Fold Holdings, Inc.",
+      "cik": "0001889123"
     },
     "FCHL": {
       "title": "Fitness Champs Holdings Ltd",
@@ -464,13 +464,13 @@
       "title": "DXC Technology Co",
       "cik": "0001688568"
     },
-    "TPET": {
-      "title": "Trio Petroleum Corp",
-      "cik": "0001898766"
-    },
     "ESLA": {
       "title": "Estrella Immunopharma, Inc.",
       "cik": "0001844417"
+    },
+    "TPET": {
+      "title": "Trio Petroleum Corp",
+      "cik": "0001898766"
     },
     "LCUT": {
       "title": "LIFETIME BRANDS, INC",
@@ -488,13 +488,13 @@
       "title": "Safe Pro Group Inc.",
       "cik": "0002011208"
     },
-    "CCIF": {
-      "title": "Carlyle Credit Income Fund",
-      "cik": "0001517767"
-    },
     "AENT": {
       "title": "ALLIANCE ENTERTAINMENT HOLDING CORP",
       "cik": "0001823584"
+    },
+    "CCIF": {
+      "title": "Carlyle Credit Income Fund",
+      "cik": "0001517767"
     },
     "RAIN": {
       "title": "Rain Enhancement Technologies Holdco, Inc.",
@@ -5879,6 +5879,23 @@
       ],
       "eventCount": 1
     },
+    "GAIA": {
+      "events": [
+        {
+          "symbol": "GAIA",
+          "title": "GAIA, INC",
+          "type": "SEC",
+          "form": "4",
+          "publishedAt": "2026-11-17T14:15:03.000Z",
+          "headline": "4 filing — GAIA, INC",
+          "url": "https://www.sec.gov/Archives/edgar/data/1089872/000119312526464870/xslF345X06/ownership.xml",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
     "FLD": {
       "events": [
         {
@@ -5979,23 +5996,6 @@
         }
       ],
       "eventCount": 8
-    },
-    "GAIA": {
-      "events": [
-        {
-          "symbol": "GAIA",
-          "title": "GAIA, INC",
-          "type": "SEC",
-          "form": "4",
-          "publishedAt": "2026-11-17T14:15:03.000Z",
-          "headline": "4 filing — GAIA, INC",
-          "url": "https://www.sec.gov/Archives/edgar/data/1089872/000119312526464870/xslF345X06/ownership.xml",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
     },
     "FCHL": {
       "events": [
@@ -6223,10 +6223,6 @@
       "events": [],
       "eventCount": 0
     },
-    "TPET": {
-      "events": [],
-      "eventCount": 0
-    },
     "ESLA": {
       "events": [
         {
@@ -6243,6 +6239,10 @@
         }
       ],
       "eventCount": 1
+    },
+    "TPET": {
+      "events": [],
+      "eventCount": 0
     },
     "LCUT": {
       "events": [
@@ -6395,35 +6395,6 @@
       ],
       "eventCount": 2
     },
-    "CCIF": {
-      "events": [
-        {
-          "symbol": "CCIF",
-          "title": "Carlyle Credit Income Fund",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-11-18T21:02:40.000Z",
-          "headline": "8-K filing — Carlyle Credit Income Fund",
-          "url": "https://www.sec.gov/Archives/edgar/data/1517767/000151776726000045/ccif-20261118.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "CCIF",
-          "title": "Carlyle Credit Income Fund",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-11-13T21:14:11.000Z",
-          "headline": "8-K filing — Carlyle Credit Income Fund",
-          "url": "https://www.sec.gov/Archives/edgar/data/1517767/000162828026073840/ccif-20261113.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
-    },
     "AENT": {
       "events": [
         {
@@ -6446,6 +6417,35 @@
           "publishedAt": "2026-11-10T13:00:16.000Z",
           "headline": "8-K filing — ALLIANCE ENTERTAINMENT HOLDING CORP",
           "url": "https://www.sec.gov/Archives/edgar/data/1823584/000149315226050866/form8-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 2
+    },
+    "CCIF": {
+      "events": [
+        {
+          "symbol": "CCIF",
+          "title": "Carlyle Credit Income Fund",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-11-18T21:02:40.000Z",
+          "headline": "8-K filing — Carlyle Credit Income Fund",
+          "url": "https://www.sec.gov/Archives/edgar/data/1517767/000151776726000045/ccif-20261118.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "CCIF",
+          "title": "Carlyle Credit Income Fund",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-11-13T21:14:11.000Z",
+          "headline": "8-K filing — Carlyle Credit Income Fund",
+          "url": "https://www.sec.gov/Archives/edgar/data/1517767/000162828026073840/ccif-20261113.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
