@@ -1,24 +1,24 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-27T04:55:58.199Z",
+  "generatedAt": "2026-11-27T10:37:15.923Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
     "marketDataFresh": false,
-    "marketWindowOpen": false,
-    "marketSession": "closed",
+    "marketWindowOpen": true,
+    "marketSession": "pre-market",
     "newestObservedAt": "2026-11-26T00:59:59.000Z",
-    "marketDataAgeMin": 1676,
+    "marketDataAgeMin": 2017.3,
     "quoteCount": 735,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-11-27T04:55:58.877Z",
-    "upstreamUpdatedAtAtBuild": "2026-11-27T02:41:32.350Z",
+    "upstreamFeedFetchedAt": "2026-11-27T10:37:16.308Z",
+    "upstreamUpdatedAtAtBuild": "2026-11-27T08:01:47.998Z",
     "upstreamNewestObservedAtAtBuild": "2026-11-26T00:59:59.000Z",
-    "upstreamUpdateAgeAtFetchMin": 134.4,
-    "upstreamObservationAgeAtFetchMin": 1676,
+    "upstreamUpdateAgeAtFetchMin": 155.5,
+    "upstreamObservationAgeAtFetchMin": 2017.3,
     "secMapping": true,
-    "secMarketwideDiscovery": true,
-    "secMarketwideEventCount": 280,
+    "secMarketwideDiscovery": false,
+    "secMarketwideEventCount": 267,
     "newsDiscovery": true
   },
   "shortlist": [
@@ -183,20 +183,20 @@
       "observedAt": "2026-11-25T19:19:23-05:00"
     },
     {
-      "symbol": "NTCL",
-      "price": 1.8,
-      "changePct": 5.263157894736847,
-      "early": 80,
-      "ignition": 80,
-      "observedAt": "2026-11-25T19:02:31-05:00"
-    },
-    {
       "symbol": "SSM",
       "price": 0.7475,
       "changePct": 1.150202976995949,
       "early": 80,
       "ignition": 80,
       "observedAt": "2026-11-25T17:29:54-05:00"
+    },
+    {
+      "symbol": "NTCL",
+      "price": 1.8,
+      "changePct": 5.263157894736847,
+      "early": 80,
+      "ignition": 80,
+      "observedAt": "2026-11-25T19:02:31-05:00"
     },
     {
       "symbol": "IPDN",
@@ -263,17 +263,17 @@
       "observedAt": "2026-11-25T16:00:15-05:00"
     },
     {
-      "symbol": "SPAI",
-      "price": 2.23,
-      "changePct": 2.293577981651368,
+      "symbol": "PLBL",
+      "price": 7.95,
+      "changePct": 3.7859007832898173,
       "early": 69,
       "ignition": 83,
       "observedAt": "2026-11-25T16:00:00-05:00"
     },
     {
-      "symbol": "PLBL",
-      "price": 7.95,
-      "changePct": 3.7859007832898173,
+      "symbol": "SPAI",
+      "price": 2.23,
+      "changePct": 2.293577981651368,
       "early": 69,
       "ignition": 83,
       "observedAt": "2026-11-25T16:00:00-05:00"
@@ -319,20 +319,20 @@
       "observedAt": "2026-11-25T16:00:00-05:00"
     },
     {
-      "symbol": "TNMG",
-      "price": 2.3,
-      "changePct": 0.8771929824561412,
-      "early": 74,
-      "ignition": 74,
-      "observedAt": "2026-11-25T16:00:00-05:00"
-    },
-    {
       "symbol": "GMHS",
       "price": 0.8,
       "changePct": 12.97839288236126,
       "early": 74,
       "ignition": 74,
       "observedAt": "2026-11-25T16:00:24-05:00"
+    },
+    {
+      "symbol": "TNMG",
+      "price": 2.3,
+      "changePct": 0.8771929824561412,
+      "early": 74,
+      "ignition": 74,
+      "observedAt": "2026-11-25T16:00:00-05:00"
     },
     {
       "symbol": "ARTW",
@@ -424,13 +424,13 @@
       "title": "STEM, INC.",
       "cik": "0001758766"
     },
-    "NTCL": {
-      "title": "NetClass Technology Inc",
-      "cik": "0001927578"
-    },
     "SSM": {
       "title": "Sono Group N.V.",
       "cik": "0001840416"
+    },
+    "NTCL": {
+      "title": "NetClass Technology Inc",
+      "cik": "0001927578"
     },
     "IPDN": {
       "title": "Professional Diversity Network, Inc.",
@@ -464,13 +464,13 @@
       "title": "DMC Global Inc.",
       "cik": "0000034067"
     },
-    "SPAI": {
-      "title": "Safe Pro Group Inc.",
-      "cik": "0002011208"
-    },
     "PLBL": {
       "title": "Polibeli Group Ltd",
       "cik": "0002035697"
+    },
+    "SPAI": {
+      "title": "Safe Pro Group Inc.",
+      "cik": "0002011208"
     },
     "LIMN": {
       "title": "Liminatus Pharma, Inc.",
@@ -492,20 +492,20 @@
       "title": "Bitzero Holdings Inc.",
       "cik": "0002100457"
     },
-    "TNMG": {
-      "title": "TNL Mediagene",
-      "cik": "0002013186"
-    },
     "GMHS": {
       "title": "Gamehaus Holdings Inc.",
       "cik": "0002000530"
+    },
+    "TNMG": {
+      "title": "TNL Mediagene",
+      "cik": "0002013186"
     },
     "ARTW": {
       "title": "ARTS WAY MANUFACTURING CO INC",
       "cik": "0000007623"
     }
   },
-  "eventCount": 371,
+  "eventCount": 358,
   "events": [
     {
       "symbol": "BML-PJ",
@@ -712,18 +712,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BTCY",
-      "title": "BIOTRICITY INC.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-11-25T17:22:07-05:00",
-      "headline": "S-1 filing — BIOTRICITY INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1630113/000149315226054303/0001493152-26-054303-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
       "symbol": "ROK",
       "title": "ROCKWELL AUTOMATION, INC",
       "type": "SEC",
@@ -815,18 +803,6 @@
       "publishedAt": "2026-11-25T17:17:11-05:00",
       "headline": "6-K filing — MAYFAIR GOLD CORP.",
       "url": "https://www.sec.gov/Archives/edgar/data/1823255/000110465926132169/0001104659-26-132169-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "AICP",
-      "title": "Compute AI Acquisition Corp.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-11-25T17:15:43-05:00",
-      "headline": "S-1 filing — Compute AI Acquisition Corp.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2158099/000149315226054294/0001493152-26-054294-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -2008,18 +1984,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "DAIO",
-      "title": "DATA I/O CORP",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-11-25T16:27:40-05:00",
-      "headline": "S-1 filing — DATA I/O CORP",
-      "url": "https://www.sec.gov/Archives/edgar/data/351998/000119312526478540/0001193125-26-478540-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
       "symbol": "DSX-WT",
       "title": "DIANA SHIPPING INC.",
       "type": "SEC",
@@ -2860,18 +2824,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "EONR-WT",
-      "title": "EON Resources Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-11-25T16:01:25-05:00",
-      "headline": "S-1 filing — EON Resources Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1842556/000121390026124137/0001213900-26-124137-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
       "symbol": "YMT",
       "title": "Yimutian Inc.",
       "type": "SEC",
@@ -2980,18 +2932,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BIAFW",
-      "title": "bioAffinity Technologies, Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-11-25T16:00:59-05:00",
-      "headline": "S-1 filing — bioAffinity Technologies, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1712762/000149315226054208/0001493152-26-054208-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
       "symbol": "PERI",
       "title": "Perion Network Ltd.",
       "type": "SEC",
@@ -3023,30 +2963,6 @@
       "publishedAt": "2026-11-25T16:00:17-05:00",
       "headline": "6-K filing — TOWER SEMICONDUCTOR LTD",
       "url": "https://www.sec.gov/Archives/edgar/data/928876/000117891326005369/0001178913-26-005369-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "DPLS",
-      "title": "DarkPulse, Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-11-25T14:30:32-05:00",
-      "headline": "S-1 filing — DarkPulse, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/866439/000168316826009139/0001683168-26-009139-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "KACQ",
-      "title": "Kartoon Studios Acquisition Corp",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-11-25T13:51:05-05:00",
-      "headline": "S-1 filing — Kartoon Studios Acquisition Corp",
-      "url": "https://www.sec.gov/Archives/edgar/data/2160422/000110465926132022/0001104659-26-132022-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -3095,18 +3011,6 @@
       "publishedAt": "2026-11-25T12:49:14-05:00",
       "headline": "6-K filing — BRBI BR Partners S.A.",
       "url": "https://www.sec.gov/Archives/edgar/data/2058601/000121390026124071/0001213900-26-124071-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "CSCM",
-      "title": "Crestone Strategic Capital Acquisition Corp",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-11-25T12:23:01-05:00",
-      "headline": "S-1 filing — Crestone Strategic Capital Acquisition Corp",
-      "url": "https://www.sec.gov/Archives/edgar/data/2136449/000149315226054154/0001493152-26-054154-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -3712,18 +3616,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BIVIW",
-      "title": "BIOVIE INC.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-11-24T17:15:51-05:00",
-      "headline": "S-1 filing — BIOVIE INC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1580149/000152013826000524/0001520138-26-000524-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
       "symbol": "CLSKW",
       "title": "CLEANSPARK, INC.",
       "type": "SEC",
@@ -3743,30 +3635,6 @@
       "publishedAt": "2026-11-24T17:00:21-05:00",
       "headline": "S-3 filing — XBP Global Holdings, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1839530/000110465926131671/0001104659-26-131671-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "XPON",
-      "title": "Expion Energy, Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-11-24T16:58:52-05:00",
-      "headline": "S-1 filing — Expion Energy, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1894954/000190359626000445/0001903596-26-000445-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "KLNG",
-      "title": "Koil Energy Solutions, Inc.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-11-24T16:36:38-05:00",
-      "headline": "S-1 filing — Koil Energy Solutions, Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1110607/000168316826009099/0001683168-26-009099-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -3820,18 +3688,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "BBGI",
-      "title": "BEASLEY BROADCAST GROUP INC",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-11-24T16:16:52-05:00",
-      "headline": "S-1 filing — BEASLEY BROADCAST GROUP INC",
-      "url": "https://www.sec.gov/Archives/edgar/data/1099160/000119312526475735/0001193125-26-475735-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
       "symbol": "PBF",
       "title": "PBF Energy Inc.",
       "type": "SEC",
@@ -3851,18 +3707,6 @@
       "publishedAt": "2026-11-24T16:03:30-05:00",
       "headline": "S-3 filing — Zai Lab Ltd",
       "url": "https://www.sec.gov/Archives/edgar/data/1704292/000162828026075713/0001628280-26-075713-index.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "MARKET_WIDE"
-    },
-    {
-      "symbol": "ELMT",
-      "title": "Elmet Group Co.",
-      "type": "SEC",
-      "form": "S-1",
-      "publishedAt": "2026-11-24T16:02:48-05:00",
-      "headline": "S-1 filing — Elmet Group Co.",
-      "url": "https://www.sec.gov/Archives/edgar/data/2101698/000121390026123658/0001213900-26-123658-index.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "MARKET_WIDE"
@@ -5707,6 +5551,35 @@
       ],
       "eventCount": 3
     },
+    "SSM": {
+      "events": [
+        {
+          "symbol": "SSM",
+          "title": "Sono Group N.V.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-11-16T11:30:19.000Z",
+          "headline": "8-K filing — Sono Group N.V.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1840416/000117184326007456/f8k_111626.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "SSM",
+          "title": "Sono Group N.V.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-11-10T11:30:19.000Z",
+          "headline": "8-K filing — Sono Group N.V.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1840416/000117184326007302/f8k_111026.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 2
+    },
     "NTCL": {
       "events": [
         {
@@ -5747,35 +5620,6 @@
         }
       ],
       "eventCount": 3
-    },
-    "SSM": {
-      "events": [
-        {
-          "symbol": "SSM",
-          "title": "Sono Group N.V.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-11-16T11:30:19.000Z",
-          "headline": "8-K filing — Sono Group N.V.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1840416/000117184326007456/f8k_111626.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "SSM",
-          "title": "Sono Group N.V.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-11-10T11:30:19.000Z",
-          "headline": "8-K filing — Sono Group N.V.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1840416/000117184326007302/f8k_111026.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
     },
     "IPDN": {
       "events": [
@@ -5958,6 +5802,23 @@
       "events": [],
       "eventCount": 0
     },
+    "PLBL": {
+      "events": [
+        {
+          "symbol": "PLBL",
+          "title": "Polibeli Group Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-11-12T11:03:10.000Z",
+          "headline": "6-K filing — Polibeli Group Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/2035697/000121390026118261/ea0311980-6k_polibeli.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
     "SPAI": {
       "events": [
         {
@@ -5986,23 +5847,6 @@
         }
       ],
       "eventCount": 2
-    },
-    "PLBL": {
-      "events": [
-        {
-          "symbol": "PLBL",
-          "title": "Polibeli Group Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-11-12T11:03:10.000Z",
-          "headline": "6-K filing — Polibeli Group Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/2035697/000121390026118261/ea0311980-6k_polibeli.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
     },
     "LIMN": {
       "events": [
@@ -6173,23 +6017,6 @@
       ],
       "eventCount": 1
     },
-    "TNMG": {
-      "events": [
-        {
-          "symbol": "TNMG",
-          "title": "TNL Mediagene",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-11-18T16:36:56.000Z",
-          "headline": "6-K filing — TNL Mediagene",
-          "url": "https://www.sec.gov/Archives/edgar/data/2013186/000121390026121694/ea0312623-6k_tnl.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
     "GMHS": {
       "events": [
         {
@@ -6254,6 +6081,23 @@
         }
       ],
       "eventCount": 5
+    },
+    "TNMG": {
+      "events": [
+        {
+          "symbol": "TNMG",
+          "title": "TNL Mediagene",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-11-18T16:36:56.000Z",
+          "headline": "6-K filing — TNL Mediagene",
+          "url": "https://www.sec.gov/Archives/edgar/data/2013186/000121390026121694/ea0312623-6k_tnl.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
     },
     "ARTW": {
       "events": [],
@@ -6681,23 +6525,6 @@
       ],
       "eventCount": 1
     },
-    "BTCY": {
-      "events": [
-        {
-          "symbol": "BTCY",
-          "title": "BIOTRICITY INC.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-11-25T17:22:07-05:00",
-          "headline": "S-1 filing — BIOTRICITY INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1630113/000149315226054303/0001493152-26-054303-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
     "ROK": {
       "events": [
         {
@@ -6788,23 +6615,6 @@
           "publishedAt": "2026-11-25T17:17:11-05:00",
           "headline": "6-K filing — MAYFAIR GOLD CORP.",
           "url": "https://www.sec.gov/Archives/edgar/data/1823255/000110465926132169/0001104659-26-132169-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "AICP": {
-      "events": [
-        {
-          "symbol": "AICP",
-          "title": "Compute AI Acquisition Corp.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-11-25T17:15:43-05:00",
-          "headline": "S-1 filing — Compute AI Acquisition Corp.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2158099/000149315226054294/0001493152-26-054294-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -8037,23 +7847,6 @@
       ],
       "eventCount": 1
     },
-    "DAIO": {
-      "events": [
-        {
-          "symbol": "DAIO",
-          "title": "DATA I/O CORP",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-11-25T16:27:40-05:00",
-          "headline": "S-1 filing — DATA I/O CORP",
-          "url": "https://www.sec.gov/Archives/edgar/data/351998/000119312526478540/0001193125-26-478540-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
     "DSX-WT": {
       "events": [
         {
@@ -9236,23 +9029,6 @@
       ],
       "eventCount": 1
     },
-    "EONR-WT": {
-      "events": [
-        {
-          "symbol": "EONR-WT",
-          "title": "EON Resources Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-11-25T16:01:25-05:00",
-          "headline": "S-1 filing — EON Resources Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1842556/000121390026124137/0001213900-26-124137-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
     "YMT": {
       "events": [
         {
@@ -9418,35 +9194,6 @@
       ],
       "eventCount": 1
     },
-    "BIAFW": {
-      "events": [
-        {
-          "symbol": "BIAFW",
-          "title": "bioAffinity Technologies, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-11-25T16:00:59-05:00",
-          "headline": "S-1 filing — bioAffinity Technologies, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1712762/000149315226054208/0001493152-26-054208-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        },
-        {
-          "symbol": "BIAFW",
-          "title": "bioAffinity Technologies, Inc.",
-          "type": "SEC",
-          "form": "S-3",
-          "publishedAt": "2026-11-24T17:18:41-05:00",
-          "headline": "S-3 filing — bioAffinity Technologies, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1712762/000149315226054052/0001493152-26-054052-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 2
-    },
     "PERI": {
       "events": [
         {
@@ -9491,40 +9238,6 @@
           "publishedAt": "2026-11-25T16:00:17-05:00",
           "headline": "6-K filing — TOWER SEMICONDUCTOR LTD",
           "url": "https://www.sec.gov/Archives/edgar/data/928876/000117891326005369/0001178913-26-005369-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "DPLS": {
-      "events": [
-        {
-          "symbol": "DPLS",
-          "title": "DarkPulse, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-11-25T14:30:32-05:00",
-          "headline": "S-1 filing — DarkPulse, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/866439/000168316826009139/0001683168-26-009139-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "KACQ": {
-      "events": [
-        {
-          "symbol": "KACQ",
-          "title": "Kartoon Studios Acquisition Corp",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-11-25T13:51:05-05:00",
-          "headline": "S-1 filing — Kartoon Studios Acquisition Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/2160422/000110465926132022/0001104659-26-132022-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -9593,23 +9306,6 @@
           "publishedAt": "2026-11-25T12:49:14-05:00",
           "headline": "6-K filing — BRBI BR Partners S.A.",
           "url": "https://www.sec.gov/Archives/edgar/data/2058601/000121390026124071/0001213900-26-124071-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "CSCM": {
-      "events": [
-        {
-          "symbol": "CSCM",
-          "title": "Crestone Strategic Capital Acquisition Corp",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-11-25T12:23:01-05:00",
-          "headline": "S-1 filing — Crestone Strategic Capital Acquisition Corp",
-          "url": "https://www.sec.gov/Archives/edgar/data/2136449/000149315226054154/0001493152-26-054154-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -10377,16 +10073,16 @@
       ],
       "eventCount": 1
     },
-    "BIVIW": {
+    "BIAFW": {
       "events": [
         {
-          "symbol": "BIVIW",
-          "title": "BIOVIE INC.",
+          "symbol": "BIAFW",
+          "title": "bioAffinity Technologies, Inc.",
           "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-11-24T17:15:51-05:00",
-          "headline": "S-1 filing — BIOVIE INC.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1580149/000152013826000524/0001520138-26-000524-index.htm",
+          "form": "S-3",
+          "publishedAt": "2026-11-24T17:18:41-05:00",
+          "headline": "S-3 filing — bioAffinity Technologies, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1712762/000149315226054052/0001493152-26-054052-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -10421,40 +10117,6 @@
           "publishedAt": "2026-11-24T17:00:21-05:00",
           "headline": "S-3 filing — XBP Global Holdings, Inc.",
           "url": "https://www.sec.gov/Archives/edgar/data/1839530/000110465926131671/0001104659-26-131671-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "XPON": {
-      "events": [
-        {
-          "symbol": "XPON",
-          "title": "Expion Energy, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-11-24T16:58:52-05:00",
-          "headline": "S-1 filing — Expion Energy, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1894954/000190359626000445/0001903596-26-000445-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "KLNG": {
-      "events": [
-        {
-          "symbol": "KLNG",
-          "title": "Koil Energy Solutions, Inc.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-11-24T16:36:38-05:00",
-          "headline": "S-1 filing — Koil Energy Solutions, Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1110607/000168316826009099/0001683168-26-009099-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -10513,23 +10175,6 @@
       ],
       "eventCount": 1
     },
-    "BBGI": {
-      "events": [
-        {
-          "symbol": "BBGI",
-          "title": "BEASLEY BROADCAST GROUP INC",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-11-24T16:16:52-05:00",
-          "headline": "S-1 filing — BEASLEY BROADCAST GROUP INC",
-          "url": "https://www.sec.gov/Archives/edgar/data/1099160/000119312526475735/0001193125-26-475735-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
     "PBF": {
       "events": [
         {
@@ -10557,23 +10202,6 @@
           "publishedAt": "2026-11-24T16:03:30-05:00",
           "headline": "S-3 filing — Zai Lab Ltd",
           "url": "https://www.sec.gov/Archives/edgar/data/1704292/000162828026075713/0001628280-26-075713-index.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "MARKET_WIDE"
-        }
-      ],
-      "eventCount": 1
-    },
-    "ELMT": {
-      "events": [
-        {
-          "symbol": "ELMT",
-          "title": "Elmet Group Co.",
-          "type": "SEC",
-          "form": "S-1",
-          "publishedAt": "2026-11-24T16:02:48-05:00",
-          "headline": "S-1 filing — Elmet Group Co.",
-          "url": "https://www.sec.gov/Archives/edgar/data/2101698/000121390026123658/0001213900-26-123658-index.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "MARKET_WIDE"
@@ -10616,6 +10244,9 @@
       "eventCount": 1
     }
   },
-  "errors": [],
+  "errors": [
+    "SEC_CURRENT_S-1:This operation was aborted",
+    "SEC_CURRENT_SC 13G:This operation was aborted"
+  ],
   "policy": "Public-source intelligence. Market-wide SEC current-filing discovery is primary-source and independent of the price shortlist. `sourceStatus.live` means the loaded market universe contains fresh market data inside the active US extended-hours window; loaded-but-stale/session-final data is never labeled live. Shortlist ranking does not determine feed-level freshness. Upstream feed timestamps are retained only as operational provenance and do not override quote observation freshness or trading eligibility. SEC filings are primary-source events; GDELT is discovery-only and requires source-level verification before trade decisions."
 }
