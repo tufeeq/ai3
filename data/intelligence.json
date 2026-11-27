@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-27T01:57:47.776Z",
+  "generatedAt": "2026-11-27T04:55:58.199Z",
   "sourceStatus": {
     "live": false,
     "marketDataLoaded": true,
@@ -8,14 +8,14 @@
     "marketWindowOpen": false,
     "marketSession": "closed",
     "newestObservedAt": "2026-11-26T00:59:59.000Z",
-    "marketDataAgeMin": 1497.8,
+    "marketDataAgeMin": 1676,
     "quoteCount": 735,
     "freshnessScope": "ALL_LOADED_QUOTES",
-    "upstreamFeedFetchedAt": "2026-11-27T01:57:48.201Z",
-    "upstreamUpdatedAtAtBuild": "2026-11-27T01:55:50.008Z",
+    "upstreamFeedFetchedAt": "2026-11-27T04:55:58.877Z",
+    "upstreamUpdatedAtAtBuild": "2026-11-27T02:41:32.350Z",
     "upstreamNewestObservedAtAtBuild": "2026-11-26T00:59:59.000Z",
-    "upstreamUpdateAgeAtFetchMin": 2,
-    "upstreamObservationAgeAtFetchMin": 1497.8,
+    "upstreamUpdateAgeAtFetchMin": 134.4,
+    "upstreamObservationAgeAtFetchMin": 1676,
     "secMapping": true,
     "secMarketwideDiscovery": true,
     "secMarketwideEventCount": 280,
@@ -135,6 +135,14 @@
       "observedAt": "2026-11-25T18:59:50-05:00"
     },
     {
+      "symbol": "HTCO",
+      "price": 1.2,
+      "changePct": 11.1111111111111,
+      "early": 83,
+      "ignition": 83,
+      "observedAt": "2026-11-25T19:29:32-05:00"
+    },
+    {
       "symbol": "ANNA",
       "price": 1.87,
       "changePct": 3.8888888888888924,
@@ -199,20 +207,20 @@
       "observedAt": "2026-11-25T16:00:00-05:00"
     },
     {
+      "symbol": "OPNW",
+      "price": 0.5498,
+      "changePct": 13.360824742268035,
+      "early": 80,
+      "ignition": 80,
+      "observedAt": "2026-11-25T18:21:49-05:00"
+    },
+    {
       "symbol": "LGHL",
       "price": 0.91,
       "changePct": -1.5577672003461671,
       "early": 80,
       "ignition": 80,
       "observedAt": "2026-11-25T19:44:31-05:00"
-    },
-    {
-      "symbol": "XRTX",
-      "price": 1.1,
-      "changePct": 0,
-      "early": 80,
-      "ignition": 80,
-      "observedAt": "2026-11-25T18:38:38-05:00"
     },
     {
       "symbol": "ZYBT",
@@ -239,14 +247,6 @@
       "observedAt": "2026-11-25T19:23:24-05:00"
     },
     {
-      "symbol": "OPNW",
-      "price": 0.5498,
-      "changePct": 13.360824742268035,
-      "early": 78,
-      "ignition": 78,
-      "observedAt": "2026-11-25T18:21:49-05:00"
-    },
-    {
       "symbol": "SPHL",
       "price": 2.45,
       "changePct": -1.9999999999999927,
@@ -255,12 +255,12 @@
       "observedAt": "2026-11-25T16:48:09-05:00"
     },
     {
-      "symbol": "PLBL",
-      "price": 7.95,
-      "changePct": 3.7859007832898173,
+      "symbol": "BOOM",
+      "price": 6.75,
+      "changePct": 1.351351351351349,
       "early": 69,
       "ignition": 83,
-      "observedAt": "2026-11-25T16:00:00-05:00"
+      "observedAt": "2026-11-25T16:00:15-05:00"
     },
     {
       "symbol": "SPAI",
@@ -271,12 +271,12 @@
       "observedAt": "2026-11-25T16:00:00-05:00"
     },
     {
-      "symbol": "BOOM",
-      "price": 6.75,
-      "changePct": 1.351351351351349,
+      "symbol": "PLBL",
+      "price": 7.95,
+      "changePct": 3.7859007832898173,
       "early": 69,
       "ignition": 83,
-      "observedAt": "2026-11-25T16:00:15-05:00"
+      "observedAt": "2026-11-25T16:00:00-05:00"
     },
     {
       "symbol": "LIMN",
@@ -319,20 +319,20 @@
       "observedAt": "2026-11-25T16:00:00-05:00"
     },
     {
-      "symbol": "GMHS",
-      "price": 0.8,
-      "changePct": 12.97839288236126,
-      "early": 74,
-      "ignition": 74,
-      "observedAt": "2026-11-25T16:00:24-05:00"
-    },
-    {
       "symbol": "TNMG",
       "price": 2.3,
       "changePct": 0.8771929824561412,
       "early": 74,
       "ignition": 74,
       "observedAt": "2026-11-25T16:00:00-05:00"
+    },
+    {
+      "symbol": "GMHS",
+      "price": 0.8,
+      "changePct": 12.97839288236126,
+      "early": 74,
+      "ignition": 74,
+      "observedAt": "2026-11-25T16:00:24-05:00"
     },
     {
       "symbol": "ARTW",
@@ -400,6 +400,10 @@
       "title": "HCW Biologics Inc.",
       "cik": "0001828673"
     },
+    "HTCO": {
+      "title": "High-Trend International Group",
+      "cik": "0001928948"
+    },
     "ANNA": {
       "title": "AleAnna, Inc.",
       "cik": "0001845123"
@@ -432,13 +436,13 @@
       "title": "Professional Diversity Network, Inc.",
       "cik": "0001546296"
     },
+    "OPNW": {
+      "title": "OpenWorld, Inc.",
+      "cik": "0001104038"
+    },
     "LGHL": {
       "title": "Lion Group Holding Ltd",
       "cik": "0001806524"
-    },
-    "XRTX": {
-      "title": "XORTX Therapeutics Inc.",
-      "cik": "0001729214"
     },
     "ZYBT": {
       "title": "Zhengye Biotechnology Holding Ltd",
@@ -452,25 +456,21 @@
       "title": "ONE Nuclear Energy Inc.",
       "cik": "0001846416"
     },
-    "OPNW": {
-      "title": "OpenWorld, Inc.",
-      "cik": "0001104038"
-    },
     "SPHL": {
       "title": "SPRINGVIEW HOLDINGS LTD",
       "cik": "0002002236"
     },
-    "PLBL": {
-      "title": "Polibeli Group Ltd",
-      "cik": "0002035697"
+    "BOOM": {
+      "title": "DMC Global Inc.",
+      "cik": "0000034067"
     },
     "SPAI": {
       "title": "Safe Pro Group Inc.",
       "cik": "0002011208"
     },
-    "BOOM": {
-      "title": "DMC Global Inc.",
-      "cik": "0000034067"
+    "PLBL": {
+      "title": "Polibeli Group Ltd",
+      "cik": "0002035697"
     },
     "LIMN": {
       "title": "Liminatus Pharma, Inc.",
@@ -492,20 +492,20 @@
       "title": "Bitzero Holdings Inc.",
       "cik": "0002100457"
     },
-    "GMHS": {
-      "title": "Gamehaus Holdings Inc.",
-      "cik": "0002000530"
-    },
     "TNMG": {
       "title": "TNL Mediagene",
       "cik": "0002013186"
+    },
+    "GMHS": {
+      "title": "Gamehaus Holdings Inc.",
+      "cik": "0002000530"
     },
     "ARTW": {
       "title": "ARTS WAY MANUFACTURING CO INC",
       "cik": "0000007623"
     }
   },
-  "eventCount": 374,
+  "eventCount": 371,
   "events": [
     {
       "symbol": "BML-PJ",
@@ -3760,18 +3760,6 @@
       "discoveryScope": "MARKET_WIDE"
     },
     {
-      "symbol": "XRTX",
-      "title": "XORTX Therapeutics Inc.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-11-24T21:57:07.000Z",
-      "headline": "6-K filing — XORTX Therapeutics Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1729214/000117184326007700/f6k_112426.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "KLNG",
       "title": "Koil Energy Solutions, Inc.",
       "type": "SEC",
@@ -4492,18 +4480,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "XRTX",
-      "title": "XORTX Therapeutics Inc.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-11-16T13:05:05.000Z",
-      "headline": "6-K filing — XORTX Therapeutics Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1729214/000117184326007459/f6k_111626.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "SSM",
       "title": "Sono Group N.V.",
       "type": "SEC",
@@ -4528,18 +4504,6 @@
       "discoveryScope": "SHORTLIST_ENRICHMENT"
     },
     {
-      "symbol": "XRTX",
-      "title": "XORTX Therapeutics Inc.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-11-14T02:21:26.000Z",
-      "headline": "6-K filing — XORTX Therapeutics Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1729214/000117184326007439/f6k_111326.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
       "symbol": "NAKA",
       "title": "Nakamoto Inc.",
       "type": "SEC",
@@ -4559,18 +4523,6 @@
       "publishedAt": "2026-11-13T22:29:12.000Z",
       "headline": "424B5 filing — Nakamoto Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1946573/000149315226051869/form424b5.htm",
-      "source": "SEC EDGAR",
-      "verification": "PRIMARY",
-      "discoveryScope": "SHORTLIST_ENRICHMENT"
-    },
-    {
-      "symbol": "XRTX",
-      "title": "XORTX Therapeutics Inc.",
-      "type": "SEC",
-      "form": "6-K",
-      "publishedAt": "2026-11-13T21:58:52.000Z",
-      "headline": "6-K filing — XORTX Therapeutics Inc.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1729214/000117184326007428/f6k_111326.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -4835,6 +4787,18 @@
       "publishedAt": "2026-11-10T21:30:13.000Z",
       "headline": "6-K filing — NetClass Technology Inc",
       "url": "https://www.sec.gov/Archives/edgar/data/1927578/000110465926125240/tm2629469d1_6k.htm",
+      "source": "SEC EDGAR",
+      "verification": "PRIMARY",
+      "discoveryScope": "SHORTLIST_ENRICHMENT"
+    },
+    {
+      "symbol": "HTCO",
+      "title": "High-Trend International Group",
+      "type": "SEC",
+      "form": "6-K",
+      "publishedAt": "2026-11-10T21:30:01.000Z",
+      "headline": "6-K filing — High-Trend International Group",
+      "url": "https://www.sec.gov/Archives/edgar/data/1928948/000121390026118058/ea0311599-6k_hightrend.htm",
       "source": "SEC EDGAR",
       "verification": "PRIMARY",
       "discoveryScope": "SHORTLIST_ENRICHMENT"
@@ -5521,6 +5485,23 @@
       ],
       "eventCount": 2
     },
+    "HTCO": {
+      "events": [
+        {
+          "symbol": "HTCO",
+          "title": "High-Trend International Group",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-11-10T21:30:01.000Z",
+          "headline": "6-K filing — High-Trend International Group",
+          "url": "https://www.sec.gov/Archives/edgar/data/1928948/000121390026118058/ea0311599-6k_hightrend.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
     "ANNA": {
       "events": [
         {
@@ -5813,138 +5794,6 @@
       ],
       "eventCount": 1
     },
-    "LGHL": {
-      "events": [],
-      "eventCount": 0
-    },
-    "XRTX": {
-      "events": [
-        {
-          "symbol": "XRTX",
-          "title": "XORTX Therapeutics Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-11-24T21:57:07.000Z",
-          "headline": "6-K filing — XORTX Therapeutics Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1729214/000117184326007700/f6k_112426.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "XRTX",
-          "title": "XORTX Therapeutics Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-11-16T13:05:05.000Z",
-          "headline": "6-K filing — XORTX Therapeutics Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1729214/000117184326007459/f6k_111626.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "XRTX",
-          "title": "XORTX Therapeutics Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-11-14T02:21:26.000Z",
-          "headline": "6-K filing — XORTX Therapeutics Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1729214/000117184326007439/f6k_111326.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "XRTX",
-          "title": "XORTX Therapeutics Inc.",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-11-13T21:58:52.000Z",
-          "headline": "6-K filing — XORTX Therapeutics Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1729214/000117184326007428/f6k_111326.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 4
-    },
-    "ZYBT": {
-      "events": [
-        {
-          "symbol": "ZYBT",
-          "title": "Zhengye Biotechnology Holding Ltd",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-11-12T21:10:36.000Z",
-          "headline": "6-K filing — Zhengye Biotechnology Holding Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/1975641/000121390026118931/ea0310428-6k_zhengye.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
-    },
-    "LGVN": {
-      "events": [
-        {
-          "symbol": "LGVN",
-          "title": "Longeveron Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-11-23T21:34:36.000Z",
-          "headline": "8-K filing — Longeveron Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1721484/000121390026123218/ea0313290-8k_longeveron.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "LGVN",
-          "title": "Longeveron Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-11-12T22:11:55.000Z",
-          "headline": "8-K filing — Longeveron Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1721484/000121390026119052/ea0311944-8k_longeveron.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
-    },
-    "ONEN": {
-      "events": [
-        {
-          "symbol": "ONEN",
-          "title": "ONE Nuclear Energy Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-11-20T22:17:40.000Z",
-          "headline": "8-K filing — ONE Nuclear Energy Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1846416/000149315226053556/form8-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        },
-        {
-          "symbol": "ONEN",
-          "title": "ONE Nuclear Energy Inc.",
-          "type": "SEC",
-          "form": "8-K",
-          "publishedAt": "2026-11-16T22:11:12.000Z",
-          "headline": "8-K filing — ONE Nuclear Energy Inc.",
-          "url": "https://www.sec.gov/Archives/edgar/data/1846416/000149315226052554/form8-k.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 2
-    },
     "OPNW": {
       "events": [
         {
@@ -6022,26 +5871,92 @@
       ],
       "eventCount": 6
     },
-    "SPHL": {
+    "LGHL": {
       "events": [],
       "eventCount": 0
     },
-    "PLBL": {
+    "ZYBT": {
       "events": [
         {
-          "symbol": "PLBL",
-          "title": "Polibeli Group Ltd",
+          "symbol": "ZYBT",
+          "title": "Zhengye Biotechnology Holding Ltd",
           "type": "SEC",
           "form": "6-K",
-          "publishedAt": "2026-11-12T11:03:10.000Z",
-          "headline": "6-K filing — Polibeli Group Ltd",
-          "url": "https://www.sec.gov/Archives/edgar/data/2035697/000121390026118261/ea0311980-6k_polibeli.htm",
+          "publishedAt": "2026-11-12T21:10:36.000Z",
+          "headline": "6-K filing — Zhengye Biotechnology Holding Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/1975641/000121390026118931/ea0310428-6k_zhengye.htm",
           "source": "SEC EDGAR",
           "verification": "PRIMARY",
           "discoveryScope": "SHORTLIST_ENRICHMENT"
         }
       ],
       "eventCount": 1
+    },
+    "LGVN": {
+      "events": [
+        {
+          "symbol": "LGVN",
+          "title": "Longeveron Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-11-23T21:34:36.000Z",
+          "headline": "8-K filing — Longeveron Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1721484/000121390026123218/ea0313290-8k_longeveron.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "LGVN",
+          "title": "Longeveron Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-11-12T22:11:55.000Z",
+          "headline": "8-K filing — Longeveron Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1721484/000121390026119052/ea0311944-8k_longeveron.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 2
+    },
+    "ONEN": {
+      "events": [
+        {
+          "symbol": "ONEN",
+          "title": "ONE Nuclear Energy Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-11-20T22:17:40.000Z",
+          "headline": "8-K filing — ONE Nuclear Energy Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1846416/000149315226053556/form8-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        },
+        {
+          "symbol": "ONEN",
+          "title": "ONE Nuclear Energy Inc.",
+          "type": "SEC",
+          "form": "8-K",
+          "publishedAt": "2026-11-16T22:11:12.000Z",
+          "headline": "8-K filing — ONE Nuclear Energy Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1846416/000149315226052554/form8-k.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 2
+    },
+    "SPHL": {
+      "events": [],
+      "eventCount": 0
+    },
+    "BOOM": {
+      "events": [],
+      "eventCount": 0
     },
     "SPAI": {
       "events": [
@@ -6072,9 +5987,22 @@
       ],
       "eventCount": 2
     },
-    "BOOM": {
-      "events": [],
-      "eventCount": 0
+    "PLBL": {
+      "events": [
+        {
+          "symbol": "PLBL",
+          "title": "Polibeli Group Ltd",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-11-12T11:03:10.000Z",
+          "headline": "6-K filing — Polibeli Group Ltd",
+          "url": "https://www.sec.gov/Archives/edgar/data/2035697/000121390026118261/ea0311980-6k_polibeli.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
     },
     "LIMN": {
       "events": [
@@ -6245,6 +6173,23 @@
       ],
       "eventCount": 1
     },
+    "TNMG": {
+      "events": [
+        {
+          "symbol": "TNMG",
+          "title": "TNL Mediagene",
+          "type": "SEC",
+          "form": "6-K",
+          "publishedAt": "2026-11-18T16:36:56.000Z",
+          "headline": "6-K filing — TNL Mediagene",
+          "url": "https://www.sec.gov/Archives/edgar/data/2013186/000121390026121694/ea0312623-6k_tnl.htm",
+          "source": "SEC EDGAR",
+          "verification": "PRIMARY",
+          "discoveryScope": "SHORTLIST_ENRICHMENT"
+        }
+      ],
+      "eventCount": 1
+    },
     "GMHS": {
       "events": [
         {
@@ -6309,23 +6254,6 @@
         }
       ],
       "eventCount": 5
-    },
-    "TNMG": {
-      "events": [
-        {
-          "symbol": "TNMG",
-          "title": "TNL Mediagene",
-          "type": "SEC",
-          "form": "6-K",
-          "publishedAt": "2026-11-18T16:36:56.000Z",
-          "headline": "6-K filing — TNL Mediagene",
-          "url": "https://www.sec.gov/Archives/edgar/data/2013186/000121390026121694/ea0312623-6k_tnl.htm",
-          "source": "SEC EDGAR",
-          "verification": "PRIMARY",
-          "discoveryScope": "SHORTLIST_ENRICHMENT"
-        }
-      ],
-      "eventCount": 1
     },
     "ARTW": {
       "events": [],
